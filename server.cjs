@@ -68743,6 +68743,16 @@ function handleMessage(client, msg) {
 var app = (0, import_express19.default)();
 app.set("trust proxy", 1);
 app.use(helmet({ contentSecurityPolicy: false, crossOriginEmbedderPolicy: false, frameguard: false }));
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization, Cookie");
+  if (req.method === "OPTIONS") {
+    res.sendStatus(200);
+    return;
+  }
+  next();
+});
 app.use(import_express19.default.json({ limit: "2mb" }));
 app.use((req, _res, next) => {
   req.cookies = Object.fromEntries((req.headers.cookie || "").split(";").filter(Boolean).map((cookie) => {
