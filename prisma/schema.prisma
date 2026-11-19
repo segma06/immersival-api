@@ -1,0 +1,868 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Profile {
+  id            String  @id @default(uuid())
+  email         String  @unique
+  password_hash String  @default("")
+  display_name  String?
+  locale        String?
+  is_admin      Boolean @default(false)
+  is_banned     Boolean @default(false)
+  is_researcher Boolean @default(false)
+  created_at    DateTime @default(now())
+  updated_at    DateTime @updatedAt
+  last_login_at DateTime?
+
+  exhibitions  Exhibition[]
+  api_usage    ApiUsage[]
+  subscription  Subscription?
+  payments      Payment[]
+  plan_changes  PlanChange[]
+  admin_logs    AdminAuditLog[] @relation("AdminLogs")
+
+  @@index([email])
+}
+
+model Exhibition {
+  id           String   @id @default(uuid())
+  name         String
+  description  String?
+  owner_id     String
+  owner        Profile  @relation(fields: [owner_id], references: [id])
+  is_published Boolean  @default(false)
+  thumbnail_url String?
+  created_at   DateTime @default(now())
+  updated_at   DateTime @updatedAt
+
+  settings      ExhibitionSettings?
+  products      Product[]
+  instances     ProductInstance[]
+  hotspots      Hotspot[]
+  navmesh       NavMeshConfig?
+  trigger_zones TriggerZone[]
+  spawn_points  SpawnPoint[]
+  restricted_areas RestrictedArea[]
+  visitor_sessions VisitorSession[]
+  visitor_events   VisitorEvent[]
+  visitor_heatmap  VisitorHeatmap[]
+  actors           ExhibitionActor[]
+
+  @@index([owner_id])
+}
+
+model ExhibitionSettings {
+  id                 String   @id @default(uuid())
+  exhibition_id      String   @unique
+  exhibition         Exhibition @relation(fields: [exhibition_id], references: [id], onDelete: Cascade)
+
+  guideName          String   @default("Ahmed")
+  guideGender        String   @default("male")
+  guideTone          String   @default("Warm & Intellectual")
+  guideVoice         String   @default("Google UK English Male")
+  guideLanguage      String   @default("ar")
+  guideIdleAnim      String   @default("Idle")
+  guideWalkAnim      String   @default("Walk")
+  guideModelUrl      String   @default("")
+  guidePosition      String   @default("{\"x\":-1.5,\"y\":0,\"z\":1.0}")
+  guideRotation      String   @default("{\"x\":0,\"y\":0,\"z\":0}")
+  guideScale         Float    @default(1.0)
+  isGuideVisible     Boolean  @default(true)
+  isSpeakerEnabled   Boolean  @default(true)
+  guideBehavior      String   @default("accompany")
+  enableWallTouch    Boolean  @default(true)
+  welcomeScript      String   @default("")
+  systemPrompt       String   @default("")
+  aiModel            String?
+
+  environmentUrl      String?
+  environmentPosition String   @default("{\"x\":0,\"y\":0,\"z\":0}")
+  environmentRotation String   @default("{\"x\":0,\"y\":0,\"z\":0}")
+  environmentScale    Float    @default(1.0)
+
+  walkSpeed           Float    @default(0.12)
+  cameraFov           Float    @default(60)
+  cameraHeight        Float    @default(1.65)
+  enableHeadBobbing   Boolean  @default(true)
+  headBobbingAmount   Float    @default(0.05)
+
+  // Per-exhibition guide overrides
+  guidePersonalityNotes String   @default("")
+  guideConversationStyle String   @default("friendly")
+  guideFormalityLevel   String   @default("balanced")
+  guideTtsMode          String   @default("")
+  guideGreetingBehavior  String   @default("wave_hello")
+  guideAutoGreet        Boolean  @default(true)
+  guideGreetingDelay    Float    @default(1.5)
+  guideFacialAnimation  Boolean  @default(true)
+  guideLipSync          Boolean  @default(true)
+  guideEyeGaze          Boolean  @default(true)
+  guideGesturesEnabled  Boolean  @default(true)
+  guideEnabled          Boolean  @default(true)
+  guideIdleMotion       Boolean  @default(true)
+
+  // Per-exhibition guide prompt customization
+  guideKnowledge         String   @default("[]")
+  guideScopeTopics       String   @default("[]")
+  guideRestrictedTopics  String   @default("[]")
+  guidePromptTemperature Float?
+  guidePromptMaxTokens   Int?
+  guidePromptTopP        Float?
+  guideStructuredOutput  Boolean  @default(true)
+
+  studioLockedItems   String   @default("[]")
+
+  speechNodes         String   @default("[]")
+  probeData           String?
+  /// Immersive sound (JSON): spatial voice, room reverb, occlusion, ambience,
+  /// footsteps. See src/core/audio/spatial-audio.ts (SoundConfig).
+  soundConfig         String   @default("{}")
+  /// Scene lighting (JSON) `{ ambient?: 0-3, directional?: 0-5 }`, or "" for
+  /// app defaults. Sanitized by server/src/routes/lighting-config.ts.
+  lightingConfig      String   @default("")
+
+  // Embed Security
+  embed_secret        String   @default("")
+  embed_password_hash String   @default("")
+  embed_allowed_domains String @default("[]")
+  embed_token_ttl     Int      @default(2592000)
+}
+
+model Product {
+  id                 String   @id @default(uuid())
+  exhibition_id      String
+  exhibition         Exhibition @relation(fields: [exhibition_id], references: [id], onDelete: Cascade)
+  title              String
+  kind               String
+  model_url          String?
+  image_url          String?
+  price              Float?
+  material           String?
+  general_description String?
+  detailed_story     String?
+
+  @@index([exhibition_id])
+}
+
+model ProductInstance {
+  id            String   @id @default(uuid())
+  exhibition_id String
+  exhibition    Exhibition @relation(fields: [exhibition_id], references: [id], onDelete: Cascade)
+  product_id    String
+  position_x    Float    @default(0)
+  position_y    Float    @default(0)
+  position_z    Float    @default(0)
+  rotation_x    Float    @default(0)
+  rotation_y    Float    @default(0)
+  rotation_z    Float    @default(0)
+  scale_x       Float    @default(1)
+  scale_y       Float    @default(1)
+  scale_z       Float    @default(1)
+  visible       Boolean  @default(true)
+
+  @@index([exhibition_id])
+}
+
+model Hotspot {
+  id            String   @id @default(uuid())
+  exhibition_id String
+  exhibition    Exhibition @relation(fields: [exhibition_id], references: [id], onDelete: Cascade)
+  position_x    Float    @default(0)
+  position_y    Float    @default(0)
+  position_z    Float    @default(0)
+  normal_x      Float    @default(0)
+  normal_y      Float    @default(1)
+  normal_z      Float    @default(0)
+  kind          String   @default("info")
+  label         String   @default("")
+  content_json  String?
+  /// Card hierarchy for the AI guide: kind "object_card" describes a whole
+  /// object; kind "detail_card" describes one spot on it and points to its
+  /// object card here.
+  parent_id           String?
+  /// The placed exhibit the card belongs to (null for environment parts).
+  product_instance_id String?
+  /// A named node of the environment model the card belongs to (e.g. a gate
+  /// built into the hall), when it is not a placed exhibit.
+  anchor_node         String?
+  /// Anchor in the owner object's local space, so the card follows its moves,
+  /// rotation and scale (detail cards: the surface point and its normal).
+  local_x             Float?
+  local_y             Float?
+  local_z             Float?
+  local_nx            Float?
+  local_ny            Float?
+  local_nz            Float?
+  /// Size of the detail in metres (0 = a point).
+  radius              Float    @default(0)
+  /// Order in which the guide presents an object's details.
+  sort_order          Int      @default(0)
+
+  @@index([exhibition_id])
+  @@index([parent_id])
+}
+
+model NavMeshConfig {
+  id            String   @id @default(uuid())
+  exhibition_id String   @unique
+  exhibition    Exhibition @relation(fields: [exhibition_id], references: [id], onDelete: Cascade)
+  agent_radius  Float    @default(0.35)
+  agent_height  Float    @default(1.8)
+  max_slope     Float    @default(45)
+  max_climb     Float    @default(0.3)
+  baked_data    String?
+}
+
+model TriggerZone {
+  id            String   @id @default(uuid())
+  exhibition_id String
+  exhibition    Exhibition @relation(fields: [exhibition_id], references: [id], onDelete: Cascade)
+  position_x    Float    @default(0)
+  position_y    Float    @default(0)
+  position_z    Float    @default(0)
+  scale_x       Float    @default(1)
+  scale_y       Float    @default(1)
+  scale_z       Float    @default(1)
+  color         String   @default("#6366f1")
+  event_message String   @default("")
+  label         String   @default("")
+  /// Quiet zone (Actor Core conversation board): characters do not speak
+  /// up on their own while the visitor is inside; answers and tasks still happen.
+  quiet         Boolean  @default(false)
+
+  @@index([exhibition_id])
+}
+
+model SpawnPoint {
+  id            String   @id @default(uuid())
+  exhibition_id String
+  exhibition    Exhibition @relation(fields: [exhibition_id], references: [id], onDelete: Cascade)
+  position_x    Float    @default(0)
+  position_y    Float    @default(0)
+  position_z    Float    @default(0)
+  rotation_y    Float    @default(0)
+  sort_order    Int      @default(0)
+  label         String   @default("")
+
+  @@index([exhibition_id])
+}
+
+model RestrictedArea {
+  id            String   @id @default(uuid())
+  exhibition_id String
+  exhibition    Exhibition @relation(fields: [exhibition_id], references: [id], onDelete: Cascade)
+  subject       String   @default("BOTH")
+  floor_height  Float    @default(0)
+  polygon_json  String   @default("[]")
+  color         String   @default("#ef4444")
+  label         String   @default("")
+
+  @@index([exhibition_id])
+}
+
+model PlatformConfig {
+  id                        String @id @default("default")
+  gemini_api_key            String?
+  gemini_model              String @default("gemini-3.8-flash")
+  gemini_allowed_models     String @default("[\"gemini-3.8-flash\",\"gemini-flash-lite-latest\",\"gemini-flash-latest\",\"gemini-pro-latest\"]")
+  tts_enabled               Boolean @default(true)
+  tts_language              String @default("ar")
+  gemini_rate_limit         Int @default(30)
+  tts_rate_limit            Int @default(20)
+  cost_alert_threshold_cents Int @default(5000)
+
+  // Provider abstraction
+  active_llm_provider       String @default("gemini")
+  active_tts_provider       String @default("google-translate")
+  active_stt_provider       String @default("browser")
+  llm_providers_config      String @default("{}")
+  tts_providers_config      String @default("{}")
+  stt_providers_config      String @default("{}")
+
+  updated_at                DateTime @updatedAt
+}
+
+model LibraryEnvironment {
+  id         String   @id @default(uuid())
+  name       String
+  url        String
+  sort_order Int      @default(0)
+  is_active  Boolean  @default(true)
+  created_at DateTime @default(now())
+}
+
+model LibraryCharacter {
+  id              String   @id @default(uuid())
+  name            String
+  url             String
+  model_type      String   @default("glb")
+  sort_order      Int      @default(0)
+  is_active       Boolean  @default(true)
+  created_at      DateTime @default(now())
+  face_shape_keys String?
+  /// Cast-ready metadata (Actor Core): portrait, gender, the clips the
+  /// character idles and walks with, the rig check report (JSON) and height.
+  thumbnail_url   String?
+  gender          String   @default("")
+  idle_clip       String   @default("")
+  walk_clip       String   @default("")
+  rig_report      String?
+  height_m        Float?
+}
+
+model LibraryProduct {
+  id         String   @id @default(uuid())
+  name       String
+  url        String
+  kind       String   @default("box")
+  sort_order Int      @default(0)
+  is_active  Boolean  @default(true)
+  created_at DateTime @default(now())
+}
+
+model ApiUsage {
+  id            String   @id @default(uuid())
+  user_id       String
+  user          Profile  @relation(fields: [user_id], references: [id])
+  endpoint      String
+  model         String   @default("")
+  tokens_in     Int      @default(0)
+  tokens_out    Int      @default(0)
+  cost_cents    Float    @default(0)
+  exhibition_id String?
+  created_at    DateTime @default(now())
+
+  @@index([user_id])
+  @@index([created_at])
+  @@index([exhibition_id])
+  @@index([endpoint, created_at])
+}
+
+model VisitorSession {
+  id              String   @id @default(uuid())
+  visitor_id      String
+  exhibition_id   String
+  exhibition      Exhibition @relation(fields: [exhibition_id], references: [id], onDelete: Cascade)
+  language        String   @default("")
+  timezone        String   @default("")
+  user_agent      String   @default("")
+  referrer        String   @default("")
+  screen_width    Int      @default(0)
+  screen_height   Int      @default(0)
+  entered_at      DateTime @default(now())
+  left_at         DateTime?
+  duration_seconds Int?
+  created_at      DateTime @default(now())
+
+  events VisitorEvent[]
+
+  @@index([exhibition_id])
+  @@index([visitor_id])
+}
+
+model VisitorEvent {
+  id            String   @id @default(uuid())
+  session_id    String
+  session       VisitorSession @relation(fields: [session_id], references: [id], onDelete: Cascade)
+  exhibition_id String
+  exhibition    Exhibition @relation(fields: [exhibition_id], references: [id], onDelete: Cascade)
+  event_type    String
+  event_data    String?
+  position_x    Float?
+  position_y    Float?
+  position_z    Float?
+  created_at    DateTime @default(now())
+
+  @@index([exhibition_id])
+  @@index([session_id])
+  @@index([created_at])
+}
+
+model VisitorHeatmap {
+  id            String   @id @default(uuid())
+  exhibition_id String
+  exhibition    Exhibition @relation(fields: [exhibition_id], references: [id], onDelete: Cascade)
+  grid_x        Int
+  grid_z        Int
+  duration_ms   Int      @default(0)
+  visitor_count Int      @default(1)
+  period_start  DateTime
+  period_end    DateTime
+
+  @@unique([exhibition_id, grid_x, grid_z, period_start])
+  @@index([exhibition_id])
+}
+
+model AdminGuideConfig {
+  id             String   @id @default("default")
+  voice_preset   String   @default("Google UK English Female")
+  tone           String   @default("Warm & Intellectual")
+  speech_rate    Float    @default(1.0)
+  welcome_script String   @default("")
+  behavior       String   @default("accompany")
+  wall_touch     Boolean  @default(true)
+  head_tracking  Boolean  @default(true)
+  idle_anim      String   @default("Idle")
+  walk_anim      String   @default("Walk")
+  conversation_style String @default("friendly")
+  personality_notes  String @default("")
+  formality_level    String @default("balanced")
+  movement_speed     Float  @default(0.12)
+  interaction_radius Float  @default(3.0)
+  approach_distance  Float  @default(2.0)
+  gesture_frequency  Float  @default(0.5)
+  eye_contact_level  Float  @default(0.7)
+  posture_style      String @default("upright")
+  greeting_behavior  String @default("wave_hello")
+  auto_greet         Boolean @default(true)
+  greeting_delay     Float  @default(1.0)
+  animation_assignments String @default("{}")
+
+  // Realistic behavior tuning (embodiment / when-to-speak). Milliseconds where noted.
+  speak_prep_ms          Float @default(300)      // orient pause before speech
+  min_dwell_ms           Float @default(600)      // min dwell between motion state flips
+  wander_cooldown_ms     Float @default(6000)     // gap between curiosity-wanders
+  narration_witness_radius Float @default(6.0)    // visitor must be this close to hear narration
+  greeting_cooldown_ms   Float @default(20000)    // min gap before re-greeting a returning visitor
+  disengage_radius       Float @default(5.0)      // visitor walks beyond this to disengage
+  disengage_timeout_ms   Float @default(6000)     // how long they must stay away to disengage
+
+  // Calm-follow tuning (how aggressively the guide tracks/repositions near the visitor)
+  follow_enabled             Boolean @default(true)  // master toggle for accompany follow
+  follow_parked_tolerance    Float @default(2.5)     // idle slack before re-chasing the slot
+  follow_presentation_enabled Boolean @default(false) // "walk past & present" on visitor pauses
+  follow_pace_match          Float @default(0.6)     // 0..1 how closely the guide mirrors player speed
+  follow_repath_distance     Float @default(2.0)     // player move dist before re-routing the path
+
+  // Feature toggles
+  guide_enabled        Boolean @default(true)
+  facial_animation     Boolean @default(true)
+  lip_sync             Boolean @default(true)
+  eye_gaze             Boolean @default(true)
+  idle_motion          Boolean @default(true)
+  gestures_enabled     Boolean @default(true)
+
+  // Micro-expression & gaze tuning (seconds for intervals, ms for decay)
+  micro_intensity      Float   @default(0.12)
+  micro_interval_min   Float   @default(2)
+  micro_interval_max   Float   @default(4)
+  micro_decay_ms       Float   @default(300)
+  look_amplitude       Float   @default(1.0)
+
+  // Default sampling for the guide LLM prompt (overridable per exhibition)
+  prompt_temperature    Float   @default(0.4)
+  prompt_max_tokens     Int     @default(512)
+  prompt_top_p          Float   @default(0.9)
+  structured_output     Boolean @default(true)
+
+  // Global default system prompt / creator instructions for the guide
+  // conversation (used when an exhibition sets no systemPrompt of its own).
+  system_prompt         String  @default("")
+
+  // Fully editable prompt sections. Empty => the runtime falls back to the
+  // built-in text baked into templates.ts. Populated by seed with the current
+  // defaults so the admin can edit every part of the guide conversation.
+  platform_policy             String @default("")
+  speech_guidelines           String @default("")
+  guardrails_rule_template    String @default("")
+  disabled_customization_text String @default("")
+  output_contract             String @default("")
+  pose_section_template       String @default("")
+  scene_context_template      String @default("")
+  refusal_directive           String @default("")
+
+  // Conversation window / memory caps surfaced to the runtime parser.
+  conversation_turns          Int    @default(6)
+  memory_facts                Int    @default(12)
+
+  updated_at     DateTime @updatedAt
+}
+
+model Subscription {
+  id                     String    @id @default(uuid())
+  user_id                String    @unique
+  user                   Profile   @relation(fields: [user_id], references: [id], onDelete: Cascade)
+  stripe_customer_id     String?   @unique
+  stripe_subscription_id String?   @unique
+  stripe_price_id        String?
+  plan                   String    @default("pro")
+  status                 String    @default("active")
+  current_period_start   DateTime?
+  current_period_end     DateTime?
+  cancel_at_period_end   Boolean   @default(false)
+  created_at             DateTime  @default(now())
+  updated_at             DateTime  @updatedAt
+}
+
+model Payment {
+  id                String   @id @default(uuid())
+  user_id           String
+  user              Profile  @relation(fields: [user_id], references: [id], onDelete: Cascade)
+  stripe_payment_id String?
+  amount_cents      Int
+  currency          String   @default("usd")
+  status            String
+  description       String?
+  created_at        DateTime @default(now())
+
+  @@index([user_id])
+}
+
+model PlanChange {
+  id              String   @id @default(uuid())
+  user_id         String
+  user            Profile  @relation(fields: [user_id], references: [id], onDelete: Cascade)
+  from_plan       String
+  to_plan         String
+  changed_by      String
+  reason          String?
+  created_at      DateTime @default(now())
+
+  @@index([user_id])
+  @@index([created_at])
+}
+
+model AdminAuditLog {
+  id          String   @id @default(uuid())
+  admin_id    String
+  admin       Profile  @relation("AdminLogs", fields: [admin_id], references: [id], onDelete: Cascade)
+  admin_email String
+  action      String
+  target_type String
+  target_id   String?
+  details     String?
+  created_at  DateTime @default(now())
+
+  @@index([admin_id])
+  @@index([created_at])
+}
+
+model SiteContent {
+  id            String   @id @default("default")
+  navbar        String   @default("{}")
+  hero          String   @default("{}")
+  features      String   @default("[]")
+  pricing       String   @default("[]")
+  testimonials  String   @default("[]")
+  cta           String   @default("{}")
+  footer        String   @default("{}")
+  section_order String   @default("[]")
+  updated_at    DateTime @updatedAt
+}
+
+model GuideVisemeConfig {
+  id                    String   @id @default("default")
+  phoneme_map           String   @default("{}")
+  smoothing             Float    @default(0.5)
+  intensity             Float    @default(1.0)
+  band_config           String   @default("{}")
+  text_viseme_mode      String   @default("auto")
+  text_viseme_lang      String   @default("auto")
+  word_padding          Float    @default(30)
+  vowel_intensity       Float    @default(0.8)
+  consonant_intensity   Float    @default(1.0)
+  updated_at            DateTime @updatedAt
+}
+
+model GuideExpressionPreset {
+  id                    String   @id @default(uuid())
+  name                  String   @unique
+  description           String   @default("")
+  shape_weights         String   @default("{}")
+  transition_duration   Float    @default(0.3)
+  is_auto               Boolean  @default(false)
+  auto_trigger_keywords String   @default("[]")
+  // When true this expression is an exportable "mood" the LLM may choose for
+  // the guide's face. emotion_key is the stable token emitted in JSON (e.g.
+  // "happy"); empty => derived from the lowercased name at runtime.
+  is_emotion            Boolean  @default(false)
+  emotion_key           String   @default("")
+  sort_order            Int      @default(0)
+  created_at            DateTime @default(now())
+  updated_at            DateTime @updatedAt
+}
+
+model GuideAnimationConfig {
+  id                 String  @id @default(uuid())
+  state              String
+  animation_name     String
+  url                String  @default("")
+  crossfade_duration Float   @default(0.3)
+  blend_weight       Float   @default(1.0)
+  priority           Int     @default(0)
+  is_default         Boolean @default(true)
+
+  @@unique([state, animation_name])
+}
+
+model GuideGesture {
+  id          String   @id @default(uuid())
+  name        String   @unique
+  description String   @default("")
+  keyframes   String   @default("[]")
+  duration    Float    @default(1.0)
+  hand        String   @default("right")
+  ai_commands String   @default("[]")
+  sort_order  Int      @default(0)
+  created_at  DateTime @default(now())
+  updated_at  DateTime @updatedAt
+}
+
+/// Named, pre-made body clips the guide's LLM may use (docs/guide-behavior-pipeline.md §3.6).
+/// Generated clips are recorded as candidates (approved = false); the admin approves them into the library.
+model GuideMotionClip {
+  id          String   @id @default(uuid())
+  /// One word the LLM uses: <motion name="..."/>
+  name        String   @unique
+  /// One-line meaning, shown to the LLM
+  description String   @default("")
+  /// Text-to-motion prompt the clip was generated from
+  prompt      String   @default("")
+  duration    Float    @default(3.5)
+  /// auto (upper body while walking, else full body) | full_body | upper_body | arms | ...
+  mask        String   @default("auto")
+  glb         Bytes
+  approved    Boolean  @default(false)
+  /// admin | generated
+  source      String   @default("admin")
+  use_count   Int      @default(0)
+  sort_order  Int      @default(0)
+  created_at  DateTime @default(now())
+  updated_at  DateTime @updatedAt
+}
+
+model GuidePose {
+  id          String   @id @default(uuid())
+  name        String   @unique
+  description String   @default("")
+  bones       String   @default("{}")
+  duration    Float    @default(0.0)
+  thumbnail   String   @default("")
+  ai_commands String   @default("[]")
+  sort_order  Int      @default(0)
+  created_at  DateTime @default(now())
+  updated_at  DateTime @updatedAt
+}
+
+model GuideGuardrails {
+  id                            String   @id @default(uuid())
+  // Platform-level restrictions applied to every exhibition's guide.
+  // Per-exhibition restrictions are stored on ExhibitionSettings and layered on top.
+  blocked_words                 String   @default("{}")
+  blocked_topics                String   @default("{}")
+  content_policy                String   @default("{}")
+  refusal_ar                    String   @default("")
+  refusal_en                    String   @default("")
+  moderation_level              String   @default("default")
+  input_filter_enabled          Boolean  @default(true)
+  output_filter_enabled         Boolean  @default(true)
+  semantic_topic_check_enabled  Boolean  @default(false)
+  allow_exhibition_customization Boolean @default(true)
+  created_at                    DateTime @default(now())
+  updated_at                    DateTime @updatedAt
+}
+
+// Saved Kimodo -> guide retarget profile (JSON). Empty / missing row = use the
+// built-in default (KIMODO_DEFAULT_PROFILE on the client).
+model GuideRetargetProfile {
+  id         String   @id @default("default")
+  profile    String   @default("")
+  updated_at DateTime @updatedAt
+}
+
+/// Actor Core (docs/actor-core.md): a character role template published by
+/// admins (Guide, Receptionist, Storyteller...). `defaults` is a RoleSpec
+/// JSON (server/src/ai/guide/roles.ts): persona, purpose, behaviour, look.
+model ActorRole {
+  id          String   @id @default(uuid())
+  key         String   @unique
+  name        String
+  description String   @default("")
+  defaults    String   @default("{}")
+  published   Boolean  @default(true)
+  sort_order  Int      @default(0)
+  created_at  DateTime @default(now())
+  updated_at  DateTime @updatedAt
+
+  actors ExhibitionActor[]
+}
+
+/// Actor Core: one character in an exhibition's cast, made from a role.
+/// `overrides` is a partial RoleSpec JSON the creator changed.
+model ExhibitionActor {
+  id            String     @id @default(uuid())
+  exhibition_id String
+  exhibition    Exhibition @relation(fields: [exhibition_id], references: [id], onDelete: Cascade)
+  role_id       String
+  role          ActorRole  @relation(fields: [role_id], references: [id])
+  name          String
+  overrides     String     @default("{}")
+  /// Post (home spot) and facing, JSON {x,y,z}.
+  position      String     @default("{\"x\":-1.5,\"y\":0,\"z\":1.0}")
+  rotation      String     @default("{\"x\":0,\"y\":0,\"z\":0}")
+  enabled       Boolean    @default(true)
+  sort_order    Int        @default(0)
+  created_at    DateTime   @default(now())
+  updated_at    DateTime   @updatedAt
+
+  @@index([exhibition_id])
+  @@index([role_id])
+}
+
+// ---- Heritage registry demo (local ledger) ----
+model HeritagePlace {
+  id            String   @id @default(uuid())
+  name          String
+  name_ar       String?
+  kind          String
+  wilaya        String?
+  lat           Float?
+  lng           Float?
+  public_lat    Float?
+  public_lng    Float?
+  sensitive     Boolean  @default(false)
+  unesco        Boolean  @default(false)
+  parent_id     String?
+  exhibition_id String?
+  description   String?
+  created_at    DateTime @default(now())
+
+  @@index([parent_id])
+}
+
+model HeritagePiece {
+  id           String   @id @default(uuid())
+  inventory_no String   @unique
+  title        String
+  title_ar     String?
+  category     String
+  material     String?
+  period_label String?
+  description  String?
+  is_demo      Boolean  @default(true)
+  created_at   DateTime @default(now())
+  catalogue     String  @default("{}")
+}
+
+model HeritageComponent {
+  id          String   @id @default(uuid())
+  piece_id    String
+  parent_id   String?
+  key         String
+  title       String
+  description String?
+  created_at  DateTime @default(now())
+
+  @@unique([piece_id, key])
+}
+
+model HeritageScan {
+  id             String   @id @default(uuid())
+  piece_id       String
+  component_id   String?
+  version        Int
+  file_url       String
+  file_sha256    String
+  file_size      Int
+  is_placeholder Boolean  @default(false)
+  event_id       String
+  created_at     DateTime @default(now())
+
+  @@index([piece_id])
+}
+
+model HeritageSigner {
+  id          String   @id @default(uuid())
+  name        String
+  role        String
+  institution String
+  public_key  String
+  private_key String
+  created_at  DateTime @default(now())
+}
+
+model HeritageEvent {
+  id            String   @id @default(uuid())
+  piece_id      String
+  piece_seq     Int
+  type          String
+  recorded_at   DateTime
+  payload       String
+  payload_hash  String
+  prev_hash     String
+  event_hash    String   @unique
+  place_from_id String?
+  place_to_id   String?
+  block_id      String?
+  leaf_index    Int?
+  created_by    String?
+
+  @@unique([piece_id, piece_seq])
+  @@index([block_id])
+}
+
+model HeritageSignature {
+  id        String   @id @default(uuid())
+  event_id  String
+  slot      String
+  signer_id String
+  signature String
+  signed_at DateTime @default(now())
+
+  @@unique([event_id, slot])
+}
+
+model HeritageBlock {
+  id              String   @id @default(uuid())
+  height          Int      @unique
+  prev_block_hash String
+  merkle_root     String
+  event_count     Int
+  sealed_at       DateTime
+  block_hash      String   @unique
+}
+
+model HeritageDocument {
+  id            String   @id @default(uuid())
+  piece_id      String
+  component_id  String?
+  title         String
+  kind          String
+  language      String?
+  author        String?
+  date_label    String?
+  description   String?
+  visibility    String   @default("public")
+  original_name String
+  mime          String
+  size          Int
+  sha256        String
+  storage_path  String
+  metadata_salt String?
+  version       Int      @default(1)
+  supersedes_id String?
+  event_id      String
+  created_at    DateTime @default(now())
+
+  @@index([piece_id])
+  @@index([sha256])
+}
+
+model HeritageAccessRequest {
+  id          String    @id @default(uuid())
+  profile_id  String
+  institution String
+  purpose     String
+  status      String    @default("pending")
+  decided_by  String?
+  decided_at  DateTime?
+  created_at  DateTime  @default(now())
+
+  @@index([profile_id])
+}
