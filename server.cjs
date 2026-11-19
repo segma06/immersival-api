@@ -52043,7 +52043,6 @@ var DEPRECATED_MODELS = {
   "gemini-1.5-pro": "gemini-pro-latest"
 };
 var DEFAULT_FALLBACK_MODELS = [
-  "gemini-3.8-flash",
   "gemini-2.5-flash",
   "gemini-flash-lite-latest",
   "gemini-flash-latest",
@@ -52079,11 +52078,11 @@ var GeminiLLMProvider = class {
   async chat(messages, options, config2) {
     const apiKey = config2.apiKey || process.env.GEMINI_API_KEY;
     if (!apiKey) throw new Error("Gemini API key not configured");
-    let requestedModel = options.model || "gemini-3.8-flash";
+    let requestedModel = options.model || "gemini-2.5-flash";
     if (DEPRECATED_MODELS[requestedModel]) {
       requestedModel = DEPRECATED_MODELS[requestedModel];
     }
-    const isFrontier = requestedModel === "gemini-3.8-flash";
+    const isFrontier = requestedModel === "gemini-2.5-flash";
     const inCooldown = isFrontier && Date.now() < frontierCooldownUntil;
     if (inCooldown) {
       return await this.fallbackChat(messages, options, apiKey, "frontier model in temporary cooldown");
@@ -52117,11 +52116,13 @@ var GeminiLLMProvider = class {
   }
   async executeChat(model, messages, options, apiKey, retryWithoutThinking = false) {
     const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
-    const contents = this.buildContents(messages);
+    const systemMsgs = messages.filter((m) => m.role === "system");
+    const primarySystemPrompt = systemMsgs[0]?.content || "";
+    const dynamicTurnContexts = systemMsgs.slice(1).map((m) => m.content).filter(Boolean);
+    const contents = this.buildContents(messages, dynamicTurnContexts);
     const body = { contents };
-    const systemText = messages.filter((m) => m.role === "system").map((m) => m.content).join("\n\n");
-    if (systemText) {
-      body.systemInstruction = { parts: [{ text: systemText }] };
+    if (primarySystemPrompt) {
+      body.systemInstruction = { parts: [{ text: primarySystemPrompt }] };
     }
     body.generationConfig = {};
     if (options.temperature !== void 0) body.generationConfig.temperature = options.temperature;
@@ -52240,12 +52241,33 @@ var GeminiLLMProvider = class {
     }
     return schema;
   }
-  buildContents(messages) {
+  buildContents(messages, turnContexts = []) {
     const nonSystem = messages.filter((m) => m.role !== "system");
-    return nonSystem.map((m) => ({
+    const out = nonSystem.map((m) => ({
       role: m.role === "assistant" ? "model" : "user",
       parts: [{ text: m.content }]
     }));
+    if (turnContexts.length > 0) {
+      const contextPrefix = turnContexts.join("\n\n");
+      let attached = false;
+      for (let i = out.length - 1; i >= 0; i--) {
+        if (out[i].role === "user") {
+          const currentText = out[i].parts[0]?.text || "";
+          out[i].parts[0].text = `${contextPrefix}
+
+${currentText}`;
+          attached = true;
+          break;
+        }
+      }
+      if (!attached) {
+        out.push({
+          role: "user",
+          parts: [{ text: contextPrefix }]
+        });
+      }
+    }
+    return out;
   }
 };
 
@@ -65556,15 +65578,16 @@ function buildBehaviorSection(gestures, gestureInfo, emotions, motions = [], mot
   const meaning = new Map(gestureInfo.map((g) => [g.key, g.description]));
   const list = gestures.map((g) => {
     const d = meaning.get(g);
-    return d ? `- ${g}: ${d}` : `- ${g}`;
+    if (!d) return g;
+    const short = d.split(/[.!?]/)[0]?.trim() || d.trim();
+    return short ? `${g} (${short.length > 36 ? short.slice(0, 33) + "..." : short})` : g;
   });
+  const gestureSummary = list.join(", ");
   const motionLines = motions.length ? [
-    'Whole-body motions you can use (<motion name="NAME"/>, before the word they belong to); prefer them to inventing anything:',
-    ...motions.map((m) => m.description ? `- ${m.key}: ${m.description}` : `- ${m.key}`)
+    `Whole-body motions you can use (<motion name="NAME"/>): ${motions.map((m) => m.key).join(", ")}`
   ] : [];
   const generateLines = motionGeneration ? [
-    "LAST RESORT, rarely: if the moment truly needs a body motion that no gesture or motion above covers (e.g. the visitor asks you to show a dance),",
-    'write <generate motion="a short plain description" instead="NAME"/>, where NAME is a gesture or motion above to play right away. Never use it for ordinary talking.'
+    'LAST RESORT, rarely: write <generate motion="a short description" instead="NAME"/> only if no gesture or motion fits.'
   ] : [];
   return [
     'You have a body. Put body language INSIDE "speech" as tags, immediately before the word it belongs to.',
@@ -65575,18 +65598,16 @@ function buildBehaviorSection(gestures, gestureInfo, emotions, motions = [], mot
     'Use the scene facts to know what the visitor means: "next to you", "that one", "on the left" map to "from_me" (your body), "from_visitor" (theirs), "looking_at" and "visitor_can_see". Tell the visitor directions from their side ("from_visitor").',
     `- <emotion name="MOOD"/>: change your facial expression from that word on (MOOD: ${emotions.join("|")}).`,
     '- <pause ms="300"/>: a short silent beat.',
-    "When a listed gesture has your character prefix (ahmed_, emir_, boumediene_), prefer it for its described conversational purpose. Use at most one expressive hand gesture per short reply, placed just before the words it emphasizes. Leave some replies still. Choose matching meanings such as greeting, showing scale, comparing, careful qualification or yielding the floor. Movement descriptions are stage directions for choosing the tag. Keep them out of spoken speech. Answer the visitor\u2019s subject in character while the tag supplies the movement.",
-    '- Optional voice direction at the start of one sentence: <voice name="laughs"/>, <voice name="sighs"/>, <voice name="clears throat"/>, or <voice name="thoughtful"/>. Use at most one per reply, only when the situation calls for it. Laughter fits genuine levity. For a reflective beat, use thoughtful with a brief pause or, sparingly, a quiet hesitation such as \u201CHmm\u2026\u201D in the reply language. Keep the character\u2019s own restraint.',
+    "When a listed gesture has your character prefix (ahmed_, emir_, boumediene_), prefer it for its described conversational purpose. Use at most one expressive hand gesture per short reply, placed just before the words it emphasizes. Leave some replies still. Movement descriptions are stage directions for choosing the tag. Keep them out of spoken speech.",
+    '- Optional voice direction at the start of one sentence: <voice name="laughs"/>, <voice name="sighs"/>, <voice name="clears throat"/>, or <voice name="thoughtful"/>.',
     "When the visitor asks about an object, or you talk about one listed in the scene facts, point at it with its ref (or look at it) right before the word that names it.",
-    "Rules: usually 1-2 tags per reply, never more than one per clause. A gesture must fit its words (count gestures only when counting, wave only for hello/goodbye). Never put a tag inside a word, never invent tag or gesture names, no other markup.",
+    "Rules: usually 1-2 tags per reply, never more than one per clause. Never put a tag inside a word, never invent tag or gesture names, no other markup.",
     'When you place tags, leave "gesture" and "action" empty unless you also need an action after speaking (e.g. GUIDE_TO).',
-    `Object names in the scene facts may be in another language than the visitor's: match what the visitor asks for by meaning (e.g. "\u0627\u0644\u0633\u062C\u0627\u062F\u0629" = "carpet"), never by the nearest object.`,
-    'If the visitor asks to be taken to a specific exhibit or character, or to a nearby historical character, put GUIDE_TO:<ref> in "action" and tell them to follow you. If they ask for a tour of the hall, use START_TOUR. Never decline because a destination is far; the app checks whether the route is reachable.',
+    'If the visitor asks to be taken to a specific exhibit or character, or to a nearby historical character, put GUIDE_TO:<ref> in "action" and tell them to follow you. If they ask for a tour of the hall, use START_TOUR.',
     DEPTH_AND_GROUNDING,
     "An already_presented object may still be discussed in depth when asked; avoid repeating its introduction. Build on the visitor\u2019s new question.",
     "A message that starts with [SITUATION: ...] is not the visitor speaking: it tells you what is happening. React to it as the guide, in your own words, as a person would in that moment.",
-    "Gestures you can use (use only these):",
-    ...list,
+    `Gestures you can use (use only these): ${gestureSummary}`,
     ...motionLines,
     ...generateLines,
     'Example: "speech": "Welcome! <point to=\\"o2\\"/>This lantern was made in the Kasbah, <gesture name=\\"explain\\"/>by hand, in three pieces."'
@@ -65934,7 +65955,12 @@ aiRouter.post("/chat", authenticateOrEmbed, async (req, res2) => {
           language: lang2 || profile.language
         });
         const spokenPacing = "Start with one short sentence that directly answers the visitor. Add detail when requested or needed to explain the answer. For a character handoff, use one short line addressed to that character.";
-        finalMessages = [{ role: "system", content: system + "\n\n" + spokenPacing }, ...chatMessages];
+        const recentHistory = chatMessages.slice(-8);
+        finalMessages = [{ role: "system", content: system + "\n\n" + spokenPacing }, ...recentHistory];
+      } else {
+        const sys = finalMessages.filter((m) => m.role === "system");
+        const nonSys = finalMessages.filter((m) => m.role !== "system").slice(-8);
+        finalMessages = [...sys, ...nonSys];
       }
       if (sceneContext && typeof sceneContext === "string" && sceneContext.trim()) {
         const idx = finalMessages.length - 1;
