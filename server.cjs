@@ -49427,7 +49427,8 @@ showcaseRouter.get("/:slug", async (req, res2, next) => {
     }
     const language = req.query.lang === "ar" ? "ar" : "en";
     res2.setHeader("Cache-Control", "no-store");
-    res2.redirect(302, `/embed/${token}?lang=${language}`);
+    const frontendUrl = (process.env.FRONTEND_URL || "https://segma006-immersival.static.hf.space").replace(/\/+$/, "");
+    res2.redirect(302, `${frontendUrl}/#/embed/${token}?lang=${language}`);
   } catch (error) {
     next(error);
   }
