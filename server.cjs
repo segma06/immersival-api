@@ -51955,6 +51955,18 @@ async function loadProviderConfig(prisma2) {
       ttsProviders: ttsProviders || DEFAULT_CONFIG.ttsProviders,
       sttProviders: sttProviders || DEFAULT_CONFIG.sttProviders
     };
+    if (process.env.ELEVENLABS_API_KEY) {
+      config2.ttsProviders.elevenlabs = {
+        ...config2.ttsProviders.elevenlabs,
+        apiKey: process.env.ELEVENLABS_API_KEY
+      };
+    }
+    if (process.env.GEMINI_API_KEY) {
+      config2.llmProviders.gemini = {
+        ...config2.llmProviders.gemini,
+        apiKey: process.env.GEMINI_API_KEY
+      };
+    }
     return config2;
   } catch {
     return DEFAULT_CONFIG;
