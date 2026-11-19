@@ -66074,7 +66074,7 @@ async function synthesizeWithFallback(primaryOverride, text2, opts, config2, dis
   const now = Date.now();
   const budget = interactive ? AbortSignal.timeout(1e4) : void 0;
   const cancellation = [disconnected, budget].filter((signal) => !!signal);
-  const order = exactVoice && ref.provider ? [ref.provider] : [...all.filter((id) => (providerDownUntil.get(id) ?? 0) <= now), ...all.filter((id) => (providerDownUntil.get(id) ?? 0) > now)];
+  const order = exactVoice && ref.provider ? [ref.provider, ...all.filter((id) => id !== ref.provider)] : [...all.filter((id) => (providerDownUntil.get(id) ?? 0) <= now), ...all.filter((id) => (providerDownUntil.get(id) ?? 0) > now)];
   let lastError = null;
   for (const id of order) {
     let provider;
@@ -66266,14 +66266,15 @@ aiRouter.post("/tts/visemes", authenticateOrEmbed, async (req, res2) => {
       return;
     }
     const suppliedVoice = parseVoiceRef(voice);
-    const elevenLabsOnly = req.body.elevenLabsOnly === true;
-    const exactVoice = elevenLabsOnly || suppliedVoice.provider === "elevenlabs";
+    const hasElevenLabsKey = !!config2.ttsProviders.elevenlabs?.apiKey;
+    const elevenLabsOnly = req.body.elevenLabsOnly === true && hasElevenLabsKey;
+    const exactVoice = elevenLabsOnly || suppliedVoice.provider === "elevenlabs" && hasElevenLabsKey;
     const voiceId = suppliedVoice.provider === "elevenlabs" ? suppliedVoice.id : config2.ttsProviders.elevenlabs?.voiceId;
     if (elevenLabsOnly && (typeof voiceId !== "string" || !voiceId.trim())) {
       res2.status(503).json({ error: "The exhibition ElevenLabs voice is not configured." });
       return;
     }
-    const effectiveVoice = elevenLabsOnly ? `elevenlabs:${voiceId.trim()}` : voice;
+    const effectiveVoice = elevenLabsOnly && voiceId?.trim() ? `elevenlabs:${voiceId.trim()}` : voice;
     const { result: result2, providerId } = await synthesizeWithFallback(
       elevenLabsOnly ? void 0 : providerOverride,
       cleaned,
@@ -68744,12 +68745,12 @@ function handleMessage(client, msg) {
 var app = (0, import_express19.default)();
 app.set("trust proxy", 1);
 app.use(helmet({ contentSecurityPolicy: false, crossOriginEmbedderPolicy: false, frameguard: false }));
-app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
-  res.header("Access-Control-Allow-Headers", "*");
+app.use((req, res2, next) => {
+  res2.header("Access-Control-Allow-Origin", "*");
+  res2.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
+  res2.header("Access-Control-Allow-Headers", "*");
   if (req.method === "OPTIONS") {
-    res.sendStatus(200);
+    res2.sendStatus(200);
     return;
   }
   next();
