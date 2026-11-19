@@ -63731,7 +63731,7 @@ async function getMsEdgeTTS() {
   return MsEdgeTTS;
 }
 var DEFAULT_MALE_VOICES = {
-  ar: "ar-SA-HamedNeural",
+  ar: "ar-DZ-IsmaelNeural",
   en: "en-US-GuyNeural",
   es: "es-ES-AlvaroNeural",
   fr: "fr-FR-HenriNeural",
@@ -63741,7 +63741,7 @@ var DEFAULT_MALE_VOICES = {
   ko: "ko-KR-InJoonNeural"
 };
 var DEFAULT_FEMALE_VOICES = {
-  ar: "ar-SA-ZariyahNeural",
+  ar: "ar-DZ-IsmaelNeural",
   en: "en-US-JennyNeural",
   es: "es-ES-ElviraNeural",
   fr: "fr-FR-DeniseNeural",
@@ -63750,6 +63750,14 @@ var DEFAULT_FEMALE_VOICES = {
   zh: "zh-CN-XiaoxiaoNeural",
   ko: "ko-KR-SunHiNeural"
 };
+var ARABIC_MALE_VOICES = [
+  "ar-DZ-IsmaelNeural",
+  "ar-SA-HamedNeural",
+  "ar-AE-HamdanNeural",
+  "ar-EG-ShakirNeural",
+  "ar-MA-JamalNeural",
+  "ar-TN-HediNeural"
+];
 function voiceGenderSource() {
   const map = {};
   for (const v of COMMON_VOICES) {
@@ -63840,8 +63848,14 @@ var EdgeTTSProvider = class {
         }
       }
     }
-    if (!voice) voice = defaultVoices[langSymb] || "ar-SA-HamedNeural";
-    if (!requestedVoice && options.seed && langSymb) {
+    if (!voice) voice = defaultVoices[langSymb] || "ar-DZ-IsmaelNeural";
+    if (langSymb === "ar" && gender !== "female") {
+      if (options.seed) {
+        voice = ARABIC_MALE_VOICES[stableIndex(options.seed, ARABIC_MALE_VOICES.length)];
+      } else if (!voice || !ARABIC_MALE_VOICES.includes(voice)) {
+        voice = "ar-DZ-IsmaelNeural";
+      }
+    } else if (!requestedVoice && options.seed && langSymb) {
       try {
         edgeVoices ??= this.listVoices({}).catch((err) => {
           edgeVoices = null;
@@ -66082,7 +66096,12 @@ function parseVoiceRef(voice) {
 async function synthesizeWithFallback(primaryOverride, text2, opts, config2, disconnected, interactive = false, exactVoice = false) {
   const ref = parseVoiceRef(opts.voice);
   const primary = primaryOverride || ref.provider || config2.activeTTSProvider;
-  const all = Array.from(/* @__PURE__ */ new Set([primary, "edge-tts", "google-translate", ...getRegisteredProviders("tts")]));
+  const isMaleOrArabic = opts.gender !== "female";
+  const all = Array.from(/* @__PURE__ */ new Set([
+    primary,
+    "edge-tts",
+    ...getRegisteredProviders("tts").filter((id) => !isMaleOrArabic || id !== "google-translate")
+  ]));
   const now = Date.now();
   const budget = interactive ? AbortSignal.timeout(1e4) : void 0;
   const cancellation = [disconnected, budget].filter((signal) => !!signal);
