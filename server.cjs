@@ -73133,7 +73133,7 @@ function buildGuideJsonSchema(v, options = {}) {
         segments: { type: "array", items: { type: "object", properties: { ref: { type: "string" }, speech: { type: "string" }, repair: { type: "string" } }, required: ["ref", "speech", "repair"], additionalProperties: false } }
       }, required: ["ref", "overview", "segments"], additionalProperties: false },
       importance: { type: "string", enum: ["chat", "useful", "task", "answer", "critical"], description: "How much the reply matters to the visitor right now (see the system prompt)." },
-      language: { type: "string", description: "The language of the reply and subsequent conversation as a lowercase ISO-639-1 code, ONLY one of: ar, en, es, fr, de, ja, zh, ko. Honor explicit requests to switch. Otherwise keep the current conversation language." }
+      language: options.lockedLanguage ? { type: "string", enum: [options.lockedLanguage], description: "The visitor-selected language for all spoken text." } : { type: "string", description: "The language of the reply and subsequent conversation as a lowercase ISO-639-1 code, ONLY one of: ar, en, es, fr, de, ja, zh, ko. Honor explicit requests to switch. Otherwise keep the current conversation language." }
     },
     required: ["mood", "gesture", "action", "speech", "language", ...options.reflection ? ["remember", "discussion_summary"] : []],
     additionalProperties: false
@@ -73539,6 +73539,7 @@ aiRouter.post("/chat", authenticateOrEmbed, async (req, res2) => {
     const model = options?.model || providerConfig.defaultModel;
     const provider = getLLMProvider(providerId);
     const lang2 = typeof language === "string" && language.length ? language : "ar";
+    const lockedLanguage = options?.lockLanguage === true && /^(ar|en|es|fr|de|ja|zh|ko)$/.test(lang2) ? lang2 : void 0;
     const scopeId = typeof exhibitionId === "string" && exhibitionScope(exhibitionId) ? exhibitionId : null;
     const crossesScope = (text2) => Boolean(scopeId && crossesExhibition(scopeId, text2));
     let finalMessages = chatMessages;
@@ -73643,10 +73644,18 @@ aiRouter.post("/chat", authenticateOrEmbed, async (req, res2) => {
           ...finalMessages.slice(idx)
         ];
       }
+      if (lockedLanguage) {
+        finalMessages = [
+          ...finalMessages.slice(0, -1),
+          { role: "system", content: `The visitor selected ${lockedLanguage}. Write every spoken line in that language, including presentation segments. Names or quoted foreign words may retain their original form. The app handles language switches separately.` },
+          ...finalMessages.slice(-1)
+        ];
+      }
       structured = sampling.structuredOutput || structured;
       guideJsonSchema = buildGuideJsonSchema(vocabulary, {
         reflection: /^\[SITUATION: reflect\]/.test(lastUser?.content ?? ""),
-        vocabularyInPrompt: !hasSystem
+        vocabularyInPrompt: !hasSystem,
+        lockedLanguage
       });
       if (options?.speechPreview === true && structured) {
         onPartialText = (text2) => {
