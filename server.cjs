@@ -1,3 +1,4 @@
+"use strict";
 var __create = Object.create;
 var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
@@ -31,9 +32,9 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
   mod
 ));
 
-// ../../server/node_modules/dotenv/package.json
+// server/node_modules/dotenv/package.json
 var require_package = __commonJS({
-  "../../server/node_modules/dotenv/package.json"(exports2, module2) {
+  "server/node_modules/dotenv/package.json"(exports2, module2) {
     module2.exports = {
       name: "dotenv",
       version: "16.6.1",
@@ -99,9 +100,9 @@ var require_package = __commonJS({
   }
 });
 
-// ../../server/node_modules/dotenv/lib/main.js
+// server/node_modules/dotenv/lib/main.js
 var require_main = __commonJS({
-  "../../server/node_modules/dotenv/lib/main.js"(exports2, module2) {
+  "server/node_modules/dotenv/lib/main.js"(exports2, module2) {
     var fs6 = require("fs");
     var path6 = require("path");
     var os3 = require("os");
@@ -389,9 +390,9 @@ var require_main = __commonJS({
   }
 });
 
-// ../../server/node_modules/dotenv/lib/env-options.js
+// server/node_modules/dotenv/lib/env-options.js
 var require_env_options = __commonJS({
-  "../../server/node_modules/dotenv/lib/env-options.js"(exports2, module2) {
+  "server/node_modules/dotenv/lib/env-options.js"(exports2, module2) {
     var options = {};
     if (process.env.DOTENV_CONFIG_ENCODING != null) {
       options.encoding = process.env.DOTENV_CONFIG_ENCODING;
@@ -415,9 +416,9 @@ var require_env_options = __commonJS({
   }
 });
 
-// ../../server/node_modules/dotenv/lib/cli-options.js
+// server/node_modules/dotenv/lib/cli-options.js
 var require_cli_options = __commonJS({
-  "../../server/node_modules/dotenv/lib/cli-options.js"(exports2, module2) {
+  "server/node_modules/dotenv/lib/cli-options.js"(exports2, module2) {
     var re = /^dotenv_config_(encoding|path|quiet|debug|override|DOTENV_KEY)=(.+)$/;
     module2.exports = function optionMatcher(args) {
       const options = args.reduce(function(acc, cur) {
@@ -435,9 +436,9 @@ var require_cli_options = __commonJS({
   }
 });
 
-// ../../server/node_modules/depd/index.js
+// server/node_modules/depd/index.js
 var require_depd = __commonJS({
-  "../../server/node_modules/depd/index.js"(exports2, module2) {
+  "server/node_modules/depd/index.js"(exports2, module2) {
     var relative = require("path").relative;
     module2.exports = depd;
     var basePath = process.cwd();
@@ -741,9 +742,9 @@ var require_depd = __commonJS({
   }
 });
 
-// ../../server/node_modules/bytes/index.js
+// server/node_modules/bytes/index.js
 var require_bytes = __commonJS({
-  "../../server/node_modules/bytes/index.js"(exports2, module2) {
+  "server/node_modules/bytes/index.js"(exports2, module2) {
     "use strict";
     module2.exports = bytes;
     module2.exports.format = format;
@@ -830,9 +831,9 @@ var require_bytes = __commonJS({
   }
 });
 
-// ../../server/node_modules/content-type/index.js
+// server/node_modules/content-type/index.js
 var require_content_type = __commonJS({
-  "../../server/node_modules/content-type/index.js"(exports2) {
+  "server/node_modules/content-type/index.js"(exports2) {
     "use strict";
     var PARAM_REGEXP = /; *([!#$%&'*+.^_`|~0-9A-Za-z-]+) *= *("(?:[\u000b\u0020\u0021\u0023-\u005b\u005d-\u007e\u0080-\u00ff]|\\[\u000b\u0020-\u00ff])*"|[!#$%&'*+.^_`|~0-9A-Za-z-]+) */g;
     var TEXT_REGEXP = /^[\u000b\u0020-\u007e\u0080-\u00ff]+$/;
@@ -934,9 +935,9 @@ var require_content_type = __commonJS({
   }
 });
 
-// ../../server/node_modules/setprototypeof/index.js
+// server/node_modules/setprototypeof/index.js
 var require_setprototypeof = __commonJS({
-  "../../server/node_modules/setprototypeof/index.js"(exports2, module2) {
+  "server/node_modules/setprototypeof/index.js"(exports2, module2) {
     "use strict";
     module2.exports = Object.setPrototypeOf || ({ __proto__: [] } instanceof Array ? setProtoOf : mixinProperties);
     function setProtoOf(obj, proto) {
@@ -954,9 +955,9 @@ var require_setprototypeof = __commonJS({
   }
 });
 
-// ../../server/node_modules/statuses/codes.json
+// server/node_modules/statuses/codes.json
 var require_codes = __commonJS({
-  "../../server/node_modules/statuses/codes.json"(exports2, module2) {
+  "server/node_modules/statuses/codes.json"(exports2, module2) {
     module2.exports = {
       "100": "Continue",
       "101": "Switching Protocols",
@@ -1025,9 +1026,9 @@ var require_codes = __commonJS({
   }
 });
 
-// ../../server/node_modules/statuses/index.js
+// server/node_modules/statuses/index.js
 var require_statuses = __commonJS({
-  "../../server/node_modules/statuses/index.js"(exports2, module2) {
+  "server/node_modules/statuses/index.js"(exports2, module2) {
     "use strict";
     var codes = require_codes();
     module2.exports = status;
@@ -1096,9 +1097,9 @@ var require_statuses = __commonJS({
   }
 });
 
-// ../../server/node_modules/inherits/inherits_browser.js
+// server/node_modules/inherits/inherits_browser.js
 var require_inherits_browser = __commonJS({
-  "../../server/node_modules/inherits/inherits_browser.js"(exports2, module2) {
+  "server/node_modules/inherits/inherits_browser.js"(exports2, module2) {
     if (typeof Object.create === "function") {
       module2.exports = function inherits(ctor, superCtor) {
         if (superCtor) {
@@ -1128,9 +1129,9 @@ var require_inherits_browser = __commonJS({
   }
 });
 
-// ../../server/node_modules/inherits/inherits.js
+// server/node_modules/inherits/inherits.js
 var require_inherits = __commonJS({
-  "../../server/node_modules/inherits/inherits.js"(exports2, module2) {
+  "server/node_modules/inherits/inherits.js"(exports2, module2) {
     try {
       util = require("util");
       if (typeof util.inherits !== "function") throw "";
@@ -1142,9 +1143,9 @@ var require_inherits = __commonJS({
   }
 });
 
-// ../../server/node_modules/toidentifier/index.js
+// server/node_modules/toidentifier/index.js
 var require_toidentifier = __commonJS({
-  "../../server/node_modules/toidentifier/index.js"(exports2, module2) {
+  "server/node_modules/toidentifier/index.js"(exports2, module2) {
     "use strict";
     module2.exports = toIdentifier;
     function toIdentifier(str4) {
@@ -1155,9 +1156,9 @@ var require_toidentifier = __commonJS({
   }
 });
 
-// ../../server/node_modules/http-errors/index.js
+// server/node_modules/http-errors/index.js
 var require_http_errors = __commonJS({
-  "../../server/node_modules/http-errors/index.js"(exports2, module2) {
+  "server/node_modules/http-errors/index.js"(exports2, module2) {
     "use strict";
     var deprecate = require_depd()("http-errors");
     var setPrototypeOf = require_setprototypeof();
@@ -1319,9 +1320,9 @@ var require_http_errors = __commonJS({
   }
 });
 
-// ../../server/node_modules/ms/index.js
+// server/node_modules/ms/index.js
 var require_ms = __commonJS({
-  "../../server/node_modules/ms/index.js"(exports2, module2) {
+  "server/node_modules/ms/index.js"(exports2, module2) {
     var s = 1e3;
     var m = s * 60;
     var h = m * 60;
@@ -1421,9 +1422,9 @@ var require_ms = __commonJS({
   }
 });
 
-// ../../server/node_modules/debug/src/debug.js
+// server/node_modules/debug/src/debug.js
 var require_debug = __commonJS({
-  "../../server/node_modules/debug/src/debug.js"(exports2, module2) {
+  "server/node_modules/debug/src/debug.js"(exports2, module2) {
     exports2 = module2.exports = createDebug.debug = createDebug["default"] = createDebug;
     exports2.coerce = coerce;
     exports2.disable = disable;
@@ -1526,9 +1527,9 @@ var require_debug = __commonJS({
   }
 });
 
-// ../../server/node_modules/debug/src/browser.js
+// server/node_modules/debug/src/browser.js
 var require_browser = __commonJS({
-  "../../server/node_modules/debug/src/browser.js"(exports2, module2) {
+  "server/node_modules/debug/src/browser.js"(exports2, module2) {
     exports2 = module2.exports = require_debug();
     exports2.log = log;
     exports2.formatArgs = formatArgs;
@@ -1612,9 +1613,9 @@ var require_browser = __commonJS({
   }
 });
 
-// ../../server/node_modules/debug/src/node.js
+// server/node_modules/debug/src/node.js
 var require_node = __commonJS({
-  "../../server/node_modules/debug/src/node.js"(exports2, module2) {
+  "server/node_modules/debug/src/node.js"(exports2, module2) {
     var tty = require("tty");
     var util = require("util");
     exports2 = module2.exports = require_debug();
@@ -1732,9 +1733,9 @@ var require_node = __commonJS({
   }
 });
 
-// ../../server/node_modules/debug/src/index.js
+// server/node_modules/debug/src/index.js
 var require_src = __commonJS({
-  "../../server/node_modules/debug/src/index.js"(exports2, module2) {
+  "server/node_modules/debug/src/index.js"(exports2, module2) {
     if (typeof process !== "undefined" && process.type === "renderer") {
       module2.exports = require_browser();
     } else {
@@ -1743,9 +1744,9 @@ var require_src = __commonJS({
   }
 });
 
-// ../../server/node_modules/destroy/index.js
+// server/node_modules/destroy/index.js
 var require_destroy = __commonJS({
-  "../../server/node_modules/destroy/index.js"(exports2, module2) {
+  "server/node_modules/destroy/index.js"(exports2, module2) {
     "use strict";
     var EventEmitter = require("events").EventEmitter;
     var ReadStream = require("fs").ReadStream;
@@ -1830,9 +1831,9 @@ var require_destroy = __commonJS({
   }
 });
 
-// ../../server/node_modules/safer-buffer/safer.js
+// server/node_modules/safer-buffer/safer.js
 var require_safer = __commonJS({
-  "../../server/node_modules/safer-buffer/safer.js"(exports2, module2) {
+  "server/node_modules/safer-buffer/safer.js"(exports2, module2) {
     "use strict";
     var buffer = require("buffer");
     var Buffer3 = buffer.Buffer;
@@ -1898,9 +1899,9 @@ var require_safer = __commonJS({
   }
 });
 
-// ../../server/node_modules/iconv-lite/lib/bom-handling.js
+// server/node_modules/iconv-lite/lib/bom-handling.js
 var require_bom_handling = __commonJS({
-  "../../server/node_modules/iconv-lite/lib/bom-handling.js"(exports2) {
+  "server/node_modules/iconv-lite/lib/bom-handling.js"(exports2) {
     "use strict";
     var BOMChar = "\uFEFF";
     exports2.PrependBOM = PrependBOMWrapper;
@@ -1942,9 +1943,9 @@ var require_bom_handling = __commonJS({
   }
 });
 
-// ../../server/node_modules/iconv-lite/encodings/internal.js
+// server/node_modules/iconv-lite/encodings/internal.js
 var require_internal = __commonJS({
-  "../../server/node_modules/iconv-lite/encodings/internal.js"(exports2, module2) {
+  "server/node_modules/iconv-lite/encodings/internal.js"(exports2, module2) {
     "use strict";
     var Buffer3 = require_safer().Buffer;
     module2.exports = {
@@ -2086,9 +2087,9 @@ var require_internal = __commonJS({
   }
 });
 
-// ../../server/node_modules/iconv-lite/encodings/utf16.js
+// server/node_modules/iconv-lite/encodings/utf16.js
 var require_utf16 = __commonJS({
-  "../../server/node_modules/iconv-lite/encodings/utf16.js"(exports2) {
+  "server/node_modules/iconv-lite/encodings/utf16.js"(exports2) {
     "use strict";
     var Buffer3 = require_safer().Buffer;
     exports2.utf16be = Utf16BECodec;
@@ -2202,9 +2203,9 @@ var require_utf16 = __commonJS({
   }
 });
 
-// ../../server/node_modules/iconv-lite/encodings/utf7.js
+// server/node_modules/iconv-lite/encodings/utf7.js
 var require_utf7 = __commonJS({
-  "../../server/node_modules/iconv-lite/encodings/utf7.js"(exports2) {
+  "server/node_modules/iconv-lite/encodings/utf7.js"(exports2) {
     "use strict";
     var Buffer3 = require_safer().Buffer;
     exports2.utf7 = Utf7Codec;
@@ -2403,9 +2404,9 @@ var require_utf7 = __commonJS({
   }
 });
 
-// ../../server/node_modules/iconv-lite/encodings/sbcs-codec.js
+// server/node_modules/iconv-lite/encodings/sbcs-codec.js
 var require_sbcs_codec = __commonJS({
-  "../../server/node_modules/iconv-lite/encodings/sbcs-codec.js"(exports2) {
+  "server/node_modules/iconv-lite/encodings/sbcs-codec.js"(exports2) {
     "use strict";
     var Buffer3 = require_safer().Buffer;
     exports2._sbcs = SBCSCodec;
@@ -2459,9 +2460,9 @@ var require_sbcs_codec = __commonJS({
   }
 });
 
-// ../../server/node_modules/iconv-lite/encodings/sbcs-data.js
+// server/node_modules/iconv-lite/encodings/sbcs-data.js
 var require_sbcs_data = __commonJS({
-  "../../server/node_modules/iconv-lite/encodings/sbcs-data.js"(exports2, module2) {
+  "server/node_modules/iconv-lite/encodings/sbcs-data.js"(exports2, module2) {
     "use strict";
     module2.exports = {
       // Not supported by iconv, not sure why.
@@ -2608,9 +2609,9 @@ var require_sbcs_data = __commonJS({
   }
 });
 
-// ../../server/node_modules/iconv-lite/encodings/sbcs-data-generated.js
+// server/node_modules/iconv-lite/encodings/sbcs-data-generated.js
 var require_sbcs_data_generated = __commonJS({
-  "../../server/node_modules/iconv-lite/encodings/sbcs-data-generated.js"(exports2, module2) {
+  "server/node_modules/iconv-lite/encodings/sbcs-data-generated.js"(exports2, module2) {
     "use strict";
     module2.exports = {
       "437": "cp437",
@@ -3063,9 +3064,9 @@ var require_sbcs_data_generated = __commonJS({
   }
 });
 
-// ../../server/node_modules/iconv-lite/encodings/dbcs-codec.js
+// server/node_modules/iconv-lite/encodings/dbcs-codec.js
 var require_dbcs_codec = __commonJS({
-  "../../server/node_modules/iconv-lite/encodings/dbcs-codec.js"(exports2) {
+  "server/node_modules/iconv-lite/encodings/dbcs-codec.js"(exports2) {
     "use strict";
     var Buffer3 = require_safer().Buffer;
     exports2._dbcs = DBCSCodec;
@@ -3444,9 +3445,9 @@ var require_dbcs_codec = __commonJS({
   }
 });
 
-// ../../server/node_modules/iconv-lite/encodings/tables/shiftjis.json
+// server/node_modules/iconv-lite/encodings/tables/shiftjis.json
 var require_shiftjis = __commonJS({
-  "../../server/node_modules/iconv-lite/encodings/tables/shiftjis.json"(exports2, module2) {
+  "server/node_modules/iconv-lite/encodings/tables/shiftjis.json"(exports2, module2) {
     module2.exports = [
       ["0", "\0", 128],
       ["a1", "\uFF61", 62],
@@ -3575,9 +3576,9 @@ var require_shiftjis = __commonJS({
   }
 });
 
-// ../../server/node_modules/iconv-lite/encodings/tables/eucjp.json
+// server/node_modules/iconv-lite/encodings/tables/eucjp.json
 var require_eucjp = __commonJS({
-  "../../server/node_modules/iconv-lite/encodings/tables/eucjp.json"(exports2, module2) {
+  "server/node_modules/iconv-lite/encodings/tables/eucjp.json"(exports2, module2) {
     module2.exports = [
       ["0", "\0", 127],
       ["8ea1", "\uFF61", 62],
@@ -3763,9 +3764,9 @@ var require_eucjp = __commonJS({
   }
 });
 
-// ../../server/node_modules/iconv-lite/encodings/tables/cp936.json
+// server/node_modules/iconv-lite/encodings/tables/cp936.json
 var require_cp936 = __commonJS({
-  "../../server/node_modules/iconv-lite/encodings/tables/cp936.json"(exports2, module2) {
+  "server/node_modules/iconv-lite/encodings/tables/cp936.json"(exports2, module2) {
     module2.exports = [
       ["0", "\0", 127, "\u20AC"],
       ["8140", "\u4E02\u4E04\u4E05\u4E06\u4E0F\u4E12\u4E17\u4E1F\u4E20\u4E21\u4E23\u4E26\u4E29\u4E2E\u4E2F\u4E31\u4E33\u4E35\u4E37\u4E3C\u4E40\u4E41\u4E42\u4E44\u4E46\u4E4A\u4E51\u4E55\u4E57\u4E5A\u4E5B\u4E62\u4E63\u4E64\u4E65\u4E67\u4E68\u4E6A", 5, "\u4E72\u4E74", 9, "\u4E7F", 6, "\u4E87\u4E8A"],
@@ -4033,9 +4034,9 @@ var require_cp936 = __commonJS({
   }
 });
 
-// ../../server/node_modules/iconv-lite/encodings/tables/gbk-added.json
+// server/node_modules/iconv-lite/encodings/tables/gbk-added.json
 var require_gbk_added = __commonJS({
-  "../../server/node_modules/iconv-lite/encodings/tables/gbk-added.json"(exports2, module2) {
+  "server/node_modules/iconv-lite/encodings/tables/gbk-added.json"(exports2, module2) {
     module2.exports = [
       ["a140", "\uE4C6", 62],
       ["a180", "\uE505", 32],
@@ -4094,16 +4095,16 @@ var require_gbk_added = __commonJS({
   }
 });
 
-// ../../server/node_modules/iconv-lite/encodings/tables/gb18030-ranges.json
+// server/node_modules/iconv-lite/encodings/tables/gb18030-ranges.json
 var require_gb18030_ranges = __commonJS({
-  "../../server/node_modules/iconv-lite/encodings/tables/gb18030-ranges.json"(exports2, module2) {
+  "server/node_modules/iconv-lite/encodings/tables/gb18030-ranges.json"(exports2, module2) {
     module2.exports = { uChars: [128, 165, 169, 178, 184, 216, 226, 235, 238, 244, 248, 251, 253, 258, 276, 284, 300, 325, 329, 334, 364, 463, 465, 467, 469, 471, 473, 475, 477, 506, 594, 610, 712, 716, 730, 930, 938, 962, 970, 1026, 1104, 1106, 8209, 8215, 8218, 8222, 8231, 8241, 8244, 8246, 8252, 8365, 8452, 8454, 8458, 8471, 8482, 8556, 8570, 8596, 8602, 8713, 8720, 8722, 8726, 8731, 8737, 8740, 8742, 8748, 8751, 8760, 8766, 8777, 8781, 8787, 8802, 8808, 8816, 8854, 8858, 8870, 8896, 8979, 9322, 9372, 9548, 9588, 9616, 9622, 9634, 9652, 9662, 9672, 9676, 9680, 9702, 9735, 9738, 9793, 9795, 11906, 11909, 11913, 11917, 11928, 11944, 11947, 11951, 11956, 11960, 11964, 11979, 12284, 12292, 12312, 12319, 12330, 12351, 12436, 12447, 12535, 12543, 12586, 12842, 12850, 12964, 13200, 13215, 13218, 13253, 13263, 13267, 13270, 13384, 13428, 13727, 13839, 13851, 14617, 14703, 14801, 14816, 14964, 15183, 15471, 15585, 16471, 16736, 17208, 17325, 17330, 17374, 17623, 17997, 18018, 18212, 18218, 18301, 18318, 18760, 18811, 18814, 18820, 18823, 18844, 18848, 18872, 19576, 19620, 19738, 19887, 40870, 59244, 59336, 59367, 59413, 59417, 59423, 59431, 59437, 59443, 59452, 59460, 59478, 59493, 63789, 63866, 63894, 63976, 63986, 64016, 64018, 64021, 64025, 64034, 64037, 64042, 65074, 65093, 65107, 65112, 65127, 65132, 65375, 65510, 65536], gbChars: [0, 36, 38, 45, 50, 81, 89, 95, 96, 100, 103, 104, 105, 109, 126, 133, 148, 172, 175, 179, 208, 306, 307, 308, 309, 310, 311, 312, 313, 341, 428, 443, 544, 545, 558, 741, 742, 749, 750, 805, 819, 820, 7922, 7924, 7925, 7927, 7934, 7943, 7944, 7945, 7950, 8062, 8148, 8149, 8152, 8164, 8174, 8236, 8240, 8262, 8264, 8374, 8380, 8381, 8384, 8388, 8390, 8392, 8393, 8394, 8396, 8401, 8406, 8416, 8419, 8424, 8437, 8439, 8445, 8482, 8485, 8496, 8521, 8603, 8936, 8946, 9046, 9050, 9063, 9066, 9076, 9092, 9100, 9108, 9111, 9113, 9131, 9162, 9164, 9218, 9219, 11329, 11331, 11334, 11336, 11346, 11361, 11363, 11366, 11370, 11372, 11375, 11389, 11682, 11686, 11687, 11692, 11694, 11714, 11716, 11723, 11725, 11730, 11736, 11982, 11989, 12102, 12336, 12348, 12350, 12384, 12393, 12395, 12397, 12510, 12553, 12851, 12962, 12973, 13738, 13823, 13919, 13933, 14080, 14298, 14585, 14698, 15583, 15847, 16318, 16434, 16438, 16481, 16729, 17102, 17122, 17315, 17320, 17402, 17418, 17859, 17909, 17911, 17915, 17916, 17936, 17939, 17961, 18664, 18703, 18814, 18962, 19043, 33469, 33470, 33471, 33484, 33485, 33490, 33497, 33501, 33505, 33513, 33520, 33536, 33550, 37845, 37921, 37948, 38029, 38038, 38064, 38065, 38066, 38069, 38075, 38076, 38078, 39108, 39109, 39113, 39114, 39115, 39116, 39265, 39394, 189e3] };
   }
 });
 
-// ../../server/node_modules/iconv-lite/encodings/tables/cp949.json
+// server/node_modules/iconv-lite/encodings/tables/cp949.json
 var require_cp949 = __commonJS({
-  "../../server/node_modules/iconv-lite/encodings/tables/cp949.json"(exports2, module2) {
+  "server/node_modules/iconv-lite/encodings/tables/cp949.json"(exports2, module2) {
     module2.exports = [
       ["0", "\0", 127],
       ["8141", "\uAC02\uAC03\uAC05\uAC06\uAC0B", 4, "\uAC18\uAC1E\uAC1F\uAC21\uAC22\uAC23\uAC25", 6, "\uAC2E\uAC32\uAC33\uAC34"],
@@ -4380,9 +4381,9 @@ var require_cp949 = __commonJS({
   }
 });
 
-// ../../server/node_modules/iconv-lite/encodings/tables/cp950.json
+// server/node_modules/iconv-lite/encodings/tables/cp950.json
 var require_cp950 = __commonJS({
-  "../../server/node_modules/iconv-lite/encodings/tables/cp950.json"(exports2, module2) {
+  "server/node_modules/iconv-lite/encodings/tables/cp950.json"(exports2, module2) {
     module2.exports = [
       ["0", "\0", 127],
       ["a140", "\u3000\uFF0C\u3001\u3002\uFF0E\u2027\uFF1B\uFF1A\uFF1F\uFF01\uFE30\u2026\u2025\uFE50\uFE51\uFE52\xB7\uFE54\uFE55\uFE56\uFE57\uFF5C\u2013\uFE31\u2014\uFE33\u2574\uFE34\uFE4F\uFF08\uFF09\uFE35\uFE36\uFF5B\uFF5D\uFE37\uFE38\u3014\u3015\uFE39\uFE3A\u3010\u3011\uFE3B\uFE3C\u300A\u300B\uFE3D\uFE3E\u3008\u3009\uFE3F\uFE40\u300C\u300D\uFE41\uFE42\u300E\u300F\uFE43\uFE44\uFE59\uFE5A"],
@@ -4563,9 +4564,9 @@ var require_cp950 = __commonJS({
   }
 });
 
-// ../../server/node_modules/iconv-lite/encodings/tables/big5-added.json
+// server/node_modules/iconv-lite/encodings/tables/big5-added.json
 var require_big5_added = __commonJS({
-  "../../server/node_modules/iconv-lite/encodings/tables/big5-added.json"(exports2, module2) {
+  "server/node_modules/iconv-lite/encodings/tables/big5-added.json"(exports2, module2) {
     module2.exports = [
       ["8740", "\u43F0\u4C32\u4603\u45A6\u4578\u{27267}\u4D77\u45B3\u{27CB1}\u4CE2\u{27CC5}\u3B95\u4736\u4744\u4C47\u4C40\u{242BF}\u{23617}\u{27352}\u{26E8B}\u{270D2}\u4C57\u{2A351}\u474F\u45DA\u4C85\u{27C6C}\u4D07\u4AA4\u46A1\u{26B23}\u7225\u{25A54}\u{21A63}\u{23E06}\u{23F61}\u664D\u56FB"],
       ["8767", "\u7D95\u591D\u{28BB9}\u3DF4\u9734\u{27BEF}\u5BDB\u{21D5E}\u5AA4\u3625\u{29EB0}\u5AD1\u5BB7\u5CFC\u676E\u8593\u{29945}\u7461\u749D\u3875\u{21D53}\u{2369E}\u{26021}\u3EEC"],
@@ -4691,9 +4692,9 @@ var require_big5_added = __commonJS({
   }
 });
 
-// ../../server/node_modules/iconv-lite/encodings/dbcs-data.js
+// server/node_modules/iconv-lite/encodings/dbcs-data.js
 var require_dbcs_data = __commonJS({
-  "../../server/node_modules/iconv-lite/encodings/dbcs-data.js"(exports2, module2) {
+  "server/node_modules/iconv-lite/encodings/dbcs-data.js"(exports2, module2) {
     "use strict";
     module2.exports = {
       // == Japanese/ShiftJIS ====================================================
@@ -4866,9 +4867,9 @@ var require_dbcs_data = __commonJS({
   }
 });
 
-// ../../server/node_modules/iconv-lite/encodings/index.js
+// server/node_modules/iconv-lite/encodings/index.js
 var require_encodings = __commonJS({
-  "../../server/node_modules/iconv-lite/encodings/index.js"(exports2, module2) {
+  "server/node_modules/iconv-lite/encodings/index.js"(exports2, module2) {
     "use strict";
     var modules = [
       require_internal(),
@@ -4892,9 +4893,9 @@ var require_encodings = __commonJS({
   }
 });
 
-// ../../server/node_modules/iconv-lite/lib/streams.js
+// server/node_modules/iconv-lite/lib/streams.js
 var require_streams = __commonJS({
-  "../../server/node_modules/iconv-lite/lib/streams.js"(exports2, module2) {
+  "server/node_modules/iconv-lite/lib/streams.js"(exports2, module2) {
     "use strict";
     var Buffer3 = require("buffer").Buffer;
     var Transform = require("stream").Transform;
@@ -4993,9 +4994,9 @@ var require_streams = __commonJS({
   }
 });
 
-// ../../server/node_modules/iconv-lite/lib/extend-node.js
+// server/node_modules/iconv-lite/lib/extend-node.js
 var require_extend_node = __commonJS({
-  "../../server/node_modules/iconv-lite/lib/extend-node.js"(exports2, module2) {
+  "server/node_modules/iconv-lite/lib/extend-node.js"(exports2, module2) {
     "use strict";
     var Buffer3 = require("buffer").Buffer;
     module2.exports = function(iconv) {
@@ -5155,9 +5156,9 @@ var require_extend_node = __commonJS({
   }
 });
 
-// ../../server/node_modules/iconv-lite/lib/index.js
+// server/node_modules/iconv-lite/lib/index.js
 var require_lib = __commonJS({
-  "../../server/node_modules/iconv-lite/lib/index.js"(exports2, module2) {
+  "server/node_modules/iconv-lite/lib/index.js"(exports2, module2) {
     "use strict";
     var Buffer3 = require_safer().Buffer;
     var bomHandling = require_bom_handling();
@@ -5258,9 +5259,9 @@ var require_lib = __commonJS({
   }
 });
 
-// ../../server/node_modules/unpipe/index.js
+// server/node_modules/unpipe/index.js
 var require_unpipe = __commonJS({
-  "../../server/node_modules/unpipe/index.js"(exports2, module2) {
+  "server/node_modules/unpipe/index.js"(exports2, module2) {
     "use strict";
     module2.exports = unpipe;
     function hasPipeDataListeners(stream) {
@@ -5296,9 +5297,9 @@ var require_unpipe = __commonJS({
   }
 });
 
-// ../../server/node_modules/raw-body/index.js
+// server/node_modules/raw-body/index.js
 var require_raw_body = __commonJS({
-  "../../server/node_modules/raw-body/index.js"(exports2, module2) {
+  "server/node_modules/raw-body/index.js"(exports2, module2) {
     "use strict";
     var asyncHooks = tryRequireAsyncHooks();
     var bytes = require_bytes();
@@ -5485,9 +5486,9 @@ var require_raw_body = __commonJS({
   }
 });
 
-// ../../server/node_modules/ee-first/index.js
+// server/node_modules/ee-first/index.js
 var require_ee_first = __commonJS({
-  "../../server/node_modules/ee-first/index.js"(exports2, module2) {
+  "server/node_modules/ee-first/index.js"(exports2, module2) {
     "use strict";
     module2.exports = first;
     function first(stuff, done) {
@@ -5541,9 +5542,9 @@ var require_ee_first = __commonJS({
   }
 });
 
-// ../../server/node_modules/on-finished/index.js
+// server/node_modules/on-finished/index.js
 var require_on_finished = __commonJS({
-  "../../server/node_modules/on-finished/index.js"(exports2, module2) {
+  "server/node_modules/on-finished/index.js"(exports2, module2) {
     "use strict";
     module2.exports = onFinished;
     module2.exports.isFinished = isFinished;
@@ -5645,9 +5646,9 @@ var require_on_finished = __commonJS({
   }
 });
 
-// ../../server/node_modules/body-parser/lib/read.js
+// server/node_modules/body-parser/lib/read.js
 var require_read = __commonJS({
-  "../../server/node_modules/body-parser/lib/read.js"(exports2, module2) {
+  "server/node_modules/body-parser/lib/read.js"(exports2, module2) {
     "use strict";
     var createError = require_http_errors();
     var destroy = require_destroy();
@@ -5772,9 +5773,9 @@ var require_read = __commonJS({
   }
 });
 
-// ../../server/node_modules/media-typer/index.js
+// server/node_modules/media-typer/index.js
 var require_media_typer = __commonJS({
-  "../../server/node_modules/media-typer/index.js"(exports2) {
+  "server/node_modules/media-typer/index.js"(exports2) {
     var paramRegExp = /; *([!#$%&'\*\+\-\.0-9A-Z\^_`a-z\|~]+) *= *("(?:[ !\u0023-\u005b\u005d-\u007e\u0080-\u00ff]|\\[\u0020-\u007e])*"|[!#$%&'\*\+\-\.0-9A-Z\^_`a-z\|~]+) */g;
     var textRegExp = /^[\u0020-\u007e\u0080-\u00ff]+$/;
     var tokenRegExp = /^[!#$%&'\*\+\-\.0-9A-Z\^_`a-z\|~]+$/;
@@ -5896,9 +5897,9 @@ var require_media_typer = __commonJS({
   }
 });
 
-// ../../server/node_modules/mime-db/db.json
+// server/node_modules/mime-db/db.json
 var require_db = __commonJS({
-  "../../server/node_modules/mime-db/db.json"(exports2, module2) {
+  "server/node_modules/mime-db/db.json"(exports2, module2) {
     module2.exports = {
       "application/1d-interleaved-parityfec": {
         source: "iana"
@@ -14421,16 +14422,16 @@ var require_db = __commonJS({
   }
 });
 
-// ../../server/node_modules/mime-db/index.js
+// server/node_modules/mime-db/index.js
 var require_mime_db = __commonJS({
-  "../../server/node_modules/mime-db/index.js"(exports2, module2) {
+  "server/node_modules/mime-db/index.js"(exports2, module2) {
     module2.exports = require_db();
   }
 });
 
-// ../../server/node_modules/mime-types/index.js
+// server/node_modules/mime-types/index.js
 var require_mime_types = __commonJS({
-  "../../server/node_modules/mime-types/index.js"(exports2) {
+  "server/node_modules/mime-types/index.js"(exports2) {
     "use strict";
     var db = require_mime_db();
     var extname = require("path").extname;
@@ -14518,9 +14519,9 @@ var require_mime_types = __commonJS({
   }
 });
 
-// ../../server/node_modules/type-is/index.js
+// server/node_modules/type-is/index.js
 var require_type_is = __commonJS({
-  "../../server/node_modules/type-is/index.js"(exports2, module2) {
+  "server/node_modules/type-is/index.js"(exports2, module2) {
     "use strict";
     var typer = require_media_typer();
     var mime = require_mime_types();
@@ -14623,9 +14624,9 @@ var require_type_is = __commonJS({
   }
 });
 
-// ../../server/node_modules/body-parser/lib/types/json.js
+// server/node_modules/body-parser/lib/types/json.js
 var require_json = __commonJS({
-  "../../server/node_modules/body-parser/lib/types/json.js"(exports2, module2) {
+  "server/node_modules/body-parser/lib/types/json.js"(exports2, module2) {
     "use strict";
     var bytes = require_bytes();
     var contentType = require_content_type();
@@ -14757,9 +14758,9 @@ var require_json = __commonJS({
   }
 });
 
-// ../../server/node_modules/body-parser/lib/types/raw.js
+// server/node_modules/body-parser/lib/types/raw.js
 var require_raw = __commonJS({
-  "../../server/node_modules/body-parser/lib/types/raw.js"(exports2, module2) {
+  "server/node_modules/body-parser/lib/types/raw.js"(exports2, module2) {
     "use strict";
     var bytes = require_bytes();
     var debug = require_src()("body-parser:raw");
@@ -14816,9 +14817,9 @@ var require_raw = __commonJS({
   }
 });
 
-// ../../server/node_modules/body-parser/lib/types/text.js
+// server/node_modules/body-parser/lib/types/text.js
 var require_text = __commonJS({
-  "../../server/node_modules/body-parser/lib/types/text.js"(exports2, module2) {
+  "server/node_modules/body-parser/lib/types/text.js"(exports2, module2) {
     "use strict";
     var bytes = require_bytes();
     var contentType = require_content_type();
@@ -14885,24 +14886,24 @@ var require_text = __commonJS({
   }
 });
 
-// ../../server/node_modules/es-errors/type.js
+// server/node_modules/es-errors/type.js
 var require_type = __commonJS({
-  "../../server/node_modules/es-errors/type.js"(exports2, module2) {
+  "server/node_modules/es-errors/type.js"(exports2, module2) {
     "use strict";
     module2.exports = TypeError;
   }
 });
 
-// ../../server/node_modules/object-inspect/util.inspect.js
+// server/node_modules/object-inspect/util.inspect.js
 var require_util_inspect = __commonJS({
-  "../../server/node_modules/object-inspect/util.inspect.js"(exports2, module2) {
+  "server/node_modules/object-inspect/util.inspect.js"(exports2, module2) {
     module2.exports = require("util").inspect;
   }
 });
 
-// ../../server/node_modules/object-inspect/index.js
+// server/node_modules/object-inspect/index.js
 var require_object_inspect = __commonJS({
-  "../../server/node_modules/object-inspect/index.js"(exports2, module2) {
+  "server/node_modules/object-inspect/index.js"(exports2, module2) {
     var hasMap = typeof Map === "function" && Map.prototype;
     var mapSizeDescriptor = Object.getOwnPropertyDescriptor && hasMap ? Object.getOwnPropertyDescriptor(Map.prototype, "size") : null;
     var mapSize = hasMap && mapSizeDescriptor && typeof mapSizeDescriptor.get === "function" ? mapSizeDescriptor.get : null;
@@ -15431,9 +15432,9 @@ var require_object_inspect = __commonJS({
   }
 });
 
-// ../../server/node_modules/side-channel-list/index.js
+// server/node_modules/side-channel-list/index.js
 var require_side_channel_list = __commonJS({
-  "../../server/node_modules/side-channel-list/index.js"(exports2, module2) {
+  "server/node_modules/side-channel-list/index.js"(exports2, module2) {
     "use strict";
     var inspect = require_object_inspect();
     var $TypeError = require_type();
@@ -15524,113 +15525,113 @@ var require_side_channel_list = __commonJS({
   }
 });
 
-// ../../server/node_modules/es-object-atoms/index.js
+// server/node_modules/es-object-atoms/index.js
 var require_es_object_atoms = __commonJS({
-  "../../server/node_modules/es-object-atoms/index.js"(exports2, module2) {
+  "server/node_modules/es-object-atoms/index.js"(exports2, module2) {
     "use strict";
     module2.exports = Object;
   }
 });
 
-// ../../server/node_modules/es-errors/index.js
+// server/node_modules/es-errors/index.js
 var require_es_errors = __commonJS({
-  "../../server/node_modules/es-errors/index.js"(exports2, module2) {
+  "server/node_modules/es-errors/index.js"(exports2, module2) {
     "use strict";
     module2.exports = Error;
   }
 });
 
-// ../../server/node_modules/es-errors/eval.js
+// server/node_modules/es-errors/eval.js
 var require_eval = __commonJS({
-  "../../server/node_modules/es-errors/eval.js"(exports2, module2) {
+  "server/node_modules/es-errors/eval.js"(exports2, module2) {
     "use strict";
     module2.exports = EvalError;
   }
 });
 
-// ../../server/node_modules/es-errors/range.js
+// server/node_modules/es-errors/range.js
 var require_range = __commonJS({
-  "../../server/node_modules/es-errors/range.js"(exports2, module2) {
+  "server/node_modules/es-errors/range.js"(exports2, module2) {
     "use strict";
     module2.exports = RangeError;
   }
 });
 
-// ../../server/node_modules/es-errors/ref.js
+// server/node_modules/es-errors/ref.js
 var require_ref = __commonJS({
-  "../../server/node_modules/es-errors/ref.js"(exports2, module2) {
+  "server/node_modules/es-errors/ref.js"(exports2, module2) {
     "use strict";
     module2.exports = ReferenceError;
   }
 });
 
-// ../../server/node_modules/es-errors/syntax.js
+// server/node_modules/es-errors/syntax.js
 var require_syntax = __commonJS({
-  "../../server/node_modules/es-errors/syntax.js"(exports2, module2) {
+  "server/node_modules/es-errors/syntax.js"(exports2, module2) {
     "use strict";
     module2.exports = SyntaxError;
   }
 });
 
-// ../../server/node_modules/es-errors/uri.js
+// server/node_modules/es-errors/uri.js
 var require_uri = __commonJS({
-  "../../server/node_modules/es-errors/uri.js"(exports2, module2) {
+  "server/node_modules/es-errors/uri.js"(exports2, module2) {
     "use strict";
     module2.exports = URIError;
   }
 });
 
-// ../../server/node_modules/math-intrinsics/abs.js
+// server/node_modules/math-intrinsics/abs.js
 var require_abs = __commonJS({
-  "../../server/node_modules/math-intrinsics/abs.js"(exports2, module2) {
+  "server/node_modules/math-intrinsics/abs.js"(exports2, module2) {
     "use strict";
     module2.exports = Math.abs;
   }
 });
 
-// ../../server/node_modules/math-intrinsics/floor.js
+// server/node_modules/math-intrinsics/floor.js
 var require_floor = __commonJS({
-  "../../server/node_modules/math-intrinsics/floor.js"(exports2, module2) {
+  "server/node_modules/math-intrinsics/floor.js"(exports2, module2) {
     "use strict";
     module2.exports = Math.floor;
   }
 });
 
-// ../../server/node_modules/math-intrinsics/max.js
+// server/node_modules/math-intrinsics/max.js
 var require_max = __commonJS({
-  "../../server/node_modules/math-intrinsics/max.js"(exports2, module2) {
+  "server/node_modules/math-intrinsics/max.js"(exports2, module2) {
     "use strict";
     module2.exports = Math.max;
   }
 });
 
-// ../../server/node_modules/math-intrinsics/min.js
+// server/node_modules/math-intrinsics/min.js
 var require_min = __commonJS({
-  "../../server/node_modules/math-intrinsics/min.js"(exports2, module2) {
+  "server/node_modules/math-intrinsics/min.js"(exports2, module2) {
     "use strict";
     module2.exports = Math.min;
   }
 });
 
-// ../../server/node_modules/math-intrinsics/pow.js
+// server/node_modules/math-intrinsics/pow.js
 var require_pow = __commonJS({
-  "../../server/node_modules/math-intrinsics/pow.js"(exports2, module2) {
+  "server/node_modules/math-intrinsics/pow.js"(exports2, module2) {
     "use strict";
     module2.exports = Math.pow;
   }
 });
 
-// ../../server/node_modules/math-intrinsics/round.js
+// server/node_modules/math-intrinsics/round.js
 var require_round = __commonJS({
-  "../../server/node_modules/math-intrinsics/round.js"(exports2, module2) {
+  "server/node_modules/math-intrinsics/round.js"(exports2, module2) {
     "use strict";
     module2.exports = Math.round;
   }
 });
 
-// ../../server/node_modules/math-intrinsics/isNaN.js
+// server/node_modules/math-intrinsics/isNaN.js
 var require_isNaN = __commonJS({
-  "../../server/node_modules/math-intrinsics/isNaN.js"(exports2, module2) {
+  "server/node_modules/math-intrinsics/isNaN.js"(exports2, module2) {
     "use strict";
     module2.exports = Number.isNaN || function isNaN2(a) {
       return a !== a;
@@ -15638,9 +15639,9 @@ var require_isNaN = __commonJS({
   }
 });
 
-// ../../server/node_modules/math-intrinsics/sign.js
+// server/node_modules/math-intrinsics/sign.js
 var require_sign = __commonJS({
-  "../../server/node_modules/math-intrinsics/sign.js"(exports2, module2) {
+  "server/node_modules/math-intrinsics/sign.js"(exports2, module2) {
     "use strict";
     var $isNaN = require_isNaN();
     module2.exports = function sign(number) {
@@ -15652,17 +15653,17 @@ var require_sign = __commonJS({
   }
 });
 
-// ../../server/node_modules/gopd/gOPD.js
+// server/node_modules/gopd/gOPD.js
 var require_gOPD = __commonJS({
-  "../../server/node_modules/gopd/gOPD.js"(exports2, module2) {
+  "server/node_modules/gopd/gOPD.js"(exports2, module2) {
     "use strict";
     module2.exports = Object.getOwnPropertyDescriptor;
   }
 });
 
-// ../../server/node_modules/gopd/index.js
+// server/node_modules/gopd/index.js
 var require_gopd = __commonJS({
-  "../../server/node_modules/gopd/index.js"(exports2, module2) {
+  "server/node_modules/gopd/index.js"(exports2, module2) {
     "use strict";
     var $gOPD = require_gOPD();
     if ($gOPD) {
@@ -15676,9 +15677,9 @@ var require_gopd = __commonJS({
   }
 });
 
-// ../../server/node_modules/es-define-property/index.js
+// server/node_modules/es-define-property/index.js
 var require_es_define_property = __commonJS({
-  "../../server/node_modules/es-define-property/index.js"(exports2, module2) {
+  "server/node_modules/es-define-property/index.js"(exports2, module2) {
     "use strict";
     var $defineProperty = Object.defineProperty || false;
     if ($defineProperty) {
@@ -15692,9 +15693,9 @@ var require_es_define_property = __commonJS({
   }
 });
 
-// ../../server/node_modules/has-symbols/shams.js
+// server/node_modules/has-symbols/shams.js
 var require_shams = __commonJS({
-  "../../server/node_modules/has-symbols/shams.js"(exports2, module2) {
+  "server/node_modules/has-symbols/shams.js"(exports2, module2) {
     "use strict";
     module2.exports = function hasSymbols() {
       if (typeof Symbol !== "function" || typeof Object.getOwnPropertySymbols !== "function") {
@@ -15747,9 +15748,9 @@ var require_shams = __commonJS({
   }
 });
 
-// ../../server/node_modules/has-symbols/index.js
+// server/node_modules/has-symbols/index.js
 var require_has_symbols = __commonJS({
-  "../../server/node_modules/has-symbols/index.js"(exports2, module2) {
+  "server/node_modules/has-symbols/index.js"(exports2, module2) {
     "use strict";
     var origSymbol = typeof Symbol !== "undefined" && Symbol;
     var hasSymbolSham = require_shams();
@@ -15771,26 +15772,26 @@ var require_has_symbols = __commonJS({
   }
 });
 
-// ../../server/node_modules/get-proto/Reflect.getPrototypeOf.js
+// server/node_modules/get-proto/Reflect.getPrototypeOf.js
 var require_Reflect_getPrototypeOf = __commonJS({
-  "../../server/node_modules/get-proto/Reflect.getPrototypeOf.js"(exports2, module2) {
+  "server/node_modules/get-proto/Reflect.getPrototypeOf.js"(exports2, module2) {
     "use strict";
     module2.exports = typeof Reflect !== "undefined" && Reflect.getPrototypeOf || null;
   }
 });
 
-// ../../server/node_modules/get-proto/Object.getPrototypeOf.js
+// server/node_modules/get-proto/Object.getPrototypeOf.js
 var require_Object_getPrototypeOf = __commonJS({
-  "../../server/node_modules/get-proto/Object.getPrototypeOf.js"(exports2, module2) {
+  "server/node_modules/get-proto/Object.getPrototypeOf.js"(exports2, module2) {
     "use strict";
     var $Object = require_es_object_atoms();
     module2.exports = $Object.getPrototypeOf || null;
   }
 });
 
-// ../../server/node_modules/function-bind/implementation.js
+// server/node_modules/function-bind/implementation.js
 var require_implementation = __commonJS({
-  "../../server/node_modules/function-bind/implementation.js"(exports2, module2) {
+  "server/node_modules/function-bind/implementation.js"(exports2, module2) {
     "use strict";
     var ERROR_MESSAGE = "Function.prototype.bind called on incompatible ";
     var toStr = Object.prototype.toString;
@@ -15864,42 +15865,42 @@ var require_implementation = __commonJS({
   }
 });
 
-// ../../server/node_modules/function-bind/index.js
+// server/node_modules/function-bind/index.js
 var require_function_bind = __commonJS({
-  "../../server/node_modules/function-bind/index.js"(exports2, module2) {
+  "server/node_modules/function-bind/index.js"(exports2, module2) {
     "use strict";
     var implementation = require_implementation();
     module2.exports = Function.prototype.bind || implementation;
   }
 });
 
-// ../../server/node_modules/call-bind-apply-helpers/functionCall.js
+// server/node_modules/call-bind-apply-helpers/functionCall.js
 var require_functionCall = __commonJS({
-  "../../server/node_modules/call-bind-apply-helpers/functionCall.js"(exports2, module2) {
+  "server/node_modules/call-bind-apply-helpers/functionCall.js"(exports2, module2) {
     "use strict";
     module2.exports = Function.prototype.call;
   }
 });
 
-// ../../server/node_modules/call-bind-apply-helpers/functionApply.js
+// server/node_modules/call-bind-apply-helpers/functionApply.js
 var require_functionApply = __commonJS({
-  "../../server/node_modules/call-bind-apply-helpers/functionApply.js"(exports2, module2) {
+  "server/node_modules/call-bind-apply-helpers/functionApply.js"(exports2, module2) {
     "use strict";
     module2.exports = Function.prototype.apply;
   }
 });
 
-// ../../server/node_modules/call-bind-apply-helpers/reflectApply.js
+// server/node_modules/call-bind-apply-helpers/reflectApply.js
 var require_reflectApply = __commonJS({
-  "../../server/node_modules/call-bind-apply-helpers/reflectApply.js"(exports2, module2) {
+  "server/node_modules/call-bind-apply-helpers/reflectApply.js"(exports2, module2) {
     "use strict";
     module2.exports = typeof Reflect !== "undefined" && Reflect && Reflect.apply;
   }
 });
 
-// ../../server/node_modules/call-bind-apply-helpers/actualApply.js
+// server/node_modules/call-bind-apply-helpers/actualApply.js
 var require_actualApply = __commonJS({
-  "../../server/node_modules/call-bind-apply-helpers/actualApply.js"(exports2, module2) {
+  "server/node_modules/call-bind-apply-helpers/actualApply.js"(exports2, module2) {
     "use strict";
     var bind = require_function_bind();
     var $apply = require_functionApply();
@@ -15909,9 +15910,9 @@ var require_actualApply = __commonJS({
   }
 });
 
-// ../../server/node_modules/call-bind-apply-helpers/index.js
+// server/node_modules/call-bind-apply-helpers/index.js
 var require_call_bind_apply_helpers = __commonJS({
-  "../../server/node_modules/call-bind-apply-helpers/index.js"(exports2, module2) {
+  "server/node_modules/call-bind-apply-helpers/index.js"(exports2, module2) {
     "use strict";
     var bind = require_function_bind();
     var $TypeError = require_type();
@@ -15926,9 +15927,9 @@ var require_call_bind_apply_helpers = __commonJS({
   }
 });
 
-// ../../server/node_modules/dunder-proto/get.js
+// server/node_modules/dunder-proto/get.js
 var require_get = __commonJS({
-  "../../server/node_modules/dunder-proto/get.js"(exports2, module2) {
+  "server/node_modules/dunder-proto/get.js"(exports2, module2) {
     "use strict";
     var callBind = require_call_bind_apply_helpers();
     var gOPD = require_gopd();
@@ -15957,9 +15958,9 @@ var require_get = __commonJS({
   }
 });
 
-// ../../server/node_modules/get-proto/index.js
+// server/node_modules/get-proto/index.js
 var require_get_proto = __commonJS({
-  "../../server/node_modules/get-proto/index.js"(exports2, module2) {
+  "server/node_modules/get-proto/index.js"(exports2, module2) {
     "use strict";
     var reflectGetProto = require_Reflect_getPrototypeOf();
     var originalGetProto = require_Object_getPrototypeOf();
@@ -15977,9 +15978,9 @@ var require_get_proto = __commonJS({
   }
 });
 
-// ../../server/node_modules/hasown/index.js
+// server/node_modules/hasown/index.js
 var require_hasown = __commonJS({
-  "../../server/node_modules/hasown/index.js"(exports2, module2) {
+  "server/node_modules/hasown/index.js"(exports2, module2) {
     "use strict";
     var call = Function.prototype.call;
     var $hasOwn = Object.prototype.hasOwnProperty;
@@ -15988,9 +15989,9 @@ var require_hasown = __commonJS({
   }
 });
 
-// ../../server/node_modules/get-intrinsic/index.js
+// server/node_modules/get-intrinsic/index.js
 var require_get_intrinsic = __commonJS({
-  "../../server/node_modules/get-intrinsic/index.js"(exports2, module2) {
+  "server/node_modules/get-intrinsic/index.js"(exports2, module2) {
     "use strict";
     var undefined2;
     var $Object = require_es_object_atoms();
@@ -16319,9 +16320,9 @@ var require_get_intrinsic = __commonJS({
   }
 });
 
-// ../../server/node_modules/call-bound/index.js
+// server/node_modules/call-bound/index.js
 var require_call_bound = __commonJS({
-  "../../server/node_modules/call-bound/index.js"(exports2, module2) {
+  "server/node_modules/call-bound/index.js"(exports2, module2) {
     "use strict";
     var GetIntrinsic = require_get_intrinsic();
     var callBindBasic = require_call_bind_apply_helpers();
@@ -16342,9 +16343,9 @@ var require_call_bound = __commonJS({
   }
 });
 
-// ../../server/node_modules/side-channel-map/index.js
+// server/node_modules/side-channel-map/index.js
 var require_side_channel_map = __commonJS({
-  "../../server/node_modules/side-channel-map/index.js"(exports2, module2) {
+  "server/node_modules/side-channel-map/index.js"(exports2, module2) {
     "use strict";
     var GetIntrinsic = require_get_intrinsic();
     var callBound = require_call_bound();
@@ -16398,9 +16399,9 @@ var require_side_channel_map = __commonJS({
   }
 });
 
-// ../../server/node_modules/side-channel-weakmap/index.js
+// server/node_modules/side-channel-weakmap/index.js
 var require_side_channel_weakmap = __commonJS({
-  "../../server/node_modules/side-channel-weakmap/index.js"(exports2, module2) {
+  "server/node_modules/side-channel-weakmap/index.js"(exports2, module2) {
     "use strict";
     var GetIntrinsic = require_get_intrinsic();
     var callBound = require_call_bound();
@@ -16471,9 +16472,9 @@ var require_side_channel_weakmap = __commonJS({
   }
 });
 
-// ../../server/node_modules/side-channel/index.js
+// server/node_modules/side-channel/index.js
 var require_side_channel = __commonJS({
-  "../../server/node_modules/side-channel/index.js"(exports2, module2) {
+  "server/node_modules/side-channel/index.js"(exports2, module2) {
     "use strict";
     var $TypeError = require_type();
     var inspect = require_object_inspect();
@@ -16511,9 +16512,9 @@ var require_side_channel = __commonJS({
   }
 });
 
-// ../../server/node_modules/qs/lib/formats.js
+// server/node_modules/qs/lib/formats.js
 var require_formats = __commonJS({
-  "../../server/node_modules/qs/lib/formats.js"(exports2, module2) {
+  "server/node_modules/qs/lib/formats.js"(exports2, module2) {
     "use strict";
     var replace = String.prototype.replace;
     var percentTwenties = /%20/g;
@@ -16537,9 +16538,9 @@ var require_formats = __commonJS({
   }
 });
 
-// ../../server/node_modules/qs/lib/utils.js
+// server/node_modules/qs/lib/utils.js
 var require_utils = __commonJS({
-  "../../server/node_modules/qs/lib/utils.js"(exports2, module2) {
+  "server/node_modules/qs/lib/utils.js"(exports2, module2) {
     "use strict";
     var formats = require_formats();
     var getSideChannel = require_side_channel();
@@ -16839,9 +16840,9 @@ var require_utils = __commonJS({
   }
 });
 
-// ../../server/node_modules/qs/lib/stringify.js
+// server/node_modules/qs/lib/stringify.js
 var require_stringify = __commonJS({
-  "../../server/node_modules/qs/lib/stringify.js"(exports2, module2) {
+  "server/node_modules/qs/lib/stringify.js"(exports2, module2) {
     "use strict";
     var getSideChannel = require_side_channel();
     var utils = require_utils();
@@ -17127,9 +17128,9 @@ var require_stringify = __commonJS({
   }
 });
 
-// ../../server/node_modules/qs/lib/parse.js
+// server/node_modules/qs/lib/parse.js
 var require_parse = __commonJS({
-  "../../server/node_modules/qs/lib/parse.js"(exports2, module2) {
+  "server/node_modules/qs/lib/parse.js"(exports2, module2) {
     "use strict";
     var utils = require_utils();
     var has2 = Object.prototype.hasOwnProperty;
@@ -17456,9 +17457,9 @@ var require_parse = __commonJS({
   }
 });
 
-// ../../server/node_modules/qs/lib/index.js
+// server/node_modules/qs/lib/index.js
 var require_lib2 = __commonJS({
-  "../../server/node_modules/qs/lib/index.js"(exports2, module2) {
+  "server/node_modules/qs/lib/index.js"(exports2, module2) {
     "use strict";
     var stringify2 = require_stringify();
     var parse2 = require_parse();
@@ -17471,9 +17472,9 @@ var require_lib2 = __commonJS({
   }
 });
 
-// ../../server/node_modules/body-parser/lib/types/urlencoded.js
+// server/node_modules/body-parser/lib/types/urlencoded.js
 var require_urlencoded = __commonJS({
-  "../../server/node_modules/body-parser/lib/types/urlencoded.js"(exports2, module2) {
+  "server/node_modules/body-parser/lib/types/urlencoded.js"(exports2, module2) {
     "use strict";
     var bytes = require_bytes();
     var contentType = require_content_type();
@@ -17647,9 +17648,9 @@ var require_urlencoded = __commonJS({
   }
 });
 
-// ../../server/node_modules/body-parser/index.js
+// server/node_modules/body-parser/index.js
 var require_body_parser = __commonJS({
-  "../../server/node_modules/body-parser/index.js"(exports2, module2) {
+  "server/node_modules/body-parser/index.js"(exports2, module2) {
     "use strict";
     var deprecate = require_depd()("body-parser");
     var parsers = /* @__PURE__ */ Object.create(null);
@@ -17724,9 +17725,9 @@ var require_body_parser = __commonJS({
   }
 });
 
-// ../../server/node_modules/merge-descriptors/index.js
+// server/node_modules/merge-descriptors/index.js
 var require_merge_descriptors = __commonJS({
-  "../../server/node_modules/merge-descriptors/index.js"(exports2, module2) {
+  "server/node_modules/merge-descriptors/index.js"(exports2, module2) {
     "use strict";
     module2.exports = merge;
     var hasOwnProperty = Object.prototype.hasOwnProperty;
@@ -17752,9 +17753,9 @@ var require_merge_descriptors = __commonJS({
   }
 });
 
-// ../../server/node_modules/encodeurl/index.js
+// server/node_modules/encodeurl/index.js
 var require_encodeurl = __commonJS({
-  "../../server/node_modules/encodeurl/index.js"(exports2, module2) {
+  "server/node_modules/encodeurl/index.js"(exports2, module2) {
     "use strict";
     module2.exports = encodeUrl;
     var ENCODE_CHARS_REGEXP = /(?:[^\x21\x23-\x3B\x3D\x3F-\x5F\x61-\x7A\x7C\x7E]|%(?:[^0-9A-Fa-f]|[0-9A-Fa-f][^0-9A-Fa-f]|$))+/g;
@@ -17766,9 +17767,9 @@ var require_encodeurl = __commonJS({
   }
 });
 
-// ../../server/node_modules/escape-html/index.js
+// server/node_modules/escape-html/index.js
 var require_escape_html = __commonJS({
-  "../../server/node_modules/escape-html/index.js"(exports2, module2) {
+  "server/node_modules/escape-html/index.js"(exports2, module2) {
     "use strict";
     var matchHtmlRegExp = /["'&<>]/;
     module2.exports = escapeHtml;
@@ -17813,9 +17814,9 @@ var require_escape_html = __commonJS({
   }
 });
 
-// ../../server/node_modules/parseurl/index.js
+// server/node_modules/parseurl/index.js
 var require_parseurl = __commonJS({
-  "../../server/node_modules/parseurl/index.js"(exports2, module2) {
+  "server/node_modules/parseurl/index.js"(exports2, module2) {
     "use strict";
     var url = require("url");
     var parse2 = url.parse;
@@ -17891,9 +17892,9 @@ var require_parseurl = __commonJS({
   }
 });
 
-// ../../server/node_modules/finalhandler/index.js
+// server/node_modules/finalhandler/index.js
 var require_finalhandler = __commonJS({
-  "../../server/node_modules/finalhandler/index.js"(exports2, module2) {
+  "server/node_modules/finalhandler/index.js"(exports2, module2) {
     "use strict";
     var debug = require_src()("finalhandler");
     var encodeUrl = require_encodeurl();
@@ -18041,9 +18042,9 @@ var require_finalhandler = __commonJS({
   }
 });
 
-// ../../server/node_modules/array-flatten/array-flatten.js
+// server/node_modules/array-flatten/array-flatten.js
 var require_array_flatten = __commonJS({
-  "../../server/node_modules/array-flatten/array-flatten.js"(exports2, module2) {
+  "server/node_modules/array-flatten/array-flatten.js"(exports2, module2) {
     "use strict";
     module2.exports = arrayFlatten;
     function flattenWithDepth(array, result2, depth) {
@@ -18077,9 +18078,9 @@ var require_array_flatten = __commonJS({
   }
 });
 
-// ../../server/node_modules/path-to-regexp/index.js
+// server/node_modules/path-to-regexp/index.js
 var require_path_to_regexp = __commonJS({
-  "../../server/node_modules/path-to-regexp/index.js"(exports2, module2) {
+  "server/node_modules/path-to-regexp/index.js"(exports2, module2) {
     module2.exports = pathToRegexp;
     var MATCHING_GROUP_REGEXP = /\\.|\((?:\?<(.*?)>)?(?!\?)/g;
     function pathToRegexp(path6, keys, options) {
@@ -18186,9 +18187,9 @@ var require_path_to_regexp = __commonJS({
   }
 });
 
-// ../../server/node_modules/express/lib/router/layer.js
+// server/node_modules/express/lib/router/layer.js
 var require_layer = __commonJS({
-  "../../server/node_modules/express/lib/router/layer.js"(exports2, module2) {
+  "server/node_modules/express/lib/router/layer.js"(exports2, module2) {
     "use strict";
     var pathRegexp = require_path_to_regexp();
     var debug = require_src()("express:router:layer");
@@ -18281,9 +18282,9 @@ var require_layer = __commonJS({
   }
 });
 
-// ../../server/node_modules/methods/index.js
+// server/node_modules/methods/index.js
 var require_methods = __commonJS({
-  "../../server/node_modules/methods/index.js"(exports2, module2) {
+  "server/node_modules/methods/index.js"(exports2, module2) {
     "use strict";
     var http = require("http");
     module2.exports = getCurrentNodeMethods() || getBasicNodeMethods();
@@ -18325,9 +18326,9 @@ var require_methods = __commonJS({
   }
 });
 
-// ../../server/node_modules/express/lib/router/route.js
+// server/node_modules/express/lib/router/route.js
 var require_route = __commonJS({
-  "../../server/node_modules/express/lib/router/route.js"(exports2, module2) {
+  "server/node_modules/express/lib/router/route.js"(exports2, module2) {
     "use strict";
     var debug = require_src()("express:router:route");
     var flatten = require_array_flatten();
@@ -18437,9 +18438,9 @@ var require_route = __commonJS({
   }
 });
 
-// ../../server/node_modules/utils-merge/index.js
+// server/node_modules/utils-merge/index.js
 var require_utils_merge = __commonJS({
-  "../../server/node_modules/utils-merge/index.js"(exports2, module2) {
+  "server/node_modules/utils-merge/index.js"(exports2, module2) {
     exports2 = module2.exports = function(a, b) {
       if (a && b) {
         for (var key in b) {
@@ -18451,9 +18452,9 @@ var require_utils_merge = __commonJS({
   }
 });
 
-// ../../server/node_modules/express/lib/router/index.js
+// server/node_modules/express/lib/router/index.js
 var require_router = __commonJS({
-  "../../server/node_modules/express/lib/router/index.js"(exports2, module2) {
+  "server/node_modules/express/lib/router/index.js"(exports2, module2) {
     "use strict";
     var Route = require_route();
     var Layer = require_layer();
@@ -18834,9 +18835,9 @@ var require_router = __commonJS({
   }
 });
 
-// ../../server/node_modules/express/lib/middleware/init.js
+// server/node_modules/express/lib/middleware/init.js
 var require_init = __commonJS({
-  "../../server/node_modules/express/lib/middleware/init.js"(exports2) {
+  "server/node_modules/express/lib/middleware/init.js"(exports2) {
     "use strict";
     var setPrototypeOf = require_setprototypeof();
     exports2.init = function(app2) {
@@ -18854,9 +18855,9 @@ var require_init = __commonJS({
   }
 });
 
-// ../../server/node_modules/express/lib/middleware/query.js
+// server/node_modules/express/lib/middleware/query.js
 var require_query = __commonJS({
-  "../../server/node_modules/express/lib/middleware/query.js"(exports2, module2) {
+  "server/node_modules/express/lib/middleware/query.js"(exports2, module2) {
     "use strict";
     var merge = require_utils_merge();
     var parseUrl = require_parseurl();
@@ -18882,9 +18883,9 @@ var require_query = __commonJS({
   }
 });
 
-// ../../server/node_modules/express/lib/view.js
+// server/node_modules/express/lib/view.js
 var require_view = __commonJS({
-  "../../server/node_modules/express/lib/view.js"(exports2, module2) {
+  "server/node_modules/express/lib/view.js"(exports2, module2) {
     "use strict";
     var debug = require_src()("express:view");
     var path6 = require("path");
@@ -18962,9 +18963,9 @@ var require_view = __commonJS({
   }
 });
 
-// ../../server/node_modules/safe-buffer/index.js
+// server/node_modules/safe-buffer/index.js
 var require_safe_buffer = __commonJS({
-  "../../server/node_modules/safe-buffer/index.js"(exports2, module2) {
+  "server/node_modules/safe-buffer/index.js"(exports2, module2) {
     var buffer = require("buffer");
     var Buffer3 = buffer.Buffer;
     function copyProps(src, dst) {
@@ -19020,9 +19021,9 @@ var require_safe_buffer = __commonJS({
   }
 });
 
-// ../../server/node_modules/content-disposition/index.js
+// server/node_modules/content-disposition/index.js
 var require_content_disposition = __commonJS({
-  "../../server/node_modules/content-disposition/index.js"(exports2, module2) {
+  "server/node_modules/content-disposition/index.js"(exports2, module2) {
     "use strict";
     module2.exports = contentDisposition;
     module2.exports.parse = parse2;
@@ -19183,9 +19184,9 @@ var require_content_disposition = __commonJS({
   }
 });
 
-// ../../server/node_modules/etag/index.js
+// server/node_modules/etag/index.js
 var require_etag = __commonJS({
-  "../../server/node_modules/etag/index.js"(exports2, module2) {
+  "server/node_modules/etag/index.js"(exports2, module2) {
     "use strict";
     module2.exports = etag;
     var crypto10 = require("crypto");
@@ -19225,9 +19226,9 @@ var require_etag = __commonJS({
   }
 });
 
-// ../../server/node_modules/fresh/index.js
+// server/node_modules/fresh/index.js
 var require_fresh = __commonJS({
-  "../../server/node_modules/fresh/index.js"(exports2, module2) {
+  "server/node_modules/fresh/index.js"(exports2, module2) {
     "use strict";
     var CACHE_CONTROL_NO_CACHE_REGEXP = /(?:^|,)\s*?no-cache\s*?(?:,|$)/;
     module2.exports = fresh;
@@ -19298,16 +19299,16 @@ var require_fresh = __commonJS({
   }
 });
 
-// ../../server/node_modules/mime/types.json
+// server/node_modules/mime/types.json
 var require_types = __commonJS({
-  "../../server/node_modules/mime/types.json"(exports2, module2) {
+  "server/node_modules/mime/types.json"(exports2, module2) {
     module2.exports = { "application/andrew-inset": ["ez"], "application/applixware": ["aw"], "application/atom+xml": ["atom"], "application/atomcat+xml": ["atomcat"], "application/atomsvc+xml": ["atomsvc"], "application/bdoc": ["bdoc"], "application/ccxml+xml": ["ccxml"], "application/cdmi-capability": ["cdmia"], "application/cdmi-container": ["cdmic"], "application/cdmi-domain": ["cdmid"], "application/cdmi-object": ["cdmio"], "application/cdmi-queue": ["cdmiq"], "application/cu-seeme": ["cu"], "application/dash+xml": ["mpd"], "application/davmount+xml": ["davmount"], "application/docbook+xml": ["dbk"], "application/dssc+der": ["dssc"], "application/dssc+xml": ["xdssc"], "application/ecmascript": ["ecma"], "application/emma+xml": ["emma"], "application/epub+zip": ["epub"], "application/exi": ["exi"], "application/font-tdpfr": ["pfr"], "application/font-woff": [], "application/font-woff2": [], "application/geo+json": ["geojson"], "application/gml+xml": ["gml"], "application/gpx+xml": ["gpx"], "application/gxf": ["gxf"], "application/gzip": ["gz"], "application/hyperstudio": ["stk"], "application/inkml+xml": ["ink", "inkml"], "application/ipfix": ["ipfix"], "application/java-archive": ["jar", "war", "ear"], "application/java-serialized-object": ["ser"], "application/java-vm": ["class"], "application/javascript": ["js", "mjs"], "application/json": ["json", "map"], "application/json5": ["json5"], "application/jsonml+json": ["jsonml"], "application/ld+json": ["jsonld"], "application/lost+xml": ["lostxml"], "application/mac-binhex40": ["hqx"], "application/mac-compactpro": ["cpt"], "application/mads+xml": ["mads"], "application/manifest+json": ["webmanifest"], "application/marc": ["mrc"], "application/marcxml+xml": ["mrcx"], "application/mathematica": ["ma", "nb", "mb"], "application/mathml+xml": ["mathml"], "application/mbox": ["mbox"], "application/mediaservercontrol+xml": ["mscml"], "application/metalink+xml": ["metalink"], "application/metalink4+xml": ["meta4"], "application/mets+xml": ["mets"], "application/mods+xml": ["mods"], "application/mp21": ["m21", "mp21"], "application/mp4": ["mp4s", "m4p"], "application/msword": ["doc", "dot"], "application/mxf": ["mxf"], "application/octet-stream": ["bin", "dms", "lrf", "mar", "so", "dist", "distz", "pkg", "bpk", "dump", "elc", "deploy", "exe", "dll", "deb", "dmg", "iso", "img", "msi", "msp", "msm", "buffer"], "application/oda": ["oda"], "application/oebps-package+xml": ["opf"], "application/ogg": ["ogx"], "application/omdoc+xml": ["omdoc"], "application/onenote": ["onetoc", "onetoc2", "onetmp", "onepkg"], "application/oxps": ["oxps"], "application/patch-ops-error+xml": ["xer"], "application/pdf": ["pdf"], "application/pgp-encrypted": ["pgp"], "application/pgp-signature": ["asc", "sig"], "application/pics-rules": ["prf"], "application/pkcs10": ["p10"], "application/pkcs7-mime": ["p7m", "p7c"], "application/pkcs7-signature": ["p7s"], "application/pkcs8": ["p8"], "application/pkix-attr-cert": ["ac"], "application/pkix-cert": ["cer"], "application/pkix-crl": ["crl"], "application/pkix-pkipath": ["pkipath"], "application/pkixcmp": ["pki"], "application/pls+xml": ["pls"], "application/postscript": ["ai", "eps", "ps"], "application/prs.cww": ["cww"], "application/pskc+xml": ["pskcxml"], "application/raml+yaml": ["raml"], "application/rdf+xml": ["rdf"], "application/reginfo+xml": ["rif"], "application/relax-ng-compact-syntax": ["rnc"], "application/resource-lists+xml": ["rl"], "application/resource-lists-diff+xml": ["rld"], "application/rls-services+xml": ["rs"], "application/rpki-ghostbusters": ["gbr"], "application/rpki-manifest": ["mft"], "application/rpki-roa": ["roa"], "application/rsd+xml": ["rsd"], "application/rss+xml": ["rss"], "application/rtf": ["rtf"], "application/sbml+xml": ["sbml"], "application/scvp-cv-request": ["scq"], "application/scvp-cv-response": ["scs"], "application/scvp-vp-request": ["spq"], "application/scvp-vp-response": ["spp"], "application/sdp": ["sdp"], "application/set-payment-initiation": ["setpay"], "application/set-registration-initiation": ["setreg"], "application/shf+xml": ["shf"], "application/smil+xml": ["smi", "smil"], "application/sparql-query": ["rq"], "application/sparql-results+xml": ["srx"], "application/srgs": ["gram"], "application/srgs+xml": ["grxml"], "application/sru+xml": ["sru"], "application/ssdl+xml": ["ssdl"], "application/ssml+xml": ["ssml"], "application/tei+xml": ["tei", "teicorpus"], "application/thraud+xml": ["tfi"], "application/timestamped-data": ["tsd"], "application/vnd.3gpp.pic-bw-large": ["plb"], "application/vnd.3gpp.pic-bw-small": ["psb"], "application/vnd.3gpp.pic-bw-var": ["pvb"], "application/vnd.3gpp2.tcap": ["tcap"], "application/vnd.3m.post-it-notes": ["pwn"], "application/vnd.accpac.simply.aso": ["aso"], "application/vnd.accpac.simply.imp": ["imp"], "application/vnd.acucobol": ["acu"], "application/vnd.acucorp": ["atc", "acutc"], "application/vnd.adobe.air-application-installer-package+zip": ["air"], "application/vnd.adobe.formscentral.fcdt": ["fcdt"], "application/vnd.adobe.fxp": ["fxp", "fxpl"], "application/vnd.adobe.xdp+xml": ["xdp"], "application/vnd.adobe.xfdf": ["xfdf"], "application/vnd.ahead.space": ["ahead"], "application/vnd.airzip.filesecure.azf": ["azf"], "application/vnd.airzip.filesecure.azs": ["azs"], "application/vnd.amazon.ebook": ["azw"], "application/vnd.americandynamics.acc": ["acc"], "application/vnd.amiga.ami": ["ami"], "application/vnd.android.package-archive": ["apk"], "application/vnd.anser-web-certificate-issue-initiation": ["cii"], "application/vnd.anser-web-funds-transfer-initiation": ["fti"], "application/vnd.antix.game-component": ["atx"], "application/vnd.apple.installer+xml": ["mpkg"], "application/vnd.apple.mpegurl": ["m3u8"], "application/vnd.apple.pkpass": ["pkpass"], "application/vnd.aristanetworks.swi": ["swi"], "application/vnd.astraea-software.iota": ["iota"], "application/vnd.audiograph": ["aep"], "application/vnd.blueice.multipass": ["mpm"], "application/vnd.bmi": ["bmi"], "application/vnd.businessobjects": ["rep"], "application/vnd.chemdraw+xml": ["cdxml"], "application/vnd.chipnuts.karaoke-mmd": ["mmd"], "application/vnd.cinderella": ["cdy"], "application/vnd.claymore": ["cla"], "application/vnd.cloanto.rp9": ["rp9"], "application/vnd.clonk.c4group": ["c4g", "c4d", "c4f", "c4p", "c4u"], "application/vnd.cluetrust.cartomobile-config": ["c11amc"], "application/vnd.cluetrust.cartomobile-config-pkg": ["c11amz"], "application/vnd.commonspace": ["csp"], "application/vnd.contact.cmsg": ["cdbcmsg"], "application/vnd.cosmocaller": ["cmc"], "application/vnd.crick.clicker": ["clkx"], "application/vnd.crick.clicker.keyboard": ["clkk"], "application/vnd.crick.clicker.palette": ["clkp"], "application/vnd.crick.clicker.template": ["clkt"], "application/vnd.crick.clicker.wordbank": ["clkw"], "application/vnd.criticaltools.wbs+xml": ["wbs"], "application/vnd.ctc-posml": ["pml"], "application/vnd.cups-ppd": ["ppd"], "application/vnd.curl.car": ["car"], "application/vnd.curl.pcurl": ["pcurl"], "application/vnd.dart": ["dart"], "application/vnd.data-vision.rdz": ["rdz"], "application/vnd.dece.data": ["uvf", "uvvf", "uvd", "uvvd"], "application/vnd.dece.ttml+xml": ["uvt", "uvvt"], "application/vnd.dece.unspecified": ["uvx", "uvvx"], "application/vnd.dece.zip": ["uvz", "uvvz"], "application/vnd.denovo.fcselayout-link": ["fe_launch"], "application/vnd.dna": ["dna"], "application/vnd.dolby.mlp": ["mlp"], "application/vnd.dpgraph": ["dpg"], "application/vnd.dreamfactory": ["dfac"], "application/vnd.ds-keypoint": ["kpxx"], "application/vnd.dvb.ait": ["ait"], "application/vnd.dvb.service": ["svc"], "application/vnd.dynageo": ["geo"], "application/vnd.ecowin.chart": ["mag"], "application/vnd.enliven": ["nml"], "application/vnd.epson.esf": ["esf"], "application/vnd.epson.msf": ["msf"], "application/vnd.epson.quickanime": ["qam"], "application/vnd.epson.salt": ["slt"], "application/vnd.epson.ssf": ["ssf"], "application/vnd.eszigno3+xml": ["es3", "et3"], "application/vnd.ezpix-album": ["ez2"], "application/vnd.ezpix-package": ["ez3"], "application/vnd.fdf": ["fdf"], "application/vnd.fdsn.mseed": ["mseed"], "application/vnd.fdsn.seed": ["seed", "dataless"], "application/vnd.flographit": ["gph"], "application/vnd.fluxtime.clip": ["ftc"], "application/vnd.framemaker": ["fm", "frame", "maker", "book"], "application/vnd.frogans.fnc": ["fnc"], "application/vnd.frogans.ltf": ["ltf"], "application/vnd.fsc.weblaunch": ["fsc"], "application/vnd.fujitsu.oasys": ["oas"], "application/vnd.fujitsu.oasys2": ["oa2"], "application/vnd.fujitsu.oasys3": ["oa3"], "application/vnd.fujitsu.oasysgp": ["fg5"], "application/vnd.fujitsu.oasysprs": ["bh2"], "application/vnd.fujixerox.ddd": ["ddd"], "application/vnd.fujixerox.docuworks": ["xdw"], "application/vnd.fujixerox.docuworks.binder": ["xbd"], "application/vnd.fuzzysheet": ["fzs"], "application/vnd.genomatix.tuxedo": ["txd"], "application/vnd.geogebra.file": ["ggb"], "application/vnd.geogebra.tool": ["ggt"], "application/vnd.geometry-explorer": ["gex", "gre"], "application/vnd.geonext": ["gxt"], "application/vnd.geoplan": ["g2w"], "application/vnd.geospace": ["g3w"], "application/vnd.gmx": ["gmx"], "application/vnd.google-apps.document": ["gdoc"], "application/vnd.google-apps.presentation": ["gslides"], "application/vnd.google-apps.spreadsheet": ["gsheet"], "application/vnd.google-earth.kml+xml": ["kml"], "application/vnd.google-earth.kmz": ["kmz"], "application/vnd.grafeq": ["gqf", "gqs"], "application/vnd.groove-account": ["gac"], "application/vnd.groove-help": ["ghf"], "application/vnd.groove-identity-message": ["gim"], "application/vnd.groove-injector": ["grv"], "application/vnd.groove-tool-message": ["gtm"], "application/vnd.groove-tool-template": ["tpl"], "application/vnd.groove-vcard": ["vcg"], "application/vnd.hal+xml": ["hal"], "application/vnd.handheld-entertainment+xml": ["zmm"], "application/vnd.hbci": ["hbci"], "application/vnd.hhe.lesson-player": ["les"], "application/vnd.hp-hpgl": ["hpgl"], "application/vnd.hp-hpid": ["hpid"], "application/vnd.hp-hps": ["hps"], "application/vnd.hp-jlyt": ["jlt"], "application/vnd.hp-pcl": ["pcl"], "application/vnd.hp-pclxl": ["pclxl"], "application/vnd.hydrostatix.sof-data": ["sfd-hdstx"], "application/vnd.ibm.minipay": ["mpy"], "application/vnd.ibm.modcap": ["afp", "listafp", "list3820"], "application/vnd.ibm.rights-management": ["irm"], "application/vnd.ibm.secure-container": ["sc"], "application/vnd.iccprofile": ["icc", "icm"], "application/vnd.igloader": ["igl"], "application/vnd.immervision-ivp": ["ivp"], "application/vnd.immervision-ivu": ["ivu"], "application/vnd.insors.igm": ["igm"], "application/vnd.intercon.formnet": ["xpw", "xpx"], "application/vnd.intergeo": ["i2g"], "application/vnd.intu.qbo": ["qbo"], "application/vnd.intu.qfx": ["qfx"], "application/vnd.ipunplugged.rcprofile": ["rcprofile"], "application/vnd.irepository.package+xml": ["irp"], "application/vnd.is-xpr": ["xpr"], "application/vnd.isac.fcs": ["fcs"], "application/vnd.jam": ["jam"], "application/vnd.jcp.javame.midlet-rms": ["rms"], "application/vnd.jisp": ["jisp"], "application/vnd.joost.joda-archive": ["joda"], "application/vnd.kahootz": ["ktz", "ktr"], "application/vnd.kde.karbon": ["karbon"], "application/vnd.kde.kchart": ["chrt"], "application/vnd.kde.kformula": ["kfo"], "application/vnd.kde.kivio": ["flw"], "application/vnd.kde.kontour": ["kon"], "application/vnd.kde.kpresenter": ["kpr", "kpt"], "application/vnd.kde.kspread": ["ksp"], "application/vnd.kde.kword": ["kwd", "kwt"], "application/vnd.kenameaapp": ["htke"], "application/vnd.kidspiration": ["kia"], "application/vnd.kinar": ["kne", "knp"], "application/vnd.koan": ["skp", "skd", "skt", "skm"], "application/vnd.kodak-descriptor": ["sse"], "application/vnd.las.las+xml": ["lasxml"], "application/vnd.llamagraphics.life-balance.desktop": ["lbd"], "application/vnd.llamagraphics.life-balance.exchange+xml": ["lbe"], "application/vnd.lotus-1-2-3": ["123"], "application/vnd.lotus-approach": ["apr"], "application/vnd.lotus-freelance": ["pre"], "application/vnd.lotus-notes": ["nsf"], "application/vnd.lotus-organizer": ["org"], "application/vnd.lotus-screencam": ["scm"], "application/vnd.lotus-wordpro": ["lwp"], "application/vnd.macports.portpkg": ["portpkg"], "application/vnd.mcd": ["mcd"], "application/vnd.medcalcdata": ["mc1"], "application/vnd.mediastation.cdkey": ["cdkey"], "application/vnd.mfer": ["mwf"], "application/vnd.mfmp": ["mfm"], "application/vnd.micrografx.flo": ["flo"], "application/vnd.micrografx.igx": ["igx"], "application/vnd.mif": ["mif"], "application/vnd.mobius.daf": ["daf"], "application/vnd.mobius.dis": ["dis"], "application/vnd.mobius.mbk": ["mbk"], "application/vnd.mobius.mqy": ["mqy"], "application/vnd.mobius.msl": ["msl"], "application/vnd.mobius.plc": ["plc"], "application/vnd.mobius.txf": ["txf"], "application/vnd.mophun.application": ["mpn"], "application/vnd.mophun.certificate": ["mpc"], "application/vnd.mozilla.xul+xml": ["xul"], "application/vnd.ms-artgalry": ["cil"], "application/vnd.ms-cab-compressed": ["cab"], "application/vnd.ms-excel": ["xls", "xlm", "xla", "xlc", "xlt", "xlw"], "application/vnd.ms-excel.addin.macroenabled.12": ["xlam"], "application/vnd.ms-excel.sheet.binary.macroenabled.12": ["xlsb"], "application/vnd.ms-excel.sheet.macroenabled.12": ["xlsm"], "application/vnd.ms-excel.template.macroenabled.12": ["xltm"], "application/vnd.ms-fontobject": ["eot"], "application/vnd.ms-htmlhelp": ["chm"], "application/vnd.ms-ims": ["ims"], "application/vnd.ms-lrm": ["lrm"], "application/vnd.ms-officetheme": ["thmx"], "application/vnd.ms-outlook": ["msg"], "application/vnd.ms-pki.seccat": ["cat"], "application/vnd.ms-pki.stl": ["stl"], "application/vnd.ms-powerpoint": ["ppt", "pps", "pot"], "application/vnd.ms-powerpoint.addin.macroenabled.12": ["ppam"], "application/vnd.ms-powerpoint.presentation.macroenabled.12": ["pptm"], "application/vnd.ms-powerpoint.slide.macroenabled.12": ["sldm"], "application/vnd.ms-powerpoint.slideshow.macroenabled.12": ["ppsm"], "application/vnd.ms-powerpoint.template.macroenabled.12": ["potm"], "application/vnd.ms-project": ["mpp", "mpt"], "application/vnd.ms-word.document.macroenabled.12": ["docm"], "application/vnd.ms-word.template.macroenabled.12": ["dotm"], "application/vnd.ms-works": ["wps", "wks", "wcm", "wdb"], "application/vnd.ms-wpl": ["wpl"], "application/vnd.ms-xpsdocument": ["xps"], "application/vnd.mseq": ["mseq"], "application/vnd.musician": ["mus"], "application/vnd.muvee.style": ["msty"], "application/vnd.mynfc": ["taglet"], "application/vnd.neurolanguage.nlu": ["nlu"], "application/vnd.nitf": ["ntf", "nitf"], "application/vnd.noblenet-directory": ["nnd"], "application/vnd.noblenet-sealer": ["nns"], "application/vnd.noblenet-web": ["nnw"], "application/vnd.nokia.n-gage.data": ["ngdat"], "application/vnd.nokia.n-gage.symbian.install": ["n-gage"], "application/vnd.nokia.radio-preset": ["rpst"], "application/vnd.nokia.radio-presets": ["rpss"], "application/vnd.novadigm.edm": ["edm"], "application/vnd.novadigm.edx": ["edx"], "application/vnd.novadigm.ext": ["ext"], "application/vnd.oasis.opendocument.chart": ["odc"], "application/vnd.oasis.opendocument.chart-template": ["otc"], "application/vnd.oasis.opendocument.database": ["odb"], "application/vnd.oasis.opendocument.formula": ["odf"], "application/vnd.oasis.opendocument.formula-template": ["odft"], "application/vnd.oasis.opendocument.graphics": ["odg"], "application/vnd.oasis.opendocument.graphics-template": ["otg"], "application/vnd.oasis.opendocument.image": ["odi"], "application/vnd.oasis.opendocument.image-template": ["oti"], "application/vnd.oasis.opendocument.presentation": ["odp"], "application/vnd.oasis.opendocument.presentation-template": ["otp"], "application/vnd.oasis.opendocument.spreadsheet": ["ods"], "application/vnd.oasis.opendocument.spreadsheet-template": ["ots"], "application/vnd.oasis.opendocument.text": ["odt"], "application/vnd.oasis.opendocument.text-master": ["odm"], "application/vnd.oasis.opendocument.text-template": ["ott"], "application/vnd.oasis.opendocument.text-web": ["oth"], "application/vnd.olpc-sugar": ["xo"], "application/vnd.oma.dd2+xml": ["dd2"], "application/vnd.openofficeorg.extension": ["oxt"], "application/vnd.openxmlformats-officedocument.presentationml.presentation": ["pptx"], "application/vnd.openxmlformats-officedocument.presentationml.slide": ["sldx"], "application/vnd.openxmlformats-officedocument.presentationml.slideshow": ["ppsx"], "application/vnd.openxmlformats-officedocument.presentationml.template": ["potx"], "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": ["xlsx"], "application/vnd.openxmlformats-officedocument.spreadsheetml.template": ["xltx"], "application/vnd.openxmlformats-officedocument.wordprocessingml.document": ["docx"], "application/vnd.openxmlformats-officedocument.wordprocessingml.template": ["dotx"], "application/vnd.osgeo.mapguide.package": ["mgp"], "application/vnd.osgi.dp": ["dp"], "application/vnd.osgi.subsystem": ["esa"], "application/vnd.palm": ["pdb", "pqa", "oprc"], "application/vnd.pawaafile": ["paw"], "application/vnd.pg.format": ["str"], "application/vnd.pg.osasli": ["ei6"], "application/vnd.picsel": ["efif"], "application/vnd.pmi.widget": ["wg"], "application/vnd.pocketlearn": ["plf"], "application/vnd.powerbuilder6": ["pbd"], "application/vnd.previewsystems.box": ["box"], "application/vnd.proteus.magazine": ["mgz"], "application/vnd.publishare-delta-tree": ["qps"], "application/vnd.pvi.ptid1": ["ptid"], "application/vnd.quark.quarkxpress": ["qxd", "qxt", "qwd", "qwt", "qxl", "qxb"], "application/vnd.realvnc.bed": ["bed"], "application/vnd.recordare.musicxml": ["mxl"], "application/vnd.recordare.musicxml+xml": ["musicxml"], "application/vnd.rig.cryptonote": ["cryptonote"], "application/vnd.rim.cod": ["cod"], "application/vnd.rn-realmedia": ["rm"], "application/vnd.rn-realmedia-vbr": ["rmvb"], "application/vnd.route66.link66+xml": ["link66"], "application/vnd.sailingtracker.track": ["st"], "application/vnd.seemail": ["see"], "application/vnd.sema": ["sema"], "application/vnd.semd": ["semd"], "application/vnd.semf": ["semf"], "application/vnd.shana.informed.formdata": ["ifm"], "application/vnd.shana.informed.formtemplate": ["itp"], "application/vnd.shana.informed.interchange": ["iif"], "application/vnd.shana.informed.package": ["ipk"], "application/vnd.simtech-mindmapper": ["twd", "twds"], "application/vnd.smaf": ["mmf"], "application/vnd.smart.teacher": ["teacher"], "application/vnd.solent.sdkm+xml": ["sdkm", "sdkd"], "application/vnd.spotfire.dxp": ["dxp"], "application/vnd.spotfire.sfs": ["sfs"], "application/vnd.stardivision.calc": ["sdc"], "application/vnd.stardivision.draw": ["sda"], "application/vnd.stardivision.impress": ["sdd"], "application/vnd.stardivision.math": ["smf"], "application/vnd.stardivision.writer": ["sdw", "vor"], "application/vnd.stardivision.writer-global": ["sgl"], "application/vnd.stepmania.package": ["smzip"], "application/vnd.stepmania.stepchart": ["sm"], "application/vnd.sun.wadl+xml": ["wadl"], "application/vnd.sun.xml.calc": ["sxc"], "application/vnd.sun.xml.calc.template": ["stc"], "application/vnd.sun.xml.draw": ["sxd"], "application/vnd.sun.xml.draw.template": ["std"], "application/vnd.sun.xml.impress": ["sxi"], "application/vnd.sun.xml.impress.template": ["sti"], "application/vnd.sun.xml.math": ["sxm"], "application/vnd.sun.xml.writer": ["sxw"], "application/vnd.sun.xml.writer.global": ["sxg"], "application/vnd.sun.xml.writer.template": ["stw"], "application/vnd.sus-calendar": ["sus", "susp"], "application/vnd.svd": ["svd"], "application/vnd.symbian.install": ["sis", "sisx"], "application/vnd.syncml+xml": ["xsm"], "application/vnd.syncml.dm+wbxml": ["bdm"], "application/vnd.syncml.dm+xml": ["xdm"], "application/vnd.tao.intent-module-archive": ["tao"], "application/vnd.tcpdump.pcap": ["pcap", "cap", "dmp"], "application/vnd.tmobile-livetv": ["tmo"], "application/vnd.trid.tpt": ["tpt"], "application/vnd.triscape.mxs": ["mxs"], "application/vnd.trueapp": ["tra"], "application/vnd.ufdl": ["ufd", "ufdl"], "application/vnd.uiq.theme": ["utz"], "application/vnd.umajin": ["umj"], "application/vnd.unity": ["unityweb"], "application/vnd.uoml+xml": ["uoml"], "application/vnd.vcx": ["vcx"], "application/vnd.visio": ["vsd", "vst", "vss", "vsw"], "application/vnd.visionary": ["vis"], "application/vnd.vsf": ["vsf"], "application/vnd.wap.wbxml": ["wbxml"], "application/vnd.wap.wmlc": ["wmlc"], "application/vnd.wap.wmlscriptc": ["wmlsc"], "application/vnd.webturbo": ["wtb"], "application/vnd.wolfram.player": ["nbp"], "application/vnd.wordperfect": ["wpd"], "application/vnd.wqd": ["wqd"], "application/vnd.wt.stf": ["stf"], "application/vnd.xara": ["xar"], "application/vnd.xfdl": ["xfdl"], "application/vnd.yamaha.hv-dic": ["hvd"], "application/vnd.yamaha.hv-script": ["hvs"], "application/vnd.yamaha.hv-voice": ["hvp"], "application/vnd.yamaha.openscoreformat": ["osf"], "application/vnd.yamaha.openscoreformat.osfpvg+xml": ["osfpvg"], "application/vnd.yamaha.smaf-audio": ["saf"], "application/vnd.yamaha.smaf-phrase": ["spf"], "application/vnd.yellowriver-custom-menu": ["cmp"], "application/vnd.zul": ["zir", "zirz"], "application/vnd.zzazz.deck+xml": ["zaz"], "application/voicexml+xml": ["vxml"], "application/wasm": ["wasm"], "application/widget": ["wgt"], "application/winhlp": ["hlp"], "application/wsdl+xml": ["wsdl"], "application/wspolicy+xml": ["wspolicy"], "application/x-7z-compressed": ["7z"], "application/x-abiword": ["abw"], "application/x-ace-compressed": ["ace"], "application/x-apple-diskimage": [], "application/x-arj": ["arj"], "application/x-authorware-bin": ["aab", "x32", "u32", "vox"], "application/x-authorware-map": ["aam"], "application/x-authorware-seg": ["aas"], "application/x-bcpio": ["bcpio"], "application/x-bdoc": [], "application/x-bittorrent": ["torrent"], "application/x-blorb": ["blb", "blorb"], "application/x-bzip": ["bz"], "application/x-bzip2": ["bz2", "boz"], "application/x-cbr": ["cbr", "cba", "cbt", "cbz", "cb7"], "application/x-cdlink": ["vcd"], "application/x-cfs-compressed": ["cfs"], "application/x-chat": ["chat"], "application/x-chess-pgn": ["pgn"], "application/x-chrome-extension": ["crx"], "application/x-cocoa": ["cco"], "application/x-conference": ["nsc"], "application/x-cpio": ["cpio"], "application/x-csh": ["csh"], "application/x-debian-package": ["udeb"], "application/x-dgc-compressed": ["dgc"], "application/x-director": ["dir", "dcr", "dxr", "cst", "cct", "cxt", "w3d", "fgd", "swa"], "application/x-doom": ["wad"], "application/x-dtbncx+xml": ["ncx"], "application/x-dtbook+xml": ["dtb"], "application/x-dtbresource+xml": ["res"], "application/x-dvi": ["dvi"], "application/x-envoy": ["evy"], "application/x-eva": ["eva"], "application/x-font-bdf": ["bdf"], "application/x-font-ghostscript": ["gsf"], "application/x-font-linux-psf": ["psf"], "application/x-font-pcf": ["pcf"], "application/x-font-snf": ["snf"], "application/x-font-type1": ["pfa", "pfb", "pfm", "afm"], "application/x-freearc": ["arc"], "application/x-futuresplash": ["spl"], "application/x-gca-compressed": ["gca"], "application/x-glulx": ["ulx"], "application/x-gnumeric": ["gnumeric"], "application/x-gramps-xml": ["gramps"], "application/x-gtar": ["gtar"], "application/x-hdf": ["hdf"], "application/x-httpd-php": ["php"], "application/x-install-instructions": ["install"], "application/x-iso9660-image": [], "application/x-java-archive-diff": ["jardiff"], "application/x-java-jnlp-file": ["jnlp"], "application/x-latex": ["latex"], "application/x-lua-bytecode": ["luac"], "application/x-lzh-compressed": ["lzh", "lha"], "application/x-makeself": ["run"], "application/x-mie": ["mie"], "application/x-mobipocket-ebook": ["prc", "mobi"], "application/x-ms-application": ["application"], "application/x-ms-shortcut": ["lnk"], "application/x-ms-wmd": ["wmd"], "application/x-ms-wmz": ["wmz"], "application/x-ms-xbap": ["xbap"], "application/x-msaccess": ["mdb"], "application/x-msbinder": ["obd"], "application/x-mscardfile": ["crd"], "application/x-msclip": ["clp"], "application/x-msdos-program": [], "application/x-msdownload": ["com", "bat"], "application/x-msmediaview": ["mvb", "m13", "m14"], "application/x-msmetafile": ["wmf", "emf", "emz"], "application/x-msmoney": ["mny"], "application/x-mspublisher": ["pub"], "application/x-msschedule": ["scd"], "application/x-msterminal": ["trm"], "application/x-mswrite": ["wri"], "application/x-netcdf": ["nc", "cdf"], "application/x-ns-proxy-autoconfig": ["pac"], "application/x-nzb": ["nzb"], "application/x-perl": ["pl", "pm"], "application/x-pilot": [], "application/x-pkcs12": ["p12", "pfx"], "application/x-pkcs7-certificates": ["p7b", "spc"], "application/x-pkcs7-certreqresp": ["p7r"], "application/x-rar-compressed": ["rar"], "application/x-redhat-package-manager": ["rpm"], "application/x-research-info-systems": ["ris"], "application/x-sea": ["sea"], "application/x-sh": ["sh"], "application/x-shar": ["shar"], "application/x-shockwave-flash": ["swf"], "application/x-silverlight-app": ["xap"], "application/x-sql": ["sql"], "application/x-stuffit": ["sit"], "application/x-stuffitx": ["sitx"], "application/x-subrip": ["srt"], "application/x-sv4cpio": ["sv4cpio"], "application/x-sv4crc": ["sv4crc"], "application/x-t3vm-image": ["t3"], "application/x-tads": ["gam"], "application/x-tar": ["tar"], "application/x-tcl": ["tcl", "tk"], "application/x-tex": ["tex"], "application/x-tex-tfm": ["tfm"], "application/x-texinfo": ["texinfo", "texi"], "application/x-tgif": ["obj"], "application/x-ustar": ["ustar"], "application/x-virtualbox-hdd": ["hdd"], "application/x-virtualbox-ova": ["ova"], "application/x-virtualbox-ovf": ["ovf"], "application/x-virtualbox-vbox": ["vbox"], "application/x-virtualbox-vbox-extpack": ["vbox-extpack"], "application/x-virtualbox-vdi": ["vdi"], "application/x-virtualbox-vhd": ["vhd"], "application/x-virtualbox-vmdk": ["vmdk"], "application/x-wais-source": ["src"], "application/x-web-app-manifest+json": ["webapp"], "application/x-x509-ca-cert": ["der", "crt", "pem"], "application/x-xfig": ["fig"], "application/x-xliff+xml": ["xlf"], "application/x-xpinstall": ["xpi"], "application/x-xz": ["xz"], "application/x-zmachine": ["z1", "z2", "z3", "z4", "z5", "z6", "z7", "z8"], "application/xaml+xml": ["xaml"], "application/xcap-diff+xml": ["xdf"], "application/xenc+xml": ["xenc"], "application/xhtml+xml": ["xhtml", "xht"], "application/xml": ["xml", "xsl", "xsd", "rng"], "application/xml-dtd": ["dtd"], "application/xop+xml": ["xop"], "application/xproc+xml": ["xpl"], "application/xslt+xml": ["xslt"], "application/xspf+xml": ["xspf"], "application/xv+xml": ["mxml", "xhvml", "xvml", "xvm"], "application/yang": ["yang"], "application/yin+xml": ["yin"], "application/zip": ["zip"], "audio/3gpp": [], "audio/adpcm": ["adp"], "audio/basic": ["au", "snd"], "audio/midi": ["mid", "midi", "kar", "rmi"], "audio/mp3": [], "audio/mp4": ["m4a", "mp4a"], "audio/mpeg": ["mpga", "mp2", "mp2a", "mp3", "m2a", "m3a"], "audio/ogg": ["oga", "ogg", "spx"], "audio/s3m": ["s3m"], "audio/silk": ["sil"], "audio/vnd.dece.audio": ["uva", "uvva"], "audio/vnd.digital-winds": ["eol"], "audio/vnd.dra": ["dra"], "audio/vnd.dts": ["dts"], "audio/vnd.dts.hd": ["dtshd"], "audio/vnd.lucent.voice": ["lvp"], "audio/vnd.ms-playready.media.pya": ["pya"], "audio/vnd.nuera.ecelp4800": ["ecelp4800"], "audio/vnd.nuera.ecelp7470": ["ecelp7470"], "audio/vnd.nuera.ecelp9600": ["ecelp9600"], "audio/vnd.rip": ["rip"], "audio/wav": ["wav"], "audio/wave": [], "audio/webm": ["weba"], "audio/x-aac": ["aac"], "audio/x-aiff": ["aif", "aiff", "aifc"], "audio/x-caf": ["caf"], "audio/x-flac": ["flac"], "audio/x-m4a": [], "audio/x-matroska": ["mka"], "audio/x-mpegurl": ["m3u"], "audio/x-ms-wax": ["wax"], "audio/x-ms-wma": ["wma"], "audio/x-pn-realaudio": ["ram", "ra"], "audio/x-pn-realaudio-plugin": ["rmp"], "audio/x-realaudio": [], "audio/x-wav": [], "audio/xm": ["xm"], "chemical/x-cdx": ["cdx"], "chemical/x-cif": ["cif"], "chemical/x-cmdf": ["cmdf"], "chemical/x-cml": ["cml"], "chemical/x-csml": ["csml"], "chemical/x-xyz": ["xyz"], "font/collection": ["ttc"], "font/otf": ["otf"], "font/ttf": ["ttf"], "font/woff": ["woff"], "font/woff2": ["woff2"], "image/apng": ["apng"], "image/bmp": ["bmp"], "image/cgm": ["cgm"], "image/g3fax": ["g3"], "image/gif": ["gif"], "image/ief": ["ief"], "image/jp2": ["jp2", "jpg2"], "image/jpeg": ["jpeg", "jpg", "jpe"], "image/jpm": ["jpm"], "image/jpx": ["jpx", "jpf"], "image/ktx": ["ktx"], "image/png": ["png"], "image/prs.btif": ["btif"], "image/sgi": ["sgi"], "image/svg+xml": ["svg", "svgz"], "image/tiff": ["tiff", "tif"], "image/vnd.adobe.photoshop": ["psd"], "image/vnd.dece.graphic": ["uvi", "uvvi", "uvg", "uvvg"], "image/vnd.djvu": ["djvu", "djv"], "image/vnd.dvb.subtitle": [], "image/vnd.dwg": ["dwg"], "image/vnd.dxf": ["dxf"], "image/vnd.fastbidsheet": ["fbs"], "image/vnd.fpx": ["fpx"], "image/vnd.fst": ["fst"], "image/vnd.fujixerox.edmics-mmr": ["mmr"], "image/vnd.fujixerox.edmics-rlc": ["rlc"], "image/vnd.ms-modi": ["mdi"], "image/vnd.ms-photo": ["wdp"], "image/vnd.net-fpx": ["npx"], "image/vnd.wap.wbmp": ["wbmp"], "image/vnd.xiff": ["xif"], "image/webp": ["webp"], "image/x-3ds": ["3ds"], "image/x-cmu-raster": ["ras"], "image/x-cmx": ["cmx"], "image/x-freehand": ["fh", "fhc", "fh4", "fh5", "fh7"], "image/x-icon": ["ico"], "image/x-jng": ["jng"], "image/x-mrsid-image": ["sid"], "image/x-ms-bmp": [], "image/x-pcx": ["pcx"], "image/x-pict": ["pic", "pct"], "image/x-portable-anymap": ["pnm"], "image/x-portable-bitmap": ["pbm"], "image/x-portable-graymap": ["pgm"], "image/x-portable-pixmap": ["ppm"], "image/x-rgb": ["rgb"], "image/x-tga": ["tga"], "image/x-xbitmap": ["xbm"], "image/x-xpixmap": ["xpm"], "image/x-xwindowdump": ["xwd"], "message/rfc822": ["eml", "mime"], "model/gltf+json": ["gltf"], "model/gltf-binary": ["glb"], "model/iges": ["igs", "iges"], "model/mesh": ["msh", "mesh", "silo"], "model/vnd.collada+xml": ["dae"], "model/vnd.dwf": ["dwf"], "model/vnd.gdl": ["gdl"], "model/vnd.gtw": ["gtw"], "model/vnd.mts": ["mts"], "model/vnd.vtu": ["vtu"], "model/vrml": ["wrl", "vrml"], "model/x3d+binary": ["x3db", "x3dbz"], "model/x3d+vrml": ["x3dv", "x3dvz"], "model/x3d+xml": ["x3d", "x3dz"], "text/cache-manifest": ["appcache", "manifest"], "text/calendar": ["ics", "ifb"], "text/coffeescript": ["coffee", "litcoffee"], "text/css": ["css"], "text/csv": ["csv"], "text/hjson": ["hjson"], "text/html": ["html", "htm", "shtml"], "text/jade": ["jade"], "text/jsx": ["jsx"], "text/less": ["less"], "text/markdown": ["markdown", "md"], "text/mathml": ["mml"], "text/n3": ["n3"], "text/plain": ["txt", "text", "conf", "def", "list", "log", "in", "ini"], "text/prs.lines.tag": ["dsc"], "text/richtext": ["rtx"], "text/rtf": [], "text/sgml": ["sgml", "sgm"], "text/slim": ["slim", "slm"], "text/stylus": ["stylus", "styl"], "text/tab-separated-values": ["tsv"], "text/troff": ["t", "tr", "roff", "man", "me", "ms"], "text/turtle": ["ttl"], "text/uri-list": ["uri", "uris", "urls"], "text/vcard": ["vcard"], "text/vnd.curl": ["curl"], "text/vnd.curl.dcurl": ["dcurl"], "text/vnd.curl.mcurl": ["mcurl"], "text/vnd.curl.scurl": ["scurl"], "text/vnd.dvb.subtitle": ["sub"], "text/vnd.fly": ["fly"], "text/vnd.fmi.flexstor": ["flx"], "text/vnd.graphviz": ["gv"], "text/vnd.in3d.3dml": ["3dml"], "text/vnd.in3d.spot": ["spot"], "text/vnd.sun.j2me.app-descriptor": ["jad"], "text/vnd.wap.wml": ["wml"], "text/vnd.wap.wmlscript": ["wmls"], "text/vtt": ["vtt"], "text/x-asm": ["s", "asm"], "text/x-c": ["c", "cc", "cxx", "cpp", "h", "hh", "dic"], "text/x-component": ["htc"], "text/x-fortran": ["f", "for", "f77", "f90"], "text/x-handlebars-template": ["hbs"], "text/x-java-source": ["java"], "text/x-lua": ["lua"], "text/x-markdown": ["mkd"], "text/x-nfo": ["nfo"], "text/x-opml": ["opml"], "text/x-org": [], "text/x-pascal": ["p", "pas"], "text/x-processing": ["pde"], "text/x-sass": ["sass"], "text/x-scss": ["scss"], "text/x-setext": ["etx"], "text/x-sfv": ["sfv"], "text/x-suse-ymp": ["ymp"], "text/x-uuencode": ["uu"], "text/x-vcalendar": ["vcs"], "text/x-vcard": ["vcf"], "text/xml": [], "text/yaml": ["yaml", "yml"], "video/3gpp": ["3gp", "3gpp"], "video/3gpp2": ["3g2"], "video/h261": ["h261"], "video/h263": ["h263"], "video/h264": ["h264"], "video/jpeg": ["jpgv"], "video/jpm": ["jpgm"], "video/mj2": ["mj2", "mjp2"], "video/mp2t": ["ts"], "video/mp4": ["mp4", "mp4v", "mpg4"], "video/mpeg": ["mpeg", "mpg", "mpe", "m1v", "m2v"], "video/ogg": ["ogv"], "video/quicktime": ["qt", "mov"], "video/vnd.dece.hd": ["uvh", "uvvh"], "video/vnd.dece.mobile": ["uvm", "uvvm"], "video/vnd.dece.pd": ["uvp", "uvvp"], "video/vnd.dece.sd": ["uvs", "uvvs"], "video/vnd.dece.video": ["uvv", "uvvv"], "video/vnd.dvb.file": ["dvb"], "video/vnd.fvt": ["fvt"], "video/vnd.mpegurl": ["mxu", "m4u"], "video/vnd.ms-playready.media.pyv": ["pyv"], "video/vnd.uvvu.mp4": ["uvu", "uvvu"], "video/vnd.vivo": ["viv"], "video/webm": ["webm"], "video/x-f4v": ["f4v"], "video/x-fli": ["fli"], "video/x-flv": ["flv"], "video/x-m4v": ["m4v"], "video/x-matroska": ["mkv", "mk3d", "mks"], "video/x-mng": ["mng"], "video/x-ms-asf": ["asf", "asx"], "video/x-ms-vob": ["vob"], "video/x-ms-wm": ["wm"], "video/x-ms-wmv": ["wmv"], "video/x-ms-wmx": ["wmx"], "video/x-ms-wvx": ["wvx"], "video/x-msvideo": ["avi"], "video/x-sgi-movie": ["movie"], "video/x-smv": ["smv"], "x-conference/x-cooltalk": ["ice"] };
   }
 });
 
-// ../../server/node_modules/mime/mime.js
+// server/node_modules/mime/mime.js
 var require_mime = __commonJS({
-  "../../server/node_modules/mime/mime.js"(exports2, module2) {
+  "server/node_modules/mime/mime.js"(exports2, module2) {
     var path6 = require("path");
     var fs6 = require("fs");
     function Mime() {
@@ -19359,9 +19360,9 @@ var require_mime = __commonJS({
   }
 });
 
-// ../../server/node_modules/send/node_modules/ms/index.js
+// server/node_modules/send/node_modules/ms/index.js
 var require_ms2 = __commonJS({
-  "../../server/node_modules/send/node_modules/ms/index.js"(exports2, module2) {
+  "server/node_modules/send/node_modules/ms/index.js"(exports2, module2) {
     var s = 1e3;
     var m = s * 60;
     var h = m * 60;
@@ -19475,9 +19476,9 @@ var require_ms2 = __commonJS({
   }
 });
 
-// ../../server/node_modules/range-parser/index.js
+// server/node_modules/range-parser/index.js
 var require_range_parser = __commonJS({
-  "../../server/node_modules/range-parser/index.js"(exports2, module2) {
+  "server/node_modules/range-parser/index.js"(exports2, module2) {
     "use strict";
     module2.exports = rangeParser;
     function rangeParser(size, str4, options) {
@@ -19556,9 +19557,9 @@ var require_range_parser = __commonJS({
   }
 });
 
-// ../../server/node_modules/send/index.js
+// server/node_modules/send/index.js
 var require_send = __commonJS({
-  "../../server/node_modules/send/index.js"(exports2, module2) {
+  "server/node_modules/send/index.js"(exports2, module2) {
     "use strict";
     var createError = require_http_errors();
     var debug = require_src()("send");
@@ -20101,9 +20102,9 @@ var require_send = __commonJS({
   }
 });
 
-// ../../server/node_modules/forwarded/index.js
+// server/node_modules/forwarded/index.js
 var require_forwarded = __commonJS({
-  "../../server/node_modules/forwarded/index.js"(exports2, module2) {
+  "server/node_modules/forwarded/index.js"(exports2, module2) {
     "use strict";
     module2.exports = forwarded;
     function forwarded(req) {
@@ -20148,9 +20149,9 @@ var require_forwarded = __commonJS({
   }
 });
 
-// ../../server/node_modules/ipaddr.js/lib/ipaddr.js
+// server/node_modules/ipaddr.js/lib/ipaddr.js
 var require_ipaddr = __commonJS({
-  "../../server/node_modules/ipaddr.js/lib/ipaddr.js"(exports2, module2) {
+  "server/node_modules/ipaddr.js/lib/ipaddr.js"(exports2, module2) {
     (function() {
       var expandIPv6, ipaddr, ipv4Part, ipv4Regexes, ipv6Part, ipv6Regexes, matchCIDR, root, zoneIndex;
       ipaddr = {};
@@ -20770,9 +20771,9 @@ var require_ipaddr = __commonJS({
   }
 });
 
-// ../../server/node_modules/proxy-addr/index.js
+// server/node_modules/proxy-addr/index.js
 var require_proxy_addr = __commonJS({
-  "../../server/node_modules/proxy-addr/index.js"(exports2, module2) {
+  "server/node_modules/proxy-addr/index.js"(exports2, module2) {
     "use strict";
     module2.exports = proxyaddr;
     module2.exports.all = alladdrs;
@@ -20929,9 +20930,9 @@ var require_proxy_addr = __commonJS({
   }
 });
 
-// ../../server/node_modules/express/lib/utils.js
+// server/node_modules/express/lib/utils.js
 var require_utils2 = __commonJS({
-  "../../server/node_modules/express/lib/utils.js"(exports2) {
+  "server/node_modules/express/lib/utils.js"(exports2) {
     "use strict";
     var Buffer3 = require_safe_buffer().Buffer;
     var contentDisposition = require_content_disposition();
@@ -21067,9 +21068,9 @@ var require_utils2 = __commonJS({
   }
 });
 
-// ../../server/node_modules/express/lib/application.js
+// server/node_modules/express/lib/application.js
 var require_application = __commonJS({
-  "../../server/node_modules/express/lib/application.js"(exports2, module2) {
+  "server/node_modules/express/lib/application.js"(exports2, module2) {
     "use strict";
     var finalhandler = require_finalhandler();
     var Router20 = require_router();
@@ -21343,9 +21344,9 @@ var require_application = __commonJS({
   }
 });
 
-// ../../server/node_modules/negotiator/lib/charset.js
+// server/node_modules/negotiator/lib/charset.js
 var require_charset = __commonJS({
-  "../../server/node_modules/negotiator/lib/charset.js"(exports2, module2) {
+  "server/node_modules/negotiator/lib/charset.js"(exports2, module2) {
     "use strict";
     module2.exports = preferredCharsets;
     module2.exports.preferredCharsets = preferredCharsets;
@@ -21430,9 +21431,9 @@ var require_charset = __commonJS({
   }
 });
 
-// ../../server/node_modules/negotiator/lib/encoding.js
+// server/node_modules/negotiator/lib/encoding.js
 var require_encoding = __commonJS({
-  "../../server/node_modules/negotiator/lib/encoding.js"(exports2, module2) {
+  "server/node_modules/negotiator/lib/encoding.js"(exports2, module2) {
     "use strict";
     module2.exports = preferredEncodings;
     module2.exports.preferredEncodings = preferredEncodings;
@@ -21528,9 +21529,9 @@ var require_encoding = __commonJS({
   }
 });
 
-// ../../server/node_modules/negotiator/lib/language.js
+// server/node_modules/negotiator/lib/language.js
 var require_language = __commonJS({
-  "../../server/node_modules/negotiator/lib/language.js"(exports2, module2) {
+  "server/node_modules/negotiator/lib/language.js"(exports2, module2) {
     "use strict";
     module2.exports = preferredLanguages;
     module2.exports.preferredLanguages = preferredLanguages;
@@ -21623,9 +21624,9 @@ var require_language = __commonJS({
   }
 });
 
-// ../../server/node_modules/negotiator/lib/mediaType.js
+// server/node_modules/negotiator/lib/mediaType.js
 var require_mediaType = __commonJS({
-  "../../server/node_modules/negotiator/lib/mediaType.js"(exports2, module2) {
+  "server/node_modules/negotiator/lib/mediaType.js"(exports2, module2) {
     "use strict";
     module2.exports = preferredMediaTypes;
     module2.exports.preferredMediaTypes = preferredMediaTypes;
@@ -21785,9 +21786,9 @@ var require_mediaType = __commonJS({
   }
 });
 
-// ../../server/node_modules/negotiator/index.js
+// server/node_modules/negotiator/index.js
 var require_negotiator = __commonJS({
-  "../../server/node_modules/negotiator/index.js"(exports2, module2) {
+  "server/node_modules/negotiator/index.js"(exports2, module2) {
     "use strict";
     var preferredCharsets = require_charset();
     var preferredEncodings = require_encoding();
@@ -21840,9 +21841,9 @@ var require_negotiator = __commonJS({
   }
 });
 
-// ../../server/node_modules/accepts/index.js
+// server/node_modules/accepts/index.js
 var require_accepts = __commonJS({
-  "../../server/node_modules/accepts/index.js"(exports2, module2) {
+  "server/node_modules/accepts/index.js"(exports2, module2) {
     "use strict";
     var Negotiator = require_negotiator();
     var mime = require_mime_types();
@@ -21921,9 +21922,9 @@ var require_accepts = __commonJS({
   }
 });
 
-// ../../server/node_modules/express/lib/request.js
+// server/node_modules/express/lib/request.js
 var require_request = __commonJS({
-  "../../server/node_modules/express/lib/request.js"(exports2, module2) {
+  "server/node_modules/express/lib/request.js"(exports2, module2) {
     "use strict";
     var accepts = require_accepts();
     var deprecate = require_depd()("express");
@@ -22085,9 +22086,9 @@ var require_request = __commonJS({
   }
 });
 
-// ../../server/node_modules/cookie-signature/index.js
+// server/node_modules/cookie-signature/index.js
 var require_cookie_signature = __commonJS({
-  "../../server/node_modules/cookie-signature/index.js"(exports2) {
+  "server/node_modules/cookie-signature/index.js"(exports2) {
     var crypto10 = require("crypto");
     exports2.sign = function(val, secret2) {
       if ("string" !== typeof val) throw new TypeError("Cookie value must be provided as a string.");
@@ -22106,9 +22107,9 @@ var require_cookie_signature = __commonJS({
   }
 });
 
-// ../../server/node_modules/cookie/index.js
+// server/node_modules/cookie/index.js
 var require_cookie = __commonJS({
-  "../../server/node_modules/cookie/index.js"(exports2) {
+  "server/node_modules/cookie/index.js"(exports2) {
     "use strict";
     exports2.parse = parse2;
     exports2.serialize = serialize;
@@ -22272,9 +22273,9 @@ var require_cookie = __commonJS({
   }
 });
 
-// ../../server/node_modules/vary/index.js
+// server/node_modules/vary/index.js
 var require_vary = __commonJS({
-  "../../server/node_modules/vary/index.js"(exports2, module2) {
+  "server/node_modules/vary/index.js"(exports2, module2) {
     "use strict";
     module2.exports = vary;
     module2.exports.append = append;
@@ -22345,9 +22346,9 @@ var require_vary = __commonJS({
   }
 });
 
-// ../../server/node_modules/express/lib/response.js
+// server/node_modules/express/lib/response.js
 var require_response = __commonJS({
-  "../../server/node_modules/express/lib/response.js"(exports2, module2) {
+  "server/node_modules/express/lib/response.js"(exports2, module2) {
     "use strict";
     var Buffer3 = require_safe_buffer().Buffer;
     var contentDisposition = require_content_disposition();
@@ -22885,9 +22886,9 @@ var require_response = __commonJS({
   }
 });
 
-// ../../server/node_modules/serve-static/index.js
+// server/node_modules/serve-static/index.js
 var require_serve_static = __commonJS({
-  "../../server/node_modules/serve-static/index.js"(exports2, module2) {
+  "server/node_modules/serve-static/index.js"(exports2, module2) {
     "use strict";
     var encodeUrl = require_encodeurl();
     var escapeHtml = require_escape_html();
@@ -22990,9 +22991,9 @@ var require_serve_static = __commonJS({
   }
 });
 
-// ../../server/node_modules/express/lib/express.js
+// server/node_modules/express/lib/express.js
 var require_express = __commonJS({
-  "../../server/node_modules/express/lib/express.js"(exports2, module2) {
+  "server/node_modules/express/lib/express.js"(exports2, module2) {
     "use strict";
     var bodyParser = require_body_parser();
     var EventEmitter = require("events").EventEmitter;
@@ -23059,17 +23060,17 @@ var require_express = __commonJS({
   }
 });
 
-// ../../server/node_modules/express/index.js
+// server/node_modules/express/index.js
 var require_express2 = __commonJS({
-  "../../server/node_modules/express/index.js"(exports2, module2) {
+  "server/node_modules/express/index.js"(exports2, module2) {
     "use strict";
     module2.exports = require_express();
   }
 });
 
-// ../../server/node_modules/ip-address/dist/address-error.js
+// server/node_modules/ip-address/dist/address-error.js
 var require_address_error = __commonJS({
-  "../../server/node_modules/ip-address/dist/address-error.js"(exports2) {
+  "server/node_modules/ip-address/dist/address-error.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.AddressError = void 0;
@@ -23084,9 +23085,9 @@ var require_address_error = __commonJS({
   }
 });
 
-// ../../server/node_modules/ip-address/dist/common.js
+// server/node_modules/ip-address/dist/common.js
 var require_common = __commonJS({
-  "../../server/node_modules/ip-address/dist/common.js"(exports2) {
+  "server/node_modules/ip-address/dist/common.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.isInSubnet = isInSubnet;
@@ -23147,9 +23148,9 @@ var require_common = __commonJS({
   }
 });
 
-// ../../server/node_modules/ip-address/dist/v4/constants.js
+// server/node_modules/ip-address/dist/v4/constants.js
 var require_constants = __commonJS({
-  "../../server/node_modules/ip-address/dist/v4/constants.js"(exports2) {
+  "server/node_modules/ip-address/dist/v4/constants.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.RE_SUBNET_STRING = exports2.RE_ADDRESS = exports2.GROUPS = exports2.BITS = void 0;
@@ -23160,9 +23161,9 @@ var require_constants = __commonJS({
   }
 });
 
-// ../../server/node_modules/ip-address/dist/ipv4.js
+// server/node_modules/ip-address/dist/ipv4.js
 var require_ipv4 = __commonJS({
-  "../../server/node_modules/ip-address/dist/ipv4.js"(exports2) {
+  "server/node_modules/ip-address/dist/ipv4.js"(exports2) {
     "use strict";
     var __createBinding = exports2 && exports2.__createBinding || (Object.create ? function(o, m, k, k2) {
       if (k2 === void 0) k2 = k;
@@ -23631,9 +23632,9 @@ var require_ipv4 = __commonJS({
   }
 });
 
-// ../../server/node_modules/ip-address/dist/v6/constants.js
+// server/node_modules/ip-address/dist/v6/constants.js
 var require_constants2 = __commonJS({
-  "../../server/node_modules/ip-address/dist/v6/constants.js"(exports2) {
+  "server/node_modules/ip-address/dist/v6/constants.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.RE_URL_WITH_PORT = exports2.RE_URL = exports2.RE_ZONE_STRING = exports2.RE_SUBNET_STRING = exports2.RE_BAD_ADDRESS = exports2.RE_BAD_CHARACTERS = exports2.TYPES = exports2.SCOPES = exports2.GROUPS = exports2.BITS = void 0;
@@ -23687,9 +23688,9 @@ var require_constants2 = __commonJS({
   }
 });
 
-// ../../server/node_modules/ip-address/dist/v6/helpers.js
+// server/node_modules/ip-address/dist/v6/helpers.js
 var require_helpers = __commonJS({
-  "../../server/node_modules/ip-address/dist/v6/helpers.js"(exports2) {
+  "server/node_modules/ip-address/dist/v6/helpers.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.escapeHtml = escapeHtml;
@@ -23726,9 +23727,9 @@ var require_helpers = __commonJS({
   }
 });
 
-// ../../server/node_modules/ip-address/dist/v6/regular-expressions.js
+// server/node_modules/ip-address/dist/v6/regular-expressions.js
 var require_regular_expressions = __commonJS({
-  "../../server/node_modules/ip-address/dist/v6/regular-expressions.js"(exports2) {
+  "server/node_modules/ip-address/dist/v6/regular-expressions.js"(exports2) {
     "use strict";
     var __createBinding = exports2 && exports2.__createBinding || (Object.create ? function(o, m, k, k2) {
       if (k2 === void 0) k2 = k;
@@ -23818,9 +23819,9 @@ var require_regular_expressions = __commonJS({
   }
 });
 
-// ../../server/node_modules/ip-address/dist/ipv6.js
+// server/node_modules/ip-address/dist/ipv6.js
 var require_ipv6 = __commonJS({
-  "../../server/node_modules/ip-address/dist/ipv6.js"(exports2) {
+  "server/node_modules/ip-address/dist/ipv6.js"(exports2) {
     "use strict";
     var __createBinding = exports2 && exports2.__createBinding || (Object.create ? function(o, m, k, k2) {
       if (k2 === void 0) k2 = k;
@@ -24935,9 +24936,9 @@ var require_ipv6 = __commonJS({
   }
 });
 
-// ../../server/node_modules/ip-address/dist/ip-address.js
+// server/node_modules/ip-address/dist/ip-address.js
 var require_ip_address = __commonJS({
-  "../../server/node_modules/ip-address/dist/ip-address.js"(exports2) {
+  "server/node_modules/ip-address/dist/ip-address.js"(exports2) {
     "use strict";
     var __createBinding = exports2 && exports2.__createBinding || (Object.create ? function(o, m, k, k2) {
       if (k2 === void 0) k2 = k;
@@ -24985,9 +24986,9 @@ var require_ip_address = __commonJS({
   }
 });
 
-// ../../server/node_modules/express-rate-limit/node_modules/ms/index.js
+// server/node_modules/express-rate-limit/node_modules/ms/index.js
 var require_ms3 = __commonJS({
-  "../../server/node_modules/express-rate-limit/node_modules/ms/index.js"(exports2, module2) {
+  "server/node_modules/express-rate-limit/node_modules/ms/index.js"(exports2, module2) {
     var s = 1e3;
     var m = s * 60;
     var h = m * 60;
@@ -25101,9 +25102,9 @@ var require_ms3 = __commonJS({
   }
 });
 
-// ../../server/node_modules/express-rate-limit/node_modules/debug/src/common.js
+// server/node_modules/express-rate-limit/node_modules/debug/src/common.js
 var require_common2 = __commonJS({
-  "../../server/node_modules/express-rate-limit/node_modules/debug/src/common.js"(exports2, module2) {
+  "server/node_modules/express-rate-limit/node_modules/debug/src/common.js"(exports2, module2) {
     function setup(env) {
       createDebug.debug = createDebug;
       createDebug.default = createDebug;
@@ -25278,9 +25279,9 @@ var require_common2 = __commonJS({
   }
 });
 
-// ../../server/node_modules/express-rate-limit/node_modules/debug/src/browser.js
+// server/node_modules/express-rate-limit/node_modules/debug/src/browser.js
 var require_browser2 = __commonJS({
-  "../../server/node_modules/express-rate-limit/node_modules/debug/src/browser.js"(exports2, module2) {
+  "server/node_modules/express-rate-limit/node_modules/debug/src/browser.js"(exports2, module2) {
     exports2.formatArgs = formatArgs;
     exports2.save = save;
     exports2.load = load;
@@ -25448,9 +25449,9 @@ var require_browser2 = __commonJS({
   }
 });
 
-// ../../node_modules/has-flag/index.js
+// node_modules/has-flag/index.js
 var require_has_flag = __commonJS({
-  "../../node_modules/has-flag/index.js"(exports2, module2) {
+  "node_modules/has-flag/index.js"(exports2, module2) {
     "use strict";
     module2.exports = (flag, argv = process.argv) => {
       const prefix = flag.startsWith("-") ? "" : flag.length === 1 ? "-" : "--";
@@ -25461,9 +25462,9 @@ var require_has_flag = __commonJS({
   }
 });
 
-// ../../node_modules/supports-color/index.js
+// node_modules/supports-color/index.js
 var require_supports_color = __commonJS({
-  "../../node_modules/supports-color/index.js"(exports2, module2) {
+  "node_modules/supports-color/index.js"(exports2, module2) {
     "use strict";
     var os3 = require("os");
     var tty = require("tty");
@@ -25563,9 +25564,9 @@ var require_supports_color = __commonJS({
   }
 });
 
-// ../../server/node_modules/express-rate-limit/node_modules/debug/src/node.js
+// server/node_modules/express-rate-limit/node_modules/debug/src/node.js
 var require_node2 = __commonJS({
-  "../../server/node_modules/express-rate-limit/node_modules/debug/src/node.js"(exports2, module2) {
+  "server/node_modules/express-rate-limit/node_modules/debug/src/node.js"(exports2, module2) {
     var tty = require("tty");
     var util = require("util");
     exports2.init = init;
@@ -25737,9 +25738,9 @@ var require_node2 = __commonJS({
   }
 });
 
-// ../../server/node_modules/express-rate-limit/node_modules/debug/src/index.js
+// server/node_modules/express-rate-limit/node_modules/debug/src/index.js
 var require_src2 = __commonJS({
-  "../../server/node_modules/express-rate-limit/node_modules/debug/src/index.js"(exports2, module2) {
+  "server/node_modules/express-rate-limit/node_modules/debug/src/index.js"(exports2, module2) {
     if (typeof process === "undefined" || process.type === "renderer" || process.browser === true || process.__nwjs) {
       module2.exports = require_browser2();
     } else {
@@ -25756,14 +25757,15 @@ __export(db_exports, {
 var import_client, prisma;
 var init_db = __esm({
   "server/src/public-site/db.ts"() {
+    "use strict";
     import_client = require("@prisma/client");
     prisma = new import_client.PrismaClient({ log: ["error"] });
   }
 });
 
-// ../../server/node_modules/jws/lib/data-stream.js
+// server/node_modules/jws/lib/data-stream.js
 var require_data_stream = __commonJS({
-  "../../server/node_modules/jws/lib/data-stream.js"(exports2, module2) {
+  "server/node_modules/jws/lib/data-stream.js"(exports2, module2) {
     var Buffer3 = require_safe_buffer().Buffer;
     var Stream2 = require("stream");
     var util = require("util");
@@ -25809,9 +25811,9 @@ var require_data_stream = __commonJS({
   }
 });
 
-// ../../server/node_modules/ecdsa-sig-formatter/src/param-bytes-for-alg.js
+// server/node_modules/ecdsa-sig-formatter/src/param-bytes-for-alg.js
 var require_param_bytes_for_alg = __commonJS({
-  "../../server/node_modules/ecdsa-sig-formatter/src/param-bytes-for-alg.js"(exports2, module2) {
+  "server/node_modules/ecdsa-sig-formatter/src/param-bytes-for-alg.js"(exports2, module2) {
     "use strict";
     function getParamSize(keySize) {
       var result2 = (keySize / 8 | 0) + (keySize % 8 === 0 ? 0 : 1);
@@ -25833,9 +25835,9 @@ var require_param_bytes_for_alg = __commonJS({
   }
 });
 
-// ../../server/node_modules/ecdsa-sig-formatter/src/ecdsa-sig-formatter.js
+// server/node_modules/ecdsa-sig-formatter/src/ecdsa-sig-formatter.js
 var require_ecdsa_sig_formatter = __commonJS({
-  "../../server/node_modules/ecdsa-sig-formatter/src/ecdsa-sig-formatter.js"(exports2, module2) {
+  "server/node_modules/ecdsa-sig-formatter/src/ecdsa-sig-formatter.js"(exports2, module2) {
     "use strict";
     var Buffer3 = require_safe_buffer().Buffer;
     var getParamBytesForAlg = require_param_bytes_for_alg();
@@ -25973,9 +25975,9 @@ var require_ecdsa_sig_formatter = __commonJS({
   }
 });
 
-// ../../server/node_modules/buffer-equal-constant-time/index.js
+// server/node_modules/buffer-equal-constant-time/index.js
 var require_buffer_equal_constant_time = __commonJS({
-  "../../server/node_modules/buffer-equal-constant-time/index.js"(exports2, module2) {
+  "server/node_modules/buffer-equal-constant-time/index.js"(exports2, module2) {
     "use strict";
     var Buffer3 = require("buffer").Buffer;
     var SlowBuffer = require("buffer").SlowBuffer;
@@ -26007,9 +26009,9 @@ var require_buffer_equal_constant_time = __commonJS({
   }
 });
 
-// ../../server/node_modules/jwa/index.js
+// server/node_modules/jwa/index.js
 var require_jwa = __commonJS({
-  "../../server/node_modules/jwa/index.js"(exports2, module2) {
+  "server/node_modules/jwa/index.js"(exports2, module2) {
     var Buffer3 = require_safe_buffer().Buffer;
     var crypto10 = require("crypto");
     var formatEcdsa = require_ecdsa_sig_formatter();
@@ -26231,9 +26233,9 @@ var require_jwa = __commonJS({
   }
 });
 
-// ../../server/node_modules/jws/lib/tostring.js
+// server/node_modules/jws/lib/tostring.js
 var require_tostring = __commonJS({
-  "../../server/node_modules/jws/lib/tostring.js"(exports2, module2) {
+  "server/node_modules/jws/lib/tostring.js"(exports2, module2) {
     var Buffer3 = require("buffer").Buffer;
     module2.exports = function toString(obj) {
       if (typeof obj === "string")
@@ -26245,9 +26247,9 @@ var require_tostring = __commonJS({
   }
 });
 
-// ../../server/node_modules/jws/lib/sign-stream.js
+// server/node_modules/jws/lib/sign-stream.js
 var require_sign_stream = __commonJS({
-  "../../server/node_modules/jws/lib/sign-stream.js"(exports2, module2) {
+  "server/node_modules/jws/lib/sign-stream.js"(exports2, module2) {
     var Buffer3 = require_safe_buffer().Buffer;
     var DataStream = require_data_stream();
     var jwa = require_jwa();
@@ -26320,9 +26322,9 @@ var require_sign_stream = __commonJS({
   }
 });
 
-// ../../server/node_modules/jws/lib/verify-stream.js
+// server/node_modules/jws/lib/verify-stream.js
 var require_verify_stream = __commonJS({
-  "../../server/node_modules/jws/lib/verify-stream.js"(exports2, module2) {
+  "server/node_modules/jws/lib/verify-stream.js"(exports2, module2) {
     var Buffer3 = require_safe_buffer().Buffer;
     var DataStream = require_data_stream();
     var jwa = require_jwa();
@@ -26435,9 +26437,9 @@ var require_verify_stream = __commonJS({
   }
 });
 
-// ../../server/node_modules/jws/index.js
+// server/node_modules/jws/index.js
 var require_jws = __commonJS({
-  "../../server/node_modules/jws/index.js"(exports2) {
+  "server/node_modules/jws/index.js"(exports2) {
     var SignStream = require_sign_stream();
     var VerifyStream = require_verify_stream();
     var ALGORITHMS = [
@@ -26468,9 +26470,9 @@ var require_jws = __commonJS({
   }
 });
 
-// ../../server/node_modules/jsonwebtoken/decode.js
+// server/node_modules/jsonwebtoken/decode.js
 var require_decode = __commonJS({
-  "../../server/node_modules/jsonwebtoken/decode.js"(exports2, module2) {
+  "server/node_modules/jsonwebtoken/decode.js"(exports2, module2) {
     var jws = require_jws();
     module2.exports = function(jwt3, options) {
       options = options || {};
@@ -26500,9 +26502,9 @@ var require_decode = __commonJS({
   }
 });
 
-// ../../server/node_modules/jsonwebtoken/lib/JsonWebTokenError.js
+// server/node_modules/jsonwebtoken/lib/JsonWebTokenError.js
 var require_JsonWebTokenError = __commonJS({
-  "../../server/node_modules/jsonwebtoken/lib/JsonWebTokenError.js"(exports2, module2) {
+  "server/node_modules/jsonwebtoken/lib/JsonWebTokenError.js"(exports2, module2) {
     var JsonWebTokenError = function(message, error) {
       Error.call(this, message);
       if (Error.captureStackTrace) {
@@ -26518,9 +26520,9 @@ var require_JsonWebTokenError = __commonJS({
   }
 });
 
-// ../../server/node_modules/jsonwebtoken/lib/NotBeforeError.js
+// server/node_modules/jsonwebtoken/lib/NotBeforeError.js
 var require_NotBeforeError = __commonJS({
-  "../../server/node_modules/jsonwebtoken/lib/NotBeforeError.js"(exports2, module2) {
+  "server/node_modules/jsonwebtoken/lib/NotBeforeError.js"(exports2, module2) {
     var JsonWebTokenError = require_JsonWebTokenError();
     var NotBeforeError = function(message, date) {
       JsonWebTokenError.call(this, message);
@@ -26533,9 +26535,9 @@ var require_NotBeforeError = __commonJS({
   }
 });
 
-// ../../server/node_modules/jsonwebtoken/lib/TokenExpiredError.js
+// server/node_modules/jsonwebtoken/lib/TokenExpiredError.js
 var require_TokenExpiredError = __commonJS({
-  "../../server/node_modules/jsonwebtoken/lib/TokenExpiredError.js"(exports2, module2) {
+  "server/node_modules/jsonwebtoken/lib/TokenExpiredError.js"(exports2, module2) {
     var JsonWebTokenError = require_JsonWebTokenError();
     var TokenExpiredError = function(message, expiredAt) {
       JsonWebTokenError.call(this, message);
@@ -26548,9 +26550,9 @@ var require_TokenExpiredError = __commonJS({
   }
 });
 
-// ../../server/node_modules/jsonwebtoken/node_modules/ms/index.js
+// server/node_modules/jsonwebtoken/node_modules/ms/index.js
 var require_ms4 = __commonJS({
-  "../../server/node_modules/jsonwebtoken/node_modules/ms/index.js"(exports2, module2) {
+  "server/node_modules/jsonwebtoken/node_modules/ms/index.js"(exports2, module2) {
     var s = 1e3;
     var m = s * 60;
     var h = m * 60;
@@ -26664,9 +26666,9 @@ var require_ms4 = __commonJS({
   }
 });
 
-// ../../server/node_modules/jsonwebtoken/lib/timespan.js
+// server/node_modules/jsonwebtoken/lib/timespan.js
 var require_timespan = __commonJS({
-  "../../server/node_modules/jsonwebtoken/lib/timespan.js"(exports2, module2) {
+  "server/node_modules/jsonwebtoken/lib/timespan.js"(exports2, module2) {
     var ms = require_ms4();
     module2.exports = function(time, iat) {
       var timestamp = iat || Math.floor(Date.now() / 1e3);
@@ -26685,9 +26687,9 @@ var require_timespan = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/internal/constants.js
+// server/node_modules/semver/internal/constants.js
 var require_constants3 = __commonJS({
-  "../../server/node_modules/semver/internal/constants.js"(exports2, module2) {
+  "server/node_modules/semver/internal/constants.js"(exports2, module2) {
     "use strict";
     var SEMVER_SPEC_VERSION = "2.0.0";
     var MAX_LENGTH = 256;
@@ -26717,9 +26719,9 @@ var require_constants3 = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/internal/debug.js
+// server/node_modules/semver/internal/debug.js
 var require_debug2 = __commonJS({
-  "../../server/node_modules/semver/internal/debug.js"(exports2, module2) {
+  "server/node_modules/semver/internal/debug.js"(exports2, module2) {
     "use strict";
     var debug = typeof process === "object" && process.env && process.env.NODE_DEBUG && /\bsemver\b/i.test(process.env.NODE_DEBUG) ? (...args) => console.error("SEMVER", ...args) : () => {
     };
@@ -26727,9 +26729,9 @@ var require_debug2 = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/internal/re.js
+// server/node_modules/semver/internal/re.js
 var require_re = __commonJS({
-  "../../server/node_modules/semver/internal/re.js"(exports2, module2) {
+  "server/node_modules/semver/internal/re.js"(exports2, module2) {
     "use strict";
     var {
       MAX_SAFE_COMPONENT_LENGTH,
@@ -26815,9 +26817,9 @@ var require_re = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/internal/parse-options.js
+// server/node_modules/semver/internal/parse-options.js
 var require_parse_options = __commonJS({
-  "../../server/node_modules/semver/internal/parse-options.js"(exports2, module2) {
+  "server/node_modules/semver/internal/parse-options.js"(exports2, module2) {
     "use strict";
     var looseOption = Object.freeze({ loose: true });
     var emptyOpts = Object.freeze({});
@@ -26834,9 +26836,9 @@ var require_parse_options = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/internal/identifiers.js
+// server/node_modules/semver/internal/identifiers.js
 var require_identifiers = __commonJS({
-  "../../server/node_modules/semver/internal/identifiers.js"(exports2, module2) {
+  "server/node_modules/semver/internal/identifiers.js"(exports2, module2) {
     "use strict";
     var numeric = /^[0-9]+$/;
     var compareIdentifiers = (a, b) => {
@@ -26859,9 +26861,9 @@ var require_identifiers = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/classes/semver.js
+// server/node_modules/semver/classes/semver.js
 var require_semver = __commonJS({
-  "../../server/node_modules/semver/classes/semver.js"(exports2, module2) {
+  "server/node_modules/semver/classes/semver.js"(exports2, module2) {
     "use strict";
     var debug = require_debug2();
     var { MAX_LENGTH, MAX_SAFE_INTEGER } = require_constants3();
@@ -27147,9 +27149,9 @@ var require_semver = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/functions/parse.js
+// server/node_modules/semver/functions/parse.js
 var require_parse2 = __commonJS({
-  "../../server/node_modules/semver/functions/parse.js"(exports2, module2) {
+  "server/node_modules/semver/functions/parse.js"(exports2, module2) {
     "use strict";
     var SemVer = require_semver();
     var parse2 = (version2, options, throwErrors = false) => {
@@ -27169,9 +27171,9 @@ var require_parse2 = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/functions/valid.js
+// server/node_modules/semver/functions/valid.js
 var require_valid = __commonJS({
-  "../../server/node_modules/semver/functions/valid.js"(exports2, module2) {
+  "server/node_modules/semver/functions/valid.js"(exports2, module2) {
     "use strict";
     var parse2 = require_parse2();
     var valid = (version2, options) => {
@@ -27182,9 +27184,9 @@ var require_valid = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/functions/clean.js
+// server/node_modules/semver/functions/clean.js
 var require_clean = __commonJS({
-  "../../server/node_modules/semver/functions/clean.js"(exports2, module2) {
+  "server/node_modules/semver/functions/clean.js"(exports2, module2) {
     "use strict";
     var parse2 = require_parse2();
     var clean = (version2, options) => {
@@ -27195,9 +27197,9 @@ var require_clean = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/functions/inc.js
+// server/node_modules/semver/functions/inc.js
 var require_inc = __commonJS({
-  "../../server/node_modules/semver/functions/inc.js"(exports2, module2) {
+  "server/node_modules/semver/functions/inc.js"(exports2, module2) {
     "use strict";
     var SemVer = require_semver();
     var inc = (version2, release, options, identifier, identifierBase) => {
@@ -27219,9 +27221,9 @@ var require_inc = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/functions/diff.js
+// server/node_modules/semver/functions/diff.js
 var require_diff = __commonJS({
-  "../../server/node_modules/semver/functions/diff.js"(exports2, module2) {
+  "server/node_modules/semver/functions/diff.js"(exports2, module2) {
     "use strict";
     var parse2 = require_parse2();
     var diff = (version1, version2) => {
@@ -27263,9 +27265,9 @@ var require_diff = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/functions/major.js
+// server/node_modules/semver/functions/major.js
 var require_major = __commonJS({
-  "../../server/node_modules/semver/functions/major.js"(exports2, module2) {
+  "server/node_modules/semver/functions/major.js"(exports2, module2) {
     "use strict";
     var SemVer = require_semver();
     var major = (a, loose) => new SemVer(a, loose).major;
@@ -27273,9 +27275,9 @@ var require_major = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/functions/minor.js
+// server/node_modules/semver/functions/minor.js
 var require_minor = __commonJS({
-  "../../server/node_modules/semver/functions/minor.js"(exports2, module2) {
+  "server/node_modules/semver/functions/minor.js"(exports2, module2) {
     "use strict";
     var SemVer = require_semver();
     var minor = (a, loose) => new SemVer(a, loose).minor;
@@ -27283,9 +27285,9 @@ var require_minor = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/functions/patch.js
+// server/node_modules/semver/functions/patch.js
 var require_patch = __commonJS({
-  "../../server/node_modules/semver/functions/patch.js"(exports2, module2) {
+  "server/node_modules/semver/functions/patch.js"(exports2, module2) {
     "use strict";
     var SemVer = require_semver();
     var patch = (a, loose) => new SemVer(a, loose).patch;
@@ -27293,9 +27295,9 @@ var require_patch = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/functions/prerelease.js
+// server/node_modules/semver/functions/prerelease.js
 var require_prerelease = __commonJS({
-  "../../server/node_modules/semver/functions/prerelease.js"(exports2, module2) {
+  "server/node_modules/semver/functions/prerelease.js"(exports2, module2) {
     "use strict";
     var parse2 = require_parse2();
     var prerelease = (version2, options) => {
@@ -27306,9 +27308,9 @@ var require_prerelease = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/functions/compare.js
+// server/node_modules/semver/functions/compare.js
 var require_compare = __commonJS({
-  "../../server/node_modules/semver/functions/compare.js"(exports2, module2) {
+  "server/node_modules/semver/functions/compare.js"(exports2, module2) {
     "use strict";
     var SemVer = require_semver();
     var compare = (a, b, loose) => new SemVer(a, loose).compare(new SemVer(b, loose));
@@ -27316,9 +27318,9 @@ var require_compare = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/functions/rcompare.js
+// server/node_modules/semver/functions/rcompare.js
 var require_rcompare = __commonJS({
-  "../../server/node_modules/semver/functions/rcompare.js"(exports2, module2) {
+  "server/node_modules/semver/functions/rcompare.js"(exports2, module2) {
     "use strict";
     var compare = require_compare();
     var rcompare = (a, b, loose) => compare(b, a, loose);
@@ -27326,9 +27328,9 @@ var require_rcompare = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/functions/compare-loose.js
+// server/node_modules/semver/functions/compare-loose.js
 var require_compare_loose = __commonJS({
-  "../../server/node_modules/semver/functions/compare-loose.js"(exports2, module2) {
+  "server/node_modules/semver/functions/compare-loose.js"(exports2, module2) {
     "use strict";
     var compare = require_compare();
     var compareLoose = (a, b) => compare(a, b, true);
@@ -27336,9 +27338,9 @@ var require_compare_loose = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/functions/compare-build.js
+// server/node_modules/semver/functions/compare-build.js
 var require_compare_build = __commonJS({
-  "../../server/node_modules/semver/functions/compare-build.js"(exports2, module2) {
+  "server/node_modules/semver/functions/compare-build.js"(exports2, module2) {
     "use strict";
     var SemVer = require_semver();
     var compareBuild = (a, b, loose) => {
@@ -27350,9 +27352,9 @@ var require_compare_build = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/functions/sort.js
+// server/node_modules/semver/functions/sort.js
 var require_sort = __commonJS({
-  "../../server/node_modules/semver/functions/sort.js"(exports2, module2) {
+  "server/node_modules/semver/functions/sort.js"(exports2, module2) {
     "use strict";
     var compareBuild = require_compare_build();
     var sort = (list, loose) => list.sort((a, b) => compareBuild(a, b, loose));
@@ -27360,9 +27362,9 @@ var require_sort = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/functions/rsort.js
+// server/node_modules/semver/functions/rsort.js
 var require_rsort = __commonJS({
-  "../../server/node_modules/semver/functions/rsort.js"(exports2, module2) {
+  "server/node_modules/semver/functions/rsort.js"(exports2, module2) {
     "use strict";
     var compareBuild = require_compare_build();
     var rsort = (list, loose) => list.sort((a, b) => compareBuild(b, a, loose));
@@ -27370,9 +27372,9 @@ var require_rsort = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/functions/gt.js
+// server/node_modules/semver/functions/gt.js
 var require_gt = __commonJS({
-  "../../server/node_modules/semver/functions/gt.js"(exports2, module2) {
+  "server/node_modules/semver/functions/gt.js"(exports2, module2) {
     "use strict";
     var compare = require_compare();
     var gt = (a, b, loose) => compare(a, b, loose) > 0;
@@ -27380,9 +27382,9 @@ var require_gt = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/functions/lt.js
+// server/node_modules/semver/functions/lt.js
 var require_lt = __commonJS({
-  "../../server/node_modules/semver/functions/lt.js"(exports2, module2) {
+  "server/node_modules/semver/functions/lt.js"(exports2, module2) {
     "use strict";
     var compare = require_compare();
     var lt = (a, b, loose) => compare(a, b, loose) < 0;
@@ -27390,9 +27392,9 @@ var require_lt = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/functions/eq.js
+// server/node_modules/semver/functions/eq.js
 var require_eq = __commonJS({
-  "../../server/node_modules/semver/functions/eq.js"(exports2, module2) {
+  "server/node_modules/semver/functions/eq.js"(exports2, module2) {
     "use strict";
     var compare = require_compare();
     var eq = (a, b, loose) => compare(a, b, loose) === 0;
@@ -27400,9 +27402,9 @@ var require_eq = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/functions/neq.js
+// server/node_modules/semver/functions/neq.js
 var require_neq = __commonJS({
-  "../../server/node_modules/semver/functions/neq.js"(exports2, module2) {
+  "server/node_modules/semver/functions/neq.js"(exports2, module2) {
     "use strict";
     var compare = require_compare();
     var neq = (a, b, loose) => compare(a, b, loose) !== 0;
@@ -27410,9 +27412,9 @@ var require_neq = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/functions/gte.js
+// server/node_modules/semver/functions/gte.js
 var require_gte = __commonJS({
-  "../../server/node_modules/semver/functions/gte.js"(exports2, module2) {
+  "server/node_modules/semver/functions/gte.js"(exports2, module2) {
     "use strict";
     var compare = require_compare();
     var gte = (a, b, loose) => compare(a, b, loose) >= 0;
@@ -27420,9 +27422,9 @@ var require_gte = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/functions/lte.js
+// server/node_modules/semver/functions/lte.js
 var require_lte = __commonJS({
-  "../../server/node_modules/semver/functions/lte.js"(exports2, module2) {
+  "server/node_modules/semver/functions/lte.js"(exports2, module2) {
     "use strict";
     var compare = require_compare();
     var lte = (a, b, loose) => compare(a, b, loose) <= 0;
@@ -27430,9 +27432,9 @@ var require_lte = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/functions/cmp.js
+// server/node_modules/semver/functions/cmp.js
 var require_cmp = __commonJS({
-  "../../server/node_modules/semver/functions/cmp.js"(exports2, module2) {
+  "server/node_modules/semver/functions/cmp.js"(exports2, module2) {
     "use strict";
     var eq = require_eq();
     var neq = require_neq();
@@ -27480,9 +27482,9 @@ var require_cmp = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/functions/coerce.js
+// server/node_modules/semver/functions/coerce.js
 var require_coerce = __commonJS({
-  "../../server/node_modules/semver/functions/coerce.js"(exports2, module2) {
+  "server/node_modules/semver/functions/coerce.js"(exports2, module2) {
     "use strict";
     var SemVer = require_semver();
     var parse2 = require_parse2();
@@ -27526,9 +27528,9 @@ var require_coerce = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/functions/truncate.js
+// server/node_modules/semver/functions/truncate.js
 var require_truncate = __commonJS({
-  "../../server/node_modules/semver/functions/truncate.js"(exports2, module2) {
+  "server/node_modules/semver/functions/truncate.js"(exports2, module2) {
     "use strict";
     var parse2 = require_parse2();
     var constants = require_constants3();
@@ -27567,9 +27569,9 @@ var require_truncate = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/internal/lrucache.js
+// server/node_modules/semver/internal/lrucache.js
 var require_lrucache = __commonJS({
-  "../../server/node_modules/semver/internal/lrucache.js"(exports2, module2) {
+  "server/node_modules/semver/internal/lrucache.js"(exports2, module2) {
     "use strict";
     var LRUCache = class {
       constructor() {
@@ -27605,9 +27607,9 @@ var require_lrucache = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/classes/range.js
+// server/node_modules/semver/classes/range.js
 var require_range2 = __commonJS({
-  "../../server/node_modules/semver/classes/range.js"(exports2, module2) {
+  "server/node_modules/semver/classes/range.js"(exports2, module2) {
     "use strict";
     var SPACE_CHARACTERS = /\s+/g;
     var Range = class _Range {
@@ -27990,9 +27992,9 @@ var require_range2 = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/classes/comparator.js
+// server/node_modules/semver/classes/comparator.js
 var require_comparator = __commonJS({
-  "../../server/node_modules/semver/classes/comparator.js"(exports2, module2) {
+  "server/node_modules/semver/classes/comparator.js"(exports2, module2) {
     "use strict";
     var ANY = Symbol("SemVer ANY");
     var Comparator = class _Comparator {
@@ -28103,9 +28105,9 @@ var require_comparator = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/functions/satisfies.js
+// server/node_modules/semver/functions/satisfies.js
 var require_satisfies = __commonJS({
-  "../../server/node_modules/semver/functions/satisfies.js"(exports2, module2) {
+  "server/node_modules/semver/functions/satisfies.js"(exports2, module2) {
     "use strict";
     var Range = require_range2();
     var satisfies = (version2, range, options) => {
@@ -28120,9 +28122,9 @@ var require_satisfies = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/ranges/to-comparators.js
+// server/node_modules/semver/ranges/to-comparators.js
 var require_to_comparators = __commonJS({
-  "../../server/node_modules/semver/ranges/to-comparators.js"(exports2, module2) {
+  "server/node_modules/semver/ranges/to-comparators.js"(exports2, module2) {
     "use strict";
     var Range = require_range2();
     var toComparators = (range, options) => new Range(range, options).set.map((comp) => comp.map((c) => c.value).join(" ").trim().split(" "));
@@ -28130,9 +28132,9 @@ var require_to_comparators = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/ranges/max-satisfying.js
+// server/node_modules/semver/ranges/max-satisfying.js
 var require_max_satisfying = __commonJS({
-  "../../server/node_modules/semver/ranges/max-satisfying.js"(exports2, module2) {
+  "server/node_modules/semver/ranges/max-satisfying.js"(exports2, module2) {
     "use strict";
     var SemVer = require_semver();
     var Range = require_range2();
@@ -28159,9 +28161,9 @@ var require_max_satisfying = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/ranges/min-satisfying.js
+// server/node_modules/semver/ranges/min-satisfying.js
 var require_min_satisfying = __commonJS({
-  "../../server/node_modules/semver/ranges/min-satisfying.js"(exports2, module2) {
+  "server/node_modules/semver/ranges/min-satisfying.js"(exports2, module2) {
     "use strict";
     var SemVer = require_semver();
     var Range = require_range2();
@@ -28188,9 +28190,9 @@ var require_min_satisfying = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/ranges/min-version.js
+// server/node_modules/semver/ranges/min-version.js
 var require_min_version = __commonJS({
-  "../../server/node_modules/semver/ranges/min-version.js"(exports2, module2) {
+  "server/node_modules/semver/ranges/min-version.js"(exports2, module2) {
     "use strict";
     var SemVer = require_semver();
     var Range = require_range2();
@@ -28245,9 +28247,9 @@ var require_min_version = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/ranges/valid.js
+// server/node_modules/semver/ranges/valid.js
 var require_valid2 = __commonJS({
-  "../../server/node_modules/semver/ranges/valid.js"(exports2, module2) {
+  "server/node_modules/semver/ranges/valid.js"(exports2, module2) {
     "use strict";
     var Range = require_range2();
     var validRange = (range, options) => {
@@ -28261,9 +28263,9 @@ var require_valid2 = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/ranges/outside.js
+// server/node_modules/semver/ranges/outside.js
 var require_outside = __commonJS({
-  "../../server/node_modules/semver/ranges/outside.js"(exports2, module2) {
+  "server/node_modules/semver/ranges/outside.js"(exports2, module2) {
     "use strict";
     var SemVer = require_semver();
     var Comparator = require_comparator();
@@ -28330,9 +28332,9 @@ var require_outside = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/ranges/gtr.js
+// server/node_modules/semver/ranges/gtr.js
 var require_gtr = __commonJS({
-  "../../server/node_modules/semver/ranges/gtr.js"(exports2, module2) {
+  "server/node_modules/semver/ranges/gtr.js"(exports2, module2) {
     "use strict";
     var outside = require_outside();
     var gtr = (version2, range, options) => outside(version2, range, ">", options);
@@ -28340,9 +28342,9 @@ var require_gtr = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/ranges/ltr.js
+// server/node_modules/semver/ranges/ltr.js
 var require_ltr = __commonJS({
-  "../../server/node_modules/semver/ranges/ltr.js"(exports2, module2) {
+  "server/node_modules/semver/ranges/ltr.js"(exports2, module2) {
     "use strict";
     var outside = require_outside();
     var ltr = (version2, range, options) => outside(version2, range, "<", options);
@@ -28350,9 +28352,9 @@ var require_ltr = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/ranges/intersects.js
+// server/node_modules/semver/ranges/intersects.js
 var require_intersects = __commonJS({
-  "../../server/node_modules/semver/ranges/intersects.js"(exports2, module2) {
+  "server/node_modules/semver/ranges/intersects.js"(exports2, module2) {
     "use strict";
     var Range = require_range2();
     var intersects = (r1, r2, options) => {
@@ -28364,9 +28366,9 @@ var require_intersects = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/ranges/simplify.js
+// server/node_modules/semver/ranges/simplify.js
 var require_simplify = __commonJS({
-  "../../server/node_modules/semver/ranges/simplify.js"(exports2, module2) {
+  "server/node_modules/semver/ranges/simplify.js"(exports2, module2) {
     "use strict";
     var satisfies = require_satisfies();
     var compare = require_compare();
@@ -28414,9 +28416,9 @@ var require_simplify = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/ranges/subset.js
+// server/node_modules/semver/ranges/subset.js
 var require_subset = __commonJS({
-  "../../server/node_modules/semver/ranges/subset.js"(exports2, module2) {
+  "server/node_modules/semver/ranges/subset.js"(exports2, module2) {
     "use strict";
     var Range = require_range2();
     var Comparator = require_comparator();
@@ -28576,9 +28578,9 @@ var require_subset = __commonJS({
   }
 });
 
-// ../../server/node_modules/semver/index.js
+// server/node_modules/semver/index.js
 var require_semver2 = __commonJS({
-  "../../server/node_modules/semver/index.js"(exports2, module2) {
+  "server/node_modules/semver/index.js"(exports2, module2) {
     "use strict";
     var internalRe = require_re();
     var constants = require_constants3();
@@ -28673,25 +28675,25 @@ var require_semver2 = __commonJS({
   }
 });
 
-// ../../server/node_modules/jsonwebtoken/lib/asymmetricKeyDetailsSupported.js
+// server/node_modules/jsonwebtoken/lib/asymmetricKeyDetailsSupported.js
 var require_asymmetricKeyDetailsSupported = __commonJS({
-  "../../server/node_modules/jsonwebtoken/lib/asymmetricKeyDetailsSupported.js"(exports2, module2) {
+  "server/node_modules/jsonwebtoken/lib/asymmetricKeyDetailsSupported.js"(exports2, module2) {
     var semver = require_semver2();
     module2.exports = semver.satisfies(process.version, ">=15.7.0");
   }
 });
 
-// ../../server/node_modules/jsonwebtoken/lib/rsaPssKeyDetailsSupported.js
+// server/node_modules/jsonwebtoken/lib/rsaPssKeyDetailsSupported.js
 var require_rsaPssKeyDetailsSupported = __commonJS({
-  "../../server/node_modules/jsonwebtoken/lib/rsaPssKeyDetailsSupported.js"(exports2, module2) {
+  "server/node_modules/jsonwebtoken/lib/rsaPssKeyDetailsSupported.js"(exports2, module2) {
     var semver = require_semver2();
     module2.exports = semver.satisfies(process.version, ">=16.9.0");
   }
 });
 
-// ../../server/node_modules/jsonwebtoken/lib/validateAsymmetricKey.js
+// server/node_modules/jsonwebtoken/lib/validateAsymmetricKey.js
 var require_validateAsymmetricKey = __commonJS({
-  "../../server/node_modules/jsonwebtoken/lib/validateAsymmetricKey.js"(exports2, module2) {
+  "server/node_modules/jsonwebtoken/lib/validateAsymmetricKey.js"(exports2, module2) {
     var ASYMMETRIC_KEY_DETAILS_SUPPORTED = require_asymmetricKeyDetailsSupported();
     var RSA_PSS_KEY_DETAILS_SUPPORTED = require_rsaPssKeyDetailsSupported();
     var allowedAlgorithmsForKeys = {
@@ -28742,17 +28744,17 @@ var require_validateAsymmetricKey = __commonJS({
   }
 });
 
-// ../../server/node_modules/jsonwebtoken/lib/psSupported.js
+// server/node_modules/jsonwebtoken/lib/psSupported.js
 var require_psSupported = __commonJS({
-  "../../server/node_modules/jsonwebtoken/lib/psSupported.js"(exports2, module2) {
+  "server/node_modules/jsonwebtoken/lib/psSupported.js"(exports2, module2) {
     var semver = require_semver2();
     module2.exports = semver.satisfies(process.version, "^6.12.0 || >=8.0.0");
   }
 });
 
-// ../../server/node_modules/jsonwebtoken/verify.js
+// server/node_modules/jsonwebtoken/verify.js
 var require_verify = __commonJS({
-  "../../server/node_modules/jsonwebtoken/verify.js"(exports2, module2) {
+  "server/node_modules/jsonwebtoken/verify.js"(exports2, module2) {
     var JsonWebTokenError = require_JsonWebTokenError();
     var NotBeforeError = require_NotBeforeError();
     var TokenExpiredError = require_TokenExpiredError();
@@ -28965,9 +28967,9 @@ var require_verify = __commonJS({
   }
 });
 
-// ../../server/node_modules/lodash.includes/index.js
+// server/node_modules/lodash.includes/index.js
 var require_lodash = __commonJS({
-  "../../server/node_modules/lodash.includes/index.js"(exports2, module2) {
+  "server/node_modules/lodash.includes/index.js"(exports2, module2) {
     var INFINITY2 = 1 / 0;
     var MAX_SAFE_INTEGER = 9007199254740991;
     var MAX_INTEGER = 17976931348623157e292;
@@ -29149,9 +29151,9 @@ var require_lodash = __commonJS({
   }
 });
 
-// ../../server/node_modules/lodash.isboolean/index.js
+// server/node_modules/lodash.isboolean/index.js
 var require_lodash2 = __commonJS({
-  "../../server/node_modules/lodash.isboolean/index.js"(exports2, module2) {
+  "server/node_modules/lodash.isboolean/index.js"(exports2, module2) {
     var boolTag = "[object Boolean]";
     var objectProto = Object.prototype;
     var objectToString = objectProto.toString;
@@ -29165,9 +29167,9 @@ var require_lodash2 = __commonJS({
   }
 });
 
-// ../../server/node_modules/lodash.isinteger/index.js
+// server/node_modules/lodash.isinteger/index.js
 var require_lodash3 = __commonJS({
-  "../../server/node_modules/lodash.isinteger/index.js"(exports2, module2) {
+  "server/node_modules/lodash.isinteger/index.js"(exports2, module2) {
     var INFINITY2 = 1 / 0;
     var MAX_INTEGER = 17976931348623157e292;
     var NAN2 = 0 / 0;
@@ -29229,9 +29231,9 @@ var require_lodash3 = __commonJS({
   }
 });
 
-// ../../server/node_modules/lodash.isnumber/index.js
+// server/node_modules/lodash.isnumber/index.js
 var require_lodash4 = __commonJS({
-  "../../server/node_modules/lodash.isnumber/index.js"(exports2, module2) {
+  "server/node_modules/lodash.isnumber/index.js"(exports2, module2) {
     var numberTag = "[object Number]";
     var objectProto = Object.prototype;
     var objectToString = objectProto.toString;
@@ -29245,9 +29247,9 @@ var require_lodash4 = __commonJS({
   }
 });
 
-// ../../server/node_modules/lodash.isplainobject/index.js
+// server/node_modules/lodash.isplainobject/index.js
 var require_lodash5 = __commonJS({
-  "../../server/node_modules/lodash.isplainobject/index.js"(exports2, module2) {
+  "server/node_modules/lodash.isplainobject/index.js"(exports2, module2) {
     var objectTag = "[object Object]";
     function isHostObject(value) {
       var result2 = false;
@@ -29289,9 +29291,9 @@ var require_lodash5 = __commonJS({
   }
 });
 
-// ../../server/node_modules/lodash.isstring/index.js
+// server/node_modules/lodash.isstring/index.js
 var require_lodash6 = __commonJS({
-  "../../server/node_modules/lodash.isstring/index.js"(exports2, module2) {
+  "server/node_modules/lodash.isstring/index.js"(exports2, module2) {
     var stringTag = "[object String]";
     var objectProto = Object.prototype;
     var objectToString = objectProto.toString;
@@ -29306,9 +29308,9 @@ var require_lodash6 = __commonJS({
   }
 });
 
-// ../../server/node_modules/lodash.once/index.js
+// server/node_modules/lodash.once/index.js
 var require_lodash7 = __commonJS({
-  "../../server/node_modules/lodash.once/index.js"(exports2, module2) {
+  "server/node_modules/lodash.once/index.js"(exports2, module2) {
     var FUNC_ERROR_TEXT = "Expected a function";
     var INFINITY2 = 1 / 0;
     var MAX_INTEGER = 17976931348623157e292;
@@ -29387,9 +29389,9 @@ var require_lodash7 = __commonJS({
   }
 });
 
-// ../../server/node_modules/jsonwebtoken/sign.js
+// server/node_modules/jsonwebtoken/sign.js
 var require_sign2 = __commonJS({
-  "../../server/node_modules/jsonwebtoken/sign.js"(exports2, module2) {
+  "server/node_modules/jsonwebtoken/sign.js"(exports2, module2) {
     var timespan = require_timespan();
     var PS_SUPPORTED = require_psSupported();
     var validateAsymmetricKey = require_validateAsymmetricKey();
@@ -29612,9 +29614,9 @@ var require_sign2 = __commonJS({
   }
 });
 
-// ../../server/node_modules/jsonwebtoken/index.js
+// server/node_modules/jsonwebtoken/index.js
 var require_jsonwebtoken = __commonJS({
-  "../../server/node_modules/jsonwebtoken/index.js"(exports2, module2) {
+  "server/node_modules/jsonwebtoken/index.js"(exports2, module2) {
     module2.exports = {
       decode: require_decode(),
       verify: require_verify(),
@@ -29626,9 +29628,9 @@ var require_jsonwebtoken = __commonJS({
   }
 });
 
-// ../../server/node_modules/bcryptjs/dist/bcrypt.js
+// server/node_modules/bcryptjs/dist/bcrypt.js
 var require_bcrypt = __commonJS({
-  "../../server/node_modules/bcryptjs/dist/bcrypt.js"(exports2, module2) {
+  "server/node_modules/bcryptjs/dist/bcrypt.js"(exports2, module2) {
     (function(global2, factory) {
       if (typeof define === "function" && define["amd"])
         define([], factory);
@@ -31437,9 +31439,9 @@ var require_bcrypt = __commonJS({
   }
 });
 
-// ../../server/node_modules/bcryptjs/index.js
+// server/node_modules/bcryptjs/index.js
 var require_bcryptjs = __commonJS({
-  "../../server/node_modules/bcryptjs/index.js"(exports2, module2) {
+  "server/node_modules/bcryptjs/index.js"(exports2, module2) {
     module2.exports = require_bcrypt();
   }
 });
@@ -31464,6 +31466,7 @@ function isModelAllowedForPlan(plan, model) {
 var PLANS;
 var init_plans = __esm({
   "server/src/billing/plans.ts"() {
+    "use strict";
     PLANS = {
       pro: {
         name: "Pro",
@@ -31494,9 +31497,9 @@ var init_plans = __esm({
   }
 });
 
-// ../../server/node_modules/busboy/lib/utils.js
+// server/node_modules/busboy/lib/utils.js
 var require_utils3 = __commonJS({
-  "../../server/node_modules/busboy/lib/utils.js"(exports2, module2) {
+  "server/node_modules/busboy/lib/utils.js"(exports2, module2) {
     "use strict";
     function parseContentType(str4) {
       if (str4.length === 0)
@@ -33179,9 +33182,9 @@ var require_utils3 = __commonJS({
   }
 });
 
-// ../../server/node_modules/streamsearch/lib/sbmh.js
+// server/node_modules/streamsearch/lib/sbmh.js
 var require_sbmh = __commonJS({
-  "../../server/node_modules/streamsearch/lib/sbmh.js"(exports2, module2) {
+  "server/node_modules/streamsearch/lib/sbmh.js"(exports2, module2) {
     "use strict";
     function memcmp(buf1, pos1, buf2, pos2, num4) {
       for (let i = 0; i < num4; ++i) {
@@ -33576,9 +33579,9 @@ var require_sbmh = __commonJS({
   }
 });
 
-// ../../server/node_modules/busboy/lib/types/multipart.js
+// server/node_modules/busboy/lib/types/multipart.js
 var require_multipart = __commonJS({
-  "../../server/node_modules/busboy/lib/types/multipart.js"(exports2, module2) {
+  "server/node_modules/busboy/lib/types/multipart.js"(exports2, module2) {
     "use strict";
     var { Readable, Writable } = require("stream");
     var StreamSearch = require_sbmh();
@@ -34623,9 +34626,9 @@ var require_multipart = __commonJS({
   }
 });
 
-// ../../server/node_modules/busboy/lib/types/urlencoded.js
+// server/node_modules/busboy/lib/types/urlencoded.js
 var require_urlencoded2 = __commonJS({
-  "../../server/node_modules/busboy/lib/types/urlencoded.js"(exports2, module2) {
+  "server/node_modules/busboy/lib/types/urlencoded.js"(exports2, module2) {
     "use strict";
     var { Writable } = require("stream");
     var { getDecoder } = require_utils3();
@@ -35170,9 +35173,9 @@ var require_urlencoded2 = __commonJS({
   }
 });
 
-// ../../server/node_modules/busboy/lib/index.js
+// server/node_modules/busboy/lib/index.js
 var require_lib3 = __commonJS({
-  "../../server/node_modules/busboy/lib/index.js"(exports2, module2) {
+  "server/node_modules/busboy/lib/index.js"(exports2, module2) {
     "use strict";
     var { parseContentType } = require_utils3();
     function getInstance(cfg) {
@@ -35222,9 +35225,9 @@ var require_lib3 = __commonJS({
   }
 });
 
-// ../../server/node_modules/xtend/immutable.js
+// server/node_modules/xtend/immutable.js
 var require_immutable = __commonJS({
-  "../../server/node_modules/xtend/immutable.js"(exports2, module2) {
+  "server/node_modules/xtend/immutable.js"(exports2, module2) {
     module2.exports = extend;
     var hasOwnProperty = Object.prototype.hasOwnProperty;
     function extend() {
@@ -35242,9 +35245,9 @@ var require_immutable = __commonJS({
   }
 });
 
-// ../../server/node_modules/append-field/lib/parse-path.js
+// server/node_modules/append-field/lib/parse-path.js
 var require_parse_path = __commonJS({
-  "../../server/node_modules/append-field/lib/parse-path.js"(exports2, module2) {
+  "server/node_modules/append-field/lib/parse-path.js"(exports2, module2) {
     var reFirstKey = /^[^\[]*/;
     var reDigitPath = /^\[(\d+)\]/;
     var reNormalPath = /^\[([^\]]+)\]/;
@@ -35291,9 +35294,9 @@ var require_parse_path = __commonJS({
   }
 });
 
-// ../../server/node_modules/append-field/lib/set-value.js
+// server/node_modules/append-field/lib/set-value.js
 var require_set_value = __commonJS({
-  "../../server/node_modules/append-field/lib/set-value.js"(exports2, module2) {
+  "server/node_modules/append-field/lib/set-value.js"(exports2, module2) {
     function valueType(value) {
       if (value === void 0) return "undefined";
       if (Array.isArray(value)) return "array";
@@ -35354,9 +35357,9 @@ var require_set_value = __commonJS({
   }
 });
 
-// ../../server/node_modules/append-field/index.js
+// server/node_modules/append-field/index.js
 var require_append_field = __commonJS({
-  "../../server/node_modules/append-field/index.js"(exports2, module2) {
+  "server/node_modules/append-field/index.js"(exports2, module2) {
     var parsePath = require_parse_path();
     var setValue = require_set_value();
     function appendField(store, key, value) {
@@ -35369,9 +35372,9 @@ var require_append_field = __commonJS({
   }
 });
 
-// ../../server/node_modules/multer/lib/counter.js
+// server/node_modules/multer/lib/counter.js
 var require_counter = __commonJS({
-  "../../server/node_modules/multer/lib/counter.js"(exports2, module2) {
+  "server/node_modules/multer/lib/counter.js"(exports2, module2) {
     var EventEmitter = require("events").EventEmitter;
     function Counter() {
       EventEmitter.call(this);
@@ -35395,9 +35398,9 @@ var require_counter = __commonJS({
   }
 });
 
-// ../../server/node_modules/multer/lib/multer-error.js
+// server/node_modules/multer/lib/multer-error.js
 var require_multer_error = __commonJS({
-  "../../server/node_modules/multer/lib/multer-error.js"(exports2, module2) {
+  "server/node_modules/multer/lib/multer-error.js"(exports2, module2) {
     var util = require("util");
     var errorMessages = {
       LIMIT_PART_COUNT: "Too many parts",
@@ -35421,9 +35424,9 @@ var require_multer_error = __commonJS({
   }
 });
 
-// ../../server/node_modules/object-assign/index.js
+// server/node_modules/object-assign/index.js
 var require_object_assign = __commonJS({
-  "../../server/node_modules/object-assign/index.js"(exports2, module2) {
+  "server/node_modules/object-assign/index.js"(exports2, module2) {
     "use strict";
     var getOwnPropertySymbols = Object.getOwnPropertySymbols;
     var hasOwnProperty = Object.prototype.hasOwnProperty;
@@ -35491,9 +35494,9 @@ var require_object_assign = __commonJS({
   }
 });
 
-// ../../server/node_modules/multer/lib/file-appender.js
+// server/node_modules/multer/lib/file-appender.js
 var require_file_appender = __commonJS({
-  "../../server/node_modules/multer/lib/file-appender.js"(exports2, module2) {
+  "server/node_modules/multer/lib/file-appender.js"(exports2, module2) {
     var objectAssign = require_object_assign();
     function arrayRemove(arr, item) {
       var idx = arr.indexOf(item);
@@ -35569,9 +35572,9 @@ var require_file_appender = __commonJS({
   }
 });
 
-// ../../server/node_modules/multer/lib/remove-uploaded-files.js
+// server/node_modules/multer/lib/remove-uploaded-files.js
 var require_remove_uploaded_files = __commonJS({
-  "../../server/node_modules/multer/lib/remove-uploaded-files.js"(exports2, module2) {
+  "server/node_modules/multer/lib/remove-uploaded-files.js"(exports2, module2) {
     function removeUploadedFiles(uploadedFiles, remove, cb) {
       var length = uploadedFiles.length;
       var errors = [];
@@ -35597,9 +35600,9 @@ var require_remove_uploaded_files = __commonJS({
   }
 });
 
-// ../../server/node_modules/multer/lib/make-middleware.js
+// server/node_modules/multer/lib/make-middleware.js
 var require_make_middleware = __commonJS({
-  "../../server/node_modules/multer/lib/make-middleware.js"(exports2, module2) {
+  "server/node_modules/multer/lib/make-middleware.js"(exports2, module2) {
     var is = require_type_is();
     var Busboy = require_lib3();
     var extend = require_immutable();
@@ -35746,9 +35749,9 @@ var require_make_middleware = __commonJS({
   }
 });
 
-// ../../server/node_modules/mkdirp/index.js
+// server/node_modules/mkdirp/index.js
 var require_mkdirp = __commonJS({
-  "../../server/node_modules/mkdirp/index.js"(exports2, module2) {
+  "server/node_modules/mkdirp/index.js"(exports2, module2) {
     var path6 = require("path");
     var fs6 = require("fs");
     var _0777 = parseInt("0777", 8);
@@ -35828,9 +35831,9 @@ var require_mkdirp = __commonJS({
   }
 });
 
-// ../../server/node_modules/multer/storage/disk.js
+// server/node_modules/multer/storage/disk.js
 var require_disk = __commonJS({
-  "../../server/node_modules/multer/storage/disk.js"(exports2, module2) {
+  "server/node_modules/multer/storage/disk.js"(exports2, module2) {
     var fs6 = require("fs");
     var os3 = require("os");
     var path6 = require("path");
@@ -35889,9 +35892,9 @@ var require_disk = __commonJS({
   }
 });
 
-// ../../server/node_modules/process-nextick-args/index.js
+// server/node_modules/process-nextick-args/index.js
 var require_process_nextick_args = __commonJS({
-  "../../server/node_modules/process-nextick-args/index.js"(exports2, module2) {
+  "server/node_modules/process-nextick-args/index.js"(exports2, module2) {
     "use strict";
     if (typeof process === "undefined" || !process.version || process.version.indexOf("v0.") === 0 || process.version.indexOf("v1.") === 0 && process.version.indexOf("v1.8.") !== 0) {
       module2.exports = { nextTick };
@@ -35934,9 +35937,9 @@ var require_process_nextick_args = __commonJS({
   }
 });
 
-// ../../server/node_modules/isarray/index.js
+// server/node_modules/isarray/index.js
 var require_isarray = __commonJS({
-  "../../server/node_modules/isarray/index.js"(exports2, module2) {
+  "server/node_modules/isarray/index.js"(exports2, module2) {
     var toString = {}.toString;
     module2.exports = Array.isArray || function(arr) {
       return toString.call(arr) == "[object Array]";
@@ -35944,16 +35947,16 @@ var require_isarray = __commonJS({
   }
 });
 
-// ../../server/node_modules/readable-stream/lib/internal/streams/stream.js
+// server/node_modules/readable-stream/lib/internal/streams/stream.js
 var require_stream = __commonJS({
-  "../../server/node_modules/readable-stream/lib/internal/streams/stream.js"(exports2, module2) {
+  "server/node_modules/readable-stream/lib/internal/streams/stream.js"(exports2, module2) {
     module2.exports = require("stream");
   }
 });
 
-// ../../server/node_modules/readable-stream/node_modules/safe-buffer/index.js
+// server/node_modules/readable-stream/node_modules/safe-buffer/index.js
 var require_safe_buffer2 = __commonJS({
-  "../../server/node_modules/readable-stream/node_modules/safe-buffer/index.js"(exports2, module2) {
+  "server/node_modules/readable-stream/node_modules/safe-buffer/index.js"(exports2, module2) {
     var buffer = require("buffer");
     var Buffer3 = buffer.Buffer;
     function copyProps(src, dst) {
@@ -36008,9 +36011,9 @@ var require_safe_buffer2 = __commonJS({
   }
 });
 
-// ../../server/node_modules/core-util-is/lib/util.js
+// server/node_modules/core-util-is/lib/util.js
 var require_util = __commonJS({
-  "../../server/node_modules/core-util-is/lib/util.js"(exports2) {
+  "server/node_modules/core-util-is/lib/util.js"(exports2) {
     function isArray2(arg) {
       if (Array.isArray) {
         return Array.isArray(arg);
@@ -36078,9 +36081,9 @@ var require_util = __commonJS({
   }
 });
 
-// ../../server/node_modules/readable-stream/lib/internal/streams/BufferList.js
+// server/node_modules/readable-stream/lib/internal/streams/BufferList.js
 var require_BufferList = __commonJS({
-  "../../server/node_modules/readable-stream/lib/internal/streams/BufferList.js"(exports2, module2) {
+  "server/node_modules/readable-stream/lib/internal/streams/BufferList.js"(exports2, module2) {
     "use strict";
     function _classCallCheck(instance, Constructor) {
       if (!(instance instanceof Constructor)) {
@@ -36156,9 +36159,9 @@ var require_BufferList = __commonJS({
   }
 });
 
-// ../../server/node_modules/readable-stream/lib/internal/streams/destroy.js
+// server/node_modules/readable-stream/lib/internal/streams/destroy.js
 var require_destroy2 = __commonJS({
-  "../../server/node_modules/readable-stream/lib/internal/streams/destroy.js"(exports2, module2) {
+  "server/node_modules/readable-stream/lib/internal/streams/destroy.js"(exports2, module2) {
     "use strict";
     var pna = require_process_nextick_args();
     function destroy(err, cb) {
@@ -36225,16 +36228,16 @@ var require_destroy2 = __commonJS({
   }
 });
 
-// ../../server/node_modules/util-deprecate/node.js
+// server/node_modules/util-deprecate/node.js
 var require_node3 = __commonJS({
-  "../../server/node_modules/util-deprecate/node.js"(exports2, module2) {
+  "server/node_modules/util-deprecate/node.js"(exports2, module2) {
     module2.exports = require("util").deprecate;
   }
 });
 
-// ../../server/node_modules/readable-stream/lib/_stream_writable.js
+// server/node_modules/readable-stream/lib/_stream_writable.js
 var require_stream_writable = __commonJS({
-  "../../server/node_modules/readable-stream/lib/_stream_writable.js"(exports2, module2) {
+  "server/node_modules/readable-stream/lib/_stream_writable.js"(exports2, module2) {
     "use strict";
     var pna = require_process_nextick_args();
     module2.exports = Writable;
@@ -36672,9 +36675,9 @@ var require_stream_writable = __commonJS({
   }
 });
 
-// ../../server/node_modules/readable-stream/lib/_stream_duplex.js
+// server/node_modules/readable-stream/lib/_stream_duplex.js
 var require_stream_duplex = __commonJS({
-  "../../server/node_modules/readable-stream/lib/_stream_duplex.js"(exports2, module2) {
+  "server/node_modules/readable-stream/lib/_stream_duplex.js"(exports2, module2) {
     "use strict";
     var pna = require_process_nextick_args();
     var objectKeys = Object.keys || function(obj) {
@@ -36749,9 +36752,9 @@ var require_stream_duplex = __commonJS({
   }
 });
 
-// ../../server/node_modules/string_decoder/node_modules/safe-buffer/index.js
+// server/node_modules/string_decoder/node_modules/safe-buffer/index.js
 var require_safe_buffer3 = __commonJS({
-  "../../server/node_modules/string_decoder/node_modules/safe-buffer/index.js"(exports2, module2) {
+  "server/node_modules/string_decoder/node_modules/safe-buffer/index.js"(exports2, module2) {
     var buffer = require("buffer");
     var Buffer3 = buffer.Buffer;
     function copyProps(src, dst) {
@@ -36806,9 +36809,9 @@ var require_safe_buffer3 = __commonJS({
   }
 });
 
-// ../../server/node_modules/string_decoder/lib/string_decoder.js
+// server/node_modules/string_decoder/lib/string_decoder.js
 var require_string_decoder = __commonJS({
-  "../../server/node_modules/string_decoder/lib/string_decoder.js"(exports2) {
+  "server/node_modules/string_decoder/lib/string_decoder.js"(exports2) {
     "use strict";
     var Buffer3 = require_safe_buffer3().Buffer;
     var isEncoding = Buffer3.isEncoding || function(encoding) {
@@ -37044,9 +37047,9 @@ var require_string_decoder = __commonJS({
   }
 });
 
-// ../../server/node_modules/readable-stream/lib/_stream_readable.js
+// server/node_modules/readable-stream/lib/_stream_readable.js
 var require_stream_readable = __commonJS({
-  "../../server/node_modules/readable-stream/lib/_stream_readable.js"(exports2, module2) {
+  "server/node_modules/readable-stream/lib/_stream_readable.js"(exports2, module2) {
     "use strict";
     var pna = require_process_nextick_args();
     module2.exports = Readable;
@@ -37730,9 +37733,9 @@ var require_stream_readable = __commonJS({
   }
 });
 
-// ../../server/node_modules/readable-stream/lib/_stream_transform.js
+// server/node_modules/readable-stream/lib/_stream_transform.js
 var require_stream_transform = __commonJS({
-  "../../server/node_modules/readable-stream/lib/_stream_transform.js"(exports2, module2) {
+  "server/node_modules/readable-stream/lib/_stream_transform.js"(exports2, module2) {
     "use strict";
     module2.exports = Transform;
     var Duplex = require_stream_duplex();
@@ -37830,9 +37833,9 @@ var require_stream_transform = __commonJS({
   }
 });
 
-// ../../server/node_modules/readable-stream/lib/_stream_passthrough.js
+// server/node_modules/readable-stream/lib/_stream_passthrough.js
 var require_stream_passthrough = __commonJS({
-  "../../server/node_modules/readable-stream/lib/_stream_passthrough.js"(exports2, module2) {
+  "server/node_modules/readable-stream/lib/_stream_passthrough.js"(exports2, module2) {
     "use strict";
     module2.exports = PassThrough;
     var Transform = require_stream_transform();
@@ -37849,9 +37852,9 @@ var require_stream_passthrough = __commonJS({
   }
 });
 
-// ../../server/node_modules/readable-stream/readable.js
+// server/node_modules/readable-stream/readable.js
 var require_readable = __commonJS({
-  "../../server/node_modules/readable-stream/readable.js"(exports2, module2) {
+  "server/node_modules/readable-stream/readable.js"(exports2, module2) {
     var Stream2 = require("stream");
     if (process.env.READABLE_STREAM === "disable" && Stream2) {
       module2.exports = Stream2;
@@ -37874,9 +37877,9 @@ var require_readable = __commonJS({
   }
 });
 
-// ../../server/node_modules/buffer-from/index.js
+// server/node_modules/buffer-from/index.js
 var require_buffer_from = __commonJS({
-  "../../server/node_modules/buffer-from/index.js"(exports2, module2) {
+  "server/node_modules/buffer-from/index.js"(exports2, module2) {
     var toString = Object.prototype.toString;
     var isModern = typeof Buffer !== "undefined" && typeof Buffer.alloc === "function" && typeof Buffer.allocUnsafe === "function" && typeof Buffer.from === "function";
     function isArrayBuffer(input) {
@@ -37923,9 +37926,9 @@ var require_buffer_from = __commonJS({
   }
 });
 
-// ../../server/node_modules/typedarray/index.js
+// server/node_modules/typedarray/index.js
 var require_typedarray = __commonJS({
-  "../../server/node_modules/typedarray/index.js"(exports2) {
+  "server/node_modules/typedarray/index.js"(exports2) {
     var undefined2 = void 0;
     var MAX_ARRAY_LENGTH = 1e5;
     var ECMAScript = /* @__PURE__ */ function() {
@@ -38454,9 +38457,9 @@ var require_typedarray = __commonJS({
   }
 });
 
-// ../../server/node_modules/concat-stream/index.js
+// server/node_modules/concat-stream/index.js
 var require_concat_stream = __commonJS({
-  "../../server/node_modules/concat-stream/index.js"(exports2, module2) {
+  "server/node_modules/concat-stream/index.js"(exports2, module2) {
     var Writable = require_readable().Writable;
     var inherits = require_inherits();
     var bufferFrom = require_buffer_from();
@@ -38588,9 +38591,9 @@ var require_concat_stream = __commonJS({
   }
 });
 
-// ../../server/node_modules/multer/storage/memory.js
+// server/node_modules/multer/storage/memory.js
 var require_memory = __commonJS({
-  "../../server/node_modules/multer/storage/memory.js"(exports2, module2) {
+  "server/node_modules/multer/storage/memory.js"(exports2, module2) {
     var concat = require_concat_stream();
     function MemoryStorage(opts) {
     }
@@ -38612,9 +38615,9 @@ var require_memory = __commonJS({
   }
 });
 
-// ../../server/node_modules/multer/index.js
+// server/node_modules/multer/index.js
 var require_multer = __commonJS({
-  "../../server/node_modules/multer/index.js"(exports2, module2) {
+  "server/node_modules/multer/index.js"(exports2, module2) {
     var makeMiddleware = require_make_middleware();
     var diskStorage = require_disk();
     var memoryStorage = require_memory();
@@ -38702,9 +38705,9 @@ var require_multer = __commonJS({
   }
 });
 
-// ../../server/node_modules/whatwg-fetch/dist/fetch.umd.js
+// server/node_modules/whatwg-fetch/dist/fetch.umd.js
 var require_fetch_umd = __commonJS({
-  "../../server/node_modules/whatwg-fetch/dist/fetch.umd.js"(exports2, module2) {
+  "server/node_modules/whatwg-fetch/dist/fetch.umd.js"(exports2, module2) {
     (function(global2, factory) {
       typeof exports2 === "object" && typeof module2 !== "undefined" ? factory(exports2) : typeof define === "function" && define.amd ? define(["exports"], factory) : factory(global2.WHATWGFetch = {});
     })(exports2, function(exports3) {
@@ -39239,9 +39242,9 @@ var require_fetch_umd = __commonJS({
   }
 });
 
-// ../../server/node_modules/delayed-stream/lib/delayed_stream.js
+// server/node_modules/delayed-stream/lib/delayed_stream.js
 var require_delayed_stream = __commonJS({
-  "../../server/node_modules/delayed-stream/lib/delayed_stream.js"(exports2, module2) {
+  "server/node_modules/delayed-stream/lib/delayed_stream.js"(exports2, module2) {
     var Stream2 = require("stream").Stream;
     var util = require("util");
     module2.exports = DelayedStream;
@@ -39330,9 +39333,9 @@ var require_delayed_stream = __commonJS({
   }
 });
 
-// ../../server/node_modules/combined-stream/lib/combined_stream.js
+// server/node_modules/combined-stream/lib/combined_stream.js
 var require_combined_stream = __commonJS({
-  "../../server/node_modules/combined-stream/lib/combined_stream.js"(exports2, module2) {
+  "server/node_modules/combined-stream/lib/combined_stream.js"(exports2, module2) {
     var util = require("util");
     var Stream2 = require("stream").Stream;
     var DelayedStream = require_delayed_stream();
@@ -39499,9 +39502,9 @@ var require_combined_stream = __commonJS({
   }
 });
 
-// ../../server/node_modules/asynckit/lib/defer.js
+// server/node_modules/asynckit/lib/defer.js
 var require_defer = __commonJS({
-  "../../server/node_modules/asynckit/lib/defer.js"(exports2, module2) {
+  "server/node_modules/asynckit/lib/defer.js"(exports2, module2) {
     module2.exports = defer;
     function defer(fn) {
       var nextTick = typeof setImmediate == "function" ? setImmediate : typeof process == "object" && typeof process.nextTick == "function" ? process.nextTick : null;
@@ -39514,9 +39517,9 @@ var require_defer = __commonJS({
   }
 });
 
-// ../../server/node_modules/asynckit/lib/async.js
+// server/node_modules/asynckit/lib/async.js
 var require_async = __commonJS({
-  "../../server/node_modules/asynckit/lib/async.js"(exports2, module2) {
+  "server/node_modules/asynckit/lib/async.js"(exports2, module2) {
     var defer = require_defer();
     module2.exports = async;
     function async(callback) {
@@ -39537,9 +39540,9 @@ var require_async = __commonJS({
   }
 });
 
-// ../../server/node_modules/asynckit/lib/abort.js
+// server/node_modules/asynckit/lib/abort.js
 var require_abort = __commonJS({
-  "../../server/node_modules/asynckit/lib/abort.js"(exports2, module2) {
+  "server/node_modules/asynckit/lib/abort.js"(exports2, module2) {
     module2.exports = abort;
     function abort(state) {
       Object.keys(state.jobs).forEach(clean.bind(state));
@@ -39553,9 +39556,9 @@ var require_abort = __commonJS({
   }
 });
 
-// ../../server/node_modules/asynckit/lib/iterate.js
+// server/node_modules/asynckit/lib/iterate.js
 var require_iterate = __commonJS({
-  "../../server/node_modules/asynckit/lib/iterate.js"(exports2, module2) {
+  "server/node_modules/asynckit/lib/iterate.js"(exports2, module2) {
     var async = require_async();
     var abort = require_abort();
     module2.exports = iterate;
@@ -39586,9 +39589,9 @@ var require_iterate = __commonJS({
   }
 });
 
-// ../../server/node_modules/asynckit/lib/state.js
+// server/node_modules/asynckit/lib/state.js
 var require_state = __commonJS({
-  "../../server/node_modules/asynckit/lib/state.js"(exports2, module2) {
+  "server/node_modules/asynckit/lib/state.js"(exports2, module2) {
     module2.exports = state;
     function state(list, sortMethod) {
       var isNamedList = !Array.isArray(list), initState = {
@@ -39608,9 +39611,9 @@ var require_state = __commonJS({
   }
 });
 
-// ../../server/node_modules/asynckit/lib/terminator.js
+// server/node_modules/asynckit/lib/terminator.js
 var require_terminator = __commonJS({
-  "../../server/node_modules/asynckit/lib/terminator.js"(exports2, module2) {
+  "server/node_modules/asynckit/lib/terminator.js"(exports2, module2) {
     var abort = require_abort();
     var async = require_async();
     module2.exports = terminator;
@@ -39625,9 +39628,9 @@ var require_terminator = __commonJS({
   }
 });
 
-// ../../server/node_modules/asynckit/parallel.js
+// server/node_modules/asynckit/parallel.js
 var require_parallel = __commonJS({
-  "../../server/node_modules/asynckit/parallel.js"(exports2, module2) {
+  "server/node_modules/asynckit/parallel.js"(exports2, module2) {
     var iterate = require_iterate();
     var initState = require_state();
     var terminator = require_terminator();
@@ -39652,9 +39655,9 @@ var require_parallel = __commonJS({
   }
 });
 
-// ../../server/node_modules/asynckit/serialOrdered.js
+// server/node_modules/asynckit/serialOrdered.js
 var require_serialOrdered = __commonJS({
-  "../../server/node_modules/asynckit/serialOrdered.js"(exports2, module2) {
+  "server/node_modules/asynckit/serialOrdered.js"(exports2, module2) {
     var iterate = require_iterate();
     var initState = require_state();
     var terminator = require_terminator();
@@ -39686,9 +39689,9 @@ var require_serialOrdered = __commonJS({
   }
 });
 
-// ../../server/node_modules/asynckit/serial.js
+// server/node_modules/asynckit/serial.js
 var require_serial = __commonJS({
-  "../../server/node_modules/asynckit/serial.js"(exports2, module2) {
+  "server/node_modules/asynckit/serial.js"(exports2, module2) {
     var serialOrdered = require_serialOrdered();
     module2.exports = serial;
     function serial(list, iterator, callback) {
@@ -39697,9 +39700,9 @@ var require_serial = __commonJS({
   }
 });
 
-// ../../server/node_modules/asynckit/index.js
+// server/node_modules/asynckit/index.js
 var require_asynckit = __commonJS({
-  "../../server/node_modules/asynckit/index.js"(exports2, module2) {
+  "server/node_modules/asynckit/index.js"(exports2, module2) {
     module2.exports = {
       parallel: require_parallel(),
       serial: require_serial(),
@@ -39708,9 +39711,9 @@ var require_asynckit = __commonJS({
   }
 });
 
-// ../../server/node_modules/has-tostringtag/shams.js
+// server/node_modules/has-tostringtag/shams.js
 var require_shams2 = __commonJS({
-  "../../server/node_modules/has-tostringtag/shams.js"(exports2, module2) {
+  "server/node_modules/has-tostringtag/shams.js"(exports2, module2) {
     "use strict";
     var hasSymbols = require_shams();
     module2.exports = function hasToStringTagShams() {
@@ -39719,9 +39722,9 @@ var require_shams2 = __commonJS({
   }
 });
 
-// ../../server/node_modules/es-set-tostringtag/index.js
+// server/node_modules/es-set-tostringtag/index.js
 var require_es_set_tostringtag = __commonJS({
-  "../../server/node_modules/es-set-tostringtag/index.js"(exports2, module2) {
+  "server/node_modules/es-set-tostringtag/index.js"(exports2, module2) {
     "use strict";
     var GetIntrinsic = require_get_intrinsic();
     var $defineProperty = GetIntrinsic("%Object.defineProperty%", true);
@@ -39751,9 +39754,9 @@ var require_es_set_tostringtag = __commonJS({
   }
 });
 
-// ../../server/node_modules/form-data/lib/populate.js
+// server/node_modules/form-data/lib/populate.js
 var require_populate = __commonJS({
-  "../../server/node_modules/form-data/lib/populate.js"(exports2, module2) {
+  "server/node_modules/form-data/lib/populate.js"(exports2, module2) {
     "use strict";
     module2.exports = function(dst, src) {
       Object.keys(src).forEach(function(prop) {
@@ -39764,9 +39767,9 @@ var require_populate = __commonJS({
   }
 });
 
-// ../../server/node_modules/form-data/lib/form_data.js
+// server/node_modules/form-data/lib/form_data.js
 var require_form_data = __commonJS({
-  "../../server/node_modules/form-data/lib/form_data.js"(exports2, module2) {
+  "server/node_modules/form-data/lib/form_data.js"(exports2, module2) {
     "use strict";
     var CombinedStream = require_combined_stream();
     var util = require("util");
@@ -40086,9 +40089,9 @@ var require_form_data = __commonJS({
   }
 });
 
-// ../../server/node_modules/https-proxy-agent/node_modules/ms/index.js
+// server/node_modules/https-proxy-agent/node_modules/ms/index.js
 var require_ms5 = __commonJS({
-  "../../server/node_modules/https-proxy-agent/node_modules/ms/index.js"(exports2, module2) {
+  "server/node_modules/https-proxy-agent/node_modules/ms/index.js"(exports2, module2) {
     var s = 1e3;
     var m = s * 60;
     var h = m * 60;
@@ -40202,9 +40205,9 @@ var require_ms5 = __commonJS({
   }
 });
 
-// ../../server/node_modules/https-proxy-agent/node_modules/debug/src/common.js
+// server/node_modules/https-proxy-agent/node_modules/debug/src/common.js
 var require_common3 = __commonJS({
-  "../../server/node_modules/https-proxy-agent/node_modules/debug/src/common.js"(exports2, module2) {
+  "server/node_modules/https-proxy-agent/node_modules/debug/src/common.js"(exports2, module2) {
     function setup(env) {
       createDebug.debug = createDebug;
       createDebug.default = createDebug;
@@ -40379,9 +40382,9 @@ var require_common3 = __commonJS({
   }
 });
 
-// ../../server/node_modules/https-proxy-agent/node_modules/debug/src/browser.js
+// server/node_modules/https-proxy-agent/node_modules/debug/src/browser.js
 var require_browser3 = __commonJS({
-  "../../server/node_modules/https-proxy-agent/node_modules/debug/src/browser.js"(exports2, module2) {
+  "server/node_modules/https-proxy-agent/node_modules/debug/src/browser.js"(exports2, module2) {
     exports2.formatArgs = formatArgs;
     exports2.save = save;
     exports2.load = load;
@@ -40549,9 +40552,9 @@ var require_browser3 = __commonJS({
   }
 });
 
-// ../../server/node_modules/https-proxy-agent/node_modules/debug/src/node.js
+// server/node_modules/https-proxy-agent/node_modules/debug/src/node.js
 var require_node4 = __commonJS({
-  "../../server/node_modules/https-proxy-agent/node_modules/debug/src/node.js"(exports2, module2) {
+  "server/node_modules/https-proxy-agent/node_modules/debug/src/node.js"(exports2, module2) {
     var tty = require("tty");
     var util = require("util");
     exports2.init = init;
@@ -40723,9 +40726,9 @@ var require_node4 = __commonJS({
   }
 });
 
-// ../../server/node_modules/https-proxy-agent/node_modules/debug/src/index.js
+// server/node_modules/https-proxy-agent/node_modules/debug/src/index.js
 var require_src3 = __commonJS({
-  "../../server/node_modules/https-proxy-agent/node_modules/debug/src/index.js"(exports2, module2) {
+  "server/node_modules/https-proxy-agent/node_modules/debug/src/index.js"(exports2, module2) {
     if (typeof process === "undefined" || process.type === "renderer" || process.browser === true || process.__nwjs) {
       module2.exports = require_browser3();
     } else {
@@ -40734,9 +40737,9 @@ var require_src3 = __commonJS({
   }
 });
 
-// ../../server/node_modules/agent-base/node_modules/ms/index.js
+// server/node_modules/agent-base/node_modules/ms/index.js
 var require_ms6 = __commonJS({
-  "../../server/node_modules/agent-base/node_modules/ms/index.js"(exports2, module2) {
+  "server/node_modules/agent-base/node_modules/ms/index.js"(exports2, module2) {
     var s = 1e3;
     var m = s * 60;
     var h = m * 60;
@@ -40850,9 +40853,9 @@ var require_ms6 = __commonJS({
   }
 });
 
-// ../../server/node_modules/agent-base/node_modules/debug/src/common.js
+// server/node_modules/agent-base/node_modules/debug/src/common.js
 var require_common4 = __commonJS({
-  "../../server/node_modules/agent-base/node_modules/debug/src/common.js"(exports2, module2) {
+  "server/node_modules/agent-base/node_modules/debug/src/common.js"(exports2, module2) {
     function setup(env) {
       createDebug.debug = createDebug;
       createDebug.default = createDebug;
@@ -41027,9 +41030,9 @@ var require_common4 = __commonJS({
   }
 });
 
-// ../../server/node_modules/agent-base/node_modules/debug/src/browser.js
+// server/node_modules/agent-base/node_modules/debug/src/browser.js
 var require_browser4 = __commonJS({
-  "../../server/node_modules/agent-base/node_modules/debug/src/browser.js"(exports2, module2) {
+  "server/node_modules/agent-base/node_modules/debug/src/browser.js"(exports2, module2) {
     exports2.formatArgs = formatArgs;
     exports2.save = save;
     exports2.load = load;
@@ -41197,9 +41200,9 @@ var require_browser4 = __commonJS({
   }
 });
 
-// ../../server/node_modules/agent-base/node_modules/debug/src/node.js
+// server/node_modules/agent-base/node_modules/debug/src/node.js
 var require_node5 = __commonJS({
-  "../../server/node_modules/agent-base/node_modules/debug/src/node.js"(exports2, module2) {
+  "server/node_modules/agent-base/node_modules/debug/src/node.js"(exports2, module2) {
     var tty = require("tty");
     var util = require("util");
     exports2.init = init;
@@ -41371,9 +41374,9 @@ var require_node5 = __commonJS({
   }
 });
 
-// ../../server/node_modules/agent-base/node_modules/debug/src/index.js
+// server/node_modules/agent-base/node_modules/debug/src/index.js
 var require_src4 = __commonJS({
-  "../../server/node_modules/agent-base/node_modules/debug/src/index.js"(exports2, module2) {
+  "server/node_modules/agent-base/node_modules/debug/src/index.js"(exports2, module2) {
     if (typeof process === "undefined" || process.type === "renderer" || process.browser === true || process.__nwjs) {
       module2.exports = require_browser4();
     } else {
@@ -41382,9 +41385,9 @@ var require_src4 = __commonJS({
   }
 });
 
-// ../../server/node_modules/agent-base/dist/src/promisify.js
+// server/node_modules/agent-base/dist/src/promisify.js
 var require_promisify = __commonJS({
-  "../../server/node_modules/agent-base/dist/src/promisify.js"(exports2) {
+  "server/node_modules/agent-base/dist/src/promisify.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     function promisify(fn) {
@@ -41404,9 +41407,9 @@ var require_promisify = __commonJS({
   }
 });
 
-// ../../server/node_modules/agent-base/dist/src/index.js
+// server/node_modules/agent-base/dist/src/index.js
 var require_src5 = __commonJS({
-  "../../server/node_modules/agent-base/dist/src/index.js"(exports2, module2) {
+  "server/node_modules/agent-base/dist/src/index.js"(exports2, module2) {
     "use strict";
     var __importDefault2 = exports2 && exports2.__importDefault || function(mod) {
       return mod && mod.__esModule ? mod : { "default": mod };
@@ -41587,9 +41590,9 @@ var require_src5 = __commonJS({
   }
 });
 
-// ../../server/node_modules/https-proxy-agent/dist/parse-proxy-response.js
+// server/node_modules/https-proxy-agent/dist/parse-proxy-response.js
 var require_parse_proxy_response = __commonJS({
-  "../../server/node_modules/https-proxy-agent/dist/parse-proxy-response.js"(exports2) {
+  "server/node_modules/https-proxy-agent/dist/parse-proxy-response.js"(exports2) {
     "use strict";
     var __importDefault2 = exports2 && exports2.__importDefault || function(mod) {
       return mod && mod.__esModule ? mod : { "default": mod };
@@ -41653,9 +41656,9 @@ var require_parse_proxy_response = __commonJS({
   }
 });
 
-// ../../server/node_modules/https-proxy-agent/dist/agent.js
+// server/node_modules/https-proxy-agent/dist/agent.js
 var require_agent = __commonJS({
-  "../../server/node_modules/https-proxy-agent/dist/agent.js"(exports2) {
+  "server/node_modules/https-proxy-agent/dist/agent.js"(exports2) {
     "use strict";
     var __awaiter2 = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
       function adopt(value) {
@@ -41813,9 +41816,9 @@ var require_agent = __commonJS({
   }
 });
 
-// ../../server/node_modules/https-proxy-agent/dist/index.js
+// server/node_modules/https-proxy-agent/dist/index.js
 var require_dist = __commonJS({
-  "../../server/node_modules/https-proxy-agent/dist/index.js"(exports2, module2) {
+  "server/node_modules/https-proxy-agent/dist/index.js"(exports2, module2) {
     "use strict";
     var __importDefault2 = exports2 && exports2.__importDefault || function(mod) {
       return mod && mod.__esModule ? mod : { "default": mod };
@@ -41832,9 +41835,9 @@ var require_dist = __commonJS({
   }
 });
 
-// ../../server/node_modules/follow-redirects/debug.js
+// server/node_modules/follow-redirects/debug.js
 var require_debug3 = __commonJS({
-  "../../server/node_modules/follow-redirects/debug.js"(exports2, module2) {
+  "server/node_modules/follow-redirects/debug.js"(exports2, module2) {
     var debug;
     module2.exports = function() {
       if (!debug) {
@@ -41852,9 +41855,9 @@ var require_debug3 = __commonJS({
   }
 });
 
-// ../../server/node_modules/follow-redirects/index.js
+// server/node_modules/follow-redirects/index.js
 var require_follow_redirects = __commonJS({
-  "../../server/node_modules/follow-redirects/index.js"(exports2, module2) {
+  "server/node_modules/follow-redirects/index.js"(exports2, module2) {
     var url = require("url");
     var URL3 = url.URL;
     var http = require("http");
@@ -42363,9 +42366,9 @@ var require_follow_redirects = __commonJS({
   }
 });
 
-// ../../server/node_modules/msedge-tts/node_modules/axios/dist/node/axios.cjs
+// server/node_modules/msedge-tts/node_modules/axios/dist/node/axios.cjs
 var require_axios = __commonJS({
-  "../../server/node_modules/msedge-tts/node_modules/axios/dist/node/axios.cjs"(exports2, module2) {
+  "server/node_modules/msedge-tts/node_modules/axios/dist/node/axios.cjs"(exports2, module2) {
     "use strict";
     var FormData$1 = require_form_data();
     var crypto10 = require("crypto");
@@ -46884,9 +46887,9 @@ var require_axios = __commonJS({
   }
 });
 
-// ../../server/node_modules/ws/lib/constants.js
+// server/node_modules/ws/lib/constants.js
 var require_constants4 = __commonJS({
-  "../../server/node_modules/ws/lib/constants.js"(exports2, module2) {
+  "server/node_modules/ws/lib/constants.js"(exports2, module2) {
     "use strict";
     var BINARY_TYPES = ["nodebuffer", "arraybuffer", "fragments"];
     var hasBlob = typeof Blob !== "undefined";
@@ -46907,9 +46910,9 @@ var require_constants4 = __commonJS({
   }
 });
 
-// ../../server/node_modules/ws/lib/buffer-util.js
+// server/node_modules/ws/lib/buffer-util.js
 var require_buffer_util = __commonJS({
-  "../../server/node_modules/ws/lib/buffer-util.js"(exports2, module2) {
+  "server/node_modules/ws/lib/buffer-util.js"(exports2, module2) {
     "use strict";
     var { EMPTY_BUFFER } = require_constants4();
     var FastBuffer = Buffer[Symbol.species];
@@ -46982,9 +46985,9 @@ var require_buffer_util = __commonJS({
   }
 });
 
-// ../../server/node_modules/ws/lib/limiter.js
+// server/node_modules/ws/lib/limiter.js
 var require_limiter = __commonJS({
-  "../../server/node_modules/ws/lib/limiter.js"(exports2, module2) {
+  "server/node_modules/ws/lib/limiter.js"(exports2, module2) {
     "use strict";
     var kDone = Symbol("kDone");
     var kRun = Symbol("kRun");
@@ -47032,9 +47035,9 @@ var require_limiter = __commonJS({
   }
 });
 
-// ../../server/node_modules/ws/lib/permessage-deflate.js
+// server/node_modules/ws/lib/permessage-deflate.js
 var require_permessage_deflate = __commonJS({
-  "../../server/node_modules/ws/lib/permessage-deflate.js"(exports2, module2) {
+  "server/node_modules/ws/lib/permessage-deflate.js"(exports2, module2) {
     "use strict";
     var zlib = require("zlib");
     var bufferUtil = require_buffer_util();
@@ -47415,9 +47418,9 @@ var require_permessage_deflate = __commonJS({
   }
 });
 
-// ../../server/node_modules/ws/lib/validation.js
+// server/node_modules/ws/lib/validation.js
 var require_validation = __commonJS({
-  "../../server/node_modules/ws/lib/validation.js"(exports2, module2) {
+  "server/node_modules/ws/lib/validation.js"(exports2, module2) {
     "use strict";
     var { isUtf8 } = require("buffer");
     var { hasBlob } = require_constants4();
@@ -47616,9 +47619,9 @@ var require_validation = __commonJS({
   }
 });
 
-// ../../server/node_modules/ws/lib/receiver.js
+// server/node_modules/ws/lib/receiver.js
 var require_receiver = __commonJS({
-  "../../server/node_modules/ws/lib/receiver.js"(exports2, module2) {
+  "server/node_modules/ws/lib/receiver.js"(exports2, module2) {
     "use strict";
     var { Writable } = require("stream");
     var PerMessageDeflate2 = require_permessage_deflate();
@@ -48239,9 +48242,9 @@ var require_receiver = __commonJS({
   }
 });
 
-// ../../server/node_modules/ws/lib/sender.js
+// server/node_modules/ws/lib/sender.js
 var require_sender = __commonJS({
-  "../../server/node_modules/ws/lib/sender.js"(exports2, module2) {
+  "server/node_modules/ws/lib/sender.js"(exports2, module2) {
     "use strict";
     var { Duplex } = require("stream");
     var { randomFillSync } = require("crypto");
@@ -48732,9 +48735,9 @@ var require_sender = __commonJS({
   }
 });
 
-// ../../server/node_modules/ws/lib/event-target.js
+// server/node_modules/ws/lib/event-target.js
 var require_event_target = __commonJS({
-  "../../server/node_modules/ws/lib/event-target.js"(exports2, module2) {
+  "server/node_modules/ws/lib/event-target.js"(exports2, module2) {
     "use strict";
     var { kForOnEventAttribute, kListener } = require_constants4();
     var kCode = Symbol("kCode");
@@ -48961,9 +48964,9 @@ var require_event_target = __commonJS({
   }
 });
 
-// ../../server/node_modules/ws/lib/extension.js
+// server/node_modules/ws/lib/extension.js
 var require_extension = __commonJS({
-  "../../server/node_modules/ws/lib/extension.js"(exports2, module2) {
+  "server/node_modules/ws/lib/extension.js"(exports2, module2) {
     "use strict";
     var { tokenChars } = require_validation();
     function push(dest, name, elem) {
@@ -49114,9 +49117,9 @@ var require_extension = __commonJS({
   }
 });
 
-// ../../server/node_modules/ws/lib/websocket.js
+// server/node_modules/ws/lib/websocket.js
 var require_websocket = __commonJS({
-  "../../server/node_modules/ws/lib/websocket.js"(exports2, module2) {
+  "server/node_modules/ws/lib/websocket.js"(exports2, module2) {
     "use strict";
     var EventEmitter = require("events");
     var https = require("https");
@@ -50023,9 +50026,9 @@ var require_websocket = __commonJS({
   }
 });
 
-// ../../server/node_modules/ws/lib/stream.js
+// server/node_modules/ws/lib/stream.js
 var require_stream2 = __commonJS({
-  "../../server/node_modules/ws/lib/stream.js"(exports2, module2) {
+  "server/node_modules/ws/lib/stream.js"(exports2, module2) {
     "use strict";
     var WebSocket2 = require_websocket();
     var { Duplex } = require("stream");
@@ -50121,9 +50124,9 @@ var require_stream2 = __commonJS({
   }
 });
 
-// ../../server/node_modules/ws/lib/subprotocol.js
+// server/node_modules/ws/lib/subprotocol.js
 var require_subprotocol = __commonJS({
-  "../../server/node_modules/ws/lib/subprotocol.js"(exports2, module2) {
+  "server/node_modules/ws/lib/subprotocol.js"(exports2, module2) {
     "use strict";
     var { tokenChars } = require_validation();
     function parse2(header) {
@@ -50166,9 +50169,9 @@ var require_subprotocol = __commonJS({
   }
 });
 
-// ../../server/node_modules/ws/lib/websocket-server.js
+// server/node_modules/ws/lib/websocket-server.js
 var require_websocket_server = __commonJS({
-  "../../server/node_modules/ws/lib/websocket-server.js"(exports2, module2) {
+  "server/node_modules/ws/lib/websocket-server.js"(exports2, module2) {
     "use strict";
     var EventEmitter = require("events");
     var http = require("http");
@@ -50567,9 +50570,9 @@ var require_websocket_server = __commonJS({
   }
 });
 
-// ../../server/node_modules/ws/index.js
+// server/node_modules/ws/index.js
 var require_ws = __commonJS({
-  "../../server/node_modules/ws/index.js"(exports2, module2) {
+  "server/node_modules/ws/index.js"(exports2, module2) {
     "use strict";
     var createWebSocketStream2 = require_stream2();
     var extension2 = require_extension();
@@ -50592,17 +50595,17 @@ var require_ws = __commonJS({
   }
 });
 
-// ../../server/node_modules/isomorphic-ws/node.js
+// server/node_modules/isomorphic-ws/node.js
 var require_node6 = __commonJS({
-  "../../server/node_modules/isomorphic-ws/node.js"(exports2, module2) {
+  "server/node_modules/isomorphic-ws/node.js"(exports2, module2) {
     "use strict";
     module2.exports = require_ws();
   }
 });
 
-// ../../server/node_modules/base64-js/index.js
+// server/node_modules/base64-js/index.js
 var require_base64_js = __commonJS({
-  "../../server/node_modules/base64-js/index.js"(exports2) {
+  "server/node_modules/base64-js/index.js"(exports2) {
     "use strict";
     exports2.byteLength = byteLength;
     exports2.toByteArray = toByteArray;
@@ -50701,9 +50704,9 @@ var require_base64_js = __commonJS({
   }
 });
 
-// ../../server/node_modules/ieee754/index.js
+// server/node_modules/ieee754/index.js
 var require_ieee754 = __commonJS({
-  "../../server/node_modules/ieee754/index.js"(exports2) {
+  "server/node_modules/ieee754/index.js"(exports2) {
     exports2.read = function(buffer, offset, isLE, mLen, nBytes) {
       var e, m;
       var eLen = nBytes * 8 - mLen - 1;
@@ -50784,9 +50787,9 @@ var require_ieee754 = __commonJS({
   }
 });
 
-// ../../server/node_modules/buffer/index.js
+// server/node_modules/buffer/index.js
 var require_buffer = __commonJS({
-  "../../server/node_modules/buffer/index.js"(exports2) {
+  "server/node_modules/buffer/index.js"(exports2) {
     "use strict";
     var base64 = require_base64_js();
     var ieee754 = require_ieee754();
@@ -52376,9 +52379,9 @@ var require_buffer = __commonJS({
   }
 });
 
-// ../../server/node_modules/msedge-tts/dist/Output.js
+// server/node_modules/msedge-tts/dist/Output.js
 var require_Output = __commonJS({
-  "../../server/node_modules/msedge-tts/dist/Output.js"(exports2) {
+  "server/node_modules/msedge-tts/dist/Output.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.OUTPUT_EXTENSIONS = exports2.OUTPUT_FORMAT = void 0;
@@ -52396,9 +52399,9 @@ var require_Output = __commonJS({
   }
 });
 
-// ../../server/node_modules/msedge-tts/dist/Prosody.js
+// server/node_modules/msedge-tts/dist/Prosody.js
 var require_Prosody = __commonJS({
-  "../../server/node_modules/msedge-tts/dist/Prosody.js"(exports2) {
+  "server/node_modules/msedge-tts/dist/Prosody.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.VOLUME = exports2.PITCH = exports2.RATE = exports2.ProsodyOptions = void 0;
@@ -52454,9 +52457,9 @@ var require_Prosody = __commonJS({
   }
 });
 
-// ../../server/node_modules/msedge-tts/dist/utils.js
+// server/node_modules/msedge-tts/dist/utils.js
 var require_utils4 = __commonJS({
-  "../../server/node_modules/msedge-tts/dist/utils.js"(exports2) {
+  "server/node_modules/msedge-tts/dist/utils.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.joinPath = void 0;
@@ -52467,9 +52470,9 @@ var require_utils4 = __commonJS({
   }
 });
 
-// ../../server/node_modules/msedge-tts/dist/MsEdgeTTS.js
+// server/node_modules/msedge-tts/dist/MsEdgeTTS.js
 var require_MsEdgeTTS = __commonJS({
-  "../../server/node_modules/msedge-tts/dist/MsEdgeTTS.js"(exports2) {
+  "server/node_modules/msedge-tts/dist/MsEdgeTTS.js"(exports2) {
     "use strict";
     var __createBinding = exports2 && exports2.__createBinding || (Object.create ? function(o, m, k, k2) {
       if (k2 === void 0) k2 = k;
@@ -53047,9 +53050,9 @@ Path:${messageTypes.SSML}${_MsEdgeTTS.JSON_XML_DELIM}` + requestSSML.trim();
   }
 });
 
-// ../../server/node_modules/msedge-tts/dist/index.js
+// server/node_modules/msedge-tts/dist/index.js
 var require_dist2 = __commonJS({
-  "../../server/node_modules/msedge-tts/dist/index.js"(exports2) {
+  "server/node_modules/msedge-tts/dist/index.js"(exports2) {
     "use strict";
     var __createBinding = exports2 && exports2.__createBinding || (Object.create ? function(o, m, k, k2) {
       if (k2 === void 0) k2 = k;
@@ -53074,9 +53077,9 @@ var require_dist2 = __commonJS({
   }
 });
 
-// ../../server/node_modules/google-tts-api/dist/assertInputTypes.js
+// server/node_modules/google-tts-api/dist/assertInputTypes.js
 var require_assertInputTypes = __commonJS({
-  "../../server/node_modules/google-tts-api/dist/assertInputTypes.js"(exports2) {
+  "server/node_modules/google-tts-api/dist/assertInputTypes.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     var assertInputTypes = function(text2, lang2, slow2, host2) {
@@ -53097,9 +53100,9 @@ var require_assertInputTypes = __commonJS({
   }
 });
 
-// ../../server/node_modules/google-tts-api/dist/splitLongText.js
+// server/node_modules/google-tts-api/dist/splitLongText.js
 var require_splitLongText = __commonJS({
-  "../../server/node_modules/google-tts-api/dist/splitLongText.js"(exports2) {
+  "server/node_modules/google-tts-api/dist/splitLongText.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     var SPACE_REGEX = "\\s\\uFEFF\\xA0";
@@ -53147,9 +53150,9 @@ var require_splitLongText = __commonJS({
   }
 });
 
-// ../../server/node_modules/google-tts-api/dist/getAudioUrl.js
+// server/node_modules/google-tts-api/dist/getAudioUrl.js
 var require_getAudioUrl = __commonJS({
-  "../../server/node_modules/google-tts-api/dist/getAudioUrl.js"(exports2) {
+  "server/node_modules/google-tts-api/dist/getAudioUrl.js"(exports2) {
     "use strict";
     var __importDefault2 = exports2 && exports2.__importDefault || function(mod) {
       return mod && mod.__esModule ? mod : { "default": mod };
@@ -53197,9 +53200,9 @@ var require_getAudioUrl = __commonJS({
   }
 });
 
-// ../../server/node_modules/axios/lib/helpers/bind.js
+// server/node_modules/axios/lib/helpers/bind.js
 var require_bind = __commonJS({
-  "../../server/node_modules/axios/lib/helpers/bind.js"(exports2, module2) {
+  "server/node_modules/axios/lib/helpers/bind.js"(exports2, module2) {
     "use strict";
     module2.exports = function bind(fn, thisArg) {
       return function wrap() {
@@ -53213,9 +53216,9 @@ var require_bind = __commonJS({
   }
 });
 
-// ../../server/node_modules/axios/lib/utils.js
+// server/node_modules/axios/lib/utils.js
 var require_utils5 = __commonJS({
-  "../../server/node_modules/axios/lib/utils.js"(exports2, module2) {
+  "server/node_modules/axios/lib/utils.js"(exports2, module2) {
     "use strict";
     var bind = require_bind();
     var toString = Object.prototype.toString;
@@ -53366,9 +53369,9 @@ var require_utils5 = __commonJS({
   }
 });
 
-// ../../server/node_modules/axios/lib/helpers/buildURL.js
+// server/node_modules/axios/lib/helpers/buildURL.js
 var require_buildURL = __commonJS({
-  "../../server/node_modules/axios/lib/helpers/buildURL.js"(exports2, module2) {
+  "server/node_modules/axios/lib/helpers/buildURL.js"(exports2, module2) {
     "use strict";
     var utils = require_utils5();
     function encode2(val) {
@@ -53417,9 +53420,9 @@ var require_buildURL = __commonJS({
   }
 });
 
-// ../../server/node_modules/axios/lib/core/InterceptorManager.js
+// server/node_modules/axios/lib/core/InterceptorManager.js
 var require_InterceptorManager = __commonJS({
-  "../../server/node_modules/axios/lib/core/InterceptorManager.js"(exports2, module2) {
+  "server/node_modules/axios/lib/core/InterceptorManager.js"(exports2, module2) {
     "use strict";
     var utils = require_utils5();
     function InterceptorManager() {
@@ -53450,9 +53453,9 @@ var require_InterceptorManager = __commonJS({
   }
 });
 
-// ../../server/node_modules/axios/lib/helpers/normalizeHeaderName.js
+// server/node_modules/axios/lib/helpers/normalizeHeaderName.js
 var require_normalizeHeaderName = __commonJS({
-  "../../server/node_modules/axios/lib/helpers/normalizeHeaderName.js"(exports2, module2) {
+  "server/node_modules/axios/lib/helpers/normalizeHeaderName.js"(exports2, module2) {
     "use strict";
     var utils = require_utils5();
     module2.exports = function normalizeHeaderName(headers, normalizedName) {
@@ -53466,9 +53469,9 @@ var require_normalizeHeaderName = __commonJS({
   }
 });
 
-// ../../server/node_modules/axios/lib/core/enhanceError.js
+// server/node_modules/axios/lib/core/enhanceError.js
 var require_enhanceError = __commonJS({
-  "../../server/node_modules/axios/lib/core/enhanceError.js"(exports2, module2) {
+  "server/node_modules/axios/lib/core/enhanceError.js"(exports2, module2) {
     "use strict";
     module2.exports = function enhanceError(error, config2, code, request, response) {
       error.config = config2;
@@ -53501,9 +53504,9 @@ var require_enhanceError = __commonJS({
   }
 });
 
-// ../../server/node_modules/axios/lib/core/createError.js
+// server/node_modules/axios/lib/core/createError.js
 var require_createError = __commonJS({
-  "../../server/node_modules/axios/lib/core/createError.js"(exports2, module2) {
+  "server/node_modules/axios/lib/core/createError.js"(exports2, module2) {
     "use strict";
     var enhanceError = require_enhanceError();
     module2.exports = function createError(message, config2, code, request, response) {
@@ -53513,9 +53516,9 @@ var require_createError = __commonJS({
   }
 });
 
-// ../../server/node_modules/axios/lib/core/settle.js
+// server/node_modules/axios/lib/core/settle.js
 var require_settle = __commonJS({
-  "../../server/node_modules/axios/lib/core/settle.js"(exports2, module2) {
+  "server/node_modules/axios/lib/core/settle.js"(exports2, module2) {
     "use strict";
     var createError = require_createError();
     module2.exports = function settle(resolve2, reject, response) {
@@ -53535,9 +53538,9 @@ var require_settle = __commonJS({
   }
 });
 
-// ../../server/node_modules/axios/lib/helpers/cookies.js
+// server/node_modules/axios/lib/helpers/cookies.js
 var require_cookies = __commonJS({
-  "../../server/node_modules/axios/lib/helpers/cookies.js"(exports2, module2) {
+  "server/node_modules/axios/lib/helpers/cookies.js"(exports2, module2) {
     "use strict";
     var utils = require_utils5();
     module2.exports = utils.isStandardBrowserEnv() ? (
@@ -53587,9 +53590,9 @@ var require_cookies = __commonJS({
   }
 });
 
-// ../../server/node_modules/axios/lib/helpers/isAbsoluteURL.js
+// server/node_modules/axios/lib/helpers/isAbsoluteURL.js
 var require_isAbsoluteURL = __commonJS({
-  "../../server/node_modules/axios/lib/helpers/isAbsoluteURL.js"(exports2, module2) {
+  "server/node_modules/axios/lib/helpers/isAbsoluteURL.js"(exports2, module2) {
     "use strict";
     module2.exports = function isAbsoluteURL2(url) {
       return /^([a-z][a-z\d\+\-\.]*:)?\/\//i.test(url);
@@ -53597,9 +53600,9 @@ var require_isAbsoluteURL = __commonJS({
   }
 });
 
-// ../../server/node_modules/axios/lib/helpers/combineURLs.js
+// server/node_modules/axios/lib/helpers/combineURLs.js
 var require_combineURLs = __commonJS({
-  "../../server/node_modules/axios/lib/helpers/combineURLs.js"(exports2, module2) {
+  "server/node_modules/axios/lib/helpers/combineURLs.js"(exports2, module2) {
     "use strict";
     module2.exports = function combineURLs(baseURL, relativeURL) {
       return relativeURL ? baseURL.replace(/\/+$/, "") + "/" + relativeURL.replace(/^\/+/, "") : baseURL;
@@ -53607,9 +53610,9 @@ var require_combineURLs = __commonJS({
   }
 });
 
-// ../../server/node_modules/axios/lib/core/buildFullPath.js
+// server/node_modules/axios/lib/core/buildFullPath.js
 var require_buildFullPath = __commonJS({
-  "../../server/node_modules/axios/lib/core/buildFullPath.js"(exports2, module2) {
+  "server/node_modules/axios/lib/core/buildFullPath.js"(exports2, module2) {
     "use strict";
     var isAbsoluteURL2 = require_isAbsoluteURL();
     var combineURLs = require_combineURLs();
@@ -53622,9 +53625,9 @@ var require_buildFullPath = __commonJS({
   }
 });
 
-// ../../server/node_modules/axios/lib/helpers/parseHeaders.js
+// server/node_modules/axios/lib/helpers/parseHeaders.js
 var require_parseHeaders = __commonJS({
-  "../../server/node_modules/axios/lib/helpers/parseHeaders.js"(exports2, module2) {
+  "server/node_modules/axios/lib/helpers/parseHeaders.js"(exports2, module2) {
     "use strict";
     var utils = require_utils5();
     var ignoreDuplicateOf = [
@@ -53674,9 +53677,9 @@ var require_parseHeaders = __commonJS({
   }
 });
 
-// ../../server/node_modules/axios/lib/helpers/isURLSameOrigin.js
+// server/node_modules/axios/lib/helpers/isURLSameOrigin.js
 var require_isURLSameOrigin = __commonJS({
-  "../../server/node_modules/axios/lib/helpers/isURLSameOrigin.js"(exports2, module2) {
+  "server/node_modules/axios/lib/helpers/isURLSameOrigin.js"(exports2, module2) {
     "use strict";
     var utils = require_utils5();
     module2.exports = utils.isStandardBrowserEnv() ? (
@@ -53721,9 +53724,9 @@ var require_isURLSameOrigin = __commonJS({
   }
 });
 
-// ../../server/node_modules/axios/lib/adapters/xhr.js
+// server/node_modules/axios/lib/adapters/xhr.js
 var require_xhr = __commonJS({
-  "../../server/node_modules/axios/lib/adapters/xhr.js"(exports2, module2) {
+  "server/node_modules/axios/lib/adapters/xhr.js"(exports2, module2) {
     "use strict";
     var utils = require_utils5();
     var settle = require_settle();
@@ -53850,9 +53853,9 @@ var require_xhr = __commonJS({
   }
 });
 
-// ../../server/node_modules/axios/package.json
+// server/node_modules/axios/package.json
 var require_package2 = __commonJS({
-  "../../server/node_modules/axios/package.json"(exports2, module2) {
+  "server/node_modules/axios/package.json"(exports2, module2) {
     module2.exports = {
       name: "axios",
       version: "0.21.4",
@@ -53940,9 +53943,9 @@ var require_package2 = __commonJS({
   }
 });
 
-// ../../server/node_modules/axios/lib/adapters/http.js
+// server/node_modules/axios/lib/adapters/http.js
 var require_http = __commonJS({
-  "../../server/node_modules/axios/lib/adapters/http.js"(exports2, module2) {
+  "server/node_modules/axios/lib/adapters/http.js"(exports2, module2) {
     "use strict";
     var utils = require_utils5();
     var settle = require_settle();
@@ -54199,9 +54202,9 @@ var require_http = __commonJS({
   }
 });
 
-// ../../server/node_modules/axios/lib/defaults.js
+// server/node_modules/axios/lib/defaults.js
 var require_defaults = __commonJS({
-  "../../server/node_modules/axios/lib/defaults.js"(exports2, module2) {
+  "server/node_modules/axios/lib/defaults.js"(exports2, module2) {
     "use strict";
     var utils = require_utils5();
     var normalizeHeaderName = require_normalizeHeaderName();
@@ -54309,9 +54312,9 @@ var require_defaults = __commonJS({
   }
 });
 
-// ../../server/node_modules/axios/lib/core/transformData.js
+// server/node_modules/axios/lib/core/transformData.js
 var require_transformData = __commonJS({
-  "../../server/node_modules/axios/lib/core/transformData.js"(exports2, module2) {
+  "server/node_modules/axios/lib/core/transformData.js"(exports2, module2) {
     "use strict";
     var utils = require_utils5();
     var defaults2 = require_defaults();
@@ -54325,9 +54328,9 @@ var require_transformData = __commonJS({
   }
 });
 
-// ../../server/node_modules/axios/lib/cancel/isCancel.js
+// server/node_modules/axios/lib/cancel/isCancel.js
 var require_isCancel = __commonJS({
-  "../../server/node_modules/axios/lib/cancel/isCancel.js"(exports2, module2) {
+  "server/node_modules/axios/lib/cancel/isCancel.js"(exports2, module2) {
     "use strict";
     module2.exports = function isCancel(value) {
       return !!(value && value.__CANCEL__);
@@ -54335,9 +54338,9 @@ var require_isCancel = __commonJS({
   }
 });
 
-// ../../server/node_modules/axios/lib/core/dispatchRequest.js
+// server/node_modules/axios/lib/core/dispatchRequest.js
 var require_dispatchRequest = __commonJS({
-  "../../server/node_modules/axios/lib/core/dispatchRequest.js"(exports2, module2) {
+  "server/node_modules/axios/lib/core/dispatchRequest.js"(exports2, module2) {
     "use strict";
     var utils = require_utils5();
     var transformData = require_transformData();
@@ -54396,9 +54399,9 @@ var require_dispatchRequest = __commonJS({
   }
 });
 
-// ../../server/node_modules/axios/lib/core/mergeConfig.js
+// server/node_modules/axios/lib/core/mergeConfig.js
 var require_mergeConfig = __commonJS({
-  "../../server/node_modules/axios/lib/core/mergeConfig.js"(exports2, module2) {
+  "server/node_modules/axios/lib/core/mergeConfig.js"(exports2, module2) {
     "use strict";
     var utils = require_utils5();
     module2.exports = function mergeConfig(config1, config2) {
@@ -54479,9 +54482,9 @@ var require_mergeConfig = __commonJS({
   }
 });
 
-// ../../server/node_modules/axios/lib/helpers/validator.js
+// server/node_modules/axios/lib/helpers/validator.js
 var require_validator = __commonJS({
-  "../../server/node_modules/axios/lib/helpers/validator.js"(exports2, module2) {
+  "server/node_modules/axios/lib/helpers/validator.js"(exports2, module2) {
     "use strict";
     var pkg = require_package2();
     var validators = {};
@@ -54555,9 +54558,9 @@ var require_validator = __commonJS({
   }
 });
 
-// ../../server/node_modules/axios/lib/core/Axios.js
+// server/node_modules/axios/lib/core/Axios.js
 var require_Axios = __commonJS({
-  "../../server/node_modules/axios/lib/core/Axios.js"(exports2, module2) {
+  "server/node_modules/axios/lib/core/Axios.js"(exports2, module2) {
     "use strict";
     var utils = require_utils5();
     var buildURL = require_buildURL();
@@ -54667,9 +54670,9 @@ var require_Axios = __commonJS({
   }
 });
 
-// ../../server/node_modules/axios/lib/cancel/Cancel.js
+// server/node_modules/axios/lib/cancel/Cancel.js
 var require_Cancel = __commonJS({
-  "../../server/node_modules/axios/lib/cancel/Cancel.js"(exports2, module2) {
+  "server/node_modules/axios/lib/cancel/Cancel.js"(exports2, module2) {
     "use strict";
     function Cancel(message) {
       this.message = message;
@@ -54682,9 +54685,9 @@ var require_Cancel = __commonJS({
   }
 });
 
-// ../../server/node_modules/axios/lib/cancel/CancelToken.js
+// server/node_modules/axios/lib/cancel/CancelToken.js
 var require_CancelToken = __commonJS({
-  "../../server/node_modules/axios/lib/cancel/CancelToken.js"(exports2, module2) {
+  "server/node_modules/axios/lib/cancel/CancelToken.js"(exports2, module2) {
     "use strict";
     var Cancel = require_Cancel();
     function CancelToken(executor) {
@@ -54723,9 +54726,9 @@ var require_CancelToken = __commonJS({
   }
 });
 
-// ../../server/node_modules/axios/lib/helpers/spread.js
+// server/node_modules/axios/lib/helpers/spread.js
 var require_spread = __commonJS({
-  "../../server/node_modules/axios/lib/helpers/spread.js"(exports2, module2) {
+  "server/node_modules/axios/lib/helpers/spread.js"(exports2, module2) {
     "use strict";
     module2.exports = function spread(callback) {
       return function wrap(arr) {
@@ -54735,9 +54738,9 @@ var require_spread = __commonJS({
   }
 });
 
-// ../../server/node_modules/axios/lib/helpers/isAxiosError.js
+// server/node_modules/axios/lib/helpers/isAxiosError.js
 var require_isAxiosError = __commonJS({
-  "../../server/node_modules/axios/lib/helpers/isAxiosError.js"(exports2, module2) {
+  "server/node_modules/axios/lib/helpers/isAxiosError.js"(exports2, module2) {
     "use strict";
     module2.exports = function isAxiosError(payload) {
       return typeof payload === "object" && payload.isAxiosError === true;
@@ -54745,9 +54748,9 @@ var require_isAxiosError = __commonJS({
   }
 });
 
-// ../../server/node_modules/axios/lib/axios.js
+// server/node_modules/axios/lib/axios.js
 var require_axios2 = __commonJS({
-  "../../server/node_modules/axios/lib/axios.js"(exports2, module2) {
+  "server/node_modules/axios/lib/axios.js"(exports2, module2) {
     "use strict";
     var utils = require_utils5();
     var bind = require_bind();
@@ -54779,16 +54782,16 @@ var require_axios2 = __commonJS({
   }
 });
 
-// ../../server/node_modules/axios/index.js
+// server/node_modules/axios/index.js
 var require_axios3 = __commonJS({
-  "../../server/node_modules/axios/index.js"(exports2, module2) {
+  "server/node_modules/axios/index.js"(exports2, module2) {
     module2.exports = require_axios2();
   }
 });
 
-// ../../server/node_modules/google-tts-api/dist/getAudioBase64.js
+// server/node_modules/google-tts-api/dist/getAudioBase64.js
 var require_getAudioBase64 = __commonJS({
-  "../../server/node_modules/google-tts-api/dist/getAudioBase64.js"(exports, module) {
+  "server/node_modules/google-tts-api/dist/getAudioBase64.js"(exports, module) {
     "use strict";
     var __awaiter = exports && exports.__awaiter || function(thisArg, _arguments, P, generator) {
       function adopt(value) {
@@ -54973,9 +54976,9 @@ var require_getAudioBase64 = __commonJS({
   }
 });
 
-// ../../server/node_modules/google-tts-api/dist/index.js
+// server/node_modules/google-tts-api/dist/index.js
 var require_dist3 = __commonJS({
-  "../../server/node_modules/google-tts-api/dist/index.js"(exports2) {
+  "server/node_modules/google-tts-api/dist/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.getAllAudioBase64 = exports2.getAudioBase64 = exports2.getAllAudioUrls = exports2.getAudioUrl = void 0;
@@ -54996,7 +54999,7 @@ var require_dist3 = __commonJS({
   }
 });
 
-// ../../server/node_modules/dotenv/config.js
+// server/node_modules/dotenv/config.js
 (function() {
   require_main().config(
     Object.assign(
@@ -55008,9 +55011,9 @@ var require_dist3 = __commonJS({
 })();
 
 // server/src/public-site/server.ts
-var import_express20 = __toESM(require_express2(), 1);
+var import_express20 = __toESM(require_express2());
 
-// ../../server/node_modules/helmet/index.mjs
+// server/node_modules/helmet/index.mjs
 var dashify = (str4) => str4.replace(/[A-Z]/g, (capitalLetter) => "-" + capitalLetter.toLowerCase());
 var errify = (err) => err instanceof Error ? err : new Error(String(err));
 var isString = (value) => typeof value === "string";
@@ -55577,7 +55580,7 @@ var helmet = Object.assign(
   }
 );
 
-// ../../server/node_modules/express-rate-limit/dist/index.mjs
+// server/node_modules/express-rate-limit/dist/index.mjs
 var import_node_net = require("node:net");
 var import_ip_address = __toESM(require_ip_address(), 1);
 var import_node_net2 = require("node:net");
@@ -56603,11 +56606,11 @@ function permitsVisitorRequest(method, path6) {
 }
 
 // server/src/public-site/exhibition-agents.ts
-var import_express2 = __toESM(require_express2(), 1);
+var import_express2 = __toESM(require_express2());
 
 // server/src/middleware/auth.ts
-var import_jsonwebtoken = __toESM(require_jsonwebtoken(), 1);
-var import_crypto = __toESM(require("crypto"), 1);
+var import_jsonwebtoken = __toESM(require_jsonwebtoken());
+var import_crypto = __toESM(require("crypto"));
 var JWT_SECRET = process.env.JWT_SECRET;
 if (!JWT_SECRET) {
   console.error("FATAL: JWT_SECRET environment variable is not set. Refusing to start with insecure default.");
@@ -56818,8 +56821,10 @@ var ElevenLabsVoicePlanError = class extends Error {
   }
 };
 var ElevenLabsTTSProvider = class {
-  id = "elevenlabs";
-  name = "ElevenLabs";
+  constructor() {
+    this.id = "elevenlabs";
+    this.name = "ElevenLabs";
+  }
   async isAvailable(config2) {
     return !!config2?.apiKey;
   }
@@ -57274,11 +57279,11 @@ function buildVisemeTimeline(text2, wordBoundaries, speed, alignment) {
 }
 
 // server/src/routes/embed.ts
-var import_express = __toESM(require_express2(), 1);
+var import_express = __toESM(require_express2());
 init_db();
-var import_crypto2 = __toESM(require("crypto"), 1);
-var import_fs = __toESM(require("fs"), 1);
-var import_path = __toESM(require("path"), 1);
+var import_crypto2 = __toESM(require("crypto"));
+var import_fs = __toESM(require("fs"));
+var import_path = __toESM(require("path"));
 var embedRouter = (0, import_express.Router)();
 function getOrCreateEmbedSessionSecret() {
   const secretFile = import_path.default.join(process.cwd(), ".embed-session-secret");
@@ -57415,7 +57420,7 @@ embedRouter.post("/:exhibitionId/config", authenticate, async (req, res2) => {
     const secret2 = generateSecret();
     let passwordHash = "";
     if (password && password.length > 0) {
-      const bcrypt = await Promise.resolve().then(() => __toESM(require_bcryptjs(), 1));
+      const bcrypt = await Promise.resolve().then(() => __toESM(require_bcryptjs()));
       passwordHash = await bcrypt.default.hash(password, 10);
     }
     await prisma.exhibitionSettings.update({
@@ -57499,7 +57504,7 @@ embedRouter.post("/:exhibitionId/auth", async (req, res2) => {
       res2.status(400).json({ error: "No password set for this exhibition" });
       return;
     }
-    const bcrypt = await Promise.resolve().then(() => __toESM(require_bcryptjs(), 1));
+    const bcrypt = await Promise.resolve().then(() => __toESM(require_bcryptjs()));
     const valid = await bcrypt.default.compare(password || "", settings.embed_password_hash);
     if (!valid) {
       res2.status(401).json({ error: "Wrong password" });
@@ -57753,8 +57758,8 @@ pilot.post("/speech", async (req, res2) => {
 var agentsRouter = pilot;
 
 // server/src/routes/showcase.ts
-var import_express3 = __toESM(require_express2(), 1);
-var import_crypto3 = __toESM(require("crypto"), 1);
+var import_express3 = __toESM(require_express2());
+var import_crypto3 = __toESM(require("crypto"));
 init_db();
 var HOMEPAGE_EXPERIENCES = {
   "djemila-scan": "09db2636-7c87-4b5f-843f-598993c12223",
@@ -57795,7 +57800,7 @@ showcaseRouter.get("/:slug", async (req, res2, next) => {
 });
 
 // server/src/routes/exhibitions.ts
-var import_express4 = __toESM(require_express2(), 1);
+var import_express4 = __toESM(require_express2());
 init_db();
 var import_promises = require("fs/promises");
 var import_fs2 = require("fs");
@@ -58192,7 +58197,7 @@ exhibitionsRouter.post("/:id/thumbnail", authenticate, async (req, res2) => {
 });
 
 // server/src/routes/settings.ts
-var import_express5 = __toESM(require_express2(), 1);
+var import_express5 = __toESM(require_express2());
 init_db();
 
 // server/src/ai/guide/roles.ts
@@ -58443,8 +58448,8 @@ ${spec.persona.biography}`);
   if (can.length) lines.push(`You may ${can.join(", ")}.`);
   if (cannot.length) lines.push(`You do not ${cannot.join(", ")}; if asked, say so kindly and, if another character here can help, send the visitor to them.`);
   const area = spec.behaviour.area;
-  if (area.shape === "circle") lines.push(`You move only within about ${Math.round(area.radius)} m of your post; do not offer to walk visitors further.`);
-  else if (area.shape === "polygon") lines.push("You move only within your marked area of the hall; do not offer to walk visitors outside it.");
+  if (area.shape === "circle") lines.push(`You move only within about ${Math.round(area.radius)} m of your post: you can follow or come to visitors only inside it; do not offer to walk visitors further.`);
+  else if (area.shape === "polygon") lines.push("You move only within your marked area of the hall: you can follow or come to visitors only inside it; do not offer to walk visitors outside it.");
   if (spec.behaviour.doNotDisturb) lines.push("You are busy with your work: answer visitors who speak to you, but do not start conversations or join your colleagues' talk.");
   if (spec.behaviour.maxImportance >= 4) lines.push('When a visitor is about to break a rule or is in danger, speak up at once and set "importance" to "critical": you may interrupt anyone for it, briefly and politely.');
   if (spec.persona.languages.length) lines.push(`You speak: ${spec.persona.languages.join(", ")}.`);
@@ -58880,7 +58885,7 @@ settingsRouter.get("/:exhibitionId/public", async (req, res2) => {
 });
 
 // server/src/routes/products.ts
-var import_express6 = __toESM(require_express2(), 1);
+var import_express6 = __toESM(require_express2());
 init_db();
 var productsRouter = (0, import_express6.Router)();
 productsRouter.get("/:exhibitionId", authenticate, async (req, res2) => {
@@ -59108,8 +59113,8 @@ productsRouter.get("/:exhibitionId/public", async (req, res2) => {
 });
 
 // server/src/routes/hotspots.ts
-var import_express7 = __toESM(require_express2(), 1);
-var import_crypto4 = __toESM(require("crypto"), 1);
+var import_express7 = __toESM(require_express2());
+var import_crypto4 = __toESM(require("crypto"));
 init_db();
 var hotspotsRouter = (0, import_express7.Router)();
 var UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
@@ -59321,7 +59326,7 @@ hotspotsRouter.get("/:exhibitionId/public", async (req, res2) => {
 });
 
 // server/src/routes/navmesh.ts
-var import_express8 = __toESM(require_express2(), 1);
+var import_express8 = __toESM(require_express2());
 init_db();
 var navmeshRouter = (0, import_express8.Router)();
 navmeshRouter.get("/:exhibitionId", authenticate, async (req, res2) => {
@@ -59410,7 +59415,7 @@ navmeshRouter.get("/:exhibitionId/public", async (req, res2) => {
 });
 
 // server/src/routes/trigger-zones.ts
-var import_express9 = __toESM(require_express2(), 1);
+var import_express9 = __toESM(require_express2());
 init_db();
 var triggerZonesRouter = (0, import_express9.Router)();
 triggerZonesRouter.get("/:exhibitionId", authenticate, async (req, res2) => {
@@ -59550,7 +59555,7 @@ triggerZonesRouter.post("/:exhibitionId/bulk", authenticate, async (req, res2) =
 });
 
 // server/src/routes/spawn-points.ts
-var import_express10 = __toESM(require_express2(), 1);
+var import_express10 = __toESM(require_express2());
 init_db();
 var spawnPointsRouter = (0, import_express10.Router)();
 spawnPointsRouter.get("/:exhibitionId/public", async (req, res2) => {
@@ -59638,7 +59643,7 @@ spawnPointsRouter.post("/:exhibitionId/bulk", authenticate, async (req, res2) =>
 });
 
 // server/src/routes/restricted-areas.ts
-var import_express11 = __toESM(require_express2(), 1);
+var import_express11 = __toESM(require_express2());
 init_db();
 var restrictedAreasRouter = (0, import_express11.Router)();
 var parsePolygon = (json) => {
@@ -59761,7 +59766,7 @@ restrictedAreasRouter.post("/:exhibitionId/bulk", authenticate, async (req, res2
 });
 
 // server/src/routes/ai.ts
-var import_express12 = __toESM(require_express2(), 1);
+var import_express12 = __toESM(require_express2());
 var import_promises2 = require("node:timers/promises");
 init_db();
 
@@ -59861,7 +59866,7 @@ function getRegisteredProviders(type) {
 }
 
 // server/src/routes/ai.ts
-var import_multer = __toESM(require_multer(), 1);
+var import_multer = __toESM(require_multer());
 
 // server/src/ai/config.ts
 var DEFAULT_CONFIG = {
@@ -60056,8 +60061,10 @@ var DEFAULT_FALLBACK_MODELS = [
 ];
 var frontierCooldownUntil = 0;
 var GeminiLLMProvider = class {
-  id = "gemini";
-  name = "Google Gemini";
+  constructor() {
+    this.id = "gemini";
+    this.name = "Google Gemini";
+  }
   async isAvailable(config2) {
     return !!(config2.apiKey || process.env.GEMINI_API_KEY);
   }
@@ -60275,7 +60282,7 @@ ${currentText}`;
   }
 };
 
-// ../../server/node_modules/openai/internal/tslib.mjs
+// server/node_modules/openai/internal/tslib.mjs
 function __classPrivateFieldSet(receiver, state, value, kind, f) {
   if (kind === "m")
     throw new TypeError("Private method is not writable");
@@ -60293,7 +60300,7 @@ function __classPrivateFieldGet(receiver, state, kind, f) {
   return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
 }
 
-// ../../server/node_modules/openai/internal/utils/uuid.mjs
+// server/node_modules/openai/internal/utils/uuid.mjs
 var uuid4 = function() {
   const { crypto: crypto10 } = globalThis;
   if (crypto10?.randomUUID) {
@@ -60305,7 +60312,7 @@ var uuid4 = function() {
   return "10000000-1000-4000-8000-100000000000".replace(/[018]/g, (c) => (+c ^ randomByte() & 15 >> +c / 4).toString(16));
 };
 
-// ../../server/node_modules/openai/internal/errors.mjs
+// server/node_modules/openai/internal/errors.mjs
 function isAbortError(err) {
   return typeof err === "object" && err !== null && // Spec-compliant fetch implementations
   ("name" in err && err.name === "AbortError" || // Expo fetch
@@ -60336,7 +60343,7 @@ var castToError = (err) => {
   return new Error(err);
 };
 
-// ../../server/node_modules/openai/core/error.mjs
+// server/node_modules/openai/core/error.mjs
 var OpenAIError = class extends Error {
 };
 var APIError = class _APIError extends OpenAIError {
@@ -60470,7 +60477,7 @@ var SubjectTokenProviderError = class extends OpenAIError {
   }
 };
 
-// ../../server/node_modules/openai/internal/utils/values.mjs
+// server/node_modules/openai/internal/utils/values.mjs
 var startsWithSchemeRegexp = /^[a-z][a-z0-9+.-]*:/i;
 var isAbsoluteURL = (url) => {
   return startsWithSchemeRegexp.test(url);
@@ -60513,13 +60520,13 @@ var safeJSON = (text2) => {
   }
 };
 
-// ../../server/node_modules/openai/internal/utils/sleep.mjs
+// server/node_modules/openai/internal/utils/sleep.mjs
 var sleep = (ms) => new Promise((resolve2) => setTimeout(resolve2, ms));
 
-// ../../server/node_modules/openai/version.mjs
+// server/node_modules/openai/version.mjs
 var VERSION = "6.48.0";
 
-// ../../server/node_modules/openai/internal/detect-platform.mjs
+// server/node_modules/openai/internal/detect-platform.mjs
 var isRunningInBrowser = () => {
   return (
     // @ts-ignore
@@ -60653,7 +60660,7 @@ var getPlatformHeaders = () => {
   return _platformHeaders ?? (_platformHeaders = getPlatformProperties());
 };
 
-// ../../server/node_modules/openai/internal/shims.mjs
+// server/node_modules/openai/internal/shims.mjs
 function getDefaultFetch() {
   if (typeof fetch !== "undefined") {
     return fetch;
@@ -60725,7 +60732,7 @@ async function CancelReadableStream(stream) {
   await cancelPromise;
 }
 
-// ../../server/node_modules/openai/internal/request-options.mjs
+// server/node_modules/openai/internal/request-options.mjs
 var FallbackEncoder = ({ headers, body }) => {
   return {
     bodyHeaders: {
@@ -60735,7 +60742,7 @@ var FallbackEncoder = ({ headers, body }) => {
   };
 };
 
-// ../../server/node_modules/openai/internal/qs/formats.mjs
+// server/node_modules/openai/internal/qs/formats.mjs
 var default_format = "RFC3986";
 var default_formatter = (v) => String(v);
 var formatters = {
@@ -60744,7 +60751,7 @@ var formatters = {
 };
 var RFC1738 = "RFC1738";
 
-// ../../server/node_modules/openai/internal/qs/utils.mjs
+// server/node_modules/openai/internal/qs/utils.mjs
 var has = (obj, key) => (has = Object.hasOwn ?? Function.prototype.call.bind(Object.prototype.hasOwnProperty), has(obj, key));
 var hex_table = /* @__PURE__ */ (() => {
   const array = [];
@@ -60823,7 +60830,7 @@ function maybe_map(val, fn) {
   return fn(val);
 }
 
-// ../../server/node_modules/openai/internal/qs/stringify.mjs
+// server/node_modules/openai/internal/qs/stringify.mjs
 var array_prefix_generators = {
   brackets(prefix) {
     return String(prefix) + "[]";
@@ -61101,12 +61108,12 @@ function stringify(object, opts = {}) {
   return joined.length > 0 ? prefix + joined : "";
 }
 
-// ../../server/node_modules/openai/internal/utils/query.mjs
+// server/node_modules/openai/internal/utils/query.mjs
 function stringifyQuery(query) {
   return stringify(query, { arrayFormat: "brackets" });
 }
 
-// ../../server/node_modules/openai/internal/utils/bytes.mjs
+// server/node_modules/openai/internal/utils/bytes.mjs
 function concatBytes(buffers) {
   let length = 0;
   for (const buffer of buffers) {
@@ -61131,7 +61138,7 @@ function decodeUTF8(bytes) {
   return (decodeUTF8_ ?? (decoder = new globalThis.TextDecoder(), decodeUTF8_ = decoder.decode.bind(decoder)))(bytes);
 }
 
-// ../../server/node_modules/openai/internal/decoders/line.mjs
+// server/node_modules/openai/internal/decoders/line.mjs
 var _LineDecoder_buffer;
 var _LineDecoder_carriageReturnIndex;
 var LineDecoder = class {
@@ -61208,7 +61215,7 @@ function findDoubleNewlineIndex(buffer) {
   return -1;
 }
 
-// ../../server/node_modules/openai/internal/utils/log.mjs
+// server/node_modules/openai/internal/utils/log.mjs
 var levelNumbers = {
   off: 0,
   error: 200,
@@ -61281,7 +61288,7 @@ var formatRequestDetails = (details) => {
   return details;
 };
 
-// ../../server/node_modules/openai/core/streaming.mjs
+// server/node_modules/openai/core/streaming.mjs
 var _Stream_client;
 var Stream = class _Stream {
   constructor(iterator, controller, client) {
@@ -61571,7 +61578,7 @@ function partition(str4, delimiter) {
   return [str4, "", ""];
 }
 
-// ../../server/node_modules/openai/internal/parse.mjs
+// server/node_modules/openai/internal/parse.mjs
 async function defaultParseResponse(client, props) {
   const { response, requestLogID, retryOfRequestLogID, startTime } = props;
   const body = await (async () => {
@@ -61621,7 +61628,7 @@ function addRequestID(value, response) {
   });
 }
 
-// ../../server/node_modules/openai/core/api-promise.mjs
+// server/node_modules/openai/core/api-promise.mjs
 var _APIPromise_client;
 var APIPromise = class _APIPromise extends Promise {
   constructor(client, responsePromise, parseResponse2 = defaultParseResponse) {
@@ -61684,7 +61691,7 @@ var APIPromise = class _APIPromise extends Promise {
 };
 _APIPromise_client = /* @__PURE__ */ new WeakMap();
 
-// ../../server/node_modules/openai/core/pagination.mjs
+// server/node_modules/openai/core/pagination.mjs
 var _AbstractPage_client;
 var AbstractPage = class {
   constructor(client, response, body, options) {
@@ -61845,7 +61852,7 @@ var NextCursorPage = class extends AbstractPage {
   }
 };
 
-// ../../server/node_modules/openai/auth/workload-identity-auth.mjs
+// server/node_modules/openai/auth/workload-identity-auth.mjs
 var SUBJECT_TOKEN_TYPES = {
   jwt: "urn:ietf:params:oauth:token-type:jwt",
   id: "urn:ietf:params:oauth:token-type:id_token"
@@ -61937,7 +61944,7 @@ var WorkloadIdentityAuth = class {
   }
 };
 
-// ../../server/node_modules/openai/internal/headers.mjs
+// server/node_modules/openai/internal/headers.mjs
 var brand_privateNullableHeaders = /* @__PURE__ */ Symbol("brand.privateNullableHeaders");
 var httpTokenHeaderName = /^[!#$%&'*+\-.^_`|~0-9A-Za-z]+$/;
 function* iterateHeaders(headers) {
@@ -62004,7 +62011,7 @@ var buildHeaders = (newHeaders) => {
   return { [brand_privateNullableHeaders]: true, values: targetHeaders, nulls: nullHeaders };
 };
 
-// ../../server/node_modules/openai/internal/uploads.mjs
+// server/node_modules/openai/internal/uploads.mjs
 var brand_privateStreamingFile = /* @__PURE__ */ Symbol("brand.privateStreamingFile");
 function toStreamingFile(data, name, options) {
   if (!name) {
@@ -62237,7 +62244,7 @@ var addFormValue = async (form, key, value) => {
   }
 };
 
-// ../../server/node_modules/openai/internal/to-file.mjs
+// server/node_modules/openai/internal/to-file.mjs
 var isBlobLike = (value) => value != null && typeof value === "object" && typeof value.size === "number" && typeof value.type === "string" && typeof value.text === "function" && typeof value.slice === "function" && typeof value.arrayBuffer === "function";
 var isFileLike = (value) => value != null && typeof value === "object" && typeof value.name === "string" && typeof value.lastModified === "number" && isBlobLike(value);
 var isResponseLike = (value) => value != null && typeof value === "object" && typeof value.url === "string" && typeof value.blob === "function";
@@ -62289,14 +62296,14 @@ function propsForError(value) {
   return `; props: [${props.map((p) => `"${p}"`).join(", ")}]`;
 }
 
-// ../../server/node_modules/openai/core/resource.mjs
+// server/node_modules/openai/core/resource.mjs
 var APIResource = class {
   constructor(client) {
     this._client = client;
   }
 };
 
-// ../../server/node_modules/openai/internal/utils/path.mjs
+// server/node_modules/openai/internal/utils/path.mjs
 function encodeURIPath(str4) {
   return str4.replace(/[^A-Za-z0-9\-._~!$&'()*+,;=:@]+/g, encodeURIComponent);
 }
@@ -62351,7 +62358,7 @@ ${underline}`);
 };
 var path2 = /* @__PURE__ */ createPathTagFunction(encodeURIPath);
 
-// ../../server/node_modules/openai/resources/chat/completions/messages.mjs
+// server/node_modules/openai/resources/chat/completions/messages.mjs
 var Messages = class extends APIResource {
   /**
    * Get the messages in a stored chat completion. Only Chat Completions that have
@@ -62372,7 +62379,7 @@ var Messages = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/lib/parser.mjs
+// server/node_modules/openai/lib/parser.mjs
 function isChatCompletionFunctionTool(tool) {
   return tool !== void 0 && "function" in tool && tool.function !== void 0;
 }
@@ -62479,7 +62486,7 @@ function validateInputTools(tools) {
   }
 }
 
-// ../../server/node_modules/openai/lib/chatCompletionUtils.mjs
+// server/node_modules/openai/lib/chatCompletionUtils.mjs
 var isAssistantMessage = (message) => {
   return message?.role === "assistant";
 };
@@ -62487,7 +62494,7 @@ var isToolMessage = (message) => {
   return message?.role === "tool";
 };
 
-// ../../server/node_modules/openai/lib/EventStream.mjs
+// server/node_modules/openai/lib/EventStream.mjs
 var _EventStream_instances;
 var _EventStream_connectedPromise;
 var _EventStream_resolveConnectedPromise;
@@ -62796,12 +62803,12 @@ _EventStream_connectedPromise = /* @__PURE__ */ new WeakMap(), _EventStream_reso
   return this._emit("error", new OpenAIError(String(error)));
 };
 
-// ../../server/node_modules/openai/lib/RunnableFunction.mjs
+// server/node_modules/openai/lib/RunnableFunction.mjs
 function isRunnableFunctionWithParse(fn) {
   return typeof fn.parse === "function";
 }
 
-// ../../server/node_modules/openai/lib/AbstractChatCompletionRunner.mjs
+// server/node_modules/openai/lib/AbstractChatCompletionRunner.mjs
 var _AbstractChatCompletionRunner_instances;
 var _AbstractChatCompletionRunner_getFinalContent;
 var _AbstractChatCompletionRunner_getFinalMessage;
@@ -63106,7 +63113,7 @@ _AbstractChatCompletionRunner_instances = /* @__PURE__ */ new WeakSet(), _Abstra
   return typeof rawContent === "string" ? rawContent : rawContent === void 0 ? "undefined" : JSON.stringify(rawContent);
 };
 
-// ../../server/node_modules/openai/lib/ChatCompletionRunner.mjs
+// server/node_modules/openai/lib/ChatCompletionRunner.mjs
 var ChatCompletionRunner = class _ChatCompletionRunner extends AbstractChatCompletionRunner {
   static runTools(client, params, options) {
     const runner = new _ChatCompletionRunner();
@@ -63125,7 +63132,7 @@ var ChatCompletionRunner = class _ChatCompletionRunner extends AbstractChatCompl
   }
 };
 
-// ../../server/node_modules/openai/_vendor/partial-json-parser/parser.mjs
+// server/node_modules/openai/_vendor/partial-json-parser/parser.mjs
 var STR = 1;
 var NUM = 2;
 var ARR = 4;
@@ -63337,7 +63344,7 @@ var _parseJSON = (jsonString, allow) => {
 };
 var partialParse = (input) => parseJSON(input, Allow.ALL ^ Allow.NUM);
 
-// ../../server/node_modules/openai/lib/ChatCompletionStream.mjs
+// server/node_modules/openai/lib/ChatCompletionStream.mjs
 var _ChatCompletionStream_instances;
 var _ChatCompletionStream_params;
 var _ChatCompletionStream_choiceEventStates;
@@ -63858,7 +63865,7 @@ function assertIsEmpty(obj) {
 function assertNever(_x) {
 }
 
-// ../../server/node_modules/openai/lib/ChatCompletionStreamingRunner.mjs
+// server/node_modules/openai/lib/ChatCompletionStreamingRunner.mjs
 var ChatCompletionStreamingRunner = class _ChatCompletionStreamingRunner extends ChatCompletionStream {
   static fromReadableStream(stream) {
     const runner = new _ChatCompletionStreamingRunner(null);
@@ -63952,7 +63959,7 @@ var ChatCompletionStreamingRunner = class _ChatCompletionStreamingRunner extends
   }
 };
 
-// ../../server/node_modules/openai/resources/chat/completions/completions.mjs
+// server/node_modules/openai/resources/chat/completions/completions.mjs
 var Completions = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -64062,7 +64069,7 @@ var Completions = class extends APIResource {
 };
 Completions.Messages = Messages;
 
-// ../../server/node_modules/openai/resources/chat/chat.mjs
+// server/node_modules/openai/resources/chat/chat.mjs
 var Chat = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -64071,7 +64078,7 @@ var Chat = class extends APIResource {
 };
 Chat.Completions = Completions;
 
-// ../../server/node_modules/openai/resources/admin/organization/admin-api-keys.mjs
+// server/node_modules/openai/resources/admin/organization/admin-api-keys.mjs
 var AdminAPIKeys = class extends APIResource {
   /**
    * Create an organization admin API key
@@ -64145,7 +64152,7 @@ var AdminAPIKeys = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/admin/organization/audit-logs.mjs
+// server/node_modules/openai/resources/admin/organization/audit-logs.mjs
 var AuditLogs = class extends APIResource {
   /**
    * List user actions and configuration changes within this organization.
@@ -64167,7 +64174,7 @@ var AuditLogs = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/admin/organization/certificates.mjs
+// server/node_modules/openai/resources/admin/organization/certificates.mjs
 var Certificates = class extends APIResource {
   /**
    * Upload a certificate to the organization. This does **not** automatically
@@ -64304,7 +64311,7 @@ var Certificates = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/admin/organization/data-retention.mjs
+// server/node_modules/openai/resources/admin/organization/data-retention.mjs
 var DataRetention = class extends APIResource {
   /**
    * Retrieves organization data retention controls.
@@ -64341,7 +64348,7 @@ var DataRetention = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/admin/organization/invites.mjs
+// server/node_modules/openai/resources/admin/organization/invites.mjs
 var Invites = class extends APIResource {
   /**
    * Create an invite for a user to the organization. The invite must be accepted by
@@ -64417,7 +64424,7 @@ var Invites = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/admin/organization/roles.mjs
+// server/node_modules/openai/resources/admin/organization/roles.mjs
 var Roles = class extends APIResource {
   /**
    * Creates a custom role for the organization.
@@ -64506,7 +64513,7 @@ var Roles = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/admin/organization/spend-alerts.mjs
+// server/node_modules/openai/resources/admin/organization/spend-alerts.mjs
 var SpendAlerts = class extends APIResource {
   /**
    * Creates an organization spend alert.
@@ -64609,7 +64616,7 @@ var SpendAlerts = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/admin/organization/usage.mjs
+// server/node_modules/openai/resources/admin/organization/usage.mjs
 var Usage = class extends APIResource {
   /**
    * Get audio speeches usage details for the organization.
@@ -64811,7 +64818,7 @@ var Usage = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/admin/organization/groups/roles.mjs
+// server/node_modules/openai/resources/admin/organization/groups/roles.mjs
 var Roles2 = class extends APIResource {
   /**
    * Assigns an organization role to a group within the organization.
@@ -64888,7 +64895,7 @@ var Roles2 = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/admin/organization/groups/users.mjs
+// server/node_modules/openai/resources/admin/organization/groups/users.mjs
 var Users = class extends APIResource {
   /**
    * Adds a user to a group.
@@ -64965,7 +64972,7 @@ var Users = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/admin/organization/groups/groups.mjs
+// server/node_modules/openai/resources/admin/organization/groups/groups.mjs
 var Groups = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -65062,7 +65069,7 @@ var Groups = class extends APIResource {
 Groups.Users = Users;
 Groups.Roles = Roles2;
 
-// ../../server/node_modules/openai/resources/admin/organization/projects/api-keys.mjs
+// server/node_modules/openai/resources/admin/organization/projects/api-keys.mjs
 var APIKeys = class extends APIResource {
   /**
    * Retrieves an API key in the project.
@@ -65123,7 +65130,7 @@ var APIKeys = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/admin/organization/projects/certificates.mjs
+// server/node_modules/openai/resources/admin/organization/projects/certificates.mjs
 var Certificates2 = class extends APIResource {
   /**
    * List certificates for this project.
@@ -65180,7 +65187,7 @@ var Certificates2 = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/admin/organization/projects/data-retention.mjs
+// server/node_modules/openai/resources/admin/organization/projects/data-retention.mjs
 var DataRetention2 = class extends APIResource {
   /**
    * Retrieves project data retention controls.
@@ -65220,7 +65227,7 @@ var DataRetention2 = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/admin/organization/projects/hosted-tool-permissions.mjs
+// server/node_modules/openai/resources/admin/organization/projects/hosted-tool-permissions.mjs
 var HostedToolPermissions = class extends APIResource {
   /**
    * Returns hosted tool permissions for a project.
@@ -65259,7 +65266,7 @@ var HostedToolPermissions = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/admin/organization/projects/model-permissions.mjs
+// server/node_modules/openai/resources/admin/organization/projects/model-permissions.mjs
 var ModelPermissions = class extends APIResource {
   /**
    * Returns model permissions for a project.
@@ -65316,7 +65323,7 @@ var ModelPermissions = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/admin/organization/projects/rate-limits.mjs
+// server/node_modules/openai/resources/admin/organization/projects/rate-limits.mjs
 var RateLimits = class extends APIResource {
   /**
    * Returns the rate limits per model for a project.
@@ -65356,7 +65363,7 @@ var RateLimits = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/admin/organization/projects/roles.mjs
+// server/node_modules/openai/resources/admin/organization/projects/roles.mjs
 var Roles3 = class extends APIResource {
   /**
    * Creates a custom role for a project.
@@ -65457,7 +65464,7 @@ var Roles3 = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/admin/organization/projects/spend-alerts.mjs
+// server/node_modules/openai/resources/admin/organization/projects/spend-alerts.mjs
 var SpendAlerts2 = class extends APIResource {
   /**
    * Creates a project spend alert.
@@ -65571,7 +65578,7 @@ var SpendAlerts2 = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/admin/organization/projects/groups/roles.mjs
+// server/node_modules/openai/resources/admin/organization/projects/groups/roles.mjs
 var Roles4 = class extends APIResource {
   /**
    * Assigns a project role to a group within a project.
@@ -65651,7 +65658,7 @@ var Roles4 = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/admin/organization/projects/groups/groups.mjs
+// server/node_modules/openai/resources/admin/organization/projects/groups/groups.mjs
 var Groups2 = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -65734,7 +65741,7 @@ var Groups2 = class extends APIResource {
 };
 Groups2.Roles = Roles4;
 
-// ../../server/node_modules/openai/resources/admin/organization/projects/service-accounts/api-keys.mjs
+// server/node_modules/openai/resources/admin/organization/projects/service-accounts/api-keys.mjs
 var APIKeys2 = class extends APIResource {
   /**
    * Creates an API key for a service account in the project.
@@ -65754,7 +65761,7 @@ var APIKeys2 = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/admin/organization/projects/service-accounts/service-accounts.mjs
+// server/node_modules/openai/resources/admin/organization/projects/service-accounts/service-accounts.mjs
 var ServiceAccounts = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -65853,7 +65860,7 @@ var ServiceAccounts = class extends APIResource {
 };
 ServiceAccounts.APIKeys = APIKeys2;
 
-// ../../server/node_modules/openai/resources/admin/organization/projects/users/roles.mjs
+// server/node_modules/openai/resources/admin/organization/projects/users/roles.mjs
 var Roles5 = class extends APIResource {
   /**
    * Assigns a project role to a user within a project.
@@ -65933,7 +65940,7 @@ var Roles5 = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/admin/organization/projects/users/users.mjs
+// server/node_modules/openai/resources/admin/organization/projects/users/users.mjs
 var Users2 = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -66039,7 +66046,7 @@ var Users2 = class extends APIResource {
 };
 Users2.Roles = Roles5;
 
-// ../../server/node_modules/openai/resources/admin/organization/projects/projects.mjs
+// server/node_modules/openai/resources/admin/organization/projects/projects.mjs
 var Projects = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -66158,7 +66165,7 @@ Projects.DataRetention = DataRetention2;
 Projects.SpendAlerts = SpendAlerts2;
 Projects.Certificates = Certificates2;
 
-// ../../server/node_modules/openai/resources/admin/organization/users/roles.mjs
+// server/node_modules/openai/resources/admin/organization/users/roles.mjs
 var Roles6 = class extends APIResource {
   /**
    * Assigns an organization role to a user within the organization.
@@ -66235,7 +66242,7 @@ var Roles6 = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/admin/organization/users/users.mjs
+// server/node_modules/openai/resources/admin/organization/users/users.mjs
 var Users3 = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -66309,7 +66316,7 @@ var Users3 = class extends APIResource {
 };
 Users3.Roles = Roles6;
 
-// ../../server/node_modules/openai/resources/admin/organization/organization.mjs
+// server/node_modules/openai/resources/admin/organization/organization.mjs
 var Organization = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -66338,7 +66345,7 @@ Organization.SpendAlerts = SpendAlerts;
 Organization.Certificates = Certificates;
 Organization.Projects = Projects;
 
-// ../../server/node_modules/openai/resources/admin/admin.mjs
+// server/node_modules/openai/resources/admin/admin.mjs
 var Admin = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -66347,7 +66354,7 @@ var Admin = class extends APIResource {
 };
 Admin.Organization = Organization;
 
-// ../../server/node_modules/openai/resources/audio/speech.mjs
+// server/node_modules/openai/resources/audio/speech.mjs
 var Speech = class extends APIResource {
   /**
    * Generates audio from the input text.
@@ -66377,7 +66384,7 @@ var Speech = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/audio/transcriptions.mjs
+// server/node_modules/openai/resources/audio/transcriptions.mjs
 var Transcriptions = class extends APIResource {
   create(body, options) {
     return this._client.post("/audio/transcriptions", multipartFormRequestOptions({
@@ -66390,14 +66397,14 @@ var Transcriptions = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/audio/translations.mjs
+// server/node_modules/openai/resources/audio/translations.mjs
 var Translations = class extends APIResource {
   create(body, options) {
     return this._client.post("/audio/translations", multipartFormRequestOptions({ body, ...options, __metadata: { model: body.model }, __security: { bearerAuth: true } }, this._client));
   }
 };
 
-// ../../server/node_modules/openai/resources/audio/audio.mjs
+// server/node_modules/openai/resources/audio/audio.mjs
 var Audio = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -66410,7 +66417,7 @@ Audio.Transcriptions = Transcriptions;
 Audio.Translations = Translations;
 Audio.Speech = Speech;
 
-// ../../server/node_modules/openai/resources/batches.mjs
+// server/node_modules/openai/resources/batches.mjs
 var Batches = class extends APIResource {
   /**
    * Creates and executes a batch from an uploaded file of requests
@@ -66447,7 +66454,7 @@ var Batches = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/beta/assistants.mjs
+// server/node_modules/openai/resources/beta/assistants.mjs
 var Assistants = class extends APIResource {
   /**
    * Create an assistant with a model and instructions.
@@ -66514,7 +66521,7 @@ var Assistants = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/beta/realtime/sessions.mjs
+// server/node_modules/openai/resources/beta/realtime/sessions.mjs
 var Sessions = class extends APIResource {
   /**
    * Create an ephemeral API token for use in client-side applications with the
@@ -66541,7 +66548,7 @@ var Sessions = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/beta/realtime/transcription-sessions.mjs
+// server/node_modules/openai/resources/beta/realtime/transcription-sessions.mjs
 var TranscriptionSessions = class extends APIResource {
   /**
    * Create an ephemeral API token for use in client-side applications with the
@@ -66568,7 +66575,7 @@ var TranscriptionSessions = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/beta/realtime/realtime.mjs
+// server/node_modules/openai/resources/beta/realtime/realtime.mjs
 var Realtime = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -66579,7 +66586,7 @@ var Realtime = class extends APIResource {
 Realtime.Sessions = Sessions;
 Realtime.TranscriptionSessions = TranscriptionSessions;
 
-// ../../server/node_modules/openai/resources/beta/chatkit/sessions.mjs
+// server/node_modules/openai/resources/beta/chatkit/sessions.mjs
 var Sessions2 = class extends APIResource {
   /**
    * Create a ChatKit session.
@@ -66621,7 +66628,7 @@ var Sessions2 = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/beta/chatkit/threads.mjs
+// server/node_modules/openai/resources/beta/chatkit/threads.mjs
 var Threads = class extends APIResource {
   /**
    * Retrieve a ChatKit thread by its identifier.
@@ -66698,7 +66705,7 @@ var Threads = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/beta/chatkit/chatkit.mjs
+// server/node_modules/openai/resources/beta/chatkit/chatkit.mjs
 var ChatKit = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -66709,7 +66716,7 @@ var ChatKit = class extends APIResource {
 ChatKit.Sessions = Sessions2;
 ChatKit.Threads = Threads;
 
-// ../../server/node_modules/openai/resources/beta/responses/input-items.mjs
+// server/node_modules/openai/resources/beta/responses/input-items.mjs
 var InputItems = class extends APIResource {
   /**
    * Returns a list of input items for a given response.
@@ -66738,7 +66745,7 @@ var InputItems = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/beta/responses/input-tokens.mjs
+// server/node_modules/openai/resources/beta/responses/input-tokens.mjs
 var InputTokens = class extends APIResource {
   /**
    * Returns input token counts of the request.
@@ -66766,7 +66773,7 @@ var InputTokens = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/beta/responses/responses.mjs
+// server/node_modules/openai/resources/beta/responses/responses.mjs
 var Responses = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -66875,7 +66882,7 @@ var Responses = class extends APIResource {
 Responses.InputItems = InputItems;
 Responses.InputTokens = InputTokens;
 
-// ../../server/node_modules/openai/resources/beta/threads/messages.mjs
+// server/node_modules/openai/resources/beta/threads/messages.mjs
 var Messages2 = class extends APIResource {
   /**
    * Create a message.
@@ -66945,7 +66952,7 @@ var Messages2 = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/beta/threads/runs/steps.mjs
+// server/node_modules/openai/resources/beta/threads/runs/steps.mjs
 var Steps = class extends APIResource {
   /**
    * Retrieves a run step.
@@ -66977,7 +66984,7 @@ var Steps = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/internal/utils/base64.mjs
+// server/node_modules/openai/internal/utils/base64.mjs
 var toFloat32Array = (base64Str) => {
   if (typeof Buffer !== "undefined") {
     const buf = Buffer.from(base64Str, "base64");
@@ -66993,7 +67000,7 @@ var toFloat32Array = (base64Str) => {
   }
 };
 
-// ../../server/node_modules/openai/internal/utils/env.mjs
+// server/node_modules/openai/internal/utils/env.mjs
 var readEnv = (env) => {
   if (typeof globalThis.process !== "undefined") {
     return globalThis.process.env?.[env]?.trim() || void 0;
@@ -67004,7 +67011,7 @@ var readEnv = (env) => {
   return void 0;
 };
 
-// ../../server/node_modules/openai/lib/AssistantStream.mjs
+// server/node_modules/openai/lib/AssistantStream.mjs
 var _AssistantStream_instances;
 var _a2;
 var _AssistantStream_events;
@@ -67524,7 +67531,7 @@ _a2 = AssistantStream, _AssistantStream_addEvent = function _AssistantStream_add
 function assertNever2(_x) {
 }
 
-// ../../server/node_modules/openai/resources/beta/threads/runs/runs.mjs
+// server/node_modules/openai/resources/beta/threads/runs/runs.mjs
 var Runs = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -67695,7 +67702,7 @@ var Runs = class extends APIResource {
 };
 Runs.Steps = Steps;
 
-// ../../server/node_modules/openai/resources/beta/threads/threads.mjs
+// server/node_modules/openai/resources/beta/threads/threads.mjs
 var Threads2 = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -67781,7 +67788,7 @@ var Threads2 = class extends APIResource {
 Threads2.Runs = Runs;
 Threads2.Messages = Messages2;
 
-// ../../server/node_modules/openai/resources/beta/beta.mjs
+// server/node_modules/openai/resources/beta/beta.mjs
 var Beta = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -67798,7 +67805,7 @@ Beta.ChatKit = ChatKit;
 Beta.Assistants = Assistants;
 Beta.Threads = Threads2;
 
-// ../../server/node_modules/openai/resources/completions.mjs
+// server/node_modules/openai/resources/completions.mjs
 var Completions2 = class extends APIResource {
   create(body, options) {
     return this._client.post("/completions", {
@@ -67810,7 +67817,7 @@ var Completions2 = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/containers/files/content.mjs
+// server/node_modules/openai/resources/containers/files/content.mjs
 var Content = class extends APIResource {
   /**
    * Retrieve Container File Content
@@ -67826,7 +67833,7 @@ var Content = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/containers/files/files.mjs
+// server/node_modules/openai/resources/containers/files/files.mjs
 var Files = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -67875,7 +67882,7 @@ var Files = class extends APIResource {
 };
 Files.Content = Content;
 
-// ../../server/node_modules/openai/resources/containers/containers.mjs
+// server/node_modules/openai/resources/containers/containers.mjs
 var Containers = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -67919,7 +67926,7 @@ var Containers = class extends APIResource {
 };
 Containers.Files = Files;
 
-// ../../server/node_modules/openai/resources/conversations/items.mjs
+// server/node_modules/openai/resources/conversations/items.mjs
 var Items = class extends APIResource {
   /**
    * Create items in a conversation with the given ID.
@@ -67962,7 +67969,7 @@ var Items = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/conversations/conversations.mjs
+// server/node_modules/openai/resources/conversations/conversations.mjs
 var Conversations = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -68005,7 +68012,7 @@ var Conversations = class extends APIResource {
 };
 Conversations.Items = Items;
 
-// ../../server/node_modules/openai/resources/embeddings.mjs
+// server/node_modules/openai/resources/embeddings.mjs
 var Embeddings = class extends APIResource {
   /**
    * Creates an embedding vector representing the input text.
@@ -68049,7 +68056,7 @@ var Embeddings = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/evals/runs/output-items.mjs
+// server/node_modules/openai/resources/evals/runs/output-items.mjs
 var OutputItems = class extends APIResource {
   /**
    * Get an evaluation run output item by ID.
@@ -68070,7 +68077,7 @@ var OutputItems = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/evals/runs/runs.mjs
+// server/node_modules/openai/resources/evals/runs/runs.mjs
 var Runs2 = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -68131,7 +68138,7 @@ var Runs2 = class extends APIResource {
 };
 Runs2.OutputItems = OutputItems;
 
-// ../../server/node_modules/openai/resources/evals/evals.mjs
+// server/node_modules/openai/resources/evals/evals.mjs
 var Evals = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -68179,7 +68186,7 @@ var Evals = class extends APIResource {
 };
 Evals.Runs = Runs2;
 
-// ../../server/node_modules/openai/resources/files.mjs
+// server/node_modules/openai/resources/files.mjs
 var Files2 = class extends APIResource {
   /**
    * Upload a file that can be used across various endpoints. Individual files can be
@@ -68266,11 +68273,11 @@ var Files2 = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/fine-tuning/methods.mjs
+// server/node_modules/openai/resources/fine-tuning/methods.mjs
 var Methods = class extends APIResource {
 };
 
-// ../../server/node_modules/openai/resources/fine-tuning/alpha/graders.mjs
+// server/node_modules/openai/resources/fine-tuning/alpha/graders.mjs
 var Graders = class extends APIResource {
   /**
    * Run a grader.
@@ -68322,7 +68329,7 @@ var Graders = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/fine-tuning/alpha/alpha.mjs
+// server/node_modules/openai/resources/fine-tuning/alpha/alpha.mjs
 var Alpha = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -68331,7 +68338,7 @@ var Alpha = class extends APIResource {
 };
 Alpha.Graders = Graders;
 
-// ../../server/node_modules/openai/resources/fine-tuning/checkpoints/permissions.mjs
+// server/node_modules/openai/resources/fine-tuning/checkpoints/permissions.mjs
 var Permissions = class extends APIResource {
   /**
    * **NOTE:** Calling this endpoint requires an [admin API key](../admin-api-keys).
@@ -68411,7 +68418,7 @@ var Permissions = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/fine-tuning/checkpoints/checkpoints.mjs
+// server/node_modules/openai/resources/fine-tuning/checkpoints/checkpoints.mjs
 var Checkpoints = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -68420,7 +68427,7 @@ var Checkpoints = class extends APIResource {
 };
 Checkpoints.Permissions = Permissions;
 
-// ../../server/node_modules/openai/resources/fine-tuning/jobs/checkpoints.mjs
+// server/node_modules/openai/resources/fine-tuning/jobs/checkpoints.mjs
 var Checkpoints2 = class extends APIResource {
   /**
    * List checkpoints for a fine-tuning job.
@@ -68440,7 +68447,7 @@ var Checkpoints2 = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/fine-tuning/jobs/jobs.mjs
+// server/node_modules/openai/resources/fine-tuning/jobs/jobs.mjs
 var Jobs = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -68569,7 +68576,7 @@ var Jobs = class extends APIResource {
 };
 Jobs.Checkpoints = Checkpoints2;
 
-// ../../server/node_modules/openai/resources/fine-tuning/fine-tuning.mjs
+// server/node_modules/openai/resources/fine-tuning/fine-tuning.mjs
 var FineTuning = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -68584,11 +68591,11 @@ FineTuning.Jobs = Jobs;
 FineTuning.Checkpoints = Checkpoints;
 FineTuning.Alpha = Alpha;
 
-// ../../server/node_modules/openai/resources/graders/grader-models.mjs
+// server/node_modules/openai/resources/graders/grader-models.mjs
 var GraderModels = class extends APIResource {
 };
 
-// ../../server/node_modules/openai/resources/graders/graders.mjs
+// server/node_modules/openai/resources/graders/graders.mjs
 var Graders2 = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -68597,7 +68604,7 @@ var Graders2 = class extends APIResource {
 };
 Graders2.GraderModels = GraderModels;
 
-// ../../server/node_modules/openai/resources/images.mjs
+// server/node_modules/openai/resources/images.mjs
 var Images = class extends APIResource {
   /**
    * Creates a variation of a given image. This endpoint only supports `dall-e-2`.
@@ -68625,7 +68632,7 @@ var Images = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/models.mjs
+// server/node_modules/openai/resources/models.mjs
 var Models = class extends APIResource {
   /**
    * Retrieves a model instance, providing basic information about the model such as
@@ -68650,7 +68657,7 @@ var Models = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/moderations.mjs
+// server/node_modules/openai/resources/moderations.mjs
 var Moderations = class extends APIResource {
   /**
    * Classifies if text and/or image inputs are potentially harmful. Learn more in
@@ -68661,7 +68668,7 @@ var Moderations = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/realtime/calls.mjs
+// server/node_modules/openai/resources/realtime/calls.mjs
 var Calls = class extends APIResource {
   /**
    * Accept an incoming SIP call and configure the realtime session that will handle
@@ -68733,7 +68740,7 @@ var Calls = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/realtime/client-secrets.mjs
+// server/node_modules/openai/resources/realtime/client-secrets.mjs
 var ClientSecrets = class extends APIResource {
   /**
    * Create a Realtime client secret with an associated session configuration.
@@ -68767,7 +68774,7 @@ var ClientSecrets = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/realtime/realtime.mjs
+// server/node_modules/openai/resources/realtime/realtime.mjs
 var Realtime2 = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -68778,7 +68785,7 @@ var Realtime2 = class extends APIResource {
 Realtime2.ClientSecrets = ClientSecrets;
 Realtime2.Calls = Calls;
 
-// ../../server/node_modules/openai/lib/ResponsesParser.mjs
+// server/node_modules/openai/lib/ResponsesParser.mjs
 function maybeParseResponse(response, params) {
   if (!params || !hasAutoParseableInput2(params)) {
     const parsed = {
@@ -68907,7 +68914,7 @@ function addOutputText(rsp) {
   rsp.output_text = texts.join("");
 }
 
-// ../../server/node_modules/openai/lib/responses/ResponseAccumulator.mjs
+// server/node_modules/openai/lib/responses/ResponseAccumulator.mjs
 function accumulateResponse(event, snapshot) {
   if (!snapshot) {
     if (event.type !== "response.created") {
@@ -69296,7 +69303,7 @@ function assertNever3(value) {
   throw new OpenAIError(`Unhandled response stream event: ${JSON.stringify(value)}`);
 }
 
-// ../../server/node_modules/openai/lib/responses/ResponseStream.mjs
+// server/node_modules/openai/lib/responses/ResponseStream.mjs
 var _ResponseStream_instances;
 var _ResponseStream_params;
 var _ResponseStream_currentResponseSnapshot;
@@ -69490,7 +69497,7 @@ function finalizeResponse(snapshot, params) {
   return maybeParseResponse(snapshot, params);
 }
 
-// ../../server/node_modules/openai/resources/responses/input-items.mjs
+// server/node_modules/openai/resources/responses/input-items.mjs
 var InputItems2 = class extends APIResource {
   /**
    * Returns a list of input items for a given response.
@@ -69510,7 +69517,7 @@ var InputItems2 = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/responses/input-tokens.mjs
+// server/node_modules/openai/resources/responses/input-tokens.mjs
 var InputTokens2 = class extends APIResource {
   /**
    * Returns input token counts of the request.
@@ -69532,7 +69539,7 @@ var InputTokens2 = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/responses/responses.mjs
+// server/node_modules/openai/resources/responses/responses.mjs
 var Responses2 = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -69631,7 +69638,7 @@ var Responses2 = class extends APIResource {
 Responses2.InputItems = InputItems2;
 Responses2.InputTokens = InputTokens2;
 
-// ../../server/node_modules/openai/resources/skills/content.mjs
+// server/node_modules/openai/resources/skills/content.mjs
 var Content2 = class extends APIResource {
   /**
    * Download a skill zip bundle by its ID.
@@ -69646,7 +69653,7 @@ var Content2 = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/skills/versions/content.mjs
+// server/node_modules/openai/resources/skills/versions/content.mjs
 var Content3 = class extends APIResource {
   /**
    * Download a skill version zip bundle.
@@ -69662,7 +69669,7 @@ var Content3 = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/skills/versions/versions.mjs
+// server/node_modules/openai/resources/skills/versions/versions.mjs
 var Versions = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -69707,7 +69714,7 @@ var Versions = class extends APIResource {
 };
 Versions.Content = Content3;
 
-// ../../server/node_modules/openai/resources/skills/skills.mjs
+// server/node_modules/openai/resources/skills/skills.mjs
 var Skills = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -69756,7 +69763,7 @@ var Skills = class extends APIResource {
 Skills.Content = Content2;
 Skills.Versions = Versions;
 
-// ../../server/node_modules/openai/resources/uploads/parts.mjs
+// server/node_modules/openai/resources/uploads/parts.mjs
 var Parts = class extends APIResource {
   /**
    * Adds a
@@ -69776,7 +69783,7 @@ var Parts = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/uploads/uploads.mjs
+// server/node_modules/openai/resources/uploads/uploads.mjs
 var Uploads = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -69846,7 +69853,7 @@ var Uploads = class extends APIResource {
 };
 Uploads.Parts = Parts;
 
-// ../../server/node_modules/openai/lib/Util.mjs
+// server/node_modules/openai/lib/Util.mjs
 var allSettledWithThrow = async (promises2) => {
   const results = await Promise.allSettled(promises2);
   const rejected = results.filter((result2) => result2.status === "rejected");
@@ -69865,7 +69872,7 @@ var allSettledWithThrow = async (promises2) => {
   return values;
 };
 
-// ../../server/node_modules/openai/resources/vector-stores/file-batches.mjs
+// server/node_modules/openai/resources/vector-stores/file-batches.mjs
 var FileBatches = class extends APIResource {
   /**
    * Create a vector store file batch.
@@ -69990,7 +69997,7 @@ var FileBatches = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/vector-stores/files.mjs
+// server/node_modules/openai/resources/vector-stores/files.mjs
 var Files3 = class extends APIResource {
   /**
    * Create a vector store file by attaching a
@@ -70131,7 +70138,7 @@ var Files3 = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/vector-stores/vector-stores.mjs
+// server/node_modules/openai/resources/vector-stores/vector-stores.mjs
 var VectorStores = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -70208,7 +70215,7 @@ var VectorStores = class extends APIResource {
 VectorStores.Files = Files3;
 VectorStores.FileBatches = FileBatches;
 
-// ../../server/node_modules/openai/resources/videos.mjs
+// server/node_modules/openai/resources/videos.mjs
 var Videos = class extends APIResource {
   /**
    * Create a new video generation job from a prompt and optional reference assets.
@@ -70288,7 +70295,7 @@ var Videos = class extends APIResource {
   }
 };
 
-// ../../server/node_modules/openai/resources/webhooks/webhooks.mjs
+// server/node_modules/openai/resources/webhooks/webhooks.mjs
 var _Webhooks_instances;
 var _Webhooks_validateSecret;
 var _Webhooks_getRequiredHeader;
@@ -70367,7 +70374,7 @@ _Webhooks_instances = /* @__PURE__ */ new WeakSet(), _Webhooks_validateSecret = 
   return value;
 };
 
-// ../../server/node_modules/openai/internal/provider.mjs
+// server/node_modules/openai/internal/provider.mjs
 var providerDefinitionsKey = Symbol.for("openai.node.providerDefinitions.v1");
 var providerGlobal = globalThis;
 var existingProviderDefinitions = providerGlobal[providerDefinitionsKey];
@@ -70383,7 +70390,7 @@ function configureProvider(provider) {
   return definition.configure();
 }
 
-// ../../server/node_modules/openai/client.mjs
+// server/node_modules/openai/client.mjs
 var _OpenAI_instances;
 var _a3;
 var _OpenAI_encoder;
@@ -71039,8 +71046,10 @@ function isUndiciDispatcherVersionMismatchError(error) {
 
 // server/src/ai/providers/llm/openai.ts
 var OpenAILLMProvider = class {
-  id = "openai";
-  name = "OpenAI Compatible";
+  constructor() {
+    this.id = "openai";
+    this.name = "OpenAI Compatible";
+  }
   async isAvailable(config2) {
     return !!(config2.apiKey && config2.baseURL);
   }
@@ -71079,11 +71088,11 @@ var OpenAILLMProvider = class {
   }
 };
 
-// ../../server/node_modules/ollama/dist/index.mjs
+// server/node_modules/ollama/dist/index.mjs
 var import_node_fs = __toESM(require("node:fs"), 1);
 var import_node_path = require("node:path");
 
-// ../../server/node_modules/ollama/dist/browser.mjs
+// server/node_modules/ollama/dist/browser.mjs
 var import_whatwg_fetch = __toESM(require_fetch_umd(), 1);
 var defaultPort = "11434";
 var defaultHost = `http://127.0.0.1:${defaultPort}`;
@@ -71597,7 +71606,7 @@ var Ollama$1 = class Ollama {
 };
 var browser = new Ollama$1();
 
-// ../../server/node_modules/ollama/dist/index.mjs
+// server/node_modules/ollama/dist/index.mjs
 var import_whatwg_fetch2 = __toESM(require_fetch_umd(), 1);
 var Ollama2 = class extends Ollama$1 {
   async encodeImage(image) {
@@ -71642,8 +71651,10 @@ var index = new Ollama2();
 
 // server/src/ai/providers/llm/ollama.ts
 var OllamaLLMProvider = class {
-  id = "ollama";
-  name = "Ollama (Local)";
+  constructor() {
+    this.id = "ollama";
+    this.name = "Ollama (Local)";
+  }
   async isAvailable(config2) {
     try {
       const host2 = config2.host || "http://127.0.0.1:11434";
@@ -71697,9 +71708,11 @@ var OllamaLLMProvider = class {
 
 // server/src/ai/providers/llm/aionlabs.ts
 var AionLabsLLMProvider = class {
-  id = "aionlabs";
-  name = "Aion Labs";
-  DEFAULT_BASE_URL = "https://api.aionlabs.ai/v1";
+  constructor() {
+    this.id = "aionlabs";
+    this.name = "Aion Labs";
+    this.DEFAULT_BASE_URL = "https://api.aionlabs.ai/v1";
+  }
   async isAvailable(config2) {
     return !!(config2.apiKey || process.env.AIONLABS_API_KEY) && !!config2.baseURL;
   }
@@ -71745,7 +71758,7 @@ var AionLabsLLMProvider = class {
 var MsEdgeTTS = null;
 async function getMsEdgeTTS() {
   if (!MsEdgeTTS) {
-    const mod = await Promise.resolve().then(() => __toESM(require_dist2(), 1));
+    const mod = await Promise.resolve().then(() => __toESM(require_dist2()));
     MsEdgeTTS = mod.MsEdgeTTS || mod.default;
   }
   return MsEdgeTTS;
@@ -71808,8 +71821,10 @@ function stableIndex(seed, n) {
   return Math.abs(h) % n;
 }
 var EdgeTTSProvider = class {
-  id = "edge-tts";
-  name = "Microsoft Edge TTS";
+  constructor() {
+    this.id = "edge-tts";
+    this.name = "Microsoft Edge TTS";
+  }
   async isAvailable(_config) {
     try {
       const TTS = await getMsEdgeTTS();
@@ -71972,7 +71987,7 @@ var EdgeTTSProvider = class {
 };
 
 // server/src/ai/providers/tts/google-translate.ts
-var googleTTS = __toESM(require_dist3(), 1);
+var googleTTS = __toESM(require_dist3());
 var MAX_CHARS = 200;
 function splitTextIntoChunks(text2, maxLen) {
   const chunks = [];
@@ -71995,8 +72010,10 @@ function splitTextIntoChunks(text2, maxLen) {
   return chunks;
 }
 var GoogleTranslateTTSProvider = class {
-  id = "google-translate";
-  name = "Google Translate TTS";
+  constructor() {
+    this.id = "google-translate";
+    this.name = "Google Translate TTS";
+  }
   async isAvailable(_config) {
     return true;
   }
@@ -72045,8 +72062,10 @@ var GoogleTranslateTTSProvider = class {
 
 // server/src/ai/providers/stt/browser.ts
 var BrowserSTTProvider = class {
-  id = "browser";
-  name = "Browser SpeechRecognition";
+  constructor() {
+    this.id = "browser";
+    this.name = "Browser SpeechRecognition";
+  }
   async isAvailable(_config) {
     return true;
   }
@@ -72121,8 +72140,10 @@ function isWhisperNoiseHallucination(text2) {
 
 // server/src/ai/providers/stt/groq.ts
 var GroqSTTProvider = class {
-  id = "groq";
-  name = "Groq Whisper";
+  constructor() {
+    this.id = "groq";
+    this.name = "Groq Whisper";
+  }
   async isAvailable(config2) {
     const apiKey = config2.apiKey || process.env.GROQ_API_KEY;
     return !!apiKey && typeof apiKey === "string" && apiKey.trim().length > 0;
@@ -72190,10 +72211,10 @@ function registerAllProviders() {
 }
 
 // server/src/ai/face/animation-api.ts
-var import_crypto5 = __toESM(require("crypto"), 1);
-var import_fs3 = __toESM(require("fs"), 1);
-var import_os = __toESM(require("os"), 1);
-var import_path66 = __toESM(require("path"), 1);
+var import_crypto5 = __toESM(require("crypto"));
+var import_fs3 = __toESM(require("fs"));
+var import_os = __toESM(require("os"));
+var import_path66 = __toESM(require("path"));
 
 // server/src/ai/runpod.ts
 var EXEC_TIMEOUT_MS = parseInt(process.env.RUNPOD_EXEC_TIMEOUT_MS || "1800000", 10) || 18e5;
@@ -72263,7 +72284,7 @@ function validateFaceTrack(value) {
 function config() {
   return {
     url: (process.env.ANIMATION_API_URL || "").trim().replace(/\/+$/, ""),
-    timeoutMs: parseInt(process.env.ANIMATION_API_TIMEOUT_MS || "25000", 10) || 25e3,
+    timeoutMs: parseInt(process.env.ANIMATION_API_TIMEOUT_MS || "60000", 10) || 6e4,
     prompt: process.env.ANIMATION_API_PROMPT || "a person standing and speaking"
   };
 }
@@ -72410,19 +72431,528 @@ var DEPTH_AND_GROUNDING = [
 
 // server/src/ai/guide/knowledge.ts
 var KNOWLEDGE = [
-  { id: "emir-damascus", collection: "emir", year: 1860, title: "Damascus: protection across religious boundaries", keywords: "Damascus Damas Christians protection mercy tolerance religion why story \u062F\u0645\u0634\u0642 \u0645\u0633\u064A\u062D\u064A\u064A\u0646 \u0627\u0644\u0645\u0633\u064A\u062D\u064A\u064A\u0646 \u062D\u0645\u0627\u064A\u0629 \u062A\u0633\u0627\u0645\u062D \u0631\u062D\u0645\u0629", source: "https://mucem.org/uploads/2025/07/Mucem_Dossierpedagogique_AbdelKader_V5.pdf", text: "Mucem\u2019s educational dossier, section 4.2 (printed page 22), records this sequence: anti-Christian riots began in Damascus on 9 July 1860 after months of intercommunal tensions in the Lebanese and Syrian territories. Abd el-Kader had tried unsuccessfully to warn the governors of the danger. When rioters attacked Christian districts and foreign legations, he armed his men, organized patrols and sheltered survivors in his home. The situation began to calm from 18 July. The dossier interprets protecting innocent people as consistent with Islamic ethics, rather than a conversion or political alignment with Christians. Tell this documented sequence and its stakes. This excerpt does not identify the district of his home, guests by occupation, weather, provisions or a precise rescue total; do not invent those details. Credit his men as well as the emir." },
-  { id: "emir-scholar", collection: "emir", year: 1860, title: "A scholar as well as a military leader", keywords: "Sufi scholar faith writings learning philosophy ethics soufi \xE9crits savoir foi soufisme \u062A\u0635\u0648\u0641 \u0639\u0644\u0645 \u0639\u0627\u0644\u0645 \u062F\u064A\u0646 \u0623\u062E\u0644\u0627\u0642 \u0643\u062A\u0627\u0628 \u0627\u0644\u0645\u0648\u0627\u0642\u0641", source: "https://mucem.org/en/expositions/abd-el-kader/", text: "Mucem presents Abd el-Kader as both a historical and intellectual figure, rather than reducing him to a military hero. His later religious and intellectual life provides a different route into his story from accounts of battle. Connect questions about learning, conduct and religious responsibility to that wider portrait; use his supplied biography for the names of his writings and never manufacture a quotation." },
-  { id: "emir-tafna", collection: "emir", year: 1839, title: "Treaty, territory and renewed war", keywords: "Tafna treaty truce Bugeaud Iron Gates war diplomacy trait\xE9 guerre paix Portes Fer \u062A\u0627\u0641\u0646\u0629 \u0645\u0639\u0627\u0647\u062F\u0629 \u062D\u0631\u0628 \u0633\u0644\u0645 \u0635\u0644\u062D \u0628\u064A\u0628\u0627\u0646", source: "https://www.musee-armee.fr/ExpositionAlgerie/the-total-conquest-of-algeria.html", text: "The Treaty of Tafna was signed in 1837. French forces later crossed the Iron Gates, breaking the agreement according to the Mus\xE9e de l\u2019Arm\xE9e account, and war resumed. Explain the difference between a truce and a lasting settlement: an agreement could allow time for governing while competing territorial ambitions remained. The latter is explanatory interpretation, not a quotation from the treaty." },
-  { id: "emir-smala", collection: "emir", year: 1844, title: "The smala and the vulnerability of a mobile centre", keywords: "smala smalah Taguine Aumale mobile capital camp family story d\xE9faite capitale \u0627\u0644\u062F\u0648\u0642 \u0632\u0645\u0627\u0644\u0629 \u0627\u0644\u0632\u0645\u0627\u0644\u0629 \u0639\u0627\u0635\u0645\u0629 \u0645\u062A\u0646\u0642\u0644\u0629 \u062E\u064A\u0627\u0645 \u0645\u0642\u0627\u0648\u0645\u0629", source: "https://www.musee-armee.fr/ExpositionAlgerie/la-conquete-absolue-de-l-algerie.html", text: "The Duke of Aumale captured Abd el-Kader\u2019s smala in May 1843. In August 1844 the Moroccan sultan\u2019s army, a principal support for the emir, was defeated at Isly. These were distinct setbacks, not the emir\u2019s surrender itself. Relate the attack on his mobile centre to the wider pressure on resistance without inventing a battle scene or eyewitness dialogue." },
-  { id: "emir-captivity", collection: "emir", year: 1852, title: "From resistance to captivity and release", keywords: "1847 1852 captivity surrender Amboise France release promise prison captivit\xE9 lib\xE9ration reddition \u0623\u0633\u0631 \u0633\u062C\u0646 \u0623\u0645\u0628\u0648\u0627\u0632 \u0627\u0633\u062A\u0633\u0644\u0627\u0645 \u0641\u0631\u0646\u0633\u0627 \u0625\u0637\u0644\u0627\u0642", source: "https://www.musee-armee.fr/fileadmin/user_upload/Documents/Support-panneaux-jeune/panneau-4-Algerie.pdf", text: "Abd el-Kader became emir in 1832 and was taken into French captivity in 1847. He and a small part of the smala were held in France, including at Pau and Amboise. His supplied biography records his release in 1852 and subsequent move east. When explaining captivity, separate the negotiated expectation of departure from what actually happened; do not invent letters, guards\u2019 words or personal sensations." },
-  { id: "boumediene-oil", collection: "boumediene", year: 1971, title: "What nationalization changed", keywords: "oil gas hydrocarbons nationalisation nationalization hydrocarbures Sonatrach sovereignty 1971 51 p\xE9trole gaz \u062A\u0623\u0645\u064A\u0645 \u0645\u062D\u0631\u0648\u0642\u0627\u062A \u0646\u0641\u0637 \u063A\u0627\u0632 \u0633\u064A\u0627\u062F\u0629 \u0633\u0648\u0646\u0627\u0637\u0631\u0627\u0643", source: "https://documents1.worldbank.org/curated/en/967351468000574917/pdf/EMA390V20ESW0French0Box2661B0PUBLIC.pdf", text: "On 24 February 1971 Algeria nationalized part of the interests of French oil companies to bring Sonatrach\u2019s participation to 51 percent. Foreign gas production interests and foreign interests in oil and gas transport pipelines were also nationalized. Explain the distinction between majority participation in oil operations and full nationalization of the specified gas and transport interests. Ownership, technical expertise, export sales and development outcomes are different questions: taking control did not by itself settle all of them." },
-  { id: "boumediene-announcement", collection: "boumediene", year: 1971, title: "A public announcement and subsequent negotiations", keywords: "story UGTA workers announcement negotiation February raconte histoire d\xE9cision ouvriers nationalisation \u062D\u0643\u0627\u064A\u0629 \u0642\u0631\u0627\u0631 \u0639\u0645\u0627\u0644 \u0625\u0639\u0644\u0627\u0646 \u0645\u0641\u0627\u0648\u0636\u0627\u062A \u0641\u064A\u0641\u0631\u064A \u0641\u0628\u0631\u0627\u064A\u0631", source: "https://radioalgerie.dz/news/fr/node/104159", text: "Boumediene announced nationalization on 24 February 1971 at the Maison du Peuple in Algiers during the UGTA anniversary. Agreements with CFPA and ELF-ERAP followed later that year. A useful story can move from the public decision to the practical negotiations that followed. Avoid portraying a single announcement as the end of a complicated transfer, and do not invent crowd reactions or private exchanges." },
-  { id: "boumediene-nieo", collection: "boumediene", year: 1974, title: "Political independence and the international economy", keywords: "UN United Nations NIEO 1974 economic order non aligned sovereignty development trade raw materials ONU ordre \xE9conomique d\xE9veloppement non align\xE9s \u0627\u0644\u0623\u0645\u0645 \u0627\u0644\u0645\u062A\u062D\u062F\u0629 \u0639\u062F\u0645 \u0627\u0644\u0627\u0646\u062D\u064A\u0627\u0632 \u0646\u0638\u0627\u0645 \u0627\u0642\u062A\u0635\u0627\u062F\u064A \u062A\u0646\u0645\u064A\u0629 \u0645\u0648\u0627\u062F \u0623\u0648\u0644\u064A\u0629", source: "https://legal.un.org/avl/ha/ga_3201/ga_3201.html", text: "The UN\u2019s sixth special General Assembly session in 1974 addressed raw materials and development. On 1 May it adopted the Declaration and Programme of Action for a New International Economic Order, resolutions 3201 and 3202. The programme connected sovereign control of resources with demands to change unequal economic relations. These were collective international initiatives, not a policy enacted by Algeria alone. Distinguish advocating reform, adopting a declaration and implementing economic change; they are different achievements." },
-  { id: "boumediene-state", collection: "boumediene", year: 1976, title: "Revolutionary Council and constitutional milestones", keywords: "1965 1976 council constitution charter election state \u0627\u0644\u0645\u062C\u0644\u0633 \u0627\u0644\u062B\u0648\u0631\u0629 \u0645\u064A\u062B\u0627\u0642 \u062F\u0633\u062A\u0648\u0631 \u0627\u0646\u062A\u062E\u0627\u0628\u0627\u062A \u062F\u0648\u0644\u0629 pouvoir charte r\xE9volution", source: "https://www.mfa.gov.dz/discover-algeria/history-of-algeria", text: "The Algerian foreign ministry chronology records the Revolutionary Council under Houari Boumediene on 19 June 1965, the National Charter referendum on 27 June 1976, the constitutional referendum on 19 November 1976 and his presidential election on 10 December 1976. These milestones describe changes in institutions; dates alone do not establish political pluralism or prove universal agreement. Use the character biography to discuss policy aims and acknowledged limitations." },
-  { id: "boumediene-coup", collection: "boumediene", year: 1965, title: "Answering difficult questions about taking power", keywords: "coup Ben Bella democracy authoritarian opposition power criticism d\xE9mocratie critique autoritaire \u0627\u0646\u0642\u0644\u0627\u0628 \u0628\u0646 \u0628\u0644\u0629 \u062F\u064A\u0645\u0642\u0631\u0627\u0637\u064A\u0629 \u0645\u0639\u0627\u0631\u0636\u0629 \u0633\u0644\u0637\u0629 \u0627\u0646\u062A\u0642\u0627\u062F", source: "https://digitallibrary.un.org/record/488530", text: "A United Nations human-rights report describes the army led by Boumediene taking power in a coup on 19 June 1965 and the army\u2019s dominant political position. The portrayal may explain the historical leadership\u2019s stated rationale from its biography, but should also acknowledge the concentration of power. Calling it a revolutionary correction expresses the leadership\u2019s perspective rather than replacing the historical description of a coup." },
-  { id: "heritage-tlemcen", collection: "heritage", year: 2012, title: "Tlemcen wedding costume as a living practice", keywords: "chedda Tlemcen caftan silk velvet jewellery wedding costume embroidery dress transmission tissage mariage bijoux \u0634\u062F\u0629 \u062A\u0644\u0645\u0633\u0627\u0646 \u0642\u0641\u0637\u0627\u0646 \u062D\u0631\u064A\u0631 \u0645\u062E\u0645\u0644 \u062D\u0644\u064A \u0644\u0628\u0627\u0633 \u0632\u0641\u0627\u0641 \u062A\u0637\u0631\u064A\u0632", source: "https://ich.unesco.org/en/RL/rites-and-crafts-associated-with-the-wedding-costume-costume-of-tlemcen-00668", text: "The Tlemcen wedding tradition brings together woven silk, embroidered velvet, jewellery, dress and ritual. Relatives help dress the bride, and skills pass between generations. UNESCO inscribed the tradition in 2012. Its significance includes family alliances, community identity and the continuity of craft knowledge. Explain how an object can connect a maker\u2019s skill to a social occasion, without claiming that a displayed garment or jewel is part of this tradition unless its curator record says so." },
-  { id: "heritage-couscous", collection: "heritage", year: 2020, title: "Couscous: skills, utensils and sharing", keywords: "couscous food cooking pottery dish bowl grain kitchen partage cuisine semoule poterie \u0643\u0633\u0643\u0633 \u0643\u0633\u0643\u0633\u064A \u0637\u0639\u0627\u0645 \u0637\u0628\u062E \u0641\u062E\u0627\u0631 \u0623\u0648\u0627\u0646\u064A \u062D\u0628\u0648\u0628 \u0645\u0634\u0627\u0631\u0643\u0629", source: "https://ich.unesco.org/en/Decisions/15.COM/8.b.14", text: "The UNESCO inscription concerning couscous was submitted jointly by Algeria, Mauritania, Morocco and Tunisia. It concerns knowledge, skills and social practices around making and eating the dish, not simply a fixed recipe. Sharing a meal, conviviality and solidarity are central themes. Discuss utensils in relation to preparation and hospitality as general cultural context, without inferring a particular displayed vessel\u2019s use or origin from its shape alone." },
-  { id: "djemila-town", collection: "djemila", year: 1982, title: "Cuicul: adapting a Roman town to a mountain", keywords: "Djemila Dj\xE9mila Jamila Cuicul mountain forum town city Roman Numidia architecture montagne ville \u0631\u0648\u0645\u0627\u0646\u064A \u0631\u0648\u0645\u0627\u0646 \u062C\u0645\u064A\u0644\u0629 \u0643\u0648\u064A\u0643\u0648\u0644 \u0645\u062F\u064A\u0646\u0629 \u062C\u0628\u0644 \u0639\u0645\u0631\u0627\u0646", source: "https://whc.unesco.org/en/list/191/", text: "Djemila, ancient Cuicul, lies about 900 metres above sea level. Its forums, temples, basilicas, arches and houses illustrate Roman town planning adapted to mountain terrain. UNESCO inscribed the site in 1982. Explain the relationship between terrain and urban form using these features, and distinguish the archaeological site from the exhibition\u2019s reconstruction. The supplied market notes, rather than this broad site description, establish details about the macellum and its reconstructed furnishings." }
+  // ==========================================
+  // EMIR ABDELKADER (1808 - 1883)
+  // ==========================================
+  {
+    id: "emir-youth-upbringing",
+    collection: "emir",
+    year: 1825,
+    title: "Youth, scholarly education and equestrian mastery in Mascara",
+    keywords: "childhood youth birth Mascara Guetna Qadiriyya zawiya education Quran Arabic poetry philosophy horsemanship equestrian farousiyya \u0646\u0634\u0623\u0629 \u0637\u0641\u0648\u0644\u0629 \u0648\u0644\u0627\u062F\u0629 \u0627\u0644\u0642\u064A\u0637\u0646\u0629 \u0645\u0639\u0633\u0643\u0631 \u0627\u0644\u0632\u0627\u0648\u064A\u0629 \u0627\u0644\u0642\u0627\u062F\u0631\u064A\u0629 \u062A\u0639\u0644\u064A\u0645 \u0642\u0631\u0622\u0646 \u0641\u0642\u0647 \u0641\u0631\u0648\u0633\u064A\u0629 \u062E\u064A\u0644 \u0631\u0643\u0648\u0628",
+    source: "Tuhfat al-Za\u2019ir fi Ma\u2019athir al-Amir Abd al-Qadir (Muhammad Basha al-Jaza\u2019iri, 1903) & Mucem Dossier P\xE9dagogique",
+    text: "Abd al-Qadir ibn Muhyi al-Din was born on 6 September 1808 in the village of Guetna on the Wadi al-Hammam near Mascara, western Algeria. Raised in the scholarly Sufi zawiya of his father Sidi Muhyi al-Din, leader of the Qadiriyya order, he memorized the Holy Quran by age eleven and studied Arabic linguistics, hadith, jurisprudence, philosophy, and classical Greek and Islamic thought. Under the guidance of his father, he became an accomplished equestrian (faris) and marksman, excelling in traditional Arabian horsemanship and endurance in the plains of Ghriss. This synthesis of deep spiritual devotion, classical erudition, and martial discipline shaped his future leadership."
+  },
+  {
+    id: "emir-mecca-baghdad-journey",
+    collection: "emir",
+    year: 1828,
+    title: "The Great Pilgrimage and Eastern Journey (1825\u20131828)",
+    keywords: "pilgrimage Hajj Mecca Medina Cairo Baghdad Damascus travel Muhammad Ali reform Gilani \u062D\u062C \u0631\u062D\u0644\u0629 \u0645\u0643\u0629 \u0627\u0644\u0645\u062F\u064A\u0646\u0629 \u0627\u0644\u0642\u0627\u0647\u0631\u0629 \u0628\u063A\u062F\u0627\u062F \u062F\u0645\u0634\u0642 \u0645\u062D\u0645\u062F \u0639\u0644\u064A \u0625\u0635\u0644\u0627\u062D \u0627\u0644\u062C\u064A\u0644\u0627\u0646\u064A \u0635\u0648\u0641\u064A\u0629",
+    source: 'Tuhfat al-Za\u2019ir (Muhammad Basha) & Bruno Etienne, "Abdelkader: Isthme des Islams" (Hachette, 1994)',
+    text: "Between 1825 and 1828, young Abd al-Qadir accompanied his father on the pilgrimage to Mecca and Medina. En route, they visited Cairo, where he observed the administrative, industrial, and military modernization undertaken by Muhammad Ali Pasha. After performing Hajj, they journeyed to Damascus and Baghdad, where Abd al-Qadir made a pilgrimage to the tomb of his ancestral patron saint, Sheikh Abdul Qadir Gilani, immersing himself in spiritual retreats. Returning to Algeria shortly before the French landing of 1830, he brought with him a broad civilizational outlook, profound spiritual conviction, and modern awareness of statecraft."
+  },
+  {
+    id: "emir-allegiance-dardara",
+    collection: "emir",
+    year: 1833,
+    title: "The Allegiance under the Elm Tree at Ghriss (1832\u20131833)",
+    keywords: "allegiance bayah Dardara tree Ghriss Mascara 1832 1833 Nasir al-Din Commander Faithful jihad resistance \u0645\u0628\u0627\u064A\u0639\u0629 \u0634\u062C\u0631\u0629 \u0627\u0644\u062F\u0631\u062F\u0627\u0631\u0629 \u063A\u0631\u064A\u0633 \u0628\u064A\u0639\u0629 \u0645\u0639\u0633\u0643\u0631 \u0646\u0627\u0635\u0631 \u0627\u0644\u062F\u064A\u0646 \u0623\u0645\u064A\u0631 \u0627\u0644\u0645\u0624\u0645\u0646\u064A\u0646 \u062C\u0647\u0627\u062F \u0645\u0642\u0627\u0648\u0645\u0629",
+    source: "Tuhfat al-Za\u2019ir & Mus\xE9e de l\u2019Arm\xE9e Paris (Exposition Alg\xE9rie 1830\u20131962)",
+    text: 'Following the fall of Algiers and the collapse of Ottoman administrative authority in 1830, the tribes of western Algeria sought leadership to defend the land. On 27 November 1832 (13 Rajab 1248 AH), at the plain of Ghriss under the historic Elm Tree (Shajarat al-Dardara), tribal chiefs, scholars, and notables swore allegiance to Abd al-Qadir after his elderly father declined in his favor. He was proclaimed "Nasir al-Din" (Defender of the Faith) and took the title of Emir. A second, public and comprehensive allegiance was solemnized in the Great Mosque of Mascara on 4 February 1833, establishing his legitimate authority to unite the nation and command the resistance.'
+  },
+  {
+    id: "emir-state-institutions",
+    collection: "emir",
+    year: 1839,
+    title: "Founding the Modern Algerian State: Capital, Currency and Governance",
+    keywords: "state modern institutions Tagdemt capital currency Muhammadiyya dourou provinces caliphates administration justice \u062F\u0648\u0644\u0629 \u062D\u062F\u064A\u062B\u0629 \u062A\u0627\u063A\u062F\u0645\u062A \u0639\u0627\u0635\u0645\u0629 \u0639\u0645\u0644\u0629 \u0627\u0644\u0645\u062D\u0645\u062F\u064A\u0629 \u062F\u0648\u0627\u0644\u064A\u0628 \u0642\u0636\u0627\u0621 \u062E\u0644\u0627\u0641\u0627\u062A \u062A\u0646\u0638\u064A\u0645 \u0648\u0644\u0627\u064A\u0627\u062A",
+    source: 'Yahya Bouaziz, "Thawrat al-Amir Abd al-Qadir" (Algiers) & Charles-Henry Churchill, "The Life of Abdel Kader" (London, 1867)',
+    text: "Historians recognize Emir Abdelkader as the architect of the modern sovereign Algerian state. He established a permanent capital at Tagdemt (near Tiaret) and regional fortified capitals at Mascara, Saida, Miliana, Tlemcen, and Biskra. He partitioned the territory into eight provinces headed by Caliphs (such as Muhammad ben Allal and al-Bashir al-Sharif), separated judicial authority from civil administration through independent Sharia courts, and minted a national currency (the silver and bronze Muhammadiyya). He instituted a fair taxation system based on Zakat and Ashur to replace arbitrary feudal levies."
+  },
+  {
+    id: "emir-military-modernization",
+    collection: "emir",
+    year: 1840,
+    title: "The Regular Army (Al-Nidham) and Domestic Arms Industry",
+    keywords: "army regular Nidham infantry cavalry artillery arms foundry cannon gunpowder Miliana Tlemcen military \u062C\u064A\u0634 \u0646\u0638\u0627\u0645\u064A \u0645\u0634\u0627\u0629 \u062E\u064A\u0627\u0644\u0629 \u0645\u062F\u0641\u0639\u064A\u0629 \u0633\u0628\u0627\u0643\u0629 \u0645\u062F\u0627\u0641\u0639 \u0628\u0627\u0631\u0648\u062F \u0645\u0644\u064A\u0627\u0646\u0629 \u062A\u0644\u0645\u0633\u0627\u0646 \u0633\u0644\u0627\u062D",
+    source: 'Marcel Emerit, "L\u2019\xE9tat d\u2019Abd-el-Kader et sa puissance militaire" & Mus\xE9e de l\u2019Arm\xE9e',
+    text: 'Emir Abdelkader established Algeria\u2019s first modern regular standing army, known as "Jaysh al-Nidham", composed of disciplined infantry (Mouchat), cavalry (Khayyala), and artillery (Toubdjiyya), distinguished by standardized uniforms, military ranks, regular wages, and rigorous drill. To eliminate reliance on foreign arms supplies, he established defense industries deep within Algerian territory, including cannon foundries, rifle manufacturing workshops, and gunpowder mills in Miliana and Tlemcen, employing Algerian metalworkers and European engineers. His military regulations emphasized strict chain of command, operational mobility, and moral discipline.'
+  },
+  {
+    id: "emir-battle-macta",
+    collection: "emir",
+    year: 1835,
+    title: "The Decisive Victory at the Battle of Macta (28 June 1835)",
+    keywords: "battle Macta Tr\xE9zel defeat victory Sig Habra marshes strategy ambush \u0645\u0639\u0631\u0643\u0629 \u0627\u0644\u0645\u0642\u0637\u0639 \u062A\u0631\u064A\u0632\u064A\u0644 \u0647\u0632\u064A\u0645\u0629 \u0646\u0635\u0631 \u0633\u064A\u0642 \u0647\u0628\u0631\u0629 \u0645\u0633\u062A\u0646\u0642\u0639\u0627\u062A \u0643\u0645\u064A\u0646 \u062E\u0637\u0629 \u0639\u0633\u0643\u0631\u064A\u0629",
+    source: "Mus\xE9e de l\u2019Arm\xE9e Paris & General Tr\xE9zel official dispatches (Archives Nationales d\u2019Outre-Mer)",
+    text: "On 28 June 1835, French General Camille Tr\xE9zel led a punitive expedition toward Mascara. Anticipating the enemy route along the marshes of the Macta river between Sig and the sea, Emir Abdelkader orchestrated a masterclass in tactical ambush and encirclement. Catching the French column in marshy defiles, the Algerian cavalry and infantry inflicted a crushing defeat, routing the expedition and capturing its artillery baggage train. The catastrophe caused political shockwaves in Paris, prompting the immediate dismissal of General Tr\xE9zel and Governor-General Drouet d\u2019Erlon and forcing France to reconsider total conquest."
+  },
+  {
+    id: "emir-tafna",
+    collection: "emir",
+    year: 1839,
+    title: "Treaty of Tafna (1837) and the Resumption of War",
+    keywords: "Tafna treaty truce Bugeaud Iron Gates war diplomacy sovereignty boundaries trait\xE9 guerre paix Portes Fer \u062A\u0627\u0641\u0646\u0629 \u0645\u0639\u0627\u0647\u062F\u0629 \u062D\u0631\u0628 \u0633\u0644\u0645 \u0635\u0644\u062D \u0628\u064A\u0628\u0627\u0646 \u0628\u064A\u062C\u0648 \u0633\u064A\u0627\u062F\u0629 \u062D\u062F\u0648\u062F",
+    source: "https://www.musee-armee.fr/ExpositionAlgerie/the-total-conquest-of-algeria.html & Official Treaty Text (30 May 1837)",
+    text: 'On 30 May 1837, Marshal Bugeaud signed the Treaty of Tafna with Emir Abdelkader. The treaty formally recognized the Emir\u2019s sovereignty over approximately two-thirds of Algeria, encompassing the provinces of Oran, Titteri (M\xE9d\xE9a), and the central interior, leaving France only a few coastal enclaves. The Emir utilized this strategic truce to consolidate state institutions, construct inland forts, and reorganize his regular army. However, in October 1839, French forces led by the Duke of Orl\xE9ans violated the treaty\u2019s territorial stipulations by traversing the "Iron Gates" (Bibans defile), prompting the Emir to declare a renewal of lawful resistance.'
+  },
+  {
+    id: "emir-battle-sidi-brahim",
+    collection: "emir",
+    year: 1845,
+    title: "The Battle of Sidi Brahim (23\u201326 September 1845)",
+    keywords: "battle Sidi Brahim Montagnac 8th Chasseurs Ghazaouet cavalry courage victory \u0645\u0639\u0631\u0643\u0629 \u0633\u064A\u062F\u064A \u0625\u0628\u0631\u0627\u0647\u064A\u0645 \u0645\u0648\u0646\u062A\u0646\u064A\u0627\u0643 \u0627\u0644\u063A\u0632\u0648\u0627\u062A \u062E\u064A\u0627\u0644\u0629 \u0634\u062C\u0627\u0639\u0629 \u0646\u0635\u0631 \u0628\u0637\u0648\u0644\u064A\u0629",
+    source: "Mus\xE9e National du Moudjahid Algiers & Service Historique de la D\xE9fense (Vincennes)",
+    text: "Between 23 and 26 September 1845, near Ghazaouet in western Algeria, Emir Abdelkader engaged the French 8th Chasseurs \xE0 Pied and 2nd Hussars led by Lieutenant-Colonel Montagnac. Demonstrating rapid maneuverability and overwhelming courage, the Algerian forces surrounded Montagnac\u2019s detachment at Sidi Brahim. The French commander was killed in the opening charge, and the remnants of his battalion were besieged in the marabout sanctuary of Sidi Brahim before surrendering. The battle stands as one of the most famous tactical triumphs in Algerian military history, demonstrating the unyielding vitality of the resistance."
+  },
+  {
+    id: "emir-humanitarian-decree-1843",
+    collection: "emir",
+    year: 1843,
+    title: "Humanitarian Code of War and Treatment of Captives (1843)",
+    keywords: "humanitarian code prisoners war Geneva convention Red Cross mercy ethics Suchet decree \u0645\u064A\u062B\u0627\u0642 \u0623\u0633\u0631\u0649 \u062D\u0631\u0628 \u0642\u0627\u0646\u0648\u0646 \u062F\u0648\u0644\u064A \u0625\u0646\u0633\u0627\u0646\u064A \u0635\u0644\u064A\u0628 \u0623\u062D\u0645\u0631 \u062C\u0646\u064A\u0641 \u0631\u062D\u0645\u0629 \u0623\u062E\u0644\u0627\u0642 \u0645\u0631\u0633\u0648\u0645 \u0627\u0644\u0623\u0628 \u0633\u0648\u0634\u064A",
+    source: 'International Review of the Red Cross & Ahmed Bouyerdene, "Abd el-Kader: The Chivalrous Champion of Islam" (2012)',
+    text: "Decades before the First Geneva Convention of 1864, Emir Abdelkader established a pioneering humanitarian code for the treatment of prisoners of war. In a formal decree issued in 1843, he mandated that every captured French soldier must be delivered alive and unharmed, instituting a monetary reward for safe escort and forbidding physical abuse or decapitation under severe penalties. He facilitated visits by French clergy (such as Father Suchet) to administer spiritual rites and, when French blockade threatened his camp with famine, released prisoners freely rather than allow them to starve. The International Committee of the Red Cross honors him as a foundational architect of international humanitarian law."
+  },
+  {
+    id: "emir-smala",
+    collection: "emir",
+    year: 1844,
+    title: "The Smala: The Mobile Capital and the Raid of Taguine (1843)",
+    keywords: "smala smalah Taguine Aumale mobile capital camp family tent city archives libraries \u0632\u0645\u0627\u0644\u0629 \u0627\u0644\u0632\u0645\u0627\u0644\u0629 \u0639\u0627\u0635\u0645\u0629 \u0645\u062A\u0646\u0642\u0644\u0629 \u062E\u064A\u0627\u0645 \u062A\u0627\u062C\u064A\u0646 \u062A\u0627\u0643\u064A\u0646 \u0645\u0643\u062A\u0628\u0629 \u0623\u0631\u0634\u064A\u0641 \u062F\u0648\u0642 \u0623\u0648\u0645\u0627\u0644",
+    source: "https://www.musee-armee.fr/ExpositionAlgerie/la-conquete-absolue-de-l-algerie.html & Tuhfat al-Za\u2019ir",
+    text: 'The "Smala" was Emir Abdelkader\u2019s vast mobile administrative capital and tent city, comprising over 30,000 citizens, tribal elders, scholars, state archives, treasury, and renowned manuscript libraries. It enabled governance, education, and judicial proceedings while staying beyond colonial reach in the high steppes. On 16 May 1843, while the Emir was campaigning elsewhere, the Duke of Aumale launched a surprise cavalry raid against the encampment at Taguine. Though the French captured the camp, archives, and many dependents, the Emir refused despair, regrouping his surviving warriors and continuing mobile guerrilla warfare across the mountains and borders.'
+  },
+  {
+    id: "emir-captivity",
+    collection: "emir",
+    year: 1852,
+    title: "Negotiated Armistice (1847) and Captivity in Pau and Amboise (1848\u20131852)",
+    keywords: "1847 1852 captivity surrender Amboise Pau France release promise treaty Lamorici\xE8re broken faith \u0623\u0633\u0631 \u0633\u062C\u0646 \u0623\u0645\u0628\u0648\u0627\u0632 \u0628\u0648 \u0641\u0631\u0646\u0633\u0627 \u0625\u0637\u0644\u0627\u0642 \u0633\u0631\u0627\u062D \u0646\u0643\u062B \u0639\u0647\u062F \u0627\u0633\u062A\u0633\u0644\u0627\u0645 \u0644\u0627\u0645\u0648\u0631\u064A\u0633\u064A\u064A\u0631 \u0646\u0627\u0628\u0644\u064A\u0648\u0646",
+    source: "https://www.musee-armee.fr/fileadmin/user_upload/Documents/Support-panneaux-jeune/panneau-4-Algerie.pdf & Bruno Etienne",
+    text: "In late December 1847, faced with General Bugeaud\u2019s brutal scorched-earth campaign, the slaughter of civilian tribes, and isolation following the defeat at Isly, the Emir concluded an honorable armistice with General Lamorici\xE8re and the Duke of Aumale to spare Algerian lives. The agreement explicitly guaranteed safe passage for the Emir, his family, and retinue to Alexandria or Acre. However, the French Second Republic dishonored its signature, detaining him in Toulon (Fort Lamalgue), Pau Castle, and the Ch\xE2teau d\u2019Amboise (1848\u20131852). Throughout his harsh captivity, during which twenty-five family members and followers died, the Emir maintained unshakable dignity and scholarly discipline until Louis-Napoleon Bonaparte ordered his release on 16 October 1852."
+  },
+  {
+    id: "emir-damascus",
+    collection: "emir",
+    year: 1860,
+    title: "The Rescue of Christians in Damascus (July 1860)",
+    keywords: "Damascus Damas Christians protection mercy tolerance riots 1860 heroic palace rescue \u062F\u0645\u0634\u0642 \u0645\u0633\u064A\u062D\u064A\u064A\u0646 \u0627\u0644\u0645\u0633\u064A\u062D\u064A\u064A\u0646 \u062D\u0645\u0627\u064A\u0629 \u062A\u0633\u0627\u0645\u062D \u0631\u062D\u0645\u0629 \u0641\u062A\u0646\u0629 \u0627\u0644\u0634\u0627\u0645 \u0625\u0646\u0642\u0627\u0630 \u0634\u0647\u0627\u0645\u0629 \u0625\u0646\u0633\u0627\u0646\u064A\u0629 \u0645\u0631\u0648\u0621\u0629 \u0642\u0635\u0631",
+    source: 'https://mucem.org/uploads/2025/07/Mucem_Dossierpedagogique_AbdelKader_V5.pdf & Churchill, "Life of Abdel Kader"',
+    text: 'Having settled in Damascus in 1855, Emir Abdelkader became a revered scholar teaching at the Umayyad Mosque. On 9 July 1860, violent sectarian riots erupted in Damascus, threatening the Christian minority while Ottoman authorities failed to maintain order. Emir Abdelkader, accompanied by his sons, armed Algerian companions, and loyal guards, rode directly into the turbulent districts, confronting rioting mobs and declaring: "Religion is a shield for the innocent, not a pretext for murder." He opened his palace and properties to shelter between 12,000 and 15,000 Christians\u2014including diplomats, priests, and Sisters of Charity\u2014feeding and guarding them before arranging armed caravans to escort them safely to Beirut.'
+  },
+  {
+    id: "emir-international-honors",
+    collection: "emir",
+    year: 1862,
+    title: "Global Recognition: Tributes from Lincoln, Victoria and World Leaders",
+    keywords: "honors medals Lincoln pistols Queen Victoria shotgun Napoleon III Legion Honor Pope Pius IX Alexander II \u062A\u0643\u0631\u064A\u0645 \u0623\u0648\u0633\u0645\u0629 \u0644\u064A\u0646\u0643\u0648\u0644\u0646 \u0645\u0633\u062F\u0633\u0627\u062A \u0641\u064A\u0643\u062A\u0648\u0631\u064A\u0627 \u0628\u0646\u062F\u0642\u064A\u0629 \u0646\u0627\u0628\u0644\u064A\u0648\u0646 \u062C\u0648\u0642\u0629 \u0627\u0644\u0634\u0631\u0641 \u0642\u064A\u0635\u0631 \u0631\u0648\u0633\u064A\u0627 \u0627\u0644\u0628\u0627\u0628\u0627",
+    source: 'Smithsonian Institution Archives & John W. Kiser, "Commander of the Faithful: The Life and Times of Emir Abd el-Kader" (2008)',
+    text: "The Emir\u2019s heroic defense of human life in Damascus earned global acclaim. US President Abraham Lincoln sent him a pair of exquisite presentation pistols inlaid with gold and pearl. Queen Victoria of Great Britain presented him with a bespoke gold-inlaid hunting shotgun. Napoleon III awarded him the Grand Cordon of the Legion of Honor, while Russian Tsar Alexander II, Prussian King Wilhelm I, Pope Pius IX, and Ottoman Sultan Abdulmejid I conferred their highest state decorations. The town of Elkader, Iowa (USA), founded in 1846 by American pioneers, was named in enduring homage to his chivalry and character."
+  },
+  {
+    id: "emir-scholar",
+    collection: "emir",
+    year: 1860,
+    title: "Intellectual Legacy: Kitab al-Mawaqif and Spiritual Teachings",
+    keywords: "Sufi scholar faith writings learning philosophy ethics Kitab al-Mawaqif Dhikra al-Aqil Ibn Arabi \u062A\u0635\u0648\u0641 \u0639\u0644\u0645 \u0639\u0627\u0644\u0645 \u062F\u064A\u0646 \u0623\u062E\u0644\u0627\u0642 \u0643\u062A\u0627\u0628 \u0627\u0644\u0645\u0648\u0627\u0642\u0641 \u0630\u0643\u0631\u0649 \u0627\u0644\u0639\u0627\u0642\u0644 \u0648\u062A\u0646\u0628\u064A\u0647 \u0627\u0644\u063A\u0627\u0641\u0644 \u0627\u0628\u0646 \u0639\u0631\u0628\u064A \u0639\u0631\u0641\u0627\u0646",
+    source: 'https://mucem.org/en/expositions/abd-el-kader/ & Michel Chodkiewicz, "The Spiritual Writings of Amir Abd al-Kader" (SUNY, 1995)',
+    text: 'Far beyond his military fame, Emir Abdelkader was one of the 19th century\u2019s preeminent Islamic spiritual philosophers and Sufi masters. His three-volume magnum opus, "Kitab al-Mawaqif fi al-Tasawwuf wa al-Wa\u2019dh wa al-Irshad", contains profound meditations on divine unity, spiritual illumination, cosmic order, and human conscience, building upon the heritage of Sheikh Muhyi al-Din Ibn Arabi. In 1858, his philosophical treatise "Dhikra al-Aqil wa Tanbih al-Ghafil" was translated into French under the title "Rappel \xE0 l\u2019intelligent, avis \xE0 l\u2019indiff\xE9rent", advocating dialogue between scientific reason and spiritual faith.'
+  },
+  {
+    id: "emir-suez-canal-1869",
+    collection: "emir",
+    year: 1869,
+    title: "Inauguration of the Suez Canal as Guest of Honor (November 1869)",
+    keywords: "Suez Canal inauguration 1869 Ferdinand de Lesseps Khedive Ismail East West bridge \u0642\u0646\u0627\u0629 \u0627\u0644\u0633\u0648\u064A\u0633 \u062A\u062F\u0634\u064A\u0646 \u062F\u064A \u0644\u064A\u0633\u0628\u0633 \u062E\u062F\u064A\u0648\u064A \u0625\u0633\u0645\u0627\u0639\u064A\u0644 \u0627\u0644\u0634\u0631\u0642 \u0648\u0627\u0644\u063A\u0631\u0628 \u0636\u064A\u0641 \u0634\u0631\u0641",
+    source: "Biblioth\xE8que Nationale de France & Al-Ahram Historical Archives",
+    text: "In November 1869, Ferdinand de Lesseps and Khedive Ismail invited Emir Abdelkader as one of the preeminent international guests of honor to the official opening of the Suez Canal, alongside Empress Eug\xE9nie of France, Emperor Franz Joseph of Austria, and European monarchs. The Emir celebrated the canal not merely as an engineering triumph, but as a providential bridge uniting Eastern and Western civilizations in trade, knowledge, and mutual respect, reflecting his enduring belief in human fraternity."
+  },
+  {
+    id: "emir-passing-repatriation",
+    collection: "emir",
+    year: 1883,
+    title: "Passing in Damascus (1883) and Repatriation to Independent Algeria (1966)",
+    keywords: "death passing Damascus 1883 burial Ibn Arabi repatriation 1966 independence El Alia Boumediene \u0648\u0641\u0627\u0629 \u062F\u0645\u0634\u0642 1883 \u062F\u0641\u0646 \u0627\u0628\u0646 \u0639\u0631\u0628\u064A \u0627\u0633\u062A\u0631\u062C\u0627\u0639 \u0627\u0644\u0631\u0641\u0627\u062A 1966 \u0627\u0633\u062A\u0642\u0644\u0627\u0644 \u0627\u0644\u0639\u0627\u0644\u064A\u0629 \u0628\u0648\u0645\u062F\u064A\u0646",
+    source: "Archives Nationales d\u2019Alg\xE9rie & Le Monde archives (July 1966)",
+    text: "Emir Abdelkader passed away peacefully at his estate in Dummar near Damascus on 26 May 1883 at age seventy-four, deeply mourned across the Islamic and Western worlds, and was interred near the shrine of Sheikh Ibn Arabi. On 5 July 1966, marking the fourth anniversary of Algerian independence, his remains were repatriated to his homeland in a solemn national state ceremony presided over by President Houari Boumediene. He was laid to rest at the Carr\xE9 des Martyrs in El Alia Cemetery in Algiers, forever venerated as the Father of modern Algeria."
+  },
+  // ==========================================
+  // HOUARI BOUMEDIENE (1932 - 1978)
+  // ==========================================
+  {
+    id: "boumediene-childhood-guelma",
+    collection: "boumediene",
+    year: 1944,
+    title: "Childhood in Guelma, Peasant Roots and Quranic Upbringing",
+    keywords: "childhood Guelma Beni Addi Mohamed Boukharouba peasant father wheat Quran school Kattaniya \u0637\u0641\u0648\u0644\u0629 \u0642\u0627\u0644\u0645\u0629 \u0628\u0646\u064A \u0639\u062F\u064A \u0645\u062D\u0645\u062F \u0628\u0648\u062E\u0631\u0648\u0628\u0629 \u0641\u0644\u0627\u062D \u0642\u0645\u062D \u0642\u0631\u0622\u0646 \u0645\u062F\u0631\u0633\u0629 \u0627\u0644\u0643\u062A\u0627\u0646\u064A\u0629",
+    source: 'Mohieddine Amimour, "Houari Boumediene: Qira\u2019a fi Hayatihi wa Masarihi" & Anissa Boumediene interviews',
+    text: "Houari Boumediene was born Mohamed Ben Brahim Boukharouba on 23 August 1932 in the rural hamlet of Beni Addi (Al-Ararra) near Jebel Debbagh, west of Guelma, in eastern Algeria. He was born into an impoverished peasant family of seven children; his father was an austere, deeply pious wheat farmer. Boumediene attended the Quranic kuttub at age four, entered the French-administered primary school in Guelma in 1938, and continued his classical Arabic studies at the prestigious Kattaniya madrasa in Constantine, grounding his worldview in social justice, linguistic dignity, and rural pride."
+  },
+  {
+    id: "boumediene-guelma-massacres-1945",
+    collection: "boumediene",
+    year: 1945,
+    title: "The Trauma of the 8 May 1945 Massacres in Guelma and Political Awakening",
+    keywords: "8 May 1945 massacres Guelma S\xE9tif trauma colonial violence awakening revolution \u0645\u062C\u0627\u0632\u0631 8 \u0645\u0627\u064A 1945 \u0642\u0627\u0644\u0645\u0629 \u0633\u0637\u064A\u0641 \u0645\u062D\u0627\u0631\u0642 \u0639\u0646\u0641 \u0627\u0633\u062A\u0639\u0645\u0627\u0631\u064A \u0648\u0639\u064A \u062B\u0648\u0631\u064A \u0635\u062F\u0645\u0629",
+    source: 'Benjamin Stora, "Histoire de la guerre d\u2019Alg\xE9rie" & Boumediene public speeches archive',
+    text: 'At just twelve years of age, Mohamed Boukharouba witnessed firsthand the horrific colonial massacres of 8 May 1945 in Guelma, where thousands of peaceful Algerian demonstrators were hunted down, executed, and incinerated in lime kilns by colonial militias. Boumediene later recalled: "On that single day, I grew up overnight. I saw the charred bodies of my brothers thrown into valleys and lime kilns, and I realized forever that colonialism understands nothing but force, and that what was taken by force can only be reclaimed by force."'
+  },
+  {
+    id: "boumediene-escape-cairo-azhar",
+    collection: "boumediene",
+    year: 1954,
+    title: "Escape to Tunis, Al-Azhar in Cairo and Joining the Revolution (1950\u20131954)",
+    keywords: "escape conscription Tunis Zitouna Cairo Al-Azhar Ben Bella FLN Maghreb training camps \u0647\u0631\u0648\u0628 \u062A\u062C\u0646\u064A\u062F \u0625\u062C\u0628\u0627\u0631\u064A \u062A\u0648\u0646\u0633 \u0627\u0644\u0632\u064A\u062A\u0648\u0646\u0629 \u0627\u0644\u0642\u0627\u0647\u0631\u0629 \u0627\u0644\u0623\u0632\u0647\u0631 \u0627\u0644\u0634\u0631\u064A\u0641 \u0628\u0646 \u0628\u0644\u0629 \u062C\u0628\u0647\u0629 \u0627\u0644\u062A\u062D\u0631\u064A\u0631",
+    source: 'Ahmed Ben Bella, "M\xE9moires" & Paul Balta, "La strat\xE9gie de Boum\xE9di\xE8ne" (Simro, 1978)',
+    text: "In 1950, refusing mandatory military conscription into the French colonial army, Boukharouba fled secretly on foot across the Tunisian border. He studied at the Zitouna Mosque before continuing his clandestine journey to Cairo, Egypt, enrolling at the venerable Al-Azhar University. In Cairo, living on meager student rations, he mastered classical Arabic and political philosophy, joined the Maghreb Liberation Bureau, and met fellow revolutionary Ahmed Ben Bella in 1952. When the Algerian Revolution erupted on 1 November 1954, he underwent rigorous officer training in Egyptian military camps, determined to return home armed."
+  },
+  {
+    id: "boumediene-queen-maite-1955",
+    collection: "boumediene",
+    year: 1955,
+    title: "Landing Arms aboard the Yacht Queen Maite (Dina) in Spring 1955",
+    keywords: "arms expedition Dina Queen Maite yacht Alexandria Nador landing weapons 1955 \u0634\u062D\u0646\u0629 \u0623\u0633\u0644\u062D\u0629 \u064A\u062E\u062A \u062F\u064A\u0646\u0627 \u0627\u0644\u0645\u0644\u0643\u0629 \u062F\u064A\u0646\u0627 \u0627\u0644\u0625\u0633\u0643\u0646\u062F\u0631\u064A\u0629 \u0627\u0644\u0646\u0627\u0638\u0648\u0631 \u0625\u0646\u0632\u0627\u0644 \u0633\u0644\u0627\u062D \u062B\u0648\u0631\u0629 \u0627\u0644\u063A\u0631\u0628",
+    source: "Abdelhafid Boussouf archives & Ministry of Information Algiers historical monographs",
+    text: 'In March 1955, young Boukharouba was entrusted with a daring mission: commanding the secret expedition of the luxury yacht "Queen Maite" (Dina), loaded with rifles, submachine guns, and ammunition from Alexandria, to supply the infant National Liberation Army (ALN). Navigating through naval blockades, the yacht landed its vital cargo on the Mediterranean coast of Kebdana near Nador. Boumediene successfully escorted the weapons inland into western Algeria, providing the foundational armaments that ignited the armed struggle across Wilaya V (Oranie).'
+  },
+  {
+    id: "boumediene-nom-de-guerre",
+    collection: "boumediene",
+    year: 1957,
+    title: 'Adopting the Nom de Guerre "Houari Boumediene"',
+    keywords: "nom de guerre Houari Boumediene Sidi El Houari Oran Sidi Boumediene Tlemcen saints \u0627\u0633\u0645 \u062B\u0648\u0631\u064A \u0647\u0648\u0627\u0631\u064A \u0628\u0648\u0645\u062F\u064A\u0646 \u0633\u064A\u062F\u064A \u0627\u0644\u0647\u0648\u0627\u0631\u064A \u0648\u0647\u0631\u0627\u0646 \u0633\u064A\u062F\u064A \u0628\u0648\u0645\u062F\u064A\u0646 \u062A\u0644\u0645\u0633\u0627\u0646 \u0628\u0631\u0643\u0629 \u0634\u0631\u0641",
+    source: 'Tahar Zbiri, "Mudhakkirat Akhar Qada al-Awwalin" & Universalis',
+    text: 'Upon entering the ranks of the ALN in western Algeria, Mohamed Boukharouba selected the nom de guerre "Houari Boumediene". The name united the two revered patron saints of western Algeria: Sidi El Houari, protector of Oran, and Sidi Boumediene (Abu Madyan al-Ghawth), the spiritual sultan of Tlemcen. By choosing this name, he honored the land, history, and spiritual identity of the people he was commanding, fusing deep cultural reverence with revolutionary commitment.'
+  },
+  {
+    id: "boumediene-wilaya-5-commander",
+    collection: "boumediene",
+    year: 1958,
+    title: "Command of Wilaya V (Oranie) and Revolutionary Leadership (1957\u20131958)",
+    keywords: "Wilaya 5 Oranie commander Ben M\u2019hidi Boussouf organization guerilla \u0627\u0644\u0648\u0644\u0627\u064A\u0629 \u0627\u0644\u062E\u0627\u0645\u0633\u0629 \u0648\u0647\u0631\u0627\u0646 \u0642\u0627\u0626\u062F \u0627\u0644\u0639\u0631\u0628\u064A \u0628\u0646 \u0645\u0647\u064A\u062F\u064A \u0639\u0628\u062F \u0627\u0644\u062D\u0641\u064A\u0638 \u0628\u0648\u0635\u0648\u0641 \u062A\u0646\u0638\u064A\u0645 \u062D\u0631\u0628 \u0639\u0635\u0627\u0628\u0627\u062A",
+    source: "Benjamin Stora & Historical Dictionary of Algeria",
+    text: "Under the mentorship of visionary leaders Larbi Ben M\u2019hidi and Abdelhafid Boussouf, Boumediene demonstrated formidable organizational, strategic, and logistical capabilities. In 1957, at age twenty-five, he was promoted to colonel and appointed supreme commander of Wilaya V (Oranie). He restructured rebel command posts, established clandestine communications networks, instituted strict financial accountability, and mounted devastating guerrilla campaigns against colonial positions throughout the Oran region."
+  },
+  {
+    id: "boumediene-chief-staff-aln",
+    collection: "boumediene",
+    year: 1961,
+    title: "Chief of the ALN General Staff (EMG) and the Frontier Army (1960\u20131962)",
+    keywords: "ALN Chief General Staff EMG colonel Oujda Ghardimaou Challe Morice line Frontier Army \u0631\u0626\u064A\u0633 \u0623\u0631\u0643\u0627\u0646 \u062C\u064A\u0634 \u0627\u0644\u062A\u062D\u0631\u064A\u0631 \u0627\u0644\u0648\u0637\u0646\u064A \u0648\u062C\u062F\u0629 \u063A\u0627\u0631 \u0627\u0644\u062F\u0645\u0627\u0621 \u062E\u0637 \u0645\u0648\u0631\u064A\u0633 \u0634\u0627\u0644 \u062C\u064A\u0634 \u0627\u0644\u062D\u062F\u0648\u062F",
+    source: "Archives of the Arm\xE9e de Lib\xE9ration Nationale (Algiers) & Universalis",
+    text: 'In 1960, the National Council of the Algerian Revolution (CNRA) appointed Colonel Houari Boumediene as Chief of the ALN General Staff (\xC9tat-Major G\xE9n\xE9ral - EMG), operating from bases in Ghardimaou (Tunisia) and Oujda (Morocco). Boumediene transformed dispersed guerrilla battalions into the formidable "Frontier Army" (Arm\xE9e des Fronti\xE8res)\u2014a highly disciplined, heavily armed conventional force. He organized relentless breaches through France\u2019s fortified, electrified Challe and Morice barrier lines, ensuring a continuous supply of armaments and fighters to the embattled internal wilayas.'
+  },
+  {
+    id: "boumediene-independence-anp",
+    collection: "boumediene",
+    year: 1963,
+    title: "Independence (1962), Defense Minister and Building the ANP",
+    keywords: "independence 1962 ANP National Peoples Army defense minister Sand War sovereignty \u0627\u0633\u062A\u0642\u0644\u0627\u0644 \u0627\u0644\u062C\u064A\u0634 \u0627\u0644\u0648\u0637\u0646\u064A \u0627\u0644\u0634\u0639\u0628\u064A \u0648\u0632\u064A\u0631 \u0627\u0644\u062F\u0641\u0627\u0639 \u062D\u0631\u0628 \u0627\u0644\u0631\u0645\u0627\u0644 \u0633\u064A\u0627\u062F\u0629 \u062D\u062F\u0648\u062F",
+    source: "Ministry of National Defense Algiers official history",
+    text: "Following independence in July 1962, Colonel Boumediene became Minister of National Defense. Confronting the monumental challenge of transitioning revolutionary fighters into a modern standing military, he founded the National People\u2019s Army (Arm\xE9e Nationale Populaire - ANP), establishing specialized academies (Cherchell), armored divisions, air defense, and naval capabilities. During the October 1963 Sand War border dispute with Morocco, he directed the defense of national sovereignty and territorial integrity, cementing the army as the central shield of the Algerian state."
+  },
+  {
+    id: "boumediene-coup",
+    collection: "boumediene",
+    year: 1965,
+    title: "The Revolutionary Correction of 19 June 1965",
+    keywords: "coup 19 June 1965 Ben Bella Revolutionary Council correction state institutions 19 \u062C\u0648\u0627\u0646 1965 \u062D\u0631\u0643\u0629 \u0627\u0644\u062A\u0635\u062D\u064A\u062D \u0627\u0644\u062B\u0648\u0631\u064A \u0628\u0646 \u0628\u0644\u0629 \u0645\u062C\u0644\u0633 \u0627\u0644\u062B\u0648\u0631\u0629 \u0645\u0624\u0633\u0633\u0627\u062A \u062F\u0648\u0644\u0629",
+    source: "https://digitallibrary.un.org/record/488530 & Universalis",
+    text: 'On 19 June 1965, the army under Boumediene ousted President Ahmed Ben Bella in a bloodless takeover that the leadership termed the "Revolutionary Correction" (Al-Tashih al-Thawri). Parliament and the 1963 constitution were suspended, and supreme authority was vested in a 26-member Revolutionary Council headed by Boumediene. He justified the move by pointing to personal authoritarianism, ideological improvisation, economic chaos, and the risk of state breakdown. While critics condemned the concentration of power and detention of opponents, Boumediene prioritized stability, institutional planning, and rigorous economic construction.'
+  },
+  {
+    id: "boumediene-state",
+    collection: "boumediene",
+    year: 1976,
+    title: "Institutional Foundations: Communal Assemblies, National Charter and 1976 Constitution",
+    keywords: "state institutions APC APW National Charter constitution 1976 election president \u0628\u0646\u0627\u0621 \u0627\u0644\u062F\u0648\u0644\u0629 \u0644\u0627 \u062A\u0632\u0648\u0644 \u0628\u0632\u0648\u0627\u0644 \u0627\u0644\u0631\u062C\u0627\u0644 \u0645\u064A\u062B\u0627\u0642 \u0648\u0637\u0646\u064A \u062F\u0633\u062A\u0648\u0631 \u0627\u0646\u062A\u062E\u0627\u0628\u0627\u062A \u0645\u062C\u0627\u0644\u0633 \u0634\u0639\u0628\u064A\u0629 \u0628\u0644\u062F\u064A\u0629 \u0648\u0644\u0627\u0626\u064A\u0629",
+    source: "https://www.mfa.gov.dz/discover-algeria/history-of-algeria & Official Journal of the Algerian Republic (1976)",
+    text: 'Boumediene famously coined the principle: "We must build a state that does not vanish with the vanishing of men" (\u062F\u0648\u0644\u0629 \u0644\u0627 \u062A\u0632\u0648\u0644 \u0628\u0632\u0648\u0627\u0644 \u0627\u0644\u0631\u062C\u0627\u0644). He instituted decentralized democratic building blocks: Communal Popular Assemblies (APC) in 1967 and Provincial Popular Assemblies (APW) in 1969. In 1976, following nationwide grassroots public debates broadcast live on radio and television, the National Charter was overwhelmingly ratified by referendum on 27 June, followed by the adoption of a new Constitution on 19 November and his formal election as President of the Republic on 10 December 1976.'
+  },
+  {
+    id: "boumediene-heavy-industry",
+    collection: "boumediene",
+    year: 1973,
+    title: "The Industrial Revolution: El Hadjar Steel, Petrochemicals and Sonatrach",
+    keywords: "industry El Hadjar steel Annaba Arzew Skikda petrochemicals Sonacome heavy industry plan \u062A\u0635\u0646\u064A\u0639 \u0645\u0631\u0643\u0628 \u0627\u0644\u062D\u062C\u0627\u0631 \u062D\u062F\u064A\u062F \u0635\u0644\u0628 \u0639\u0646\u0627\u0628\u0629 \u0623\u0631\u0632\u064A\u0648 \u0633\u0643\u064A\u0643\u062F\u0629 \u0633\u0648\u0646\u0627\u0643\u0648\u0645 \u0628\u062A\u0631\u0648\u0643\u064A\u0645\u0627\u0648\u064A\u0627\u062A",
+    source: 'G\xE9rard Destanne de Bernis, "Les industries industrialisantes et les options alg\xE9riennes" & World Bank Archive',
+    text: 'Adopting the economic doctrine of "industrializing industries" formulated with economist G\xE9rard de Bernis, Boumediene channeled over 45% of state investments into heavy capital goods and primary manufacturing. He inaugurated the giant El Hadjar iron and steel complex in Annaba, world-scale petrochemical liquefaction plants in Arzew and Skikda, mechanical vehicle plants (Sonacome) in Rouiba and Constantine, and electrical engineering complexes in Sidi Bel Abb\xE8s. Sonatrach was built into a national industrial juggernaut, creating a self-sufficient sovereign economic base for the nation.'
+  },
+  {
+    id: "boumediene-oil",
+    collection: "boumediene",
+    year: 1971,
+    title: 'Nationalization of Hydrocarbons (24 February 1971): "We Have Decided"',
+    keywords: "oil gas nationalization 24 February 1971 Sonatrach sovereignty pipelines \u0642\u0631\u0631\u0646\u0627 \u062A\u0623\u0645\u064A\u0645 \u0627\u0644\u0645\u062D\u0631\u0648\u0642\u0627\u062A 24 \u0641\u064A\u0641\u0631\u064A 1971 \u0646\u0641\u0637 \u063A\u0627\u0632 \u0633\u0648\u0646\u0627\u0637\u0631\u0627\u0643 \u0633\u064A\u0627\u062F\u0629 \u0648\u0637\u0646\u064A\u0629 \u0623\u0646\u0627\u0628\u064A\u0628",
+    source: "https://documents1.worldbank.org/curated/en/967351468000574917 & https://radioalgerie.dz/news/fr/node/104159",
+    text: 'On 24 February 1971, during the 15th anniversary of the UGTA workers\u2019 union at the Maison du Peuple in Algiers, President Boumediene delivered his historic address opening with the electrifying phrase: "We have decided" (\xAB\u0642\u0631\u0631\u0646\u0627\xBB). Algeria nationalized 51% of all French petroleum corporations (CFP and ELF-ERAP) and 100% of all natural gas concessions, processing facilities, and pipelines, transferring full sovereign ownership to Sonatrach. This daring assertion of economic sovereignty inspired developing oil nations worldwide and laid the financial foundation of modern Algerian development.'
+  },
+  {
+    id: "boumediene-announcement",
+    collection: "boumediene",
+    year: 1971,
+    title: "Implementation and Post-Nationalization Oil Negotiations",
+    keywords: "nationalization negotiations France CFP ELF Sonatrach settlement agreements \u062A\u0623\u0645\u064A\u0645 \u0645\u0641\u0627\u0648\u0636\u0627\u062A \u0641\u0631\u0646\u0633\u0627 \u0633\u0648\u0646\u0627\u0637\u0631\u0627\u0643 \u062A\u0633\u0648\u064A\u0629 \u0639\u0642\u0648\u062F \u0628\u062A\u0631\u0648\u0644 \u0627\u062A\u0641\u0627\u0642\u064A\u0627\u062A",
+    source: 'https://radioalgerie.dz/news/fr/node/104159 & Nicole Grimaud, "La politique ext\xE9rieure de l\u2019Alg\xE9rie"',
+    text: "Following the 24 February 1971 nationalization decree, France attempted a worldwide boycott of Algerian crude. Boumediene stood unyielding, declaring that Algeria would rather drink its own oil than surrender its sovereignty. Through skilled diplomacy and the technical determination of young Algerian engineers at Sonatrach, Algeria successfully negotiated definitive settlement accords with Total/CFP in June 1971 and Elf-Aquitaine in December 1971, forcing international oil majors to operate under Algerian law as minority partners."
+  },
+  {
+    id: "boumediene-agrarian-revolution",
+    collection: "boumediene",
+    year: 1972,
+    title: "The Agrarian Revolution and the Thousand Socialist Villages",
+    keywords: "agrarian revolution land peasants cooperatives thousand socialist villages countryside \u062B\u0648\u0631\u0629 \u0632\u0631\u0627\u0639\u064A\u0629 \u0627\u0644\u0623\u0631\u0636 \u0644\u0645\u0646 \u064A\u062E\u062F\u0645\u0647\u0627 \u0641\u0644\u0627\u062D\u064A\u0646 \u062A\u0639\u0627\u0648\u0646\u064A\u0627\u062A \u0623\u0644\u0641 \u0642\u0631\u064A\u0629 \u0627\u0634\u062A\u0631\u0627\u0643\u064A\u0629 \u0631\u064A\u0641 \u062A\u0646\u0645\u064A\u0629",
+    source: "Ministry of Agriculture Algiers & Britannica, Independent Algeria",
+    text: 'Under the revolutionary banner "The land belongs to those who work it" (\u0627\u0644\u0623\u0631\u0636 \u0644\u0645\u0646 \u064A\u062E\u062F\u0645\u0647\u0627), Boumediene promulgated the Agrarian Revolution Charter on 8 November 1971. The state nationalized large absentee estates and colonial holdings, redistributing over two million hectares to peasant farming cooperatives. Crucially, he launched the ambitious project of the "Thousand Socialist Villages", constructing modern villages equipped with clean water, electricity, clinics, and primary schools across the countryside to restore dignity and modern living standards to long-neglected rural peasants.'
+  },
+  {
+    id: "boumediene-free-health-education",
+    collection: "boumediene",
+    year: 1974,
+    title: "Universal Free Healthcare, Compulsory Education and Arabisation",
+    keywords: "free healthcare medicine hospitals education universities Arabisation 1974 Oscar Niemeyer \u0637\u0628 \u0645\u062C\u0627\u0646\u064A \u0645\u062C\u0627\u0646\u064A\u0629 \u0627\u0644\u062A\u0639\u0644\u064A\u0645 \u062A\u0639\u0631\u064A\u0628 \u062C\u0627\u0645\u0639\u0627\u062A \u0628\u0627\u0628 \u0627\u0644\u0632\u0648\u0627\u0631 \u0642\u0633\u0646\u0637\u064A\u0646\u0629 \u0648\u0647\u0631\u0627\u0646",
+    source: "Minist\xE8re de la Sant\xE9 Publique & UNESCO World Education Survey",
+    text: "On 1 January 1974, Boumediene enacted universal free healthcare (\u0627\u0644\u0637\u0628 \u0627\u0644\u0645\u062C\u0627\u0646\u064A) across all Algerian hospitals and health dispensaries, ensuring that every citizen regardless of income received free medical care and medicines. Simultaneously, education was made free and compulsory; literacy campaigns expanded, and landmark university campuses were constructed\u2014including the University of Science and Technology Houari Boumediene (USTHB) in Bab Ezzouar, designed by world-renowned architect Oscar Niemeyer, as well as new universities in Constantine, Oran, and Annaba\u2014accompanied by the nationwide Arabisation of administration and schooling."
+  },
+  {
+    id: "boumediene-non-aligned-1973",
+    collection: "boumediene",
+    year: 1973,
+    title: "The 4th Non-Aligned Summit in Algiers (September 1973)",
+    keywords: "Non-Aligned Algiers summit 1973 Third World Tito Castro Gandhi solidarity \u062D\u0631\u0643\u0629 \u0639\u062F\u0645 \u0627\u0644\u0627\u0646\u062D\u064A\u0627\u0632 \u0642\u0645\u0629 \u0627\u0644\u062C\u0632\u0627\u0626\u0631 1973 \u0627\u0644\u0639\u0627\u0644\u0645 \u0627\u0644\u062B\u0627\u0644\u062B \u062A\u064A\u062A\u0648 \u0643\u0627\u0633\u062A\u0631\u0648 \u063A\u0627\u0646\u062F\u064A \u062A\u0636\u0627\u0645\u0646",
+    source: "Documents of the 4th Conference of Heads of State or Government of Non-Aligned Countries (Algiers, 1973)",
+    text: "From 5 to 9 September 1973, Boumediene hosted the historic 4th Summit of the Non-Aligned Movement at the Club des Pins in Algiers, welcoming over seventy-five heads of state including Josip Broz Tito, Fidel Castro, and Indira Gandhi. Under Boumediene\u2019s leadership as summit president, the movement shifted its central focus from political neutrality during the Cold War to economic liberation and solidarity among developing nations of the Global South, creating a united front against imperialism, unequal trade, and resource plunder."
+  },
+  {
+    id: "boumediene-october-1973-war",
+    collection: "boumediene",
+    year: 1973,
+    title: "Active Military and Financial Leadership in the October 1973 Arab-Israeli War",
+    keywords: "October 1973 war Egypt Syria tanks brigade Sukhoi MiG Moscow 200 million oil embargo \u062D\u0631\u0628 \u0623\u0643\u062A\u0648\u0628\u0631 1973 \u0645\u0635\u0631 \u0633\u0648\u0631\u064A\u0627 \u062F\u0628\u0627\u0628\u0627\u062A \u0644\u0648\u0627\u0621 \u0645\u062F\u0631\u0639 \u0645\u0648\u0633\u0643\u0648 200 \u0645\u0644\u064A\u0648\u0646 \u062D\u0638\u0631 \u0646\u0641\u0637\u064A",
+    source: 'Mohieddine Amimour, "Qissat al-Musharaka al-Jaza\u2019iriyya fi Harb Uktubar" & Egyptian Military History Records',
+    text: "During the October 1973 War, Boumediene provided unconditional military and financial backing to Egypt and Syria. Algeria dispatched the 8th Armored Brigade comprising over 150 battle tanks, motorized infantry regiments, and three fighter jet squadrons (MiG-21, Su-7). Furthermore, Boumediene flew secretly to Moscow to meet Soviet leaders Brezhnev and Kosygin, depositing $200 million in gold-backed treasury guarantees from Algeria\u2019s foreign reserves to ensure emergency deliveries of advanced Soviet tanks and munitions to the Egyptian front, while actively co-leading the Arab petroleum embargo."
+  },
+  {
+    id: "boumediene-palestine-stance",
+    collection: "boumediene",
+    year: 1974,
+    title: 'Unconditional Stance on Palestine: "Wronged or Wronging"',
+    keywords: "Palestine wronged wronging Arafat PLO olive branch UN 1974 Jerusalem \u0641\u0644\u0633\u0637\u064A\u0646 \u0638\u0627\u0644\u0645\u0629 \u0623\u0648 \u0645\u0638\u0644\u0648\u0645\u0629 \u0639\u0631\u0641\u0627\u062A \u0645\u0646\u0638\u0645\u0629 \u0627\u0644\u062A\u062D\u0631\u064A\u0631 \u063A\u0635\u0646 \u0627\u0644\u0632\u064A\u062A\u0648\u0646 \u0627\u0644\u0642\u062F\u0633",
+    source: "https://radioalgerie.dz/news/fr/node/2822 & Official Speeches of President Houari Boumediene",
+    text: 'Boumediene formulated Algeria\u2019s sacred foreign policy doctrine on Palestine with his unforgettable words: "We are with Palestine, whether she is wronged or wronging" (\xAB\u0646\u062D\u0646 \u0645\u0639 \u0641\u0644\u0633\u0637\u064A\u0646 \u0638\u0627\u0644\u0645\u0629 \u0623\u0648 \u0645\u0638\u0644\u0648\u0645\u0629\xBB). Algeria opened the first official office for Fatah and the PLO, trained Palestinian commandos in Algerian military academies, and issued diplomatic Algerian passports to Palestinian leadership. In November 1974, Algerian diplomatic pressure ensured that PLO Chairman Yasser Arafat addressed the UN General Assembly for the first time, delivering his famous line: "I come bearing an olive branch and a freedom fighter\u2019s gun."'
+  },
+  {
+    id: "boumediene-nieo",
+    collection: "boumediene",
+    year: 1974,
+    title: "Historic UN Address (10 April 1974): Demanding a New International Economic Order",
+    keywords: "UN 1974 NIEO address General Assembly Arabic raw materials sovereignty exploitation \u062E\u0637\u0627\u0628 \u0627\u0644\u0623\u0645\u0645 \u0627\u0644\u0645\u062A\u062D\u062F\u0629 10 \u0623\u0641\u0631\u064A\u0644 1974 \u0646\u0638\u0627\u0645 \u0627\u0642\u062A\u0635\u0627\u062F\u064A \u062F\u0648\u0644\u064A \u062C\u062F\u064A\u062F \u0627\u0644\u062C\u0645\u0639\u064A\u0629 \u0627\u0644\u0639\u0627\u0645\u0629 \u0641\u0635\u062D\u0649 \u0645\u0648\u0627\u0631\u062F \u0633\u064A\u0627\u062F\u0629",
+    source: "https://legal.un.org/avl/ha/ga_3201/ga_3201.html & UN Verbatim Record A/PV.2208 (10 April 1974)",
+    text: "On 10 April 1974, President Boumediene made history as the first head of state to address the UN General Assembly in classical Arabic at the 6th Special Session, which he had personally convened as Chairman of the Non-Aligned Movement. Speaking with calm authority, he indicted the post-colonial international economic system that enriched the industrialized North by impoverishing raw-material producers of the South. He demanded a New International Economic Order (NIEO) based on sovereign control over natural wealth, equitable commodity prices, and debt restructuring, culminating in UN Resolutions 3201 and 3202 on 1 May 1974."
+  },
+  {
+    id: "boumediene-algiers-agreement-1975",
+    collection: "boumediene",
+    year: 1975,
+    title: "Diplomatic Mastery: The Algiers Agreement between Iran and Iraq (March 1975)",
+    keywords: "Algiers Agreement 1975 Iran Iraq Shah Saddam Shatt al-Arab peace diplomacy \u0627\u062A\u0641\u0627\u0642 \u0627\u0644\u062C\u0632\u0627\u0626\u0631 1975 \u0625\u064A\u0631\u0627\u0646 \u0627\u0644\u0639\u0631\u0627\u0642 \u0627\u0644\u0634\u0627\u0647 \u0635\u062F\u0627\u0645 \u062D\u0633\u064A\u0646 \u0634\u0637 \u0627\u0644\u0639\u0631\u0628 \u0648\u0633\u0627\u0637\u0629 \u0633\u0644\u0627\u0645 \u062F\u064A\u0628\u0644\u0648\u0645\u0627\u0633\u064A\u0629",
+    source: "United Nations Treaty Series & Ministry of Foreign Affairs Algiers",
+    text: "During the OPEC Sovereign Summit in Algiers on 6 March 1975, Boumediene achieved a monumental diplomatic triumph by brokering the Algiers Accord between the Shah of Iran, Mohammad Reza Pahlavi, and Iraqi Vice President Saddam Hussein. Acting as trusted mediator, Boumediene brought the rival leaders together, resolving their contentious border disputes over the Shatt al-Arab waterway and terminating foreign subversion, demonstrating Algeria\u2019s towering international stature as a trusted mediator for peace."
+  },
+  {
+    id: "boumediene-mecca-of-revolutionaries",
+    collection: "boumediene",
+    year: 1975,
+    title: 'Algiers: "The Mecca of Revolutionaries" and Global Liberation Support',
+    keywords: "Mecca revolutionaries Mandela ANC Che Guevara Cabral liberation Africa Vietnam \u0645\u0643\u0629 \u0627\u0644\u062B\u0648\u0627\u0631 \u0646\u064A\u0644\u0633\u0648\u0646 \u0645\u0627\u0646\u062F\u064A\u0644\u0627 \u062A\u0634\u064A \u063A\u064A\u0641\u0627\u0631\u0627 \u0643\u0627\u0628\u0631\u0627\u0644 \u062D\u0631\u0643\u0627\u062A \u0627\u0644\u062A\u062D\u0631\u0631 \u0625\u0641\u0631\u064A\u0642\u064A\u0627 \u0641\u064A\u062A\u0646\u0627\u0645",
+    source: 'Nelson Mandela, "Long Walk to Freedom" (1994) & Amilcar Cabral speech in Algiers',
+    text: 'Under Boumediene, Algiers earned the celebrated description coined by Guinea-Bissau revolutionary leader Amilcar Cabral: "Muslims go on pilgrimage to Mecca, Christians to the Vatican, and national liberation fighters to Algiers\u2014the Mecca of revolutionaries." Algeria hosted, financed, and militarily trained liberation movements from around the globe: Nelson Mandela and the ANC of South Africa (Mandela received his first military training in Algeria in 1962), Che Guevara, Mozambique\u2019s FRELIMO, Angola\u2019s MPLA, and the Black Panthers from the United States.'
+  },
+  {
+    id: "boumediene-personal-austerity",
+    collection: "boumediene",
+    year: 1978,
+    title: "Personal Austerity, the Dark Burnous and Devotion to the Republic",
+    keywords: "austerity burnous cigar simplicity apartment integrity morality no wealth \u0632\u0647\u062F \u0628\u0631\u0646\u0648\u0633 \u0633\u064A\u062C\u0627\u0631 \u0628\u0633\u0627\u0637\u0629 \u0646\u0632\u0627\u0647\u0629 \u0639\u0641\u0629 \u0634\u0642\u0629 \u0631\u0645\u0632 \u0634\u0631\u0641",
+    source: 'Anissa Boumediene memoirs & Paul Balta, "La strat\xE9gie de Boum\xE9di\xE8ne"',
+    text: "In personal life, Boumediene lived with legendary austerity. He resided in a modest downtown Algiers apartment without private servants, wore an iconic dark Algerian woolen burnous over his suit, and smoked Havana cigars. He disdained luxury, flattery, and ostentation, refusing salary increases and dying without owning a personal villa, automobile, or foreign bank account. In his final private reflections written in Moscow during his terminal illness, he warned that bribery and bureaucratic privilege were the gravest perils to the revolution, insisting that officials must declare their assets and live as servants of the working people."
+  },
+  {
+    id: "boumediene-illness-funeral",
+    collection: "boumediene",
+    year: 1978,
+    title: "Passing (27 December 1978) and Historic National Funeral",
+    keywords: "illness passing 27 December 1978 Waldenstr\xF6m funeral El Alia Algiers mourning \u0648\u0641\u0627\u062A\u0647 27 \u062F\u064A\u0633\u0645\u0628\u0631 1978 \u0648\u0627\u0644\u062F\u0646\u0634\u062A\u0631\u0648\u0645 \u062C\u0646\u0627\u0632\u0629 \u0627\u0644\u0639\u0627\u0644\u064A\u0629 \u0645\u0644\u0627\u064A\u064A\u0646 \u062D\u0632\u0646 \u0648\u0637\u0646\u064A",
+    source: "New York Times Obituary (28 Dec 1978) & EPTV Algerian Television Archives",
+    text: "In autumn 1978, President Boumediene fell critically ill with Waldenstr\xF6m\u2019s macroglobulinemia, an extremely rare blood and bone-marrow disorder. After medical treatment in Moscow, he returned to Algiers, slipped into a coma of 39 days, and passed away at age forty-six on 27 December 1978. On 29 December, over two million mourners converged on the streets of Algiers in the largest public funeral in modern Algerian history. He was laid to rest in the Carr\xE9 des Martyrs at El Alia Cemetery, leaving behind an indelible legacy of national pride, industrial strength, and unwavering sovereignty."
+  },
+  // ==========================================
+  // HERITAGE HALL ARTIFACTS & CULTURAL TRADITIONS
+  // ==========================================
+  {
+    id: "heritage-kabyle-fibulae",
+    collection: "heritage",
+    year: 2026,
+    title: "Kabyle Silver Jewelry: Beni Yenni Cloisonn\xE9 Enameling and El Kala Coral",
+    keywords: "Kabyle silver fibula brooch agrafe Beni Yenni enamel coral cabochon filigree Tabzimt Tafizimt \u062D\u0644\u064A \u0641\u0636\u0629 \u0642\u0628\u0627\u0626\u0644\u064A \u062E\u0644\u0627\u0644\u0629 \u0625\u0628\u0632\u064A\u0645 \u0623\u062B \u064A\u0646\u064A \u0645\u064A\u0646\u0627 \u0645\u0631\u062C\u0627\u0646 \u0627\u0644\u0642\u0627\u0644\u0629 \u0641\u064A\u0644\u063A\u0631\u0627\u0646 \u062A\u0628\u0632\u064A\u0645\u062A \u062A\u0627\u0641\u064A\u0632\u064A\u0645\u062A",
+    source: "Mus\xE9e National des Antiquit\xE9s et des Arts Islamiques d\u2019Alger & Victoria and Albert Museum (London)",
+    text: "Kabyle silver jewelry, originating in the mountain villages of Beni Yenni (A\xEFt Yenni) in the Greater Kabylie Djurdjura range, represents one of the pinnacle traditions of Mediterranean goldsmithing. Master silversmiths use pure silver worked in intricate filigree (shubbak) and decorated with cloisonn\xE9 enamel in three symbolic natural colors: deep cobalt blue representing the sky and spirituality, leaf green evoking fertility and agriculture, and warm yellow symbolizing the radiant sun and wealth. The pieces are crowned with raw, polished red coral cabochons harvested from the historic coral banks of El Kala in eastern Algeria. Women wear large triangular fibulae (Ibzim or Tabzimt) pinned at the shoulders to fasten their traditional dress, joined by articulated chains carrying amulet boxes (hirz)."
+  },
+  {
+    id: "heritage-aures-jewelry",
+    collection: "heritage",
+    year: 2026,
+    title: "Aur\xE8s Chaoui Silver: Punched Motifs, Pendants and Numidian Heritage",
+    keywords: "Aur\xE8s Chaoui silver fibula pendant incised punched cold chisel Numidian warrior resilience \u062D\u0644\u064A \u0641\u0636\u0629 \u0623\u0648\u0631\u0627\u0633 \u0634\u0627\u0648\u064A \u062E\u0644\u0627\u0644\u0629 \u062F\u0644\u0627\u064A\u0627\u062A \u062E\u0631\u0645 \u0637\u0631\u0642 \u0646\u0648\u0645\u064A\u062F\u064A \u062A\u0631\u0627\u062B \u062C\u0628\u0627\u0644 \u0627\u0644\u0623\u0648\u0631\u0627\u0633",
+    source: "Mus\xE9e National Public Cirta (Constantine) & V&A Algerian Collections",
+    text: "In the rugged Aur\xE8s mountains, Chaoui women wear heavy, solid silver jewelry characterized by ancestral geometric engraving and cold-chisel punching rather than enamel. Aur\xE8s fibulae (Khellala) feature triangular or semi-lunar silver plates adorned with stepped triangles, chevrons, and star motifs dating back to ancient Numidian civilization. Suspended from the base are rows of diamond-shaped silver pendants (Qmarat) that chime softly as the woman moves, traditionally believed to repel negative energies and celebrate the resilience, honor, and fortitude of mountain women who stood as the vanguard of Algerian independence."
+  },
+  {
+    id: "heritage-tiara-head-dress",
+    collection: "heritage",
+    year: 2026,
+    title: "The Ceremonial Silver Head Dress (Taj al-Jbine / Ta\u2019sabat)",
+    keywords: "head dress tiara silver enamel coral Taj Jbine bridal forehead plates \u0639\u0635\u0627\u0628\u0629 \u0631\u0623\u0633 \u062A\u0627\u062C \u0627\u0644\u062C\u0628\u064A\u0646 \u0641\u0636\u0629 \u0645\u064A\u0646\u0627 \u0645\u0631\u062C\u0627\u0646 \u0639\u0631\u0648\u0633 \u062D\u0644\u064A \u0627\u0644\u062C\u0628\u0647\u0629 \u0635\u0641\u0627\u0626\u062D",
+    source: "Mus\xE9e National des Arts et Traditions Populaires (Dar Khedaoudj El Amia, Algiers)",
+    text: "The traditional Algerian bridal head dress, known as Taj al-Jbine or Ta\u2019sabat, is an articulated crown composed of interconnected square or rectangular silver plaques worn across the forehead. Crafted by master jewelers in the 18th and 19th centuries, each plaque is embellished with delicate wire filigree, vibrant enamel rosettes, and genuine Mediterranean red coral cabochons. Suspended from the bottom edge are articulated fringe drops and silver drop pendants that frame the bride\u2019s brow, signifying royal dignity, lineage purity, and protective blessings on festive occasions."
+  },
+  {
+    id: "heritage-oran-anklets",
+    collection: "heritage",
+    year: 2026,
+    title: "Gilded Silver Anklets of Oran (Al-Rdif / Al-Kholkhal al-Wahrami)",
+    keywords: "anklets Oran silver gilt enamel red paste Rdif Kholkhal western Algeria \u062E\u0644\u0627\u062E\u0644 \u0631\u062F\u064A\u0641 \u0648\u0647\u0631\u0627\u0646 \u0641\u0636\u0629 \u0645\u0630\u0647\u0628\u0629 \u0645\u064A\u0646\u0627 \u0648\u0647\u0631\u0627\u0646\u064A \u0627\u0644\u063A\u0631\u0628 \u0627\u0644\u062C\u0632\u0627\u0626\u0631\u064A \u062D\u0644\u064A \u0627\u0644\u0639\u0631\u0648\u0633",
+    source: "Mus\xE9e National Public Ahmed Zabana (Oran) & V&A Museum",
+    text: "Traditional hinged anklets from Oran and western Algeria, known locally as Al-Rdif or Al-Kholkhal, are heavy ceremonial adornments made of cast silver alloy coated with fine gold leaf (silver-gilt). Decorated with vibrant champlev\xE9 enamel patterns and faceted carnelian or crimson glass pastes, they are fitted with robust hinge pins and safety chains. Worn in matching pairs by brides and women of high standing during wedding celebrations, their weighty presence and sonorous rhythm evoke the rich Andalusian-Zayyanid heritage of western Algeria."
+  },
+  {
+    id: "heritage-hirz-amulet",
+    collection: "heritage",
+    year: 2026,
+    title: "The Chased Silver Amulet Box (Hirz / Kitab)",
+    keywords: "amulet hirz talisman chased engraved silver calligraphy protective Quranic verses \u062D\u0631\u0632 \u062A\u0645\u064A\u0645\u0629 \u0641\u0636\u0629 \u0645\u0646\u0642\u0648\u0634\u0629 \u062E\u0637 \u0639\u0631\u0628\u064A \u0622\u064A\u0627\u062A \u0642\u0631\u0622\u0646\u064A\u0629 \u062D\u0645\u0627\u064A\u0629 \u0628\u0631\u0643\u0629 \u062A\u0631\u0627\u062B",
+    source: "Mus\xE9e National des Antiquit\xE9s et des Arts Islamiques d\u2019Alger",
+    text: "The Algerian Hirz (or Kitab) is a hollow cylindrical or rectangular silver amulet case suspended from a braided silver neck cord or pectoral chain. Master silversmiths chased and engraved the exterior with delicate arabesques, interlaced geometric bands, and Quranic calligraphy\u2014such as Ayat al-Kursi (The Throne Verse) and invocations of divine protection. Historically, families placed miniature parchment scrolls inscribed with verses, prayers, or aromatic cloves within the case, embodying the spiritual harmony between Islamic faith and daily life."
+  },
+  {
+    id: "heritage-musical-bendir",
+    collection: "heritage",
+    year: 2026,
+    title: "The Bendir: Acoustic Frame Drum and the Snare Buzz of the High Steppes",
+    keywords: "Bendir frame drum goatskin snare gut string resonance Bedouin Sufi Chaabi rhythm \u0628\u0646\u062F\u064A\u0631 \u0625\u064A\u0642\u0627\u0639 \u062F\u0641 \u062C\u0644\u062F \u0645\u0627\u0639\u0632 \u0648\u062A\u0631 \u0627\u0644\u0631\u0646\u064A\u0646 \u0645\u0648\u0633\u064A\u0642\u0649 \u0628\u062F\u0648\u064A\u0629 \u0635\u0648\u0641\u064A\u0629 \u0634\u0639\u0628\u064A \u0647\u0636\u0627\u0628",
+    source: "National Institute of Musicology Algiers & Center for Traditional Music Research",
+    text: "The Bendir is the quintessential Algerian frame drum, possessing a wide round frame of bent walnut, apricot, or pine wood covered with tightly stretched, cured goatskin. What distinguishes the authentic Algerian Bendir is its dual or triple gut snare strings (Al-Watr) stretched tightly across the interior undersurface of the skin. When the player strikes the drum with the thumb and fingers, the snares vibrate against the membrane, producing a deep, buzzing acoustic resonance (Al-Ranna) that anchors Bedouin poetry, Chaabi rhythms, and ecstatic Sufi Dhikr gatherings across the high plateaus and Sahara."
+  },
+  {
+    id: "heritage-musical-raita",
+    collection: "heritage",
+    year: 2026,
+    title: "The Raita (Ghaita): The Double-Reed Oboe of Mountain Celebrations",
+    keywords: "Raita Ghaita double reed oboe hardwood brass festive procession folk ceremonies \u0631\u0627\u064A\u0637\u0629 \u063A\u064A\u0637\u0629 \u0645\u0632\u0645\u0627\u0631 \u062E\u0634\u0628 \u0635\u0644\u0628 \u0646\u062D\u0627\u0633 \u0631\u064A\u0634\u0629 \u0645\u0632\u062F\u0648\u062C\u0629 \u0623\u0641\u0631\u0627\u062D \u0627\u062D\u062A\u0641\u0627\u0644\u0627\u062A \u0634\u0639\u0628\u064A\u0629 \u0623\u0639\u0631\u0627\u0633",
+    source: "Mus\xE9e National des Arts et Traditions Populaires Algiers",
+    text: "The Raita (also known as Ghaita or Zorna) is a traditional double-reed shawm or folk oboe turned from dense mountain hardwoods such as apricot, olive, or jujube, fitted with an expansive brass or copper acoustic bell. Played using circular breathing techniques, its piercing, joyful, and clarion sound carries for kilometers across valleys and hills, heralding village weddings, circumcision rites, and national folk festivals from the mountains of Kabylie and the Aur\xE8s to the western plains of Tlemcen."
+  },
+  {
+    id: "heritage-musical-gasba",
+    collection: "heritage",
+    year: 2026,
+    title: "The Gasba: Giant River Reed Flute of Bedouin Melhun and Chaoui Soul",
+    keywords: "Gasba reed flute bamboo Bedouin Melhun Chaoui Aur\xE8s shajn poetic soulful \u0642\u0635\u0628\u0629 \u0646\u0627\u064A \u0642\u0635\u0628 \u0646\u0647\u0631\u064A \u0645\u0648\u0633\u064A\u0642\u0649 \u0628\u062F\u0648\u064A\u0629 \u0645\u0644\u062D\u0648\u0646 \u0634\u0627\u0648\u064A \u0634\u062C\u0646 \u0639\u0627\u0637\u0641\u0629 \u0634\u0639\u0631 \u0634\u0639\u0628\u064A",
+    source: "Abdelhamid Benhedouga Cultural Archives & National Folklore Center",
+    text: "The Gasba is an ancient end-blown flute crafted from mature, dried giant river cane (Arundo donax) harvested from desert wadis and mountain riverbeds. Measuring between 40 and 85 centimeters in length with precision-burned finger holes, the Gasba is held diagonally and played with a breathy, throat-resonant technique. Paired with the heartbeat of the Bendir, its soulful, melancholic timbre (Shajn) forms the musical backbone of Chaoui mountain laments and the timeless epic poetry (Melhun) of the high plateaus and Sahara."
+  },
+  {
+    id: "heritage-musical-tar",
+    collection: "heritage",
+    year: 2026,
+    title: "The Tar: Andalusian Classical Tambourine and Rhythmic Precision",
+    keywords: "Tar tambourine parchment brass jingles Andalusian Malouf Sanaa Gharnati rhythm \u0637\u0627\u0631 \u0631\u0642 \u062F\u0641 \u0623\u0646\u062F\u0644\u0633\u064A \u0635\u0646\u0648\u062C \u0646\u062D\u0627\u0633\u064A\u0629 \u0645\u0627\u0644\u0648\u0641 \u0635\u0646\u0639\u0629 \u063A\u0631\u0646\u0627\u0637\u064A \u062F\u0642\u0629 \u0625\u064A\u0642\u0627\u0639",
+    source: "National Higher Institute of Music (INSM) Algiers",
+    text: "The Tar is a sophisticated circular tambourine featuring a shallow turned hardwood frame (walnut or beech) fitted with a fishskin or fine calfskin parchment head and pairs of round brass jingles (Sanouj) embedded in lateral slots. The master percussionist (Dhabet al-Iqa\u2019a) executes intricate finger rolls, rim taps, and muted dampening strokes, providing the refined rhythmic tempo (Mizan) that conducts classical Algerian Andalusian suites\u2014encompassing Malouf in Constantine, Sana\u2019a in Algiers, and Gharnati in Tlemcen."
+  },
+  {
+    id: "heritage-costume-karakou",
+    collection: "heritage",
+    year: 2026,
+    title: "The Royal Karakou of Algiers: Fetla and Majboud Gold Embroidery",
+    keywords: "Karakou Algiers velvet jacket gold thread embroidery Fetla Majboud Seroual Mdawer Ghlila \u0643\u0627\u0631\u0627\u0643\u0648 \u0639\u0627\u0635\u0645\u064A \u0642\u0637\u064A\u0641\u0629 \u0633\u062A\u0631\u0629 \u062A\u0637\u0631\u064A\u0632 \u0630\u0647\u0628 \u0641\u062A\u0644\u0629 \u0648\u0645\u062C\u0628\u0648\u062F \u0633\u0631\u0648\u0627\u0644 \u0645\u062F\u0648\u0631 \u063A\u0644\u064A\u0644\u0629 \u0627\u0644\u0639\u0627\u0635\u0645\u0629",
+    source: "Mus\xE9e National des Arts et Traditions Populaires (Dar Khedaoudj El Amia, Algiers)",
+    text: 'The Karakou (historically termed Qwiyet) is the sovereign aristocratic garment of women in Algiers. Evolving from the Ottoman-era velvet Ghlila in the early 19th century, it consists of a tailored jacket of heavy, luxurious silk velvet (Qatifa), hand-embroidered with dense gold and silver bouillon threads using two ancestral techniques: "Majboud" (where metallic thread is laid flat and tacked down with fine silk) and "Fetla" (where thick braided golden cord is couched in arabesque and floral motifs). Paired with traditional silk brocade trousers\u2014either Seroual Mdawer (gathered pantaloons) or Seroual Chelqa (slit-legged trousers)\u2014it stands as a timeless symbol of Algerian elegance.'
+  },
+  {
+    id: "heritage-costume-djubba-constantine",
+    collection: "heritage",
+    year: 2026,
+    title: "The Djubba and Velvet Gandoura of Constantine (The Fergani Tradition)",
+    keywords: "Djubba Gandoura Constantine velvet Qatifa Majboud Fergani master embroiderers bridges \u062C\u0628\u0629 \u0642\u0633\u0646\u0637\u064A\u0646\u064A\u0629 \u0642\u0646\u062F\u0648\u0631\u0629 \u0642\u0637\u064A\u0641\u0629 \u0645\u062C\u0628\u0648\u062F \u0637\u0631\u0632 \u0630\u0647\u0628 \u062F\u0627\u0631 \u0641\u0631\u0642\u0627\u0646\u064A \u062C\u0633\u0648\u0631 \u0645\u0639\u0644\u0642\u0629",
+    source: "Mus\xE9e National Public Cirta (Constantine) & Artisanal Guild Archives",
+    text: 'The Gandoura Qatifa of Constantine is an opulent, floor-length gown of deep midnight-blue, burgundy, or emerald velvet, originating in historic trade links with Genoa in the 16th century. The gown\u2019s entire chest bodice (Al-Bessma) and central panel are covered in breathtaking Majboud gold-thread embroidery depicting stylized peacocks, vines, and royal palmettes. In the 20th century, master artisan families\u2014most famously the Fergani family of Constantine\u2014elevated the craft to global renown, cementing the "Djubba Fergani" as a certified masterpiece of Algerian national heritage.'
+  },
+  {
+    id: "heritage-tlemcen",
+    collection: "heritage",
+    year: 2012,
+    title: "Chedda of Tlemcen: Royal Bridal Costume (UNESCO Inscribed 2012)",
+    keywords: "chedda Tlemcen caftan silk velvet jewellery wedding costume embroidery crown pearls UNESCO \u0634\u062F\u0629 \u062A\u0644\u0645\u0633\u0627\u0646 \u0642\u0641\u0637\u0627\u0646 \u062D\u0631\u064A\u0631 \u0645\u062E\u0645\u0644 \u062D\u0644\u064A \u0644\u0628\u0627\u0633 \u0632\u0641\u0627\u0641 \u062A\u0637\u0631\u064A\u0632 \u062A\u0627\u062C \u0644\u0624\u0644\u0624 \u064A\u0648\u0646\u0633\u0643\u0648",
+    source: "https://ich.unesco.org/en/RL/rites-and-crafts-associated-with-the-wedding-costume-costume-of-tlemcen-00668",
+    text: "The Chedda of Tlemcen is the ancestral royal bridal costume of Tlemcen, bringing together woven silk, embroidered velvet, jewellery, dress, and centuries-old rituals uniting Zayyanid and Andalusian lineages. The bride is dressed in a heavily embroidered velvet caftan (Kaftan al-Qadi), a stiff velvet conical headdress (Chachiyya) covered in solid gold coin discs, and cascading chest necklaces (Zerrouf, Krafach, and Jwahir) composed of hundreds of natural freshwater pearls. Relatives and elder women help dress the bride, transmitting the skills and ritual songs across generations. In 2012, UNESCO formally inscribed the rites and crafts associated with the wedding costume of Tlemcen on the Representative List of the Intangible Cultural Heritage of Humanity."
+  },
+  {
+    id: "heritage-costume-haik-algiers",
+    collection: "heritage",
+    year: 2026,
+    title: "The Haik of Algiers (Al-Mrema): Pure Silk and the Lace Aadjar",
+    keywords: "Haik Algiers Mrema silk wool wrap veil Aadjar white purity modesty \u062D\u0627\u064A\u0643 \u0639\u0627\u0635\u0645\u064A \u0645\u0631\u0645\u0629 \u062D\u0631\u064A\u0631 \u0635\u0648\u0641 \u0639\u062C\u0627\u0631 \u0628\u064A\u0627\u0636 \u0646\u0642\u0627\u0621 \u0628\u0647\u062C\u0629 \u0627\u0644\u062C\u0632\u0627\u0626\u0631 \u0627\u0644\u0628\u064A\u0636\u0627\u0621",
+    source: "Mus\xE9e National des Beaux-Arts d\u2019Alger & Historical Archives",
+    text: 'The Haik is the legendary traditional flowing white wrap worn by Algerian women in public. The most prized variety is the "Haik Mrema", hand-woven in Algiers from virgin silk and superfine merino wool, giving it a luminous, pearl-like sheen. Enveloping the body from head to ankles, it was worn with the delicate triangular lace or crocheted face veil known as the "Aadjar". The sea of shimmering white wraps worn by women strolling through the streets of the Casbah gave Algiers its immortal international moniker: "Al-Jaza\u2019ir al-Bayda" (Algiers the White).'
+  },
+  {
+    id: "heritage-costume-blouza-oran",
+    collection: "heritage",
+    year: 2026,
+    title: "The Blouza of Oran: Silk Brocade and Intricately Beaded Bodice",
+    keywords: "Blouza Oran silk brocade beaded chest Sder crystal sequins Wahran western Algeria \u0628\u0644\u0648\u0632\u0629 \u0648\u0647\u0631\u0627\u0646\u064A\u0629 \u0648\u0647\u0631\u0627\u0646 \u062D\u0631\u064A\u0631 \u0628\u0631\u0648\u0643\u0627\u0631 \u0635\u062F\u0631\u064A\u0629 \u062E\u0631\u0632 \u0643\u0631\u064A\u0633\u062A\u0627\u0644 \u062A\u0637\u0631\u064A\u0632",
+    source: "Mus\xE9e National Public Ahmed Zabana (Oran)",
+    text: 'The Blouza is the signature festive dress of Oran and western Algeria. Tailored from flowing silk brocade, delicate lace, or organza, the hallmark of the gown is its stiffened, densely beaded chest plate, known as "Al-Sder". Master seamstresses embroider the bodice by hand using thousands of Swarovski crystal beads, glistening sequins, and metallic threads in dazzling baroque and floral motifs. Blending Mediterranean vibrancy with Algerian pride, the Blouza remains the reigning dress of weddings across western Algeria.'
+  },
+  {
+    id: "heritage-costume-melhfa-chaouia",
+    collection: "heritage",
+    year: 2026,
+    title: "The Melhfa Chaouia: Draped Garment of the Aur\xE8s Mountains",
+    keywords: "Melhfa Chaouia Aur\xE8s draped dress wool silk fibulae silver belt Amazigh heritage \u0645\u0644\u062D\u0641\u0629 \u0634\u0627\u0648\u064A\u0629 \u0623\u0648\u0631\u0627\u0633 \u0631\u062F\u0627\u0621 \u0641\u0636\u0641\u0627\u0636 \u0635\u0648\u0641 \u062E\u0644\u0627\u0644\u0627\u062A \u0641\u0636\u064A\u0629 \u062D\u0632\u0627\u0645 \u0623\u0645\u0627\u0632\u064A\u063A\u064A \u0623\u0635\u0627\u0644\u0629",
+    source: "Mus\xE9e National Public Cirta (Constantine) & Aur\xE8s Anthropological Studies",
+    text: "The Melhfa Chaouia is the ancestral draped dress of women in the Aur\xE8s mountains. Cut from a wide single piece of fine black, indigo, or saffron fabric, it is draped gracefully around the body and fastened at the shoulders by heavy triangular silver fibulae (Khellala). Tied at the waist with a braided wool belt (Hzam) dyed in vibrant natural colors, the dress allowed complete freedom of movement across mountain slopes while proudly displaying the warrior resilience and Amazigh heritage of the women of Batna, Khenchela, and Biskra."
+  },
+  {
+    id: "heritage-costume-qashabiya",
+    collection: "heritage",
+    year: 2026,
+    title: "The Qashabiya of Djelfa: Pure Camel Hair (Oubar) and Mountain Warmth",
+    keywords: "Qashabiya Djelfa Messad camel hair Oubar virgin wool hooded cloak winter resistance \u0642\u0634\u0627\u0628\u064A\u0629 \u0627\u0644\u062C\u0644\u0641\u0629 \u0645\u0633\u0639\u062F \u0648\u0628\u0631 \u0627\u0644\u0625\u0628\u0644 \u0635\u0648\u0641 \u063A\u0646\u0645 \u0645\u0639\u0637\u0641 \u0635\u0648\u0641 \u0634\u062A\u0648\u064A \u0645\u0642\u0627\u0648\u0645\u0629 \u062B\u0648\u0631\u0629 \u0623\u0635\u0627\u0644\u0629",
+    source: "National Chamber of Traditional Craftsmanship (Algiers) & Djelfa Artisanal Union",
+    text: "The Qashabiya is an iconic Algerian men\u2019s long, hooded winter cloak hand-woven from pure camel hair (Oubar) and virgin sheep wool on traditional vertical looms in the high steppes, with the oasis city of Messad in Djelfa being its world-renowned capital. Woven by master women weavers over months of painstaking labor, pure camel-down Qashabiyas are remarkably lightweight yet possess extraordinary thermal insulating properties against biting desert and mountain frosts. Historically worn by Algerian freedom fighters in the mountains and by national leaders alike, the Qashabiya represents the enduring soul, resilience, and sovereignty of the Algerian people."
+  },
+  {
+    id: "heritage-couscous",
+    collection: "heritage",
+    year: 2020,
+    title: "Couscous: Knowledge, Utensils and Shared Hospitality (UNESCO 2020)",
+    keywords: "couscous food cooking pottery dish bowl grain kitchen semoule poterie keskes ghafah \u0643\u0633\u0643\u0633 \u0643\u0633\u0643\u0633\u064A \u0637\u0639\u0627\u0645 \u0637\u0628\u062E \u0641\u062E\u0627\u0631 \u0623\u0648\u0627\u0646\u064A \u062D\u0628\u0648\u0628 \u0645\u0634\u0627\u0631\u0643\u0629 \u0643\u0633\u0643\u0627\u0633 \u062C\u0641\u0646\u0629 \u0636\u064A\u0627\u0641\u0629 \u064A\u0648\u0646\u0633\u0643\u0648",
+    source: "https://ich.unesco.org/en/Decisions/15.COM/8.b.14",
+    text: "The UNESCO inscription concerning couscous was submitted jointly by Algeria, Mauritania, Morocco, and Tunisia. It concerns the ancestral knowledge, agricultural practices, manual rolling techniques, and social rituals surrounding the preparation and communal consumption of the dish. Hand-rolled in large wooden bowls (Ghafah / Gass\u2019a) and steamed gently over aromatic broths in terracotta or copper steamers (Keskes), couscous is far more than a meal: it embodies communal solidarity, hospitality, and cultural continuity across thousands of years of North African history."
+  },
+  {
+    id: "djemila-town",
+    collection: "djemila",
+    year: 1982,
+    title: "Cuicul: Adapting a Roman Town to Mountain Terrain (UNESCO 1982)",
+    keywords: "Djemila Dj\xE9mila Jamila Cuicul mountain forum town city Roman Numidia architecture montagne ville \u0631\u0648\u0645\u0627\u0646\u064A \u0631\u0648\u0645\u0627\u0646 \u062C\u0645\u064A\u0644\u0629 \u0643\u0648\u064A\u0643\u0648\u0644 \u0645\u062F\u064A\u0646\u0629 \u062C\u0628\u0644 \u0639\u0645\u0631\u0627\u0646 \u064A\u0648\u0646\u0633\u0643\u0648",
+    source: "https://whc.unesco.org/en/list/191/",
+    text: "Djemila, ancient Cuicul, lies approximately 900 metres above sea level in the mountains of S\xE9tif. Its forums, temples, basilicas, triumphal arches, and houses illustrate Roman town planning adapted to rugged mountain topography. UNESCO inscribed the site in 1982. The ruins demonstrate how ancient civil engineering incorporated natural mountain contours, distinct from the exhibition\u2019s modern architectural hall."
+  }
 ];
 function normalizeKnowledgeText(text2) {
   return text2.normalize("NFD").replace(/\p{M}/gu, "").toLowerCase().replace(/[أإآٱ]/g, "\u0627").replace(/ى/g, "\u064A").replace(/ـ/g, "");
@@ -72432,13 +72962,25 @@ var CONCEPTS = [
   "carpet rug tapis \u0633\u062C\u0627\u062F\u0629 \u0627\u0644\u0633\u062C\u0627\u062F\u0629 \u0632\u0631\u0628\u064A\u0629 \u0627\u0644\u0632\u0631\u0628\u064A\u0629",
   "jewellery jewelry bijoux bijou \u062D\u0644\u064A \u0627\u0644\u062D\u0644\u064A \u0645\u062C\u0648\u0647\u0631\u0627\u062A \u0627\u0644\u0645\u062C\u0648\u0647\u0631\u0627\u062A",
   "bracelet bracelets \u0633\u0648\u0627\u0631 \u0627\u0644\u0633\u0648\u0627\u0631 \u0627\u0633\u0648\u0631\u0629 \u0627\u0633\u0627\u0648\u0631",
-  "necklace necklaces collier \u0642\u0644\u0627\u062F\u0629 \u0627\u0644\u0642\u0644\u0627\u062F\u0629 \u0639\u0642\u062F",
+  "necklace necklaces collier \u0642\u0644\u0627\u062F\u0629 \u0627\u0644\u0642\u0644\u0627\u062F\u0629 \u0639\u0642\u062F \u0639\u0642\u0648\u062F",
   "pottery ceramic ceramics poterie ceramique \u0641\u062E\u0627\u0631 \u0627\u0644\u0641\u062E\u0627\u0631 \u062E\u0632\u0641 \u0627\u0644\u062E\u0632\u0641",
-  "clothing costume garment dress vetement vetements \u0644\u0628\u0627\u0633 \u0645\u0644\u0627\u0628\u0633 \u0627\u0644\u0645\u0644\u0627\u0628\u0633 \u0632\u064A",
+  "clothing costume garment dress vetement vetements \u0644\u0628\u0627\u0633 \u0645\u0644\u0627\u0628\u0633 \u0627\u0644\u0645\u0644\u0627\u0628\u0633 \u0632\u064A \u0627\u0632\u064A\u0627\u0621",
   "weaving textile textiles tissage \u0646\u0633\u064A\u062C \u0627\u0644\u0646\u0633\u064A\u062C \u062D\u064A\u0627\u0643\u0629",
   "wood timber bois \u062E\u0634\u0628 \u0627\u0644\u062E\u0634\u0628",
   "silver argent \u0641\u0636\u0629 \u0627\u0644\u0641\u0636\u0629",
-  "copper cuivre \u0646\u062D\u0627\u0633 \u0627\u0644\u0646\u062D\u0627\u0633"
+  "copper cuivre \u0646\u062D\u0627\u0633 \u0627\u0644\u0646\u062D\u0627\u0633",
+  "sword sabre arme weapon \u0633\u064A\u0641 \u0627\u0644\u0633\u064A\u0641 \u0633\u0644\u0627\u062D \u0627\u0644\u0633\u0644\u0627\u062D \u0628\u0627\u0631\u0648\u062F",
+  "battle war resistance \u0645\u0639\u0631\u0643\u0629 \u0627\u0644\u0645\u0639\u0631\u0643\u0629 \u062D\u0631\u0628 \u0627\u0644\u062D\u0631\u0628 \u062C\u0647\u0627\u062F \u0645\u0642\u0627\u0648\u0645\u0629",
+  "treaty peace truce \u0645\u0639\u0627\u0647\u062F\u0629 \u0627\u0644\u0645\u0639\u0627\u0647\u062F\u0629 \u0635\u0644\u062D \u0633\u0644\u0645 \u062A\u0627\u0641\u0646\u0629",
+  "damascus christians rescue \u062F\u0645\u0634\u0642 \u0645\u0633\u064A\u062D\u064A\u064A\u0646 \u0627\u0644\u0645\u0633\u064A\u062D\u064A\u064A\u0646 \u062D\u0645\u0627\u064A\u0629 \u0646\u0628\u0644 \u0634\u0647\u0627\u0645\u0629",
+  "oil gas hydrocarbons nationalisation \u062A\u0623\u0645\u064A\u0645 \u0646\u0641\u0637 \u063A\u0627\u0632 \u0645\u062D\u0631\u0648\u0642\u0627\u062A \u0633\u0648\u0646\u0627\u0637\u0631\u0627\u0643",
+  "united nations assembly \u062E\u0637\u0627\u0628 \u0627\u0645\u0645 \u0645\u062A\u062D\u062F\u0629 \u062C\u0645\u0639\u064A\u0629 \u0639\u0627\u0645\u0629 \u0639\u062F\u0645 \u0627\u0646\u062D\u064A\u0627\u0632",
+  "palestine palestine \u0641\u0633\u0637\u064A\u0646 \u0627\u0644\u0642\u062F\u0633 \u0638\u0627\u0644\u0645\u0629 \u0645\u0638\u0644\u0648\u0645\u0629",
+  "burnous cloak qashabiya \u0642\u0634\u0627\u0628\u064A\u0629 \u0628\u0631\u0646\u0648\u0633 \u0648\u0628\u0631 \u0635\u0648\u0641",
+  "karakou velvet fetla majboud \u0643\u0627\u0631\u0627\u0643\u0648 \u0642\u0637\u064A\u0641\u0629 \u0641\u062A\u0644\u0629 \u0645\u062C\u0628\u0648\u062F",
+  "chedda tlemcen bridal crown \u0634\u062F\u0629 \u062A\u0644\u0645\u0633\u0627\u0646 \u0642\u0641\u0637\u0627\u0646 \u0639\u0631\u0648\u0633",
+  "fibula brooch tabzimt tafizimt \u062E\u0644\u0627\u0644\u0629 \u0628\u0631\u0648\u0634 \u062A\u0628\u0632\u064A\u0645\u062A \u062A\u0627\u0641\u064A\u0632\u064A\u0645\u062A \u0627\u0628\u0632\u064A\u0645",
+  "music bendir raita gasba tar \u0628\u0646\u062F\u064A\u0631 \u0631\u0627\u064A\u0637\u0629 \u063A\u064A\u0637\u0629 \u0642\u0635\u0628\u0629 \u0637\u0627\u0631 \u0645\u0648\u0633\u064A\u0642\u0649 \u0627\u064A\u0642\u0627\u0639"
 ];
 function terms(text2) {
   return normalizeKnowledgeText(text2).split(/[^\p{L}\p{N}]+/u).map((t) => t.startsWith("\u0627\u0644") && t.length > 4 ? t.slice(2) : t).filter((t) => t.length > 1 && !STOP.has(t));
@@ -72542,7 +73084,7 @@ var DEFAULT_GUIDE_SECTIONS = {
   speech_guidelines: CONVERSATION_POLICY.speech_guidelines,
   guardrails_rule_template: "Do not discuss: {topics}.\nNever generate content involving: {categories}.\nAdditional platform rules: {custom}\nIf a visitor asks about a topic you may not discuss, or uses prohibited words, do not answer \u2014 use the guided-refusal below.",
   disabled_customization_text: "Exhibition-level customization is disabled by the platform. Use only the platform settings.",
-  output_contract: 'Reply with a single valid JSON object, nothing else, no markdown fences:\n{ "mood": "<one of {moods}>",\n  "gesture": "<one of {gestures}, or empty string>",\n  "action": "<one of LOOK_AT:ID|POINT_TO:ID|GUIDE_TO:ID|POSE:<poseName> using real values, or empty string>",\n  "speech": "<your reply text>" }\nThe "speech" field is the only text spoken to the visitor. Do not put JSON, quotes or labels inside "speech".\nUse "neutral" mood and empty gesture/action when nothing applies.\nUse a guided refusal in "speech" for anything outside your allowed topics.',
+  output_contract: 'Reply with a single valid JSON object, nothing else, no markdown fences:\n{ "mood": "<one of {moods}>",\n  "gesture": "<one of {gestures}, or empty string>",\n  "action": "<one of LOOK_AT:ID|POINT_TO:ID|GUIDE_TO:ID|FOLLOW_VISITOR|COME_TO_VISITOR|STAY|POSE:<poseName> using real values, or empty string>",\n  "speech": "<your reply text>" }\nThe "speech" field is the only text spoken to the visitor. Do not put JSON, quotes or labels inside "speech".\nUse "neutral" mood and empty gesture/action when nothing applies.\nUse a guided refusal in "speech" for anything outside your allowed topics.',
   pose_section_template: 'Static poses you may hold (use POSE:<name> verbatim in "action"): {poses}. Use POSE only when it clearly fits the moment (e.g. pointing out an object or standing at rest); otherwise leave "action" empty.',
   scene_context_template: "Scene context (use it for situational awareness, do not repeat it verbatim):\n{world_state}",
   refusal_directive: "If you cannot answer, respond with a short, polite guided refusal in the visitor's language \u2014 do not generate the prohibited content."
@@ -72550,14 +73092,46 @@ var DEFAULT_GUIDE_SECTIONS = {
 
 // server/src/ai/guide/historical-facts.ts
 var boumedieneDates = {
+  birth: { label: "Birth of Houari Boum\xE9di\xE8ne", isoDate: "1932-08-23" },
+  guelma_massacres: { label: "Colonial Massacres of 8 May 1945 in Guelma", isoDate: "1945-05-08" },
+  queen_maite_landing: { label: "Landing arms on yacht Queen Maite (Dina)", isoDate: "1955-03-30" },
+  revolutionary_council_coup: { label: "Revolutionary Correction (19 June 1965)", isoDate: "1965-06-19" },
   hydrocarbons_nationalization: { label: "Nationalization of hydrocarbons", isoDate: "1971-02-24" },
+  agrarian_revolution: { label: "Charter of the Agrarian Revolution", isoDate: "1971-11-08" },
+  non_aligned_algiers_summit: { label: "Opening of the 4th Non-Aligned Summit in Algiers", isoDate: "1973-09-05" },
+  free_healthcare_decree: { label: "Enactment of Universal Free Healthcare", isoDate: "1974-01-01" },
+  un_special_session_speech: { label: "Speech to the UN General Assembly on the New International Economic Order", isoDate: "1974-04-10" },
+  algiers_accord_iran_iraq: { label: "The Algiers Accord between Iran and Iraq", isoDate: "1975-03-06" },
+  national_charter_referendum: { label: "Referendum on the National Charter", isoDate: "1976-06-27" },
+  constitution_referendum: { label: "Adoption of the Constitution of 1976", isoDate: "1976-11-19" },
+  presidential_election: { label: "Presidential Oath of Office", isoDate: "1976-12-10" },
   death: { label: "Death of Houari Boum\xE9di\xE8ne", isoDate: "1978-12-27" }
+};
+var emirDates = {
+  birth: { label: "Birth of Emir Abdelkader at Guetna", isoDate: "1808-09-06" },
+  dardara_allegiance: { label: "First Allegiance under the Elm Tree at Ghriss", isoDate: "1832-11-27" },
+  mascara_public_allegiance: { label: "Public Allegiance in the Great Mosque of Mascara", isoDate: "1833-02-04" },
+  battle_of_macta: { label: "Tactical Victory at the Battle of Macta", isoDate: "1835-06-28" },
+  treaty_of_tafna: { label: "Signing of the Treaty of Tafna", isoDate: "1837-05-30" },
+  iron_gates_breach: { label: "French breach of treaty at the Iron Gates (Bibans)", isoDate: "1839-10-28" },
+  smala_raid_taguine: { label: "Raid on the Smala at Taguine", isoDate: "1843-05-16" },
+  prisoner_code_decree: { label: "Decree for the humane treatment and protection of prisoners of war", isoDate: "1843-10-01" },
+  battle_of_sidi_brahim: { label: "Victory at the Battle of Sidi Brahim", isoDate: "1845-09-23" },
+  cessation_of_hostilities: { label: "Negotiated Armistice and cessation of campaign", isoDate: "1847-12-24" },
+  release_from_amboise: { label: "Official Release from the Ch\xE2teau d\u2019Amboise by Louis-Napol\xE9on", isoDate: "1852-10-16" },
+  damascus_settlement: { label: "Permanent residence and teaching in Damascus", isoDate: "1855-11-01" },
+  damascus_rescue_events: { label: "Heroic protection and rescue of Christians in Damascus", isoDate: "1860-07-09" },
+  suez_canal_inauguration: { label: "Inauguration of the Suez Canal as Guest of Honor", isoDate: "1869-11-17" },
+  death_in_damascus: { label: "Passing of Emir Abdelkader in Damascus", isoDate: "1883-05-26" },
+  repatriation_to_algeria: { label: "Repatriation of remains to the Carr\xE9 des Martyrs at El Alia", isoDate: "1966-07-05" }
 };
 var normalizeName = (name) => name.normalize("NFD").replace(/\p{M}/gu, "").replace(/[ـ'’-]/g, "").trim().toLowerCase();
 function historicalDatesFor(role, names) {
   if (role !== "historical_figure") return;
-  const knownNames = ["houari boumediene", "houari boumedian", "\u0647\u0648\u0627\u0631\u064A \u0628\u0648\u0645\u062F\u064A\u0646"];
-  if (names.some((name) => knownNames.includes(normalizeName(name)))) return boumedieneDates;
+  const knownBoumediene = ["houari boumediene", "houari boumedian", "\u0647\u0648\u0627\u0631\u064A \u0628\u0648\u0645\u062F\u064A\u0646", "mohamed boukharouba", "\u0645\u062D\u0645\u062F \u0628\u0648\u062E\u0631\u0648\u0628\u0629", "\u0628\u0648\u0645\u062F\u064A\u0646"];
+  const knownEmir = ["abdelkader", "abelkader", "emir abdelkader", "amir abelkader", "amir abdelkader", "\u0639\u0628\u062F \u0627\u0644\u0642\u0627\u062F\u0631", "\u0627\u0644\u0627\u0645\u064A\u0631 \u0639\u0628\u062F \u0627\u0644\u0642\u0627\u062F\u0631", "\u0627\u0644\u0623\u0645\u064A\u0631 \u0639\u0628\u062F \u0627\u0644\u0642\u0627\u062F\u0631", "\u0639\u0628\u062F\u0627\u0644\u0642\u0627\u062F\u0631 \u0627\u0644\u062C\u0632\u0627\u0626\u0631\u064A", "amir abelkader el djazairi"];
+  if (names.some((name) => knownBoumediene.includes(normalizeName(name)))) return boumedieneDates;
+  if (names.some((name) => knownEmir.includes(normalizeName(name)))) return emirDates;
 }
 function datePrompt(facts) {
   return [
@@ -73018,7 +73592,7 @@ async function loadGuideProfile(prisma2, exhibitionId, language, actorId, knowle
   if (guardrails.allowExhibitionCustomization && exhibitionId && !/^\[SITUATION: reflect\]/.test(knowledgeQuery)) {
     const isDjemila = /djemila|jamila|cuicul/i.test(profile.exhibitionTitle ?? "");
     const isHeritageHall = /heritage\s*hall|معرض\s*التراث/i.test(profile.exhibitionTitle ?? "") || exhibitionId === "e76f4dfc-75a5-4bf6-b760-b3fd5370d48f";
-    const collections = collection ? [collection] : historical ? [] : isDjemila ? ["djemila"] : isHeritageHall ? ["heritage", "emir", "boumediene"] : ["heritage", "emir", "boumediene"];
+    const collections = collection ? [collection, "heritage"] : historical ? [] : isDjemila ? ["djemila"] : isHeritageHall ? ["heritage", "emir", "boumediene"] : ["heritage", "emir", "boumediene"];
     const maxYear = collection === "emir" ? 1883 : collection === "boumediene" ? 1978 : historical ? 0 : Infinity;
     let passages = retrieveKnowledge(collections, knowledgeQuery, maxYear);
     if (!passages.length && recentDiscussion) passages = retrieveKnowledge(collections, recentDiscussion, maxYear);
@@ -73026,7 +73600,9 @@ async function loadGuideProfile(prisma2, exhibitionId, language, actorId, knowle
       passages = passages.filter((p) => p.collection !== "djemila" && !/roman|cuicul|djemila/i.test(p.title + " " + p.keywords));
     }
     profile.turnKnowledge = knowledgeBlock(passages);
-    if (!historical) profile.turnKnowledge.push(...await exhibitionKnowledge(prisma2, exhibitionId, knowledgeQuery, recentDiscussion));
+    if (!historical || /قطعة|معروض|متحف|سيف|برنوس|قشابية|لباس|حلي|فضة|تحفة|exhibit|piece|artifact|object/i.test(knowledgeQuery + " " + recentDiscussion)) {
+      profile.turnKnowledge.push(...await exhibitionKnowledge(prisma2, exhibitionId, knowledgeQuery, recentDiscussion));
+    }
   }
   if (!guardrails.allowExhibitionCustomization) {
     profile.customInstructions = "";
@@ -74343,14 +74919,14 @@ aiRouter.post("/providers/test", authenticate, requireAdmin, async (req, res2) =
 });
 
 // server/src/routes/guide-control.ts
-var import_express13 = __toESM(require_express2(), 1);
+var import_express13 = __toESM(require_express2());
 init_db();
 
 // server/src/ai/motion/kimodo.ts
-var import_crypto6 = __toESM(require("crypto"), 1);
-var import_fs4 = __toESM(require("fs"), 1);
-var import_path67 = __toESM(require("path"), 1);
-var import_os2 = __toESM(require("os"), 1);
+var import_crypto6 = __toESM(require("crypto"));
+var import_fs4 = __toESM(require("fs"));
+var import_path67 = __toESM(require("path"));
+var import_os2 = __toESM(require("os"));
 function loadKimodoConfig() {
   return {
     enabled: process.env.KIMODO_ENABLED === "1" || process.env.KIMODO_ENABLED === "true",
@@ -74367,7 +74943,6 @@ function loadKimodoConfig() {
   };
 }
 var KimodoClient = class {
-  cfg;
   constructor(cfg) {
     this.cfg = cfg;
   }
@@ -75253,10 +75828,10 @@ adminRouter.put("/retarget-profile", async (req, res2) => {
 guideControlRouter.use("/admin", adminRouter);
 
 // server/src/routes/motion.ts
-var import_express14 = __toESM(require_express2(), 1);
-var import_fs5 = __toESM(require("fs"), 1);
-var import_path68 = __toESM(require("path"), 1);
-var import_crypto7 = __toESM(require("crypto"), 1);
+var import_express14 = __toESM(require_express2());
+var import_fs5 = __toESM(require("fs"));
+var import_path68 = __toESM(require("path"));
+var import_crypto7 = __toESM(require("crypto"));
 init_db();
 var motionRouter = (0, import_express14.Router)();
 motionRouter.get("/motion-clips/:name", authenticateOrEmbed, async (req, res2) => {
@@ -75337,7 +75912,7 @@ motionRouter.post("/motion", authenticateOrEmbed, async (req, res2) => {
 });
 
 // server/src/routes/actors.ts
-var import_express15 = __toESM(require_express2(), 1);
+var import_express15 = __toESM(require_express2());
 init_db();
 var actorsRouter = (0, import_express15.Router)();
 var MAX_CAST = 8;
@@ -75624,7 +76199,7 @@ actorsRouter.get("/live/:exhibitionId", authenticateOrEmbed, async (req, res2) =
 });
 
 // server/src/routes/library.ts
-var import_express16 = __toESM(require_express2(), 1);
+var import_express16 = __toESM(require_express2());
 init_db();
 var libraryRouter = (0, import_express16.Router)();
 libraryRouter.get("/environments", async (_req, res2) => {
@@ -75787,7 +76362,7 @@ libraryRouter.delete("/products/:id", authenticate, requireAdmin, async (req, re
 });
 
 // server/src/routes/analytics.ts
-var import_express17 = __toESM(require_express2(), 1);
+var import_express17 = __toESM(require_express2());
 init_db();
 var analyticsRouter = (0, import_express17.Router)();
 var writeAttempts = /* @__PURE__ */ new Map();
@@ -76162,8 +76737,8 @@ analyticsRouter.get("/:exhibitionId/chatlog", authenticate, async (req, res2) =>
 });
 
 // server/src/routes/tts.ts
-var import_express18 = __toESM(require_express2(), 1);
-var googleTTS2 = __toESM(require_dist3(), 1);
+var import_express18 = __toESM(require_express2());
+var googleTTS2 = __toESM(require_dist3());
 init_db();
 var ttsRouter = (0, import_express18.Router)();
 var RATE_LIMIT = /* @__PURE__ */ new Map();
@@ -76266,7 +76841,7 @@ ttsRouter.get("/stream", authenticateOrEmbed, async (req, res2) => {
 });
 
 // server/src/routes/gemini.ts
-var import_express19 = __toESM(require_express2(), 1);
+var import_express19 = __toESM(require_express2());
 init_db();
 var geminiRouter = (0, import_express19.Router)();
 var ALLOWED_MODELS = /* @__PURE__ */ new Set([
@@ -76365,7 +76940,7 @@ geminiRouter.post("/", authenticateOrEmbed, async (req, res2) => {
   }
 });
 
-// ../../server/node_modules/ws/wrapper.mjs
+// server/node_modules/ws/wrapper.mjs
 var import_stream = __toESM(require_stream2(), 1);
 var import_extension = __toESM(require_extension(), 1);
 var import_permessage_deflate = __toESM(require_permessage_deflate(), 1);
@@ -76377,8 +76952,8 @@ var import_websocket_server = __toESM(require_websocket_server(), 1);
 var wrapper_default = import_websocket.default;
 
 // server/src/ws/guide-ws.ts
-var import_jsonwebtoken2 = __toESM(require_jsonwebtoken(), 1);
-var import_crypto8 = __toESM(require("crypto"), 1);
+var import_jsonwebtoken2 = __toESM(require_jsonwebtoken());
+var import_crypto8 = __toESM(require("crypto"));
 init_db();
 var import_url = require("url");
 var JWT_SECRET2 = process.env.JWT_SECRET;
