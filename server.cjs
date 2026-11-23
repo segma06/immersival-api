@@ -1,4 +1,3 @@
-"use strict";
 var __create = Object.create;
 var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
@@ -32,9 +31,9 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
   mod
 ));
 
-// E:/claudeprojects/immersival/server/node_modules/dotenv/package.json
+// ../../server/node_modules/dotenv/package.json
 var require_package = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/dotenv/package.json"(exports2, module2) {
+  "../../server/node_modules/dotenv/package.json"(exports2, module2) {
     module2.exports = {
       name: "dotenv",
       version: "16.6.1",
@@ -100,9 +99,9 @@ var require_package = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/dotenv/lib/main.js
+// ../../server/node_modules/dotenv/lib/main.js
 var require_main = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/dotenv/lib/main.js"(exports2, module2) {
+  "../../server/node_modules/dotenv/lib/main.js"(exports2, module2) {
     var fs6 = require("fs");
     var path6 = require("path");
     var os3 = require("os");
@@ -139,12 +138,12 @@ var require_main = __commonJS({
         err.code = "MISSING_DATA";
         throw err;
       }
-      const keys = _dotenvKey(options).split(",");
-      const length = keys.length;
+      const keys2 = _dotenvKey(options).split(",");
+      const length = keys2.length;
       let decrypted;
       for (let i = 0; i < length; i++) {
         try {
-          const key = keys[i].trim();
+          const key = keys2[i].trim();
           const attrs = _instructions(result2, key);
           decrypted = DotenvModule.decrypt(attrs.ciphertext, attrs.key);
           break;
@@ -390,9 +389,9 @@ var require_main = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/dotenv/lib/env-options.js
+// ../../server/node_modules/dotenv/lib/env-options.js
 var require_env_options = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/dotenv/lib/env-options.js"(exports2, module2) {
+  "../../server/node_modules/dotenv/lib/env-options.js"(exports2, module2) {
     var options = {};
     if (process.env.DOTENV_CONFIG_ENCODING != null) {
       options.encoding = process.env.DOTENV_CONFIG_ENCODING;
@@ -416,9 +415,9 @@ var require_env_options = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/dotenv/lib/cli-options.js
+// ../../server/node_modules/dotenv/lib/cli-options.js
 var require_cli_options = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/dotenv/lib/cli-options.js"(exports2, module2) {
+  "../../server/node_modules/dotenv/lib/cli-options.js"(exports2, module2) {
     var re = /^dotenv_config_(encoding|path|quiet|debug|override|DOTENV_KEY)=(.+)$/;
     module2.exports = function optionMatcher(args) {
       const options = args.reduce(function(acc, cur) {
@@ -436,9 +435,9 @@ var require_cli_options = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/depd/index.js
+// ../../server/node_modules/depd/index.js
 var require_depd = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/depd/index.js"(exports2, module2) {
+  "../../server/node_modules/depd/index.js"(exports2, module2) {
     var relative = require("path").relative;
     module2.exports = depd;
     var basePath = process.cwd();
@@ -742,9 +741,9 @@ var require_depd = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/bytes/index.js
+// ../../server/node_modules/bytes/index.js
 var require_bytes = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/bytes/index.js"(exports2, module2) {
+  "../../server/node_modules/bytes/index.js"(exports2, module2) {
     "use strict";
     module2.exports = bytes;
     module2.exports.format = format;
@@ -831,9 +830,9 @@ var require_bytes = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/content-type/index.js
+// ../../server/node_modules/content-type/index.js
 var require_content_type = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/content-type/index.js"(exports2) {
+  "../../server/node_modules/content-type/index.js"(exports2) {
     "use strict";
     var PARAM_REGEXP = /; *([!#$%&'*+.^_`|~0-9A-Za-z-]+) *= *("(?:[\u000b\u0020\u0021\u0023-\u005b\u005d-\u007e\u0080-\u00ff]|\\[\u000b\u0020-\u00ff])*"|[!#$%&'*+.^_`|~0-9A-Za-z-]+) */g;
     var TEXT_REGEXP = /^[\u000b\u0020-\u007e\u0080-\u00ff]+$/;
@@ -935,9 +934,9 @@ var require_content_type = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/setprototypeof/index.js
+// ../../server/node_modules/setprototypeof/index.js
 var require_setprototypeof = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/setprototypeof/index.js"(exports2, module2) {
+  "../../server/node_modules/setprototypeof/index.js"(exports2, module2) {
     "use strict";
     module2.exports = Object.setPrototypeOf || ({ __proto__: [] } instanceof Array ? setProtoOf : mixinProperties);
     function setProtoOf(obj, proto) {
@@ -955,9 +954,9 @@ var require_setprototypeof = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/statuses/codes.json
+// ../../server/node_modules/statuses/codes.json
 var require_codes = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/statuses/codes.json"(exports2, module2) {
+  "../../server/node_modules/statuses/codes.json"(exports2, module2) {
     module2.exports = {
       "100": "Continue",
       "101": "Switching Protocols",
@@ -1026,9 +1025,9 @@ var require_codes = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/statuses/index.js
+// ../../server/node_modules/statuses/index.js
 var require_statuses = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/statuses/index.js"(exports2, module2) {
+  "../../server/node_modules/statuses/index.js"(exports2, module2) {
     "use strict";
     var codes = require_codes();
     module2.exports = status;
@@ -1097,9 +1096,9 @@ var require_statuses = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/inherits/inherits_browser.js
+// ../../server/node_modules/inherits/inherits_browser.js
 var require_inherits_browser = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/inherits/inherits_browser.js"(exports2, module2) {
+  "../../server/node_modules/inherits/inherits_browser.js"(exports2, module2) {
     if (typeof Object.create === "function") {
       module2.exports = function inherits(ctor, superCtor) {
         if (superCtor) {
@@ -1129,9 +1128,9 @@ var require_inherits_browser = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/inherits/inherits.js
+// ../../server/node_modules/inherits/inherits.js
 var require_inherits = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/inherits/inherits.js"(exports2, module2) {
+  "../../server/node_modules/inherits/inherits.js"(exports2, module2) {
     try {
       util = require("util");
       if (typeof util.inherits !== "function") throw "";
@@ -1143,9 +1142,9 @@ var require_inherits = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/toidentifier/index.js
+// ../../server/node_modules/toidentifier/index.js
 var require_toidentifier = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/toidentifier/index.js"(exports2, module2) {
+  "../../server/node_modules/toidentifier/index.js"(exports2, module2) {
     "use strict";
     module2.exports = toIdentifier;
     function toIdentifier(str4) {
@@ -1156,9 +1155,9 @@ var require_toidentifier = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/http-errors/index.js
+// ../../server/node_modules/http-errors/index.js
 var require_http_errors = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/http-errors/index.js"(exports2, module2) {
+  "../../server/node_modules/http-errors/index.js"(exports2, module2) {
     "use strict";
     var deprecate = require_depd()("http-errors");
     var setPrototypeOf = require_setprototypeof();
@@ -1320,9 +1319,9 @@ var require_http_errors = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/ms/index.js
+// ../../server/node_modules/ms/index.js
 var require_ms = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/ms/index.js"(exports2, module2) {
+  "../../server/node_modules/ms/index.js"(exports2, module2) {
     var s = 1e3;
     var m = s * 60;
     var h = m * 60;
@@ -1422,9 +1421,9 @@ var require_ms = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/debug/src/debug.js
+// ../../server/node_modules/debug/src/debug.js
 var require_debug = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/debug/src/debug.js"(exports2, module2) {
+  "../../server/node_modules/debug/src/debug.js"(exports2, module2) {
     exports2 = module2.exports = createDebug.debug = createDebug["default"] = createDebug;
     exports2.coerce = coerce;
     exports2.disable = disable;
@@ -1527,9 +1526,9 @@ var require_debug = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/debug/src/browser.js
+// ../../server/node_modules/debug/src/browser.js
 var require_browser = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/debug/src/browser.js"(exports2, module2) {
+  "../../server/node_modules/debug/src/browser.js"(exports2, module2) {
     exports2 = module2.exports = require_debug();
     exports2.log = log;
     exports2.formatArgs = formatArgs;
@@ -1613,9 +1612,9 @@ var require_browser = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/debug/src/node.js
+// ../../server/node_modules/debug/src/node.js
 var require_node = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/debug/src/node.js"(exports2, module2) {
+  "../../server/node_modules/debug/src/node.js"(exports2, module2) {
     var tty = require("tty");
     var util = require("util");
     exports2 = module2.exports = require_debug();
@@ -1724,18 +1723,18 @@ var require_node = __commonJS({
     }
     function init(debug) {
       debug.inspectOpts = {};
-      var keys = Object.keys(exports2.inspectOpts);
-      for (var i = 0; i < keys.length; i++) {
-        debug.inspectOpts[keys[i]] = exports2.inspectOpts[keys[i]];
+      var keys2 = Object.keys(exports2.inspectOpts);
+      for (var i = 0; i < keys2.length; i++) {
+        debug.inspectOpts[keys2[i]] = exports2.inspectOpts[keys2[i]];
       }
     }
     exports2.enable(load());
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/debug/src/index.js
+// ../../server/node_modules/debug/src/index.js
 var require_src = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/debug/src/index.js"(exports2, module2) {
+  "../../server/node_modules/debug/src/index.js"(exports2, module2) {
     if (typeof process !== "undefined" && process.type === "renderer") {
       module2.exports = require_browser();
     } else {
@@ -1744,9 +1743,9 @@ var require_src = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/destroy/index.js
+// ../../server/node_modules/destroy/index.js
 var require_destroy = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/destroy/index.js"(exports2, module2) {
+  "../../server/node_modules/destroy/index.js"(exports2, module2) {
     "use strict";
     var EventEmitter = require("events").EventEmitter;
     var ReadStream = require("fs").ReadStream;
@@ -1831,9 +1830,9 @@ var require_destroy = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/safer-buffer/safer.js
+// ../../server/node_modules/safer-buffer/safer.js
 var require_safer = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/safer-buffer/safer.js"(exports2, module2) {
+  "../../server/node_modules/safer-buffer/safer.js"(exports2, module2) {
     "use strict";
     var buffer = require("buffer");
     var Buffer3 = buffer.Buffer;
@@ -1899,9 +1898,9 @@ var require_safer = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/iconv-lite/lib/bom-handling.js
+// ../../server/node_modules/iconv-lite/lib/bom-handling.js
 var require_bom_handling = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/iconv-lite/lib/bom-handling.js"(exports2) {
+  "../../server/node_modules/iconv-lite/lib/bom-handling.js"(exports2) {
     "use strict";
     var BOMChar = "\uFEFF";
     exports2.PrependBOM = PrependBOMWrapper;
@@ -1943,9 +1942,9 @@ var require_bom_handling = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/iconv-lite/encodings/internal.js
+// ../../server/node_modules/iconv-lite/encodings/internal.js
 var require_internal = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/iconv-lite/encodings/internal.js"(exports2, module2) {
+  "../../server/node_modules/iconv-lite/encodings/internal.js"(exports2, module2) {
     "use strict";
     var Buffer3 = require_safer().Buffer;
     module2.exports = {
@@ -2087,9 +2086,9 @@ var require_internal = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/iconv-lite/encodings/utf16.js
+// ../../server/node_modules/iconv-lite/encodings/utf16.js
 var require_utf16 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/iconv-lite/encodings/utf16.js"(exports2) {
+  "../../server/node_modules/iconv-lite/encodings/utf16.js"(exports2) {
     "use strict";
     var Buffer3 = require_safer().Buffer;
     exports2.utf16be = Utf16BECodec;
@@ -2203,9 +2202,9 @@ var require_utf16 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/iconv-lite/encodings/utf7.js
+// ../../server/node_modules/iconv-lite/encodings/utf7.js
 var require_utf7 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/iconv-lite/encodings/utf7.js"(exports2) {
+  "../../server/node_modules/iconv-lite/encodings/utf7.js"(exports2) {
     "use strict";
     var Buffer3 = require_safer().Buffer;
     exports2.utf7 = Utf7Codec;
@@ -2404,9 +2403,9 @@ var require_utf7 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/iconv-lite/encodings/sbcs-codec.js
+// ../../server/node_modules/iconv-lite/encodings/sbcs-codec.js
 var require_sbcs_codec = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/iconv-lite/encodings/sbcs-codec.js"(exports2) {
+  "../../server/node_modules/iconv-lite/encodings/sbcs-codec.js"(exports2) {
     "use strict";
     var Buffer3 = require_safer().Buffer;
     exports2._sbcs = SBCSCodec;
@@ -2460,9 +2459,9 @@ var require_sbcs_codec = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/iconv-lite/encodings/sbcs-data.js
+// ../../server/node_modules/iconv-lite/encodings/sbcs-data.js
 var require_sbcs_data = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/iconv-lite/encodings/sbcs-data.js"(exports2, module2) {
+  "../../server/node_modules/iconv-lite/encodings/sbcs-data.js"(exports2, module2) {
     "use strict";
     module2.exports = {
       // Not supported by iconv, not sure why.
@@ -2609,9 +2608,9 @@ var require_sbcs_data = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/iconv-lite/encodings/sbcs-data-generated.js
+// ../../server/node_modules/iconv-lite/encodings/sbcs-data-generated.js
 var require_sbcs_data_generated = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/iconv-lite/encodings/sbcs-data-generated.js"(exports2, module2) {
+  "../../server/node_modules/iconv-lite/encodings/sbcs-data-generated.js"(exports2, module2) {
     "use strict";
     module2.exports = {
       "437": "cp437",
@@ -3064,9 +3063,9 @@ var require_sbcs_data_generated = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/iconv-lite/encodings/dbcs-codec.js
+// ../../server/node_modules/iconv-lite/encodings/dbcs-codec.js
 var require_dbcs_codec = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/iconv-lite/encodings/dbcs-codec.js"(exports2) {
+  "../../server/node_modules/iconv-lite/encodings/dbcs-codec.js"(exports2) {
     "use strict";
     var Buffer3 = require_safer().Buffer;
     exports2._dbcs = DBCSCodec;
@@ -3445,9 +3444,9 @@ var require_dbcs_codec = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/iconv-lite/encodings/tables/shiftjis.json
+// ../../server/node_modules/iconv-lite/encodings/tables/shiftjis.json
 var require_shiftjis = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/iconv-lite/encodings/tables/shiftjis.json"(exports2, module2) {
+  "../../server/node_modules/iconv-lite/encodings/tables/shiftjis.json"(exports2, module2) {
     module2.exports = [
       ["0", "\0", 128],
       ["a1", "\uFF61", 62],
@@ -3576,9 +3575,9 @@ var require_shiftjis = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/iconv-lite/encodings/tables/eucjp.json
+// ../../server/node_modules/iconv-lite/encodings/tables/eucjp.json
 var require_eucjp = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/iconv-lite/encodings/tables/eucjp.json"(exports2, module2) {
+  "../../server/node_modules/iconv-lite/encodings/tables/eucjp.json"(exports2, module2) {
     module2.exports = [
       ["0", "\0", 127],
       ["8ea1", "\uFF61", 62],
@@ -3764,9 +3763,9 @@ var require_eucjp = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/iconv-lite/encodings/tables/cp936.json
+// ../../server/node_modules/iconv-lite/encodings/tables/cp936.json
 var require_cp936 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/iconv-lite/encodings/tables/cp936.json"(exports2, module2) {
+  "../../server/node_modules/iconv-lite/encodings/tables/cp936.json"(exports2, module2) {
     module2.exports = [
       ["0", "\0", 127, "\u20AC"],
       ["8140", "\u4E02\u4E04\u4E05\u4E06\u4E0F\u4E12\u4E17\u4E1F\u4E20\u4E21\u4E23\u4E26\u4E29\u4E2E\u4E2F\u4E31\u4E33\u4E35\u4E37\u4E3C\u4E40\u4E41\u4E42\u4E44\u4E46\u4E4A\u4E51\u4E55\u4E57\u4E5A\u4E5B\u4E62\u4E63\u4E64\u4E65\u4E67\u4E68\u4E6A", 5, "\u4E72\u4E74", 9, "\u4E7F", 6, "\u4E87\u4E8A"],
@@ -4034,9 +4033,9 @@ var require_cp936 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/iconv-lite/encodings/tables/gbk-added.json
+// ../../server/node_modules/iconv-lite/encodings/tables/gbk-added.json
 var require_gbk_added = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/iconv-lite/encodings/tables/gbk-added.json"(exports2, module2) {
+  "../../server/node_modules/iconv-lite/encodings/tables/gbk-added.json"(exports2, module2) {
     module2.exports = [
       ["a140", "\uE4C6", 62],
       ["a180", "\uE505", 32],
@@ -4095,16 +4094,16 @@ var require_gbk_added = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/iconv-lite/encodings/tables/gb18030-ranges.json
+// ../../server/node_modules/iconv-lite/encodings/tables/gb18030-ranges.json
 var require_gb18030_ranges = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/iconv-lite/encodings/tables/gb18030-ranges.json"(exports2, module2) {
+  "../../server/node_modules/iconv-lite/encodings/tables/gb18030-ranges.json"(exports2, module2) {
     module2.exports = { uChars: [128, 165, 169, 178, 184, 216, 226, 235, 238, 244, 248, 251, 253, 258, 276, 284, 300, 325, 329, 334, 364, 463, 465, 467, 469, 471, 473, 475, 477, 506, 594, 610, 712, 716, 730, 930, 938, 962, 970, 1026, 1104, 1106, 8209, 8215, 8218, 8222, 8231, 8241, 8244, 8246, 8252, 8365, 8452, 8454, 8458, 8471, 8482, 8556, 8570, 8596, 8602, 8713, 8720, 8722, 8726, 8731, 8737, 8740, 8742, 8748, 8751, 8760, 8766, 8777, 8781, 8787, 8802, 8808, 8816, 8854, 8858, 8870, 8896, 8979, 9322, 9372, 9548, 9588, 9616, 9622, 9634, 9652, 9662, 9672, 9676, 9680, 9702, 9735, 9738, 9793, 9795, 11906, 11909, 11913, 11917, 11928, 11944, 11947, 11951, 11956, 11960, 11964, 11979, 12284, 12292, 12312, 12319, 12330, 12351, 12436, 12447, 12535, 12543, 12586, 12842, 12850, 12964, 13200, 13215, 13218, 13253, 13263, 13267, 13270, 13384, 13428, 13727, 13839, 13851, 14617, 14703, 14801, 14816, 14964, 15183, 15471, 15585, 16471, 16736, 17208, 17325, 17330, 17374, 17623, 17997, 18018, 18212, 18218, 18301, 18318, 18760, 18811, 18814, 18820, 18823, 18844, 18848, 18872, 19576, 19620, 19738, 19887, 40870, 59244, 59336, 59367, 59413, 59417, 59423, 59431, 59437, 59443, 59452, 59460, 59478, 59493, 63789, 63866, 63894, 63976, 63986, 64016, 64018, 64021, 64025, 64034, 64037, 64042, 65074, 65093, 65107, 65112, 65127, 65132, 65375, 65510, 65536], gbChars: [0, 36, 38, 45, 50, 81, 89, 95, 96, 100, 103, 104, 105, 109, 126, 133, 148, 172, 175, 179, 208, 306, 307, 308, 309, 310, 311, 312, 313, 341, 428, 443, 544, 545, 558, 741, 742, 749, 750, 805, 819, 820, 7922, 7924, 7925, 7927, 7934, 7943, 7944, 7945, 7950, 8062, 8148, 8149, 8152, 8164, 8174, 8236, 8240, 8262, 8264, 8374, 8380, 8381, 8384, 8388, 8390, 8392, 8393, 8394, 8396, 8401, 8406, 8416, 8419, 8424, 8437, 8439, 8445, 8482, 8485, 8496, 8521, 8603, 8936, 8946, 9046, 9050, 9063, 9066, 9076, 9092, 9100, 9108, 9111, 9113, 9131, 9162, 9164, 9218, 9219, 11329, 11331, 11334, 11336, 11346, 11361, 11363, 11366, 11370, 11372, 11375, 11389, 11682, 11686, 11687, 11692, 11694, 11714, 11716, 11723, 11725, 11730, 11736, 11982, 11989, 12102, 12336, 12348, 12350, 12384, 12393, 12395, 12397, 12510, 12553, 12851, 12962, 12973, 13738, 13823, 13919, 13933, 14080, 14298, 14585, 14698, 15583, 15847, 16318, 16434, 16438, 16481, 16729, 17102, 17122, 17315, 17320, 17402, 17418, 17859, 17909, 17911, 17915, 17916, 17936, 17939, 17961, 18664, 18703, 18814, 18962, 19043, 33469, 33470, 33471, 33484, 33485, 33490, 33497, 33501, 33505, 33513, 33520, 33536, 33550, 37845, 37921, 37948, 38029, 38038, 38064, 38065, 38066, 38069, 38075, 38076, 38078, 39108, 39109, 39113, 39114, 39115, 39116, 39265, 39394, 189e3] };
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/iconv-lite/encodings/tables/cp949.json
+// ../../server/node_modules/iconv-lite/encodings/tables/cp949.json
 var require_cp949 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/iconv-lite/encodings/tables/cp949.json"(exports2, module2) {
+  "../../server/node_modules/iconv-lite/encodings/tables/cp949.json"(exports2, module2) {
     module2.exports = [
       ["0", "\0", 127],
       ["8141", "\uAC02\uAC03\uAC05\uAC06\uAC0B", 4, "\uAC18\uAC1E\uAC1F\uAC21\uAC22\uAC23\uAC25", 6, "\uAC2E\uAC32\uAC33\uAC34"],
@@ -4381,9 +4380,9 @@ var require_cp949 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/iconv-lite/encodings/tables/cp950.json
+// ../../server/node_modules/iconv-lite/encodings/tables/cp950.json
 var require_cp950 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/iconv-lite/encodings/tables/cp950.json"(exports2, module2) {
+  "../../server/node_modules/iconv-lite/encodings/tables/cp950.json"(exports2, module2) {
     module2.exports = [
       ["0", "\0", 127],
       ["a140", "\u3000\uFF0C\u3001\u3002\uFF0E\u2027\uFF1B\uFF1A\uFF1F\uFF01\uFE30\u2026\u2025\uFE50\uFE51\uFE52\xB7\uFE54\uFE55\uFE56\uFE57\uFF5C\u2013\uFE31\u2014\uFE33\u2574\uFE34\uFE4F\uFF08\uFF09\uFE35\uFE36\uFF5B\uFF5D\uFE37\uFE38\u3014\u3015\uFE39\uFE3A\u3010\u3011\uFE3B\uFE3C\u300A\u300B\uFE3D\uFE3E\u3008\u3009\uFE3F\uFE40\u300C\u300D\uFE41\uFE42\u300E\u300F\uFE43\uFE44\uFE59\uFE5A"],
@@ -4564,9 +4563,9 @@ var require_cp950 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/iconv-lite/encodings/tables/big5-added.json
+// ../../server/node_modules/iconv-lite/encodings/tables/big5-added.json
 var require_big5_added = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/iconv-lite/encodings/tables/big5-added.json"(exports2, module2) {
+  "../../server/node_modules/iconv-lite/encodings/tables/big5-added.json"(exports2, module2) {
     module2.exports = [
       ["8740", "\u43F0\u4C32\u4603\u45A6\u4578\u{27267}\u4D77\u45B3\u{27CB1}\u4CE2\u{27CC5}\u3B95\u4736\u4744\u4C47\u4C40\u{242BF}\u{23617}\u{27352}\u{26E8B}\u{270D2}\u4C57\u{2A351}\u474F\u45DA\u4C85\u{27C6C}\u4D07\u4AA4\u46A1\u{26B23}\u7225\u{25A54}\u{21A63}\u{23E06}\u{23F61}\u664D\u56FB"],
       ["8767", "\u7D95\u591D\u{28BB9}\u3DF4\u9734\u{27BEF}\u5BDB\u{21D5E}\u5AA4\u3625\u{29EB0}\u5AD1\u5BB7\u5CFC\u676E\u8593\u{29945}\u7461\u749D\u3875\u{21D53}\u{2369E}\u{26021}\u3EEC"],
@@ -4692,9 +4691,9 @@ var require_big5_added = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/iconv-lite/encodings/dbcs-data.js
+// ../../server/node_modules/iconv-lite/encodings/dbcs-data.js
 var require_dbcs_data = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/iconv-lite/encodings/dbcs-data.js"(exports2, module2) {
+  "../../server/node_modules/iconv-lite/encodings/dbcs-data.js"(exports2, module2) {
     "use strict";
     module2.exports = {
       // == Japanese/ShiftJIS ====================================================
@@ -4867,9 +4866,9 @@ var require_dbcs_data = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/iconv-lite/encodings/index.js
+// ../../server/node_modules/iconv-lite/encodings/index.js
 var require_encodings = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/iconv-lite/encodings/index.js"(exports2, module2) {
+  "../../server/node_modules/iconv-lite/encodings/index.js"(exports2, module2) {
     "use strict";
     var modules = [
       require_internal(),
@@ -4893,9 +4892,9 @@ var require_encodings = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/iconv-lite/lib/streams.js
+// ../../server/node_modules/iconv-lite/lib/streams.js
 var require_streams = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/iconv-lite/lib/streams.js"(exports2, module2) {
+  "../../server/node_modules/iconv-lite/lib/streams.js"(exports2, module2) {
     "use strict";
     var Buffer3 = require("buffer").Buffer;
     var Transform = require("stream").Transform;
@@ -4994,9 +4993,9 @@ var require_streams = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/iconv-lite/lib/extend-node.js
+// ../../server/node_modules/iconv-lite/lib/extend-node.js
 var require_extend_node = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/iconv-lite/lib/extend-node.js"(exports2, module2) {
+  "../../server/node_modules/iconv-lite/lib/extend-node.js"(exports2, module2) {
     "use strict";
     var Buffer3 = require("buffer").Buffer;
     module2.exports = function(iconv) {
@@ -5156,9 +5155,9 @@ var require_extend_node = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/iconv-lite/lib/index.js
+// ../../server/node_modules/iconv-lite/lib/index.js
 var require_lib = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/iconv-lite/lib/index.js"(exports2, module2) {
+  "../../server/node_modules/iconv-lite/lib/index.js"(exports2, module2) {
     "use strict";
     var Buffer3 = require_safer().Buffer;
     var bomHandling = require_bom_handling();
@@ -5259,9 +5258,9 @@ var require_lib = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/unpipe/index.js
+// ../../server/node_modules/unpipe/index.js
 var require_unpipe = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/unpipe/index.js"(exports2, module2) {
+  "../../server/node_modules/unpipe/index.js"(exports2, module2) {
     "use strict";
     module2.exports = unpipe;
     function hasPipeDataListeners(stream) {
@@ -5297,9 +5296,9 @@ var require_unpipe = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/raw-body/index.js
+// ../../server/node_modules/raw-body/index.js
 var require_raw_body = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/raw-body/index.js"(exports2, module2) {
+  "../../server/node_modules/raw-body/index.js"(exports2, module2) {
     "use strict";
     var asyncHooks = tryRequireAsyncHooks();
     var bytes = require_bytes();
@@ -5486,9 +5485,9 @@ var require_raw_body = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/ee-first/index.js
+// ../../server/node_modules/ee-first/index.js
 var require_ee_first = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/ee-first/index.js"(exports2, module2) {
+  "../../server/node_modules/ee-first/index.js"(exports2, module2) {
     "use strict";
     module2.exports = first;
     function first(stuff, done) {
@@ -5542,9 +5541,9 @@ var require_ee_first = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/on-finished/index.js
+// ../../server/node_modules/on-finished/index.js
 var require_on_finished = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/on-finished/index.js"(exports2, module2) {
+  "../../server/node_modules/on-finished/index.js"(exports2, module2) {
     "use strict";
     module2.exports = onFinished;
     module2.exports.isFinished = isFinished;
@@ -5646,9 +5645,9 @@ var require_on_finished = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/body-parser/lib/read.js
+// ../../server/node_modules/body-parser/lib/read.js
 var require_read = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/body-parser/lib/read.js"(exports2, module2) {
+  "../../server/node_modules/body-parser/lib/read.js"(exports2, module2) {
     "use strict";
     var createError = require_http_errors();
     var destroy = require_destroy();
@@ -5773,9 +5772,9 @@ var require_read = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/media-typer/index.js
+// ../../server/node_modules/media-typer/index.js
 var require_media_typer = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/media-typer/index.js"(exports2) {
+  "../../server/node_modules/media-typer/index.js"(exports2) {
     var paramRegExp = /; *([!#$%&'\*\+\-\.0-9A-Z\^_`a-z\|~]+) *= *("(?:[ !\u0023-\u005b\u005d-\u007e\u0080-\u00ff]|\\[\u0020-\u007e])*"|[!#$%&'\*\+\-\.0-9A-Z\^_`a-z\|~]+) */g;
     var textRegExp = /^[\u0020-\u007e\u0080-\u00ff]+$/;
     var tokenRegExp = /^[!#$%&'\*\+\-\.0-9A-Z\^_`a-z\|~]+$/;
@@ -5897,9 +5896,9 @@ var require_media_typer = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/mime-db/db.json
+// ../../server/node_modules/mime-db/db.json
 var require_db = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/mime-db/db.json"(exports2, module2) {
+  "../../server/node_modules/mime-db/db.json"(exports2, module2) {
     module2.exports = {
       "application/1d-interleaved-parityfec": {
         source: "iana"
@@ -14422,16 +14421,16 @@ var require_db = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/mime-db/index.js
+// ../../server/node_modules/mime-db/index.js
 var require_mime_db = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/mime-db/index.js"(exports2, module2) {
+  "../../server/node_modules/mime-db/index.js"(exports2, module2) {
     module2.exports = require_db();
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/mime-types/index.js
+// ../../server/node_modules/mime-types/index.js
 var require_mime_types = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/mime-types/index.js"(exports2) {
+  "../../server/node_modules/mime-types/index.js"(exports2) {
     "use strict";
     var db = require_mime_db();
     var extname = require("path").extname;
@@ -14519,9 +14518,9 @@ var require_mime_types = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/type-is/index.js
+// ../../server/node_modules/type-is/index.js
 var require_type_is = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/type-is/index.js"(exports2, module2) {
+  "../../server/node_modules/type-is/index.js"(exports2, module2) {
     "use strict";
     var typer = require_media_typer();
     var mime = require_mime_types();
@@ -14624,9 +14623,9 @@ var require_type_is = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/body-parser/lib/types/json.js
+// ../../server/node_modules/body-parser/lib/types/json.js
 var require_json = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/body-parser/lib/types/json.js"(exports2, module2) {
+  "../../server/node_modules/body-parser/lib/types/json.js"(exports2, module2) {
     "use strict";
     var bytes = require_bytes();
     var contentType = require_content_type();
@@ -14739,9 +14738,9 @@ var require_json = __commonJS({
       }
     }
     function normalizeJsonSyntaxError(error, obj) {
-      var keys = Object.getOwnPropertyNames(error);
-      for (var i = 0; i < keys.length; i++) {
-        var key = keys[i];
+      var keys2 = Object.getOwnPropertyNames(error);
+      for (var i = 0; i < keys2.length; i++) {
+        var key = keys2[i];
         if (key !== "stack" && key !== "message") {
           delete error[key];
         }
@@ -14758,9 +14757,9 @@ var require_json = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/body-parser/lib/types/raw.js
+// ../../server/node_modules/body-parser/lib/types/raw.js
 var require_raw = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/body-parser/lib/types/raw.js"(exports2, module2) {
+  "../../server/node_modules/body-parser/lib/types/raw.js"(exports2, module2) {
     "use strict";
     var bytes = require_bytes();
     var debug = require_src()("body-parser:raw");
@@ -14817,9 +14816,9 @@ var require_raw = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/body-parser/lib/types/text.js
+// ../../server/node_modules/body-parser/lib/types/text.js
 var require_text = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/body-parser/lib/types/text.js"(exports2, module2) {
+  "../../server/node_modules/body-parser/lib/types/text.js"(exports2, module2) {
     "use strict";
     var bytes = require_bytes();
     var contentType = require_content_type();
@@ -14886,24 +14885,24 @@ var require_text = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/es-errors/type.js
+// ../../server/node_modules/es-errors/type.js
 var require_type = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/es-errors/type.js"(exports2, module2) {
+  "../../server/node_modules/es-errors/type.js"(exports2, module2) {
     "use strict";
     module2.exports = TypeError;
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/object-inspect/util.inspect.js
+// ../../server/node_modules/object-inspect/util.inspect.js
 var require_util_inspect = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/object-inspect/util.inspect.js"(exports2, module2) {
+  "../../server/node_modules/object-inspect/util.inspect.js"(exports2, module2) {
     module2.exports = require("util").inspect;
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/object-inspect/index.js
+// ../../server/node_modules/object-inspect/index.js
 var require_object_inspect = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/object-inspect/index.js"(exports2, module2) {
+  "../../server/node_modules/object-inspect/index.js"(exports2, module2) {
     var hasMap = typeof Map === "function" && Map.prototype;
     var mapSizeDescriptor = Object.getOwnPropertyDescriptor && hasMap ? Object.getOwnPropertyDescriptor(Map.prototype, "size") : null;
     var mapSize = hasMap && mapSizeDescriptor && typeof mapSizeDescriptor.get === "function" ? mapSizeDescriptor.get : null;
@@ -15041,8 +15040,8 @@ var require_object_inspect = __commonJS({
       }
       if (typeof obj === "function" && !isRegExp(obj)) {
         var name = nameOf(obj);
-        var keys = arrObjKeys(obj, inspect);
-        return "[Function" + (name ? ": " + name : " (anonymous)") + "]" + (keys.length > 0 ? " { " + $join.call(keys, ", ") + " }" : "");
+        var keys2 = arrObjKeys(obj, inspect);
+        return "[Function" + (name ? ": " + name : " (anonymous)") + "]" + (keys2.length > 0 ? " { " + $join.call(keys2, ", ") + " }" : "");
       }
       if (isSymbol(obj)) {
         var symString = hasShammedSymbols ? $replace.call(String(obj), /^(Symbol\(.*\))_[^)]*$/, "$1") : symToString.call(obj);
@@ -15432,9 +15431,9 @@ var require_object_inspect = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/side-channel-list/index.js
+// ../../server/node_modules/side-channel-list/index.js
 var require_side_channel_list = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/side-channel-list/index.js"(exports2, module2) {
+  "../../server/node_modules/side-channel-list/index.js"(exports2, module2) {
     "use strict";
     var inspect = require_object_inspect();
     var $TypeError = require_type();
@@ -15525,113 +15524,113 @@ var require_side_channel_list = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/es-object-atoms/index.js
+// ../../server/node_modules/es-object-atoms/index.js
 var require_es_object_atoms = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/es-object-atoms/index.js"(exports2, module2) {
+  "../../server/node_modules/es-object-atoms/index.js"(exports2, module2) {
     "use strict";
     module2.exports = Object;
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/es-errors/index.js
+// ../../server/node_modules/es-errors/index.js
 var require_es_errors = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/es-errors/index.js"(exports2, module2) {
+  "../../server/node_modules/es-errors/index.js"(exports2, module2) {
     "use strict";
     module2.exports = Error;
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/es-errors/eval.js
+// ../../server/node_modules/es-errors/eval.js
 var require_eval = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/es-errors/eval.js"(exports2, module2) {
+  "../../server/node_modules/es-errors/eval.js"(exports2, module2) {
     "use strict";
     module2.exports = EvalError;
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/es-errors/range.js
+// ../../server/node_modules/es-errors/range.js
 var require_range = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/es-errors/range.js"(exports2, module2) {
+  "../../server/node_modules/es-errors/range.js"(exports2, module2) {
     "use strict";
     module2.exports = RangeError;
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/es-errors/ref.js
+// ../../server/node_modules/es-errors/ref.js
 var require_ref = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/es-errors/ref.js"(exports2, module2) {
+  "../../server/node_modules/es-errors/ref.js"(exports2, module2) {
     "use strict";
     module2.exports = ReferenceError;
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/es-errors/syntax.js
+// ../../server/node_modules/es-errors/syntax.js
 var require_syntax = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/es-errors/syntax.js"(exports2, module2) {
+  "../../server/node_modules/es-errors/syntax.js"(exports2, module2) {
     "use strict";
     module2.exports = SyntaxError;
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/es-errors/uri.js
+// ../../server/node_modules/es-errors/uri.js
 var require_uri = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/es-errors/uri.js"(exports2, module2) {
+  "../../server/node_modules/es-errors/uri.js"(exports2, module2) {
     "use strict";
     module2.exports = URIError;
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/math-intrinsics/abs.js
+// ../../server/node_modules/math-intrinsics/abs.js
 var require_abs = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/math-intrinsics/abs.js"(exports2, module2) {
+  "../../server/node_modules/math-intrinsics/abs.js"(exports2, module2) {
     "use strict";
     module2.exports = Math.abs;
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/math-intrinsics/floor.js
+// ../../server/node_modules/math-intrinsics/floor.js
 var require_floor = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/math-intrinsics/floor.js"(exports2, module2) {
+  "../../server/node_modules/math-intrinsics/floor.js"(exports2, module2) {
     "use strict";
     module2.exports = Math.floor;
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/math-intrinsics/max.js
+// ../../server/node_modules/math-intrinsics/max.js
 var require_max = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/math-intrinsics/max.js"(exports2, module2) {
+  "../../server/node_modules/math-intrinsics/max.js"(exports2, module2) {
     "use strict";
     module2.exports = Math.max;
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/math-intrinsics/min.js
+// ../../server/node_modules/math-intrinsics/min.js
 var require_min = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/math-intrinsics/min.js"(exports2, module2) {
+  "../../server/node_modules/math-intrinsics/min.js"(exports2, module2) {
     "use strict";
     module2.exports = Math.min;
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/math-intrinsics/pow.js
+// ../../server/node_modules/math-intrinsics/pow.js
 var require_pow = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/math-intrinsics/pow.js"(exports2, module2) {
+  "../../server/node_modules/math-intrinsics/pow.js"(exports2, module2) {
     "use strict";
     module2.exports = Math.pow;
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/math-intrinsics/round.js
+// ../../server/node_modules/math-intrinsics/round.js
 var require_round = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/math-intrinsics/round.js"(exports2, module2) {
+  "../../server/node_modules/math-intrinsics/round.js"(exports2, module2) {
     "use strict";
     module2.exports = Math.round;
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/math-intrinsics/isNaN.js
+// ../../server/node_modules/math-intrinsics/isNaN.js
 var require_isNaN = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/math-intrinsics/isNaN.js"(exports2, module2) {
+  "../../server/node_modules/math-intrinsics/isNaN.js"(exports2, module2) {
     "use strict";
     module2.exports = Number.isNaN || function isNaN2(a) {
       return a !== a;
@@ -15639,9 +15638,9 @@ var require_isNaN = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/math-intrinsics/sign.js
+// ../../server/node_modules/math-intrinsics/sign.js
 var require_sign = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/math-intrinsics/sign.js"(exports2, module2) {
+  "../../server/node_modules/math-intrinsics/sign.js"(exports2, module2) {
     "use strict";
     var $isNaN = require_isNaN();
     module2.exports = function sign(number) {
@@ -15653,17 +15652,17 @@ var require_sign = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/gopd/gOPD.js
+// ../../server/node_modules/gopd/gOPD.js
 var require_gOPD = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/gopd/gOPD.js"(exports2, module2) {
+  "../../server/node_modules/gopd/gOPD.js"(exports2, module2) {
     "use strict";
     module2.exports = Object.getOwnPropertyDescriptor;
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/gopd/index.js
+// ../../server/node_modules/gopd/index.js
 var require_gopd = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/gopd/index.js"(exports2, module2) {
+  "../../server/node_modules/gopd/index.js"(exports2, module2) {
     "use strict";
     var $gOPD = require_gOPD();
     if ($gOPD) {
@@ -15677,9 +15676,9 @@ var require_gopd = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/es-define-property/index.js
+// ../../server/node_modules/es-define-property/index.js
 var require_es_define_property = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/es-define-property/index.js"(exports2, module2) {
+  "../../server/node_modules/es-define-property/index.js"(exports2, module2) {
     "use strict";
     var $defineProperty = Object.defineProperty || false;
     if ($defineProperty) {
@@ -15693,9 +15692,9 @@ var require_es_define_property = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/has-symbols/shams.js
+// ../../server/node_modules/has-symbols/shams.js
 var require_shams = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/has-symbols/shams.js"(exports2, module2) {
+  "../../server/node_modules/has-symbols/shams.js"(exports2, module2) {
     "use strict";
     module2.exports = function hasSymbols() {
       if (typeof Symbol !== "function" || typeof Object.getOwnPropertySymbols !== "function") {
@@ -15748,9 +15747,9 @@ var require_shams = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/has-symbols/index.js
+// ../../server/node_modules/has-symbols/index.js
 var require_has_symbols = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/has-symbols/index.js"(exports2, module2) {
+  "../../server/node_modules/has-symbols/index.js"(exports2, module2) {
     "use strict";
     var origSymbol = typeof Symbol !== "undefined" && Symbol;
     var hasSymbolSham = require_shams();
@@ -15772,26 +15771,26 @@ var require_has_symbols = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/get-proto/Reflect.getPrototypeOf.js
+// ../../server/node_modules/get-proto/Reflect.getPrototypeOf.js
 var require_Reflect_getPrototypeOf = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/get-proto/Reflect.getPrototypeOf.js"(exports2, module2) {
+  "../../server/node_modules/get-proto/Reflect.getPrototypeOf.js"(exports2, module2) {
     "use strict";
     module2.exports = typeof Reflect !== "undefined" && Reflect.getPrototypeOf || null;
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/get-proto/Object.getPrototypeOf.js
+// ../../server/node_modules/get-proto/Object.getPrototypeOf.js
 var require_Object_getPrototypeOf = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/get-proto/Object.getPrototypeOf.js"(exports2, module2) {
+  "../../server/node_modules/get-proto/Object.getPrototypeOf.js"(exports2, module2) {
     "use strict";
     var $Object = require_es_object_atoms();
     module2.exports = $Object.getPrototypeOf || null;
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/function-bind/implementation.js
+// ../../server/node_modules/function-bind/implementation.js
 var require_implementation = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/function-bind/implementation.js"(exports2, module2) {
+  "../../server/node_modules/function-bind/implementation.js"(exports2, module2) {
     "use strict";
     var ERROR_MESSAGE = "Function.prototype.bind called on incompatible ";
     var toStr = Object.prototype.toString;
@@ -15865,42 +15864,42 @@ var require_implementation = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/function-bind/index.js
+// ../../server/node_modules/function-bind/index.js
 var require_function_bind = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/function-bind/index.js"(exports2, module2) {
+  "../../server/node_modules/function-bind/index.js"(exports2, module2) {
     "use strict";
     var implementation = require_implementation();
     module2.exports = Function.prototype.bind || implementation;
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/call-bind-apply-helpers/functionCall.js
+// ../../server/node_modules/call-bind-apply-helpers/functionCall.js
 var require_functionCall = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/call-bind-apply-helpers/functionCall.js"(exports2, module2) {
+  "../../server/node_modules/call-bind-apply-helpers/functionCall.js"(exports2, module2) {
     "use strict";
     module2.exports = Function.prototype.call;
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/call-bind-apply-helpers/functionApply.js
+// ../../server/node_modules/call-bind-apply-helpers/functionApply.js
 var require_functionApply = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/call-bind-apply-helpers/functionApply.js"(exports2, module2) {
+  "../../server/node_modules/call-bind-apply-helpers/functionApply.js"(exports2, module2) {
     "use strict";
     module2.exports = Function.prototype.apply;
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/call-bind-apply-helpers/reflectApply.js
+// ../../server/node_modules/call-bind-apply-helpers/reflectApply.js
 var require_reflectApply = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/call-bind-apply-helpers/reflectApply.js"(exports2, module2) {
+  "../../server/node_modules/call-bind-apply-helpers/reflectApply.js"(exports2, module2) {
     "use strict";
     module2.exports = typeof Reflect !== "undefined" && Reflect && Reflect.apply;
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/call-bind-apply-helpers/actualApply.js
+// ../../server/node_modules/call-bind-apply-helpers/actualApply.js
 var require_actualApply = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/call-bind-apply-helpers/actualApply.js"(exports2, module2) {
+  "../../server/node_modules/call-bind-apply-helpers/actualApply.js"(exports2, module2) {
     "use strict";
     var bind = require_function_bind();
     var $apply = require_functionApply();
@@ -15910,9 +15909,9 @@ var require_actualApply = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/call-bind-apply-helpers/index.js
+// ../../server/node_modules/call-bind-apply-helpers/index.js
 var require_call_bind_apply_helpers = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/call-bind-apply-helpers/index.js"(exports2, module2) {
+  "../../server/node_modules/call-bind-apply-helpers/index.js"(exports2, module2) {
     "use strict";
     var bind = require_function_bind();
     var $TypeError = require_type();
@@ -15927,9 +15926,9 @@ var require_call_bind_apply_helpers = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/dunder-proto/get.js
+// ../../server/node_modules/dunder-proto/get.js
 var require_get = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/dunder-proto/get.js"(exports2, module2) {
+  "../../server/node_modules/dunder-proto/get.js"(exports2, module2) {
     "use strict";
     var callBind = require_call_bind_apply_helpers();
     var gOPD = require_gopd();
@@ -15958,9 +15957,9 @@ var require_get = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/get-proto/index.js
+// ../../server/node_modules/get-proto/index.js
 var require_get_proto = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/get-proto/index.js"(exports2, module2) {
+  "../../server/node_modules/get-proto/index.js"(exports2, module2) {
     "use strict";
     var reflectGetProto = require_Reflect_getPrototypeOf();
     var originalGetProto = require_Object_getPrototypeOf();
@@ -15978,9 +15977,9 @@ var require_get_proto = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/hasown/index.js
+// ../../server/node_modules/hasown/index.js
 var require_hasown = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/hasown/index.js"(exports2, module2) {
+  "../../server/node_modules/hasown/index.js"(exports2, module2) {
     "use strict";
     var call = Function.prototype.call;
     var $hasOwn = Object.prototype.hasOwnProperty;
@@ -15989,9 +15988,9 @@ var require_hasown = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/get-intrinsic/index.js
+// ../../server/node_modules/get-intrinsic/index.js
 var require_get_intrinsic = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/get-intrinsic/index.js"(exports2, module2) {
+  "../../server/node_modules/get-intrinsic/index.js"(exports2, module2) {
     "use strict";
     var undefined2;
     var $Object = require_es_object_atoms();
@@ -16320,9 +16319,9 @@ var require_get_intrinsic = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/call-bound/index.js
+// ../../server/node_modules/call-bound/index.js
 var require_call_bound = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/call-bound/index.js"(exports2, module2) {
+  "../../server/node_modules/call-bound/index.js"(exports2, module2) {
     "use strict";
     var GetIntrinsic = require_get_intrinsic();
     var callBindBasic = require_call_bind_apply_helpers();
@@ -16343,9 +16342,9 @@ var require_call_bound = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/side-channel-map/index.js
+// ../../server/node_modules/side-channel-map/index.js
 var require_side_channel_map = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/side-channel-map/index.js"(exports2, module2) {
+  "../../server/node_modules/side-channel-map/index.js"(exports2, module2) {
     "use strict";
     var GetIntrinsic = require_get_intrinsic();
     var callBound = require_call_bound();
@@ -16399,9 +16398,9 @@ var require_side_channel_map = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/side-channel-weakmap/index.js
+// ../../server/node_modules/side-channel-weakmap/index.js
 var require_side_channel_weakmap = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/side-channel-weakmap/index.js"(exports2, module2) {
+  "../../server/node_modules/side-channel-weakmap/index.js"(exports2, module2) {
     "use strict";
     var GetIntrinsic = require_get_intrinsic();
     var callBound = require_call_bound();
@@ -16472,9 +16471,9 @@ var require_side_channel_weakmap = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/side-channel/index.js
+// ../../server/node_modules/side-channel/index.js
 var require_side_channel = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/side-channel/index.js"(exports2, module2) {
+  "../../server/node_modules/side-channel/index.js"(exports2, module2) {
     "use strict";
     var $TypeError = require_type();
     var inspect = require_object_inspect();
@@ -16512,9 +16511,9 @@ var require_side_channel = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/qs/lib/formats.js
+// ../../server/node_modules/qs/lib/formats.js
 var require_formats = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/qs/lib/formats.js"(exports2, module2) {
+  "../../server/node_modules/qs/lib/formats.js"(exports2, module2) {
     "use strict";
     var replace = String.prototype.replace;
     var percentTwenties = /%20/g;
@@ -16538,9 +16537,9 @@ var require_formats = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/qs/lib/utils.js
+// ../../server/node_modules/qs/lib/utils.js
 var require_utils = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/qs/lib/utils.js"(exports2, module2) {
+  "../../server/node_modules/qs/lib/utils.js"(exports2, module2) {
     "use strict";
     var formats = require_formats();
     var getSideChannel = require_side_channel();
@@ -16772,9 +16771,9 @@ var require_utils = __commonJS({
       for (var i = 0; i < queue.length; ++i) {
         var item = queue[i];
         var obj = item.obj[item.prop];
-        var keys = Object.keys(obj);
-        for (var j = 0; j < keys.length; ++j) {
-          var key = keys[j];
+        var keys2 = Object.keys(obj);
+        for (var j = 0; j < keys2.length; ++j) {
+          var key = keys2[j];
           var val = obj[key];
           if (typeof val === "object" && val !== null && !refs.has(val)) {
             queue[queue.length] = { obj, prop: key };
@@ -16840,9 +16839,9 @@ var require_utils = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/qs/lib/stringify.js
+// ../../server/node_modules/qs/lib/stringify.js
 var require_stringify = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/qs/lib/stringify.js"(exports2, module2) {
+  "../../server/node_modules/qs/lib/stringify.js"(exports2, module2) {
     "use strict";
     var getSideChannel = require_side_channel();
     var utils = require_utils();
@@ -16954,8 +16953,8 @@ var require_stringify = __commonJS({
       } else if (isArray2(filter)) {
         objKeys = filter;
       } else {
-        var keys = Object.keys(obj);
-        objKeys = sort ? keys.sort(sort) : keys;
+        var keys2 = Object.keys(obj);
+        objKeys = sort ? keys2.sort(sort) : keys2;
       }
       var encodedPrefix = encodeDotInKeys ? String(prefix).replace(/\./g, "%2E") : String(prefix);
       var adjustedPrefix = commaRoundTrip && isArray2(obj) && obj.length === 1 ? encodedPrefix + "[]" : encodedPrefix;
@@ -17071,7 +17070,7 @@ var require_stringify = __commonJS({
         filter = options.filter;
         objKeys = filter;
       }
-      var keys = [];
+      var keys2 = [];
       if (typeof obj !== "object" || obj === null) {
         return "";
       }
@@ -17093,7 +17092,7 @@ var require_stringify = __commonJS({
         if (options.skipNulls && value === null) {
           continue;
         }
-        pushToArray(keys, stringify2(
+        pushToArray(keys2, stringify2(
           value,
           key,
           generateArrayPrefix,
@@ -17114,7 +17113,7 @@ var require_stringify = __commonJS({
           sideChannel
         ));
       }
-      var joined = keys.join(options.delimiter);
+      var joined = keys2.join(options.delimiter);
       var prefix = options.addQueryPrefix === true ? "?" : "";
       if (options.charsetSentinel) {
         if (options.charset === "iso-8859-1") {
@@ -17128,9 +17127,9 @@ var require_stringify = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/qs/lib/parse.js
+// ../../server/node_modules/qs/lib/parse.js
 var require_parse = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/qs/lib/parse.js"(exports2, module2) {
+  "../../server/node_modules/qs/lib/parse.js"(exports2, module2) {
     "use strict";
     var utils = require_utils();
     var has2 = Object.prototype.hasOwnProperty;
@@ -17379,11 +17378,11 @@ var require_parse = __commonJS({
       if (!givenKey) {
         return;
       }
-      var keys = splitKeyIntoSegments(givenKey, options);
-      if (!keys) {
+      var keys2 = splitKeyIntoSegments(givenKey, options);
+      if (!keys2) {
         return;
       }
-      return parseObject(keys, val, options, valuesParsed);
+      return parseObject(keys2, val, options, valuesParsed);
     };
     var normalizeParseOptions = function normalizeParseOptions2(opts) {
       if (!opts) {
@@ -17443,9 +17442,9 @@ var require_parse = __commonJS({
       }
       var tempObj = typeof str4 === "string" ? parseValues(str4, options) : str4;
       var obj = options.plainObjects ? { __proto__: null } : {};
-      var keys = Object.keys(tempObj);
-      for (var i = 0; i < keys.length; ++i) {
-        var key = keys[i];
+      var keys2 = Object.keys(tempObj);
+      for (var i = 0; i < keys2.length; ++i) {
+        var key = keys2[i];
         var newObj = parseKeys(key, tempObj[key], options, typeof str4 === "string");
         obj = utils.merge(obj, newObj, options);
       }
@@ -17457,9 +17456,9 @@ var require_parse = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/qs/lib/index.js
+// ../../server/node_modules/qs/lib/index.js
 var require_lib2 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/qs/lib/index.js"(exports2, module2) {
+  "../../server/node_modules/qs/lib/index.js"(exports2, module2) {
     "use strict";
     var stringify2 = require_stringify();
     var parse2 = require_parse();
@@ -17472,9 +17471,9 @@ var require_lib2 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/body-parser/lib/types/urlencoded.js
+// ../../server/node_modules/body-parser/lib/types/urlencoded.js
 var require_urlencoded = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/body-parser/lib/types/urlencoded.js"(exports2, module2) {
+  "../../server/node_modules/body-parser/lib/types/urlencoded.js"(exports2, module2) {
     "use strict";
     var bytes = require_bytes();
     var contentType = require_content_type();
@@ -17648,9 +17647,9 @@ var require_urlencoded = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/body-parser/index.js
+// ../../server/node_modules/body-parser/index.js
 var require_body_parser = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/body-parser/index.js"(exports2, module2) {
+  "../../server/node_modules/body-parser/index.js"(exports2, module2) {
     "use strict";
     var deprecate = require_depd()("body-parser");
     var parsers = /* @__PURE__ */ Object.create(null);
@@ -17725,9 +17724,9 @@ var require_body_parser = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/merge-descriptors/index.js
+// ../../server/node_modules/merge-descriptors/index.js
 var require_merge_descriptors = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/merge-descriptors/index.js"(exports2, module2) {
+  "../../server/node_modules/merge-descriptors/index.js"(exports2, module2) {
     "use strict";
     module2.exports = merge;
     var hasOwnProperty = Object.prototype.hasOwnProperty;
@@ -17753,9 +17752,9 @@ var require_merge_descriptors = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/encodeurl/index.js
+// ../../server/node_modules/encodeurl/index.js
 var require_encodeurl = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/encodeurl/index.js"(exports2, module2) {
+  "../../server/node_modules/encodeurl/index.js"(exports2, module2) {
     "use strict";
     module2.exports = encodeUrl;
     var ENCODE_CHARS_REGEXP = /(?:[^\x21\x23-\x3B\x3D\x3F-\x5F\x61-\x7A\x7C\x7E]|%(?:[^0-9A-Fa-f]|[0-9A-Fa-f][^0-9A-Fa-f]|$))+/g;
@@ -17767,9 +17766,9 @@ var require_encodeurl = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/escape-html/index.js
+// ../../server/node_modules/escape-html/index.js
 var require_escape_html = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/escape-html/index.js"(exports2, module2) {
+  "../../server/node_modules/escape-html/index.js"(exports2, module2) {
     "use strict";
     var matchHtmlRegExp = /["'&<>]/;
     module2.exports = escapeHtml;
@@ -17814,9 +17813,9 @@ var require_escape_html = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/parseurl/index.js
+// ../../server/node_modules/parseurl/index.js
 var require_parseurl = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/parseurl/index.js"(exports2, module2) {
+  "../../server/node_modules/parseurl/index.js"(exports2, module2) {
     "use strict";
     var url = require("url");
     var parse2 = url.parse;
@@ -17892,9 +17891,9 @@ var require_parseurl = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/finalhandler/index.js
+// ../../server/node_modules/finalhandler/index.js
 var require_finalhandler = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/finalhandler/index.js"(exports2, module2) {
+  "../../server/node_modules/finalhandler/index.js"(exports2, module2) {
     "use strict";
     var debug = require_src()("finalhandler");
     var encodeUrl = require_encodeurl();
@@ -17957,9 +17956,9 @@ var require_finalhandler = __commonJS({
         return void 0;
       }
       var headers = /* @__PURE__ */ Object.create(null);
-      var keys = Object.keys(err.headers);
-      for (var i = 0; i < keys.length; i++) {
-        var key = keys[i];
+      var keys2 = Object.keys(err.headers);
+      for (var i = 0; i < keys2.length; i++) {
+        var key = keys2[i];
         headers[key] = err.headers[key];
       }
       return headers;
@@ -18033,18 +18032,18 @@ var require_finalhandler = __commonJS({
       if (!headers) {
         return;
       }
-      var keys = Object.keys(headers);
-      for (var i = 0; i < keys.length; i++) {
-        var key = keys[i];
+      var keys2 = Object.keys(headers);
+      for (var i = 0; i < keys2.length; i++) {
+        var key = keys2[i];
         res2.setHeader(key, headers[key]);
       }
     }
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/array-flatten/array-flatten.js
+// ../../server/node_modules/array-flatten/array-flatten.js
 var require_array_flatten = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/array-flatten/array-flatten.js"(exports2, module2) {
+  "../../server/node_modules/array-flatten/array-flatten.js"(exports2, module2) {
     "use strict";
     module2.exports = arrayFlatten;
     function flattenWithDepth(array, result2, depth) {
@@ -18078,20 +18077,20 @@ var require_array_flatten = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/path-to-regexp/index.js
+// ../../server/node_modules/path-to-regexp/index.js
 var require_path_to_regexp = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/path-to-regexp/index.js"(exports2, module2) {
+  "../../server/node_modules/path-to-regexp/index.js"(exports2, module2) {
     module2.exports = pathToRegexp;
     var MATCHING_GROUP_REGEXP = /\\.|\((?:\?<(.*?)>)?(?!\?)/g;
-    function pathToRegexp(path6, keys, options) {
+    function pathToRegexp(path6, keys2, options) {
       options = options || {};
-      keys = keys || [];
+      keys2 = keys2 || [];
       var strict = options.strict;
       var end = options.end !== false;
       var flags = options.sensitive ? "" : "i";
       var lookahead = options.lookahead !== false;
       var extraOffset = 0;
-      var keysOffset = keys.length;
+      var keysOffset = keys2.length;
       var i = 0;
       var name = 0;
       var pos = 0;
@@ -18100,7 +18099,7 @@ var require_path_to_regexp = __commonJS({
       if (path6 instanceof RegExp) {
         while (m = MATCHING_GROUP_REGEXP.exec(path6.source)) {
           if (m[0][0] === "\\") continue;
-          keys.push({
+          keys2.push({
             name: m[1] || name++,
             optional: false,
             offset: m.index
@@ -18110,7 +18109,7 @@ var require_path_to_regexp = __commonJS({
       }
       if (Array.isArray(path6)) {
         path6 = path6.map(function(value) {
-          return pathToRegexp(value, keys, options).source;
+          return pathToRegexp(value, keys2, options).source;
         });
         return new RegExp(path6.join("|"), flags);
       }
@@ -18153,7 +18152,7 @@ var require_path_to_regexp = __commonJS({
           capture = capture ? capture.replace(/\\.|\*/, function(m2) {
             return m2 === "*" ? "(.*)" : m2;
           }) : backtrack ? "((?:(?!/|" + backtrack + ").)+?)" : "([^/" + format + "]+?)";
-          keys.push({
+          keys2.push({
             name: key,
             optional: !!optional,
             offset: offset + extraOffset
@@ -18166,8 +18165,8 @@ var require_path_to_regexp = __commonJS({
       );
       while (m = MATCHING_GROUP_REGEXP.exec(path6)) {
         if (m[0][0] === "\\") continue;
-        if (keysOffset + i === keys.length || keys[keysOffset + i].offset > m.index) {
-          keys.splice(keysOffset + i, 0, {
+        if (keysOffset + i === keys2.length || keys2[keysOffset + i].offset > m.index) {
+          keys2.splice(keysOffset + i, 0, {
             name: name++,
             // Unnamed matching groups must be consistently linear.
             optional: false,
@@ -18187,9 +18186,9 @@ var require_path_to_regexp = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/express/lib/router/layer.js
+// ../../server/node_modules/express/lib/router/layer.js
 var require_layer = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/express/lib/router/layer.js"(exports2, module2) {
+  "../../server/node_modules/express/lib/router/layer.js"(exports2, module2) {
     "use strict";
     var pathRegexp = require_path_to_regexp();
     var debug = require_src()("express:router:layer");
@@ -18253,10 +18252,10 @@ var require_layer = __commonJS({
       }
       this.params = {};
       this.path = match2[0];
-      var keys = this.keys;
+      var keys2 = this.keys;
       var params = this.params;
       for (var i = 1; i < match2.length; i++) {
-        var key = keys[i - 1];
+        var key = keys2[i - 1];
         var prop = key.name;
         var val = decode_param(match2[i]);
         if (val !== void 0 || !hasOwnProperty.call(params, prop)) {
@@ -18282,9 +18281,9 @@ var require_layer = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/methods/index.js
+// ../../server/node_modules/methods/index.js
 var require_methods = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/methods/index.js"(exports2, module2) {
+  "../../server/node_modules/methods/index.js"(exports2, module2) {
     "use strict";
     var http = require("http");
     module2.exports = getCurrentNodeMethods() || getBasicNodeMethods();
@@ -18326,9 +18325,9 @@ var require_methods = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/express/lib/router/route.js
+// ../../server/node_modules/express/lib/router/route.js
 var require_route = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/express/lib/router/route.js"(exports2, module2) {
+  "../../server/node_modules/express/lib/router/route.js"(exports2, module2) {
     "use strict";
     var debug = require_src()("express:router:route");
     var flatten = require_array_flatten();
@@ -18438,9 +18437,9 @@ var require_route = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/utils-merge/index.js
+// ../../server/node_modules/utils-merge/index.js
 var require_utils_merge = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/utils-merge/index.js"(exports2, module2) {
+  "../../server/node_modules/utils-merge/index.js"(exports2, module2) {
     exports2 = module2.exports = function(a, b) {
       if (a && b) {
         for (var key in b) {
@@ -18452,9 +18451,9 @@ var require_utils_merge = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/express/lib/router/index.js
+// ../../server/node_modules/express/lib/router/index.js
 var require_router = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/express/lib/router/index.js"(exports2, module2) {
+  "../../server/node_modules/express/lib/router/index.js"(exports2, module2) {
     "use strict";
     var Route = require_route();
     var Layer = require_layer();
@@ -18631,8 +18630,8 @@ var require_router = __commonJS({
     };
     proto.process_params = function process_params(layer, called, req, res2, done) {
       var params = this.params;
-      var keys = layer.keys;
-      if (!keys || keys.length === 0) {
+      var keys2 = layer.keys;
+      if (!keys2 || keys2.length === 0) {
         return done();
       }
       var i = 0;
@@ -18646,11 +18645,11 @@ var require_router = __commonJS({
         if (err) {
           return done(err);
         }
-        if (i >= keys.length) {
+        if (i >= keys2.length) {
           return done();
         }
         paramIndex = 0;
-        key = keys[i++];
+        key = keys2[i++];
         name = key.name;
         paramVal = req.params[name];
         paramCallbacks = params[name];
@@ -18835,9 +18834,9 @@ var require_router = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/express/lib/middleware/init.js
+// ../../server/node_modules/express/lib/middleware/init.js
 var require_init = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/express/lib/middleware/init.js"(exports2) {
+  "../../server/node_modules/express/lib/middleware/init.js"(exports2) {
     "use strict";
     var setPrototypeOf = require_setprototypeof();
     exports2.init = function(app2) {
@@ -18855,9 +18854,9 @@ var require_init = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/express/lib/middleware/query.js
+// ../../server/node_modules/express/lib/middleware/query.js
 var require_query = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/express/lib/middleware/query.js"(exports2, module2) {
+  "../../server/node_modules/express/lib/middleware/query.js"(exports2, module2) {
     "use strict";
     var merge = require_utils_merge();
     var parseUrl = require_parseurl();
@@ -18883,9 +18882,9 @@ var require_query = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/express/lib/view.js
+// ../../server/node_modules/express/lib/view.js
 var require_view = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/express/lib/view.js"(exports2, module2) {
+  "../../server/node_modules/express/lib/view.js"(exports2, module2) {
     "use strict";
     var debug = require_src()("express:view");
     var path6 = require("path");
@@ -18963,9 +18962,9 @@ var require_view = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/safe-buffer/index.js
+// ../../server/node_modules/safe-buffer/index.js
 var require_safe_buffer = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/safe-buffer/index.js"(exports2, module2) {
+  "../../server/node_modules/safe-buffer/index.js"(exports2, module2) {
     var buffer = require("buffer");
     var Buffer3 = buffer.Buffer;
     function copyProps(src, dst) {
@@ -19021,9 +19020,9 @@ var require_safe_buffer = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/content-disposition/index.js
+// ../../server/node_modules/content-disposition/index.js
 var require_content_disposition = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/content-disposition/index.js"(exports2, module2) {
+  "../../server/node_modules/content-disposition/index.js"(exports2, module2) {
     "use strict";
     module2.exports = contentDisposition;
     module2.exports.parse = parse2;
@@ -19184,9 +19183,9 @@ var require_content_disposition = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/etag/index.js
+// ../../server/node_modules/etag/index.js
 var require_etag = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/etag/index.js"(exports2, module2) {
+  "../../server/node_modules/etag/index.js"(exports2, module2) {
     "use strict";
     module2.exports = etag;
     var crypto10 = require("crypto");
@@ -19226,9 +19225,9 @@ var require_etag = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/fresh/index.js
+// ../../server/node_modules/fresh/index.js
 var require_fresh = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/fresh/index.js"(exports2, module2) {
+  "../../server/node_modules/fresh/index.js"(exports2, module2) {
     "use strict";
     var CACHE_CONTROL_NO_CACHE_REGEXP = /(?:^|,)\s*?no-cache\s*?(?:,|$)/;
     module2.exports = fresh;
@@ -19299,16 +19298,16 @@ var require_fresh = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/mime/types.json
+// ../../server/node_modules/mime/types.json
 var require_types = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/mime/types.json"(exports2, module2) {
+  "../../server/node_modules/mime/types.json"(exports2, module2) {
     module2.exports = { "application/andrew-inset": ["ez"], "application/applixware": ["aw"], "application/atom+xml": ["atom"], "application/atomcat+xml": ["atomcat"], "application/atomsvc+xml": ["atomsvc"], "application/bdoc": ["bdoc"], "application/ccxml+xml": ["ccxml"], "application/cdmi-capability": ["cdmia"], "application/cdmi-container": ["cdmic"], "application/cdmi-domain": ["cdmid"], "application/cdmi-object": ["cdmio"], "application/cdmi-queue": ["cdmiq"], "application/cu-seeme": ["cu"], "application/dash+xml": ["mpd"], "application/davmount+xml": ["davmount"], "application/docbook+xml": ["dbk"], "application/dssc+der": ["dssc"], "application/dssc+xml": ["xdssc"], "application/ecmascript": ["ecma"], "application/emma+xml": ["emma"], "application/epub+zip": ["epub"], "application/exi": ["exi"], "application/font-tdpfr": ["pfr"], "application/font-woff": [], "application/font-woff2": [], "application/geo+json": ["geojson"], "application/gml+xml": ["gml"], "application/gpx+xml": ["gpx"], "application/gxf": ["gxf"], "application/gzip": ["gz"], "application/hyperstudio": ["stk"], "application/inkml+xml": ["ink", "inkml"], "application/ipfix": ["ipfix"], "application/java-archive": ["jar", "war", "ear"], "application/java-serialized-object": ["ser"], "application/java-vm": ["class"], "application/javascript": ["js", "mjs"], "application/json": ["json", "map"], "application/json5": ["json5"], "application/jsonml+json": ["jsonml"], "application/ld+json": ["jsonld"], "application/lost+xml": ["lostxml"], "application/mac-binhex40": ["hqx"], "application/mac-compactpro": ["cpt"], "application/mads+xml": ["mads"], "application/manifest+json": ["webmanifest"], "application/marc": ["mrc"], "application/marcxml+xml": ["mrcx"], "application/mathematica": ["ma", "nb", "mb"], "application/mathml+xml": ["mathml"], "application/mbox": ["mbox"], "application/mediaservercontrol+xml": ["mscml"], "application/metalink+xml": ["metalink"], "application/metalink4+xml": ["meta4"], "application/mets+xml": ["mets"], "application/mods+xml": ["mods"], "application/mp21": ["m21", "mp21"], "application/mp4": ["mp4s", "m4p"], "application/msword": ["doc", "dot"], "application/mxf": ["mxf"], "application/octet-stream": ["bin", "dms", "lrf", "mar", "so", "dist", "distz", "pkg", "bpk", "dump", "elc", "deploy", "exe", "dll", "deb", "dmg", "iso", "img", "msi", "msp", "msm", "buffer"], "application/oda": ["oda"], "application/oebps-package+xml": ["opf"], "application/ogg": ["ogx"], "application/omdoc+xml": ["omdoc"], "application/onenote": ["onetoc", "onetoc2", "onetmp", "onepkg"], "application/oxps": ["oxps"], "application/patch-ops-error+xml": ["xer"], "application/pdf": ["pdf"], "application/pgp-encrypted": ["pgp"], "application/pgp-signature": ["asc", "sig"], "application/pics-rules": ["prf"], "application/pkcs10": ["p10"], "application/pkcs7-mime": ["p7m", "p7c"], "application/pkcs7-signature": ["p7s"], "application/pkcs8": ["p8"], "application/pkix-attr-cert": ["ac"], "application/pkix-cert": ["cer"], "application/pkix-crl": ["crl"], "application/pkix-pkipath": ["pkipath"], "application/pkixcmp": ["pki"], "application/pls+xml": ["pls"], "application/postscript": ["ai", "eps", "ps"], "application/prs.cww": ["cww"], "application/pskc+xml": ["pskcxml"], "application/raml+yaml": ["raml"], "application/rdf+xml": ["rdf"], "application/reginfo+xml": ["rif"], "application/relax-ng-compact-syntax": ["rnc"], "application/resource-lists+xml": ["rl"], "application/resource-lists-diff+xml": ["rld"], "application/rls-services+xml": ["rs"], "application/rpki-ghostbusters": ["gbr"], "application/rpki-manifest": ["mft"], "application/rpki-roa": ["roa"], "application/rsd+xml": ["rsd"], "application/rss+xml": ["rss"], "application/rtf": ["rtf"], "application/sbml+xml": ["sbml"], "application/scvp-cv-request": ["scq"], "application/scvp-cv-response": ["scs"], "application/scvp-vp-request": ["spq"], "application/scvp-vp-response": ["spp"], "application/sdp": ["sdp"], "application/set-payment-initiation": ["setpay"], "application/set-registration-initiation": ["setreg"], "application/shf+xml": ["shf"], "application/smil+xml": ["smi", "smil"], "application/sparql-query": ["rq"], "application/sparql-results+xml": ["srx"], "application/srgs": ["gram"], "application/srgs+xml": ["grxml"], "application/sru+xml": ["sru"], "application/ssdl+xml": ["ssdl"], "application/ssml+xml": ["ssml"], "application/tei+xml": ["tei", "teicorpus"], "application/thraud+xml": ["tfi"], "application/timestamped-data": ["tsd"], "application/vnd.3gpp.pic-bw-large": ["plb"], "application/vnd.3gpp.pic-bw-small": ["psb"], "application/vnd.3gpp.pic-bw-var": ["pvb"], "application/vnd.3gpp2.tcap": ["tcap"], "application/vnd.3m.post-it-notes": ["pwn"], "application/vnd.accpac.simply.aso": ["aso"], "application/vnd.accpac.simply.imp": ["imp"], "application/vnd.acucobol": ["acu"], "application/vnd.acucorp": ["atc", "acutc"], "application/vnd.adobe.air-application-installer-package+zip": ["air"], "application/vnd.adobe.formscentral.fcdt": ["fcdt"], "application/vnd.adobe.fxp": ["fxp", "fxpl"], "application/vnd.adobe.xdp+xml": ["xdp"], "application/vnd.adobe.xfdf": ["xfdf"], "application/vnd.ahead.space": ["ahead"], "application/vnd.airzip.filesecure.azf": ["azf"], "application/vnd.airzip.filesecure.azs": ["azs"], "application/vnd.amazon.ebook": ["azw"], "application/vnd.americandynamics.acc": ["acc"], "application/vnd.amiga.ami": ["ami"], "application/vnd.android.package-archive": ["apk"], "application/vnd.anser-web-certificate-issue-initiation": ["cii"], "application/vnd.anser-web-funds-transfer-initiation": ["fti"], "application/vnd.antix.game-component": ["atx"], "application/vnd.apple.installer+xml": ["mpkg"], "application/vnd.apple.mpegurl": ["m3u8"], "application/vnd.apple.pkpass": ["pkpass"], "application/vnd.aristanetworks.swi": ["swi"], "application/vnd.astraea-software.iota": ["iota"], "application/vnd.audiograph": ["aep"], "application/vnd.blueice.multipass": ["mpm"], "application/vnd.bmi": ["bmi"], "application/vnd.businessobjects": ["rep"], "application/vnd.chemdraw+xml": ["cdxml"], "application/vnd.chipnuts.karaoke-mmd": ["mmd"], "application/vnd.cinderella": ["cdy"], "application/vnd.claymore": ["cla"], "application/vnd.cloanto.rp9": ["rp9"], "application/vnd.clonk.c4group": ["c4g", "c4d", "c4f", "c4p", "c4u"], "application/vnd.cluetrust.cartomobile-config": ["c11amc"], "application/vnd.cluetrust.cartomobile-config-pkg": ["c11amz"], "application/vnd.commonspace": ["csp"], "application/vnd.contact.cmsg": ["cdbcmsg"], "application/vnd.cosmocaller": ["cmc"], "application/vnd.crick.clicker": ["clkx"], "application/vnd.crick.clicker.keyboard": ["clkk"], "application/vnd.crick.clicker.palette": ["clkp"], "application/vnd.crick.clicker.template": ["clkt"], "application/vnd.crick.clicker.wordbank": ["clkw"], "application/vnd.criticaltools.wbs+xml": ["wbs"], "application/vnd.ctc-posml": ["pml"], "application/vnd.cups-ppd": ["ppd"], "application/vnd.curl.car": ["car"], "application/vnd.curl.pcurl": ["pcurl"], "application/vnd.dart": ["dart"], "application/vnd.data-vision.rdz": ["rdz"], "application/vnd.dece.data": ["uvf", "uvvf", "uvd", "uvvd"], "application/vnd.dece.ttml+xml": ["uvt", "uvvt"], "application/vnd.dece.unspecified": ["uvx", "uvvx"], "application/vnd.dece.zip": ["uvz", "uvvz"], "application/vnd.denovo.fcselayout-link": ["fe_launch"], "application/vnd.dna": ["dna"], "application/vnd.dolby.mlp": ["mlp"], "application/vnd.dpgraph": ["dpg"], "application/vnd.dreamfactory": ["dfac"], "application/vnd.ds-keypoint": ["kpxx"], "application/vnd.dvb.ait": ["ait"], "application/vnd.dvb.service": ["svc"], "application/vnd.dynageo": ["geo"], "application/vnd.ecowin.chart": ["mag"], "application/vnd.enliven": ["nml"], "application/vnd.epson.esf": ["esf"], "application/vnd.epson.msf": ["msf"], "application/vnd.epson.quickanime": ["qam"], "application/vnd.epson.salt": ["slt"], "application/vnd.epson.ssf": ["ssf"], "application/vnd.eszigno3+xml": ["es3", "et3"], "application/vnd.ezpix-album": ["ez2"], "application/vnd.ezpix-package": ["ez3"], "application/vnd.fdf": ["fdf"], "application/vnd.fdsn.mseed": ["mseed"], "application/vnd.fdsn.seed": ["seed", "dataless"], "application/vnd.flographit": ["gph"], "application/vnd.fluxtime.clip": ["ftc"], "application/vnd.framemaker": ["fm", "frame", "maker", "book"], "application/vnd.frogans.fnc": ["fnc"], "application/vnd.frogans.ltf": ["ltf"], "application/vnd.fsc.weblaunch": ["fsc"], "application/vnd.fujitsu.oasys": ["oas"], "application/vnd.fujitsu.oasys2": ["oa2"], "application/vnd.fujitsu.oasys3": ["oa3"], "application/vnd.fujitsu.oasysgp": ["fg5"], "application/vnd.fujitsu.oasysprs": ["bh2"], "application/vnd.fujixerox.ddd": ["ddd"], "application/vnd.fujixerox.docuworks": ["xdw"], "application/vnd.fujixerox.docuworks.binder": ["xbd"], "application/vnd.fuzzysheet": ["fzs"], "application/vnd.genomatix.tuxedo": ["txd"], "application/vnd.geogebra.file": ["ggb"], "application/vnd.geogebra.tool": ["ggt"], "application/vnd.geometry-explorer": ["gex", "gre"], "application/vnd.geonext": ["gxt"], "application/vnd.geoplan": ["g2w"], "application/vnd.geospace": ["g3w"], "application/vnd.gmx": ["gmx"], "application/vnd.google-apps.document": ["gdoc"], "application/vnd.google-apps.presentation": ["gslides"], "application/vnd.google-apps.spreadsheet": ["gsheet"], "application/vnd.google-earth.kml+xml": ["kml"], "application/vnd.google-earth.kmz": ["kmz"], "application/vnd.grafeq": ["gqf", "gqs"], "application/vnd.groove-account": ["gac"], "application/vnd.groove-help": ["ghf"], "application/vnd.groove-identity-message": ["gim"], "application/vnd.groove-injector": ["grv"], "application/vnd.groove-tool-message": ["gtm"], "application/vnd.groove-tool-template": ["tpl"], "application/vnd.groove-vcard": ["vcg"], "application/vnd.hal+xml": ["hal"], "application/vnd.handheld-entertainment+xml": ["zmm"], "application/vnd.hbci": ["hbci"], "application/vnd.hhe.lesson-player": ["les"], "application/vnd.hp-hpgl": ["hpgl"], "application/vnd.hp-hpid": ["hpid"], "application/vnd.hp-hps": ["hps"], "application/vnd.hp-jlyt": ["jlt"], "application/vnd.hp-pcl": ["pcl"], "application/vnd.hp-pclxl": ["pclxl"], "application/vnd.hydrostatix.sof-data": ["sfd-hdstx"], "application/vnd.ibm.minipay": ["mpy"], "application/vnd.ibm.modcap": ["afp", "listafp", "list3820"], "application/vnd.ibm.rights-management": ["irm"], "application/vnd.ibm.secure-container": ["sc"], "application/vnd.iccprofile": ["icc", "icm"], "application/vnd.igloader": ["igl"], "application/vnd.immervision-ivp": ["ivp"], "application/vnd.immervision-ivu": ["ivu"], "application/vnd.insors.igm": ["igm"], "application/vnd.intercon.formnet": ["xpw", "xpx"], "application/vnd.intergeo": ["i2g"], "application/vnd.intu.qbo": ["qbo"], "application/vnd.intu.qfx": ["qfx"], "application/vnd.ipunplugged.rcprofile": ["rcprofile"], "application/vnd.irepository.package+xml": ["irp"], "application/vnd.is-xpr": ["xpr"], "application/vnd.isac.fcs": ["fcs"], "application/vnd.jam": ["jam"], "application/vnd.jcp.javame.midlet-rms": ["rms"], "application/vnd.jisp": ["jisp"], "application/vnd.joost.joda-archive": ["joda"], "application/vnd.kahootz": ["ktz", "ktr"], "application/vnd.kde.karbon": ["karbon"], "application/vnd.kde.kchart": ["chrt"], "application/vnd.kde.kformula": ["kfo"], "application/vnd.kde.kivio": ["flw"], "application/vnd.kde.kontour": ["kon"], "application/vnd.kde.kpresenter": ["kpr", "kpt"], "application/vnd.kde.kspread": ["ksp"], "application/vnd.kde.kword": ["kwd", "kwt"], "application/vnd.kenameaapp": ["htke"], "application/vnd.kidspiration": ["kia"], "application/vnd.kinar": ["kne", "knp"], "application/vnd.koan": ["skp", "skd", "skt", "skm"], "application/vnd.kodak-descriptor": ["sse"], "application/vnd.las.las+xml": ["lasxml"], "application/vnd.llamagraphics.life-balance.desktop": ["lbd"], "application/vnd.llamagraphics.life-balance.exchange+xml": ["lbe"], "application/vnd.lotus-1-2-3": ["123"], "application/vnd.lotus-approach": ["apr"], "application/vnd.lotus-freelance": ["pre"], "application/vnd.lotus-notes": ["nsf"], "application/vnd.lotus-organizer": ["org"], "application/vnd.lotus-screencam": ["scm"], "application/vnd.lotus-wordpro": ["lwp"], "application/vnd.macports.portpkg": ["portpkg"], "application/vnd.mcd": ["mcd"], "application/vnd.medcalcdata": ["mc1"], "application/vnd.mediastation.cdkey": ["cdkey"], "application/vnd.mfer": ["mwf"], "application/vnd.mfmp": ["mfm"], "application/vnd.micrografx.flo": ["flo"], "application/vnd.micrografx.igx": ["igx"], "application/vnd.mif": ["mif"], "application/vnd.mobius.daf": ["daf"], "application/vnd.mobius.dis": ["dis"], "application/vnd.mobius.mbk": ["mbk"], "application/vnd.mobius.mqy": ["mqy"], "application/vnd.mobius.msl": ["msl"], "application/vnd.mobius.plc": ["plc"], "application/vnd.mobius.txf": ["txf"], "application/vnd.mophun.application": ["mpn"], "application/vnd.mophun.certificate": ["mpc"], "application/vnd.mozilla.xul+xml": ["xul"], "application/vnd.ms-artgalry": ["cil"], "application/vnd.ms-cab-compressed": ["cab"], "application/vnd.ms-excel": ["xls", "xlm", "xla", "xlc", "xlt", "xlw"], "application/vnd.ms-excel.addin.macroenabled.12": ["xlam"], "application/vnd.ms-excel.sheet.binary.macroenabled.12": ["xlsb"], "application/vnd.ms-excel.sheet.macroenabled.12": ["xlsm"], "application/vnd.ms-excel.template.macroenabled.12": ["xltm"], "application/vnd.ms-fontobject": ["eot"], "application/vnd.ms-htmlhelp": ["chm"], "application/vnd.ms-ims": ["ims"], "application/vnd.ms-lrm": ["lrm"], "application/vnd.ms-officetheme": ["thmx"], "application/vnd.ms-outlook": ["msg"], "application/vnd.ms-pki.seccat": ["cat"], "application/vnd.ms-pki.stl": ["stl"], "application/vnd.ms-powerpoint": ["ppt", "pps", "pot"], "application/vnd.ms-powerpoint.addin.macroenabled.12": ["ppam"], "application/vnd.ms-powerpoint.presentation.macroenabled.12": ["pptm"], "application/vnd.ms-powerpoint.slide.macroenabled.12": ["sldm"], "application/vnd.ms-powerpoint.slideshow.macroenabled.12": ["ppsm"], "application/vnd.ms-powerpoint.template.macroenabled.12": ["potm"], "application/vnd.ms-project": ["mpp", "mpt"], "application/vnd.ms-word.document.macroenabled.12": ["docm"], "application/vnd.ms-word.template.macroenabled.12": ["dotm"], "application/vnd.ms-works": ["wps", "wks", "wcm", "wdb"], "application/vnd.ms-wpl": ["wpl"], "application/vnd.ms-xpsdocument": ["xps"], "application/vnd.mseq": ["mseq"], "application/vnd.musician": ["mus"], "application/vnd.muvee.style": ["msty"], "application/vnd.mynfc": ["taglet"], "application/vnd.neurolanguage.nlu": ["nlu"], "application/vnd.nitf": ["ntf", "nitf"], "application/vnd.noblenet-directory": ["nnd"], "application/vnd.noblenet-sealer": ["nns"], "application/vnd.noblenet-web": ["nnw"], "application/vnd.nokia.n-gage.data": ["ngdat"], "application/vnd.nokia.n-gage.symbian.install": ["n-gage"], "application/vnd.nokia.radio-preset": ["rpst"], "application/vnd.nokia.radio-presets": ["rpss"], "application/vnd.novadigm.edm": ["edm"], "application/vnd.novadigm.edx": ["edx"], "application/vnd.novadigm.ext": ["ext"], "application/vnd.oasis.opendocument.chart": ["odc"], "application/vnd.oasis.opendocument.chart-template": ["otc"], "application/vnd.oasis.opendocument.database": ["odb"], "application/vnd.oasis.opendocument.formula": ["odf"], "application/vnd.oasis.opendocument.formula-template": ["odft"], "application/vnd.oasis.opendocument.graphics": ["odg"], "application/vnd.oasis.opendocument.graphics-template": ["otg"], "application/vnd.oasis.opendocument.image": ["odi"], "application/vnd.oasis.opendocument.image-template": ["oti"], "application/vnd.oasis.opendocument.presentation": ["odp"], "application/vnd.oasis.opendocument.presentation-template": ["otp"], "application/vnd.oasis.opendocument.spreadsheet": ["ods"], "application/vnd.oasis.opendocument.spreadsheet-template": ["ots"], "application/vnd.oasis.opendocument.text": ["odt"], "application/vnd.oasis.opendocument.text-master": ["odm"], "application/vnd.oasis.opendocument.text-template": ["ott"], "application/vnd.oasis.opendocument.text-web": ["oth"], "application/vnd.olpc-sugar": ["xo"], "application/vnd.oma.dd2+xml": ["dd2"], "application/vnd.openofficeorg.extension": ["oxt"], "application/vnd.openxmlformats-officedocument.presentationml.presentation": ["pptx"], "application/vnd.openxmlformats-officedocument.presentationml.slide": ["sldx"], "application/vnd.openxmlformats-officedocument.presentationml.slideshow": ["ppsx"], "application/vnd.openxmlformats-officedocument.presentationml.template": ["potx"], "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": ["xlsx"], "application/vnd.openxmlformats-officedocument.spreadsheetml.template": ["xltx"], "application/vnd.openxmlformats-officedocument.wordprocessingml.document": ["docx"], "application/vnd.openxmlformats-officedocument.wordprocessingml.template": ["dotx"], "application/vnd.osgeo.mapguide.package": ["mgp"], "application/vnd.osgi.dp": ["dp"], "application/vnd.osgi.subsystem": ["esa"], "application/vnd.palm": ["pdb", "pqa", "oprc"], "application/vnd.pawaafile": ["paw"], "application/vnd.pg.format": ["str"], "application/vnd.pg.osasli": ["ei6"], "application/vnd.picsel": ["efif"], "application/vnd.pmi.widget": ["wg"], "application/vnd.pocketlearn": ["plf"], "application/vnd.powerbuilder6": ["pbd"], "application/vnd.previewsystems.box": ["box"], "application/vnd.proteus.magazine": ["mgz"], "application/vnd.publishare-delta-tree": ["qps"], "application/vnd.pvi.ptid1": ["ptid"], "application/vnd.quark.quarkxpress": ["qxd", "qxt", "qwd", "qwt", "qxl", "qxb"], "application/vnd.realvnc.bed": ["bed"], "application/vnd.recordare.musicxml": ["mxl"], "application/vnd.recordare.musicxml+xml": ["musicxml"], "application/vnd.rig.cryptonote": ["cryptonote"], "application/vnd.rim.cod": ["cod"], "application/vnd.rn-realmedia": ["rm"], "application/vnd.rn-realmedia-vbr": ["rmvb"], "application/vnd.route66.link66+xml": ["link66"], "application/vnd.sailingtracker.track": ["st"], "application/vnd.seemail": ["see"], "application/vnd.sema": ["sema"], "application/vnd.semd": ["semd"], "application/vnd.semf": ["semf"], "application/vnd.shana.informed.formdata": ["ifm"], "application/vnd.shana.informed.formtemplate": ["itp"], "application/vnd.shana.informed.interchange": ["iif"], "application/vnd.shana.informed.package": ["ipk"], "application/vnd.simtech-mindmapper": ["twd", "twds"], "application/vnd.smaf": ["mmf"], "application/vnd.smart.teacher": ["teacher"], "application/vnd.solent.sdkm+xml": ["sdkm", "sdkd"], "application/vnd.spotfire.dxp": ["dxp"], "application/vnd.spotfire.sfs": ["sfs"], "application/vnd.stardivision.calc": ["sdc"], "application/vnd.stardivision.draw": ["sda"], "application/vnd.stardivision.impress": ["sdd"], "application/vnd.stardivision.math": ["smf"], "application/vnd.stardivision.writer": ["sdw", "vor"], "application/vnd.stardivision.writer-global": ["sgl"], "application/vnd.stepmania.package": ["smzip"], "application/vnd.stepmania.stepchart": ["sm"], "application/vnd.sun.wadl+xml": ["wadl"], "application/vnd.sun.xml.calc": ["sxc"], "application/vnd.sun.xml.calc.template": ["stc"], "application/vnd.sun.xml.draw": ["sxd"], "application/vnd.sun.xml.draw.template": ["std"], "application/vnd.sun.xml.impress": ["sxi"], "application/vnd.sun.xml.impress.template": ["sti"], "application/vnd.sun.xml.math": ["sxm"], "application/vnd.sun.xml.writer": ["sxw"], "application/vnd.sun.xml.writer.global": ["sxg"], "application/vnd.sun.xml.writer.template": ["stw"], "application/vnd.sus-calendar": ["sus", "susp"], "application/vnd.svd": ["svd"], "application/vnd.symbian.install": ["sis", "sisx"], "application/vnd.syncml+xml": ["xsm"], "application/vnd.syncml.dm+wbxml": ["bdm"], "application/vnd.syncml.dm+xml": ["xdm"], "application/vnd.tao.intent-module-archive": ["tao"], "application/vnd.tcpdump.pcap": ["pcap", "cap", "dmp"], "application/vnd.tmobile-livetv": ["tmo"], "application/vnd.trid.tpt": ["tpt"], "application/vnd.triscape.mxs": ["mxs"], "application/vnd.trueapp": ["tra"], "application/vnd.ufdl": ["ufd", "ufdl"], "application/vnd.uiq.theme": ["utz"], "application/vnd.umajin": ["umj"], "application/vnd.unity": ["unityweb"], "application/vnd.uoml+xml": ["uoml"], "application/vnd.vcx": ["vcx"], "application/vnd.visio": ["vsd", "vst", "vss", "vsw"], "application/vnd.visionary": ["vis"], "application/vnd.vsf": ["vsf"], "application/vnd.wap.wbxml": ["wbxml"], "application/vnd.wap.wmlc": ["wmlc"], "application/vnd.wap.wmlscriptc": ["wmlsc"], "application/vnd.webturbo": ["wtb"], "application/vnd.wolfram.player": ["nbp"], "application/vnd.wordperfect": ["wpd"], "application/vnd.wqd": ["wqd"], "application/vnd.wt.stf": ["stf"], "application/vnd.xara": ["xar"], "application/vnd.xfdl": ["xfdl"], "application/vnd.yamaha.hv-dic": ["hvd"], "application/vnd.yamaha.hv-script": ["hvs"], "application/vnd.yamaha.hv-voice": ["hvp"], "application/vnd.yamaha.openscoreformat": ["osf"], "application/vnd.yamaha.openscoreformat.osfpvg+xml": ["osfpvg"], "application/vnd.yamaha.smaf-audio": ["saf"], "application/vnd.yamaha.smaf-phrase": ["spf"], "application/vnd.yellowriver-custom-menu": ["cmp"], "application/vnd.zul": ["zir", "zirz"], "application/vnd.zzazz.deck+xml": ["zaz"], "application/voicexml+xml": ["vxml"], "application/wasm": ["wasm"], "application/widget": ["wgt"], "application/winhlp": ["hlp"], "application/wsdl+xml": ["wsdl"], "application/wspolicy+xml": ["wspolicy"], "application/x-7z-compressed": ["7z"], "application/x-abiword": ["abw"], "application/x-ace-compressed": ["ace"], "application/x-apple-diskimage": [], "application/x-arj": ["arj"], "application/x-authorware-bin": ["aab", "x32", "u32", "vox"], "application/x-authorware-map": ["aam"], "application/x-authorware-seg": ["aas"], "application/x-bcpio": ["bcpio"], "application/x-bdoc": [], "application/x-bittorrent": ["torrent"], "application/x-blorb": ["blb", "blorb"], "application/x-bzip": ["bz"], "application/x-bzip2": ["bz2", "boz"], "application/x-cbr": ["cbr", "cba", "cbt", "cbz", "cb7"], "application/x-cdlink": ["vcd"], "application/x-cfs-compressed": ["cfs"], "application/x-chat": ["chat"], "application/x-chess-pgn": ["pgn"], "application/x-chrome-extension": ["crx"], "application/x-cocoa": ["cco"], "application/x-conference": ["nsc"], "application/x-cpio": ["cpio"], "application/x-csh": ["csh"], "application/x-debian-package": ["udeb"], "application/x-dgc-compressed": ["dgc"], "application/x-director": ["dir", "dcr", "dxr", "cst", "cct", "cxt", "w3d", "fgd", "swa"], "application/x-doom": ["wad"], "application/x-dtbncx+xml": ["ncx"], "application/x-dtbook+xml": ["dtb"], "application/x-dtbresource+xml": ["res"], "application/x-dvi": ["dvi"], "application/x-envoy": ["evy"], "application/x-eva": ["eva"], "application/x-font-bdf": ["bdf"], "application/x-font-ghostscript": ["gsf"], "application/x-font-linux-psf": ["psf"], "application/x-font-pcf": ["pcf"], "application/x-font-snf": ["snf"], "application/x-font-type1": ["pfa", "pfb", "pfm", "afm"], "application/x-freearc": ["arc"], "application/x-futuresplash": ["spl"], "application/x-gca-compressed": ["gca"], "application/x-glulx": ["ulx"], "application/x-gnumeric": ["gnumeric"], "application/x-gramps-xml": ["gramps"], "application/x-gtar": ["gtar"], "application/x-hdf": ["hdf"], "application/x-httpd-php": ["php"], "application/x-install-instructions": ["install"], "application/x-iso9660-image": [], "application/x-java-archive-diff": ["jardiff"], "application/x-java-jnlp-file": ["jnlp"], "application/x-latex": ["latex"], "application/x-lua-bytecode": ["luac"], "application/x-lzh-compressed": ["lzh", "lha"], "application/x-makeself": ["run"], "application/x-mie": ["mie"], "application/x-mobipocket-ebook": ["prc", "mobi"], "application/x-ms-application": ["application"], "application/x-ms-shortcut": ["lnk"], "application/x-ms-wmd": ["wmd"], "application/x-ms-wmz": ["wmz"], "application/x-ms-xbap": ["xbap"], "application/x-msaccess": ["mdb"], "application/x-msbinder": ["obd"], "application/x-mscardfile": ["crd"], "application/x-msclip": ["clp"], "application/x-msdos-program": [], "application/x-msdownload": ["com", "bat"], "application/x-msmediaview": ["mvb", "m13", "m14"], "application/x-msmetafile": ["wmf", "emf", "emz"], "application/x-msmoney": ["mny"], "application/x-mspublisher": ["pub"], "application/x-msschedule": ["scd"], "application/x-msterminal": ["trm"], "application/x-mswrite": ["wri"], "application/x-netcdf": ["nc", "cdf"], "application/x-ns-proxy-autoconfig": ["pac"], "application/x-nzb": ["nzb"], "application/x-perl": ["pl", "pm"], "application/x-pilot": [], "application/x-pkcs12": ["p12", "pfx"], "application/x-pkcs7-certificates": ["p7b", "spc"], "application/x-pkcs7-certreqresp": ["p7r"], "application/x-rar-compressed": ["rar"], "application/x-redhat-package-manager": ["rpm"], "application/x-research-info-systems": ["ris"], "application/x-sea": ["sea"], "application/x-sh": ["sh"], "application/x-shar": ["shar"], "application/x-shockwave-flash": ["swf"], "application/x-silverlight-app": ["xap"], "application/x-sql": ["sql"], "application/x-stuffit": ["sit"], "application/x-stuffitx": ["sitx"], "application/x-subrip": ["srt"], "application/x-sv4cpio": ["sv4cpio"], "application/x-sv4crc": ["sv4crc"], "application/x-t3vm-image": ["t3"], "application/x-tads": ["gam"], "application/x-tar": ["tar"], "application/x-tcl": ["tcl", "tk"], "application/x-tex": ["tex"], "application/x-tex-tfm": ["tfm"], "application/x-texinfo": ["texinfo", "texi"], "application/x-tgif": ["obj"], "application/x-ustar": ["ustar"], "application/x-virtualbox-hdd": ["hdd"], "application/x-virtualbox-ova": ["ova"], "application/x-virtualbox-ovf": ["ovf"], "application/x-virtualbox-vbox": ["vbox"], "application/x-virtualbox-vbox-extpack": ["vbox-extpack"], "application/x-virtualbox-vdi": ["vdi"], "application/x-virtualbox-vhd": ["vhd"], "application/x-virtualbox-vmdk": ["vmdk"], "application/x-wais-source": ["src"], "application/x-web-app-manifest+json": ["webapp"], "application/x-x509-ca-cert": ["der", "crt", "pem"], "application/x-xfig": ["fig"], "application/x-xliff+xml": ["xlf"], "application/x-xpinstall": ["xpi"], "application/x-xz": ["xz"], "application/x-zmachine": ["z1", "z2", "z3", "z4", "z5", "z6", "z7", "z8"], "application/xaml+xml": ["xaml"], "application/xcap-diff+xml": ["xdf"], "application/xenc+xml": ["xenc"], "application/xhtml+xml": ["xhtml", "xht"], "application/xml": ["xml", "xsl", "xsd", "rng"], "application/xml-dtd": ["dtd"], "application/xop+xml": ["xop"], "application/xproc+xml": ["xpl"], "application/xslt+xml": ["xslt"], "application/xspf+xml": ["xspf"], "application/xv+xml": ["mxml", "xhvml", "xvml", "xvm"], "application/yang": ["yang"], "application/yin+xml": ["yin"], "application/zip": ["zip"], "audio/3gpp": [], "audio/adpcm": ["adp"], "audio/basic": ["au", "snd"], "audio/midi": ["mid", "midi", "kar", "rmi"], "audio/mp3": [], "audio/mp4": ["m4a", "mp4a"], "audio/mpeg": ["mpga", "mp2", "mp2a", "mp3", "m2a", "m3a"], "audio/ogg": ["oga", "ogg", "spx"], "audio/s3m": ["s3m"], "audio/silk": ["sil"], "audio/vnd.dece.audio": ["uva", "uvva"], "audio/vnd.digital-winds": ["eol"], "audio/vnd.dra": ["dra"], "audio/vnd.dts": ["dts"], "audio/vnd.dts.hd": ["dtshd"], "audio/vnd.lucent.voice": ["lvp"], "audio/vnd.ms-playready.media.pya": ["pya"], "audio/vnd.nuera.ecelp4800": ["ecelp4800"], "audio/vnd.nuera.ecelp7470": ["ecelp7470"], "audio/vnd.nuera.ecelp9600": ["ecelp9600"], "audio/vnd.rip": ["rip"], "audio/wav": ["wav"], "audio/wave": [], "audio/webm": ["weba"], "audio/x-aac": ["aac"], "audio/x-aiff": ["aif", "aiff", "aifc"], "audio/x-caf": ["caf"], "audio/x-flac": ["flac"], "audio/x-m4a": [], "audio/x-matroska": ["mka"], "audio/x-mpegurl": ["m3u"], "audio/x-ms-wax": ["wax"], "audio/x-ms-wma": ["wma"], "audio/x-pn-realaudio": ["ram", "ra"], "audio/x-pn-realaudio-plugin": ["rmp"], "audio/x-realaudio": [], "audio/x-wav": [], "audio/xm": ["xm"], "chemical/x-cdx": ["cdx"], "chemical/x-cif": ["cif"], "chemical/x-cmdf": ["cmdf"], "chemical/x-cml": ["cml"], "chemical/x-csml": ["csml"], "chemical/x-xyz": ["xyz"], "font/collection": ["ttc"], "font/otf": ["otf"], "font/ttf": ["ttf"], "font/woff": ["woff"], "font/woff2": ["woff2"], "image/apng": ["apng"], "image/bmp": ["bmp"], "image/cgm": ["cgm"], "image/g3fax": ["g3"], "image/gif": ["gif"], "image/ief": ["ief"], "image/jp2": ["jp2", "jpg2"], "image/jpeg": ["jpeg", "jpg", "jpe"], "image/jpm": ["jpm"], "image/jpx": ["jpx", "jpf"], "image/ktx": ["ktx"], "image/png": ["png"], "image/prs.btif": ["btif"], "image/sgi": ["sgi"], "image/svg+xml": ["svg", "svgz"], "image/tiff": ["tiff", "tif"], "image/vnd.adobe.photoshop": ["psd"], "image/vnd.dece.graphic": ["uvi", "uvvi", "uvg", "uvvg"], "image/vnd.djvu": ["djvu", "djv"], "image/vnd.dvb.subtitle": [], "image/vnd.dwg": ["dwg"], "image/vnd.dxf": ["dxf"], "image/vnd.fastbidsheet": ["fbs"], "image/vnd.fpx": ["fpx"], "image/vnd.fst": ["fst"], "image/vnd.fujixerox.edmics-mmr": ["mmr"], "image/vnd.fujixerox.edmics-rlc": ["rlc"], "image/vnd.ms-modi": ["mdi"], "image/vnd.ms-photo": ["wdp"], "image/vnd.net-fpx": ["npx"], "image/vnd.wap.wbmp": ["wbmp"], "image/vnd.xiff": ["xif"], "image/webp": ["webp"], "image/x-3ds": ["3ds"], "image/x-cmu-raster": ["ras"], "image/x-cmx": ["cmx"], "image/x-freehand": ["fh", "fhc", "fh4", "fh5", "fh7"], "image/x-icon": ["ico"], "image/x-jng": ["jng"], "image/x-mrsid-image": ["sid"], "image/x-ms-bmp": [], "image/x-pcx": ["pcx"], "image/x-pict": ["pic", "pct"], "image/x-portable-anymap": ["pnm"], "image/x-portable-bitmap": ["pbm"], "image/x-portable-graymap": ["pgm"], "image/x-portable-pixmap": ["ppm"], "image/x-rgb": ["rgb"], "image/x-tga": ["tga"], "image/x-xbitmap": ["xbm"], "image/x-xpixmap": ["xpm"], "image/x-xwindowdump": ["xwd"], "message/rfc822": ["eml", "mime"], "model/gltf+json": ["gltf"], "model/gltf-binary": ["glb"], "model/iges": ["igs", "iges"], "model/mesh": ["msh", "mesh", "silo"], "model/vnd.collada+xml": ["dae"], "model/vnd.dwf": ["dwf"], "model/vnd.gdl": ["gdl"], "model/vnd.gtw": ["gtw"], "model/vnd.mts": ["mts"], "model/vnd.vtu": ["vtu"], "model/vrml": ["wrl", "vrml"], "model/x3d+binary": ["x3db", "x3dbz"], "model/x3d+vrml": ["x3dv", "x3dvz"], "model/x3d+xml": ["x3d", "x3dz"], "text/cache-manifest": ["appcache", "manifest"], "text/calendar": ["ics", "ifb"], "text/coffeescript": ["coffee", "litcoffee"], "text/css": ["css"], "text/csv": ["csv"], "text/hjson": ["hjson"], "text/html": ["html", "htm", "shtml"], "text/jade": ["jade"], "text/jsx": ["jsx"], "text/less": ["less"], "text/markdown": ["markdown", "md"], "text/mathml": ["mml"], "text/n3": ["n3"], "text/plain": ["txt", "text", "conf", "def", "list", "log", "in", "ini"], "text/prs.lines.tag": ["dsc"], "text/richtext": ["rtx"], "text/rtf": [], "text/sgml": ["sgml", "sgm"], "text/slim": ["slim", "slm"], "text/stylus": ["stylus", "styl"], "text/tab-separated-values": ["tsv"], "text/troff": ["t", "tr", "roff", "man", "me", "ms"], "text/turtle": ["ttl"], "text/uri-list": ["uri", "uris", "urls"], "text/vcard": ["vcard"], "text/vnd.curl": ["curl"], "text/vnd.curl.dcurl": ["dcurl"], "text/vnd.curl.mcurl": ["mcurl"], "text/vnd.curl.scurl": ["scurl"], "text/vnd.dvb.subtitle": ["sub"], "text/vnd.fly": ["fly"], "text/vnd.fmi.flexstor": ["flx"], "text/vnd.graphviz": ["gv"], "text/vnd.in3d.3dml": ["3dml"], "text/vnd.in3d.spot": ["spot"], "text/vnd.sun.j2me.app-descriptor": ["jad"], "text/vnd.wap.wml": ["wml"], "text/vnd.wap.wmlscript": ["wmls"], "text/vtt": ["vtt"], "text/x-asm": ["s", "asm"], "text/x-c": ["c", "cc", "cxx", "cpp", "h", "hh", "dic"], "text/x-component": ["htc"], "text/x-fortran": ["f", "for", "f77", "f90"], "text/x-handlebars-template": ["hbs"], "text/x-java-source": ["java"], "text/x-lua": ["lua"], "text/x-markdown": ["mkd"], "text/x-nfo": ["nfo"], "text/x-opml": ["opml"], "text/x-org": [], "text/x-pascal": ["p", "pas"], "text/x-processing": ["pde"], "text/x-sass": ["sass"], "text/x-scss": ["scss"], "text/x-setext": ["etx"], "text/x-sfv": ["sfv"], "text/x-suse-ymp": ["ymp"], "text/x-uuencode": ["uu"], "text/x-vcalendar": ["vcs"], "text/x-vcard": ["vcf"], "text/xml": [], "text/yaml": ["yaml", "yml"], "video/3gpp": ["3gp", "3gpp"], "video/3gpp2": ["3g2"], "video/h261": ["h261"], "video/h263": ["h263"], "video/h264": ["h264"], "video/jpeg": ["jpgv"], "video/jpm": ["jpgm"], "video/mj2": ["mj2", "mjp2"], "video/mp2t": ["ts"], "video/mp4": ["mp4", "mp4v", "mpg4"], "video/mpeg": ["mpeg", "mpg", "mpe", "m1v", "m2v"], "video/ogg": ["ogv"], "video/quicktime": ["qt", "mov"], "video/vnd.dece.hd": ["uvh", "uvvh"], "video/vnd.dece.mobile": ["uvm", "uvvm"], "video/vnd.dece.pd": ["uvp", "uvvp"], "video/vnd.dece.sd": ["uvs", "uvvs"], "video/vnd.dece.video": ["uvv", "uvvv"], "video/vnd.dvb.file": ["dvb"], "video/vnd.fvt": ["fvt"], "video/vnd.mpegurl": ["mxu", "m4u"], "video/vnd.ms-playready.media.pyv": ["pyv"], "video/vnd.uvvu.mp4": ["uvu", "uvvu"], "video/vnd.vivo": ["viv"], "video/webm": ["webm"], "video/x-f4v": ["f4v"], "video/x-fli": ["fli"], "video/x-flv": ["flv"], "video/x-m4v": ["m4v"], "video/x-matroska": ["mkv", "mk3d", "mks"], "video/x-mng": ["mng"], "video/x-ms-asf": ["asf", "asx"], "video/x-ms-vob": ["vob"], "video/x-ms-wm": ["wm"], "video/x-ms-wmv": ["wmv"], "video/x-ms-wmx": ["wmx"], "video/x-ms-wvx": ["wvx"], "video/x-msvideo": ["avi"], "video/x-sgi-movie": ["movie"], "video/x-smv": ["smv"], "x-conference/x-cooltalk": ["ice"] };
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/mime/mime.js
+// ../../server/node_modules/mime/mime.js
 var require_mime = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/mime/mime.js"(exports2, module2) {
+  "../../server/node_modules/mime/mime.js"(exports2, module2) {
     var path6 = require("path");
     var fs6 = require("fs");
     function Mime() {
@@ -19360,9 +19359,9 @@ var require_mime = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/send/node_modules/ms/index.js
+// ../../server/node_modules/send/node_modules/ms/index.js
 var require_ms2 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/send/node_modules/ms/index.js"(exports2, module2) {
+  "../../server/node_modules/send/node_modules/ms/index.js"(exports2, module2) {
     var s = 1e3;
     var m = s * 60;
     var h = m * 60;
@@ -19476,9 +19475,9 @@ var require_ms2 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/range-parser/index.js
+// ../../server/node_modules/range-parser/index.js
 var require_range_parser = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/range-parser/index.js"(exports2, module2) {
+  "../../server/node_modules/range-parser/index.js"(exports2, module2) {
     "use strict";
     module2.exports = rangeParser;
     function rangeParser(size, str4, options) {
@@ -19557,9 +19556,9 @@ var require_range_parser = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/send/index.js
+// ../../server/node_modules/send/index.js
 var require_send = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/send/index.js"(exports2, module2) {
+  "../../server/node_modules/send/index.js"(exports2, module2) {
     "use strict";
     var createError = require_http_errors();
     var debug = require_src()("send");
@@ -20093,18 +20092,18 @@ var require_send = __commonJS({
       return list;
     }
     function setHeaders(res2, headers) {
-      var keys = Object.keys(headers);
-      for (var i = 0; i < keys.length; i++) {
-        var key = keys[i];
+      var keys2 = Object.keys(headers);
+      for (var i = 0; i < keys2.length; i++) {
+        var key = keys2[i];
         res2.setHeader(key, headers[key]);
       }
     }
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/forwarded/index.js
+// ../../server/node_modules/forwarded/index.js
 var require_forwarded = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/forwarded/index.js"(exports2, module2) {
+  "../../server/node_modules/forwarded/index.js"(exports2, module2) {
     "use strict";
     module2.exports = forwarded;
     function forwarded(req) {
@@ -20149,9 +20148,9 @@ var require_forwarded = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/ipaddr.js/lib/ipaddr.js
+// ../../server/node_modules/ipaddr.js/lib/ipaddr.js
 var require_ipaddr = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/ipaddr.js/lib/ipaddr.js"(exports2, module2) {
+  "../../server/node_modules/ipaddr.js/lib/ipaddr.js"(exports2, module2) {
     (function() {
       var expandIPv6, ipaddr, ipv4Part, ipv4Regexes, ipv6Part, ipv6Regexes, matchCIDR, root, zoneIndex;
       ipaddr = {};
@@ -20771,9 +20770,9 @@ var require_ipaddr = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/proxy-addr/index.js
+// ../../server/node_modules/proxy-addr/index.js
 var require_proxy_addr = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/proxy-addr/index.js"(exports2, module2) {
+  "../../server/node_modules/proxy-addr/index.js"(exports2, module2) {
     "use strict";
     module2.exports = proxyaddr;
     module2.exports.all = alladdrs;
@@ -20930,9 +20929,9 @@ var require_proxy_addr = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/express/lib/utils.js
+// ../../server/node_modules/express/lib/utils.js
 var require_utils2 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/express/lib/utils.js"(exports2) {
+  "../../server/node_modules/express/lib/utils.js"(exports2) {
     "use strict";
     var Buffer3 = require_safe_buffer().Buffer;
     var contentDisposition = require_content_disposition();
@@ -21068,12 +21067,12 @@ var require_utils2 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/express/lib/application.js
+// ../../server/node_modules/express/lib/application.js
 var require_application = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/express/lib/application.js"(exports2, module2) {
+  "../../server/node_modules/express/lib/application.js"(exports2, module2) {
     "use strict";
     var finalhandler = require_finalhandler();
-    var Router19 = require_router();
+    var Router20 = require_router();
     var methods = require_methods();
     var middleware = require_init();
     var query = require_query();
@@ -21138,7 +21137,7 @@ var require_application = __commonJS({
     };
     app2.lazyrouter = function lazyrouter() {
       if (!this._router) {
-        this._router = new Router19({
+        this._router = new Router20({
           caseSensitive: this.enabled("case sensitive routing"),
           strict: this.enabled("strict routing")
         });
@@ -21287,7 +21286,7 @@ var require_application = __commonJS({
     };
     app2.del = deprecate.function(app2.delete, "app.del: Use app.delete instead");
     app2.render = function render(name, options, callback) {
-      var cache = this.cache;
+      var cache2 = this.cache;
       var done = callback;
       var engines = this.engines;
       var opts = options;
@@ -21306,7 +21305,7 @@ var require_application = __commonJS({
         renderOptions.cache = this.enabled("view cache");
       }
       if (renderOptions.cache) {
-        view = cache[name];
+        view = cache2[name];
       }
       if (!view) {
         var View2 = this.get("view");
@@ -21322,7 +21321,7 @@ var require_application = __commonJS({
           return done(err);
         }
         if (renderOptions.cache) {
-          cache[name] = view;
+          cache2[name] = view;
         }
       }
       tryRender(view, renderOptions, done);
@@ -21344,9 +21343,9 @@ var require_application = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/negotiator/lib/charset.js
+// ../../server/node_modules/negotiator/lib/charset.js
 var require_charset = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/negotiator/lib/charset.js"(exports2, module2) {
+  "../../server/node_modules/negotiator/lib/charset.js"(exports2, module2) {
     "use strict";
     module2.exports = preferredCharsets;
     module2.exports.preferredCharsets = preferredCharsets;
@@ -21431,9 +21430,9 @@ var require_charset = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/negotiator/lib/encoding.js
+// ../../server/node_modules/negotiator/lib/encoding.js
 var require_encoding = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/negotiator/lib/encoding.js"(exports2, module2) {
+  "../../server/node_modules/negotiator/lib/encoding.js"(exports2, module2) {
     "use strict";
     module2.exports = preferredEncodings;
     module2.exports.preferredEncodings = preferredEncodings;
@@ -21529,9 +21528,9 @@ var require_encoding = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/negotiator/lib/language.js
+// ../../server/node_modules/negotiator/lib/language.js
 var require_language = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/negotiator/lib/language.js"(exports2, module2) {
+  "../../server/node_modules/negotiator/lib/language.js"(exports2, module2) {
     "use strict";
     module2.exports = preferredLanguages;
     module2.exports.preferredLanguages = preferredLanguages;
@@ -21624,9 +21623,9 @@ var require_language = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/negotiator/lib/mediaType.js
+// ../../server/node_modules/negotiator/lib/mediaType.js
 var require_mediaType = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/negotiator/lib/mediaType.js"(exports2, module2) {
+  "../../server/node_modules/negotiator/lib/mediaType.js"(exports2, module2) {
     "use strict";
     module2.exports = preferredMediaTypes;
     module2.exports.preferredMediaTypes = preferredMediaTypes;
@@ -21697,9 +21696,9 @@ var require_mediaType = __commonJS({
       } else if (spec.subtype != "*") {
         return null;
       }
-      var keys = Object.keys(spec.params);
-      if (keys.length > 0) {
-        if (keys.every(function(k) {
+      var keys2 = Object.keys(spec.params);
+      if (keys2.length > 0) {
+        if (keys2.every(function(k) {
           return spec.params[k] == "*" || (spec.params[k] || "").toLowerCase() == (p.params[k] || "").toLowerCase();
         })) {
           s |= 1;
@@ -21786,9 +21785,9 @@ var require_mediaType = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/negotiator/index.js
+// ../../server/node_modules/negotiator/index.js
 var require_negotiator = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/negotiator/index.js"(exports2, module2) {
+  "../../server/node_modules/negotiator/index.js"(exports2, module2) {
     "use strict";
     var preferredCharsets = require_charset();
     var preferredEncodings = require_encoding();
@@ -21841,9 +21840,9 @@ var require_negotiator = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/accepts/index.js
+// ../../server/node_modules/accepts/index.js
 var require_accepts = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/accepts/index.js"(exports2, module2) {
+  "../../server/node_modules/accepts/index.js"(exports2, module2) {
     "use strict";
     var Negotiator = require_negotiator();
     var mime = require_mime_types();
@@ -21922,9 +21921,9 @@ var require_accepts = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/express/lib/request.js
+// ../../server/node_modules/express/lib/request.js
 var require_request = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/express/lib/request.js"(exports2, module2) {
+  "../../server/node_modules/express/lib/request.js"(exports2, module2) {
     "use strict";
     var accepts = require_accepts();
     var deprecate = require_depd()("express");
@@ -22086,9 +22085,9 @@ var require_request = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/cookie-signature/index.js
+// ../../server/node_modules/cookie-signature/index.js
 var require_cookie_signature = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/cookie-signature/index.js"(exports2) {
+  "../../server/node_modules/cookie-signature/index.js"(exports2) {
     var crypto10 = require("crypto");
     exports2.sign = function(val, secret2) {
       if ("string" !== typeof val) throw new TypeError("Cookie value must be provided as a string.");
@@ -22107,9 +22106,9 @@ var require_cookie_signature = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/cookie/index.js
+// ../../server/node_modules/cookie/index.js
 var require_cookie = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/cookie/index.js"(exports2) {
+  "../../server/node_modules/cookie/index.js"(exports2) {
     "use strict";
     exports2.parse = parse2;
     exports2.serialize = serialize;
@@ -22273,9 +22272,9 @@ var require_cookie = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/vary/index.js
+// ../../server/node_modules/vary/index.js
 var require_vary = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/vary/index.js"(exports2, module2) {
+  "../../server/node_modules/vary/index.js"(exports2, module2) {
     "use strict";
     module2.exports = vary;
     module2.exports.append = append;
@@ -22346,9 +22345,9 @@ var require_vary = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/express/lib/response.js
+// ../../server/node_modules/express/lib/response.js
 var require_response = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/express/lib/response.js"(exports2, module2) {
+  "../../server/node_modules/express/lib/response.js"(exports2, module2) {
     "use strict";
     var Buffer3 = require_safe_buffer().Buffer;
     var contentDisposition = require_content_disposition();
@@ -22618,9 +22617,9 @@ var require_response = __commonJS({
         "Content-Disposition": contentDisposition(name || path7)
       };
       if (opts && opts.headers) {
-        var keys = Object.keys(opts.headers);
-        for (var i = 0; i < keys.length; i++) {
-          var key = keys[i];
+        var keys2 = Object.keys(opts.headers);
+        for (var i = 0; i < keys2.length; i++) {
+          var key = keys2[i];
           if (key.toLowerCase() !== "content-disposition") {
             headers[key] = opts.headers[key];
           }
@@ -22638,10 +22637,10 @@ var require_response = __commonJS({
     res2.format = function(obj) {
       var req = this.req;
       var next = req.next;
-      var keys = Object.keys(obj).filter(function(v) {
+      var keys2 = Object.keys(obj).filter(function(v) {
         return v !== "default";
       });
-      var key = keys.length > 0 ? req.accepts(keys) : false;
+      var key = keys2.length > 0 ? req.accepts(keys2) : false;
       this.vary("Accept");
       if (key) {
         this.set("Content-Type", normalizeType(key).value);
@@ -22650,7 +22649,7 @@ var require_response = __commonJS({
         obj.default(req, this, next);
       } else {
         next(createError(406, {
-          types: normalizeTypes(keys).map(function(o) {
+          types: normalizeTypes(keys2).map(function(o) {
             return o.value;
           })
         }));
@@ -22856,9 +22855,9 @@ var require_response = __commonJS({
       if (options.headers) {
         file.on("headers", function headers(res4) {
           var obj = options.headers;
-          var keys = Object.keys(obj);
-          for (var i = 0; i < keys.length; i++) {
-            var k = keys[i];
+          var keys2 = Object.keys(obj);
+          for (var i = 0; i < keys2.length; i++) {
+            var k = keys2[i];
             res4.setHeader(k, obj[k]);
           }
         });
@@ -22886,9 +22885,9 @@ var require_response = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/serve-static/index.js
+// ../../server/node_modules/serve-static/index.js
 var require_serve_static = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/serve-static/index.js"(exports2, module2) {
+  "../../server/node_modules/serve-static/index.js"(exports2, module2) {
     "use strict";
     var encodeUrl = require_encodeurl();
     var escapeHtml = require_escape_html();
@@ -22991,16 +22990,16 @@ var require_serve_static = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/express/lib/express.js
+// ../../server/node_modules/express/lib/express.js
 var require_express = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/express/lib/express.js"(exports2, module2) {
+  "../../server/node_modules/express/lib/express.js"(exports2, module2) {
     "use strict";
     var bodyParser = require_body_parser();
     var EventEmitter = require("events").EventEmitter;
     var mixin = require_merge_descriptors();
     var proto = require_application();
     var Route = require_route();
-    var Router19 = require_router();
+    var Router20 = require_router();
     var req = require_request();
     var res2 = require_response();
     exports2 = module2.exports = createApplication;
@@ -23023,7 +23022,7 @@ var require_express = __commonJS({
     exports2.request = req;
     exports2.response = res2;
     exports2.Route = Route;
-    exports2.Router = Router19;
+    exports2.Router = Router20;
     exports2.json = bodyParser.json;
     exports2.query = require_query();
     exports2.raw = bodyParser.raw;
@@ -23060,17 +23059,17 @@ var require_express = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/express/index.js
+// ../../server/node_modules/express/index.js
 var require_express2 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/express/index.js"(exports2, module2) {
+  "../../server/node_modules/express/index.js"(exports2, module2) {
     "use strict";
     module2.exports = require_express();
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/ip-address/dist/address-error.js
+// ../../server/node_modules/ip-address/dist/address-error.js
 var require_address_error = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/ip-address/dist/address-error.js"(exports2) {
+  "../../server/node_modules/ip-address/dist/address-error.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.AddressError = void 0;
@@ -23085,9 +23084,9 @@ var require_address_error = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/ip-address/dist/common.js
+// ../../server/node_modules/ip-address/dist/common.js
 var require_common = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/ip-address/dist/common.js"(exports2) {
+  "../../server/node_modules/ip-address/dist/common.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.isInSubnet = isInSubnet;
@@ -23148,9 +23147,9 @@ var require_common = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/ip-address/dist/v4/constants.js
+// ../../server/node_modules/ip-address/dist/v4/constants.js
 var require_constants = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/ip-address/dist/v4/constants.js"(exports2) {
+  "../../server/node_modules/ip-address/dist/v4/constants.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.RE_SUBNET_STRING = exports2.RE_ADDRESS = exports2.GROUPS = exports2.BITS = void 0;
@@ -23161,9 +23160,9 @@ var require_constants = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/ip-address/dist/ipv4.js
+// ../../server/node_modules/ip-address/dist/ipv4.js
 var require_ipv4 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/ip-address/dist/ipv4.js"(exports2) {
+  "../../server/node_modules/ip-address/dist/ipv4.js"(exports2) {
     "use strict";
     var __createBinding = exports2 && exports2.__createBinding || (Object.create ? function(o, m, k, k2) {
       if (k2 === void 0) k2 = k;
@@ -23632,9 +23631,9 @@ var require_ipv4 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/ip-address/dist/v6/constants.js
+// ../../server/node_modules/ip-address/dist/v6/constants.js
 var require_constants2 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/ip-address/dist/v6/constants.js"(exports2) {
+  "../../server/node_modules/ip-address/dist/v6/constants.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.RE_URL_WITH_PORT = exports2.RE_URL = exports2.RE_ZONE_STRING = exports2.RE_SUBNET_STRING = exports2.RE_BAD_ADDRESS = exports2.RE_BAD_CHARACTERS = exports2.TYPES = exports2.SCOPES = exports2.GROUPS = exports2.BITS = void 0;
@@ -23688,9 +23687,9 @@ var require_constants2 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/ip-address/dist/v6/helpers.js
+// ../../server/node_modules/ip-address/dist/v6/helpers.js
 var require_helpers = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/ip-address/dist/v6/helpers.js"(exports2) {
+  "../../server/node_modules/ip-address/dist/v6/helpers.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.escapeHtml = escapeHtml;
@@ -23727,9 +23726,9 @@ var require_helpers = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/ip-address/dist/v6/regular-expressions.js
+// ../../server/node_modules/ip-address/dist/v6/regular-expressions.js
 var require_regular_expressions = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/ip-address/dist/v6/regular-expressions.js"(exports2) {
+  "../../server/node_modules/ip-address/dist/v6/regular-expressions.js"(exports2) {
     "use strict";
     var __createBinding = exports2 && exports2.__createBinding || (Object.create ? function(o, m, k, k2) {
       if (k2 === void 0) k2 = k;
@@ -23819,9 +23818,9 @@ var require_regular_expressions = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/ip-address/dist/ipv6.js
+// ../../server/node_modules/ip-address/dist/ipv6.js
 var require_ipv6 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/ip-address/dist/ipv6.js"(exports2) {
+  "../../server/node_modules/ip-address/dist/ipv6.js"(exports2) {
     "use strict";
     var __createBinding = exports2 && exports2.__createBinding || (Object.create ? function(o, m, k, k2) {
       if (k2 === void 0) k2 = k;
@@ -24936,9 +24935,9 @@ var require_ipv6 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/ip-address/dist/ip-address.js
+// ../../server/node_modules/ip-address/dist/ip-address.js
 var require_ip_address = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/ip-address/dist/ip-address.js"(exports2) {
+  "../../server/node_modules/ip-address/dist/ip-address.js"(exports2) {
     "use strict";
     var __createBinding = exports2 && exports2.__createBinding || (Object.create ? function(o, m, k, k2) {
       if (k2 === void 0) k2 = k;
@@ -24986,9 +24985,9 @@ var require_ip_address = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/express-rate-limit/node_modules/ms/index.js
+// ../../server/node_modules/express-rate-limit/node_modules/ms/index.js
 var require_ms3 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/express-rate-limit/node_modules/ms/index.js"(exports2, module2) {
+  "../../server/node_modules/express-rate-limit/node_modules/ms/index.js"(exports2, module2) {
     var s = 1e3;
     var m = s * 60;
     var h = m * 60;
@@ -25102,9 +25101,9 @@ var require_ms3 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/express-rate-limit/node_modules/debug/src/common.js
+// ../../server/node_modules/express-rate-limit/node_modules/debug/src/common.js
 var require_common2 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/express-rate-limit/node_modules/debug/src/common.js"(exports2, module2) {
+  "../../server/node_modules/express-rate-limit/node_modules/debug/src/common.js"(exports2, module2) {
     function setup(env) {
       createDebug.debug = createDebug;
       createDebug.default = createDebug;
@@ -25279,9 +25278,9 @@ var require_common2 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/express-rate-limit/node_modules/debug/src/browser.js
+// ../../server/node_modules/express-rate-limit/node_modules/debug/src/browser.js
 var require_browser2 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/express-rate-limit/node_modules/debug/src/browser.js"(exports2, module2) {
+  "../../server/node_modules/express-rate-limit/node_modules/debug/src/browser.js"(exports2, module2) {
     exports2.formatArgs = formatArgs;
     exports2.save = save;
     exports2.load = load;
@@ -25449,9 +25448,9 @@ var require_browser2 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/node_modules/has-flag/index.js
+// ../../node_modules/has-flag/index.js
 var require_has_flag = __commonJS({
-  "E:/claudeprojects/immersival/node_modules/has-flag/index.js"(exports2, module2) {
+  "../../node_modules/has-flag/index.js"(exports2, module2) {
     "use strict";
     module2.exports = (flag, argv = process.argv) => {
       const prefix = flag.startsWith("-") ? "" : flag.length === 1 ? "-" : "--";
@@ -25462,9 +25461,9 @@ var require_has_flag = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/node_modules/supports-color/index.js
+// ../../node_modules/supports-color/index.js
 var require_supports_color = __commonJS({
-  "E:/claudeprojects/immersival/node_modules/supports-color/index.js"(exports2, module2) {
+  "../../node_modules/supports-color/index.js"(exports2, module2) {
     "use strict";
     var os3 = require("os");
     var tty = require("tty");
@@ -25564,9 +25563,9 @@ var require_supports_color = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/express-rate-limit/node_modules/debug/src/node.js
+// ../../server/node_modules/express-rate-limit/node_modules/debug/src/node.js
 var require_node2 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/express-rate-limit/node_modules/debug/src/node.js"(exports2, module2) {
+  "../../server/node_modules/express-rate-limit/node_modules/debug/src/node.js"(exports2, module2) {
     var tty = require("tty");
     var util = require("util");
     exports2.init = init;
@@ -25720,9 +25719,9 @@ var require_node2 = __commonJS({
     }
     function init(debug) {
       debug.inspectOpts = {};
-      const keys = Object.keys(exports2.inspectOpts);
-      for (let i = 0; i < keys.length; i++) {
-        debug.inspectOpts[keys[i]] = exports2.inspectOpts[keys[i]];
+      const keys2 = Object.keys(exports2.inspectOpts);
+      for (let i = 0; i < keys2.length; i++) {
+        debug.inspectOpts[keys2[i]] = exports2.inspectOpts[keys2[i]];
       }
     }
     module2.exports = require_common2()(exports2);
@@ -25738,9 +25737,9 @@ var require_node2 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/express-rate-limit/node_modules/debug/src/index.js
+// ../../server/node_modules/express-rate-limit/node_modules/debug/src/index.js
 var require_src2 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/express-rate-limit/node_modules/debug/src/index.js"(exports2, module2) {
+  "../../server/node_modules/express-rate-limit/node_modules/debug/src/index.js"(exports2, module2) {
     if (typeof process === "undefined" || process.type === "renderer" || process.browser === true || process.__nwjs) {
       module2.exports = require_browser2();
     } else {
@@ -25757,15 +25756,14 @@ __export(db_exports, {
 var import_client, prisma;
 var init_db = __esm({
   "server/src/public-site/db.ts"() {
-    "use strict";
     import_client = require("@prisma/client");
     prisma = new import_client.PrismaClient({ log: ["error"] });
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/jws/lib/data-stream.js
+// ../../server/node_modules/jws/lib/data-stream.js
 var require_data_stream = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/jws/lib/data-stream.js"(exports2, module2) {
+  "../../server/node_modules/jws/lib/data-stream.js"(exports2, module2) {
     var Buffer3 = require_safe_buffer().Buffer;
     var Stream2 = require("stream");
     var util = require("util");
@@ -25811,9 +25809,9 @@ var require_data_stream = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/ecdsa-sig-formatter/src/param-bytes-for-alg.js
+// ../../server/node_modules/ecdsa-sig-formatter/src/param-bytes-for-alg.js
 var require_param_bytes_for_alg = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/ecdsa-sig-formatter/src/param-bytes-for-alg.js"(exports2, module2) {
+  "../../server/node_modules/ecdsa-sig-formatter/src/param-bytes-for-alg.js"(exports2, module2) {
     "use strict";
     function getParamSize(keySize) {
       var result2 = (keySize / 8 | 0) + (keySize % 8 === 0 ? 0 : 1);
@@ -25835,9 +25833,9 @@ var require_param_bytes_for_alg = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/ecdsa-sig-formatter/src/ecdsa-sig-formatter.js
+// ../../server/node_modules/ecdsa-sig-formatter/src/ecdsa-sig-formatter.js
 var require_ecdsa_sig_formatter = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/ecdsa-sig-formatter/src/ecdsa-sig-formatter.js"(exports2, module2) {
+  "../../server/node_modules/ecdsa-sig-formatter/src/ecdsa-sig-formatter.js"(exports2, module2) {
     "use strict";
     var Buffer3 = require_safe_buffer().Buffer;
     var getParamBytesForAlg = require_param_bytes_for_alg();
@@ -25975,9 +25973,9 @@ var require_ecdsa_sig_formatter = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/buffer-equal-constant-time/index.js
+// ../../server/node_modules/buffer-equal-constant-time/index.js
 var require_buffer_equal_constant_time = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/buffer-equal-constant-time/index.js"(exports2, module2) {
+  "../../server/node_modules/buffer-equal-constant-time/index.js"(exports2, module2) {
     "use strict";
     var Buffer3 = require("buffer").Buffer;
     var SlowBuffer = require("buffer").SlowBuffer;
@@ -26009,9 +26007,9 @@ var require_buffer_equal_constant_time = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/jwa/index.js
+// ../../server/node_modules/jwa/index.js
 var require_jwa = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/jwa/index.js"(exports2, module2) {
+  "../../server/node_modules/jwa/index.js"(exports2, module2) {
     var Buffer3 = require_safe_buffer().Buffer;
     var crypto10 = require("crypto");
     var formatEcdsa = require_ecdsa_sig_formatter();
@@ -26233,9 +26231,9 @@ var require_jwa = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/jws/lib/tostring.js
+// ../../server/node_modules/jws/lib/tostring.js
 var require_tostring = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/jws/lib/tostring.js"(exports2, module2) {
+  "../../server/node_modules/jws/lib/tostring.js"(exports2, module2) {
     var Buffer3 = require("buffer").Buffer;
     module2.exports = function toString(obj) {
       if (typeof obj === "string")
@@ -26247,9 +26245,9 @@ var require_tostring = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/jws/lib/sign-stream.js
+// ../../server/node_modules/jws/lib/sign-stream.js
 var require_sign_stream = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/jws/lib/sign-stream.js"(exports2, module2) {
+  "../../server/node_modules/jws/lib/sign-stream.js"(exports2, module2) {
     var Buffer3 = require_safe_buffer().Buffer;
     var DataStream = require_data_stream();
     var jwa = require_jwa();
@@ -26322,9 +26320,9 @@ var require_sign_stream = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/jws/lib/verify-stream.js
+// ../../server/node_modules/jws/lib/verify-stream.js
 var require_verify_stream = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/jws/lib/verify-stream.js"(exports2, module2) {
+  "../../server/node_modules/jws/lib/verify-stream.js"(exports2, module2) {
     var Buffer3 = require_safe_buffer().Buffer;
     var DataStream = require_data_stream();
     var jwa = require_jwa();
@@ -26437,9 +26435,9 @@ var require_verify_stream = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/jws/index.js
+// ../../server/node_modules/jws/index.js
 var require_jws = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/jws/index.js"(exports2) {
+  "../../server/node_modules/jws/index.js"(exports2) {
     var SignStream = require_sign_stream();
     var VerifyStream = require_verify_stream();
     var ALGORITHMS = [
@@ -26470,9 +26468,9 @@ var require_jws = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/jsonwebtoken/decode.js
+// ../../server/node_modules/jsonwebtoken/decode.js
 var require_decode = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/jsonwebtoken/decode.js"(exports2, module2) {
+  "../../server/node_modules/jsonwebtoken/decode.js"(exports2, module2) {
     var jws = require_jws();
     module2.exports = function(jwt3, options) {
       options = options || {};
@@ -26502,9 +26500,9 @@ var require_decode = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/jsonwebtoken/lib/JsonWebTokenError.js
+// ../../server/node_modules/jsonwebtoken/lib/JsonWebTokenError.js
 var require_JsonWebTokenError = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/jsonwebtoken/lib/JsonWebTokenError.js"(exports2, module2) {
+  "../../server/node_modules/jsonwebtoken/lib/JsonWebTokenError.js"(exports2, module2) {
     var JsonWebTokenError = function(message, error) {
       Error.call(this, message);
       if (Error.captureStackTrace) {
@@ -26520,9 +26518,9 @@ var require_JsonWebTokenError = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/jsonwebtoken/lib/NotBeforeError.js
+// ../../server/node_modules/jsonwebtoken/lib/NotBeforeError.js
 var require_NotBeforeError = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/jsonwebtoken/lib/NotBeforeError.js"(exports2, module2) {
+  "../../server/node_modules/jsonwebtoken/lib/NotBeforeError.js"(exports2, module2) {
     var JsonWebTokenError = require_JsonWebTokenError();
     var NotBeforeError = function(message, date) {
       JsonWebTokenError.call(this, message);
@@ -26535,9 +26533,9 @@ var require_NotBeforeError = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/jsonwebtoken/lib/TokenExpiredError.js
+// ../../server/node_modules/jsonwebtoken/lib/TokenExpiredError.js
 var require_TokenExpiredError = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/jsonwebtoken/lib/TokenExpiredError.js"(exports2, module2) {
+  "../../server/node_modules/jsonwebtoken/lib/TokenExpiredError.js"(exports2, module2) {
     var JsonWebTokenError = require_JsonWebTokenError();
     var TokenExpiredError = function(message, expiredAt) {
       JsonWebTokenError.call(this, message);
@@ -26550,9 +26548,9 @@ var require_TokenExpiredError = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/jsonwebtoken/node_modules/ms/index.js
+// ../../server/node_modules/jsonwebtoken/node_modules/ms/index.js
 var require_ms4 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/jsonwebtoken/node_modules/ms/index.js"(exports2, module2) {
+  "../../server/node_modules/jsonwebtoken/node_modules/ms/index.js"(exports2, module2) {
     var s = 1e3;
     var m = s * 60;
     var h = m * 60;
@@ -26666,9 +26664,9 @@ var require_ms4 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/jsonwebtoken/lib/timespan.js
+// ../../server/node_modules/jsonwebtoken/lib/timespan.js
 var require_timespan = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/jsonwebtoken/lib/timespan.js"(exports2, module2) {
+  "../../server/node_modules/jsonwebtoken/lib/timespan.js"(exports2, module2) {
     var ms = require_ms4();
     module2.exports = function(time, iat) {
       var timestamp = iat || Math.floor(Date.now() / 1e3);
@@ -26687,9 +26685,9 @@ var require_timespan = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/internal/constants.js
+// ../../server/node_modules/semver/internal/constants.js
 var require_constants3 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/internal/constants.js"(exports2, module2) {
+  "../../server/node_modules/semver/internal/constants.js"(exports2, module2) {
     "use strict";
     var SEMVER_SPEC_VERSION = "2.0.0";
     var MAX_LENGTH = 256;
@@ -26719,9 +26717,9 @@ var require_constants3 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/internal/debug.js
+// ../../server/node_modules/semver/internal/debug.js
 var require_debug2 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/internal/debug.js"(exports2, module2) {
+  "../../server/node_modules/semver/internal/debug.js"(exports2, module2) {
     "use strict";
     var debug = typeof process === "object" && process.env && process.env.NODE_DEBUG && /\bsemver\b/i.test(process.env.NODE_DEBUG) ? (...args) => console.error("SEMVER", ...args) : () => {
     };
@@ -26729,9 +26727,9 @@ var require_debug2 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/internal/re.js
+// ../../server/node_modules/semver/internal/re.js
 var require_re = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/internal/re.js"(exports2, module2) {
+  "../../server/node_modules/semver/internal/re.js"(exports2, module2) {
     "use strict";
     var {
       MAX_SAFE_COMPONENT_LENGTH,
@@ -26817,9 +26815,9 @@ var require_re = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/internal/parse-options.js
+// ../../server/node_modules/semver/internal/parse-options.js
 var require_parse_options = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/internal/parse-options.js"(exports2, module2) {
+  "../../server/node_modules/semver/internal/parse-options.js"(exports2, module2) {
     "use strict";
     var looseOption = Object.freeze({ loose: true });
     var emptyOpts = Object.freeze({});
@@ -26836,9 +26834,9 @@ var require_parse_options = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/internal/identifiers.js
+// ../../server/node_modules/semver/internal/identifiers.js
 var require_identifiers = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/internal/identifiers.js"(exports2, module2) {
+  "../../server/node_modules/semver/internal/identifiers.js"(exports2, module2) {
     "use strict";
     var numeric = /^[0-9]+$/;
     var compareIdentifiers = (a, b) => {
@@ -26861,9 +26859,9 @@ var require_identifiers = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/classes/semver.js
+// ../../server/node_modules/semver/classes/semver.js
 var require_semver = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/classes/semver.js"(exports2, module2) {
+  "../../server/node_modules/semver/classes/semver.js"(exports2, module2) {
     "use strict";
     var debug = require_debug2();
     var { MAX_LENGTH, MAX_SAFE_INTEGER } = require_constants3();
@@ -27149,9 +27147,9 @@ var require_semver = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/functions/parse.js
+// ../../server/node_modules/semver/functions/parse.js
 var require_parse2 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/functions/parse.js"(exports2, module2) {
+  "../../server/node_modules/semver/functions/parse.js"(exports2, module2) {
     "use strict";
     var SemVer = require_semver();
     var parse2 = (version2, options, throwErrors = false) => {
@@ -27171,9 +27169,9 @@ var require_parse2 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/functions/valid.js
+// ../../server/node_modules/semver/functions/valid.js
 var require_valid = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/functions/valid.js"(exports2, module2) {
+  "../../server/node_modules/semver/functions/valid.js"(exports2, module2) {
     "use strict";
     var parse2 = require_parse2();
     var valid = (version2, options) => {
@@ -27184,9 +27182,9 @@ var require_valid = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/functions/clean.js
+// ../../server/node_modules/semver/functions/clean.js
 var require_clean = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/functions/clean.js"(exports2, module2) {
+  "../../server/node_modules/semver/functions/clean.js"(exports2, module2) {
     "use strict";
     var parse2 = require_parse2();
     var clean = (version2, options) => {
@@ -27197,9 +27195,9 @@ var require_clean = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/functions/inc.js
+// ../../server/node_modules/semver/functions/inc.js
 var require_inc = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/functions/inc.js"(exports2, module2) {
+  "../../server/node_modules/semver/functions/inc.js"(exports2, module2) {
     "use strict";
     var SemVer = require_semver();
     var inc = (version2, release, options, identifier, identifierBase) => {
@@ -27221,9 +27219,9 @@ var require_inc = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/functions/diff.js
+// ../../server/node_modules/semver/functions/diff.js
 var require_diff = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/functions/diff.js"(exports2, module2) {
+  "../../server/node_modules/semver/functions/diff.js"(exports2, module2) {
     "use strict";
     var parse2 = require_parse2();
     var diff = (version1, version2) => {
@@ -27265,9 +27263,9 @@ var require_diff = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/functions/major.js
+// ../../server/node_modules/semver/functions/major.js
 var require_major = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/functions/major.js"(exports2, module2) {
+  "../../server/node_modules/semver/functions/major.js"(exports2, module2) {
     "use strict";
     var SemVer = require_semver();
     var major = (a, loose) => new SemVer(a, loose).major;
@@ -27275,9 +27273,9 @@ var require_major = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/functions/minor.js
+// ../../server/node_modules/semver/functions/minor.js
 var require_minor = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/functions/minor.js"(exports2, module2) {
+  "../../server/node_modules/semver/functions/minor.js"(exports2, module2) {
     "use strict";
     var SemVer = require_semver();
     var minor = (a, loose) => new SemVer(a, loose).minor;
@@ -27285,9 +27283,9 @@ var require_minor = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/functions/patch.js
+// ../../server/node_modules/semver/functions/patch.js
 var require_patch = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/functions/patch.js"(exports2, module2) {
+  "../../server/node_modules/semver/functions/patch.js"(exports2, module2) {
     "use strict";
     var SemVer = require_semver();
     var patch = (a, loose) => new SemVer(a, loose).patch;
@@ -27295,9 +27293,9 @@ var require_patch = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/functions/prerelease.js
+// ../../server/node_modules/semver/functions/prerelease.js
 var require_prerelease = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/functions/prerelease.js"(exports2, module2) {
+  "../../server/node_modules/semver/functions/prerelease.js"(exports2, module2) {
     "use strict";
     var parse2 = require_parse2();
     var prerelease = (version2, options) => {
@@ -27308,9 +27306,9 @@ var require_prerelease = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/functions/compare.js
+// ../../server/node_modules/semver/functions/compare.js
 var require_compare = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/functions/compare.js"(exports2, module2) {
+  "../../server/node_modules/semver/functions/compare.js"(exports2, module2) {
     "use strict";
     var SemVer = require_semver();
     var compare = (a, b, loose) => new SemVer(a, loose).compare(new SemVer(b, loose));
@@ -27318,9 +27316,9 @@ var require_compare = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/functions/rcompare.js
+// ../../server/node_modules/semver/functions/rcompare.js
 var require_rcompare = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/functions/rcompare.js"(exports2, module2) {
+  "../../server/node_modules/semver/functions/rcompare.js"(exports2, module2) {
     "use strict";
     var compare = require_compare();
     var rcompare = (a, b, loose) => compare(b, a, loose);
@@ -27328,9 +27326,9 @@ var require_rcompare = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/functions/compare-loose.js
+// ../../server/node_modules/semver/functions/compare-loose.js
 var require_compare_loose = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/functions/compare-loose.js"(exports2, module2) {
+  "../../server/node_modules/semver/functions/compare-loose.js"(exports2, module2) {
     "use strict";
     var compare = require_compare();
     var compareLoose = (a, b) => compare(a, b, true);
@@ -27338,9 +27336,9 @@ var require_compare_loose = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/functions/compare-build.js
+// ../../server/node_modules/semver/functions/compare-build.js
 var require_compare_build = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/functions/compare-build.js"(exports2, module2) {
+  "../../server/node_modules/semver/functions/compare-build.js"(exports2, module2) {
     "use strict";
     var SemVer = require_semver();
     var compareBuild = (a, b, loose) => {
@@ -27352,9 +27350,9 @@ var require_compare_build = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/functions/sort.js
+// ../../server/node_modules/semver/functions/sort.js
 var require_sort = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/functions/sort.js"(exports2, module2) {
+  "../../server/node_modules/semver/functions/sort.js"(exports2, module2) {
     "use strict";
     var compareBuild = require_compare_build();
     var sort = (list, loose) => list.sort((a, b) => compareBuild(a, b, loose));
@@ -27362,9 +27360,9 @@ var require_sort = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/functions/rsort.js
+// ../../server/node_modules/semver/functions/rsort.js
 var require_rsort = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/functions/rsort.js"(exports2, module2) {
+  "../../server/node_modules/semver/functions/rsort.js"(exports2, module2) {
     "use strict";
     var compareBuild = require_compare_build();
     var rsort = (list, loose) => list.sort((a, b) => compareBuild(b, a, loose));
@@ -27372,9 +27370,9 @@ var require_rsort = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/functions/gt.js
+// ../../server/node_modules/semver/functions/gt.js
 var require_gt = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/functions/gt.js"(exports2, module2) {
+  "../../server/node_modules/semver/functions/gt.js"(exports2, module2) {
     "use strict";
     var compare = require_compare();
     var gt = (a, b, loose) => compare(a, b, loose) > 0;
@@ -27382,9 +27380,9 @@ var require_gt = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/functions/lt.js
+// ../../server/node_modules/semver/functions/lt.js
 var require_lt = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/functions/lt.js"(exports2, module2) {
+  "../../server/node_modules/semver/functions/lt.js"(exports2, module2) {
     "use strict";
     var compare = require_compare();
     var lt = (a, b, loose) => compare(a, b, loose) < 0;
@@ -27392,9 +27390,9 @@ var require_lt = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/functions/eq.js
+// ../../server/node_modules/semver/functions/eq.js
 var require_eq = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/functions/eq.js"(exports2, module2) {
+  "../../server/node_modules/semver/functions/eq.js"(exports2, module2) {
     "use strict";
     var compare = require_compare();
     var eq = (a, b, loose) => compare(a, b, loose) === 0;
@@ -27402,9 +27400,9 @@ var require_eq = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/functions/neq.js
+// ../../server/node_modules/semver/functions/neq.js
 var require_neq = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/functions/neq.js"(exports2, module2) {
+  "../../server/node_modules/semver/functions/neq.js"(exports2, module2) {
     "use strict";
     var compare = require_compare();
     var neq = (a, b, loose) => compare(a, b, loose) !== 0;
@@ -27412,9 +27410,9 @@ var require_neq = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/functions/gte.js
+// ../../server/node_modules/semver/functions/gte.js
 var require_gte = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/functions/gte.js"(exports2, module2) {
+  "../../server/node_modules/semver/functions/gte.js"(exports2, module2) {
     "use strict";
     var compare = require_compare();
     var gte = (a, b, loose) => compare(a, b, loose) >= 0;
@@ -27422,9 +27420,9 @@ var require_gte = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/functions/lte.js
+// ../../server/node_modules/semver/functions/lte.js
 var require_lte = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/functions/lte.js"(exports2, module2) {
+  "../../server/node_modules/semver/functions/lte.js"(exports2, module2) {
     "use strict";
     var compare = require_compare();
     var lte = (a, b, loose) => compare(a, b, loose) <= 0;
@@ -27432,9 +27430,9 @@ var require_lte = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/functions/cmp.js
+// ../../server/node_modules/semver/functions/cmp.js
 var require_cmp = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/functions/cmp.js"(exports2, module2) {
+  "../../server/node_modules/semver/functions/cmp.js"(exports2, module2) {
     "use strict";
     var eq = require_eq();
     var neq = require_neq();
@@ -27482,9 +27480,9 @@ var require_cmp = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/functions/coerce.js
+// ../../server/node_modules/semver/functions/coerce.js
 var require_coerce = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/functions/coerce.js"(exports2, module2) {
+  "../../server/node_modules/semver/functions/coerce.js"(exports2, module2) {
     "use strict";
     var SemVer = require_semver();
     var parse2 = require_parse2();
@@ -27528,9 +27526,9 @@ var require_coerce = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/functions/truncate.js
+// ../../server/node_modules/semver/functions/truncate.js
 var require_truncate = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/functions/truncate.js"(exports2, module2) {
+  "../../server/node_modules/semver/functions/truncate.js"(exports2, module2) {
     "use strict";
     var parse2 = require_parse2();
     var constants = require_constants3();
@@ -27569,9 +27567,9 @@ var require_truncate = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/internal/lrucache.js
+// ../../server/node_modules/semver/internal/lrucache.js
 var require_lrucache = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/internal/lrucache.js"(exports2, module2) {
+  "../../server/node_modules/semver/internal/lrucache.js"(exports2, module2) {
     "use strict";
     var LRUCache = class {
       constructor() {
@@ -27607,9 +27605,9 @@ var require_lrucache = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/classes/range.js
+// ../../server/node_modules/semver/classes/range.js
 var require_range2 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/classes/range.js"(exports2, module2) {
+  "../../server/node_modules/semver/classes/range.js"(exports2, module2) {
     "use strict";
     var SPACE_CHARACTERS = /\s+/g;
     var Range = class _Range {
@@ -27680,7 +27678,7 @@ var require_range2 = __commonJS({
         range = range.replace(BUILDSTRIPRE, "");
         const memoOpts = (this.options.includePrerelease && FLAG_INCLUDE_PRERELEASE) | (this.options.loose && FLAG_LOOSE);
         const memoKey = memoOpts + ":" + range;
-        const cached = cache.get(memoKey);
+        const cached = cache2.get(memoKey);
         if (cached) {
           return cached;
         }
@@ -27714,7 +27712,7 @@ var require_range2 = __commonJS({
           rangeMap.delete("");
         }
         const result2 = [...rangeMap.values()];
-        cache.set(memoKey, result2);
+        cache2.set(memoKey, result2);
         return result2;
       }
       intersects(range, options) {
@@ -27753,7 +27751,7 @@ var require_range2 = __commonJS({
     };
     module2.exports = Range;
     var LRU = require_lrucache();
-    var cache = new LRU();
+    var cache2 = new LRU();
     var parseOptions2 = require_parse_options();
     var Comparator = require_comparator();
     var debug = require_debug2();
@@ -27992,9 +27990,9 @@ var require_range2 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/classes/comparator.js
+// ../../server/node_modules/semver/classes/comparator.js
 var require_comparator = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/classes/comparator.js"(exports2, module2) {
+  "../../server/node_modules/semver/classes/comparator.js"(exports2, module2) {
     "use strict";
     var ANY = Symbol("SemVer ANY");
     var Comparator = class _Comparator {
@@ -28105,9 +28103,9 @@ var require_comparator = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/functions/satisfies.js
+// ../../server/node_modules/semver/functions/satisfies.js
 var require_satisfies = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/functions/satisfies.js"(exports2, module2) {
+  "../../server/node_modules/semver/functions/satisfies.js"(exports2, module2) {
     "use strict";
     var Range = require_range2();
     var satisfies = (version2, range, options) => {
@@ -28122,9 +28120,9 @@ var require_satisfies = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/ranges/to-comparators.js
+// ../../server/node_modules/semver/ranges/to-comparators.js
 var require_to_comparators = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/ranges/to-comparators.js"(exports2, module2) {
+  "../../server/node_modules/semver/ranges/to-comparators.js"(exports2, module2) {
     "use strict";
     var Range = require_range2();
     var toComparators = (range, options) => new Range(range, options).set.map((comp) => comp.map((c) => c.value).join(" ").trim().split(" "));
@@ -28132,9 +28130,9 @@ var require_to_comparators = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/ranges/max-satisfying.js
+// ../../server/node_modules/semver/ranges/max-satisfying.js
 var require_max_satisfying = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/ranges/max-satisfying.js"(exports2, module2) {
+  "../../server/node_modules/semver/ranges/max-satisfying.js"(exports2, module2) {
     "use strict";
     var SemVer = require_semver();
     var Range = require_range2();
@@ -28161,9 +28159,9 @@ var require_max_satisfying = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/ranges/min-satisfying.js
+// ../../server/node_modules/semver/ranges/min-satisfying.js
 var require_min_satisfying = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/ranges/min-satisfying.js"(exports2, module2) {
+  "../../server/node_modules/semver/ranges/min-satisfying.js"(exports2, module2) {
     "use strict";
     var SemVer = require_semver();
     var Range = require_range2();
@@ -28190,9 +28188,9 @@ var require_min_satisfying = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/ranges/min-version.js
+// ../../server/node_modules/semver/ranges/min-version.js
 var require_min_version = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/ranges/min-version.js"(exports2, module2) {
+  "../../server/node_modules/semver/ranges/min-version.js"(exports2, module2) {
     "use strict";
     var SemVer = require_semver();
     var Range = require_range2();
@@ -28247,9 +28245,9 @@ var require_min_version = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/ranges/valid.js
+// ../../server/node_modules/semver/ranges/valid.js
 var require_valid2 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/ranges/valid.js"(exports2, module2) {
+  "../../server/node_modules/semver/ranges/valid.js"(exports2, module2) {
     "use strict";
     var Range = require_range2();
     var validRange = (range, options) => {
@@ -28263,9 +28261,9 @@ var require_valid2 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/ranges/outside.js
+// ../../server/node_modules/semver/ranges/outside.js
 var require_outside = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/ranges/outside.js"(exports2, module2) {
+  "../../server/node_modules/semver/ranges/outside.js"(exports2, module2) {
     "use strict";
     var SemVer = require_semver();
     var Comparator = require_comparator();
@@ -28332,9 +28330,9 @@ var require_outside = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/ranges/gtr.js
+// ../../server/node_modules/semver/ranges/gtr.js
 var require_gtr = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/ranges/gtr.js"(exports2, module2) {
+  "../../server/node_modules/semver/ranges/gtr.js"(exports2, module2) {
     "use strict";
     var outside = require_outside();
     var gtr = (version2, range, options) => outside(version2, range, ">", options);
@@ -28342,9 +28340,9 @@ var require_gtr = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/ranges/ltr.js
+// ../../server/node_modules/semver/ranges/ltr.js
 var require_ltr = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/ranges/ltr.js"(exports2, module2) {
+  "../../server/node_modules/semver/ranges/ltr.js"(exports2, module2) {
     "use strict";
     var outside = require_outside();
     var ltr = (version2, range, options) => outside(version2, range, "<", options);
@@ -28352,9 +28350,9 @@ var require_ltr = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/ranges/intersects.js
+// ../../server/node_modules/semver/ranges/intersects.js
 var require_intersects = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/ranges/intersects.js"(exports2, module2) {
+  "../../server/node_modules/semver/ranges/intersects.js"(exports2, module2) {
     "use strict";
     var Range = require_range2();
     var intersects = (r1, r2, options) => {
@@ -28366,9 +28364,9 @@ var require_intersects = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/ranges/simplify.js
+// ../../server/node_modules/semver/ranges/simplify.js
 var require_simplify = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/ranges/simplify.js"(exports2, module2) {
+  "../../server/node_modules/semver/ranges/simplify.js"(exports2, module2) {
     "use strict";
     var satisfies = require_satisfies();
     var compare = require_compare();
@@ -28416,9 +28414,9 @@ var require_simplify = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/ranges/subset.js
+// ../../server/node_modules/semver/ranges/subset.js
 var require_subset = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/ranges/subset.js"(exports2, module2) {
+  "../../server/node_modules/semver/ranges/subset.js"(exports2, module2) {
     "use strict";
     var Range = require_range2();
     var Comparator = require_comparator();
@@ -28578,9 +28576,9 @@ var require_subset = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/semver/index.js
+// ../../server/node_modules/semver/index.js
 var require_semver2 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/semver/index.js"(exports2, module2) {
+  "../../server/node_modules/semver/index.js"(exports2, module2) {
     "use strict";
     var internalRe = require_re();
     var constants = require_constants3();
@@ -28675,25 +28673,25 @@ var require_semver2 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/jsonwebtoken/lib/asymmetricKeyDetailsSupported.js
+// ../../server/node_modules/jsonwebtoken/lib/asymmetricKeyDetailsSupported.js
 var require_asymmetricKeyDetailsSupported = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/jsonwebtoken/lib/asymmetricKeyDetailsSupported.js"(exports2, module2) {
+  "../../server/node_modules/jsonwebtoken/lib/asymmetricKeyDetailsSupported.js"(exports2, module2) {
     var semver = require_semver2();
     module2.exports = semver.satisfies(process.version, ">=15.7.0");
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/jsonwebtoken/lib/rsaPssKeyDetailsSupported.js
+// ../../server/node_modules/jsonwebtoken/lib/rsaPssKeyDetailsSupported.js
 var require_rsaPssKeyDetailsSupported = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/jsonwebtoken/lib/rsaPssKeyDetailsSupported.js"(exports2, module2) {
+  "../../server/node_modules/jsonwebtoken/lib/rsaPssKeyDetailsSupported.js"(exports2, module2) {
     var semver = require_semver2();
     module2.exports = semver.satisfies(process.version, ">=16.9.0");
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/jsonwebtoken/lib/validateAsymmetricKey.js
+// ../../server/node_modules/jsonwebtoken/lib/validateAsymmetricKey.js
 var require_validateAsymmetricKey = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/jsonwebtoken/lib/validateAsymmetricKey.js"(exports2, module2) {
+  "../../server/node_modules/jsonwebtoken/lib/validateAsymmetricKey.js"(exports2, module2) {
     var ASYMMETRIC_KEY_DETAILS_SUPPORTED = require_asymmetricKeyDetailsSupported();
     var RSA_PSS_KEY_DETAILS_SUPPORTED = require_rsaPssKeyDetailsSupported();
     var allowedAlgorithmsForKeys = {
@@ -28744,17 +28742,17 @@ var require_validateAsymmetricKey = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/jsonwebtoken/lib/psSupported.js
+// ../../server/node_modules/jsonwebtoken/lib/psSupported.js
 var require_psSupported = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/jsonwebtoken/lib/psSupported.js"(exports2, module2) {
+  "../../server/node_modules/jsonwebtoken/lib/psSupported.js"(exports2, module2) {
     var semver = require_semver2();
     module2.exports = semver.satisfies(process.version, "^6.12.0 || >=8.0.0");
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/jsonwebtoken/verify.js
+// ../../server/node_modules/jsonwebtoken/verify.js
 var require_verify = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/jsonwebtoken/verify.js"(exports2, module2) {
+  "../../server/node_modules/jsonwebtoken/verify.js"(exports2, module2) {
     var JsonWebTokenError = require_JsonWebTokenError();
     var NotBeforeError = require_NotBeforeError();
     var TokenExpiredError = require_TokenExpiredError();
@@ -28967,9 +28965,9 @@ var require_verify = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/lodash.includes/index.js
+// ../../server/node_modules/lodash.includes/index.js
 var require_lodash = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/lodash.includes/index.js"(exports2, module2) {
+  "../../server/node_modules/lodash.includes/index.js"(exports2, module2) {
     var INFINITY2 = 1 / 0;
     var MAX_SAFE_INTEGER = 9007199254740991;
     var MAX_INTEGER = 17976931348623157e292;
@@ -29141,19 +29139,19 @@ var require_lodash = __commonJS({
       var isBinary = reIsBinary.test(value);
       return isBinary || reIsOctal.test(value) ? freeParseInt(value.slice(2), isBinary ? 2 : 8) : reIsBadHex.test(value) ? NAN2 : +value;
     }
-    function keys(object) {
+    function keys2(object) {
       return isArrayLike(object) ? arrayLikeKeys(object) : baseKeys(object);
     }
     function values(object) {
-      return object ? baseValues(object, keys(object)) : [];
+      return object ? baseValues(object, keys2(object)) : [];
     }
     module2.exports = includes;
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/lodash.isboolean/index.js
+// ../../server/node_modules/lodash.isboolean/index.js
 var require_lodash2 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/lodash.isboolean/index.js"(exports2, module2) {
+  "../../server/node_modules/lodash.isboolean/index.js"(exports2, module2) {
     var boolTag = "[object Boolean]";
     var objectProto = Object.prototype;
     var objectToString = objectProto.toString;
@@ -29167,9 +29165,9 @@ var require_lodash2 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/lodash.isinteger/index.js
+// ../../server/node_modules/lodash.isinteger/index.js
 var require_lodash3 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/lodash.isinteger/index.js"(exports2, module2) {
+  "../../server/node_modules/lodash.isinteger/index.js"(exports2, module2) {
     var INFINITY2 = 1 / 0;
     var MAX_INTEGER = 17976931348623157e292;
     var NAN2 = 0 / 0;
@@ -29231,9 +29229,9 @@ var require_lodash3 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/lodash.isnumber/index.js
+// ../../server/node_modules/lodash.isnumber/index.js
 var require_lodash4 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/lodash.isnumber/index.js"(exports2, module2) {
+  "../../server/node_modules/lodash.isnumber/index.js"(exports2, module2) {
     var numberTag = "[object Number]";
     var objectProto = Object.prototype;
     var objectToString = objectProto.toString;
@@ -29247,9 +29245,9 @@ var require_lodash4 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/lodash.isplainobject/index.js
+// ../../server/node_modules/lodash.isplainobject/index.js
 var require_lodash5 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/lodash.isplainobject/index.js"(exports2, module2) {
+  "../../server/node_modules/lodash.isplainobject/index.js"(exports2, module2) {
     var objectTag = "[object Object]";
     function isHostObject(value) {
       var result2 = false;
@@ -29291,9 +29289,9 @@ var require_lodash5 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/lodash.isstring/index.js
+// ../../server/node_modules/lodash.isstring/index.js
 var require_lodash6 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/lodash.isstring/index.js"(exports2, module2) {
+  "../../server/node_modules/lodash.isstring/index.js"(exports2, module2) {
     var stringTag = "[object String]";
     var objectProto = Object.prototype;
     var objectToString = objectProto.toString;
@@ -29308,9 +29306,9 @@ var require_lodash6 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/lodash.once/index.js
+// ../../server/node_modules/lodash.once/index.js
 var require_lodash7 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/lodash.once/index.js"(exports2, module2) {
+  "../../server/node_modules/lodash.once/index.js"(exports2, module2) {
     var FUNC_ERROR_TEXT = "Expected a function";
     var INFINITY2 = 1 / 0;
     var MAX_INTEGER = 17976931348623157e292;
@@ -29389,9 +29387,9 @@ var require_lodash7 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/jsonwebtoken/sign.js
+// ../../server/node_modules/jsonwebtoken/sign.js
 var require_sign2 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/jsonwebtoken/sign.js"(exports2, module2) {
+  "../../server/node_modules/jsonwebtoken/sign.js"(exports2, module2) {
     var timespan = require_timespan();
     var PS_SUPPORTED = require_psSupported();
     var validateAsymmetricKey = require_validateAsymmetricKey();
@@ -29614,9 +29612,9 @@ var require_sign2 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/jsonwebtoken/index.js
+// ../../server/node_modules/jsonwebtoken/index.js
 var require_jsonwebtoken = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/jsonwebtoken/index.js"(exports2, module2) {
+  "../../server/node_modules/jsonwebtoken/index.js"(exports2, module2) {
     module2.exports = {
       decode: require_decode(),
       verify: require_verify(),
@@ -29628,9 +29626,9 @@ var require_jsonwebtoken = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/bcryptjs/dist/bcrypt.js
+// ../../server/node_modules/bcryptjs/dist/bcrypt.js
 var require_bcrypt = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/bcryptjs/dist/bcrypt.js"(exports2, module2) {
+  "../../server/node_modules/bcryptjs/dist/bcrypt.js"(exports2, module2) {
     (function(global2, factory) {
       if (typeof define === "function" && define["amd"])
         define([], factory);
@@ -31439,9 +31437,9 @@ var require_bcrypt = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/bcryptjs/index.js
+// ../../server/node_modules/bcryptjs/index.js
 var require_bcryptjs = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/bcryptjs/index.js"(exports2, module2) {
+  "../../server/node_modules/bcryptjs/index.js"(exports2, module2) {
     module2.exports = require_bcrypt();
   }
 });
@@ -31466,7 +31464,6 @@ function isModelAllowedForPlan(plan, model) {
 var PLANS;
 var init_plans = __esm({
   "server/src/billing/plans.ts"() {
-    "use strict";
     PLANS = {
       pro: {
         name: "Pro",
@@ -31497,9 +31494,9 @@ var init_plans = __esm({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/busboy/lib/utils.js
+// ../../server/node_modules/busboy/lib/utils.js
 var require_utils3 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/busboy/lib/utils.js"(exports2, module2) {
+  "../../server/node_modules/busboy/lib/utils.js"(exports2, module2) {
     "use strict";
     function parseContentType(str4) {
       if (str4.length === 0)
@@ -33182,9 +33179,9 @@ var require_utils3 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/streamsearch/lib/sbmh.js
+// ../../server/node_modules/streamsearch/lib/sbmh.js
 var require_sbmh = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/streamsearch/lib/sbmh.js"(exports2, module2) {
+  "../../server/node_modules/streamsearch/lib/sbmh.js"(exports2, module2) {
     "use strict";
     function memcmp(buf1, pos1, buf2, pos2, num4) {
       for (let i = 0; i < num4; ++i) {
@@ -33579,9 +33576,9 @@ var require_sbmh = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/busboy/lib/types/multipart.js
+// ../../server/node_modules/busboy/lib/types/multipart.js
 var require_multipart = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/busboy/lib/types/multipart.js"(exports2, module2) {
+  "../../server/node_modules/busboy/lib/types/multipart.js"(exports2, module2) {
     "use strict";
     var { Readable, Writable } = require("stream");
     var StreamSearch = require_sbmh();
@@ -34626,9 +34623,9 @@ var require_multipart = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/busboy/lib/types/urlencoded.js
+// ../../server/node_modules/busboy/lib/types/urlencoded.js
 var require_urlencoded2 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/busboy/lib/types/urlencoded.js"(exports2, module2) {
+  "../../server/node_modules/busboy/lib/types/urlencoded.js"(exports2, module2) {
     "use strict";
     var { Writable } = require("stream");
     var { getDecoder } = require_utils3();
@@ -35173,9 +35170,9 @@ var require_urlencoded2 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/busboy/lib/index.js
+// ../../server/node_modules/busboy/lib/index.js
 var require_lib3 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/busboy/lib/index.js"(exports2, module2) {
+  "../../server/node_modules/busboy/lib/index.js"(exports2, module2) {
     "use strict";
     var { parseContentType } = require_utils3();
     function getInstance(cfg) {
@@ -35225,9 +35222,9 @@ var require_lib3 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/xtend/immutable.js
+// ../../server/node_modules/xtend/immutable.js
 var require_immutable = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/xtend/immutable.js"(exports2, module2) {
+  "../../server/node_modules/xtend/immutable.js"(exports2, module2) {
     module2.exports = extend;
     var hasOwnProperty = Object.prototype.hasOwnProperty;
     function extend() {
@@ -35245,9 +35242,9 @@ var require_immutable = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/append-field/lib/parse-path.js
+// ../../server/node_modules/append-field/lib/parse-path.js
 var require_parse_path = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/append-field/lib/parse-path.js"(exports2, module2) {
+  "../../server/node_modules/append-field/lib/parse-path.js"(exports2, module2) {
     var reFirstKey = /^[^\[]*/;
     var reDigitPath = /^\[(\d+)\]/;
     var reNormalPath = /^\[([^\]]+)\]/;
@@ -35294,9 +35291,9 @@ var require_parse_path = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/append-field/lib/set-value.js
+// ../../server/node_modules/append-field/lib/set-value.js
 var require_set_value = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/append-field/lib/set-value.js"(exports2, module2) {
+  "../../server/node_modules/append-field/lib/set-value.js"(exports2, module2) {
     function valueType(value) {
       if (value === void 0) return "undefined";
       if (Array.isArray(value)) return "array";
@@ -35357,9 +35354,9 @@ var require_set_value = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/append-field/index.js
+// ../../server/node_modules/append-field/index.js
 var require_append_field = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/append-field/index.js"(exports2, module2) {
+  "../../server/node_modules/append-field/index.js"(exports2, module2) {
     var parsePath = require_parse_path();
     var setValue = require_set_value();
     function appendField(store, key, value) {
@@ -35372,9 +35369,9 @@ var require_append_field = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/multer/lib/counter.js
+// ../../server/node_modules/multer/lib/counter.js
 var require_counter = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/multer/lib/counter.js"(exports2, module2) {
+  "../../server/node_modules/multer/lib/counter.js"(exports2, module2) {
     var EventEmitter = require("events").EventEmitter;
     function Counter() {
       EventEmitter.call(this);
@@ -35398,9 +35395,9 @@ var require_counter = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/multer/lib/multer-error.js
+// ../../server/node_modules/multer/lib/multer-error.js
 var require_multer_error = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/multer/lib/multer-error.js"(exports2, module2) {
+  "../../server/node_modules/multer/lib/multer-error.js"(exports2, module2) {
     var util = require("util");
     var errorMessages = {
       LIMIT_PART_COUNT: "Too many parts",
@@ -35424,9 +35421,9 @@ var require_multer_error = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/object-assign/index.js
+// ../../server/node_modules/object-assign/index.js
 var require_object_assign = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/object-assign/index.js"(exports2, module2) {
+  "../../server/node_modules/object-assign/index.js"(exports2, module2) {
     "use strict";
     var getOwnPropertySymbols = Object.getOwnPropertySymbols;
     var hasOwnProperty = Object.prototype.hasOwnProperty;
@@ -35494,9 +35491,9 @@ var require_object_assign = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/multer/lib/file-appender.js
+// ../../server/node_modules/multer/lib/file-appender.js
 var require_file_appender = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/multer/lib/file-appender.js"(exports2, module2) {
+  "../../server/node_modules/multer/lib/file-appender.js"(exports2, module2) {
     var objectAssign = require_object_assign();
     function arrayRemove(arr, item) {
       var idx = arr.indexOf(item);
@@ -35572,9 +35569,9 @@ var require_file_appender = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/multer/lib/remove-uploaded-files.js
+// ../../server/node_modules/multer/lib/remove-uploaded-files.js
 var require_remove_uploaded_files = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/multer/lib/remove-uploaded-files.js"(exports2, module2) {
+  "../../server/node_modules/multer/lib/remove-uploaded-files.js"(exports2, module2) {
     function removeUploadedFiles(uploadedFiles, remove, cb) {
       var length = uploadedFiles.length;
       var errors = [];
@@ -35600,9 +35597,9 @@ var require_remove_uploaded_files = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/multer/lib/make-middleware.js
+// ../../server/node_modules/multer/lib/make-middleware.js
 var require_make_middleware = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/multer/lib/make-middleware.js"(exports2, module2) {
+  "../../server/node_modules/multer/lib/make-middleware.js"(exports2, module2) {
     var is = require_type_is();
     var Busboy = require_lib3();
     var extend = require_immutable();
@@ -35749,9 +35746,9 @@ var require_make_middleware = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/mkdirp/index.js
+// ../../server/node_modules/mkdirp/index.js
 var require_mkdirp = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/mkdirp/index.js"(exports2, module2) {
+  "../../server/node_modules/mkdirp/index.js"(exports2, module2) {
     var path6 = require("path");
     var fs6 = require("fs");
     var _0777 = parseInt("0777", 8);
@@ -35831,9 +35828,9 @@ var require_mkdirp = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/multer/storage/disk.js
+// ../../server/node_modules/multer/storage/disk.js
 var require_disk = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/multer/storage/disk.js"(exports2, module2) {
+  "../../server/node_modules/multer/storage/disk.js"(exports2, module2) {
     var fs6 = require("fs");
     var os3 = require("os");
     var path6 = require("path");
@@ -35892,9 +35889,9 @@ var require_disk = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/process-nextick-args/index.js
+// ../../server/node_modules/process-nextick-args/index.js
 var require_process_nextick_args = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/process-nextick-args/index.js"(exports2, module2) {
+  "../../server/node_modules/process-nextick-args/index.js"(exports2, module2) {
     "use strict";
     if (typeof process === "undefined" || !process.version || process.version.indexOf("v0.") === 0 || process.version.indexOf("v1.") === 0 && process.version.indexOf("v1.8.") !== 0) {
       module2.exports = { nextTick };
@@ -35937,9 +35934,9 @@ var require_process_nextick_args = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/isarray/index.js
+// ../../server/node_modules/isarray/index.js
 var require_isarray = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/isarray/index.js"(exports2, module2) {
+  "../../server/node_modules/isarray/index.js"(exports2, module2) {
     var toString = {}.toString;
     module2.exports = Array.isArray || function(arr) {
       return toString.call(arr) == "[object Array]";
@@ -35947,16 +35944,16 @@ var require_isarray = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/readable-stream/lib/internal/streams/stream.js
+// ../../server/node_modules/readable-stream/lib/internal/streams/stream.js
 var require_stream = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/readable-stream/lib/internal/streams/stream.js"(exports2, module2) {
+  "../../server/node_modules/readable-stream/lib/internal/streams/stream.js"(exports2, module2) {
     module2.exports = require("stream");
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/readable-stream/node_modules/safe-buffer/index.js
+// ../../server/node_modules/readable-stream/node_modules/safe-buffer/index.js
 var require_safe_buffer2 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/readable-stream/node_modules/safe-buffer/index.js"(exports2, module2) {
+  "../../server/node_modules/readable-stream/node_modules/safe-buffer/index.js"(exports2, module2) {
     var buffer = require("buffer");
     var Buffer3 = buffer.Buffer;
     function copyProps(src, dst) {
@@ -36011,9 +36008,9 @@ var require_safe_buffer2 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/core-util-is/lib/util.js
+// ../../server/node_modules/core-util-is/lib/util.js
 var require_util = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/core-util-is/lib/util.js"(exports2) {
+  "../../server/node_modules/core-util-is/lib/util.js"(exports2) {
     function isArray2(arg) {
       if (Array.isArray) {
         return Array.isArray(arg);
@@ -36081,9 +36078,9 @@ var require_util = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/readable-stream/lib/internal/streams/BufferList.js
+// ../../server/node_modules/readable-stream/lib/internal/streams/BufferList.js
 var require_BufferList = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/readable-stream/lib/internal/streams/BufferList.js"(exports2, module2) {
+  "../../server/node_modules/readable-stream/lib/internal/streams/BufferList.js"(exports2, module2) {
     "use strict";
     function _classCallCheck(instance, Constructor) {
       if (!(instance instanceof Constructor)) {
@@ -36159,9 +36156,9 @@ var require_BufferList = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/readable-stream/lib/internal/streams/destroy.js
+// ../../server/node_modules/readable-stream/lib/internal/streams/destroy.js
 var require_destroy2 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/readable-stream/lib/internal/streams/destroy.js"(exports2, module2) {
+  "../../server/node_modules/readable-stream/lib/internal/streams/destroy.js"(exports2, module2) {
     "use strict";
     var pna = require_process_nextick_args();
     function destroy(err, cb) {
@@ -36228,16 +36225,16 @@ var require_destroy2 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/util-deprecate/node.js
+// ../../server/node_modules/util-deprecate/node.js
 var require_node3 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/util-deprecate/node.js"(exports2, module2) {
+  "../../server/node_modules/util-deprecate/node.js"(exports2, module2) {
     module2.exports = require("util").deprecate;
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/readable-stream/lib/_stream_writable.js
+// ../../server/node_modules/readable-stream/lib/_stream_writable.js
 var require_stream_writable = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/readable-stream/lib/_stream_writable.js"(exports2, module2) {
+  "../../server/node_modules/readable-stream/lib/_stream_writable.js"(exports2, module2) {
     "use strict";
     var pna = require_process_nextick_args();
     module2.exports = Writable;
@@ -36675,17 +36672,17 @@ var require_stream_writable = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/readable-stream/lib/_stream_duplex.js
+// ../../server/node_modules/readable-stream/lib/_stream_duplex.js
 var require_stream_duplex = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/readable-stream/lib/_stream_duplex.js"(exports2, module2) {
+  "../../server/node_modules/readable-stream/lib/_stream_duplex.js"(exports2, module2) {
     "use strict";
     var pna = require_process_nextick_args();
     var objectKeys = Object.keys || function(obj) {
-      var keys2 = [];
+      var keys3 = [];
       for (var key in obj) {
-        keys2.push(key);
+        keys3.push(key);
       }
-      return keys2;
+      return keys3;
     };
     module2.exports = Duplex;
     var util = Object.create(require_util());
@@ -36694,13 +36691,13 @@ var require_stream_duplex = __commonJS({
     var Writable = require_stream_writable();
     util.inherits(Duplex, Readable);
     {
-      keys = objectKeys(Writable.prototype);
-      for (v = 0; v < keys.length; v++) {
-        method = keys[v];
+      keys2 = objectKeys(Writable.prototype);
+      for (v = 0; v < keys2.length; v++) {
+        method = keys2[v];
         if (!Duplex.prototype[method]) Duplex.prototype[method] = Writable.prototype[method];
       }
     }
-    var keys;
+    var keys2;
     var method;
     var v;
     function Duplex(options) {
@@ -36752,9 +36749,9 @@ var require_stream_duplex = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/string_decoder/node_modules/safe-buffer/index.js
+// ../../server/node_modules/string_decoder/node_modules/safe-buffer/index.js
 var require_safe_buffer3 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/string_decoder/node_modules/safe-buffer/index.js"(exports2, module2) {
+  "../../server/node_modules/string_decoder/node_modules/safe-buffer/index.js"(exports2, module2) {
     var buffer = require("buffer");
     var Buffer3 = buffer.Buffer;
     function copyProps(src, dst) {
@@ -36809,9 +36806,9 @@ var require_safe_buffer3 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/string_decoder/lib/string_decoder.js
+// ../../server/node_modules/string_decoder/lib/string_decoder.js
 var require_string_decoder = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/string_decoder/lib/string_decoder.js"(exports2) {
+  "../../server/node_modules/string_decoder/lib/string_decoder.js"(exports2) {
     "use strict";
     var Buffer3 = require_safe_buffer3().Buffer;
     var isEncoding = Buffer3.isEncoding || function(encoding) {
@@ -37047,9 +37044,9 @@ var require_string_decoder = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/readable-stream/lib/_stream_readable.js
+// ../../server/node_modules/readable-stream/lib/_stream_readable.js
 var require_stream_readable = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/readable-stream/lib/_stream_readable.js"(exports2, module2) {
+  "../../server/node_modules/readable-stream/lib/_stream_readable.js"(exports2, module2) {
     "use strict";
     var pna = require_process_nextick_args();
     module2.exports = Readable;
@@ -37733,9 +37730,9 @@ var require_stream_readable = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/readable-stream/lib/_stream_transform.js
+// ../../server/node_modules/readable-stream/lib/_stream_transform.js
 var require_stream_transform = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/readable-stream/lib/_stream_transform.js"(exports2, module2) {
+  "../../server/node_modules/readable-stream/lib/_stream_transform.js"(exports2, module2) {
     "use strict";
     module2.exports = Transform;
     var Duplex = require_stream_duplex();
@@ -37833,9 +37830,9 @@ var require_stream_transform = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/readable-stream/lib/_stream_passthrough.js
+// ../../server/node_modules/readable-stream/lib/_stream_passthrough.js
 var require_stream_passthrough = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/readable-stream/lib/_stream_passthrough.js"(exports2, module2) {
+  "../../server/node_modules/readable-stream/lib/_stream_passthrough.js"(exports2, module2) {
     "use strict";
     module2.exports = PassThrough;
     var Transform = require_stream_transform();
@@ -37852,9 +37849,9 @@ var require_stream_passthrough = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/readable-stream/readable.js
+// ../../server/node_modules/readable-stream/readable.js
 var require_readable = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/readable-stream/readable.js"(exports2, module2) {
+  "../../server/node_modules/readable-stream/readable.js"(exports2, module2) {
     var Stream2 = require("stream");
     if (process.env.READABLE_STREAM === "disable" && Stream2) {
       module2.exports = Stream2;
@@ -37877,9 +37874,9 @@ var require_readable = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/buffer-from/index.js
+// ../../server/node_modules/buffer-from/index.js
 var require_buffer_from = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/buffer-from/index.js"(exports2, module2) {
+  "../../server/node_modules/buffer-from/index.js"(exports2, module2) {
     var toString = Object.prototype.toString;
     var isModern = typeof Buffer !== "undefined" && typeof Buffer.alloc === "function" && typeof Buffer.allocUnsafe === "function" && typeof Buffer.from === "function";
     function isArrayBuffer(input) {
@@ -37926,9 +37923,9 @@ var require_buffer_from = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/typedarray/index.js
+// ../../server/node_modules/typedarray/index.js
 var require_typedarray = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/typedarray/index.js"(exports2) {
+  "../../server/node_modules/typedarray/index.js"(exports2) {
     var undefined2 = void 0;
     var MAX_ARRAY_LENGTH = 1e5;
     var ECMAScript = /* @__PURE__ */ function() {
@@ -38457,9 +38454,9 @@ var require_typedarray = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/concat-stream/index.js
+// ../../server/node_modules/concat-stream/index.js
 var require_concat_stream = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/concat-stream/index.js"(exports2, module2) {
+  "../../server/node_modules/concat-stream/index.js"(exports2, module2) {
     var Writable = require_readable().Writable;
     var inherits = require_inherits();
     var bufferFrom = require_buffer_from();
@@ -38591,9 +38588,9 @@ var require_concat_stream = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/multer/storage/memory.js
+// ../../server/node_modules/multer/storage/memory.js
 var require_memory = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/multer/storage/memory.js"(exports2, module2) {
+  "../../server/node_modules/multer/storage/memory.js"(exports2, module2) {
     var concat = require_concat_stream();
     function MemoryStorage(opts) {
     }
@@ -38615,9 +38612,9 @@ var require_memory = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/multer/index.js
+// ../../server/node_modules/multer/index.js
 var require_multer = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/multer/index.js"(exports2, module2) {
+  "../../server/node_modules/multer/index.js"(exports2, module2) {
     var makeMiddleware = require_make_middleware();
     var diskStorage = require_disk();
     var memoryStorage = require_memory();
@@ -38705,9 +38702,9 @@ var require_multer = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/whatwg-fetch/dist/fetch.umd.js
+// ../../server/node_modules/whatwg-fetch/dist/fetch.umd.js
 var require_fetch_umd = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/whatwg-fetch/dist/fetch.umd.js"(exports2, module2) {
+  "../../server/node_modules/whatwg-fetch/dist/fetch.umd.js"(exports2, module2) {
     (function(global2, factory) {
       typeof exports2 === "object" && typeof module2 !== "undefined" ? factory(exports2) : typeof define === "function" && define.amd ? define(["exports"], factory) : factory(global2.WHATWGFetch = {});
     })(exports2, function(exports3) {
@@ -39242,9 +39239,9 @@ var require_fetch_umd = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/delayed-stream/lib/delayed_stream.js
+// ../../server/node_modules/delayed-stream/lib/delayed_stream.js
 var require_delayed_stream = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/delayed-stream/lib/delayed_stream.js"(exports2, module2) {
+  "../../server/node_modules/delayed-stream/lib/delayed_stream.js"(exports2, module2) {
     var Stream2 = require("stream").Stream;
     var util = require("util");
     module2.exports = DelayedStream;
@@ -39333,9 +39330,9 @@ var require_delayed_stream = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/combined-stream/lib/combined_stream.js
+// ../../server/node_modules/combined-stream/lib/combined_stream.js
 var require_combined_stream = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/combined-stream/lib/combined_stream.js"(exports2, module2) {
+  "../../server/node_modules/combined-stream/lib/combined_stream.js"(exports2, module2) {
     var util = require("util");
     var Stream2 = require("stream").Stream;
     var DelayedStream = require_delayed_stream();
@@ -39502,9 +39499,9 @@ var require_combined_stream = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/asynckit/lib/defer.js
+// ../../server/node_modules/asynckit/lib/defer.js
 var require_defer = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/asynckit/lib/defer.js"(exports2, module2) {
+  "../../server/node_modules/asynckit/lib/defer.js"(exports2, module2) {
     module2.exports = defer;
     function defer(fn) {
       var nextTick = typeof setImmediate == "function" ? setImmediate : typeof process == "object" && typeof process.nextTick == "function" ? process.nextTick : null;
@@ -39517,9 +39514,9 @@ var require_defer = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/asynckit/lib/async.js
+// ../../server/node_modules/asynckit/lib/async.js
 var require_async = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/asynckit/lib/async.js"(exports2, module2) {
+  "../../server/node_modules/asynckit/lib/async.js"(exports2, module2) {
     var defer = require_defer();
     module2.exports = async;
     function async(callback) {
@@ -39540,9 +39537,9 @@ var require_async = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/asynckit/lib/abort.js
+// ../../server/node_modules/asynckit/lib/abort.js
 var require_abort = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/asynckit/lib/abort.js"(exports2, module2) {
+  "../../server/node_modules/asynckit/lib/abort.js"(exports2, module2) {
     module2.exports = abort;
     function abort(state) {
       Object.keys(state.jobs).forEach(clean.bind(state));
@@ -39556,9 +39553,9 @@ var require_abort = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/asynckit/lib/iterate.js
+// ../../server/node_modules/asynckit/lib/iterate.js
 var require_iterate = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/asynckit/lib/iterate.js"(exports2, module2) {
+  "../../server/node_modules/asynckit/lib/iterate.js"(exports2, module2) {
     var async = require_async();
     var abort = require_abort();
     module2.exports = iterate;
@@ -39589,9 +39586,9 @@ var require_iterate = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/asynckit/lib/state.js
+// ../../server/node_modules/asynckit/lib/state.js
 var require_state = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/asynckit/lib/state.js"(exports2, module2) {
+  "../../server/node_modules/asynckit/lib/state.js"(exports2, module2) {
     module2.exports = state;
     function state(list, sortMethod) {
       var isNamedList = !Array.isArray(list), initState = {
@@ -39611,9 +39608,9 @@ var require_state = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/asynckit/lib/terminator.js
+// ../../server/node_modules/asynckit/lib/terminator.js
 var require_terminator = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/asynckit/lib/terminator.js"(exports2, module2) {
+  "../../server/node_modules/asynckit/lib/terminator.js"(exports2, module2) {
     var abort = require_abort();
     var async = require_async();
     module2.exports = terminator;
@@ -39628,9 +39625,9 @@ var require_terminator = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/asynckit/parallel.js
+// ../../server/node_modules/asynckit/parallel.js
 var require_parallel = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/asynckit/parallel.js"(exports2, module2) {
+  "../../server/node_modules/asynckit/parallel.js"(exports2, module2) {
     var iterate = require_iterate();
     var initState = require_state();
     var terminator = require_terminator();
@@ -39655,9 +39652,9 @@ var require_parallel = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/asynckit/serialOrdered.js
+// ../../server/node_modules/asynckit/serialOrdered.js
 var require_serialOrdered = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/asynckit/serialOrdered.js"(exports2, module2) {
+  "../../server/node_modules/asynckit/serialOrdered.js"(exports2, module2) {
     var iterate = require_iterate();
     var initState = require_state();
     var terminator = require_terminator();
@@ -39689,9 +39686,9 @@ var require_serialOrdered = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/asynckit/serial.js
+// ../../server/node_modules/asynckit/serial.js
 var require_serial = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/asynckit/serial.js"(exports2, module2) {
+  "../../server/node_modules/asynckit/serial.js"(exports2, module2) {
     var serialOrdered = require_serialOrdered();
     module2.exports = serial;
     function serial(list, iterator, callback) {
@@ -39700,9 +39697,9 @@ var require_serial = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/asynckit/index.js
+// ../../server/node_modules/asynckit/index.js
 var require_asynckit = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/asynckit/index.js"(exports2, module2) {
+  "../../server/node_modules/asynckit/index.js"(exports2, module2) {
     module2.exports = {
       parallel: require_parallel(),
       serial: require_serial(),
@@ -39711,9 +39708,9 @@ var require_asynckit = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/has-tostringtag/shams.js
+// ../../server/node_modules/has-tostringtag/shams.js
 var require_shams2 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/has-tostringtag/shams.js"(exports2, module2) {
+  "../../server/node_modules/has-tostringtag/shams.js"(exports2, module2) {
     "use strict";
     var hasSymbols = require_shams();
     module2.exports = function hasToStringTagShams() {
@@ -39722,9 +39719,9 @@ var require_shams2 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/es-set-tostringtag/index.js
+// ../../server/node_modules/es-set-tostringtag/index.js
 var require_es_set_tostringtag = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/es-set-tostringtag/index.js"(exports2, module2) {
+  "../../server/node_modules/es-set-tostringtag/index.js"(exports2, module2) {
     "use strict";
     var GetIntrinsic = require_get_intrinsic();
     var $defineProperty = GetIntrinsic("%Object.defineProperty%", true);
@@ -39754,9 +39751,9 @@ var require_es_set_tostringtag = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/form-data/lib/populate.js
+// ../../server/node_modules/form-data/lib/populate.js
 var require_populate = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/form-data/lib/populate.js"(exports2, module2) {
+  "../../server/node_modules/form-data/lib/populate.js"(exports2, module2) {
     "use strict";
     module2.exports = function(dst, src) {
       Object.keys(src).forEach(function(prop) {
@@ -39767,9 +39764,9 @@ var require_populate = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/form-data/lib/form_data.js
+// ../../server/node_modules/form-data/lib/form_data.js
 var require_form_data = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/form-data/lib/form_data.js"(exports2, module2) {
+  "../../server/node_modules/form-data/lib/form_data.js"(exports2, module2) {
     "use strict";
     var CombinedStream = require_combined_stream();
     var util = require("util");
@@ -40089,9 +40086,9 @@ var require_form_data = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/https-proxy-agent/node_modules/ms/index.js
+// ../../server/node_modules/https-proxy-agent/node_modules/ms/index.js
 var require_ms5 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/https-proxy-agent/node_modules/ms/index.js"(exports2, module2) {
+  "../../server/node_modules/https-proxy-agent/node_modules/ms/index.js"(exports2, module2) {
     var s = 1e3;
     var m = s * 60;
     var h = m * 60;
@@ -40205,9 +40202,9 @@ var require_ms5 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/https-proxy-agent/node_modules/debug/src/common.js
+// ../../server/node_modules/https-proxy-agent/node_modules/debug/src/common.js
 var require_common3 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/https-proxy-agent/node_modules/debug/src/common.js"(exports2, module2) {
+  "../../server/node_modules/https-proxy-agent/node_modules/debug/src/common.js"(exports2, module2) {
     function setup(env) {
       createDebug.debug = createDebug;
       createDebug.default = createDebug;
@@ -40382,9 +40379,9 @@ var require_common3 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/https-proxy-agent/node_modules/debug/src/browser.js
+// ../../server/node_modules/https-proxy-agent/node_modules/debug/src/browser.js
 var require_browser3 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/https-proxy-agent/node_modules/debug/src/browser.js"(exports2, module2) {
+  "../../server/node_modules/https-proxy-agent/node_modules/debug/src/browser.js"(exports2, module2) {
     exports2.formatArgs = formatArgs;
     exports2.save = save;
     exports2.load = load;
@@ -40552,9 +40549,9 @@ var require_browser3 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/https-proxy-agent/node_modules/debug/src/node.js
+// ../../server/node_modules/https-proxy-agent/node_modules/debug/src/node.js
 var require_node4 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/https-proxy-agent/node_modules/debug/src/node.js"(exports2, module2) {
+  "../../server/node_modules/https-proxy-agent/node_modules/debug/src/node.js"(exports2, module2) {
     var tty = require("tty");
     var util = require("util");
     exports2.init = init;
@@ -40708,9 +40705,9 @@ var require_node4 = __commonJS({
     }
     function init(debug) {
       debug.inspectOpts = {};
-      const keys = Object.keys(exports2.inspectOpts);
-      for (let i = 0; i < keys.length; i++) {
-        debug.inspectOpts[keys[i]] = exports2.inspectOpts[keys[i]];
+      const keys2 = Object.keys(exports2.inspectOpts);
+      for (let i = 0; i < keys2.length; i++) {
+        debug.inspectOpts[keys2[i]] = exports2.inspectOpts[keys2[i]];
       }
     }
     module2.exports = require_common3()(exports2);
@@ -40726,9 +40723,9 @@ var require_node4 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/https-proxy-agent/node_modules/debug/src/index.js
+// ../../server/node_modules/https-proxy-agent/node_modules/debug/src/index.js
 var require_src3 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/https-proxy-agent/node_modules/debug/src/index.js"(exports2, module2) {
+  "../../server/node_modules/https-proxy-agent/node_modules/debug/src/index.js"(exports2, module2) {
     if (typeof process === "undefined" || process.type === "renderer" || process.browser === true || process.__nwjs) {
       module2.exports = require_browser3();
     } else {
@@ -40737,9 +40734,9 @@ var require_src3 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/agent-base/node_modules/ms/index.js
+// ../../server/node_modules/agent-base/node_modules/ms/index.js
 var require_ms6 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/agent-base/node_modules/ms/index.js"(exports2, module2) {
+  "../../server/node_modules/agent-base/node_modules/ms/index.js"(exports2, module2) {
     var s = 1e3;
     var m = s * 60;
     var h = m * 60;
@@ -40853,9 +40850,9 @@ var require_ms6 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/agent-base/node_modules/debug/src/common.js
+// ../../server/node_modules/agent-base/node_modules/debug/src/common.js
 var require_common4 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/agent-base/node_modules/debug/src/common.js"(exports2, module2) {
+  "../../server/node_modules/agent-base/node_modules/debug/src/common.js"(exports2, module2) {
     function setup(env) {
       createDebug.debug = createDebug;
       createDebug.default = createDebug;
@@ -41030,9 +41027,9 @@ var require_common4 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/agent-base/node_modules/debug/src/browser.js
+// ../../server/node_modules/agent-base/node_modules/debug/src/browser.js
 var require_browser4 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/agent-base/node_modules/debug/src/browser.js"(exports2, module2) {
+  "../../server/node_modules/agent-base/node_modules/debug/src/browser.js"(exports2, module2) {
     exports2.formatArgs = formatArgs;
     exports2.save = save;
     exports2.load = load;
@@ -41200,9 +41197,9 @@ var require_browser4 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/agent-base/node_modules/debug/src/node.js
+// ../../server/node_modules/agent-base/node_modules/debug/src/node.js
 var require_node5 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/agent-base/node_modules/debug/src/node.js"(exports2, module2) {
+  "../../server/node_modules/agent-base/node_modules/debug/src/node.js"(exports2, module2) {
     var tty = require("tty");
     var util = require("util");
     exports2.init = init;
@@ -41356,9 +41353,9 @@ var require_node5 = __commonJS({
     }
     function init(debug) {
       debug.inspectOpts = {};
-      const keys = Object.keys(exports2.inspectOpts);
-      for (let i = 0; i < keys.length; i++) {
-        debug.inspectOpts[keys[i]] = exports2.inspectOpts[keys[i]];
+      const keys2 = Object.keys(exports2.inspectOpts);
+      for (let i = 0; i < keys2.length; i++) {
+        debug.inspectOpts[keys2[i]] = exports2.inspectOpts[keys2[i]];
       }
     }
     module2.exports = require_common4()(exports2);
@@ -41374,9 +41371,9 @@ var require_node5 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/agent-base/node_modules/debug/src/index.js
+// ../../server/node_modules/agent-base/node_modules/debug/src/index.js
 var require_src4 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/agent-base/node_modules/debug/src/index.js"(exports2, module2) {
+  "../../server/node_modules/agent-base/node_modules/debug/src/index.js"(exports2, module2) {
     if (typeof process === "undefined" || process.type === "renderer" || process.browser === true || process.__nwjs) {
       module2.exports = require_browser4();
     } else {
@@ -41385,9 +41382,9 @@ var require_src4 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/agent-base/dist/src/promisify.js
+// ../../server/node_modules/agent-base/dist/src/promisify.js
 var require_promisify = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/agent-base/dist/src/promisify.js"(exports2) {
+  "../../server/node_modules/agent-base/dist/src/promisify.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     function promisify(fn) {
@@ -41407,9 +41404,9 @@ var require_promisify = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/agent-base/dist/src/index.js
+// ../../server/node_modules/agent-base/dist/src/index.js
 var require_src5 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/agent-base/dist/src/index.js"(exports2, module2) {
+  "../../server/node_modules/agent-base/dist/src/index.js"(exports2, module2) {
     "use strict";
     var __importDefault2 = exports2 && exports2.__importDefault || function(mod) {
       return mod && mod.__esModule ? mod : { "default": mod };
@@ -41590,9 +41587,9 @@ var require_src5 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/https-proxy-agent/dist/parse-proxy-response.js
+// ../../server/node_modules/https-proxy-agent/dist/parse-proxy-response.js
 var require_parse_proxy_response = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/https-proxy-agent/dist/parse-proxy-response.js"(exports2) {
+  "../../server/node_modules/https-proxy-agent/dist/parse-proxy-response.js"(exports2) {
     "use strict";
     var __importDefault2 = exports2 && exports2.__importDefault || function(mod) {
       return mod && mod.__esModule ? mod : { "default": mod };
@@ -41656,9 +41653,9 @@ var require_parse_proxy_response = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/https-proxy-agent/dist/agent.js
+// ../../server/node_modules/https-proxy-agent/dist/agent.js
 var require_agent = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/https-proxy-agent/dist/agent.js"(exports2) {
+  "../../server/node_modules/https-proxy-agent/dist/agent.js"(exports2) {
     "use strict";
     var __awaiter2 = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
       function adopt(value) {
@@ -41803,11 +41800,11 @@ var require_agent = __commonJS({
     function isHTTPS(protocol) {
       return typeof protocol === "string" ? /^https:?$/i.test(protocol) : false;
     }
-    function omit(obj, ...keys) {
+    function omit(obj, ...keys2) {
       const ret = {};
       let key;
       for (key in obj) {
-        if (!keys.includes(key)) {
+        if (!keys2.includes(key)) {
           ret[key] = obj[key];
         }
       }
@@ -41816,9 +41813,9 @@ var require_agent = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/https-proxy-agent/dist/index.js
+// ../../server/node_modules/https-proxy-agent/dist/index.js
 var require_dist = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/https-proxy-agent/dist/index.js"(exports2, module2) {
+  "../../server/node_modules/https-proxy-agent/dist/index.js"(exports2, module2) {
     "use strict";
     var __importDefault2 = exports2 && exports2.__importDefault || function(mod) {
       return mod && mod.__esModule ? mod : { "default": mod };
@@ -41835,9 +41832,9 @@ var require_dist = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/follow-redirects/debug.js
+// ../../server/node_modules/follow-redirects/debug.js
 var require_debug3 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/follow-redirects/debug.js"(exports2, module2) {
+  "../../server/node_modules/follow-redirects/debug.js"(exports2, module2) {
     var debug;
     module2.exports = function() {
       if (!debug) {
@@ -41855,9 +41852,9 @@ var require_debug3 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/follow-redirects/index.js
+// ../../server/node_modules/follow-redirects/index.js
 var require_follow_redirects = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/follow-redirects/index.js"(exports2, module2) {
+  "../../server/node_modules/follow-redirects/index.js"(exports2, module2) {
     var url = require("url");
     var URL3 = url.URL;
     var http = require("http");
@@ -42366,9 +42363,9 @@ var require_follow_redirects = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/msedge-tts/node_modules/axios/dist/node/axios.cjs
+// ../../server/node_modules/msedge-tts/node_modules/axios/dist/node/axios.cjs
 var require_axios = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/msedge-tts/node_modules/axios/dist/node/axios.cjs"(exports2, module2) {
+  "../../server/node_modules/msedge-tts/node_modules/axios/dist/node/axios.cjs"(exports2, module2) {
     "use strict";
     var FormData$1 = require_form_data();
     var crypto10 = require("crypto");
@@ -42417,9 +42414,9 @@ var require_axios = __commonJS({
       return false;
     };
     var getSafeProp = (obj, prop) => obj != null && hasOwnInPrototypeChain(obj, prop) ? obj[prop] : void 0;
-    var kindOf = /* @__PURE__ */ ((cache) => (thing) => {
+    var kindOf = /* @__PURE__ */ ((cache2) => (thing) => {
       const str4 = toString.call(thing);
-      return cache[str4] || (cache[str4] = str4.slice(8, -1).toLowerCase());
+      return cache2[str4] || (cache2[str4] = str4.slice(8, -1).toLowerCase());
     })(/* @__PURE__ */ Object.create(null));
     var kindOfTest = (type) => {
       type = type.toLowerCase();
@@ -42520,11 +42517,11 @@ var require_axios = __commonJS({
         if (isBuffer(obj)) {
           return;
         }
-        const keys = allOwnKeys ? Object.getOwnPropertyNames(obj) : Object.keys(obj);
-        const len = keys.length;
+        const keys2 = allOwnKeys ? Object.getOwnPropertyNames(obj) : Object.keys(obj);
+        const len = keys2.length;
         let key;
         for (i = 0; i < len; i++) {
-          key = keys[i];
+          key = keys2[i];
           fn.call(null, obj[key], key, obj);
         }
       }
@@ -42534,11 +42531,11 @@ var require_axios = __commonJS({
         return null;
       }
       key = key.toLowerCase();
-      const keys = Object.keys(obj);
-      let i = keys.length;
+      const keys2 = Object.keys(obj);
+      let i = keys2.length;
       let _key;
       while (i-- > 0) {
-        _key = keys[i];
+        _key = keys2[i];
         if (key === _key.toLowerCase()) {
           return _key;
         }
@@ -43082,11 +43079,11 @@ var require_axios = __commonJS({
         return deleted;
       }
       clear(matcher) {
-        const keys = Object.keys(this);
-        let i = keys.length;
+        const keys2 = Object.keys(this);
+        let i = keys2.length;
         let deleted = false;
         while (i--) {
-          const key = keys[i];
+          const key = keys2[i];
           if (!matcher || matchHeaderValue(this, this[key], key, matcher, true)) {
             delete this[key];
             deleted = true;
@@ -43104,12 +43101,12 @@ var require_axios = __commonJS({
             delete self2[header];
             return;
           }
-          const normalized = format ? formatHeader(header) : String(header).trim();
-          if (normalized !== header) {
+          const normalized2 = format ? formatHeader(header) : String(header).trim();
+          if (normalized2 !== header) {
             delete self2[header];
           }
-          self2[normalized] = normalizeValue(value);
-          headers[normalized] = true;
+          self2[normalized2] = normalizeValue(value);
+          headers[normalized2] = true;
         });
         return this;
       }
@@ -43658,12 +43655,12 @@ var require_axios = __commonJS({
     }
     function arrayToObject(arr) {
       const obj = {};
-      const keys = Object.keys(arr);
+      const keys2 = Object.keys(arr);
       let i;
-      const len = keys.length;
+      const len = keys2.length;
       let key;
       for (i = 0; i < len; i++) {
-        key = keys[i];
+        key = keys2[i];
         obj[key] = arr[key];
       }
       return obj;
@@ -44678,8 +44675,8 @@ var require_axios = __commonJS({
     }
     function getTunnelingAgent(agentOptions, userHttpsAgent) {
       const key = agentOptions.protocol + "//" + agentOptions.hostname + ":" + (agentOptions.port || "") + "#" + (agentOptions.auth || "");
-      const cache = userHttpsAgent ? tunnelingAgentCacheUser.get(userHttpsAgent) || tunnelingAgentCacheUser.set(userHttpsAgent, /* @__PURE__ */ new Map()).get(userHttpsAgent) : tunnelingAgentCache;
-      let agent = cache.get(key);
+      const cache2 = userHttpsAgent ? tunnelingAgentCacheUser.get(userHttpsAgent) || tunnelingAgentCacheUser.set(userHttpsAgent, /* @__PURE__ */ new Map()).get(userHttpsAgent) : tunnelingAgentCache;
+      let agent = cache2.get(key);
       if (agent) return agent;
       const merged = userHttpsAgent && userHttpsAgent.options ? {
         ...userHttpsAgent.options,
@@ -44699,7 +44696,7 @@ var require_axios = __commonJS({
         };
       }
       agent[kAxiosInstalledTunnel] = true;
-      cache.set(key, agent);
+      cache2.set(key, agent);
       return agent;
     }
     var supportedProtocols = platform.protocols.map((protocol) => {
@@ -46461,10 +46458,10 @@ var require_axios = __commonJS({
       if (typeof options !== "object" || options === null) {
         throw new AxiosError("options must be an object", AxiosError.ERR_BAD_OPTION_VALUE);
       }
-      const keys = Object.keys(options);
-      let i = keys.length;
+      const keys2 = Object.keys(options);
+      let i = keys2.length;
       while (i-- > 0) {
-        const opt = keys[i];
+        const opt = keys2[i];
         const validator2 = Object.prototype.hasOwnProperty.call(schema, opt) ? schema[opt] : void 0;
         if (validator2) {
           const value = options[opt];
@@ -46887,9 +46884,9 @@ var require_axios = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/ws/lib/constants.js
+// ../../server/node_modules/ws/lib/constants.js
 var require_constants4 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/ws/lib/constants.js"(exports2, module2) {
+  "../../server/node_modules/ws/lib/constants.js"(exports2, module2) {
     "use strict";
     var BINARY_TYPES = ["nodebuffer", "arraybuffer", "fragments"];
     var hasBlob = typeof Blob !== "undefined";
@@ -46910,9 +46907,9 @@ var require_constants4 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/ws/lib/buffer-util.js
+// ../../server/node_modules/ws/lib/buffer-util.js
 var require_buffer_util = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/ws/lib/buffer-util.js"(exports2, module2) {
+  "../../server/node_modules/ws/lib/buffer-util.js"(exports2, module2) {
     "use strict";
     var { EMPTY_BUFFER } = require_constants4();
     var FastBuffer = Buffer[Symbol.species];
@@ -46985,9 +46982,9 @@ var require_buffer_util = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/ws/lib/limiter.js
+// ../../server/node_modules/ws/lib/limiter.js
 var require_limiter = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/ws/lib/limiter.js"(exports2, module2) {
+  "../../server/node_modules/ws/lib/limiter.js"(exports2, module2) {
     "use strict";
     var kDone = Symbol("kDone");
     var kRun = Symbol("kRun");
@@ -47035,9 +47032,9 @@ var require_limiter = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/ws/lib/permessage-deflate.js
+// ../../server/node_modules/ws/lib/permessage-deflate.js
 var require_permessage_deflate = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/ws/lib/permessage-deflate.js"(exports2, module2) {
+  "../../server/node_modules/ws/lib/permessage-deflate.js"(exports2, module2) {
     "use strict";
     var zlib = require("zlib");
     var bufferUtil = require_buffer_util();
@@ -47418,9 +47415,9 @@ var require_permessage_deflate = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/ws/lib/validation.js
+// ../../server/node_modules/ws/lib/validation.js
 var require_validation = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/ws/lib/validation.js"(exports2, module2) {
+  "../../server/node_modules/ws/lib/validation.js"(exports2, module2) {
     "use strict";
     var { isUtf8 } = require("buffer");
     var { hasBlob } = require_constants4();
@@ -47619,9 +47616,9 @@ var require_validation = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/ws/lib/receiver.js
+// ../../server/node_modules/ws/lib/receiver.js
 var require_receiver = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/ws/lib/receiver.js"(exports2, module2) {
+  "../../server/node_modules/ws/lib/receiver.js"(exports2, module2) {
     "use strict";
     var { Writable } = require("stream");
     var PerMessageDeflate2 = require_permessage_deflate();
@@ -48242,9 +48239,9 @@ var require_receiver = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/ws/lib/sender.js
+// ../../server/node_modules/ws/lib/sender.js
 var require_sender = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/ws/lib/sender.js"(exports2, module2) {
+  "../../server/node_modules/ws/lib/sender.js"(exports2, module2) {
     "use strict";
     var { Duplex } = require("stream");
     var { randomFillSync } = require("crypto");
@@ -48735,9 +48732,9 @@ var require_sender = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/ws/lib/event-target.js
+// ../../server/node_modules/ws/lib/event-target.js
 var require_event_target = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/ws/lib/event-target.js"(exports2, module2) {
+  "../../server/node_modules/ws/lib/event-target.js"(exports2, module2) {
     "use strict";
     var { kForOnEventAttribute, kListener } = require_constants4();
     var kCode = Symbol("kCode");
@@ -48964,9 +48961,9 @@ var require_event_target = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/ws/lib/extension.js
+// ../../server/node_modules/ws/lib/extension.js
 var require_extension = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/ws/lib/extension.js"(exports2, module2) {
+  "../../server/node_modules/ws/lib/extension.js"(exports2, module2) {
     "use strict";
     var { tokenChars } = require_validation();
     function push(dest, name, elem) {
@@ -49117,9 +49114,9 @@ var require_extension = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/ws/lib/websocket.js
+// ../../server/node_modules/ws/lib/websocket.js
 var require_websocket = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/ws/lib/websocket.js"(exports2, module2) {
+  "../../server/node_modules/ws/lib/websocket.js"(exports2, module2) {
     "use strict";
     var EventEmitter = require("events");
     var https = require("https");
@@ -50026,9 +50023,9 @@ var require_websocket = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/ws/lib/stream.js
+// ../../server/node_modules/ws/lib/stream.js
 var require_stream2 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/ws/lib/stream.js"(exports2, module2) {
+  "../../server/node_modules/ws/lib/stream.js"(exports2, module2) {
     "use strict";
     var WebSocket2 = require_websocket();
     var { Duplex } = require("stream");
@@ -50124,9 +50121,9 @@ var require_stream2 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/ws/lib/subprotocol.js
+// ../../server/node_modules/ws/lib/subprotocol.js
 var require_subprotocol = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/ws/lib/subprotocol.js"(exports2, module2) {
+  "../../server/node_modules/ws/lib/subprotocol.js"(exports2, module2) {
     "use strict";
     var { tokenChars } = require_validation();
     function parse2(header) {
@@ -50169,9 +50166,9 @@ var require_subprotocol = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/ws/lib/websocket-server.js
+// ../../server/node_modules/ws/lib/websocket-server.js
 var require_websocket_server = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/ws/lib/websocket-server.js"(exports2, module2) {
+  "../../server/node_modules/ws/lib/websocket-server.js"(exports2, module2) {
     "use strict";
     var EventEmitter = require("events");
     var http = require("http");
@@ -50570,9 +50567,9 @@ var require_websocket_server = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/ws/index.js
+// ../../server/node_modules/ws/index.js
 var require_ws = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/ws/index.js"(exports2, module2) {
+  "../../server/node_modules/ws/index.js"(exports2, module2) {
     "use strict";
     var createWebSocketStream2 = require_stream2();
     var extension2 = require_extension();
@@ -50595,17 +50592,17 @@ var require_ws = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/isomorphic-ws/node.js
+// ../../server/node_modules/isomorphic-ws/node.js
 var require_node6 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/isomorphic-ws/node.js"(exports2, module2) {
+  "../../server/node_modules/isomorphic-ws/node.js"(exports2, module2) {
     "use strict";
     module2.exports = require_ws();
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/base64-js/index.js
+// ../../server/node_modules/base64-js/index.js
 var require_base64_js = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/base64-js/index.js"(exports2) {
+  "../../server/node_modules/base64-js/index.js"(exports2) {
     "use strict";
     exports2.byteLength = byteLength;
     exports2.toByteArray = toByteArray;
@@ -50704,9 +50701,9 @@ var require_base64_js = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/ieee754/index.js
+// ../../server/node_modules/ieee754/index.js
 var require_ieee754 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/ieee754/index.js"(exports2) {
+  "../../server/node_modules/ieee754/index.js"(exports2) {
     exports2.read = function(buffer, offset, isLE, mLen, nBytes) {
       var e, m;
       var eLen = nBytes * 8 - mLen - 1;
@@ -50787,9 +50784,9 @@ var require_ieee754 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/buffer/index.js
+// ../../server/node_modules/buffer/index.js
 var require_buffer = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/buffer/index.js"(exports2) {
+  "../../server/node_modules/buffer/index.js"(exports2) {
     "use strict";
     var base64 = require_base64_js();
     var ieee754 = require_ieee754();
@@ -52379,9 +52376,9 @@ var require_buffer = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/msedge-tts/dist/Output.js
+// ../../server/node_modules/msedge-tts/dist/Output.js
 var require_Output = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/msedge-tts/dist/Output.js"(exports2) {
+  "../../server/node_modules/msedge-tts/dist/Output.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.OUTPUT_EXTENSIONS = exports2.OUTPUT_FORMAT = void 0;
@@ -52399,9 +52396,9 @@ var require_Output = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/msedge-tts/dist/Prosody.js
+// ../../server/node_modules/msedge-tts/dist/Prosody.js
 var require_Prosody = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/msedge-tts/dist/Prosody.js"(exports2) {
+  "../../server/node_modules/msedge-tts/dist/Prosody.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.VOLUME = exports2.PITCH = exports2.RATE = exports2.ProsodyOptions = void 0;
@@ -52457,9 +52454,9 @@ var require_Prosody = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/msedge-tts/dist/utils.js
+// ../../server/node_modules/msedge-tts/dist/utils.js
 var require_utils4 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/msedge-tts/dist/utils.js"(exports2) {
+  "../../server/node_modules/msedge-tts/dist/utils.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.joinPath = void 0;
@@ -52470,9 +52467,9 @@ var require_utils4 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/msedge-tts/dist/MsEdgeTTS.js
+// ../../server/node_modules/msedge-tts/dist/MsEdgeTTS.js
 var require_MsEdgeTTS = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/msedge-tts/dist/MsEdgeTTS.js"(exports2) {
+  "../../server/node_modules/msedge-tts/dist/MsEdgeTTS.js"(exports2) {
     "use strict";
     var __createBinding = exports2 && exports2.__createBinding || (Object.create ? function(o, m, k, k2) {
       if (k2 === void 0) k2 = k;
@@ -53050,9 +53047,9 @@ Path:${messageTypes.SSML}${_MsEdgeTTS.JSON_XML_DELIM}` + requestSSML.trim();
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/msedge-tts/dist/index.js
+// ../../server/node_modules/msedge-tts/dist/index.js
 var require_dist2 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/msedge-tts/dist/index.js"(exports2) {
+  "../../server/node_modules/msedge-tts/dist/index.js"(exports2) {
     "use strict";
     var __createBinding = exports2 && exports2.__createBinding || (Object.create ? function(o, m, k, k2) {
       if (k2 === void 0) k2 = k;
@@ -53077,9 +53074,9 @@ var require_dist2 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/google-tts-api/dist/assertInputTypes.js
+// ../../server/node_modules/google-tts-api/dist/assertInputTypes.js
 var require_assertInputTypes = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/google-tts-api/dist/assertInputTypes.js"(exports2) {
+  "../../server/node_modules/google-tts-api/dist/assertInputTypes.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     var assertInputTypes = function(text2, lang2, slow2, host2) {
@@ -53100,9 +53097,9 @@ var require_assertInputTypes = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/google-tts-api/dist/splitLongText.js
+// ../../server/node_modules/google-tts-api/dist/splitLongText.js
 var require_splitLongText = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/google-tts-api/dist/splitLongText.js"(exports2) {
+  "../../server/node_modules/google-tts-api/dist/splitLongText.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     var SPACE_REGEX = "\\s\\uFEFF\\xA0";
@@ -53150,9 +53147,9 @@ var require_splitLongText = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/google-tts-api/dist/getAudioUrl.js
+// ../../server/node_modules/google-tts-api/dist/getAudioUrl.js
 var require_getAudioUrl = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/google-tts-api/dist/getAudioUrl.js"(exports2) {
+  "../../server/node_modules/google-tts-api/dist/getAudioUrl.js"(exports2) {
     "use strict";
     var __importDefault2 = exports2 && exports2.__importDefault || function(mod) {
       return mod && mod.__esModule ? mod : { "default": mod };
@@ -53200,9 +53197,9 @@ var require_getAudioUrl = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/axios/lib/helpers/bind.js
+// ../../server/node_modules/axios/lib/helpers/bind.js
 var require_bind = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/axios/lib/helpers/bind.js"(exports2, module2) {
+  "../../server/node_modules/axios/lib/helpers/bind.js"(exports2, module2) {
     "use strict";
     module2.exports = function bind(fn, thisArg) {
       return function wrap() {
@@ -53216,9 +53213,9 @@ var require_bind = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/axios/lib/utils.js
+// ../../server/node_modules/axios/lib/utils.js
 var require_utils5 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/axios/lib/utils.js"(exports2, module2) {
+  "../../server/node_modules/axios/lib/utils.js"(exports2, module2) {
     "use strict";
     var bind = require_bind();
     var toString = Object.prototype.toString;
@@ -53369,9 +53366,9 @@ var require_utils5 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/axios/lib/helpers/buildURL.js
+// ../../server/node_modules/axios/lib/helpers/buildURL.js
 var require_buildURL = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/axios/lib/helpers/buildURL.js"(exports2, module2) {
+  "../../server/node_modules/axios/lib/helpers/buildURL.js"(exports2, module2) {
     "use strict";
     var utils = require_utils5();
     function encode2(val) {
@@ -53420,9 +53417,9 @@ var require_buildURL = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/axios/lib/core/InterceptorManager.js
+// ../../server/node_modules/axios/lib/core/InterceptorManager.js
 var require_InterceptorManager = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/axios/lib/core/InterceptorManager.js"(exports2, module2) {
+  "../../server/node_modules/axios/lib/core/InterceptorManager.js"(exports2, module2) {
     "use strict";
     var utils = require_utils5();
     function InterceptorManager() {
@@ -53453,9 +53450,9 @@ var require_InterceptorManager = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/axios/lib/helpers/normalizeHeaderName.js
+// ../../server/node_modules/axios/lib/helpers/normalizeHeaderName.js
 var require_normalizeHeaderName = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/axios/lib/helpers/normalizeHeaderName.js"(exports2, module2) {
+  "../../server/node_modules/axios/lib/helpers/normalizeHeaderName.js"(exports2, module2) {
     "use strict";
     var utils = require_utils5();
     module2.exports = function normalizeHeaderName(headers, normalizedName) {
@@ -53469,9 +53466,9 @@ var require_normalizeHeaderName = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/axios/lib/core/enhanceError.js
+// ../../server/node_modules/axios/lib/core/enhanceError.js
 var require_enhanceError = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/axios/lib/core/enhanceError.js"(exports2, module2) {
+  "../../server/node_modules/axios/lib/core/enhanceError.js"(exports2, module2) {
     "use strict";
     module2.exports = function enhanceError(error, config2, code, request, response) {
       error.config = config2;
@@ -53504,9 +53501,9 @@ var require_enhanceError = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/axios/lib/core/createError.js
+// ../../server/node_modules/axios/lib/core/createError.js
 var require_createError = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/axios/lib/core/createError.js"(exports2, module2) {
+  "../../server/node_modules/axios/lib/core/createError.js"(exports2, module2) {
     "use strict";
     var enhanceError = require_enhanceError();
     module2.exports = function createError(message, config2, code, request, response) {
@@ -53516,9 +53513,9 @@ var require_createError = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/axios/lib/core/settle.js
+// ../../server/node_modules/axios/lib/core/settle.js
 var require_settle = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/axios/lib/core/settle.js"(exports2, module2) {
+  "../../server/node_modules/axios/lib/core/settle.js"(exports2, module2) {
     "use strict";
     var createError = require_createError();
     module2.exports = function settle(resolve2, reject, response) {
@@ -53538,9 +53535,9 @@ var require_settle = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/axios/lib/helpers/cookies.js
+// ../../server/node_modules/axios/lib/helpers/cookies.js
 var require_cookies = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/axios/lib/helpers/cookies.js"(exports2, module2) {
+  "../../server/node_modules/axios/lib/helpers/cookies.js"(exports2, module2) {
     "use strict";
     var utils = require_utils5();
     module2.exports = utils.isStandardBrowserEnv() ? (
@@ -53590,9 +53587,9 @@ var require_cookies = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/axios/lib/helpers/isAbsoluteURL.js
+// ../../server/node_modules/axios/lib/helpers/isAbsoluteURL.js
 var require_isAbsoluteURL = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/axios/lib/helpers/isAbsoluteURL.js"(exports2, module2) {
+  "../../server/node_modules/axios/lib/helpers/isAbsoluteURL.js"(exports2, module2) {
     "use strict";
     module2.exports = function isAbsoluteURL2(url) {
       return /^([a-z][a-z\d\+\-\.]*:)?\/\//i.test(url);
@@ -53600,9 +53597,9 @@ var require_isAbsoluteURL = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/axios/lib/helpers/combineURLs.js
+// ../../server/node_modules/axios/lib/helpers/combineURLs.js
 var require_combineURLs = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/axios/lib/helpers/combineURLs.js"(exports2, module2) {
+  "../../server/node_modules/axios/lib/helpers/combineURLs.js"(exports2, module2) {
     "use strict";
     module2.exports = function combineURLs(baseURL, relativeURL) {
       return relativeURL ? baseURL.replace(/\/+$/, "") + "/" + relativeURL.replace(/^\/+/, "") : baseURL;
@@ -53610,9 +53607,9 @@ var require_combineURLs = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/axios/lib/core/buildFullPath.js
+// ../../server/node_modules/axios/lib/core/buildFullPath.js
 var require_buildFullPath = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/axios/lib/core/buildFullPath.js"(exports2, module2) {
+  "../../server/node_modules/axios/lib/core/buildFullPath.js"(exports2, module2) {
     "use strict";
     var isAbsoluteURL2 = require_isAbsoluteURL();
     var combineURLs = require_combineURLs();
@@ -53625,9 +53622,9 @@ var require_buildFullPath = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/axios/lib/helpers/parseHeaders.js
+// ../../server/node_modules/axios/lib/helpers/parseHeaders.js
 var require_parseHeaders = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/axios/lib/helpers/parseHeaders.js"(exports2, module2) {
+  "../../server/node_modules/axios/lib/helpers/parseHeaders.js"(exports2, module2) {
     "use strict";
     var utils = require_utils5();
     var ignoreDuplicateOf = [
@@ -53677,9 +53674,9 @@ var require_parseHeaders = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/axios/lib/helpers/isURLSameOrigin.js
+// ../../server/node_modules/axios/lib/helpers/isURLSameOrigin.js
 var require_isURLSameOrigin = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/axios/lib/helpers/isURLSameOrigin.js"(exports2, module2) {
+  "../../server/node_modules/axios/lib/helpers/isURLSameOrigin.js"(exports2, module2) {
     "use strict";
     var utils = require_utils5();
     module2.exports = utils.isStandardBrowserEnv() ? (
@@ -53724,9 +53721,9 @@ var require_isURLSameOrigin = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/axios/lib/adapters/xhr.js
+// ../../server/node_modules/axios/lib/adapters/xhr.js
 var require_xhr = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/axios/lib/adapters/xhr.js"(exports2, module2) {
+  "../../server/node_modules/axios/lib/adapters/xhr.js"(exports2, module2) {
     "use strict";
     var utils = require_utils5();
     var settle = require_settle();
@@ -53853,9 +53850,9 @@ var require_xhr = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/axios/package.json
+// ../../server/node_modules/axios/package.json
 var require_package2 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/axios/package.json"(exports2, module2) {
+  "../../server/node_modules/axios/package.json"(exports2, module2) {
     module2.exports = {
       name: "axios",
       version: "0.21.4",
@@ -53943,9 +53940,9 @@ var require_package2 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/axios/lib/adapters/http.js
+// ../../server/node_modules/axios/lib/adapters/http.js
 var require_http = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/axios/lib/adapters/http.js"(exports2, module2) {
+  "../../server/node_modules/axios/lib/adapters/http.js"(exports2, module2) {
     "use strict";
     var utils = require_utils5();
     var settle = require_settle();
@@ -54202,9 +54199,9 @@ var require_http = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/axios/lib/defaults.js
+// ../../server/node_modules/axios/lib/defaults.js
 var require_defaults = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/axios/lib/defaults.js"(exports2, module2) {
+  "../../server/node_modules/axios/lib/defaults.js"(exports2, module2) {
     "use strict";
     var utils = require_utils5();
     var normalizeHeaderName = require_normalizeHeaderName();
@@ -54312,9 +54309,9 @@ var require_defaults = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/axios/lib/core/transformData.js
+// ../../server/node_modules/axios/lib/core/transformData.js
 var require_transformData = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/axios/lib/core/transformData.js"(exports2, module2) {
+  "../../server/node_modules/axios/lib/core/transformData.js"(exports2, module2) {
     "use strict";
     var utils = require_utils5();
     var defaults2 = require_defaults();
@@ -54328,9 +54325,9 @@ var require_transformData = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/axios/lib/cancel/isCancel.js
+// ../../server/node_modules/axios/lib/cancel/isCancel.js
 var require_isCancel = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/axios/lib/cancel/isCancel.js"(exports2, module2) {
+  "../../server/node_modules/axios/lib/cancel/isCancel.js"(exports2, module2) {
     "use strict";
     module2.exports = function isCancel(value) {
       return !!(value && value.__CANCEL__);
@@ -54338,9 +54335,9 @@ var require_isCancel = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/axios/lib/core/dispatchRequest.js
+// ../../server/node_modules/axios/lib/core/dispatchRequest.js
 var require_dispatchRequest = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/axios/lib/core/dispatchRequest.js"(exports2, module2) {
+  "../../server/node_modules/axios/lib/core/dispatchRequest.js"(exports2, module2) {
     "use strict";
     var utils = require_utils5();
     var transformData = require_transformData();
@@ -54399,9 +54396,9 @@ var require_dispatchRequest = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/axios/lib/core/mergeConfig.js
+// ../../server/node_modules/axios/lib/core/mergeConfig.js
 var require_mergeConfig = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/axios/lib/core/mergeConfig.js"(exports2, module2) {
+  "../../server/node_modules/axios/lib/core/mergeConfig.js"(exports2, module2) {
     "use strict";
     var utils = require_utils5();
     module2.exports = function mergeConfig(config1, config2) {
@@ -54482,9 +54479,9 @@ var require_mergeConfig = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/axios/lib/helpers/validator.js
+// ../../server/node_modules/axios/lib/helpers/validator.js
 var require_validator = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/axios/lib/helpers/validator.js"(exports2, module2) {
+  "../../server/node_modules/axios/lib/helpers/validator.js"(exports2, module2) {
     "use strict";
     var pkg = require_package2();
     var validators = {};
@@ -54532,10 +54529,10 @@ var require_validator = __commonJS({
       if (typeof options !== "object") {
         throw new TypeError("options must be an object");
       }
-      var keys = Object.keys(options);
-      var i = keys.length;
+      var keys2 = Object.keys(options);
+      var i = keys2.length;
       while (i-- > 0) {
-        var opt = keys[i];
+        var opt = keys2[i];
         var validator = schema[opt];
         if (validator) {
           var value = options[opt];
@@ -54558,9 +54555,9 @@ var require_validator = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/axios/lib/core/Axios.js
+// ../../server/node_modules/axios/lib/core/Axios.js
 var require_Axios = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/axios/lib/core/Axios.js"(exports2, module2) {
+  "../../server/node_modules/axios/lib/core/Axios.js"(exports2, module2) {
     "use strict";
     var utils = require_utils5();
     var buildURL = require_buildURL();
@@ -54670,9 +54667,9 @@ var require_Axios = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/axios/lib/cancel/Cancel.js
+// ../../server/node_modules/axios/lib/cancel/Cancel.js
 var require_Cancel = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/axios/lib/cancel/Cancel.js"(exports2, module2) {
+  "../../server/node_modules/axios/lib/cancel/Cancel.js"(exports2, module2) {
     "use strict";
     function Cancel(message) {
       this.message = message;
@@ -54685,9 +54682,9 @@ var require_Cancel = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/axios/lib/cancel/CancelToken.js
+// ../../server/node_modules/axios/lib/cancel/CancelToken.js
 var require_CancelToken = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/axios/lib/cancel/CancelToken.js"(exports2, module2) {
+  "../../server/node_modules/axios/lib/cancel/CancelToken.js"(exports2, module2) {
     "use strict";
     var Cancel = require_Cancel();
     function CancelToken(executor) {
@@ -54726,9 +54723,9 @@ var require_CancelToken = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/axios/lib/helpers/spread.js
+// ../../server/node_modules/axios/lib/helpers/spread.js
 var require_spread = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/axios/lib/helpers/spread.js"(exports2, module2) {
+  "../../server/node_modules/axios/lib/helpers/spread.js"(exports2, module2) {
     "use strict";
     module2.exports = function spread(callback) {
       return function wrap(arr) {
@@ -54738,9 +54735,9 @@ var require_spread = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/axios/lib/helpers/isAxiosError.js
+// ../../server/node_modules/axios/lib/helpers/isAxiosError.js
 var require_isAxiosError = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/axios/lib/helpers/isAxiosError.js"(exports2, module2) {
+  "../../server/node_modules/axios/lib/helpers/isAxiosError.js"(exports2, module2) {
     "use strict";
     module2.exports = function isAxiosError(payload) {
       return typeof payload === "object" && payload.isAxiosError === true;
@@ -54748,9 +54745,9 @@ var require_isAxiosError = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/axios/lib/axios.js
+// ../../server/node_modules/axios/lib/axios.js
 var require_axios2 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/axios/lib/axios.js"(exports2, module2) {
+  "../../server/node_modules/axios/lib/axios.js"(exports2, module2) {
     "use strict";
     var utils = require_utils5();
     var bind = require_bind();
@@ -54782,16 +54779,16 @@ var require_axios2 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/axios/index.js
+// ../../server/node_modules/axios/index.js
 var require_axios3 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/axios/index.js"(exports2, module2) {
+  "../../server/node_modules/axios/index.js"(exports2, module2) {
     module2.exports = require_axios2();
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/google-tts-api/dist/getAudioBase64.js
+// ../../server/node_modules/google-tts-api/dist/getAudioBase64.js
 var require_getAudioBase64 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/google-tts-api/dist/getAudioBase64.js"(exports, module) {
+  "../../server/node_modules/google-tts-api/dist/getAudioBase64.js"(exports, module) {
     "use strict";
     var __awaiter = exports && exports.__awaiter || function(thisArg, _arguments, P, generator) {
       function adopt(value) {
@@ -54976,9 +54973,9 @@ var require_getAudioBase64 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/google-tts-api/dist/index.js
+// ../../server/node_modules/google-tts-api/dist/index.js
 var require_dist3 = __commonJS({
-  "E:/claudeprojects/immersival/server/node_modules/google-tts-api/dist/index.js"(exports2) {
+  "../../server/node_modules/google-tts-api/dist/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.getAllAudioBase64 = exports2.getAudioBase64 = exports2.getAllAudioUrls = exports2.getAudioUrl = void 0;
@@ -54999,7 +54996,7 @@ var require_dist3 = __commonJS({
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/dotenv/config.js
+// ../../server/node_modules/dotenv/config.js
 (function() {
   require_main().config(
     Object.assign(
@@ -55011,9 +55008,9 @@ var require_dist3 = __commonJS({
 })();
 
 // server/src/public-site/server.ts
-var import_express19 = __toESM(require_express2());
+var import_express20 = __toESM(require_express2(), 1);
 
-// E:/claudeprojects/immersival/server/node_modules/helmet/index.mjs
+// ../../server/node_modules/helmet/index.mjs
 var dashify = (str4) => str4.replace(/[A-Z]/g, (capitalLetter) => "-" + capitalLetter.toLowerCase());
 var errify = (err) => err instanceof Error ? err : new Error(String(err));
 var isString = (value) => typeof value === "string";
@@ -55580,7 +55577,7 @@ var helmet = Object.assign(
   }
 );
 
-// E:/claudeprojects/immersival/server/node_modules/express-rate-limit/dist/index.mjs
+// ../../server/node_modules/express-rate-limit/dist/index.mjs
 var import_node_net = require("node:net");
 var import_ip_address = __toESM(require_ip_address(), 1);
 var import_node_net2 = require("node:net");
@@ -55969,19 +55966,19 @@ var validations = {
       singleCountKeys.set(request, storeKeys);
     }
     const storeKey = store.localKeys ? store : store.constructor.name;
-    let keys = storeKeys.get(storeKey);
-    if (!keys) {
-      keys = [];
-      storeKeys.set(storeKey, keys);
+    let keys2 = storeKeys.get(storeKey);
+    if (!keys2) {
+      keys2 = [];
+      storeKeys.set(storeKey, keys2);
     }
     const prefixedKey = `${store.prefix ?? ""}${key}`;
-    if (keys.includes(prefixedKey)) {
+    if (keys2.includes(prefixedKey)) {
       throw new ValidationError(
         "ERR_ERL_DOUBLE_COUNT",
         `The hit count for ${key} was incremented more than once for a single request.`
       );
     }
-    keys.push(prefixedKey);
+    keys2.push(prefixedKey);
   },
   /**
    * Warns the user that the behaviour for `max: 0` / `limit: 0` is
@@ -56599,60 +56596,18 @@ function permitsVisitorRequest(method, path6) {
   if (method === "GET" && /^\/ai\/(voice-catalog|voices|models|tts-models|stt\/status)$/.test(path6)) return true;
   if (method === "POST" && /^\/ai\/(chat|tts|tts\/boundaries|tts\/visemes|stt\/transcribe)$/.test(path6)) return true;
   if (method === "GET" && /^\/tts(\/stream)?$/.test(path6)) return true;
+  if (method === "POST" && (path6 === "/agents/session" || path6 === "/agents/speech")) return true;
   if (method === "POST" && path6 === "/gemini") return true;
   if (method === "POST" && /^\/analytics\/(sessions|events|events\/batch|heatmap)$/.test(path6)) return true;
   return method === "PATCH" && /^\/analytics\/sessions\/[^/]+\/close$/.test(path6);
 }
 
-// server/src/routes/showcase.ts
-var import_express = __toESM(require_express2());
-var import_crypto = __toESM(require("crypto"));
-init_db();
-var HOMEPAGE_EXPERIENCES = {
-  "djemila-scan": "09db2636-7c87-4b5f-843f-598993c12223",
-  "djemila-rebuilt": "e703c2b9-04d7-443e-a6c6-2a079bff1fa6",
-  "heritage-museum": "e76f4dfc-75a5-4bf6-b760-b3fd5370d48f"
-};
-var showcaseRouter = (0, import_express.Router)();
-showcaseRouter.get("/:slug", async (req, res2, next) => {
-  const id = HOMEPAGE_EXPERIENCES[req.params.slug];
-  if (!id) {
-    res2.status(404).json({ error: "Experience not found" });
-    return;
-  }
-  try {
-    const exhibition = await prisma.exhibition.findUnique({ where: { id }, include: { settings: true } });
-    if (!exhibition?.is_published) {
-      res2.status(404).json({ error: "Experience is not currently published" });
-      return;
-    }
-    const secret2 = exhibition.settings?.embed_secret;
-    let token = Buffer.from(`${id}:${Date.now() + 60 * 60 * 1e3}:`).toString("base64url");
-    if (secret2) {
-      const payload = `${id}:${Date.now() + 60 * 60 * 1e3}`;
-      const signature = import_crypto.default.createHmac("sha256", secret2).update(payload).digest("hex");
-      token = Buffer.from(`${payload}:${signature}`).toString("base64url");
-    }
-    const language = req.query.lang === "ar" ? "ar" : "en";
-    res2.setHeader("Cache-Control", "no-store");
-    if (process.env.NODE_ENV !== "production" && ["localhost", "127.0.0.1", "[::1]", "::1"].includes(req.hostname)) {
-      res2.redirect(302, `/embed/${token}?lang=${language}`);
-      return;
-    }
-    const frontendUrl = (process.env.FRONTEND_URL || "https://segma006-immersival.static.hf.space").replace(/\/+$/, "");
-    res2.redirect(302, `${frontendUrl}/#/embed/${token}?lang=${language}`);
-  } catch (error) {
-    next(error);
-  }
-});
-
-// server/src/routes/exhibitions.ts
-var import_express2 = __toESM(require_express2());
-init_db();
+// server/src/public-site/exhibition-agents.ts
+var import_express2 = __toESM(require_express2(), 1);
 
 // server/src/middleware/auth.ts
-var import_jsonwebtoken = __toESM(require_jsonwebtoken());
-var import_crypto2 = __toESM(require("crypto"));
+var import_jsonwebtoken = __toESM(require_jsonwebtoken(), 1);
+var import_crypto = __toESM(require("crypto"), 1);
 var JWT_SECRET = process.env.JWT_SECRET;
 if (!JWT_SECRET) {
   console.error("FATAL: JWT_SECRET environment variable is not set. Refusing to start with insecure default.");
@@ -56723,8 +56678,8 @@ function authenticateOrEmbed(req, res2, next) {
         res2.status(401).json({ error: "Exhibition not configured for embedding" });
         return;
       }
-      const expectedSig = import_crypto2.default.createHmac("sha256", settings.embed_secret).update(`${exhibitionId}:${expiresAtStr}`).digest("hex");
-      if (!import_crypto2.default.timingSafeEqual(Buffer.from(sig, "hex"), Buffer.from(expectedSig, "hex"))) {
+      const expectedSig = import_crypto.default.createHmac("sha256", settings.embed_secret).update(`${exhibitionId}:${expiresAtStr}`).digest("hex");
+      if (!import_crypto.default.timingSafeEqual(Buffer.from(sig, "hex"), Buffer.from(expectedSig, "hex"))) {
         res2.status(401).json({ error: "Invalid embed token signature" });
         return;
       }
@@ -56768,11 +56723,1074 @@ async function checkExhibitionOwnership(req, exhibitionId) {
   }
 }
 
+// server/src/ai/guide/behavior-tags.ts
+var TAG_RE = /<\s*\/?\s*([a-zA-Z_]+)([^<>]*?)\/?\s*>/g;
+var ATTR_RE = /([a-zA-Z_]+)\s*=\s*("([^"]*)"|'([^']*)'|([^\s"'/>]+))/g;
+var audioCues = /* @__PURE__ */ new Set(["laughs", "sighs", "clears throat", "thoughtful"]);
+function allowedAudioCue(value) {
+  return typeof value === "string" && audioCues.has(value) ? value : void 0;
+}
+function stripHabitualAddress(speech) {
+  return speech.replace(/(^|[.!?؟…]\s+)((?:<[^<>]+>\s*)*)(?:(?:believe me|my brothers and sisters|my brothers|my sisters|my brother|my sister|croyez[- ]moi|mes frères et sœurs|mes frères|mes sœurs|mon frère|ma sœur|صدقوني|صدقني|صدقيني|يا إخوتي وأخواتي|يا إخواني|يا إخوتي|يا خاوتي|يا أخي|يا أختي)(?:\s*[,،:;.!…]+\s*|\s*$))+/giu, "$1$2").trim();
+}
+function readAttrs(raw) {
+  const out = {};
+  for (const m of raw.matchAll(ATTR_RE)) out[m[1].toLowerCase()] = (m[3] ?? m[4] ?? m[5] ?? "").trim();
+  return out;
+}
+function objectRef(v) {
+  const m = /^(?:obj:)?\[?([A-Za-z0-9_-]{1,64})\]?$/i.exec((v ?? "").trim());
+  return m ? m[1] : null;
+}
+function canonicalTag(name, attrs, v) {
+  switch (name) {
+    case "gesture": {
+      const g = (attrs.name ?? "").toLowerCase();
+      return v.gestures.includes(g) ? `<gesture name="${g}"/>` : "";
+    }
+    case "point": {
+      const id = objectRef(attrs.to);
+      return id ? `<point to="${id}"/>` : "";
+    }
+    case "look": {
+      const at = (attrs.at ?? "").toLowerCase();
+      if (at === "visitor" || at === "away") return `<look at="${at}"/>`;
+      const id = objectRef(attrs.at);
+      return id ? `<look at="${id}"/>` : "";
+    }
+    case "emotion": {
+      const e = (attrs.name ?? "").toLowerCase();
+      return v.emotions.includes(e) ? `<emotion name="${e}"/>` : "";
+    }
+    case "voice": {
+      const cue = allowedAudioCue(attrs.name?.toLowerCase());
+      return cue ? `<voice name="${cue}"/>` : "";
+    }
+    case "motion": {
+      const m = (attrs.name ?? "").toLowerCase();
+      return (v.motions ?? []).some((x) => x.key === m) ? `<motion name="${m}"/>` : "";
+    }
+    case "generate": {
+      const instead = (attrs.instead ?? "").toLowerCase();
+      const insteadOk = v.gestures.includes(instead) || (v.motions ?? []).some((x) => x.key === instead);
+      const prompt = (attrs.motion ?? "").replace(/[^\p{L}\p{N} ,.'-]/gu, "").replace(/\s+/g, " ").trim().slice(0, 80);
+      if (!v.motionGeneration || !insteadOk || prompt.length < 4) return insteadOk && v.gestures.includes(instead) ? `<gesture name="${instead}"/>` : "";
+      return `<generate motion="${prompt}" instead="${instead}"/>`;
+    }
+    case "pause": {
+      const ms = Math.round(Number(attrs.ms));
+      return Number.isFinite(ms) && ms > 0 ? `<pause ms="${Math.min(1500, ms)}"/>` : "";
+    }
+    default:
+      return "";
+  }
+}
+function sanitizeBehaviorTags(speech, v) {
+  return speech.replace(/\[(?:laughs|sighs|clears throat|thoughtful)\]/gi, "").replace(TAG_RE, (_all, name, rest) => canonicalTag(name.toLowerCase(), readAttrs(rest), v)).replace(/[ \t]{2,}/g, " ").trim();
+}
+function stripBehaviorTags(speech) {
+  return speech.replace(TAG_RE, "").replace(/[ \t]{2,}/g, " ").trim();
+}
+
+// server/src/ai/providers/tts/elevenlabs.ts
+var API_BASE = "https://api.elevenlabs.io/v1";
+var DEFAULT_MODEL = "eleven_v4_turbo";
+var KNOWN_MODELS = [
+  { id: "eleven_v4_turbo", name: "Eleven v4 Turbo - $0.04 / 1K chars, 90+ languages (recommended)" },
+  { id: "eleven_flash_v2_5", name: "Eleven Flash v2.5 - $0.04 / 1K chars, 32 languages, fastest" },
+  { id: "eleven_v4", name: "Eleven v4 - $0.08 / 1K chars, highest quality" },
+  { id: "eleven_v3", name: "Eleven v3 - $0.08 / 1K chars" },
+  { id: "eleven_multilingual_v2", name: "Eleven Multilingual v2 - $0.08 / 1K chars" }
+];
+async function errorDetail(res2) {
+  try {
+    const body = await res2.json();
+    const d = body.detail;
+    const text2 = typeof d === "string" ? d : [d?.status, d?.message].filter(Boolean).join(": ");
+    return text2.slice(0, 200);
+  } catch {
+    return "";
+  }
+}
+var ElevenLabsVoicePlanError = class extends Error {
+  constructor() {
+    super("The current ElevenLabs plan does not allow this instant voice clone.");
+  }
+};
+var ElevenLabsTTSProvider = class {
+  id = "elevenlabs";
+  name = "ElevenLabs";
+  async isAvailable(config2) {
+    return !!config2?.apiKey;
+  }
+  async listVoices(config2) {
+    if (!config2?.apiKey) return [];
+    const res2 = await fetch(`${API_BASE}/voices`, {
+      headers: { "xi-api-key": config2.apiKey }
+    });
+    if (!res2.ok) throw new Error(`ElevenLabs voices request failed: ${res2.status} ${await errorDetail(res2)}`.trim());
+    const body = await res2.json();
+    return (body.voices ?? []).map((v) => ({
+      id: v.voice_id,
+      name: v.name,
+      lang: v.labels?.language ?? "multilingual",
+      gender: v.labels?.gender
+    }));
+  }
+  /** Models this account can use for text-to-speech (live from ElevenLabs, not a fixed list). */
+  async listModels(config2) {
+    if (!config2?.apiKey) return [];
+    const res2 = await fetch(`${API_BASE}/models`, {
+      headers: { "xi-api-key": config2.apiKey }
+    });
+    if (res2.status === 401 || res2.status === 403) return KNOWN_MODELS;
+    if (!res2.ok) throw new Error(`ElevenLabs models request failed: ${res2.status} ${await errorDetail(res2)}`.trim());
+    const body = await res2.json();
+    return body.filter((m) => m.can_do_text_to_speech !== false).map((m) => ({ id: m.model_id, name: m.name || m.model_id }));
+  }
+  async synthesize(text2, options, config2) {
+    const apiKey = config2?.apiKey;
+    if (!apiKey) throw new Error("ElevenLabs API key is not configured");
+    const requested = options.voice && /^[A-Za-z0-9]{20}$/.test(options.voice) ? options.voice : void 0;
+    const voiceId = requested || config2.voiceId;
+    if (!voiceId) throw new Error("ElevenLabs voice id is not configured");
+    const model = config2.modelId || DEFAULT_MODEL;
+    const cue = ["eleven_v4_turbo", "eleven_v4", "eleven_v3", "eleven_v3_conversational"].includes(model) ? allowedAudioCue(options.audioCue) : void 0;
+    const res2 = await fetch(`${API_BASE}/text-to-speech/${encodeURIComponent(voiceId)}/with-timestamps`, {
+      signal: options.signal,
+      method: "POST",
+      headers: {
+        "xi-api-key": apiKey,
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: JSON.stringify({
+        text: cue ? `[${cue}] ${text2}` : text2,
+        model_id: model,
+        voice_settings: { stability: 0.5, similarity_boost: 0.75 }
+      })
+    });
+    if (!res2.ok) {
+      const detail = await errorDetail(res2);
+      if (/^ivc_not_permitted(?:$|:)/.test(detail)) throw new ElevenLabsVoicePlanError();
+      throw new Error(`ElevenLabs TTS failed: ${res2.status} ${detail}`.trim());
+    }
+    const body = await res2.json();
+    if (!body.audio_base64) throw new Error("ElevenLabs TTS returned no audio");
+    const alignment = body.normalized_alignment || body.alignment;
+    const spokenAlignment = cue ? withoutAudioCue(alignment, cue) : alignment;
+    return {
+      audio: Buffer.from(body.audio_base64, "base64"),
+      format: "mp3",
+      wordBoundaries: alignmentToWords(spokenAlignment),
+      characterAlignment: spokenAlignment || void 0
+    };
+  }
+};
+function withoutAudioCue(alignment, cue) {
+  const tagged = `[${cue}]`;
+  if (!alignment?.characters.join("").toLowerCase().startsWith(tagged)) return alignment;
+  let index2 = 0;
+  let consumed = 0;
+  while (consumed < tagged.length) consumed += alignment.characters[index2++].length;
+  while (index2 < alignment.characters.length && /^\s+$/.test(alignment.characters[index2])) index2++;
+  return {
+    characters: alignment.characters.slice(index2),
+    character_start_times_seconds: alignment.character_start_times_seconds.slice(index2),
+    character_end_times_seconds: alignment.character_end_times_seconds.slice(index2)
+  };
+}
+function alignmentToWords(a) {
+  if (!a || !Array.isArray(a.characters) || a.characters.length === 0) return [];
+  const words = [];
+  let word = "";
+  let start2 = 0;
+  let end = 0;
+  const flush = () => {
+    if (!word) return;
+    words.push({ text: word, offset: Math.round(start2 * 1e3), duration: Math.max(0, Math.round((end - start2) * 1e3)) });
+    word = "";
+  };
+  a.characters.forEach((ch, i) => {
+    if (/\s/.test(ch)) {
+      flush();
+      return;
+    }
+    if (!word) start2 = a.character_start_times_seconds[i] ?? 0;
+    word += ch;
+    end = a.character_end_times_seconds[i] ?? start2;
+  });
+  flush();
+  return words;
+}
+
+// server/src/ai/tts/visemes.ts
+var ARABIC_RE = /[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF]/;
+var SIL = "sil";
+var AA = "aa";
+var E = "E";
+var I = "I";
+var O = "o";
+var U = "u";
+var PP = "PP";
+var FF = "FF";
+var SS = "SS";
+var TH = "TH";
+var DD = "DD";
+var KK = "kk";
+var NN = "nn";
+var RR = "RR";
+var EN_DIGRAPHS = [
+  [/^sh/i, SS],
+  [/^ch/i, SS],
+  [/^th/i, TH],
+  [/^ph/i, FF],
+  [/^ng/i, NN],
+  [/^wh/i, U],
+  [/^gh/i, KK]
+];
+var EN_SINGLE = {
+  a: AA,
+  A: AA,
+  e: E,
+  E,
+  i: I,
+  I,
+  o: O,
+  O,
+  u: U,
+  U,
+  y: I,
+  Y: I,
+  p: PP,
+  P: PP,
+  b: PP,
+  B: PP,
+  m: PP,
+  M: PP,
+  f: FF,
+  F: FF,
+  v: FF,
+  V: FF,
+  s: SS,
+  S: SS,
+  z: SS,
+  Z: SS,
+  x: SS,
+  X: SS,
+  t: DD,
+  T: DD,
+  d: DD,
+  D: DD,
+  c: KK,
+  C: KK,
+  k: KK,
+  K: KK,
+  g: KK,
+  G: KK,
+  q: KK,
+  Q: KK,
+  n: NN,
+  N: NN,
+  r: RR,
+  R: RR,
+  l: RR,
+  L: RR,
+  w: U,
+  W: U,
+  h: KK,
+  H: KK,
+  j: DD,
+  J: DD
+};
+var VOWELS = /* @__PURE__ */ new Set(["aa", E, I, O, U]);
+var AR_DIACRITIC = {
+  "\u064E": AA,
+  // fatha
+  "\u064E\u0651": AA,
+  // fatha + shadda
+  "\u064F": U,
+  // damma
+  "\u064F\u0651": U,
+  "\u0650": I,
+  // kasra
+  "\u0650\u0651": I,
+  "\u0652": SIL,
+  // sukun
+  "\u0651": SIL,
+  // shadda (gemination handled as consonant hold)
+  "\u064B": AA,
+  // fatha tanween
+  "\u064C": U,
+  // damma tanween
+  "\u064D": I,
+  // kasra tanween
+  "\u0653": AA,
+  // maddah above
+  "\u0654": AA,
+  // hamza above
+  "\u0655": AA,
+  // hamza below
+  "\u0670": AA,
+  // superscript alef
+  "\u06D6": SIL,
+  "\u06D7": SIL,
+  "\u06D8": SIL,
+  "\u06D9": SIL,
+  "\u06DA": SIL,
+  "\u06DB": SIL,
+  "\u06DC": SIL,
+  "\u06DF": SIL,
+  "\u06E0": SIL,
+  "\u06E1": SIL,
+  "\u06E2": SIL,
+  "\u06E3": SIL,
+  "\u06E4": SIL,
+  "\u06E5": SIL,
+  "\u06E6": SIL,
+  "\u06E7": SIL,
+  "\u06E8": SIL,
+  "\u06E9": SIL,
+  "\u06EA": SIL,
+  "\u06EB": SIL,
+  "\u06EC": SIL,
+  "\u06ED": SIL
+};
+var AR_LETTER = {
+  "\u0627": AA,
+  // ا alef
+  "\u0622": AA,
+  // آ
+  "\u0623": AA,
+  // أ
+  "\u0625": AA,
+  // إ
+  "\u0624": U,
+  // ؤ
+  "\u0626": I,
+  // ئ
+  "\u0628": PP,
+  // ب
+  "\u062A": DD,
+  // ت
+  "\u062B": TH,
+  // ث
+  "\u062C": DD,
+  // ج
+  "\u062D": KK,
+  // ح
+  "\u062E": KK,
+  // خ
+  "\u062F": DD,
+  // د
+  "\u0630": TH,
+  // ذ
+  "\u0631": RR,
+  // ر
+  "\u0632": SS,
+  // ز
+  "\u0633": SS,
+  // س
+  "\u0634": SS,
+  // ش
+  "\u0635": SS,
+  // ص
+  "\u0636": DD,
+  // ض
+  "\u0637": DD,
+  // ط
+  "\u0638": TH,
+  // ظ
+  "\u0639": KK,
+  // ع
+  "\u063A": KK,
+  // غ
+  "\u0641": FF,
+  // ف
+  "\u0642": KK,
+  // ق
+  "\u0643": KK,
+  // ك
+  "\u0644": RR,
+  // ل
+  "\u0645": PP,
+  // م
+  "\u0646": NN,
+  // ن
+  "\u0647": KK,
+  // ه
+  "\u0648": U,
+  // و
+  "\u0649": AA,
+  // ى
+  "\u064A": I,
+  // ي
+  "\u0671": AA,
+  // ٱ
+  "\u067E": PP,
+  // پ
+  "\u0686": SS,
+  // چ
+  "\u0698": RR,
+  // ژ
+  "\u06AF": KK,
+  // گ
+  "\u06BE": KK,
+  // ھ
+  "\u06CC": I,
+  // ی
+  "\u06D5": AA
+  // ە
+};
+function wordToVisemes(word, arabic) {
+  const out = [];
+  const chars = Array.from(word);
+  if (arabic) {
+    for (const ch of chars) {
+      if (AR_DIACRITIC[ch] !== void 0) {
+        const v = AR_DIACRITIC[ch];
+        out.push({ viseme: v, text: ch, weight: v === SIL ? 0.6 : 1.6 });
+      } else if (AR_LETTER[ch] !== void 0) {
+        out.push({ viseme: AR_LETTER[ch], text: ch, weight: 1 });
+      } else {
+        out.push({ viseme: SIL, text: ch, weight: 0.4 });
+      }
+    }
+    return out;
+  }
+  let i = 0;
+  while (i < chars.length) {
+    const rest = chars.slice(i).join("");
+    let matched = false;
+    for (const [re, viseme] of EN_DIGRAPHS) {
+      if (re.test(rest)) {
+        const text2 = chars[i] + chars[i + 1];
+        out.push({ viseme, text: text2, weight: 1 });
+        i += 2;
+        matched = true;
+        break;
+      }
+    }
+    if (matched) continue;
+    const ch = chars[i];
+    if (/[a-zA-Z]/.test(ch)) {
+      out.push({ viseme: EN_SINGLE[ch] || KK, text: ch, weight: 1 });
+    } else if (ch === "'") {
+      out.push({ viseme: SIL, text: ch, weight: 0.2 });
+    } else {
+      out.push({ viseme: SIL, text: ch, weight: 0.6 });
+    }
+    i++;
+  }
+  return out;
+}
+function isArabic(text2) {
+  return ARABIC_RE.test(text2);
+}
+function visemeWeight(viseme) {
+  return VOWELS.has(viseme) ? 1.35 : 1;
+}
+function expandWord(word, wo, wdur, arabic) {
+  const seq = wordToVisemes(word, arabic);
+  if (seq.length === 0) return [];
+  const total = seq.reduce((a, g) => a + g.weight * visemeWeight(g.viseme), 0);
+  const unit = wdur / Math.max(total, 1e-4);
+  const items = [];
+  let cursor = wo;
+  for (const g of seq) {
+    const dur = g.weight * visemeWeight(g.viseme) * unit;
+    const amp = g.viseme === PP || g.viseme === FF ? 0.6 : 0.42;
+    items.push({ text: g.text, viseme: g.viseme, start: Math.round(cursor), duration: Math.max(1, Math.round(dur)), amp });
+    cursor += dur;
+  }
+  return items;
+}
+function deriveBoundariesFromText(text2, speed) {
+  const tokens = text2.split(/\s+/).filter(Boolean);
+  if (tokens.length === 0) return [];
+  const rate = speed ?? 1;
+  const estTotalMs = Math.max(500, text2.length / 15 * 1e3 / Math.max(0.25, rate));
+  const vowelRun = (w) => Math.max(1, (w.match(/[aeiouyAEIOUY]/g) || []).length);
+  const pauseAt = (w) => w && /[.!?]$/.test(w) ? 0.16 : /[,;:]$/.test(w) ? 0.1 : 0;
+  const weights = tokens.map((t) => vowelRun(t) + 0.35);
+  const totalWeight = weights.reduce((a, b) => a + b, 0) + tokens.reduce((a, t) => a + pauseAt(t), 0);
+  const unit = estTotalMs / totalWeight;
+  const starts = [];
+  let cursor = 0;
+  for (let i = 0; i < tokens.length; i++) {
+    starts.push(cursor);
+    cursor += weights[i] * unit;
+    cursor += pauseAt(tokens[i]) * unit;
+  }
+  return tokens.map((word, i) => {
+    const start2 = starts[i];
+    const end = i + 1 < starts.length ? starts[i + 1] : Math.max(start2 + 120, estTotalMs);
+    return {
+      text: word,
+      offset: Math.round(start2),
+      duration: Math.round(Math.max(60, Math.min(1500, end - start2)))
+    };
+  });
+}
+function alignedVisemes(alignment) {
+  if (!alignment) return null;
+  const { characters: c, character_start_times_seconds: s, character_end_times_seconds: e } = alignment;
+  if (!Array.isArray(c) || !c.length || c.length > 2e4 || !Array.isArray(s) || !Array.isArray(e) || c.length !== s.length || c.length !== e.length || !c.every((x) => typeof x === "string" && x.length > 0) || !s.every((v, i) => Number.isFinite(v) && v >= 0 && Number.isFinite(e[i]) && e[i] >= v && (i === 0 || v >= s[i - 1]))) return null;
+  const chars = [], starts = [], ends = [];
+  c.forEach((token, i) => {
+    for (const ch of Array.from(token)) {
+      chars.push(ch);
+      starts.push(s[i]);
+      ends.push(e[i]);
+    }
+  });
+  const text2 = chars.join(""), seq = wordToVisemes(text2, isArabic(text2)), items = [];
+  let cursor = 0;
+  for (const g of seq) {
+    const size = Array.from(g.text).length, last = cursor + size - 1;
+    if (last >= starts.length) break;
+    const start2 = starts[cursor] * 1e3, end = ends[last] * 1e3;
+    cursor += size;
+    if (g.viseme === "sil" || end <= start2) continue;
+    items.push({ text: g.text, viseme: g.viseme, start: Math.round(start2), duration: Math.max(1, Math.round(end - start2)), amp: g.viseme === "PP" || g.viseme === "FF" ? 0.6 : 0.42 });
+  }
+  return items.length ? items : null;
+}
+function buildVisemeTimeline(text2, wordBoundaries, speed, alignment) {
+  const aligned = alignedVisemes(alignment);
+  if (aligned) return aligned;
+  const arabic = isArabic(text2);
+  const boundaries = Array.isArray(wordBoundaries) && wordBoundaries.length > 0 ? wordBoundaries : deriveBoundariesFromText(text2, speed);
+  const items = [];
+  for (const b of boundaries) {
+    const word = (b.text || "").trim();
+    if (!word) continue;
+    const wo = b.offset ?? 0;
+    const wdur = b.duration ?? 0;
+    if (wdur <= 0) continue;
+    items.push(...expandWord(word, wo, wdur, arabic));
+  }
+  return items;
+}
+
+// server/src/routes/embed.ts
+var import_express = __toESM(require_express2(), 1);
+init_db();
+var import_crypto2 = __toESM(require("crypto"), 1);
+var import_fs = __toESM(require("fs"), 1);
+var import_path = __toESM(require("path"), 1);
+var embedRouter = (0, import_express.Router)();
+function getOrCreateEmbedSessionSecret() {
+  const secretFile = import_path.default.join(process.cwd(), ".embed-session-secret");
+  if (import_fs.default.existsSync(secretFile)) {
+    try {
+      const stored = import_fs.default.readFileSync(secretFile, "utf-8").trim();
+      if (stored.length === 64) return stored;
+    } catch {
+    }
+  }
+  const secret2 = import_crypto2.default.randomBytes(32).toString("hex");
+  try {
+    import_fs.default.writeFileSync(secretFile, secret2, "utf-8");
+  } catch {
+  }
+  return secret2;
+}
+var EMBED_SESSION_SECRET = getOrCreateEmbedSessionSecret();
+var embedAuthAttempts = /* @__PURE__ */ new Map();
+function generateSecret() {
+  return import_crypto2.default.randomBytes(32).toString("hex");
+}
+function signToken(exhibitionId, secret2, expiresAt) {
+  const payload = `${exhibitionId}:${expiresAt}`;
+  const sig = import_crypto2.default.createHmac("sha256", secret2).update(payload).digest("hex");
+  return Buffer.from(`${payload}:${sig}`).toString("base64url");
+}
+function verifyToken(token, secret2) {
+  try {
+    const decoded = Buffer.from(token, "base64url").toString("utf-8");
+    const parts = decoded.split(":");
+    if (parts.length !== 3) return null;
+    const [exhibitionId, expiresAtStr, sig] = parts;
+    const expiresAt = parseInt(expiresAtStr, 10);
+    const expectedSig = import_crypto2.default.createHmac("sha256", secret2).update(`${exhibitionId}:${expiresAt}`).digest("hex");
+    if (!import_crypto2.default.timingSafeEqual(Buffer.from(sig, "hex"), Buffer.from(expectedSig, "hex"))) return null;
+    if (Date.now() > expiresAt) return null;
+    return { exhibitionId, expiresAt };
+  } catch {
+    return null;
+  }
+}
+function checkDomain(req, allowedDomains) {
+  if (allowedDomains.length === 0) return true;
+  const origin = req.headers.origin || req.headers.referer || "";
+  if (!origin) return false;
+  try {
+    const url = new URL(origin);
+    const hostname = url.hostname.toLowerCase();
+    return allowedDomains.some((d) => hostname === d.toLowerCase() || hostname.endsWith("." + d.toLowerCase()));
+  } catch {
+    return false;
+  }
+}
+async function embedAuthMiddleware(req, res2, next) {
+  if (!req.path.includes("/public") && !req.path.startsWith("/analytics/")) {
+    next();
+    return;
+  }
+  if (req.path.startsWith("/analytics/")) {
+    next();
+    return;
+  }
+  const pathParts = req.path.split("/").filter(Boolean);
+  const exhibitionId = pathParts[1];
+  if (!exhibitionId) {
+    next();
+    return;
+  }
+  await requireExhibitionVisitor(exhibitionId, req, res2, next);
+}
+async function requireExhibitionVisitor(exhibitionId, req, res2, next) {
+  const settings = await prisma.exhibitionSettings.findUnique({
+    where: { exhibition_id: exhibitionId }
+  });
+  if (!settings || !settings.embed_secret) {
+    next();
+    return;
+  }
+  const allowedDomains = settings.embed_allowed_domains ? JSON.parse(settings.embed_allowed_domains) : [];
+  if (!checkDomain(req, allowedDomains)) {
+    res2.status(403).json({ error: "Domain not allowed", code: "DOMAIN_RESTRICTED" });
+    return;
+  }
+  const passwordCookieName = `es_embed_auth_${exhibitionId}`;
+  const hasPasswordSession = req.cookies?.[passwordCookieName];
+  if (settings.embed_password_hash && !hasPasswordSession) {
+    res2.status(403).json({ error: "Password required", code: "PASSWORD_REQUIRED" });
+    return;
+  }
+  if (hasPasswordSession && settings.embed_password_hash) {
+    try {
+      const decoded = Buffer.from(hasPasswordSession, "base64url").toString("utf-8");
+      const parts = decoded.split(":");
+      if (parts.length !== 3) {
+        res2.clearCookie(passwordCookieName);
+        res2.status(403).json({ error: "Invalid session", code: "PASSWORD_REQUIRED" });
+        return;
+      }
+      const [cookieExhibitionId, expiryStr, sig] = parts;
+      const expiry = parseInt(expiryStr, 10);
+      const expectedSig = import_crypto2.default.createHmac("sha256", EMBED_SESSION_SECRET).update(`${cookieExhibitionId}:${expiryStr}`).digest("hex");
+      if (cookieExhibitionId !== exhibitionId || !import_crypto2.default.timingSafeEqual(Buffer.from(sig, "hex"), Buffer.from(expectedSig, "hex")) || Date.now() > expiry) {
+        res2.clearCookie(passwordCookieName);
+        res2.status(403).json({ error: "Password session expired", code: "PASSWORD_REQUIRED" });
+        return;
+      }
+    } catch {
+      res2.clearCookie(passwordCookieName);
+      res2.status(403).json({ error: "Invalid session", code: "PASSWORD_REQUIRED" });
+      return;
+    }
+  }
+  next();
+}
+embedRouter.post("/:exhibitionId/config", authenticate, async (req, res2) => {
+  try {
+    const { password, allowedDomains, tokenTtl } = req.body;
+    const exhibitionId = req.params.exhibitionId;
+    const exh = await prisma.exhibition.findUnique({ where: { id: exhibitionId } });
+    if (!exh) {
+      res2.status(404).json({ error: "Exhibition not found" });
+      return;
+    }
+    if (exh.owner_id !== req.user.userId && !req.user.isAdmin) {
+      res2.status(403).json({ error: "Not owner" });
+      return;
+    }
+    await prisma.exhibitionSettings.upsert({
+      where: { exhibition_id: exhibitionId },
+      create: { exhibition_id: exhibitionId },
+      update: {}
+    });
+    const secret2 = generateSecret();
+    let passwordHash = "";
+    if (password && password.length > 0) {
+      const bcrypt = await Promise.resolve().then(() => __toESM(require_bcryptjs(), 1));
+      passwordHash = await bcrypt.default.hash(password, 10);
+    }
+    await prisma.exhibitionSettings.update({
+      where: { exhibition_id: exhibitionId },
+      data: {
+        embed_secret: secret2,
+        embed_password_hash: passwordHash,
+        embed_allowed_domains: JSON.stringify(allowedDomains || []),
+        embed_token_ttl: tokenTtl || 2592e3
+      }
+    });
+    const ttl = tokenTtl || 2592e3;
+    const expiresAt = Date.now() + ttl * 1e3;
+    const token = signToken(exhibitionId, secret2, expiresAt);
+    const baseUrl = `${req.protocol}://${req.get("host")}`;
+    res2.json({
+      success: true,
+      embedUrl: `${baseUrl}/embed/${token}`,
+      token,
+      expiresAt: new Date(expiresAt).toISOString()
+    });
+  } catch (err) {
+    console.error("Embed config error:", err);
+    res2.status(500).json({ error: "Failed to save embed config" });
+  }
+});
+embedRouter.post("/:exhibitionId/token", authenticate, async (req, res2) => {
+  try {
+    const exhibitionId = req.params.exhibitionId;
+    const exh = await prisma.exhibition.findUnique({ where: { id: exhibitionId } });
+    if (!exh) {
+      res2.status(404).json({ error: "Exhibition not found" });
+      return;
+    }
+    if (exh.owner_id !== req.user.userId && !req.user.isAdmin) {
+      res2.status(403).json({ error: "Not owner" });
+      return;
+    }
+    const settings = await prisma.exhibitionSettings.findUnique({
+      where: { exhibition_id: exhibitionId }
+    });
+    if (!settings || !settings.embed_secret) {
+      res2.status(400).json({ error: "No embed config. Create one first." });
+      return;
+    }
+    const ttl = settings.embed_token_ttl;
+    const expiresAt = Date.now() + ttl * 1e3;
+    const token = signToken(exhibitionId, settings.embed_secret, expiresAt);
+    const baseUrl = `${req.protocol}://${req.get("host")}`;
+    res2.json({
+      embedUrl: `${baseUrl}/embed/${token}`,
+      token,
+      expiresAt: new Date(expiresAt).toISOString()
+    });
+  } catch (err) {
+    console.error("Embed token error:", err);
+    res2.status(500).json({ error: "Failed to generate token" });
+  }
+});
+embedRouter.post("/:exhibitionId/auth", async (req, res2) => {
+  try {
+    const exhibitionId = req.params.exhibitionId;
+    const ip = req.ip || req.socket.remoteAddress || "unknown";
+    const authKey = `embed_auth:${exhibitionId}:${ip}`;
+    const now = Date.now();
+    const entry = embedAuthAttempts.get(authKey);
+    if (entry && now < entry.resetAt && entry.count >= 5) {
+      res2.status(429).json({ error: "Too many attempts. Try again later." });
+      return;
+    }
+    if (!entry || now > entry.resetAt) {
+      embedAuthAttempts.set(authKey, { count: 1, resetAt: now + 15 * 60 * 1e3 });
+    } else {
+      entry.count++;
+    }
+    const { password, token } = req.body;
+    const settings = await prisma.exhibitionSettings.findUnique({
+      where: { exhibition_id: exhibitionId }
+    });
+    if (!settings || !settings.embed_password_hash) {
+      res2.status(400).json({ error: "No password set for this exhibition" });
+      return;
+    }
+    const bcrypt = await Promise.resolve().then(() => __toESM(require_bcryptjs(), 1));
+    const valid = await bcrypt.default.compare(password || "", settings.embed_password_hash);
+    if (!valid) {
+      res2.status(401).json({ error: "Wrong password" });
+      return;
+    }
+    const sessionExpiry = Date.now() + 24 * 60 * 60 * 1e3;
+    const sessionPayload = `${exhibitionId}:${sessionExpiry}`;
+    const sessionSig = import_crypto2.default.createHmac("sha256", EMBED_SESSION_SECRET).update(sessionPayload).digest("hex");
+    const sessionValue = Buffer.from(`${sessionPayload}:${sessionSig}`).toString("base64url");
+    const passwordCookieName = `es_embed_auth_${exhibitionId}`;
+    res2.cookie(passwordCookieName, sessionValue, {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === "production",
+      sameSite: "lax",
+      maxAge: 24 * 60 * 60 * 1e3,
+      path: "/"
+    });
+    res2.json({ success: true });
+  } catch (err) {
+    console.error("Embed auth error:", err);
+    res2.status(500).json({ error: "Auth failed" });
+  }
+});
+embedRouter.post("/:exhibitionId/validate", async (req, res2) => {
+  try {
+    const exhibitionId = req.params.exhibitionId;
+    const { token } = req.body;
+    const settings = await prisma.exhibitionSettings.findUnique({
+      where: { exhibition_id: exhibitionId }
+    });
+    if (!settings || !settings.embed_secret) {
+      res2.json({ valid: true, hasPassword: false });
+      return;
+    }
+    const result2 = verifyToken(token || "", settings.embed_secret);
+    if (!result2 || result2.exhibitionId !== exhibitionId) {
+      res2.status(403).json({ error: "Invalid or expired token", code: "INVALID_TOKEN" });
+      return;
+    }
+    const hasPasswordSession = req.cookies?.[`es_embed_auth_${exhibitionId}`];
+    const needsPassword = !!settings.embed_password_hash && !hasPasswordSession;
+    res2.json({ valid: true, hasPassword: !!settings.embed_password_hash, needsPassword });
+  } catch (err) {
+    console.error("Embed validate error:", err);
+    res2.status(500).json({ error: "Validation failed" });
+  }
+});
+embedRouter.get("/:exhibitionId/config", authenticate, async (req, res2) => {
+  try {
+    const exhibitionId = req.params.exhibitionId;
+    const exh = await prisma.exhibition.findUnique({ where: { id: exhibitionId } });
+    if (!exh) {
+      res2.status(404).json({ error: "Exhibition not found" });
+      return;
+    }
+    if (exh.owner_id !== req.user.userId && !req.user.isAdmin) {
+      res2.status(403).json({ error: "Not owner" });
+      return;
+    }
+    const settings = await prisma.exhibitionSettings.findUnique({
+      where: { exhibition_id: exhibitionId }
+    });
+    const hasSecret = !!settings?.embed_secret;
+    const hasPassword = !!settings?.embed_password_hash;
+    const allowedDomains = settings?.embed_allowed_domains ? JSON.parse(settings.embed_allowed_domains) : [];
+    const ttl = settings?.embed_token_ttl || 2592e3;
+    let token = "";
+    if (hasSecret && settings) {
+      const ttl2 = settings.embed_token_ttl;
+      const expiresAt = Date.now() + ttl2 * 1e3;
+      token = signToken(exhibitionId, settings.embed_secret, expiresAt);
+    }
+    res2.json({
+      hasSecret,
+      hasPassword,
+      allowedDomains,
+      tokenTtl: ttl,
+      token
+    });
+  } catch (err) {
+    console.error("Get embed config error:", err);
+    res2.status(500).json({ error: "Failed to get embed config" });
+  }
+});
+
+// server/src/ai/guide/exhibition-scope.ts
+var HERITAGE_HALL_ID = "e76f4dfc-75a5-4bf6-b760-b3fd5370d48f";
+var DJEMILA_MARKET_ID = "e703c2b9-04d7-443e-a6c6-2a079bff1fa6";
+var DJEMILA_SCAN_ID = "09db2636-7c87-4b5f-843f-598993c12223";
+var heritage = {
+  family: "heritage",
+  name: "Algerian Heritage Hall",
+  actors: ["ahmed", "boumediene", "emir"],
+  instructions: "You are inside the Algerian Heritage Hall, a museum of Algerian material culture. Discuss only the exhibits and people recorded for this hall. Treat a visitor mentioning another venue as a request outside this visit. Never borrow facts or memories from another venue. Do not imply that a cast member owned a displayed artifact unless a curator record establishes it."
+};
+var djemila = {
+  family: "djemila",
+  name: "Djemila Market",
+  actors: ["ahmed"],
+  instructions: "You are inside the reconstructed Roman market experience at Djemila, ancient Cuicul. Discuss only this market, its public displays, and relevant Roman-era context. Identify a reconstruction as a reconstruction. Do not introduce modern historical figures, Heritage Hall objects, or facts from another venue."
+};
+var scan = {
+  ...djemila,
+  name: "Djemila Archaeological Scan",
+  instructions: "You are inside the scanned archaeological experience at Djemila, ancient Cuicul. Discuss only this location and its public scene records. Distinguish archaeological remains from reconstructions. Do not narrate the reconstructed market as if the visitor were there, or introduce objects or characters from another venue."
+};
+function exhibitionScope(id) {
+  if (id === HERITAGE_HALL_ID) return heritage;
+  if (id === DJEMILA_MARKET_ID) return djemila;
+  if (id === DJEMILA_SCAN_ID) return scan;
+}
+function visitorLanguage(language) {
+  const code = language?.trim().slice(0, 2).toLowerCase();
+  return code === "fr" || code === "ar" ? code : "en";
+}
+function normalized(text2) {
+  return text2.normalize("NFKD").replace(/\p{M}|ـ/gu, "").toLowerCase();
+}
+var romanSite = /\b(?:d[gj]emila|djamila|jamila|j[mn]ila|cuicul|roman\s+(?:market(?:place)?|forum)|(?:marche|forum)\s+romain)\b|كويكول|كويكُل|(?:سوق|مدينة|موقع|اثار)\s+(?:جميلة|جميلا|جميله)|السوق\s+الروماني|المنتدى\s+الروماني/iu;
+var hall = /\b(?:heritage\s+(?:hall|museum)|(?:salle|musee)\s+(?:du\s+)?patrimoine|boumed(?:iene|ian|ienne)|(?:emir|amir)\s+ab[de]?[ae]?l?\s?kader|abdelkader)\b|(?:معرض|قاعة|متحف)\s+(?:التراث|تراث)|بومدين|بو\s+مدين|عبد\s*القادر/iu;
+function crossesExhibition(id, text2) {
+  const scope = exhibitionScope(id);
+  if (!scope || !text2.trim()) return false;
+  const value = normalized(text2);
+  return (scope.family === "heritage" ? romanSite : hall).test(value);
+}
+function scopeRedirect(id, language) {
+  if (exhibitionScope(id)?.family === "heritage") {
+    return {
+      en: "We are in Heritage Hall. I can tell you about the objects and characters in this exhibition.",
+      fr: "Nous sommes dans la salle du patrimoine. Je peux vous parler des objets et des personnages de cette exposition.",
+      ar: "\u0646\u062D\u0646 \u0641\u064A \u0642\u0627\u0639\u0629 \u0627\u0644\u062A\u0631\u0627\u062B. \u064A\u0645\u0643\u0646\u0646\u064A \u0623\u0646 \u0623\u062D\u062F\u062B\u0643 \u0639\u0646 \u0627\u0644\u0642\u0637\u0639 \u0648\u0627\u0644\u0634\u062E\u0635\u064A\u0627\u062A \u0627\u0644\u0645\u0648\u062C\u0648\u062F\u0629 \u0641\u064A \u0647\u0630\u0627 \u0627\u0644\u0645\u0639\u0631\u0636."
+    }[language];
+  }
+  return {
+    en: "We are in the Djemila experience. I can help you explore the Roman site and its exhibits.",
+    fr: "Nous sommes dans l\u2019exp\xE9rience de Djemila. Je peux vous faire d\xE9couvrir le site romain et ses \xE9l\xE9ments.",
+    ar: "\u0646\u062D\u0646 \u0641\u064A \u062A\u062C\u0631\u0628\u0629 \u062C\u0645\u064A\u0644\u0629 \u0627\u0644\u0623\u062B\u0631\u064A\u0629. \u064A\u0645\u0643\u0646\u0646\u064A \u0645\u0633\u0627\u0639\u062F\u062A\u0643 \u0641\u064A \u0627\u0633\u062A\u0643\u0634\u0627\u0641 \u0627\u0644\u0645\u0648\u0642\u0639 \u0627\u0644\u0631\u0648\u0645\u0627\u0646\u064A \u0648\u0645\u0639\u0631\u0648\u0636\u0627\u062A\u0647."
+  }[language];
+}
+
+// server/src/public-site/exhibition-agents.ts
+var keys = { [HERITAGE_HALL_ID]: "WAI_AGENTS_HERITAGE_ID", [DJEMILA_MARKET_ID]: "WAI_AGENTS_DJEMILA_MARKET_ID", [DJEMILA_SCAN_ID]: "WAI_AGENTS_DJEMILA_SCAN_ID" };
+var pilot = (0, import_express2.Router)();
+var tts = new ElevenLabsTTSProvider();
+pilot.use((req, res2, next) => {
+  const token = req.get("X-Embed-Token") ?? "";
+  const exhibitionId = Buffer.from(token, "base64url").toString().split(":")[0];
+  if (!exhibitionScope(exhibitionId) || exhibitionId !== req.body?.exhibitionId) {
+    res2.status(403).json({ error: "Use a visitor link for this exhibition" });
+    return;
+  }
+  res2.locals.exhibitionId = exhibitionId;
+  delete req.headers.authorization;
+  next();
+});
+pilot.use(rate_limit_default({ windowMs: 6e4, limit: 40, standardHeaders: true, legacyHeaders: false }));
+pilot.use(authenticateOrEmbed);
+pilot.use((req, res2, next) => {
+  void requireExhibitionVisitor(res2.locals.exhibitionId, req, res2, next).catch(next);
+});
+pilot.use((_req, res2, next) => {
+  res2.set("Cache-Control", "no-store");
+  const id = process.env[keys[res2.locals.exhibitionId]];
+  if (!id || !process.env.ELEVENLABS_AGENTS_API_KEY) {
+    res2.status(503).json({ error: "Cloud voice is unavailable for this exhibition" });
+    return;
+  }
+  res2.locals.agentId = id;
+  next();
+});
+async function agentRequest(path6) {
+  return fetch(`https://api.elevenlabs.io/v1/convai/${path6}`, {
+    headers: { "xi-api-key": process.env.ELEVENLABS_AGENTS_API_KEY },
+    signal: AbortSignal.timeout(12e3)
+  });
+}
+var cache = /* @__PURE__ */ new Map();
+async function castConfig(agentId, exhibitionId) {
+  const aliases = exhibitionScope(exhibitionId).actors;
+  const cacheKey = exhibitionId + ":" + agentId;
+  const cached = cache.get(cacheKey);
+  if (cached && cached.expires > Date.now()) return cached;
+  const response = await agentRequest(`agents/${encodeURIComponent(agentId)}`);
+  if (!response.ok) throw new Error("Agent configuration unavailable");
+  const agent = await response.json();
+  const config2 = agent.conversation_config?.tts;
+  const voices = /* @__PURE__ */ new Map();
+  for (const voice of config2?.supported_voices ?? []) {
+    if (aliases.includes(voice.label) && /^[A-Za-z0-9]{20}$/.test(voice.voice_id)) voices.set(voice.label, voice.voice_id);
+  }
+  if (agent.platform_settings?.auth?.enable_auth !== true || voices.size !== aliases.length || config2.supported_voices.length !== aliases.length) throw new Error("Invalid private cast configuration");
+  const result2 = { expires: Date.now() + 6e4, voices, model: config2.model_id };
+  cache.set(cacheKey, result2);
+  return result2;
+}
+pilot.post("/session", async (_req, res2) => {
+  res2.set("Cache-Control", "no-store");
+  const { agentId: id, exhibitionId } = res2.locals;
+  try {
+    await castConfig(id, exhibitionId);
+    const response = await agentRequest(`conversation/get-signed-url?agent_id=${encodeURIComponent(id)}`);
+    if (!response.ok) throw new Error("Agent session unavailable");
+    const { signed_url: url } = await response.json();
+    const target = new URL(url);
+    if (target.protocol !== "wss:" || !["api.elevenlabs.io", "api.us.elevenlabs.io"].includes(target.hostname)) {
+      throw new Error("Unexpected agent endpoint");
+    }
+    res2.json({ url });
+  } catch {
+    res2.status(503).json({ error: "Could not open the private agent session" });
+  }
+});
+pilot.post("/speech", async (req, res2) => {
+  res2.set("Cache-Control", "no-store");
+  const { actor, text: text2 } = req.body ?? {};
+  const { exhibitionId, agentId } = res2.locals;
+  if (!exhibitionScope(exhibitionId).actors.includes(actor) || typeof text2 !== "string" || !text2.trim() || text2.length > 500 || crossesExhibition(exhibitionId, text2)) {
+    res2.status(400).json({ error: "Invalid cast line" });
+    return;
+  }
+  const controller = new AbortController();
+  res2.once("close", () => controller.abort());
+  try {
+    const config2 = await castConfig(agentId, exhibitionId);
+    const voiceId = config2.voices.get(actor);
+    const result2 = await tts.synthesize(text2, { voice: voiceId, signal: AbortSignal.any([controller.signal, AbortSignal.timeout(15e3)]) }, {
+      apiKey: process.env.ELEVENLABS_API_KEY,
+      voiceId,
+      modelId: config2.model
+    });
+    res2.json({
+      audio: result2.audio.toString("base64"),
+      wordBoundaries: result2.wordBoundaries,
+      visemes: buildVisemeTimeline(text2, result2.wordBoundaries, void 0, result2.characterAlignment)
+    });
+  } catch {
+    if (!controller.signal.aborted) res2.status(503).json({ error: "The assigned ElevenLabs voice could not generate this line" });
+  }
+});
+var agentsRouter = pilot;
+
+// server/src/routes/showcase.ts
+var import_express3 = __toESM(require_express2(), 1);
+var import_crypto3 = __toESM(require("crypto"), 1);
+init_db();
+var HOMEPAGE_EXPERIENCES = {
+  "djemila-scan": "09db2636-7c87-4b5f-843f-598993c12223",
+  "djemila-rebuilt": "e703c2b9-04d7-443e-a6c6-2a079bff1fa6",
+  "heritage-museum": "e76f4dfc-75a5-4bf6-b760-b3fd5370d48f"
+};
+var showcaseRouter = (0, import_express3.Router)();
+showcaseRouter.get("/:slug", async (req, res2, next) => {
+  const id = HOMEPAGE_EXPERIENCES[req.params.slug];
+  if (!id) {
+    res2.status(404).json({ error: "Experience not found" });
+    return;
+  }
+  try {
+    const exhibition = await prisma.exhibition.findUnique({ where: { id }, include: { settings: true } });
+    if (!exhibition?.is_published) {
+      res2.status(404).json({ error: "Experience is not currently published" });
+      return;
+    }
+    const secret2 = exhibition.settings?.embed_secret;
+    let token = Buffer.from(`${id}:${Date.now() + 60 * 60 * 1e3}:`).toString("base64url");
+    if (secret2) {
+      const payload = `${id}:${Date.now() + 60 * 60 * 1e3}`;
+      const signature = import_crypto3.default.createHmac("sha256", secret2).update(payload).digest("hex");
+      token = Buffer.from(`${payload}:${signature}`).toString("base64url");
+    }
+    const language = visitorLanguage(typeof req.query.lang === "string" ? req.query.lang : null);
+    res2.setHeader("Cache-Control", "no-store");
+    if (process.env.NODE_ENV !== "production" && ["localhost", "127.0.0.1", "[::1]", "::1"].includes(req.hostname)) {
+      res2.redirect(302, `/embed/${token}?lang=${language}`);
+      return;
+    }
+    const frontendUrl = (process.env.FRONTEND_URL || "https://segma006-immersival.static.hf.space").replace(/\/+$/, "");
+    res2.redirect(302, `${frontendUrl}/#/embed/${token}?lang=${language}`);
+  } catch (error) {
+    next(error);
+  }
+});
+
 // server/src/routes/exhibitions.ts
+var import_express4 = __toESM(require_express2(), 1);
+init_db();
 var import_promises = require("fs/promises");
-var import_fs = require("fs");
-var import_path = require("path");
-var exhibitionsRouter = (0, import_express2.Router)();
+var import_fs2 = require("fs");
+var import_path2 = require("path");
+var exhibitionsRouter = (0, import_express4.Router)();
 exhibitionsRouter.get("/", authenticate, async (req, res2) => {
   try {
     const profile = await prisma.profile.findUnique({ where: { id: req.user.userId } });
@@ -57146,11 +58164,11 @@ exhibitionsRouter.post("/:id/thumbnail", authenticate, async (req, res2) => {
     const ext = match[1] === "jpeg" ? "jpg" : match[1];
     const buffer = Buffer.from(match[2], "base64");
     const filename = `thumb-${req.params.id}-${Date.now()}.${ext}`;
-    const dir = (0, import_path.join)(process.cwd(), "uploads", "thumbnails");
-    if (!(0, import_fs.existsSync)(dir)) {
+    const dir = (0, import_path2.join)(process.cwd(), "uploads", "thumbnails");
+    if (!(0, import_fs2.existsSync)(dir)) {
       await (0, import_promises.mkdir)(dir, { recursive: true });
     }
-    await (0, import_promises.writeFile)((0, import_path.join)(dir, filename), buffer);
+    await (0, import_promises.writeFile)((0, import_path2.join)(dir, filename), buffer);
     const thumbnailUrl = `/uploads/thumbnails/${filename}`;
     await prisma.exhibition.update({
       where: { id: req.params.id },
@@ -57164,7 +58182,7 @@ exhibitionsRouter.post("/:id/thumbnail", authenticate, async (req, res2) => {
 });
 
 // server/src/routes/settings.ts
-var import_express3 = __toESM(require_express2());
+var import_express5 = __toESM(require_express2(), 1);
 init_db();
 
 // server/src/ai/guide/roles.ts
@@ -57443,9 +58461,9 @@ async function syncGuideActorFromSettings(db, exhibitionId) {
   if (!s) return;
   const cur = sanitizeOverrides(parse(actor.overrides));
   const next = guideOverridesFromSettings(s, await libraryIndex(db));
-  for (const [section, keys] of Object.entries(SYNCED)) {
+  for (const [section, keys2] of Object.entries(SYNCED)) {
     const dst = { ...cur[section] ?? {} };
-    for (const k of keys) {
+    for (const k of keys2) {
       const v = next[section]?.[k];
       const empty = v === void 0 || v === "" || Array.isArray(v) && v.length === 0;
       if (empty) delete dst[k];
@@ -57529,7 +58547,7 @@ function parseLightingConfig(stored) {
 }
 
 // server/src/routes/settings.ts
-var settingsRouter = (0, import_express3.Router)();
+var settingsRouter = (0, import_express5.Router)();
 settingsRouter.get("/:exhibitionId", authenticate, async (req, res2) => {
   try {
     const auth = await checkExhibitionOwnership(req, req.params.exhibitionId);
@@ -57851,9 +58869,9 @@ settingsRouter.get("/:exhibitionId/public", async (req, res2) => {
 });
 
 // server/src/routes/products.ts
-var import_express4 = __toESM(require_express2());
+var import_express6 = __toESM(require_express2(), 1);
 init_db();
-var productsRouter = (0, import_express4.Router)();
+var productsRouter = (0, import_express6.Router)();
 productsRouter.get("/:exhibitionId", authenticate, async (req, res2) => {
   try {
     const auth = await checkExhibitionOwnership(req, req.params.exhibitionId);
@@ -58079,16 +59097,16 @@ productsRouter.get("/:exhibitionId/public", async (req, res2) => {
 });
 
 // server/src/routes/hotspots.ts
-var import_express5 = __toESM(require_express2());
-var import_crypto3 = __toESM(require("crypto"));
+var import_express7 = __toESM(require_express2(), 1);
+var import_crypto4 = __toESM(require("crypto"), 1);
 init_db();
-var hotspotsRouter = (0, import_express5.Router)();
+var hotspotsRouter = (0, import_express7.Router)();
 var UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 function dbId(id) {
   if (typeof id !== "string" || !id) return void 0;
   const raw = id.startsWith("hotspot-") ? id.slice("hotspot-".length) : id;
   if (UUID_RE.test(raw)) return raw;
-  return id.startsWith("hotspot-") ? import_crypto3.default.randomUUID() : id;
+  return id.startsWith("hotspot-") ? import_crypto4.default.randomUUID() : id;
 }
 var num2 = (v) => typeof v === "number" && Number.isFinite(v) ? v : null;
 function toHotspotRows(hotspots, exhibitionId) {
@@ -58292,9 +59310,9 @@ hotspotsRouter.get("/:exhibitionId/public", async (req, res2) => {
 });
 
 // server/src/routes/navmesh.ts
-var import_express6 = __toESM(require_express2());
+var import_express8 = __toESM(require_express2(), 1);
 init_db();
-var navmeshRouter = (0, import_express6.Router)();
+var navmeshRouter = (0, import_express8.Router)();
 navmeshRouter.get("/:exhibitionId", authenticate, async (req, res2) => {
   try {
     const auth = await checkExhibitionOwnership(req, req.params.exhibitionId);
@@ -58381,9 +59399,9 @@ navmeshRouter.get("/:exhibitionId/public", async (req, res2) => {
 });
 
 // server/src/routes/trigger-zones.ts
-var import_express7 = __toESM(require_express2());
+var import_express9 = __toESM(require_express2(), 1);
 init_db();
-var triggerZonesRouter = (0, import_express7.Router)();
+var triggerZonesRouter = (0, import_express9.Router)();
 triggerZonesRouter.get("/:exhibitionId", authenticate, async (req, res2) => {
   try {
     const auth = await checkExhibitionOwnership(req, req.params.exhibitionId);
@@ -58521,9 +59539,9 @@ triggerZonesRouter.post("/:exhibitionId/bulk", authenticate, async (req, res2) =
 });
 
 // server/src/routes/spawn-points.ts
-var import_express8 = __toESM(require_express2());
+var import_express10 = __toESM(require_express2(), 1);
 init_db();
-var spawnPointsRouter = (0, import_express8.Router)();
+var spawnPointsRouter = (0, import_express10.Router)();
 spawnPointsRouter.get("/:exhibitionId/public", async (req, res2) => {
   try {
     const spawns = await prisma.spawnPoint.findMany({
@@ -58609,9 +59627,9 @@ spawnPointsRouter.post("/:exhibitionId/bulk", authenticate, async (req, res2) =>
 });
 
 // server/src/routes/restricted-areas.ts
-var import_express9 = __toESM(require_express2());
+var import_express11 = __toESM(require_express2(), 1);
 init_db();
-var restrictedAreasRouter = (0, import_express9.Router)();
+var restrictedAreasRouter = (0, import_express11.Router)();
 var parsePolygon = (json) => {
   if (!json) return [];
   try {
@@ -58731,317 +59749,8 @@ restrictedAreasRouter.post("/:exhibitionId/bulk", authenticate, async (req, res2
   }
 });
 
-// server/src/routes/embed.ts
-var import_express10 = __toESM(require_express2());
-init_db();
-var import_crypto4 = __toESM(require("crypto"));
-var import_fs2 = __toESM(require("fs"));
-var import_path2 = __toESM(require("path"));
-var embedRouter = (0, import_express10.Router)();
-function getOrCreateEmbedSessionSecret() {
-  const secretFile = import_path2.default.join(process.cwd(), ".embed-session-secret");
-  if (import_fs2.default.existsSync(secretFile)) {
-    try {
-      const stored = import_fs2.default.readFileSync(secretFile, "utf-8").trim();
-      if (stored.length === 64) return stored;
-    } catch {
-    }
-  }
-  const secret2 = import_crypto4.default.randomBytes(32).toString("hex");
-  try {
-    import_fs2.default.writeFileSync(secretFile, secret2, "utf-8");
-  } catch {
-  }
-  return secret2;
-}
-var EMBED_SESSION_SECRET = getOrCreateEmbedSessionSecret();
-var embedAuthAttempts = /* @__PURE__ */ new Map();
-function generateSecret() {
-  return import_crypto4.default.randomBytes(32).toString("hex");
-}
-function signToken(exhibitionId, secret2, expiresAt) {
-  const payload = `${exhibitionId}:${expiresAt}`;
-  const sig = import_crypto4.default.createHmac("sha256", secret2).update(payload).digest("hex");
-  return Buffer.from(`${payload}:${sig}`).toString("base64url");
-}
-function verifyToken(token, secret2) {
-  try {
-    const decoded = Buffer.from(token, "base64url").toString("utf-8");
-    const parts = decoded.split(":");
-    if (parts.length !== 3) return null;
-    const [exhibitionId, expiresAtStr, sig] = parts;
-    const expiresAt = parseInt(expiresAtStr, 10);
-    const expectedSig = import_crypto4.default.createHmac("sha256", secret2).update(`${exhibitionId}:${expiresAt}`).digest("hex");
-    if (!import_crypto4.default.timingSafeEqual(Buffer.from(sig, "hex"), Buffer.from(expectedSig, "hex"))) return null;
-    if (Date.now() > expiresAt) return null;
-    return { exhibitionId, expiresAt };
-  } catch {
-    return null;
-  }
-}
-function checkDomain(req, allowedDomains) {
-  if (allowedDomains.length === 0) return true;
-  const origin = req.headers.origin || req.headers.referer || "";
-  if (!origin) return false;
-  try {
-    const url = new URL(origin);
-    const hostname = url.hostname.toLowerCase();
-    return allowedDomains.some((d) => hostname === d.toLowerCase() || hostname.endsWith("." + d.toLowerCase()));
-  } catch {
-    return false;
-  }
-}
-async function embedAuthMiddleware(req, res2, next) {
-  if (!req.path.includes("/public") && !req.path.startsWith("/analytics/")) {
-    next();
-    return;
-  }
-  if (req.path.startsWith("/analytics/")) {
-    next();
-    return;
-  }
-  const pathParts = req.path.split("/").filter(Boolean);
-  const exhibitionId = pathParts[1];
-  if (!exhibitionId) {
-    next();
-    return;
-  }
-  const settings = await prisma.exhibitionSettings.findUnique({
-    where: { exhibition_id: exhibitionId }
-  });
-  if (!settings || !settings.embed_secret) {
-    next();
-    return;
-  }
-  const allowedDomains = settings.embed_allowed_domains ? JSON.parse(settings.embed_allowed_domains) : [];
-  if (!checkDomain(req, allowedDomains)) {
-    res2.status(403).json({ error: "Domain not allowed", code: "DOMAIN_RESTRICTED" });
-    return;
-  }
-  const passwordCookieName = `es_embed_auth_${exhibitionId}`;
-  const hasPasswordSession = req.cookies?.[passwordCookieName];
-  if (settings.embed_password_hash && !hasPasswordSession) {
-    res2.status(403).json({ error: "Password required", code: "PASSWORD_REQUIRED" });
-    return;
-  }
-  if (hasPasswordSession && settings.embed_password_hash) {
-    try {
-      const decoded = Buffer.from(hasPasswordSession, "base64url").toString("utf-8");
-      const parts = decoded.split(":");
-      if (parts.length !== 3) {
-        res2.clearCookie(passwordCookieName);
-        res2.status(403).json({ error: "Invalid session", code: "PASSWORD_REQUIRED" });
-        return;
-      }
-      const [cookieExhibitionId, expiryStr, sig] = parts;
-      const expiry = parseInt(expiryStr, 10);
-      const expectedSig = import_crypto4.default.createHmac("sha256", EMBED_SESSION_SECRET).update(`${cookieExhibitionId}:${expiryStr}`).digest("hex");
-      if (cookieExhibitionId !== exhibitionId || !import_crypto4.default.timingSafeEqual(Buffer.from(sig, "hex"), Buffer.from(expectedSig, "hex")) || Date.now() > expiry) {
-        res2.clearCookie(passwordCookieName);
-        res2.status(403).json({ error: "Password session expired", code: "PASSWORD_REQUIRED" });
-        return;
-      }
-    } catch {
-      res2.clearCookie(passwordCookieName);
-      res2.status(403).json({ error: "Invalid session", code: "PASSWORD_REQUIRED" });
-      return;
-    }
-  }
-  next();
-}
-embedRouter.post("/:exhibitionId/config", authenticate, async (req, res2) => {
-  try {
-    const { password, allowedDomains, tokenTtl } = req.body;
-    const exhibitionId = req.params.exhibitionId;
-    const exh = await prisma.exhibition.findUnique({ where: { id: exhibitionId } });
-    if (!exh) {
-      res2.status(404).json({ error: "Exhibition not found" });
-      return;
-    }
-    if (exh.owner_id !== req.user.userId && !req.user.isAdmin) {
-      res2.status(403).json({ error: "Not owner" });
-      return;
-    }
-    await prisma.exhibitionSettings.upsert({
-      where: { exhibition_id: exhibitionId },
-      create: { exhibition_id: exhibitionId },
-      update: {}
-    });
-    const secret2 = generateSecret();
-    let passwordHash = "";
-    if (password && password.length > 0) {
-      const bcrypt = await Promise.resolve().then(() => __toESM(require_bcryptjs()));
-      passwordHash = await bcrypt.default.hash(password, 10);
-    }
-    await prisma.exhibitionSettings.update({
-      where: { exhibition_id: exhibitionId },
-      data: {
-        embed_secret: secret2,
-        embed_password_hash: passwordHash,
-        embed_allowed_domains: JSON.stringify(allowedDomains || []),
-        embed_token_ttl: tokenTtl || 2592e3
-      }
-    });
-    const ttl = tokenTtl || 2592e3;
-    const expiresAt = Date.now() + ttl * 1e3;
-    const token = signToken(exhibitionId, secret2, expiresAt);
-    const baseUrl = `${req.protocol}://${req.get("host")}`;
-    res2.json({
-      success: true,
-      embedUrl: `${baseUrl}/embed/${token}`,
-      token,
-      expiresAt: new Date(expiresAt).toISOString()
-    });
-  } catch (err) {
-    console.error("Embed config error:", err);
-    res2.status(500).json({ error: "Failed to save embed config" });
-  }
-});
-embedRouter.post("/:exhibitionId/token", authenticate, async (req, res2) => {
-  try {
-    const exhibitionId = req.params.exhibitionId;
-    const exh = await prisma.exhibition.findUnique({ where: { id: exhibitionId } });
-    if (!exh) {
-      res2.status(404).json({ error: "Exhibition not found" });
-      return;
-    }
-    if (exh.owner_id !== req.user.userId && !req.user.isAdmin) {
-      res2.status(403).json({ error: "Not owner" });
-      return;
-    }
-    const settings = await prisma.exhibitionSettings.findUnique({
-      where: { exhibition_id: exhibitionId }
-    });
-    if (!settings || !settings.embed_secret) {
-      res2.status(400).json({ error: "No embed config. Create one first." });
-      return;
-    }
-    const ttl = settings.embed_token_ttl;
-    const expiresAt = Date.now() + ttl * 1e3;
-    const token = signToken(exhibitionId, settings.embed_secret, expiresAt);
-    const baseUrl = `${req.protocol}://${req.get("host")}`;
-    res2.json({
-      embedUrl: `${baseUrl}/embed/${token}`,
-      token,
-      expiresAt: new Date(expiresAt).toISOString()
-    });
-  } catch (err) {
-    console.error("Embed token error:", err);
-    res2.status(500).json({ error: "Failed to generate token" });
-  }
-});
-embedRouter.post("/:exhibitionId/auth", async (req, res2) => {
-  try {
-    const exhibitionId = req.params.exhibitionId;
-    const ip = req.ip || req.socket.remoteAddress || "unknown";
-    const authKey = `embed_auth:${exhibitionId}:${ip}`;
-    const now = Date.now();
-    const entry = embedAuthAttempts.get(authKey);
-    if (entry && now < entry.resetAt && entry.count >= 5) {
-      res2.status(429).json({ error: "Too many attempts. Try again later." });
-      return;
-    }
-    if (!entry || now > entry.resetAt) {
-      embedAuthAttempts.set(authKey, { count: 1, resetAt: now + 15 * 60 * 1e3 });
-    } else {
-      entry.count++;
-    }
-    const { password, token } = req.body;
-    const settings = await prisma.exhibitionSettings.findUnique({
-      where: { exhibition_id: exhibitionId }
-    });
-    if (!settings || !settings.embed_password_hash) {
-      res2.status(400).json({ error: "No password set for this exhibition" });
-      return;
-    }
-    const bcrypt = await Promise.resolve().then(() => __toESM(require_bcryptjs()));
-    const valid = await bcrypt.default.compare(password || "", settings.embed_password_hash);
-    if (!valid) {
-      res2.status(401).json({ error: "Wrong password" });
-      return;
-    }
-    const sessionExpiry = Date.now() + 24 * 60 * 60 * 1e3;
-    const sessionPayload = `${exhibitionId}:${sessionExpiry}`;
-    const sessionSig = import_crypto4.default.createHmac("sha256", EMBED_SESSION_SECRET).update(sessionPayload).digest("hex");
-    const sessionValue = Buffer.from(`${sessionPayload}:${sessionSig}`).toString("base64url");
-    const passwordCookieName = `es_embed_auth_${exhibitionId}`;
-    res2.cookie(passwordCookieName, sessionValue, {
-      httpOnly: true,
-      secure: process.env.NODE_ENV === "production",
-      sameSite: "lax",
-      maxAge: 24 * 60 * 60 * 1e3,
-      path: "/"
-    });
-    res2.json({ success: true });
-  } catch (err) {
-    console.error("Embed auth error:", err);
-    res2.status(500).json({ error: "Auth failed" });
-  }
-});
-embedRouter.post("/:exhibitionId/validate", async (req, res2) => {
-  try {
-    const exhibitionId = req.params.exhibitionId;
-    const { token } = req.body;
-    const settings = await prisma.exhibitionSettings.findUnique({
-      where: { exhibition_id: exhibitionId }
-    });
-    if (!settings || !settings.embed_secret) {
-      res2.json({ valid: true, hasPassword: false });
-      return;
-    }
-    const result2 = verifyToken(token || "", settings.embed_secret);
-    if (!result2 || result2.exhibitionId !== exhibitionId) {
-      res2.status(403).json({ error: "Invalid or expired token", code: "INVALID_TOKEN" });
-      return;
-    }
-    const hasPasswordSession = req.cookies?.[`es_embed_auth_${exhibitionId}`];
-    const needsPassword = !!settings.embed_password_hash && !hasPasswordSession;
-    res2.json({ valid: true, hasPassword: !!settings.embed_password_hash, needsPassword });
-  } catch (err) {
-    console.error("Embed validate error:", err);
-    res2.status(500).json({ error: "Validation failed" });
-  }
-});
-embedRouter.get("/:exhibitionId/config", authenticate, async (req, res2) => {
-  try {
-    const exhibitionId = req.params.exhibitionId;
-    const exh = await prisma.exhibition.findUnique({ where: { id: exhibitionId } });
-    if (!exh) {
-      res2.status(404).json({ error: "Exhibition not found" });
-      return;
-    }
-    if (exh.owner_id !== req.user.userId && !req.user.isAdmin) {
-      res2.status(403).json({ error: "Not owner" });
-      return;
-    }
-    const settings = await prisma.exhibitionSettings.findUnique({
-      where: { exhibition_id: exhibitionId }
-    });
-    const hasSecret = !!settings?.embed_secret;
-    const hasPassword = !!settings?.embed_password_hash;
-    const allowedDomains = settings?.embed_allowed_domains ? JSON.parse(settings.embed_allowed_domains) : [];
-    const ttl = settings?.embed_token_ttl || 2592e3;
-    let token = "";
-    if (hasSecret && settings) {
-      const ttl2 = settings.embed_token_ttl;
-      const expiresAt = Date.now() + ttl2 * 1e3;
-      token = signToken(exhibitionId, settings.embed_secret, expiresAt);
-    }
-    res2.json({
-      hasSecret,
-      hasPassword,
-      allowedDomains,
-      tokenTtl: ttl,
-      token
-    });
-  } catch (err) {
-    console.error("Get embed config error:", err);
-    res2.status(500).json({ error: "Failed to get embed config" });
-  }
-});
-
 // server/src/routes/ai.ts
-var import_express11 = __toESM(require_express2());
+var import_express12 = __toESM(require_express2(), 1);
 var import_promises2 = require("node:timers/promises");
 init_db();
 
@@ -59141,7 +59850,7 @@ function getRegisteredProviders(type) {
 }
 
 // server/src/routes/ai.ts
-var import_multer = __toESM(require_multer());
+var import_multer = __toESM(require_multer(), 1);
 
 // server/src/ai/config.ts
 var DEFAULT_CONFIG = {
@@ -59336,10 +60045,8 @@ var DEFAULT_FALLBACK_MODELS = [
 ];
 var frontierCooldownUntil = 0;
 var GeminiLLMProvider = class {
-  constructor() {
-    this.id = "gemini";
-    this.name = "Google Gemini";
-  }
+  id = "gemini";
+  name = "Google Gemini";
   async isAvailable(config2) {
     return !!(config2.apiKey || process.env.GEMINI_API_KEY);
   }
@@ -59557,7 +60264,7 @@ ${currentText}`;
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/internal/tslib.mjs
+// ../../server/node_modules/openai/internal/tslib.mjs
 function __classPrivateFieldSet(receiver, state, value, kind, f) {
   if (kind === "m")
     throw new TypeError("Private method is not writable");
@@ -59575,7 +60282,7 @@ function __classPrivateFieldGet(receiver, state, kind, f) {
   return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
 }
 
-// E:/claudeprojects/immersival/server/node_modules/openai/internal/utils/uuid.mjs
+// ../../server/node_modules/openai/internal/utils/uuid.mjs
 var uuid4 = function() {
   const { crypto: crypto10 } = globalThis;
   if (crypto10?.randomUUID) {
@@ -59587,7 +60294,7 @@ var uuid4 = function() {
   return "10000000-1000-4000-8000-100000000000".replace(/[018]/g, (c) => (+c ^ randomByte() & 15 >> +c / 4).toString(16));
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/internal/errors.mjs
+// ../../server/node_modules/openai/internal/errors.mjs
 function isAbortError(err) {
   return typeof err === "object" && err !== null && // Spec-compliant fetch implementations
   ("name" in err && err.name === "AbortError" || // Expo fetch
@@ -59618,7 +60325,7 @@ var castToError = (err) => {
   return new Error(err);
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/core/error.mjs
+// ../../server/node_modules/openai/core/error.mjs
 var OpenAIError = class extends Error {
 };
 var APIError = class _APIError extends OpenAIError {
@@ -59752,7 +60459,7 @@ var SubjectTokenProviderError = class extends OpenAIError {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/internal/utils/values.mjs
+// ../../server/node_modules/openai/internal/utils/values.mjs
 var startsWithSchemeRegexp = /^[a-z][a-z0-9+.-]*:/i;
 var isAbsoluteURL = (url) => {
   return startsWithSchemeRegexp.test(url);
@@ -59795,13 +60502,13 @@ var safeJSON = (text2) => {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/internal/utils/sleep.mjs
+// ../../server/node_modules/openai/internal/utils/sleep.mjs
 var sleep = (ms) => new Promise((resolve2) => setTimeout(resolve2, ms));
 
-// E:/claudeprojects/immersival/server/node_modules/openai/version.mjs
+// ../../server/node_modules/openai/version.mjs
 var VERSION = "6.48.0";
 
-// E:/claudeprojects/immersival/server/node_modules/openai/internal/detect-platform.mjs
+// ../../server/node_modules/openai/internal/detect-platform.mjs
 var isRunningInBrowser = () => {
   return (
     // @ts-ignore
@@ -59935,7 +60642,7 @@ var getPlatformHeaders = () => {
   return _platformHeaders ?? (_platformHeaders = getPlatformProperties());
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/internal/shims.mjs
+// ../../server/node_modules/openai/internal/shims.mjs
 function getDefaultFetch() {
   if (typeof fetch !== "undefined") {
     return fetch;
@@ -60007,7 +60714,7 @@ async function CancelReadableStream(stream) {
   await cancelPromise;
 }
 
-// E:/claudeprojects/immersival/server/node_modules/openai/internal/request-options.mjs
+// ../../server/node_modules/openai/internal/request-options.mjs
 var FallbackEncoder = ({ headers, body }) => {
   return {
     bodyHeaders: {
@@ -60017,7 +60724,7 @@ var FallbackEncoder = ({ headers, body }) => {
   };
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/internal/qs/formats.mjs
+// ../../server/node_modules/openai/internal/qs/formats.mjs
 var default_format = "RFC3986";
 var default_formatter = (v) => String(v);
 var formatters = {
@@ -60026,7 +60733,7 @@ var formatters = {
 };
 var RFC1738 = "RFC1738";
 
-// E:/claudeprojects/immersival/server/node_modules/openai/internal/qs/utils.mjs
+// ../../server/node_modules/openai/internal/qs/utils.mjs
 var has = (obj, key) => (has = Object.hasOwn ?? Function.prototype.call.bind(Object.prototype.hasOwnProperty), has(obj, key));
 var hex_table = /* @__PURE__ */ (() => {
   const array = [];
@@ -60105,7 +60812,7 @@ function maybe_map(val, fn) {
   return fn(val);
 }
 
-// E:/claudeprojects/immersival/server/node_modules/openai/internal/qs/stringify.mjs
+// ../../server/node_modules/openai/internal/qs/stringify.mjs
 var array_prefix_generators = {
   brackets(prefix) {
     return String(prefix) + "[]";
@@ -60211,8 +60918,8 @@ function inner_stringify(object, prefix, generateArrayPrefix, commaRoundTrip, al
   } else if (isArray(filter)) {
     obj_keys = filter;
   } else {
-    const keys = Object.keys(obj);
-    obj_keys = sort ? keys.sort(sort) : keys;
+    const keys2 = Object.keys(obj);
+    obj_keys = sort ? keys2.sort(sort) : keys2;
   }
   const encoded_prefix = encodeDotInKeys ? String(prefix).replace(/\./g, "%2E") : String(prefix);
   const adjusted_prefix = commaRoundTrip && isArray(obj) && obj.length === 1 ? encoded_prefix + "[]" : encoded_prefix;
@@ -60331,7 +61038,7 @@ function stringify(object, opts = {}) {
     filter = options.filter;
     obj_keys = filter;
   }
-  const keys = [];
+  const keys2 = [];
   if (typeof obj !== "object" || obj === null) {
     return "";
   }
@@ -60349,7 +61056,7 @@ function stringify(object, opts = {}) {
     if (options.skipNulls && obj[key] === null) {
       continue;
     }
-    push_to_array(keys, inner_stringify(
+    push_to_array(keys2, inner_stringify(
       obj[key],
       key,
       // @ts-expect-error
@@ -60371,7 +61078,7 @@ function stringify(object, opts = {}) {
       sideChannel
     ));
   }
-  const joined = keys.join(options.delimiter);
+  const joined = keys2.join(options.delimiter);
   let prefix = options.addQueryPrefix === true ? "?" : "";
   if (options.charsetSentinel) {
     if (options.charset === "iso-8859-1") {
@@ -60383,12 +61090,12 @@ function stringify(object, opts = {}) {
   return joined.length > 0 ? prefix + joined : "";
 }
 
-// E:/claudeprojects/immersival/server/node_modules/openai/internal/utils/query.mjs
+// ../../server/node_modules/openai/internal/utils/query.mjs
 function stringifyQuery(query) {
   return stringify(query, { arrayFormat: "brackets" });
 }
 
-// E:/claudeprojects/immersival/server/node_modules/openai/internal/utils/bytes.mjs
+// ../../server/node_modules/openai/internal/utils/bytes.mjs
 function concatBytes(buffers) {
   let length = 0;
   for (const buffer of buffers) {
@@ -60413,7 +61120,7 @@ function decodeUTF8(bytes) {
   return (decodeUTF8_ ?? (decoder = new globalThis.TextDecoder(), decodeUTF8_ = decoder.decode.bind(decoder)))(bytes);
 }
 
-// E:/claudeprojects/immersival/server/node_modules/openai/internal/decoders/line.mjs
+// ../../server/node_modules/openai/internal/decoders/line.mjs
 var _LineDecoder_buffer;
 var _LineDecoder_carriageReturnIndex;
 var LineDecoder = class {
@@ -60490,7 +61197,7 @@ function findDoubleNewlineIndex(buffer) {
   return -1;
 }
 
-// E:/claudeprojects/immersival/server/node_modules/openai/internal/utils/log.mjs
+// ../../server/node_modules/openai/internal/utils/log.mjs
 var levelNumbers = {
   off: 0,
   error: 200,
@@ -60563,7 +61270,7 @@ var formatRequestDetails = (details) => {
   return details;
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/core/streaming.mjs
+// ../../server/node_modules/openai/core/streaming.mjs
 var _Stream_client;
 var Stream = class _Stream {
   constructor(iterator, controller, client) {
@@ -60853,7 +61560,7 @@ function partition(str4, delimiter) {
   return [str4, "", ""];
 }
 
-// E:/claudeprojects/immersival/server/node_modules/openai/internal/parse.mjs
+// ../../server/node_modules/openai/internal/parse.mjs
 async function defaultParseResponse(client, props) {
   const { response, requestLogID, retryOfRequestLogID, startTime } = props;
   const body = await (async () => {
@@ -60903,7 +61610,7 @@ function addRequestID(value, response) {
   });
 }
 
-// E:/claudeprojects/immersival/server/node_modules/openai/core/api-promise.mjs
+// ../../server/node_modules/openai/core/api-promise.mjs
 var _APIPromise_client;
 var APIPromise = class _APIPromise extends Promise {
   constructor(client, responsePromise, parseResponse2 = defaultParseResponse) {
@@ -60966,7 +61673,7 @@ var APIPromise = class _APIPromise extends Promise {
 };
 _APIPromise_client = /* @__PURE__ */ new WeakMap();
 
-// E:/claudeprojects/immersival/server/node_modules/openai/core/pagination.mjs
+// ../../server/node_modules/openai/core/pagination.mjs
 var _AbstractPage_client;
 var AbstractPage = class {
   constructor(client, response, body, options) {
@@ -61127,7 +61834,7 @@ var NextCursorPage = class extends AbstractPage {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/auth/workload-identity-auth.mjs
+// ../../server/node_modules/openai/auth/workload-identity-auth.mjs
 var SUBJECT_TOKEN_TYPES = {
   jwt: "urn:ietf:params:oauth:token-type:jwt",
   id: "urn:ietf:params:oauth:token-type:id_token"
@@ -61219,7 +61926,7 @@ var WorkloadIdentityAuth = class {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/internal/headers.mjs
+// ../../server/node_modules/openai/internal/headers.mjs
 var brand_privateNullableHeaders = /* @__PURE__ */ Symbol("brand.privateNullableHeaders");
 var httpTokenHeaderName = /^[!#$%&'*+\-.^_`|~0-9A-Za-z]+$/;
 function* iterateHeaders(headers) {
@@ -61286,7 +61993,7 @@ var buildHeaders = (newHeaders) => {
   return { [brand_privateNullableHeaders]: true, values: targetHeaders, nulls: nullHeaders };
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/internal/uploads.mjs
+// ../../server/node_modules/openai/internal/uploads.mjs
 var brand_privateStreamingFile = /* @__PURE__ */ Symbol("brand.privateStreamingFile");
 function toStreamingFile(data, name, options) {
   if (!name) {
@@ -61519,7 +62226,7 @@ var addFormValue = async (form, key, value) => {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/internal/to-file.mjs
+// ../../server/node_modules/openai/internal/to-file.mjs
 var isBlobLike = (value) => value != null && typeof value === "object" && typeof value.size === "number" && typeof value.type === "string" && typeof value.text === "function" && typeof value.slice === "function" && typeof value.arrayBuffer === "function";
 var isFileLike = (value) => value != null && typeof value === "object" && typeof value.name === "string" && typeof value.lastModified === "number" && isBlobLike(value);
 var isResponseLike = (value) => value != null && typeof value === "object" && typeof value.url === "string" && typeof value.blob === "function";
@@ -61571,14 +62278,14 @@ function propsForError(value) {
   return `; props: [${props.map((p) => `"${p}"`).join(", ")}]`;
 }
 
-// E:/claudeprojects/immersival/server/node_modules/openai/core/resource.mjs
+// ../../server/node_modules/openai/core/resource.mjs
 var APIResource = class {
   constructor(client) {
     this._client = client;
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/internal/utils/path.mjs
+// ../../server/node_modules/openai/internal/utils/path.mjs
 function encodeURIPath(str4) {
   return str4.replace(/[^A-Za-z0-9\-._~!$&'()*+,;=:@]+/g, encodeURIComponent);
 }
@@ -61633,7 +62340,7 @@ ${underline}`);
 };
 var path2 = /* @__PURE__ */ createPathTagFunction(encodeURIPath);
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/chat/completions/messages.mjs
+// ../../server/node_modules/openai/resources/chat/completions/messages.mjs
 var Messages = class extends APIResource {
   /**
    * Get the messages in a stored chat completion. Only Chat Completions that have
@@ -61654,7 +62361,7 @@ var Messages = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/lib/parser.mjs
+// ../../server/node_modules/openai/lib/parser.mjs
 function isChatCompletionFunctionTool(tool) {
   return tool !== void 0 && "function" in tool && tool.function !== void 0;
 }
@@ -61761,7 +62468,7 @@ function validateInputTools(tools) {
   }
 }
 
-// E:/claudeprojects/immersival/server/node_modules/openai/lib/chatCompletionUtils.mjs
+// ../../server/node_modules/openai/lib/chatCompletionUtils.mjs
 var isAssistantMessage = (message) => {
   return message?.role === "assistant";
 };
@@ -61769,7 +62476,7 @@ var isToolMessage = (message) => {
   return message?.role === "tool";
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/lib/EventStream.mjs
+// ../../server/node_modules/openai/lib/EventStream.mjs
 var _EventStream_instances;
 var _EventStream_connectedPromise;
 var _EventStream_resolveConnectedPromise;
@@ -62078,12 +62785,12 @@ _EventStream_connectedPromise = /* @__PURE__ */ new WeakMap(), _EventStream_reso
   return this._emit("error", new OpenAIError(String(error)));
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/lib/RunnableFunction.mjs
+// ../../server/node_modules/openai/lib/RunnableFunction.mjs
 function isRunnableFunctionWithParse(fn) {
   return typeof fn.parse === "function";
 }
 
-// E:/claudeprojects/immersival/server/node_modules/openai/lib/AbstractChatCompletionRunner.mjs
+// ../../server/node_modules/openai/lib/AbstractChatCompletionRunner.mjs
 var _AbstractChatCompletionRunner_instances;
 var _AbstractChatCompletionRunner_getFinalContent;
 var _AbstractChatCompletionRunner_getFinalMessage;
@@ -62388,7 +63095,7 @@ _AbstractChatCompletionRunner_instances = /* @__PURE__ */ new WeakSet(), _Abstra
   return typeof rawContent === "string" ? rawContent : rawContent === void 0 ? "undefined" : JSON.stringify(rawContent);
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/lib/ChatCompletionRunner.mjs
+// ../../server/node_modules/openai/lib/ChatCompletionRunner.mjs
 var ChatCompletionRunner = class _ChatCompletionRunner extends AbstractChatCompletionRunner {
   static runTools(client, params, options) {
     const runner = new _ChatCompletionRunner();
@@ -62407,7 +63114,7 @@ var ChatCompletionRunner = class _ChatCompletionRunner extends AbstractChatCompl
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/_vendor/partial-json-parser/parser.mjs
+// ../../server/node_modules/openai/_vendor/partial-json-parser/parser.mjs
 var STR = 1;
 var NUM = 2;
 var ARR = 4;
@@ -62619,7 +63326,7 @@ var _parseJSON = (jsonString, allow) => {
 };
 var partialParse = (input) => parseJSON(input, Allow.ALL ^ Allow.NUM);
 
-// E:/claudeprojects/immersival/server/node_modules/openai/lib/ChatCompletionStream.mjs
+// ../../server/node_modules/openai/lib/ChatCompletionStream.mjs
 var _ChatCompletionStream_instances;
 var _ChatCompletionStream_params;
 var _ChatCompletionStream_choiceEventStates;
@@ -63140,7 +63847,7 @@ function assertIsEmpty(obj) {
 function assertNever(_x) {
 }
 
-// E:/claudeprojects/immersival/server/node_modules/openai/lib/ChatCompletionStreamingRunner.mjs
+// ../../server/node_modules/openai/lib/ChatCompletionStreamingRunner.mjs
 var ChatCompletionStreamingRunner = class _ChatCompletionStreamingRunner extends ChatCompletionStream {
   static fromReadableStream(stream) {
     const runner = new _ChatCompletionStreamingRunner(null);
@@ -63234,7 +63941,7 @@ var ChatCompletionStreamingRunner = class _ChatCompletionStreamingRunner extends
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/chat/completions/completions.mjs
+// ../../server/node_modules/openai/resources/chat/completions/completions.mjs
 var Completions = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -63344,7 +64051,7 @@ var Completions = class extends APIResource {
 };
 Completions.Messages = Messages;
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/chat/chat.mjs
+// ../../server/node_modules/openai/resources/chat/chat.mjs
 var Chat = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -63353,7 +64060,7 @@ var Chat = class extends APIResource {
 };
 Chat.Completions = Completions;
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/admin/organization/admin-api-keys.mjs
+// ../../server/node_modules/openai/resources/admin/organization/admin-api-keys.mjs
 var AdminAPIKeys = class extends APIResource {
   /**
    * Create an organization admin API key
@@ -63427,7 +64134,7 @@ var AdminAPIKeys = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/admin/organization/audit-logs.mjs
+// ../../server/node_modules/openai/resources/admin/organization/audit-logs.mjs
 var AuditLogs = class extends APIResource {
   /**
    * List user actions and configuration changes within this organization.
@@ -63449,7 +64156,7 @@ var AuditLogs = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/admin/organization/certificates.mjs
+// ../../server/node_modules/openai/resources/admin/organization/certificates.mjs
 var Certificates = class extends APIResource {
   /**
    * Upload a certificate to the organization. This does **not** automatically
@@ -63586,7 +64293,7 @@ var Certificates = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/admin/organization/data-retention.mjs
+// ../../server/node_modules/openai/resources/admin/organization/data-retention.mjs
 var DataRetention = class extends APIResource {
   /**
    * Retrieves organization data retention controls.
@@ -63623,7 +64330,7 @@ var DataRetention = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/admin/organization/invites.mjs
+// ../../server/node_modules/openai/resources/admin/organization/invites.mjs
 var Invites = class extends APIResource {
   /**
    * Create an invite for a user to the organization. The invite must be accepted by
@@ -63699,7 +64406,7 @@ var Invites = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/admin/organization/roles.mjs
+// ../../server/node_modules/openai/resources/admin/organization/roles.mjs
 var Roles = class extends APIResource {
   /**
    * Creates a custom role for the organization.
@@ -63788,7 +64495,7 @@ var Roles = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/admin/organization/spend-alerts.mjs
+// ../../server/node_modules/openai/resources/admin/organization/spend-alerts.mjs
 var SpendAlerts = class extends APIResource {
   /**
    * Creates an organization spend alert.
@@ -63891,7 +64598,7 @@ var SpendAlerts = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/admin/organization/usage.mjs
+// ../../server/node_modules/openai/resources/admin/organization/usage.mjs
 var Usage = class extends APIResource {
   /**
    * Get audio speeches usage details for the organization.
@@ -64093,7 +64800,7 @@ var Usage = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/admin/organization/groups/roles.mjs
+// ../../server/node_modules/openai/resources/admin/organization/groups/roles.mjs
 var Roles2 = class extends APIResource {
   /**
    * Assigns an organization role to a group within the organization.
@@ -64170,7 +64877,7 @@ var Roles2 = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/admin/organization/groups/users.mjs
+// ../../server/node_modules/openai/resources/admin/organization/groups/users.mjs
 var Users = class extends APIResource {
   /**
    * Adds a user to a group.
@@ -64247,7 +64954,7 @@ var Users = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/admin/organization/groups/groups.mjs
+// ../../server/node_modules/openai/resources/admin/organization/groups/groups.mjs
 var Groups = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -64344,7 +65051,7 @@ var Groups = class extends APIResource {
 Groups.Users = Users;
 Groups.Roles = Roles2;
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/admin/organization/projects/api-keys.mjs
+// ../../server/node_modules/openai/resources/admin/organization/projects/api-keys.mjs
 var APIKeys = class extends APIResource {
   /**
    * Retrieves an API key in the project.
@@ -64405,7 +65112,7 @@ var APIKeys = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/admin/organization/projects/certificates.mjs
+// ../../server/node_modules/openai/resources/admin/organization/projects/certificates.mjs
 var Certificates2 = class extends APIResource {
   /**
    * List certificates for this project.
@@ -64462,7 +65169,7 @@ var Certificates2 = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/admin/organization/projects/data-retention.mjs
+// ../../server/node_modules/openai/resources/admin/organization/projects/data-retention.mjs
 var DataRetention2 = class extends APIResource {
   /**
    * Retrieves project data retention controls.
@@ -64502,7 +65209,7 @@ var DataRetention2 = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/admin/organization/projects/hosted-tool-permissions.mjs
+// ../../server/node_modules/openai/resources/admin/organization/projects/hosted-tool-permissions.mjs
 var HostedToolPermissions = class extends APIResource {
   /**
    * Returns hosted tool permissions for a project.
@@ -64541,7 +65248,7 @@ var HostedToolPermissions = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/admin/organization/projects/model-permissions.mjs
+// ../../server/node_modules/openai/resources/admin/organization/projects/model-permissions.mjs
 var ModelPermissions = class extends APIResource {
   /**
    * Returns model permissions for a project.
@@ -64598,7 +65305,7 @@ var ModelPermissions = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/admin/organization/projects/rate-limits.mjs
+// ../../server/node_modules/openai/resources/admin/organization/projects/rate-limits.mjs
 var RateLimits = class extends APIResource {
   /**
    * Returns the rate limits per model for a project.
@@ -64638,7 +65345,7 @@ var RateLimits = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/admin/organization/projects/roles.mjs
+// ../../server/node_modules/openai/resources/admin/organization/projects/roles.mjs
 var Roles3 = class extends APIResource {
   /**
    * Creates a custom role for a project.
@@ -64739,7 +65446,7 @@ var Roles3 = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/admin/organization/projects/spend-alerts.mjs
+// ../../server/node_modules/openai/resources/admin/organization/projects/spend-alerts.mjs
 var SpendAlerts2 = class extends APIResource {
   /**
    * Creates a project spend alert.
@@ -64853,7 +65560,7 @@ var SpendAlerts2 = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/admin/organization/projects/groups/roles.mjs
+// ../../server/node_modules/openai/resources/admin/organization/projects/groups/roles.mjs
 var Roles4 = class extends APIResource {
   /**
    * Assigns a project role to a group within a project.
@@ -64933,7 +65640,7 @@ var Roles4 = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/admin/organization/projects/groups/groups.mjs
+// ../../server/node_modules/openai/resources/admin/organization/projects/groups/groups.mjs
 var Groups2 = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -65016,7 +65723,7 @@ var Groups2 = class extends APIResource {
 };
 Groups2.Roles = Roles4;
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/admin/organization/projects/service-accounts/api-keys.mjs
+// ../../server/node_modules/openai/resources/admin/organization/projects/service-accounts/api-keys.mjs
 var APIKeys2 = class extends APIResource {
   /**
    * Creates an API key for a service account in the project.
@@ -65036,7 +65743,7 @@ var APIKeys2 = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/admin/organization/projects/service-accounts/service-accounts.mjs
+// ../../server/node_modules/openai/resources/admin/organization/projects/service-accounts/service-accounts.mjs
 var ServiceAccounts = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -65135,7 +65842,7 @@ var ServiceAccounts = class extends APIResource {
 };
 ServiceAccounts.APIKeys = APIKeys2;
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/admin/organization/projects/users/roles.mjs
+// ../../server/node_modules/openai/resources/admin/organization/projects/users/roles.mjs
 var Roles5 = class extends APIResource {
   /**
    * Assigns a project role to a user within a project.
@@ -65215,7 +65922,7 @@ var Roles5 = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/admin/organization/projects/users/users.mjs
+// ../../server/node_modules/openai/resources/admin/organization/projects/users/users.mjs
 var Users2 = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -65321,7 +66028,7 @@ var Users2 = class extends APIResource {
 };
 Users2.Roles = Roles5;
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/admin/organization/projects/projects.mjs
+// ../../server/node_modules/openai/resources/admin/organization/projects/projects.mjs
 var Projects = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -65440,7 +66147,7 @@ Projects.DataRetention = DataRetention2;
 Projects.SpendAlerts = SpendAlerts2;
 Projects.Certificates = Certificates2;
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/admin/organization/users/roles.mjs
+// ../../server/node_modules/openai/resources/admin/organization/users/roles.mjs
 var Roles6 = class extends APIResource {
   /**
    * Assigns an organization role to a user within the organization.
@@ -65517,7 +66224,7 @@ var Roles6 = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/admin/organization/users/users.mjs
+// ../../server/node_modules/openai/resources/admin/organization/users/users.mjs
 var Users3 = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -65591,7 +66298,7 @@ var Users3 = class extends APIResource {
 };
 Users3.Roles = Roles6;
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/admin/organization/organization.mjs
+// ../../server/node_modules/openai/resources/admin/organization/organization.mjs
 var Organization = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -65620,7 +66327,7 @@ Organization.SpendAlerts = SpendAlerts;
 Organization.Certificates = Certificates;
 Organization.Projects = Projects;
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/admin/admin.mjs
+// ../../server/node_modules/openai/resources/admin/admin.mjs
 var Admin = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -65629,7 +66336,7 @@ var Admin = class extends APIResource {
 };
 Admin.Organization = Organization;
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/audio/speech.mjs
+// ../../server/node_modules/openai/resources/audio/speech.mjs
 var Speech = class extends APIResource {
   /**
    * Generates audio from the input text.
@@ -65659,7 +66366,7 @@ var Speech = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/audio/transcriptions.mjs
+// ../../server/node_modules/openai/resources/audio/transcriptions.mjs
 var Transcriptions = class extends APIResource {
   create(body, options) {
     return this._client.post("/audio/transcriptions", multipartFormRequestOptions({
@@ -65672,14 +66379,14 @@ var Transcriptions = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/audio/translations.mjs
+// ../../server/node_modules/openai/resources/audio/translations.mjs
 var Translations = class extends APIResource {
   create(body, options) {
     return this._client.post("/audio/translations", multipartFormRequestOptions({ body, ...options, __metadata: { model: body.model }, __security: { bearerAuth: true } }, this._client));
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/audio/audio.mjs
+// ../../server/node_modules/openai/resources/audio/audio.mjs
 var Audio = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -65692,7 +66399,7 @@ Audio.Transcriptions = Transcriptions;
 Audio.Translations = Translations;
 Audio.Speech = Speech;
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/batches.mjs
+// ../../server/node_modules/openai/resources/batches.mjs
 var Batches = class extends APIResource {
   /**
    * Creates and executes a batch from an uploaded file of requests
@@ -65729,7 +66436,7 @@ var Batches = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/beta/assistants.mjs
+// ../../server/node_modules/openai/resources/beta/assistants.mjs
 var Assistants = class extends APIResource {
   /**
    * Create an assistant with a model and instructions.
@@ -65796,7 +66503,7 @@ var Assistants = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/beta/realtime/sessions.mjs
+// ../../server/node_modules/openai/resources/beta/realtime/sessions.mjs
 var Sessions = class extends APIResource {
   /**
    * Create an ephemeral API token for use in client-side applications with the
@@ -65823,7 +66530,7 @@ var Sessions = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/beta/realtime/transcription-sessions.mjs
+// ../../server/node_modules/openai/resources/beta/realtime/transcription-sessions.mjs
 var TranscriptionSessions = class extends APIResource {
   /**
    * Create an ephemeral API token for use in client-side applications with the
@@ -65850,7 +66557,7 @@ var TranscriptionSessions = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/beta/realtime/realtime.mjs
+// ../../server/node_modules/openai/resources/beta/realtime/realtime.mjs
 var Realtime = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -65861,7 +66568,7 @@ var Realtime = class extends APIResource {
 Realtime.Sessions = Sessions;
 Realtime.TranscriptionSessions = TranscriptionSessions;
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/beta/chatkit/sessions.mjs
+// ../../server/node_modules/openai/resources/beta/chatkit/sessions.mjs
 var Sessions2 = class extends APIResource {
   /**
    * Create a ChatKit session.
@@ -65903,7 +66610,7 @@ var Sessions2 = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/beta/chatkit/threads.mjs
+// ../../server/node_modules/openai/resources/beta/chatkit/threads.mjs
 var Threads = class extends APIResource {
   /**
    * Retrieve a ChatKit thread by its identifier.
@@ -65980,7 +66687,7 @@ var Threads = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/beta/chatkit/chatkit.mjs
+// ../../server/node_modules/openai/resources/beta/chatkit/chatkit.mjs
 var ChatKit = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -65991,7 +66698,7 @@ var ChatKit = class extends APIResource {
 ChatKit.Sessions = Sessions2;
 ChatKit.Threads = Threads;
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/beta/responses/input-items.mjs
+// ../../server/node_modules/openai/resources/beta/responses/input-items.mjs
 var InputItems = class extends APIResource {
   /**
    * Returns a list of input items for a given response.
@@ -66020,7 +66727,7 @@ var InputItems = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/beta/responses/input-tokens.mjs
+// ../../server/node_modules/openai/resources/beta/responses/input-tokens.mjs
 var InputTokens = class extends APIResource {
   /**
    * Returns input token counts of the request.
@@ -66048,7 +66755,7 @@ var InputTokens = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/beta/responses/responses.mjs
+// ../../server/node_modules/openai/resources/beta/responses/responses.mjs
 var Responses = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -66157,7 +66864,7 @@ var Responses = class extends APIResource {
 Responses.InputItems = InputItems;
 Responses.InputTokens = InputTokens;
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/beta/threads/messages.mjs
+// ../../server/node_modules/openai/resources/beta/threads/messages.mjs
 var Messages2 = class extends APIResource {
   /**
    * Create a message.
@@ -66227,7 +66934,7 @@ var Messages2 = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/beta/threads/runs/steps.mjs
+// ../../server/node_modules/openai/resources/beta/threads/runs/steps.mjs
 var Steps = class extends APIResource {
   /**
    * Retrieves a run step.
@@ -66259,7 +66966,7 @@ var Steps = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/internal/utils/base64.mjs
+// ../../server/node_modules/openai/internal/utils/base64.mjs
 var toFloat32Array = (base64Str) => {
   if (typeof Buffer !== "undefined") {
     const buf = Buffer.from(base64Str, "base64");
@@ -66275,7 +66982,7 @@ var toFloat32Array = (base64Str) => {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/internal/utils/env.mjs
+// ../../server/node_modules/openai/internal/utils/env.mjs
 var readEnv = (env) => {
   if (typeof globalThis.process !== "undefined") {
     return globalThis.process.env?.[env]?.trim() || void 0;
@@ -66286,7 +66993,7 @@ var readEnv = (env) => {
   return void 0;
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/lib/AssistantStream.mjs
+// ../../server/node_modules/openai/lib/AssistantStream.mjs
 var _AssistantStream_instances;
 var _a2;
 var _AssistantStream_events;
@@ -66806,7 +67513,7 @@ _a2 = AssistantStream, _AssistantStream_addEvent = function _AssistantStream_add
 function assertNever2(_x) {
 }
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/beta/threads/runs/runs.mjs
+// ../../server/node_modules/openai/resources/beta/threads/runs/runs.mjs
 var Runs = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -66977,7 +67684,7 @@ var Runs = class extends APIResource {
 };
 Runs.Steps = Steps;
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/beta/threads/threads.mjs
+// ../../server/node_modules/openai/resources/beta/threads/threads.mjs
 var Threads2 = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -67063,7 +67770,7 @@ var Threads2 = class extends APIResource {
 Threads2.Runs = Runs;
 Threads2.Messages = Messages2;
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/beta/beta.mjs
+// ../../server/node_modules/openai/resources/beta/beta.mjs
 var Beta = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -67080,7 +67787,7 @@ Beta.ChatKit = ChatKit;
 Beta.Assistants = Assistants;
 Beta.Threads = Threads2;
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/completions.mjs
+// ../../server/node_modules/openai/resources/completions.mjs
 var Completions2 = class extends APIResource {
   create(body, options) {
     return this._client.post("/completions", {
@@ -67092,7 +67799,7 @@ var Completions2 = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/containers/files/content.mjs
+// ../../server/node_modules/openai/resources/containers/files/content.mjs
 var Content = class extends APIResource {
   /**
    * Retrieve Container File Content
@@ -67108,7 +67815,7 @@ var Content = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/containers/files/files.mjs
+// ../../server/node_modules/openai/resources/containers/files/files.mjs
 var Files = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -67157,7 +67864,7 @@ var Files = class extends APIResource {
 };
 Files.Content = Content;
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/containers/containers.mjs
+// ../../server/node_modules/openai/resources/containers/containers.mjs
 var Containers = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -67201,7 +67908,7 @@ var Containers = class extends APIResource {
 };
 Containers.Files = Files;
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/conversations/items.mjs
+// ../../server/node_modules/openai/resources/conversations/items.mjs
 var Items = class extends APIResource {
   /**
    * Create items in a conversation with the given ID.
@@ -67244,7 +67951,7 @@ var Items = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/conversations/conversations.mjs
+// ../../server/node_modules/openai/resources/conversations/conversations.mjs
 var Conversations = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -67287,7 +67994,7 @@ var Conversations = class extends APIResource {
 };
 Conversations.Items = Items;
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/embeddings.mjs
+// ../../server/node_modules/openai/resources/embeddings.mjs
 var Embeddings = class extends APIResource {
   /**
    * Creates an embedding vector representing the input text.
@@ -67331,7 +68038,7 @@ var Embeddings = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/evals/runs/output-items.mjs
+// ../../server/node_modules/openai/resources/evals/runs/output-items.mjs
 var OutputItems = class extends APIResource {
   /**
    * Get an evaluation run output item by ID.
@@ -67352,7 +68059,7 @@ var OutputItems = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/evals/runs/runs.mjs
+// ../../server/node_modules/openai/resources/evals/runs/runs.mjs
 var Runs2 = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -67413,7 +68120,7 @@ var Runs2 = class extends APIResource {
 };
 Runs2.OutputItems = OutputItems;
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/evals/evals.mjs
+// ../../server/node_modules/openai/resources/evals/evals.mjs
 var Evals = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -67461,7 +68168,7 @@ var Evals = class extends APIResource {
 };
 Evals.Runs = Runs2;
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/files.mjs
+// ../../server/node_modules/openai/resources/files.mjs
 var Files2 = class extends APIResource {
   /**
    * Upload a file that can be used across various endpoints. Individual files can be
@@ -67548,11 +68255,11 @@ var Files2 = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/fine-tuning/methods.mjs
+// ../../server/node_modules/openai/resources/fine-tuning/methods.mjs
 var Methods = class extends APIResource {
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/fine-tuning/alpha/graders.mjs
+// ../../server/node_modules/openai/resources/fine-tuning/alpha/graders.mjs
 var Graders = class extends APIResource {
   /**
    * Run a grader.
@@ -67604,7 +68311,7 @@ var Graders = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/fine-tuning/alpha/alpha.mjs
+// ../../server/node_modules/openai/resources/fine-tuning/alpha/alpha.mjs
 var Alpha = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -67613,7 +68320,7 @@ var Alpha = class extends APIResource {
 };
 Alpha.Graders = Graders;
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/fine-tuning/checkpoints/permissions.mjs
+// ../../server/node_modules/openai/resources/fine-tuning/checkpoints/permissions.mjs
 var Permissions = class extends APIResource {
   /**
    * **NOTE:** Calling this endpoint requires an [admin API key](../admin-api-keys).
@@ -67693,7 +68400,7 @@ var Permissions = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/fine-tuning/checkpoints/checkpoints.mjs
+// ../../server/node_modules/openai/resources/fine-tuning/checkpoints/checkpoints.mjs
 var Checkpoints = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -67702,7 +68409,7 @@ var Checkpoints = class extends APIResource {
 };
 Checkpoints.Permissions = Permissions;
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/fine-tuning/jobs/checkpoints.mjs
+// ../../server/node_modules/openai/resources/fine-tuning/jobs/checkpoints.mjs
 var Checkpoints2 = class extends APIResource {
   /**
    * List checkpoints for a fine-tuning job.
@@ -67722,7 +68429,7 @@ var Checkpoints2 = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/fine-tuning/jobs/jobs.mjs
+// ../../server/node_modules/openai/resources/fine-tuning/jobs/jobs.mjs
 var Jobs = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -67851,7 +68558,7 @@ var Jobs = class extends APIResource {
 };
 Jobs.Checkpoints = Checkpoints2;
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/fine-tuning/fine-tuning.mjs
+// ../../server/node_modules/openai/resources/fine-tuning/fine-tuning.mjs
 var FineTuning = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -67866,11 +68573,11 @@ FineTuning.Jobs = Jobs;
 FineTuning.Checkpoints = Checkpoints;
 FineTuning.Alpha = Alpha;
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/graders/grader-models.mjs
+// ../../server/node_modules/openai/resources/graders/grader-models.mjs
 var GraderModels = class extends APIResource {
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/graders/graders.mjs
+// ../../server/node_modules/openai/resources/graders/graders.mjs
 var Graders2 = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -67879,7 +68586,7 @@ var Graders2 = class extends APIResource {
 };
 Graders2.GraderModels = GraderModels;
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/images.mjs
+// ../../server/node_modules/openai/resources/images.mjs
 var Images = class extends APIResource {
   /**
    * Creates a variation of a given image. This endpoint only supports `dall-e-2`.
@@ -67907,7 +68614,7 @@ var Images = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/models.mjs
+// ../../server/node_modules/openai/resources/models.mjs
 var Models = class extends APIResource {
   /**
    * Retrieves a model instance, providing basic information about the model such as
@@ -67932,7 +68639,7 @@ var Models = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/moderations.mjs
+// ../../server/node_modules/openai/resources/moderations.mjs
 var Moderations = class extends APIResource {
   /**
    * Classifies if text and/or image inputs are potentially harmful. Learn more in
@@ -67943,7 +68650,7 @@ var Moderations = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/realtime/calls.mjs
+// ../../server/node_modules/openai/resources/realtime/calls.mjs
 var Calls = class extends APIResource {
   /**
    * Accept an incoming SIP call and configure the realtime session that will handle
@@ -68015,7 +68722,7 @@ var Calls = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/realtime/client-secrets.mjs
+// ../../server/node_modules/openai/resources/realtime/client-secrets.mjs
 var ClientSecrets = class extends APIResource {
   /**
    * Create a Realtime client secret with an associated session configuration.
@@ -68049,7 +68756,7 @@ var ClientSecrets = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/realtime/realtime.mjs
+// ../../server/node_modules/openai/resources/realtime/realtime.mjs
 var Realtime2 = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -68060,7 +68767,7 @@ var Realtime2 = class extends APIResource {
 Realtime2.ClientSecrets = ClientSecrets;
 Realtime2.Calls = Calls;
 
-// E:/claudeprojects/immersival/server/node_modules/openai/lib/ResponsesParser.mjs
+// ../../server/node_modules/openai/lib/ResponsesParser.mjs
 function maybeParseResponse(response, params) {
   if (!params || !hasAutoParseableInput2(params)) {
     const parsed = {
@@ -68189,7 +68896,7 @@ function addOutputText(rsp) {
   rsp.output_text = texts.join("");
 }
 
-// E:/claudeprojects/immersival/server/node_modules/openai/lib/responses/ResponseAccumulator.mjs
+// ../../server/node_modules/openai/lib/responses/ResponseAccumulator.mjs
 function accumulateResponse(event, snapshot) {
   if (!snapshot) {
     if (event.type !== "response.created") {
@@ -68578,7 +69285,7 @@ function assertNever3(value) {
   throw new OpenAIError(`Unhandled response stream event: ${JSON.stringify(value)}`);
 }
 
-// E:/claudeprojects/immersival/server/node_modules/openai/lib/responses/ResponseStream.mjs
+// ../../server/node_modules/openai/lib/responses/ResponseStream.mjs
 var _ResponseStream_instances;
 var _ResponseStream_params;
 var _ResponseStream_currentResponseSnapshot;
@@ -68772,7 +69479,7 @@ function finalizeResponse(snapshot, params) {
   return maybeParseResponse(snapshot, params);
 }
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/responses/input-items.mjs
+// ../../server/node_modules/openai/resources/responses/input-items.mjs
 var InputItems2 = class extends APIResource {
   /**
    * Returns a list of input items for a given response.
@@ -68792,7 +69499,7 @@ var InputItems2 = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/responses/input-tokens.mjs
+// ../../server/node_modules/openai/resources/responses/input-tokens.mjs
 var InputTokens2 = class extends APIResource {
   /**
    * Returns input token counts of the request.
@@ -68814,7 +69521,7 @@ var InputTokens2 = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/responses/responses.mjs
+// ../../server/node_modules/openai/resources/responses/responses.mjs
 var Responses2 = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -68913,7 +69620,7 @@ var Responses2 = class extends APIResource {
 Responses2.InputItems = InputItems2;
 Responses2.InputTokens = InputTokens2;
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/skills/content.mjs
+// ../../server/node_modules/openai/resources/skills/content.mjs
 var Content2 = class extends APIResource {
   /**
    * Download a skill zip bundle by its ID.
@@ -68928,7 +69635,7 @@ var Content2 = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/skills/versions/content.mjs
+// ../../server/node_modules/openai/resources/skills/versions/content.mjs
 var Content3 = class extends APIResource {
   /**
    * Download a skill version zip bundle.
@@ -68944,7 +69651,7 @@ var Content3 = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/skills/versions/versions.mjs
+// ../../server/node_modules/openai/resources/skills/versions/versions.mjs
 var Versions = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -68989,7 +69696,7 @@ var Versions = class extends APIResource {
 };
 Versions.Content = Content3;
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/skills/skills.mjs
+// ../../server/node_modules/openai/resources/skills/skills.mjs
 var Skills = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -69038,7 +69745,7 @@ var Skills = class extends APIResource {
 Skills.Content = Content2;
 Skills.Versions = Versions;
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/uploads/parts.mjs
+// ../../server/node_modules/openai/resources/uploads/parts.mjs
 var Parts = class extends APIResource {
   /**
    * Adds a
@@ -69058,7 +69765,7 @@ var Parts = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/uploads/uploads.mjs
+// ../../server/node_modules/openai/resources/uploads/uploads.mjs
 var Uploads = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -69128,7 +69835,7 @@ var Uploads = class extends APIResource {
 };
 Uploads.Parts = Parts;
 
-// E:/claudeprojects/immersival/server/node_modules/openai/lib/Util.mjs
+// ../../server/node_modules/openai/lib/Util.mjs
 var allSettledWithThrow = async (promises2) => {
   const results = await Promise.allSettled(promises2);
   const rejected = results.filter((result2) => result2.status === "rejected");
@@ -69147,7 +69854,7 @@ var allSettledWithThrow = async (promises2) => {
   return values;
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/vector-stores/file-batches.mjs
+// ../../server/node_modules/openai/resources/vector-stores/file-batches.mjs
 var FileBatches = class extends APIResource {
   /**
    * Create a vector store file batch.
@@ -69272,7 +69979,7 @@ var FileBatches = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/vector-stores/files.mjs
+// ../../server/node_modules/openai/resources/vector-stores/files.mjs
 var Files3 = class extends APIResource {
   /**
    * Create a vector store file by attaching a
@@ -69413,7 +70120,7 @@ var Files3 = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/vector-stores/vector-stores.mjs
+// ../../server/node_modules/openai/resources/vector-stores/vector-stores.mjs
 var VectorStores = class extends APIResource {
   constructor() {
     super(...arguments);
@@ -69490,7 +70197,7 @@ var VectorStores = class extends APIResource {
 VectorStores.Files = Files3;
 VectorStores.FileBatches = FileBatches;
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/videos.mjs
+// ../../server/node_modules/openai/resources/videos.mjs
 var Videos = class extends APIResource {
   /**
    * Create a new video generation job from a prompt and optional reference assets.
@@ -69570,7 +70277,7 @@ var Videos = class extends APIResource {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/resources/webhooks/webhooks.mjs
+// ../../server/node_modules/openai/resources/webhooks/webhooks.mjs
 var _Webhooks_instances;
 var _Webhooks_validateSecret;
 var _Webhooks_getRequiredHeader;
@@ -69649,7 +70356,7 @@ _Webhooks_instances = /* @__PURE__ */ new WeakSet(), _Webhooks_validateSecret = 
   return value;
 };
 
-// E:/claudeprojects/immersival/server/node_modules/openai/internal/provider.mjs
+// ../../server/node_modules/openai/internal/provider.mjs
 var providerDefinitionsKey = Symbol.for("openai.node.providerDefinitions.v1");
 var providerGlobal = globalThis;
 var existingProviderDefinitions = providerGlobal[providerDefinitionsKey];
@@ -69665,7 +70372,7 @@ function configureProvider(provider) {
   return definition.configure();
 }
 
-// E:/claudeprojects/immersival/server/node_modules/openai/client.mjs
+// ../../server/node_modules/openai/client.mjs
 var _OpenAI_instances;
 var _a3;
 var _OpenAI_encoder;
@@ -70321,10 +71028,8 @@ function isUndiciDispatcherVersionMismatchError(error) {
 
 // server/src/ai/providers/llm/openai.ts
 var OpenAILLMProvider = class {
-  constructor() {
-    this.id = "openai";
-    this.name = "OpenAI Compatible";
-  }
+  id = "openai";
+  name = "OpenAI Compatible";
   async isAvailable(config2) {
     return !!(config2.apiKey && config2.baseURL);
   }
@@ -70363,11 +71068,11 @@ var OpenAILLMProvider = class {
   }
 };
 
-// E:/claudeprojects/immersival/server/node_modules/ollama/dist/index.mjs
+// ../../server/node_modules/ollama/dist/index.mjs
 var import_node_fs = __toESM(require("node:fs"), 1);
 var import_node_path = require("node:path");
 
-// E:/claudeprojects/immersival/server/node_modules/ollama/dist/browser.mjs
+// ../../server/node_modules/ollama/dist/browser.mjs
 var import_whatwg_fetch = __toESM(require_fetch_umd(), 1);
 var defaultPort = "11434";
 var defaultHost = `http://127.0.0.1:${defaultPort}`;
@@ -70881,7 +71586,7 @@ var Ollama$1 = class Ollama {
 };
 var browser = new Ollama$1();
 
-// E:/claudeprojects/immersival/server/node_modules/ollama/dist/index.mjs
+// ../../server/node_modules/ollama/dist/index.mjs
 var import_whatwg_fetch2 = __toESM(require_fetch_umd(), 1);
 var Ollama2 = class extends Ollama$1 {
   async encodeImage(image) {
@@ -70926,10 +71631,8 @@ var index = new Ollama2();
 
 // server/src/ai/providers/llm/ollama.ts
 var OllamaLLMProvider = class {
-  constructor() {
-    this.id = "ollama";
-    this.name = "Ollama (Local)";
-  }
+  id = "ollama";
+  name = "Ollama (Local)";
   async isAvailable(config2) {
     try {
       const host2 = config2.host || "http://127.0.0.1:11434";
@@ -70983,11 +71686,9 @@ var OllamaLLMProvider = class {
 
 // server/src/ai/providers/llm/aionlabs.ts
 var AionLabsLLMProvider = class {
-  constructor() {
-    this.id = "aionlabs";
-    this.name = "Aion Labs";
-    this.DEFAULT_BASE_URL = "https://api.aionlabs.ai/v1";
-  }
+  id = "aionlabs";
+  name = "Aion Labs";
+  DEFAULT_BASE_URL = "https://api.aionlabs.ai/v1";
   async isAvailable(config2) {
     return !!(config2.apiKey || process.env.AIONLABS_API_KEY) && !!config2.baseURL;
   }
@@ -71033,7 +71734,7 @@ var AionLabsLLMProvider = class {
 var MsEdgeTTS = null;
 async function getMsEdgeTTS() {
   if (!MsEdgeTTS) {
-    const mod = await Promise.resolve().then(() => __toESM(require_dist2()));
+    const mod = await Promise.resolve().then(() => __toESM(require_dist2(), 1));
     MsEdgeTTS = mod.MsEdgeTTS || mod.default;
   }
   return MsEdgeTTS;
@@ -71096,15 +71797,13 @@ function stableIndex(seed, n) {
   return Math.abs(h) % n;
 }
 var EdgeTTSProvider = class {
-  constructor() {
-    this.id = "edge-tts";
-    this.name = "Microsoft Edge TTS";
-  }
+  id = "edge-tts";
+  name = "Microsoft Edge TTS";
   async isAvailable(_config) {
     try {
       const TTS = await getMsEdgeTTS();
-      const tts = new TTS();
-      await tts.setMetadata("ar-SA-HamedNeural");
+      const tts2 = new TTS();
+      await tts2.setMetadata("ar-SA-HamedNeural");
       return true;
     } catch {
       return false;
@@ -71113,8 +71812,8 @@ var EdgeTTSProvider = class {
   async listVoices(_config) {
     try {
       const TTS = await getMsEdgeTTS();
-      const tts = new TTS();
-      const voices = await tts.getVoices();
+      const tts2 = new TTS();
+      const voices = await tts2.getVoices();
       return voices.map((v) => ({
         id: v.ShortName,
         // Newer lists have no display name: "ar-SA-ZariyahNeural" -> "Zariyah".
@@ -71128,18 +71827,18 @@ var EdgeTTSProvider = class {
   }
   async synthesize(text2, options, config2) {
     const TTS = await getMsEdgeTTS();
-    const tts = new TTS();
+    const tts2 = new TTS();
     options.signal?.throwIfAborted();
-    const close = () => tts.close();
+    const close = () => tts2.close();
     options.signal?.addEventListener("abort", close, { once: true });
     try {
-      return await this.synthesizeOnConnection(tts, text2, options, config2);
+      return await this.synthesizeOnConnection(tts2, text2, options, config2);
     } finally {
       options.signal?.removeEventListener("abort", close);
       close();
     }
   }
-  async synthesizeOnConnection(tts, text2, options, config2) {
+  async synthesizeOnConnection(tts2, text2, options, config2) {
     const requestedLang = (options.lang || "").toLowerCase();
     const langSymb = requestedLang.split("-")[0] || "";
     const requestedVoice = options.voice || config2.voice || "";
@@ -71193,12 +71892,12 @@ var EdgeTTSProvider = class {
     }
     console.log(`[AIG-TTS] edge-tts lang=${requestedLang || "(none)"} gender=${gender} requestedVoice=${requestedVoice || "(default)"} resolvedVoice=${voice}`);
     options.signal?.throwIfAborted();
-    await tts.setMetadata(voice, "audio-24khz-96kbitrate-mono-mp3", {
+    await tts2.setMetadata(voice, "audio-24khz-96kbitrate-mono-mp3", {
       wordBoundaryEnabled: true,
       sentenceBoundaryEnabled: false
     });
     options.signal?.throwIfAborted();
-    const { audioStream, metadataStream } = await tts.toStream(text2);
+    const { audioStream, metadataStream } = await tts2.toStream(text2);
     const audioChunks = [];
     const wordBoundaries = [];
     return await new Promise((resolve2, reject) => {
@@ -71262,7 +71961,7 @@ var EdgeTTSProvider = class {
 };
 
 // server/src/ai/providers/tts/google-translate.ts
-var googleTTS = __toESM(require_dist3());
+var googleTTS = __toESM(require_dist3(), 1);
 var MAX_CHARS = 200;
 function splitTextIntoChunks(text2, maxLen) {
   const chunks = [];
@@ -71285,10 +71984,8 @@ function splitTextIntoChunks(text2, maxLen) {
   return chunks;
 }
 var GoogleTranslateTTSProvider = class {
-  constructor() {
-    this.id = "google-translate";
-    this.name = "Google Translate TTS";
-  }
+  id = "google-translate";
+  name = "Google Translate TTS";
   async isAvailable(_config) {
     return true;
   }
@@ -71335,215 +72032,10 @@ var GoogleTranslateTTSProvider = class {
   }
 };
 
-// server/src/ai/guide/behavior-tags.ts
-var TAG_RE = /<\s*\/?\s*([a-zA-Z_]+)([^<>]*?)\/?\s*>/g;
-var ATTR_RE = /([a-zA-Z_]+)\s*=\s*("([^"]*)"|'([^']*)'|([^\s"'/>]+))/g;
-var audioCues = /* @__PURE__ */ new Set(["laughs", "sighs", "clears throat", "thoughtful"]);
-function allowedAudioCue(value) {
-  return typeof value === "string" && audioCues.has(value) ? value : void 0;
-}
-function stripHabitualAddress(speech) {
-  return speech.replace(/(^|[.!?؟…]\s+)((?:<[^<>]+>\s*)*)(?:(?:believe me|my brothers and sisters|my brothers|my sisters|my brother|my sister|croyez[- ]moi|mes frères et sœurs|mes frères|mes sœurs|mon frère|ma sœur|صدقوني|صدقني|صدقيني|يا إخوتي وأخواتي|يا إخواني|يا إخوتي|يا خاوتي|يا أخي|يا أختي)(?:\s*[,،:;.!…]+\s*|\s*$))+/giu, "$1$2").trim();
-}
-function readAttrs(raw) {
-  const out = {};
-  for (const m of raw.matchAll(ATTR_RE)) out[m[1].toLowerCase()] = (m[3] ?? m[4] ?? m[5] ?? "").trim();
-  return out;
-}
-function objectRef(v) {
-  const m = /^(?:obj:)?\[?([A-Za-z0-9_-]{1,64})\]?$/i.exec((v ?? "").trim());
-  return m ? m[1] : null;
-}
-function canonicalTag(name, attrs, v) {
-  switch (name) {
-    case "gesture": {
-      const g = (attrs.name ?? "").toLowerCase();
-      return v.gestures.includes(g) ? `<gesture name="${g}"/>` : "";
-    }
-    case "point": {
-      const id = objectRef(attrs.to);
-      return id ? `<point to="${id}"/>` : "";
-    }
-    case "look": {
-      const at = (attrs.at ?? "").toLowerCase();
-      if (at === "visitor" || at === "away") return `<look at="${at}"/>`;
-      const id = objectRef(attrs.at);
-      return id ? `<look at="${id}"/>` : "";
-    }
-    case "emotion": {
-      const e = (attrs.name ?? "").toLowerCase();
-      return v.emotions.includes(e) ? `<emotion name="${e}"/>` : "";
-    }
-    case "voice": {
-      const cue = allowedAudioCue(attrs.name?.toLowerCase());
-      return cue ? `<voice name="${cue}"/>` : "";
-    }
-    case "motion": {
-      const m = (attrs.name ?? "").toLowerCase();
-      return (v.motions ?? []).some((x) => x.key === m) ? `<motion name="${m}"/>` : "";
-    }
-    case "generate": {
-      const instead = (attrs.instead ?? "").toLowerCase();
-      const insteadOk = v.gestures.includes(instead) || (v.motions ?? []).some((x) => x.key === instead);
-      const prompt = (attrs.motion ?? "").replace(/[^\p{L}\p{N} ,.'-]/gu, "").replace(/\s+/g, " ").trim().slice(0, 80);
-      if (!v.motionGeneration || !insteadOk || prompt.length < 4) return insteadOk && v.gestures.includes(instead) ? `<gesture name="${instead}"/>` : "";
-      return `<generate motion="${prompt}" instead="${instead}"/>`;
-    }
-    case "pause": {
-      const ms = Math.round(Number(attrs.ms));
-      return Number.isFinite(ms) && ms > 0 ? `<pause ms="${Math.min(1500, ms)}"/>` : "";
-    }
-    default:
-      return "";
-  }
-}
-function sanitizeBehaviorTags(speech, v) {
-  return speech.replace(/\[(?:laughs|sighs|clears throat|thoughtful)\]/gi, "").replace(TAG_RE, (_all, name, rest) => canonicalTag(name.toLowerCase(), readAttrs(rest), v)).replace(/[ \t]{2,}/g, " ").trim();
-}
-function stripBehaviorTags(speech) {
-  return speech.replace(TAG_RE, "").replace(/[ \t]{2,}/g, " ").trim();
-}
-
-// server/src/ai/providers/tts/elevenlabs.ts
-var API_BASE = "https://api.elevenlabs.io/v1";
-var DEFAULT_MODEL = "eleven_v4_turbo";
-var KNOWN_MODELS = [
-  { id: "eleven_v4_turbo", name: "Eleven v4 Turbo - $0.04 / 1K chars, 90+ languages (recommended)" },
-  { id: "eleven_flash_v2_5", name: "Eleven Flash v2.5 - $0.04 / 1K chars, 32 languages, fastest" },
-  { id: "eleven_v4", name: "Eleven v4 - $0.08 / 1K chars, highest quality" },
-  { id: "eleven_v3", name: "Eleven v3 - $0.08 / 1K chars" },
-  { id: "eleven_multilingual_v2", name: "Eleven Multilingual v2 - $0.08 / 1K chars" }
-];
-async function errorDetail(res2) {
-  try {
-    const body = await res2.json();
-    const d = body.detail;
-    const text2 = typeof d === "string" ? d : [d?.status, d?.message].filter(Boolean).join(": ");
-    return text2.slice(0, 200);
-  } catch {
-    return "";
-  }
-}
-var ElevenLabsVoicePlanError = class extends Error {
-  constructor() {
-    super("The current ElevenLabs plan does not allow this instant voice clone.");
-  }
-};
-var ElevenLabsTTSProvider = class {
-  constructor() {
-    this.id = "elevenlabs";
-    this.name = "ElevenLabs";
-  }
-  async isAvailable(config2) {
-    return !!config2?.apiKey;
-  }
-  async listVoices(config2) {
-    if (!config2?.apiKey) return [];
-    const res2 = await fetch(`${API_BASE}/voices`, {
-      headers: { "xi-api-key": config2.apiKey }
-    });
-    if (!res2.ok) throw new Error(`ElevenLabs voices request failed: ${res2.status} ${await errorDetail(res2)}`.trim());
-    const body = await res2.json();
-    return (body.voices ?? []).map((v) => ({
-      id: v.voice_id,
-      name: v.name,
-      lang: v.labels?.language ?? "multilingual",
-      gender: v.labels?.gender
-    }));
-  }
-  /** Models this account can use for text-to-speech (live from ElevenLabs, not a fixed list). */
-  async listModels(config2) {
-    if (!config2?.apiKey) return [];
-    const res2 = await fetch(`${API_BASE}/models`, {
-      headers: { "xi-api-key": config2.apiKey }
-    });
-    if (res2.status === 401 || res2.status === 403) return KNOWN_MODELS;
-    if (!res2.ok) throw new Error(`ElevenLabs models request failed: ${res2.status} ${await errorDetail(res2)}`.trim());
-    const body = await res2.json();
-    return body.filter((m) => m.can_do_text_to_speech !== false).map((m) => ({ id: m.model_id, name: m.name || m.model_id }));
-  }
-  async synthesize(text2, options, config2) {
-    const apiKey = config2?.apiKey;
-    if (!apiKey) throw new Error("ElevenLabs API key is not configured");
-    const requested = options.voice && /^[A-Za-z0-9]{20}$/.test(options.voice) ? options.voice : void 0;
-    const voiceId = requested || config2.voiceId;
-    if (!voiceId) throw new Error("ElevenLabs voice id is not configured");
-    const model = config2.modelId || DEFAULT_MODEL;
-    const cue = ["eleven_v4_turbo", "eleven_v4", "eleven_v3", "eleven_v3_conversational"].includes(model) ? allowedAudioCue(options.audioCue) : void 0;
-    const res2 = await fetch(`${API_BASE}/text-to-speech/${encodeURIComponent(voiceId)}/with-timestamps`, {
-      signal: options.signal,
-      method: "POST",
-      headers: {
-        "xi-api-key": apiKey,
-        "Content-Type": "application/json",
-        Accept: "application/json"
-      },
-      body: JSON.stringify({
-        text: cue ? `[${cue}] ${text2}` : text2,
-        model_id: model,
-        voice_settings: { stability: 0.5, similarity_boost: 0.75 }
-      })
-    });
-    if (!res2.ok) {
-      const detail = await errorDetail(res2);
-      if (/^ivc_not_permitted(?:$|:)/.test(detail)) throw new ElevenLabsVoicePlanError();
-      throw new Error(`ElevenLabs TTS failed: ${res2.status} ${detail}`.trim());
-    }
-    const body = await res2.json();
-    if (!body.audio_base64) throw new Error("ElevenLabs TTS returned no audio");
-    const alignment = body.normalized_alignment || body.alignment;
-    const spokenAlignment = cue ? withoutAudioCue(alignment, cue) : alignment;
-    return {
-      audio: Buffer.from(body.audio_base64, "base64"),
-      format: "mp3",
-      wordBoundaries: alignmentToWords(spokenAlignment),
-      characterAlignment: spokenAlignment || void 0
-    };
-  }
-};
-function withoutAudioCue(alignment, cue) {
-  const tagged = `[${cue}]`;
-  if (!alignment?.characters.join("").toLowerCase().startsWith(tagged)) return alignment;
-  let index2 = 0;
-  let consumed = 0;
-  while (consumed < tagged.length) consumed += alignment.characters[index2++].length;
-  while (index2 < alignment.characters.length && /^\s+$/.test(alignment.characters[index2])) index2++;
-  return {
-    characters: alignment.characters.slice(index2),
-    character_start_times_seconds: alignment.character_start_times_seconds.slice(index2),
-    character_end_times_seconds: alignment.character_end_times_seconds.slice(index2)
-  };
-}
-function alignmentToWords(a) {
-  if (!a || !Array.isArray(a.characters) || a.characters.length === 0) return [];
-  const words = [];
-  let word = "";
-  let start2 = 0;
-  let end = 0;
-  const flush = () => {
-    if (!word) return;
-    words.push({ text: word, offset: Math.round(start2 * 1e3), duration: Math.max(0, Math.round((end - start2) * 1e3)) });
-    word = "";
-  };
-  a.characters.forEach((ch, i) => {
-    if (/\s/.test(ch)) {
-      flush();
-      return;
-    }
-    if (!word) start2 = a.character_start_times_seconds[i] ?? 0;
-    word += ch;
-    end = a.character_end_times_seconds[i] ?? start2;
-  });
-  flush();
-  return words;
-}
-
 // server/src/ai/providers/stt/browser.ts
 var BrowserSTTProvider = class {
-  constructor() {
-    this.id = "browser";
-    this.name = "Browser SpeechRecognition";
-  }
+  id = "browser";
+  name = "Browser SpeechRecognition";
   async isAvailable(_config) {
     return true;
   }
@@ -71552,12 +72044,74 @@ var BrowserSTTProvider = class {
   }
 };
 
+// server/src/ai/providers/stt/bilingual-vocabulary.ts
+function buildBilingualSTTPrompt(lang2, context) {
+  const shortLang = (lang2 || "ar").slice(0, 2).toLowerCase();
+  const customCharNames = [];
+  if (context?.characters?.length) {
+    for (const c of context.characters) {
+      if (c.name && !customCharNames.includes(c.name)) customCharNames.push(c.name);
+      for (const a of c.aliases || []) {
+        if (a && a.length >= 3 && !customCharNames.includes(a)) customCharNames.push(a);
+      }
+    }
+  }
+  const customItems = (context?.items || []).filter((item) => item && item.trim().length >= 3).slice(0, 8);
+  if (shortLang === "ar") {
+    let p2 = "\u062D\u0648\u0627\u0631 \u062A\u0641\u0627\u0639\u0644\u064A \u0645\u0639 \u0627\u0644\u0634\u062E\u0635\u064A\u0627\u062A: \u0627\u0644\u0623\u0645\u064A\u0631 \u0639\u0628\u062F \u0627\u0644\u0642\u0627\u062F\u0631 (El Emir, L'\xC9mir, Emir Abdelkader)\u060C \u0647\u0648\u0627\u0631\u064A \u0628\u0648\u0645\u062F\u064A\u0646 (Houari Boumediene, Boumediene)\u060C \u0627\u0644\u0645\u0631\u0634\u062F \u0623\u062D\u0645\u062F (Ahmed). \u0627\u0644\u0645\u0639\u0627\u0644\u0645 \u0648\u0627\u0644\u0642\u0637\u0639 \u0627\u0644\u0623\u062B\u0631\u064A\u0629 \u0648\u0627\u0644\u062A\u0627\u0631\u064A\u062E\u064A\u0629: \u0627\u0644\u0628\u0631\u0646\u0648\u0633\u060C \u0627\u0644\u0633\u064A\u0641\u060C \u0627\u0644\u062E\u062A\u0645\u060C \u0645\u0639\u0627\u0647\u062F\u0629 \u062A\u0627\u0641\u0646\u0629\u060C \u0627\u0644\u0645\u062E\u0637\u0648\u0637\u0627\u062A \u0648\u0627\u0644\u0622\u062B\u0627\u0631.";
+    if (customItems.length > 0) {
+      p2 += ` \u0642\u0637\u0639 \u0627\u0644\u0645\u0639\u0631\u0636: ${customItems.join("\u060C ")}.`;
+    }
+    return p2;
+  }
+  if (shortLang === "fr") {
+    let p2 = "Dialogue interactif avec les personnages: l'\xC9mir Abdelkader (El Emir, L'\xC9mir, \u0627\u0644\u0623\u0645\u064A\u0631 \u0639\u0628\u062F \u0627\u0644\u0642\u0627\u062F\u0631), Houari Boumediene (Boumediene, \u0647\u0648\u0627\u0631\u064A \u0628\u0648\u0645\u062F\u064A\u0646), guide Ahmed (\u0623\u062D\u0645\u062F). Objets du patrimoine: le burnous, le sabre, le sceau, trait\xE9 de Tafna, manuscrits et objets historiques.";
+    if (customItems.length > 0) {
+      p2 += ` Objets: ${customItems.join(", ")}.`;
+    }
+    return p2;
+  }
+  let p = "Interactive dialogue with characters: Emir Abdelkader (El Emir, L'\xC9mir, \u0627\u0644\u0623\u0645\u064A\u0631 \u0639\u0628\u062F \u0627\u0644\u0642\u0627\u062F\u0631), Houari Boumediene (Boumediene, \u0647\u0648\u0627\u0631\u064A \u0628\u0648\u0645\u062F\u064A\u0646), guide Ahmed (\u0623\u062D\u0645\u062F). Heritage artifacts: Burnous, sword, seal, Treaty of Tafna, manuscripts and historical items.";
+  if (customItems.length > 0) {
+    p += ` Exhibition items: ${customItems.join(", ")}.`;
+  }
+  return p;
+}
+function canonicalizeBilingualTranscript(text2) {
+  if (!text2) return "";
+  let s = text2;
+  s = s.replace(/(^|[\s،,.;:!?])(?:إل\s*إمير|ال\s*إمير|إل\s*امير|ال\s*امير|إلإمير|إلامير|لإمير|لامير)(?=[\s،,.;:!?]|$)/gu, (_, p1) => p1 + "\u0627\u0644\u0623\u0645\u064A\u0631");
+  s = s.replace(/(^|[\s،,.;:!?])(?:هواري\s+بو\s+مدين)(?=[\s،,.;:!?]|$)/gu, (_, p1) => p1 + "\u0647\u0648\u0627\u0631\u064A \u0628\u0648\u0645\u062F\u064A\u0646");
+  s = s.replace(/(^|[\s،,.;:!?])(?:بو\s+مدين)(?=[\s،,.;:!?]|$)/gu, (_, p1) => p1 + "\u0628\u0648\u0645\u062F\u064A\u0646");
+  s = s.replace(/(^|[\s،,.;:!?])(?:بو\s+خروبة)(?=[\s،,.;:!?]|$)/gu, (_, p1) => p1 + "\u0628\u0648\u062E\u0631\u0648\u0628\u0629");
+  s = s.replace(/(^|[\s،,.;:!?])(?:عبد\s+ال\s+قادر)(?=[\s،,.;:!?]|$)/gu, (_, p1) => p1 + "\u0639\u0628\u062F \u0627\u0644\u0642\u0627\u062F\u0631");
+  s = s.replace(/\b[eE]l[- ]+[eE]mir\b/gu, "El Emir");
+  s = s.replace(/\bl['’][eéEÉ]mir\b/gu, "L'\xC9mir");
+  s = s.replace(/\b[bB]ou[- ]+medien(?:ne)?\b/gu, "Boumediene");
+  s = s.replace(/\b[hH]ouari[- ]+[bB]oumedien(?:ne)?\b/gu, "Houari Boumediene");
+  return s.trim();
+}
+var WHISPER_HALLUCINATION_PATTERNS = [
+  /^(?:i think|i think\.|i think so|i think so\.|i thought|i believe)$/i,
+  /^(?:thank you|thank you\.|thank you very much|thank you very much\.|thanks for watching|thanks for watching\.)$/i,
+  /^(?:you|you\.)$/i,
+  /^(?:bye|bye\.|bye bye|bye-bye|goodbye|goodbye\.)$/i,
+  /^(?:hmm|so|yeah|yeah\.|yep|okay|okay\.|ok|ok\.|ah|oh)$/i,
+  /^(?:subtitles by|watching\.|subscribe)$/i,
+  /^(?:شكرا|شكراً|شكرا لك|شكراً لك|شكرا لكم|شكرا للمشاهدة|مع السلامة|إلى اللقاء)$/u,
+  /^[\s.,!?؟،؛;:"'’«»()\-…]+$/
+];
+function isWhisperNoiseHallucination(text2) {
+  if (!text2) return true;
+  const trimmed = text2.trim();
+  if (trimmed.length === 0) return true;
+  return WHISPER_HALLUCINATION_PATTERNS.some((pattern) => pattern.test(trimmed));
+}
+
 // server/src/ai/providers/stt/groq.ts
 var GroqSTTProvider = class {
-  constructor() {
-    this.id = "groq";
-    this.name = "Groq Whisper";
-  }
+  id = "groq";
+  name = "Groq Whisper";
   async isAvailable(config2) {
     const apiKey = config2.apiKey || process.env.GROQ_API_KEY;
     return !!apiKey && typeof apiKey === "string" && apiKey.trim().length > 0;
@@ -71569,16 +72123,19 @@ var GroqSTTProvider = class {
     }
     const model = config2.model || options.model || process.env.GROQ_WHISPER_MODEL || "whisper-large-v3-turbo";
     const form = new FormData();
-    const blob = new Blob([audio], { type: "audio/webm" });
-    form.append("file", blob, "audio.webm");
+    const format = options.mimeType?.split(";")[0];
+    const extension2 = format === "audio/mp4" ? "mp4" : format === "audio/ogg" ? "ogg" : format === "audio/wav" ? "wav" : "webm";
+    const blob = new Blob([audio], { type: `audio/${extension2}` });
+    form.append("file", blob, `audio.${extension2}`);
     form.append("model", model);
     form.append("temperature", "0");
+    const langCode = options.lang && options.lang !== "auto" ? options.lang.slice(0, 2).toLowerCase() : "ar";
     if (options.lang && options.lang !== "auto") {
-      form.append("language", options.lang.slice(0, 2).toLowerCase());
+      form.append("language", langCode);
     }
-    const domainPrompt = options.prompt || "\u062D\u0648\u0627\u0631 \u062A\u0641\u0627\u0639\u0644\u064A \u0628\u0627\u0644\u0644\u063A\u0629 \u0627\u0644\u0639\u0631\u0628\u064A\u0629 \u0645\u0639 \u0645\u0631\u0634\u062F \u0633\u064A\u0627\u062D\u064A \u0641\u064A \u0645\u0639\u0631\u0636 \u062C\u0645\u064A\u0644 \u0648\u0633\u0648\u0642 \u0643\u0648\u064A\u0643\u0648\u0644 \u0627\u0644\u0631\u0648\u0645\u0627\u0646\u064A (Djemila / Cuicul / Macellum) \u0648\u0627\u0644\u0645\u0639\u0627\u0644\u0645 \u0627\u0644\u0623\u062B\u0631\u064A\u0629 \u0648\u0627\u0644\u0645\u062A\u062D\u0641.";
-    form.append("prompt", domainPrompt);
-    form.append("response_format", "json");
+    const domainPrompt = options.prompt || buildBilingualSTTPrompt(langCode);
+    if (!options.preview) form.append("prompt", domainPrompt);
+    form.append("response_format", "verbose_json");
     const res2 = await fetch("https://api.groq.com/openai/v1/audio/transcriptions", {
       method: "POST",
       headers: {
@@ -71591,7 +72148,16 @@ var GroqSTTProvider = class {
       throw new Error(`Groq Whisper STT failed [${res2.status}]: ${errText}`);
     }
     const data = await res2.json();
-    const text2 = (data.text || "").trim();
+    const noiseOnly = data.segments?.length && data.segments.every((segment) => (segment.no_speech_prob ?? 0) > 0.6 && (segment.avg_logprob ?? 0) < -1);
+    const crediblePreview = data.segments?.some((segment) => (segment.no_speech_prob ?? 1) < 0.55 && (segment.avg_logprob ?? -Infinity) > -0.85);
+    const rawText = (data.text || "").trim();
+    const text2 = canonicalizeBilingualTranscript(rawText);
+    if (noiseOnly || options.preview && !crediblePreview || isWhisperNoiseHallucination(text2)) {
+      return {
+        text: "",
+        confidence: 0
+      };
+    }
     return {
       text: text2,
       confidence: 1
@@ -71612,360 +72178,11 @@ function registerAllProviders() {
   registerSTTProvider("groq", () => new GroqSTTProvider());
 }
 
-// server/src/ai/tts/visemes.ts
-var ARABIC_RE = /[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF]/;
-var SIL = "sil";
-var AA = "aa";
-var E = "E";
-var I = "I";
-var O = "o";
-var U = "u";
-var PP = "PP";
-var FF = "FF";
-var SS = "SS";
-var TH = "TH";
-var DD = "DD";
-var KK = "kk";
-var NN = "nn";
-var RR = "RR";
-var EN_DIGRAPHS = [
-  [/^sh/i, SS],
-  [/^ch/i, SS],
-  [/^th/i, TH],
-  [/^ph/i, FF],
-  [/^ng/i, NN],
-  [/^wh/i, U],
-  [/^gh/i, KK]
-];
-var EN_SINGLE = {
-  a: AA,
-  A: AA,
-  e: E,
-  E,
-  i: I,
-  I,
-  o: O,
-  O,
-  u: U,
-  U,
-  y: I,
-  Y: I,
-  p: PP,
-  P: PP,
-  b: PP,
-  B: PP,
-  m: PP,
-  M: PP,
-  f: FF,
-  F: FF,
-  v: FF,
-  V: FF,
-  s: SS,
-  S: SS,
-  z: SS,
-  Z: SS,
-  x: SS,
-  X: SS,
-  t: DD,
-  T: DD,
-  d: DD,
-  D: DD,
-  c: KK,
-  C: KK,
-  k: KK,
-  K: KK,
-  g: KK,
-  G: KK,
-  q: KK,
-  Q: KK,
-  n: NN,
-  N: NN,
-  r: RR,
-  R: RR,
-  l: RR,
-  L: RR,
-  w: U,
-  W: U,
-  h: KK,
-  H: KK,
-  j: DD,
-  J: DD
-};
-var VOWELS = /* @__PURE__ */ new Set(["aa", E, I, O, U]);
-var AR_DIACRITIC = {
-  "\u064E": AA,
-  // fatha
-  "\u064E\u0651": AA,
-  // fatha + shadda
-  "\u064F": U,
-  // damma
-  "\u064F\u0651": U,
-  "\u0650": I,
-  // kasra
-  "\u0650\u0651": I,
-  "\u0652": SIL,
-  // sukun
-  "\u0651": SIL,
-  // shadda (gemination handled as consonant hold)
-  "\u064B": AA,
-  // fatha tanween
-  "\u064C": U,
-  // damma tanween
-  "\u064D": I,
-  // kasra tanween
-  "\u0653": AA,
-  // maddah above
-  "\u0654": AA,
-  // hamza above
-  "\u0655": AA,
-  // hamza below
-  "\u0670": AA,
-  // superscript alef
-  "\u06D6": SIL,
-  "\u06D7": SIL,
-  "\u06D8": SIL,
-  "\u06D9": SIL,
-  "\u06DA": SIL,
-  "\u06DB": SIL,
-  "\u06DC": SIL,
-  "\u06DF": SIL,
-  "\u06E0": SIL,
-  "\u06E1": SIL,
-  "\u06E2": SIL,
-  "\u06E3": SIL,
-  "\u06E4": SIL,
-  "\u06E5": SIL,
-  "\u06E6": SIL,
-  "\u06E7": SIL,
-  "\u06E8": SIL,
-  "\u06E9": SIL,
-  "\u06EA": SIL,
-  "\u06EB": SIL,
-  "\u06EC": SIL,
-  "\u06ED": SIL
-};
-var AR_LETTER = {
-  "\u0627": AA,
-  // ا alef
-  "\u0622": AA,
-  // آ
-  "\u0623": AA,
-  // أ
-  "\u0625": AA,
-  // إ
-  "\u0624": U,
-  // ؤ
-  "\u0626": I,
-  // ئ
-  "\u0628": PP,
-  // ب
-  "\u062A": DD,
-  // ت
-  "\u062B": TH,
-  // ث
-  "\u062C": DD,
-  // ج
-  "\u062D": KK,
-  // ح
-  "\u062E": KK,
-  // خ
-  "\u062F": DD,
-  // د
-  "\u0630": TH,
-  // ذ
-  "\u0631": RR,
-  // ر
-  "\u0632": SS,
-  // ز
-  "\u0633": SS,
-  // س
-  "\u0634": SS,
-  // ش
-  "\u0635": SS,
-  // ص
-  "\u0636": DD,
-  // ض
-  "\u0637": DD,
-  // ط
-  "\u0638": TH,
-  // ظ
-  "\u0639": KK,
-  // ع
-  "\u063A": KK,
-  // غ
-  "\u0641": FF,
-  // ف
-  "\u0642": KK,
-  // ق
-  "\u0643": KK,
-  // ك
-  "\u0644": RR,
-  // ل
-  "\u0645": PP,
-  // م
-  "\u0646": NN,
-  // ن
-  "\u0647": KK,
-  // ه
-  "\u0648": U,
-  // و
-  "\u0649": AA,
-  // ى
-  "\u064A": I,
-  // ي
-  "\u0671": AA,
-  // ٱ
-  "\u067E": PP,
-  // پ
-  "\u0686": SS,
-  // چ
-  "\u0698": RR,
-  // ژ
-  "\u06AF": KK,
-  // گ
-  "\u06BE": KK,
-  // ھ
-  "\u06CC": I,
-  // ی
-  "\u06D5": AA
-  // ە
-};
-function wordToVisemes(word, arabic) {
-  const out = [];
-  const chars = Array.from(word);
-  if (arabic) {
-    for (const ch of chars) {
-      if (AR_DIACRITIC[ch] !== void 0) {
-        const v = AR_DIACRITIC[ch];
-        out.push({ viseme: v, text: ch, weight: v === SIL ? 0.6 : 1.6 });
-      } else if (AR_LETTER[ch] !== void 0) {
-        out.push({ viseme: AR_LETTER[ch], text: ch, weight: 1 });
-      } else {
-        out.push({ viseme: SIL, text: ch, weight: 0.4 });
-      }
-    }
-    return out;
-  }
-  let i = 0;
-  while (i < chars.length) {
-    const rest = chars.slice(i).join("");
-    let matched = false;
-    for (const [re, viseme] of EN_DIGRAPHS) {
-      if (re.test(rest)) {
-        const text2 = chars[i] + chars[i + 1];
-        out.push({ viseme, text: text2, weight: 1 });
-        i += 2;
-        matched = true;
-        break;
-      }
-    }
-    if (matched) continue;
-    const ch = chars[i];
-    if (/[a-zA-Z]/.test(ch)) {
-      out.push({ viseme: EN_SINGLE[ch] || KK, text: ch, weight: 1 });
-    } else if (ch === "'") {
-      out.push({ viseme: SIL, text: ch, weight: 0.2 });
-    } else {
-      out.push({ viseme: SIL, text: ch, weight: 0.6 });
-    }
-    i++;
-  }
-  return out;
-}
-function isArabic(text2) {
-  return ARABIC_RE.test(text2);
-}
-function visemeWeight(viseme) {
-  return VOWELS.has(viseme) ? 1.35 : 1;
-}
-function expandWord(word, wo, wdur, arabic) {
-  const seq = wordToVisemes(word, arabic);
-  if (seq.length === 0) return [];
-  const total = seq.reduce((a, g) => a + g.weight * visemeWeight(g.viseme), 0);
-  const unit = wdur / Math.max(total, 1e-4);
-  const items = [];
-  let cursor = wo;
-  for (const g of seq) {
-    const dur = g.weight * visemeWeight(g.viseme) * unit;
-    const amp = g.viseme === PP || g.viseme === FF ? 0.6 : 0.42;
-    items.push({ text: g.text, viseme: g.viseme, start: Math.round(cursor), duration: Math.max(1, Math.round(dur)), amp });
-    cursor += dur;
-  }
-  return items;
-}
-function deriveBoundariesFromText(text2, speed) {
-  const tokens = text2.split(/\s+/).filter(Boolean);
-  if (tokens.length === 0) return [];
-  const rate = speed ?? 1;
-  const estTotalMs = Math.max(500, text2.length / 15 * 1e3 / Math.max(0.25, rate));
-  const vowelRun = (w) => Math.max(1, (w.match(/[aeiouyAEIOUY]/g) || []).length);
-  const pauseAt = (w) => w && /[.!?]$/.test(w) ? 0.16 : /[,;:]$/.test(w) ? 0.1 : 0;
-  const weights = tokens.map((t) => vowelRun(t) + 0.35);
-  const totalWeight = weights.reduce((a, b) => a + b, 0) + tokens.reduce((a, t) => a + pauseAt(t), 0);
-  const unit = estTotalMs / totalWeight;
-  const starts = [];
-  let cursor = 0;
-  for (let i = 0; i < tokens.length; i++) {
-    starts.push(cursor);
-    cursor += weights[i] * unit;
-    cursor += pauseAt(tokens[i]) * unit;
-  }
-  return tokens.map((word, i) => {
-    const start2 = starts[i];
-    const end = i + 1 < starts.length ? starts[i + 1] : Math.max(start2 + 120, estTotalMs);
-    return {
-      text: word,
-      offset: Math.round(start2),
-      duration: Math.round(Math.max(60, Math.min(1500, end - start2)))
-    };
-  });
-}
-function alignedVisemes(alignment) {
-  if (!alignment) return null;
-  const { characters: c, character_start_times_seconds: s, character_end_times_seconds: e } = alignment;
-  if (!Array.isArray(c) || !c.length || c.length > 2e4 || !Array.isArray(s) || !Array.isArray(e) || c.length !== s.length || c.length !== e.length || !c.every((x) => typeof x === "string" && x.length > 0) || !s.every((v, i) => Number.isFinite(v) && v >= 0 && Number.isFinite(e[i]) && e[i] >= v && (i === 0 || v >= s[i - 1]))) return null;
-  const chars = [], starts = [], ends = [];
-  c.forEach((token, i) => {
-    for (const ch of Array.from(token)) {
-      chars.push(ch);
-      starts.push(s[i]);
-      ends.push(e[i]);
-    }
-  });
-  const text2 = chars.join(""), seq = wordToVisemes(text2, isArabic(text2)), items = [];
-  let cursor = 0;
-  for (const g of seq) {
-    const size = Array.from(g.text).length, last = cursor + size - 1;
-    if (last >= starts.length) break;
-    const start2 = starts[cursor] * 1e3, end = ends[last] * 1e3;
-    cursor += size;
-    if (g.viseme === "sil" || end <= start2) continue;
-    items.push({ text: g.text, viseme: g.viseme, start: Math.round(start2), duration: Math.max(1, Math.round(end - start2)), amp: g.viseme === "PP" || g.viseme === "FF" ? 0.6 : 0.42 });
-  }
-  return items.length ? items : null;
-}
-function buildVisemeTimeline(text2, wordBoundaries, speed, alignment) {
-  const aligned = alignedVisemes(alignment);
-  if (aligned) return aligned;
-  const arabic = isArabic(text2);
-  const boundaries = Array.isArray(wordBoundaries) && wordBoundaries.length > 0 ? wordBoundaries : deriveBoundariesFromText(text2, speed);
-  const items = [];
-  for (const b of boundaries) {
-    const word = (b.text || "").trim();
-    if (!word) continue;
-    const wo = b.offset ?? 0;
-    const wdur = b.duration ?? 0;
-    if (wdur <= 0) continue;
-    items.push(...expandWord(word, wo, wdur, arabic));
-  }
-  return items;
-}
-
 // server/src/ai/face/animation-api.ts
-var import_crypto5 = __toESM(require("crypto"));
-var import_fs3 = __toESM(require("fs"));
-var import_os = __toESM(require("os"));
-var import_path66 = __toESM(require("path"));
+var import_crypto5 = __toESM(require("crypto"), 1);
+var import_fs3 = __toESM(require("fs"), 1);
+var import_os = __toESM(require("os"), 1);
+var import_path66 = __toESM(require("path"), 1);
 
 // server/src/ai/runpod.ts
 var EXEC_TIMEOUT_MS = parseInt(process.env.RUNPOD_EXEC_TIMEOUT_MS || "1800000", 10) || 18e5;
@@ -72147,14 +72364,14 @@ async function faceForSpeech(audio, format, text2, boundaries, mode = "direct") 
 // server/src/ai/guide/conversation-policy.ts
 var CONVERSATION_POLICY = {
   platform_policy: "You are an embodied character in an interactive exhibition. Follow your assigned identity and role: a guide explains the exhibition; a historical portrayal speaks in that person's first-person voice and historical perspective. Be honest that you are an exhibition portrayal when asked. Never impersonate a different character or claim to be the living original. Speak in the visitor's language. Be attentive, knowledgeable and conversational.",
-  speech_guidelines: "Match depth to the question. A greeting or simple factual question may need 1-3 sentences. For why/how questions, comparisons and requests for detail, develop a complete explanation with concrete examples and consequences, usually 100-220 words. For a requested story, give a coherent 180-320 word episode: setting, people, dilemma, documented actions and outcome. These are guides, not quotas; do not pad. Use natural spoken paragraphs, not lists or headings. Begin with substance, expand when useful, and finish your point. Do not ask permission to explain what the visitor already requested. Most complete answers should end without a question. Offer at most one relevant follow-up when it adds a specific next step, only after answering. Do not append questions about the visitor\u2019s job, origin, name or other personal details to historical answers; a persona\u2019s general invitation to ask about visitors does not override the current subject. Avoid repetitive greetings, generic praise, canned invitations and repeating your biography. Follow the visitor's explicit request for brevity or depth. Never say that a path, road, or way is blocked or closed; when taking a visitor to an exhibit or stopping near it, present the exhibit warmly and describe its story."
+  speech_guidelines: `Match depth to the question. A greeting or simple factual question may need 1-3 sentences. For why/how questions, comparisons and requests for detail, develop a complete explanation with concrete examples and consequences, usually 100-220 words. For a requested story, give a coherent 180-320 word episode: setting, people, dilemma, documented actions and outcome. These are guides, not quotas; do not pad. Use natural spoken paragraphs, not lists or headings. Begin with substance, expand when useful, and finish your point. Do not ask permission to explain what the visitor already requested. Most complete answers should end without a question. Offer at most one relevant follow-up when it adds a specific next step, only after answering. Do not append questions about the visitor\u2019s job, origin, name or other personal details to historical answers; a persona\u2019s general invitation to ask about visitors does not override the current subject. Avoid repetitive greetings, generic praise, canned invitations and repeating your biography. NEVER say "Welcome", "Welcome back", "Hello again", "\u0623\u0647\u0644\u0627\u064B \u0628\u0643", or "\u0645\u0631\u062D\u0628\u0627\u064B \u0628\u0643 \u0645\u062C\u062F\u062F\u0627\u064B" to a visitor who is already inside the exhibition conversing with you. Use spatial facts (distance_band, movement, tour_follow_status, detours) to stay grounded in the visitor's physical reality. If the visitor stops to examine another piece during a tour, acknowledge that piece warmly without rushing them. Follow the visitor's explicit request for brevity or depth. Never say that a path, road, or way is blocked or closed; when taking a visitor to an exhibit or stopping near it, present the exhibit warmly and describe its story.`
 };
 function upgradeLegacySection(key, value) {
-  const normalized = value.trim().replace(/\r\n/g, "\n");
+  const normalized2 = value.trim().replace(/\r\n/g, "\n");
   const legacyPolicy = "You are the virtual AI guide of a 3D exhibition, speaking to a visitor in real time.\nYou represent the exhibition and its curator only. You are software, not a human.\nAlways reply in the visitor's language. Keep speech short (1-4 sentences), conversational and natural.\nNever break character, never claim feelings or a body, never role-play as another person.";
   const legacySpeech = "Speak in the visitor's language. Keep each reply short (1-4 sentences), conversational and natural.";
-  if (key === "platform_policy" && normalized === legacyPolicy) return CONVERSATION_POLICY.platform_policy;
-  if (key === "speech_guidelines" && normalized === legacySpeech) return CONVERSATION_POLICY.speech_guidelines;
+  if (key === "platform_policy" && normalized2 === legacyPolicy) return CONVERSATION_POLICY.platform_policy;
+  if (key === "speech_guidelines" && normalized2 === legacySpeech) return CONVERSATION_POLICY.speech_guidelines;
   return value;
 }
 function conversationLimits(row) {
@@ -72217,8 +72434,8 @@ function terms(text2) {
 }
 function characterCollection(names) {
   const name = normalizeKnowledgeText(names.join(" "));
-  if (/ab[dt]?\s*(?:el|al)?[ -]*kader|abdelkader|abelkader|عبد\s*القادر/.test(name)) return "emir";
-  if (/boumed|boumedian|بومدين/.test(name)) return "boumediene";
+  if (/ab[dt]?\s*(?:el|al)?[ -]*kader|abdelkader|abelkader|عبد\s*القادر|emir|amir|émir|أمير|امير/.test(name)) return "emir";
+  if (/boumed|boumedian|بو\s*خروبة|boukharouba|بومدين/.test(name)) return "boumediene";
 }
 function retrieveKnowledge(collections, query, maxYear = Infinity, limit2 = 5) {
   return rankPassages(KNOWLEDGE.filter((p) => collections.includes(p.collection) && p.year <= maxYear), query, limit2);
@@ -72714,8 +72931,12 @@ async function loadGuideProfile(prisma2, exhibitionId, language, actorId, knowle
     loadGuideGuardrails(prisma2)
   ]);
   let settings = null;
+  let exhibitionInfo = null;
   if (exhibitionId) {
-    settings = await prisma2.exhibitionSettings.findUnique({ where: { exhibition_id: exhibitionId } }).catch(() => null);
+    [settings, exhibitionInfo] = await Promise.all([
+      prisma2.exhibitionSettings.findUnique({ where: { exhibition_id: exhibitionId } }).catch(() => null),
+      prisma2.exhibition.findUnique({ where: { id: exhibitionId }, select: { name: true, description: true } }).catch(() => null)
+    ]);
   }
   const lang2 = language || settings?.guideLanguage || "ar";
   const sampling = {
@@ -72736,7 +72957,9 @@ async function loadGuideProfile(prisma2, exhibitionId, language, actorId, knowle
     knowledge: parseArray(settings?.guideKnowledge),
     scopeTopics: parseArray(settings?.guideScopeTopics),
     restrictedTopics: parseArray(settings?.guideRestrictedTopics),
-    sampling
+    sampling,
+    exhibitionTitle: exhibitionInfo?.name,
+    exhibitionDescription: exhibitionInfo?.description ?? void 0
   };
   const expressiveCharacterForModel = (url) => /metahuman-portrait/i.test(url) ? "emir" : /metahuman-boumediene/i.test(url) ? "boumediene" : /aiguid4|testmodel|cc4-guide/i.test(url) ? "ahmed" : void 0;
   profile.expressiveCharacter = expressiveCharacterForModel(String(settings?.guideModelUrl ?? ""));
@@ -72782,11 +73005,15 @@ async function loadGuideProfile(prisma2, exhibitionId, language, actorId, knowle
   }
   profile.conversationStyle = upgradeLegacyCharacterStyle(profile.conversationStyle);
   if (guardrails.allowExhibitionCustomization && exhibitionId && !/^\[SITUATION: reflect\]/.test(knowledgeQuery)) {
-    const exhibition = await prisma2.exhibition.findUnique({ where: { id: exhibitionId }, select: { name: true } });
-    const collections = collection ? [collection] : historical ? [] : /heritage.*hall/i.test(exhibition?.name ?? "") ? ["heritage", "emir", "boumediene"] : /djemila|jamila/i.test(exhibition?.name ?? "") ? ["djemila"] : [];
+    const isDjemila = /djemila|jamila|cuicul/i.test(profile.exhibitionTitle ?? "");
+    const isHeritageHall = /heritage\s*hall|معرض\s*التراث/i.test(profile.exhibitionTitle ?? "") || exhibitionId === "e76f4dfc-75a5-4bf6-b760-b3fd5370d48f";
+    const collections = collection ? [collection] : historical ? [] : isDjemila ? ["djemila"] : isHeritageHall ? ["heritage", "emir", "boumediene"] : ["heritage", "emir", "boumediene"];
     const maxYear = collection === "emir" ? 1883 : collection === "boumediene" ? 1978 : historical ? 0 : Infinity;
     let passages = retrieveKnowledge(collections, knowledgeQuery, maxYear);
     if (!passages.length && recentDiscussion) passages = retrieveKnowledge(collections, recentDiscussion, maxYear);
+    if (isHeritageHall) {
+      passages = passages.filter((p) => p.collection !== "djemila" && !/roman|cuicul|djemila/i.test(p.title + " " + p.keywords));
+    }
     profile.turnKnowledge = knowledgeBlock(passages);
     if (!historical) profile.turnKnowledge.push(...await exhibitionKnowledge(prisma2, exhibitionId, knowledgeQuery, recentDiscussion));
   }
@@ -72795,6 +73022,19 @@ async function loadGuideProfile(prisma2, exhibitionId, language, actorId, knowle
     profile.knowledge = [];
     profile.scopeTopics = [];
     profile.restrictedTopics = [];
+  }
+  const scope = exhibitionScope(exhibitionId);
+  if (scope && exhibitionId) {
+    const usable = (text2) => !crossesExhibition(exhibitionId, text2);
+    profile.customInstructions = [
+      scope.instructions,
+      ...settings?.systemPrompt && guardrails.allowExhibitionCustomization && usable(settings.systemPrompt) ? [settings.systemPrompt] : []
+    ].join("\n");
+    profile.knowledge = profile.knowledge.filter(usable);
+    profile.scopeTopics = profile.scopeTopics.filter(usable);
+    profile.turnKnowledge = profile.turnKnowledge?.filter(usable);
+    profile.roleLines = profile.roleLines?.filter(usable);
+    if (profile.exhibitionDescription && !usable(profile.exhibitionDescription)) profile.exhibitionDescription = void 0;
   }
   return profile;
 }
@@ -72863,7 +73103,7 @@ function buildGuideJsonSchema(v, options = {}) {
   const emotions = v.emotions.length ? v.emotions : ["neutral"];
   const gestures = v.gestures.length ? v.gestures : [];
   const poseNames = v.poses.length ? v.poses : [];
-  let actionDesc = 'One of: LOOK_AT:ID, POINT_TO:ID, GUIDE_TO:<exhibit or character ref from the scene>, START_TOUR, TALK_TO:<character ref> or HAND_OVER:<character ref> (another character, from "characters"), or empty string';
+  let actionDesc = 'One of: LOOK_AT:ID, POINT_TO:ID, GUIDE_TO:<exhibit or character ref from the scene>, START_TOUR, TALK_TO:<character ref> or HAND_OVER:<character ref> (another character, from "characters"), FOLLOW_VISITOR, COME_TO_VISITOR, STAY (walk with, walk to, or stop following the visitor), or empty string';
   if (poseNames.length) {
     actionDesc += options.vocabularyInPrompt ? ", POSE:<poseName> from the Static Poses list" : `, POSE:<poseName> (one of: ${poseNames.join(", ")})`;
   }
@@ -72873,7 +73113,7 @@ function buildGuideJsonSchema(v, options = {}) {
       mood: { type: "string", description: options.vocabularyInPrompt ? "An emotion listed in Behaviour Tags" : `One of: ${emotions.join(", ")}` },
       gesture: { type: "string", description: options.vocabularyInPrompt ? "A gesture listed in Behaviour Tags, or empty string" : `One of: ${gestures.join(", ") || "(none defined)"}, or empty string` },
       action: { type: "string", description: actionDesc + " or empty string" },
-      speech: { type: "string", description: "The spoken reply, with depth matched to the visitor\u2019s question in the language specified by the language field. It may contain the behaviour tags from the system prompt (<gesture/>, <point/>, <look/>, <emotion/>, <pause/>) right before the word they belong to; no JSON or other markup." },
+      speech: { type: "string", description: "The spoken reply, with depth matched to the visitor\u2019s question in the language specified by the language field. The behavior tags from the system prompt (<gesture/>, <point/>, <look/>, <emotion/>, <pause/>, <voice/>) may precede their spoken words. No other markup." },
       remember: { type: "array", items: { type: "string" }, maxItems: 3, description: "New lasting visitor facts, empty unless supported by dialogue." },
       discussion_summary: { type: "string", description: "Only for a silent reflection: concise discussion summary, unresolved question and requested depth." },
       presentation: { type: "object", properties: {
@@ -72920,6 +73160,14 @@ ${refusal}`;
 function buildCreatorSection(profile) {
   const lines = [];
   lines.push(`Your name is ${profile.name || "Ahmed"}.`);
+  if (profile.exhibitionTitle) {
+    const isHeritageHall = /heritage\s*hall|معرض\s*التراث/i.test(profile.exhibitionTitle);
+    lines.push(`CURRENT EXHIBITION: "${profile.exhibitionTitle}"${profile.exhibitionDescription ? ` \u2014 ${profile.exhibitionDescription}` : ""}.`);
+    lines.push(`CRITICAL EXHIBITION SCOPE: You are guiding visitors strictly inside "${profile.exhibitionTitle}". Discuss ONLY the artifacts, cultural themes, and history of THIS exhibition. Do NOT introduce unrelated historical eras, ancient Roman ruins, temples, or distant sites unless they are explicitly in this exhibition's catalog.`);
+    if (isHeritageHall) {
+      lines.push(`EXHIBITION IDENTITY: This is the Algerian National Cultural Heritage Exhibition (\u0645\u0639\u0631\u0636 \u0627\u0644\u062A\u0631\u0627\u062B \u0627\u0644\u062B\u0642\u0627\u0641\u064A \u0627\u0644\u062C\u0632\u0627\u0626\u0631\u064A). It exhibits traditional Algerian heritage (Kabyle silver jewelry and fibulas, Aur\xE8s brooches, traditional textiles/carpets, pottery) and Algerian national historical figures (Emir Abdelkader, Houari Boumediene). It contains NO Roman monuments, NO Roman temples, and NO ancient ruins. Strictly DO NOT mention the Roman era, Roman temples, or ancient Roman ruins in this exhibition.`);
+    }
+  }
   const gender = (profile.gender || "male").toLowerCase();
   const who = profile.roleLines?.length ? "character" : "guide";
   if (gender === "female") {
@@ -72984,7 +73232,7 @@ function buildBehaviorSection(gestures, gestureInfo, emotions, motions = [], mot
     `Gestures you can use (use only these): ${gestureSummary}`,
     ...motionLines,
     ...generateLines,
-    'Example: "speech": "Welcome! <point to=\\"o2\\"/>This lantern was made in the Kasbah, <gesture name=\\"explain\\"/>by hand, in three pieces."'
+    'Example: "speech": "<point to=\\"o2\\"/>This lantern was made in the Kasbah, <gesture name=\\"explain\\"/>by hand, in three pieces."'
   ].join("\n");
 }
 var MIND_SECTION = [
@@ -73009,10 +73257,16 @@ var MOVE_SECTION = [
   '- STAY: stop following and stay where you are ("wait here", "stop following me").',
   '- GUIDE_TO:<ref>: lead the visitor to an exhibit or historical character ("show me", "take me to"). Use an exhibit ref or a character ref from the scene facts.',
   "- START_TOUR: lead a guided tour of this exhibition when the visitor requests one.",
+  'ROLE LIMITS & ABILITIES: In the scene facts under "you.abilities" and "you.limits", observe what your role can and cannot do:',
+  "- If can_lead_tours is false and the visitor asks for a tour, explain kindly that you cannot lead tours and refer them to a guide or colleague (HAND_OVER:<ref>).",
+  "- If can_guide_to_exhibits is false and the visitor asks to be guided to an exhibit, politely explain that you cannot leave your station, point them in that direction, or hand over to a guide.",
+  "- If can_follow_visitor is false and the visitor asks you to follow them outside your area, explain that your post is here.",
   "Never say that you are coming, following or leading without the action: the action is what moves you. If your role or area does not allow the move (see your role), say so kindly instead and, if a colleague can do it, hand the visitor over (HAND_OVER)."
 ].join("\n");
 var CAST_SECTION = [
   "Other characters share this exhibition with you. The scene facts list their ref, name, role, position and activity. Reply only as the character assigned to you. Colleague dialogue is context for the subject only. Keep your own cadence, vocabulary, forms of address and point of view, even when responding directly to a colleague. Never supply both sides of a dialogue.",
+  "Treat recent_heard_dialogue as what the visitor already heard in this visit. Pick up an unfinished idea, answer the visitor, or offer a distinct relevant detail from the supplied exhibit evidence. When visitor_knows_you is true, skip your introduction. After a character handoff, a short contribution and a return of attention to the visitor are usually enough. Allow silence when there is nothing useful to add. Revisit a fact if the visitor asks for it.",
+  "Use visit_story_angle for optional tour narration when the exhibit evidence supports it. The visitor\u2019s own question and interests come first.",
   "If the visitor asks you to take them to one of these characters in person, use GUIDE_TO:<their ref> to walk together to that character.",
   'You know them as colleagues. To speak to one, address them by name in "speech" and put TALK_TO:<their ref> in "action"; they answer after you. Use it to hand the visitor over to the character who can help (instead of only telling the visitor to go and find them), to ask a colleague something, or for a short friendly exchange the visitor can enjoy.',
   'To hand the visitor over to a colleague (they will look after them from now on; a tour goes with them if they lead tours), introduce the colleague in "speech" and put HAND_OVER:<their ref> in "action". At a tour stop where a colleague stands, you may ask them to present it (TALK_TO); the tour waits while they speak.',
@@ -73051,6 +73305,9 @@ function compileSystemPrompt(profile, guardrails, poses = [], options = {}) {
     pack.push(buildCreatorSection(profile));
   } else {
     pack.push((sections.disabled_customization_text || BUILTIN.disabled_customization_text).trim());
+    if (profile.exhibitionTitle) {
+      pack.push(`Current Exhibition: "${profile.exhibitionTitle}". Discuss ONLY the artifacts, cultural themes, and history of THIS exhibition.`);
+    }
     if (profile.roleLines?.length) pack.push(profile.roleLines.join("\n"));
   }
   pack.push("## 4. OUTPUT CONTRACT");
@@ -73115,16 +73372,16 @@ function normalizeWord(word) {
   return normalizeText(word);
 }
 function matchesDenylist(text2, denyList) {
-  const normalized = normalizeText(text2);
-  if (!normalized) return false;
-  const words = normalized.split(" ");
+  const normalized2 = normalizeText(text2);
+  if (!normalized2) return false;
+  const words = normalized2.split(" ");
   for (const raw of denyList || []) {
     const w = normalizeWord(raw);
     if (!w || w.length < 2) continue;
     const isShortLatin = /[a-z]/.test(w) && w.length <= 3;
     if (isShortLatin) {
       if (words.includes(w)) return true;
-    } else if (normalized.includes(w)) {
+    } else if (normalized2.includes(w)) {
       return true;
     }
   }
@@ -73213,7 +73470,7 @@ var audioUpload = (0, import_multer.default)({
   storage: import_multer.default.memoryStorage(),
   limits: { fileSize: 25 * 1024 * 1024 }
 });
-var aiRouter = (0, import_express11.Router)();
+var aiRouter = (0, import_express12.Router)();
 registerAllProviders();
 function responseSignal(res2) {
   const controller = new AbortController();
@@ -73271,6 +73528,8 @@ aiRouter.post("/chat", authenticateOrEmbed, async (req, res2) => {
     const model = options?.model || providerConfig.defaultModel;
     const provider = getLLMProvider(providerId);
     const lang2 = typeof language === "string" && language.length ? language : "ar";
+    const scopeId = typeof exhibitionId === "string" && exhibitionScope(exhibitionId) ? exhibitionId : null;
+    const crossesScope = (text2) => Boolean(scopeId && crossesExhibition(scopeId, text2));
     let finalMessages = chatMessages;
     let structured = false;
     let guideJsonSchema = void 0;
@@ -73282,6 +73541,14 @@ aiRouter.post("/chat", authenticateOrEmbed, async (req, res2) => {
     if (guideMode) {
       const guardrails = await loadGuideGuardrails(prisma);
       const lastUser = [...chatMessages].reverse().find((m) => m.role === "user");
+      if (scopeId && typeof lastUser?.content === "string" && crossesScope(lastUser.content)) {
+        sendReply({ blocked: true, refusal: scopeRedirect(scopeId, visitorLanguage(lang2)), category: "exhibition_scope" });
+        return;
+      }
+      if (scopeId) {
+        chatMessages = chatMessages.filter((m) => m.role !== "system" && typeof m.content === "string" && !crossesScope(m.content));
+        finalMessages = chatMessages;
+      }
       if (lastUser?.content) {
         let decision = runInputFilter(lastUser.content, guardrails, lang2);
         if (!decision) {
@@ -73343,6 +73610,7 @@ aiRouter.post("/chat", authenticateOrEmbed, async (req, res2) => {
         });
         const antiRepetitionAndPacing = [
           "NATURAL CONVERSATION & ANTI-REPETITION PACING:",
+          '- STRICT ANTI-WELCOME RULE: The visitor is ALREADY ACTIVE AND EXPLORING inside this exhibition. NEVER say "Welcome", "Welcome back", "Hello again", "\u0623\u0647\u0644\u0627\u064B \u0628\u0643 \u0645\u062C\u062F\u062F\u0627\u064B", "\u0623\u0631\u062D\u0628 \u0628\u0643 \u0645\u0646 \u062C\u062F\u064A\u062F", or "\u0645\u0631\u062D\u0628\u0627\u064B \u0628\u0643 \u0645\u0631\u0629 \u0623\u062E\u0631\u0649". Address their question or movement immediately without any welcoming phrases.',
           '- DO NOT start your replies with generic canned openers or filler greetings such as "Welcome!", "Certainly!", "Indeed!", "Of course!", "Bienvenue !", "Certainement !", "\u0623\u0647\u0644\u0627\u064B \u0628\u0643!", "\u0628\u0627\u0644\u062A\u0623\u0643\u064A\u062F!", "\u0628\u0627\u0644\u0637\u0628\u0639!". Dive straight into the substance or story naturally as a human guide would.',
           "- Never repeat the exact same sentences or phrasing you used in recent turns.",
           "- Start with one engaging sentence that directly addresses the visitor. Add detail or story when requested or needed.",
@@ -73376,7 +73644,7 @@ aiRouter.post("/chat", authenticateOrEmbed, async (req, res2) => {
           if (!preview || preview.language !== lang2) return;
           const speech = sanitizeBehaviorTags(speechStyle(renderHistoricalDates(preview.speech, historicalDates, lang2)), vocabulary);
           const plain = stripBehaviorTags(speech).trim();
-          if (!plain || runOutputFilter(plain, guardrails, lang2)?.blocked) return;
+          if (!plain || crossesScope(plain) || runOutputFilter(plain, guardrails, lang2)?.blocked) return;
           res2.setHeader("Content-Type", "application/x-ndjson; charset=utf-8");
           res2.setHeader("Cache-Control", "no-store");
           res2.setHeader("X-Accel-Buffering", "no");
@@ -73456,6 +73724,11 @@ aiRouter.post("/chat", authenticateOrEmbed, async (req, res2) => {
         result2 = { ...result2, text: speech };
       }
       const outputDecision = runOutputFilter(stripBehaviorTags(speech), guardrails, lang2);
+      if (scopeId && crossesScope(speech)) {
+        recordUsage(prisma, req, usedProviderId, usedModel, exhibitionId, result2);
+        sendReply({ blocked: true, refusal: scopeRedirect(scopeId, visitorLanguage(lang2)), category: "exhibition_scope" });
+        return;
+      }
       if (outputDecision?.blocked) {
         console.log("[moderation]", outputDecision.source, outputDecision.category, "on output");
         recordUsage(prisma, req, usedProviderId, usedModel, exhibitionId, result2);
@@ -73903,7 +74176,7 @@ aiRouter.get("/stt/status", async (_req, res2) => {
         available = false;
       }
     }
-    res2.json({ active, available });
+    res2.json({ active, available, preview: active === "groq" && available });
   } catch (err) {
     res2.json({ active: "browser", available: true });
   }
@@ -73930,7 +74203,12 @@ aiRouter.post("/stt/transcribe", audioUpload.single("audio"), async (req, res2) 
     const providerConfig = config2.sttProviders[providerId] || {};
     const lang2 = req.query.lang || req.body?.lang || void 0;
     const model = req.query.model || req.body?.model || void 0;
-    const result2 = await provider.transcribe(buffer, { lang: lang2, model }, providerConfig);
+    const prompt = req.query.prompt || req.body?.prompt || void 0;
+    const preview = req.query.preview === "1";
+    if (preview && (providerId !== "groq" || req.file?.mimetype !== "audio/wav" || buffer.length > 4e4)) {
+      return res2.status(400).json({ error: "Expected a short WAV preview." });
+    }
+    const result2 = await provider.transcribe(buffer, { lang: lang2, model, prompt, mimeType: req.file?.mimetype, preview }, providerConfig);
     res2.json({
       text: result2.text,
       confidence: result2.confidence,
@@ -74045,14 +74323,14 @@ aiRouter.post("/providers/test", authenticate, requireAdmin, async (req, res2) =
 });
 
 // server/src/routes/guide-control.ts
-var import_express12 = __toESM(require_express2());
+var import_express13 = __toESM(require_express2(), 1);
 init_db();
 
 // server/src/ai/motion/kimodo.ts
-var import_crypto6 = __toESM(require("crypto"));
-var import_fs4 = __toESM(require("fs"));
-var import_path67 = __toESM(require("path"));
-var import_os2 = __toESM(require("os"));
+var import_crypto6 = __toESM(require("crypto"), 1);
+var import_fs4 = __toESM(require("fs"), 1);
+var import_path67 = __toESM(require("path"), 1);
+var import_os2 = __toESM(require("os"), 1);
 function loadKimodoConfig() {
   return {
     enabled: process.env.KIMODO_ENABLED === "1" || process.env.KIMODO_ENABLED === "true",
@@ -74069,6 +74347,7 @@ function loadKimodoConfig() {
   };
 }
 var KimodoClient = class {
+  cfg;
   constructor(cfg) {
     this.cfg = cfg;
   }
@@ -74161,7 +74440,7 @@ var KimodoClient = class {
 };
 
 // server/src/routes/guide-control.ts
-var guideControlRouter = (0, import_express12.Router)();
+var guideControlRouter = (0, import_express13.Router)();
 guideControlRouter.get("/live", async (req, res2) => {
   try {
     const exhibitionId = req.query.exhibitionId;
@@ -74298,7 +74577,7 @@ guideControlRouter.get("/live", async (req, res2) => {
     res2.status(500).json({ error: "Failed to get guide control config" });
   }
 });
-var adminRouter = (0, import_express12.Router)();
+var adminRouter = (0, import_express13.Router)();
 adminRouter.use(authenticate);
 adminRouter.use(requireAdmin);
 guideControlRouter.get("/profile", async (req, res2) => {
@@ -74954,12 +75233,12 @@ adminRouter.put("/retarget-profile", async (req, res2) => {
 guideControlRouter.use("/admin", adminRouter);
 
 // server/src/routes/motion.ts
-var import_express13 = __toESM(require_express2());
-var import_fs5 = __toESM(require("fs"));
-var import_path68 = __toESM(require("path"));
-var import_crypto7 = __toESM(require("crypto"));
+var import_express14 = __toESM(require_express2(), 1);
+var import_fs5 = __toESM(require("fs"), 1);
+var import_path68 = __toESM(require("path"), 1);
+var import_crypto7 = __toESM(require("crypto"), 1);
 init_db();
-var motionRouter = (0, import_express13.Router)();
+var motionRouter = (0, import_express14.Router)();
 motionRouter.get("/motion-clips/:name", authenticateOrEmbed, async (req, res2) => {
   try {
     const name = String(req.params.name || "").toLowerCase();
@@ -75038,9 +75317,9 @@ motionRouter.post("/motion", authenticateOrEmbed, async (req, res2) => {
 });
 
 // server/src/routes/actors.ts
-var import_express14 = __toESM(require_express2());
+var import_express15 = __toESM(require_express2(), 1);
 init_db();
-var actorsRouter = (0, import_express14.Router)();
+var actorsRouter = (0, import_express15.Router)();
 var MAX_CAST = 8;
 var KEY_RE = /^[a-z][a-z0-9_]{1,39}$/;
 function vec(v) {
@@ -75325,9 +75604,9 @@ actorsRouter.get("/live/:exhibitionId", authenticateOrEmbed, async (req, res2) =
 });
 
 // server/src/routes/library.ts
-var import_express15 = __toESM(require_express2());
+var import_express16 = __toESM(require_express2(), 1);
 init_db();
-var libraryRouter = (0, import_express15.Router)();
+var libraryRouter = (0, import_express16.Router)();
 libraryRouter.get("/environments", async (_req, res2) => {
   try {
     const items = await prisma.libraryEnvironment.findMany({
@@ -75488,9 +75767,9 @@ libraryRouter.delete("/products/:id", authenticate, requireAdmin, async (req, re
 });
 
 // server/src/routes/analytics.ts
-var import_express16 = __toESM(require_express2());
+var import_express17 = __toESM(require_express2(), 1);
 init_db();
-var analyticsRouter = (0, import_express16.Router)();
+var analyticsRouter = (0, import_express17.Router)();
 var writeAttempts = /* @__PURE__ */ new Map();
 var WRITE_WINDOW_MS = 60 * 1e3;
 var WRITE_LIMIT = 60;
@@ -75863,10 +76142,10 @@ analyticsRouter.get("/:exhibitionId/chatlog", authenticate, async (req, res2) =>
 });
 
 // server/src/routes/tts.ts
-var import_express17 = __toESM(require_express2());
-var googleTTS2 = __toESM(require_dist3());
+var import_express18 = __toESM(require_express2(), 1);
+var googleTTS2 = __toESM(require_dist3(), 1);
 init_db();
-var ttsRouter = (0, import_express17.Router)();
+var ttsRouter = (0, import_express18.Router)();
 var RATE_LIMIT = /* @__PURE__ */ new Map();
 var WINDOW_MS = 6e4;
 var MAX_REQ = 20;
@@ -75967,9 +76246,9 @@ ttsRouter.get("/stream", authenticateOrEmbed, async (req, res2) => {
 });
 
 // server/src/routes/gemini.ts
-var import_express18 = __toESM(require_express2());
+var import_express19 = __toESM(require_express2(), 1);
 init_db();
-var geminiRouter = (0, import_express18.Router)();
+var geminiRouter = (0, import_express19.Router)();
 var ALLOWED_MODELS = /* @__PURE__ */ new Set([
   "gemini-3.8-flash",
   "gemini-flash-lite-latest",
@@ -76066,7 +76345,7 @@ geminiRouter.post("/", authenticateOrEmbed, async (req, res2) => {
   }
 });
 
-// E:/claudeprojects/immersival/server/node_modules/ws/wrapper.mjs
+// ../../server/node_modules/ws/wrapper.mjs
 var import_stream = __toESM(require_stream2(), 1);
 var import_extension = __toESM(require_extension(), 1);
 var import_permessage_deflate = __toESM(require_permessage_deflate(), 1);
@@ -76078,8 +76357,8 @@ var import_websocket_server = __toESM(require_websocket_server(), 1);
 var wrapper_default = import_websocket.default;
 
 // server/src/ws/guide-ws.ts
-var import_jsonwebtoken2 = __toESM(require_jsonwebtoken());
-var import_crypto8 = __toESM(require("crypto"));
+var import_jsonwebtoken2 = __toESM(require_jsonwebtoken(), 1);
+var import_crypto8 = __toESM(require("crypto"), 1);
 init_db();
 var import_url = require("url");
 var JWT_SECRET2 = process.env.JWT_SECRET;
@@ -76252,20 +76531,27 @@ function handleMessage(client, msg) {
 }
 
 // server/src/public-site/server.ts
-var app = (0, import_express19.default)();
+var app = (0, import_express20.default)();
 app.set("trust proxy", 1);
-app.use(helmet({ contentSecurityPolicy: false, crossOriginEmbedderPolicy: false, frameguard: false }));
+app.use(helmet({
+  contentSecurityPolicy: false,
+  crossOriginEmbedderPolicy: false,
+  crossOriginResourcePolicy: { policy: "cross-origin" },
+  crossOriginOpenerPolicy: false,
+  frameguard: false
+}));
 app.use((req, res2, next) => {
   res2.header("Access-Control-Allow-Origin", "*");
-  res2.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
+  res2.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS, PATCH");
   res2.header("Access-Control-Allow-Headers", "*");
+  res2.header("Cross-Origin-Resource-Policy", "cross-origin");
   if (req.method === "OPTIONS") {
     res2.sendStatus(200);
     return;
   }
   next();
 });
-app.use(import_express19.default.json({ limit: "2mb" }));
+app.use(import_express20.default.json({ limit: "2mb" }));
 app.use((req, _res, next) => {
   req.cookies = Object.fromEntries((req.headers.cookie || "").split(";").filter(Boolean).map((cookie) => {
     const [key, ...parts] = cookie.trim().split("=");
@@ -76300,6 +76586,7 @@ app.get("/api/health", (_req, res2) => {
   res2.json({ status: "ok", mode: "public-site" });
 });
 app.use("/api", embedAuthMiddleware);
+app.use("/api/agents", agentsRouter);
 for (const [prefix, router] of [
   ["showcase", showcaseRouter],
   ["exhibitions", exhibitionsRouter],
@@ -76320,7 +76607,7 @@ for (const [prefix, router] of [
   ["tts", ttsRouter],
   ["gemini", geminiRouter]
 ]) app.use(`/api/${prefix}`, router);
-app.use("/uploads", import_express19.default.static("uploads", { dotfiles: "deny" }));
+app.use("/uploads", import_express20.default.static("uploads", { dotfiles: "deny" }));
 app.use((_req, res2) => {
   res2.status(404).json({ error: "Not found" });
 });
@@ -76394,7 +76681,7 @@ async function start() {
   } catch (err) {
     console.warn("[public-site] Failed to sync platformConfig:", err?.message);
   }
-  const server = app.listen(Number(process.env.PORT || 3001), "0.0.0.0");
+  const server = app.listen(Number(process.env.PORT || 3001), process.env.HOST || "0.0.0.0");
   setupGuideWebSocket(server, SITE_EXHIBITIONS);
   for (const signal of ["SIGTERM", "SIGINT"]) process.on(signal, () => {
     server.close(() => {
