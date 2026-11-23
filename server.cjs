@@ -138,12 +138,12 @@ var require_main = __commonJS({
         err.code = "MISSING_DATA";
         throw err;
       }
-      const keys2 = _dotenvKey(options).split(",");
-      const length = keys2.length;
+      const keys = _dotenvKey(options).split(",");
+      const length = keys.length;
       let decrypted;
       for (let i = 0; i < length; i++) {
         try {
-          const key = keys2[i].trim();
+          const key = keys[i].trim();
           const attrs = _instructions(result2, key);
           decrypted = DotenvModule.decrypt(attrs.ciphertext, attrs.key);
           break;
@@ -1723,9 +1723,9 @@ var require_node = __commonJS({
     }
     function init(debug) {
       debug.inspectOpts = {};
-      var keys2 = Object.keys(exports2.inspectOpts);
-      for (var i = 0; i < keys2.length; i++) {
-        debug.inspectOpts[keys2[i]] = exports2.inspectOpts[keys2[i]];
+      var keys = Object.keys(exports2.inspectOpts);
+      for (var i = 0; i < keys.length; i++) {
+        debug.inspectOpts[keys[i]] = exports2.inspectOpts[keys[i]];
       }
     }
     exports2.enable(load());
@@ -14738,9 +14738,9 @@ var require_json = __commonJS({
       }
     }
     function normalizeJsonSyntaxError(error, obj) {
-      var keys2 = Object.getOwnPropertyNames(error);
-      for (var i = 0; i < keys2.length; i++) {
-        var key = keys2[i];
+      var keys = Object.getOwnPropertyNames(error);
+      for (var i = 0; i < keys.length; i++) {
+        var key = keys[i];
         if (key !== "stack" && key !== "message") {
           delete error[key];
         }
@@ -15040,8 +15040,8 @@ var require_object_inspect = __commonJS({
       }
       if (typeof obj === "function" && !isRegExp(obj)) {
         var name = nameOf(obj);
-        var keys2 = arrObjKeys(obj, inspect);
-        return "[Function" + (name ? ": " + name : " (anonymous)") + "]" + (keys2.length > 0 ? " { " + $join.call(keys2, ", ") + " }" : "");
+        var keys = arrObjKeys(obj, inspect);
+        return "[Function" + (name ? ": " + name : " (anonymous)") + "]" + (keys.length > 0 ? " { " + $join.call(keys, ", ") + " }" : "");
       }
       if (isSymbol(obj)) {
         var symString = hasShammedSymbols ? $replace.call(String(obj), /^(Symbol\(.*\))_[^)]*$/, "$1") : symToString.call(obj);
@@ -16771,9 +16771,9 @@ var require_utils = __commonJS({
       for (var i = 0; i < queue.length; ++i) {
         var item = queue[i];
         var obj = item.obj[item.prop];
-        var keys2 = Object.keys(obj);
-        for (var j = 0; j < keys2.length; ++j) {
-          var key = keys2[j];
+        var keys = Object.keys(obj);
+        for (var j = 0; j < keys.length; ++j) {
+          var key = keys[j];
           var val = obj[key];
           if (typeof val === "object" && val !== null && !refs.has(val)) {
             queue[queue.length] = { obj, prop: key };
@@ -16953,8 +16953,8 @@ var require_stringify = __commonJS({
       } else if (isArray2(filter)) {
         objKeys = filter;
       } else {
-        var keys2 = Object.keys(obj);
-        objKeys = sort ? keys2.sort(sort) : keys2;
+        var keys = Object.keys(obj);
+        objKeys = sort ? keys.sort(sort) : keys;
       }
       var encodedPrefix = encodeDotInKeys ? String(prefix).replace(/\./g, "%2E") : String(prefix);
       var adjustedPrefix = commaRoundTrip && isArray2(obj) && obj.length === 1 ? encodedPrefix + "[]" : encodedPrefix;
@@ -17070,7 +17070,7 @@ var require_stringify = __commonJS({
         filter = options.filter;
         objKeys = filter;
       }
-      var keys2 = [];
+      var keys = [];
       if (typeof obj !== "object" || obj === null) {
         return "";
       }
@@ -17092,7 +17092,7 @@ var require_stringify = __commonJS({
         if (options.skipNulls && value === null) {
           continue;
         }
-        pushToArray(keys2, stringify2(
+        pushToArray(keys, stringify2(
           value,
           key,
           generateArrayPrefix,
@@ -17113,7 +17113,7 @@ var require_stringify = __commonJS({
           sideChannel
         ));
       }
-      var joined = keys2.join(options.delimiter);
+      var joined = keys.join(options.delimiter);
       var prefix = options.addQueryPrefix === true ? "?" : "";
       if (options.charsetSentinel) {
         if (options.charset === "iso-8859-1") {
@@ -17378,11 +17378,11 @@ var require_parse = __commonJS({
       if (!givenKey) {
         return;
       }
-      var keys2 = splitKeyIntoSegments(givenKey, options);
-      if (!keys2) {
+      var keys = splitKeyIntoSegments(givenKey, options);
+      if (!keys) {
         return;
       }
-      return parseObject(keys2, val, options, valuesParsed);
+      return parseObject(keys, val, options, valuesParsed);
     };
     var normalizeParseOptions = function normalizeParseOptions2(opts) {
       if (!opts) {
@@ -17442,9 +17442,9 @@ var require_parse = __commonJS({
       }
       var tempObj = typeof str4 === "string" ? parseValues(str4, options) : str4;
       var obj = options.plainObjects ? { __proto__: null } : {};
-      var keys2 = Object.keys(tempObj);
-      for (var i = 0; i < keys2.length; ++i) {
-        var key = keys2[i];
+      var keys = Object.keys(tempObj);
+      for (var i = 0; i < keys.length; ++i) {
+        var key = keys[i];
         var newObj = parseKeys(key, tempObj[key], options, typeof str4 === "string");
         obj = utils.merge(obj, newObj, options);
       }
@@ -17956,9 +17956,9 @@ var require_finalhandler = __commonJS({
         return void 0;
       }
       var headers = /* @__PURE__ */ Object.create(null);
-      var keys2 = Object.keys(err.headers);
-      for (var i = 0; i < keys2.length; i++) {
-        var key = keys2[i];
+      var keys = Object.keys(err.headers);
+      for (var i = 0; i < keys.length; i++) {
+        var key = keys[i];
         headers[key] = err.headers[key];
       }
       return headers;
@@ -18032,9 +18032,9 @@ var require_finalhandler = __commonJS({
       if (!headers) {
         return;
       }
-      var keys2 = Object.keys(headers);
-      for (var i = 0; i < keys2.length; i++) {
-        var key = keys2[i];
+      var keys = Object.keys(headers);
+      for (var i = 0; i < keys.length; i++) {
+        var key = keys[i];
         res2.setHeader(key, headers[key]);
       }
     }
@@ -18082,15 +18082,15 @@ var require_path_to_regexp = __commonJS({
   "../../server/node_modules/path-to-regexp/index.js"(exports2, module2) {
     module2.exports = pathToRegexp;
     var MATCHING_GROUP_REGEXP = /\\.|\((?:\?<(.*?)>)?(?!\?)/g;
-    function pathToRegexp(path6, keys2, options) {
+    function pathToRegexp(path6, keys, options) {
       options = options || {};
-      keys2 = keys2 || [];
+      keys = keys || [];
       var strict = options.strict;
       var end = options.end !== false;
       var flags = options.sensitive ? "" : "i";
       var lookahead = options.lookahead !== false;
       var extraOffset = 0;
-      var keysOffset = keys2.length;
+      var keysOffset = keys.length;
       var i = 0;
       var name = 0;
       var pos = 0;
@@ -18099,7 +18099,7 @@ var require_path_to_regexp = __commonJS({
       if (path6 instanceof RegExp) {
         while (m = MATCHING_GROUP_REGEXP.exec(path6.source)) {
           if (m[0][0] === "\\") continue;
-          keys2.push({
+          keys.push({
             name: m[1] || name++,
             optional: false,
             offset: m.index
@@ -18109,7 +18109,7 @@ var require_path_to_regexp = __commonJS({
       }
       if (Array.isArray(path6)) {
         path6 = path6.map(function(value) {
-          return pathToRegexp(value, keys2, options).source;
+          return pathToRegexp(value, keys, options).source;
         });
         return new RegExp(path6.join("|"), flags);
       }
@@ -18152,7 +18152,7 @@ var require_path_to_regexp = __commonJS({
           capture = capture ? capture.replace(/\\.|\*/, function(m2) {
             return m2 === "*" ? "(.*)" : m2;
           }) : backtrack ? "((?:(?!/|" + backtrack + ").)+?)" : "([^/" + format + "]+?)";
-          keys2.push({
+          keys.push({
             name: key,
             optional: !!optional,
             offset: offset + extraOffset
@@ -18165,8 +18165,8 @@ var require_path_to_regexp = __commonJS({
       );
       while (m = MATCHING_GROUP_REGEXP.exec(path6)) {
         if (m[0][0] === "\\") continue;
-        if (keysOffset + i === keys2.length || keys2[keysOffset + i].offset > m.index) {
-          keys2.splice(keysOffset + i, 0, {
+        if (keysOffset + i === keys.length || keys[keysOffset + i].offset > m.index) {
+          keys.splice(keysOffset + i, 0, {
             name: name++,
             // Unnamed matching groups must be consistently linear.
             optional: false,
@@ -18252,10 +18252,10 @@ var require_layer = __commonJS({
       }
       this.params = {};
       this.path = match2[0];
-      var keys2 = this.keys;
+      var keys = this.keys;
       var params = this.params;
       for (var i = 1; i < match2.length; i++) {
-        var key = keys2[i - 1];
+        var key = keys[i - 1];
         var prop = key.name;
         var val = decode_param(match2[i]);
         if (val !== void 0 || !hasOwnProperty.call(params, prop)) {
@@ -18630,8 +18630,8 @@ var require_router = __commonJS({
     };
     proto.process_params = function process_params(layer, called, req, res2, done) {
       var params = this.params;
-      var keys2 = layer.keys;
-      if (!keys2 || keys2.length === 0) {
+      var keys = layer.keys;
+      if (!keys || keys.length === 0) {
         return done();
       }
       var i = 0;
@@ -18645,11 +18645,11 @@ var require_router = __commonJS({
         if (err) {
           return done(err);
         }
-        if (i >= keys2.length) {
+        if (i >= keys.length) {
           return done();
         }
         paramIndex = 0;
-        key = keys2[i++];
+        key = keys[i++];
         name = key.name;
         paramVal = req.params[name];
         paramCallbacks = params[name];
@@ -20092,9 +20092,9 @@ var require_send = __commonJS({
       return list;
     }
     function setHeaders(res2, headers) {
-      var keys2 = Object.keys(headers);
-      for (var i = 0; i < keys2.length; i++) {
-        var key = keys2[i];
+      var keys = Object.keys(headers);
+      for (var i = 0; i < keys.length; i++) {
+        var key = keys[i];
         res2.setHeader(key, headers[key]);
       }
     }
@@ -21696,9 +21696,9 @@ var require_mediaType = __commonJS({
       } else if (spec.subtype != "*") {
         return null;
       }
-      var keys2 = Object.keys(spec.params);
-      if (keys2.length > 0) {
-        if (keys2.every(function(k) {
+      var keys = Object.keys(spec.params);
+      if (keys.length > 0) {
+        if (keys.every(function(k) {
           return spec.params[k] == "*" || (spec.params[k] || "").toLowerCase() == (p.params[k] || "").toLowerCase();
         })) {
           s |= 1;
@@ -22617,9 +22617,9 @@ var require_response = __commonJS({
         "Content-Disposition": contentDisposition(name || path7)
       };
       if (opts && opts.headers) {
-        var keys2 = Object.keys(opts.headers);
-        for (var i = 0; i < keys2.length; i++) {
-          var key = keys2[i];
+        var keys = Object.keys(opts.headers);
+        for (var i = 0; i < keys.length; i++) {
+          var key = keys[i];
           if (key.toLowerCase() !== "content-disposition") {
             headers[key] = opts.headers[key];
           }
@@ -22637,10 +22637,10 @@ var require_response = __commonJS({
     res2.format = function(obj) {
       var req = this.req;
       var next = req.next;
-      var keys2 = Object.keys(obj).filter(function(v) {
+      var keys = Object.keys(obj).filter(function(v) {
         return v !== "default";
       });
-      var key = keys2.length > 0 ? req.accepts(keys2) : false;
+      var key = keys.length > 0 ? req.accepts(keys) : false;
       this.vary("Accept");
       if (key) {
         this.set("Content-Type", normalizeType(key).value);
@@ -22649,7 +22649,7 @@ var require_response = __commonJS({
         obj.default(req, this, next);
       } else {
         next(createError(406, {
-          types: normalizeTypes(keys2).map(function(o) {
+          types: normalizeTypes(keys).map(function(o) {
             return o.value;
           })
         }));
@@ -22855,9 +22855,9 @@ var require_response = __commonJS({
       if (options.headers) {
         file.on("headers", function headers(res4) {
           var obj = options.headers;
-          var keys2 = Object.keys(obj);
-          for (var i = 0; i < keys2.length; i++) {
-            var k = keys2[i];
+          var keys = Object.keys(obj);
+          for (var i = 0; i < keys.length; i++) {
+            var k = keys[i];
             res4.setHeader(k, obj[k]);
           }
         });
@@ -25719,9 +25719,9 @@ var require_node2 = __commonJS({
     }
     function init(debug) {
       debug.inspectOpts = {};
-      const keys2 = Object.keys(exports2.inspectOpts);
-      for (let i = 0; i < keys2.length; i++) {
-        debug.inspectOpts[keys2[i]] = exports2.inspectOpts[keys2[i]];
+      const keys = Object.keys(exports2.inspectOpts);
+      for (let i = 0; i < keys.length; i++) {
+        debug.inspectOpts[keys[i]] = exports2.inspectOpts[keys[i]];
       }
     }
     module2.exports = require_common2()(exports2);
@@ -29139,11 +29139,11 @@ var require_lodash = __commonJS({
       var isBinary = reIsBinary.test(value);
       return isBinary || reIsOctal.test(value) ? freeParseInt(value.slice(2), isBinary ? 2 : 8) : reIsBadHex.test(value) ? NAN2 : +value;
     }
-    function keys2(object) {
+    function keys(object) {
       return isArrayLike(object) ? arrayLikeKeys(object) : baseKeys(object);
     }
     function values(object) {
-      return object ? baseValues(object, keys2(object)) : [];
+      return object ? baseValues(object, keys(object)) : [];
     }
     module2.exports = includes;
   }
@@ -36678,11 +36678,11 @@ var require_stream_duplex = __commonJS({
     "use strict";
     var pna = require_process_nextick_args();
     var objectKeys = Object.keys || function(obj) {
-      var keys3 = [];
+      var keys2 = [];
       for (var key in obj) {
-        keys3.push(key);
+        keys2.push(key);
       }
-      return keys3;
+      return keys2;
     };
     module2.exports = Duplex;
     var util = Object.create(require_util());
@@ -36691,13 +36691,13 @@ var require_stream_duplex = __commonJS({
     var Writable = require_stream_writable();
     util.inherits(Duplex, Readable);
     {
-      keys2 = objectKeys(Writable.prototype);
-      for (v = 0; v < keys2.length; v++) {
-        method = keys2[v];
+      keys = objectKeys(Writable.prototype);
+      for (v = 0; v < keys.length; v++) {
+        method = keys[v];
         if (!Duplex.prototype[method]) Duplex.prototype[method] = Writable.prototype[method];
       }
     }
-    var keys2;
+    var keys;
     var method;
     var v;
     function Duplex(options) {
@@ -40705,9 +40705,9 @@ var require_node4 = __commonJS({
     }
     function init(debug) {
       debug.inspectOpts = {};
-      const keys2 = Object.keys(exports2.inspectOpts);
-      for (let i = 0; i < keys2.length; i++) {
-        debug.inspectOpts[keys2[i]] = exports2.inspectOpts[keys2[i]];
+      const keys = Object.keys(exports2.inspectOpts);
+      for (let i = 0; i < keys.length; i++) {
+        debug.inspectOpts[keys[i]] = exports2.inspectOpts[keys[i]];
       }
     }
     module2.exports = require_common3()(exports2);
@@ -41353,9 +41353,9 @@ var require_node5 = __commonJS({
     }
     function init(debug) {
       debug.inspectOpts = {};
-      const keys2 = Object.keys(exports2.inspectOpts);
-      for (let i = 0; i < keys2.length; i++) {
-        debug.inspectOpts[keys2[i]] = exports2.inspectOpts[keys2[i]];
+      const keys = Object.keys(exports2.inspectOpts);
+      for (let i = 0; i < keys.length; i++) {
+        debug.inspectOpts[keys[i]] = exports2.inspectOpts[keys[i]];
       }
     }
     module2.exports = require_common4()(exports2);
@@ -41800,11 +41800,11 @@ var require_agent = __commonJS({
     function isHTTPS(protocol) {
       return typeof protocol === "string" ? /^https:?$/i.test(protocol) : false;
     }
-    function omit(obj, ...keys2) {
+    function omit(obj, ...keys) {
       const ret = {};
       let key;
       for (key in obj) {
-        if (!keys2.includes(key)) {
+        if (!keys.includes(key)) {
           ret[key] = obj[key];
         }
       }
@@ -42517,11 +42517,11 @@ var require_axios = __commonJS({
         if (isBuffer(obj)) {
           return;
         }
-        const keys2 = allOwnKeys ? Object.getOwnPropertyNames(obj) : Object.keys(obj);
-        const len = keys2.length;
+        const keys = allOwnKeys ? Object.getOwnPropertyNames(obj) : Object.keys(obj);
+        const len = keys.length;
         let key;
         for (i = 0; i < len; i++) {
-          key = keys2[i];
+          key = keys[i];
           fn.call(null, obj[key], key, obj);
         }
       }
@@ -42531,11 +42531,11 @@ var require_axios = __commonJS({
         return null;
       }
       key = key.toLowerCase();
-      const keys2 = Object.keys(obj);
-      let i = keys2.length;
+      const keys = Object.keys(obj);
+      let i = keys.length;
       let _key;
       while (i-- > 0) {
-        _key = keys2[i];
+        _key = keys[i];
         if (key === _key.toLowerCase()) {
           return _key;
         }
@@ -43079,11 +43079,11 @@ var require_axios = __commonJS({
         return deleted;
       }
       clear(matcher) {
-        const keys2 = Object.keys(this);
-        let i = keys2.length;
+        const keys = Object.keys(this);
+        let i = keys.length;
         let deleted = false;
         while (i--) {
-          const key = keys2[i];
+          const key = keys[i];
           if (!matcher || matchHeaderValue(this, this[key], key, matcher, true)) {
             delete this[key];
             deleted = true;
@@ -43655,12 +43655,12 @@ var require_axios = __commonJS({
     }
     function arrayToObject(arr) {
       const obj = {};
-      const keys2 = Object.keys(arr);
+      const keys = Object.keys(arr);
       let i;
-      const len = keys2.length;
+      const len = keys.length;
       let key;
       for (i = 0; i < len; i++) {
-        key = keys2[i];
+        key = keys[i];
         obj[key] = arr[key];
       }
       return obj;
@@ -46458,10 +46458,10 @@ var require_axios = __commonJS({
       if (typeof options !== "object" || options === null) {
         throw new AxiosError("options must be an object", AxiosError.ERR_BAD_OPTION_VALUE);
       }
-      const keys2 = Object.keys(options);
-      let i = keys2.length;
+      const keys = Object.keys(options);
+      let i = keys.length;
       while (i-- > 0) {
-        const opt = keys2[i];
+        const opt = keys[i];
         const validator2 = Object.prototype.hasOwnProperty.call(schema, opt) ? schema[opt] : void 0;
         if (validator2) {
           const value = options[opt];
@@ -54529,10 +54529,10 @@ var require_validator = __commonJS({
       if (typeof options !== "object") {
         throw new TypeError("options must be an object");
       }
-      var keys2 = Object.keys(options);
-      var i = keys2.length;
+      var keys = Object.keys(options);
+      var i = keys.length;
       while (i-- > 0) {
-        var opt = keys2[i];
+        var opt = keys[i];
         var validator = schema[opt];
         if (validator) {
           var value = options[opt];
@@ -55966,19 +55966,19 @@ var validations = {
       singleCountKeys.set(request, storeKeys);
     }
     const storeKey = store.localKeys ? store : store.constructor.name;
-    let keys2 = storeKeys.get(storeKey);
-    if (!keys2) {
-      keys2 = [];
-      storeKeys.set(storeKey, keys2);
+    let keys = storeKeys.get(storeKey);
+    if (!keys) {
+      keys = [];
+      storeKeys.set(storeKey, keys);
     }
     const prefixedKey = `${store.prefix ?? ""}${key}`;
-    if (keys2.includes(prefixedKey)) {
+    if (keys.includes(prefixedKey)) {
       throw new ValidationError(
         "ERR_ERL_DOUBLE_COUNT",
         `The hit count for ${key} was incremented more than once for a single request.`
       );
     }
-    keys2.push(prefixedKey);
+    keys.push(prefixedKey);
   },
   /**
    * Warns the user that the behaviour for `max: 0` / `limit: 0` is
@@ -57641,8 +57641,18 @@ function scopeRedirect(id, language) {
   }[language];
 }
 
+// server/src/ai/guide/exhibition-agent-config.ts
+var agentKeys = /* @__PURE__ */ new Map([
+  [HERITAGE_HALL_ID, "WAI_AGENTS_HERITAGE_ID"],
+  [DJEMILA_MARKET_ID, "WAI_AGENTS_DJEMILA_MARKET_ID"],
+  [DJEMILA_SCAN_ID, "WAI_AGENTS_DJEMILA_SCAN_ID"]
+]);
+function configuredExhibitionAgent(exhibitionId) {
+  const key = agentKeys.get(exhibitionId);
+  return key && process.env.ELEVENLABS_AGENTS_API_KEY?.trim() ? process.env[key]?.trim() || void 0 : void 0;
+}
+
 // server/src/public-site/exhibition-agents.ts
-var keys = { [HERITAGE_HALL_ID]: "WAI_AGENTS_HERITAGE_ID", [DJEMILA_MARKET_ID]: "WAI_AGENTS_DJEMILA_MARKET_ID", [DJEMILA_SCAN_ID]: "WAI_AGENTS_DJEMILA_SCAN_ID" };
 var pilot = (0, import_express2.Router)();
 var tts = new ElevenLabsTTSProvider();
 pilot.use((req, res2, next) => {
@@ -57663,8 +57673,8 @@ pilot.use((req, res2, next) => {
 });
 pilot.use((_req, res2, next) => {
   res2.set("Cache-Control", "no-store");
-  const id = process.env[keys[res2.locals.exhibitionId]];
-  if (!id || !process.env.ELEVENLABS_AGENTS_API_KEY) {
+  const id = configuredExhibitionAgent(res2.locals.exhibitionId);
+  if (!id) {
     res2.status(503).json({ error: "Cloud voice is unavailable for this exhibition" });
     return;
   }
@@ -58461,9 +58471,9 @@ async function syncGuideActorFromSettings(db, exhibitionId) {
   if (!s) return;
   const cur = sanitizeOverrides(parse(actor.overrides));
   const next = guideOverridesFromSettings(s, await libraryIndex(db));
-  for (const [section, keys2] of Object.entries(SYNCED)) {
+  for (const [section, keys] of Object.entries(SYNCED)) {
     const dst = { ...cur[section] ?? {} };
-    for (const k of keys2) {
+    for (const k of keys) {
       const v = next[section]?.[k];
       const empty = v === void 0 || v === "" || Array.isArray(v) && v.length === 0;
       if (empty) delete dst[k];
@@ -58827,6 +58837,7 @@ settingsRouter.get("/:exhibitionId/public", async (req, res2) => {
       isGuideVisible: settings.isGuideVisible,
       isSpeakerEnabled: settings.isSpeakerEnabled,
       guideBehavior: settings.guideBehavior,
+      cloudVoiceAvailable: Boolean(configuredExhibitionAgent(req.params.exhibitionId)),
       // systemPrompt intentionally excluded — sensitive AI config not exposed publicly
       welcomeScript: settings.welcomeScript || "",
       aiModel: settings.aiModel || "",
@@ -60918,8 +60929,8 @@ function inner_stringify(object, prefix, generateArrayPrefix, commaRoundTrip, al
   } else if (isArray(filter)) {
     obj_keys = filter;
   } else {
-    const keys2 = Object.keys(obj);
-    obj_keys = sort ? keys2.sort(sort) : keys2;
+    const keys = Object.keys(obj);
+    obj_keys = sort ? keys.sort(sort) : keys;
   }
   const encoded_prefix = encodeDotInKeys ? String(prefix).replace(/\./g, "%2E") : String(prefix);
   const adjusted_prefix = commaRoundTrip && isArray(obj) && obj.length === 1 ? encoded_prefix + "[]" : encoded_prefix;
@@ -61038,7 +61049,7 @@ function stringify(object, opts = {}) {
     filter = options.filter;
     obj_keys = filter;
   }
-  const keys2 = [];
+  const keys = [];
   if (typeof obj !== "object" || obj === null) {
     return "";
   }
@@ -61056,7 +61067,7 @@ function stringify(object, opts = {}) {
     if (options.skipNulls && obj[key] === null) {
       continue;
     }
-    push_to_array(keys2, inner_stringify(
+    push_to_array(keys, inner_stringify(
       obj[key],
       key,
       // @ts-expect-error
@@ -61078,7 +61089,7 @@ function stringify(object, opts = {}) {
       sideChannel
     ));
   }
-  const joined = keys2.join(options.delimiter);
+  const joined = keys.join(options.delimiter);
   let prefix = options.addQueryPrefix === true ? "?" : "";
   if (options.charsetSentinel) {
     if (options.charset === "iso-8859-1") {
