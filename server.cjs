@@ -45613,6 +45613,27 @@ function configuredExhibitionAgent(exhibitionId) {
   return key && process.env.ELEVENLABS_AGENTS_API_KEY?.trim() ? process.env[key]?.trim() || void 0 : void 0;
 }
 
+// server/src/ai/guide/agent-cast-config.ts
+function validateAgentCast(agent, exhibitionId) {
+  const aliases = exhibitionScope(exhibitionId)?.actors;
+  const config2 = agent?.conversation_config?.tts;
+  const supported = config2?.supported_voices;
+  if (!aliases || agent?.platform_settings?.auth?.enable_auth !== true || !Array.isArray(supported) || supported.length !== aliases.length || typeof config2.model_id !== "string" || !config2.model_id) {
+    throw new Error("Invalid private cast configuration");
+  }
+  const voices = /* @__PURE__ */ new Map();
+  for (const voice of supported) {
+    if (!aliases.includes(voice?.label) || voices.has(voice.label) || typeof voice.voice_id !== "string" || !/^[A-Za-z0-9_-]{15,35}$/.test(voice.voice_id)) {
+      throw new Error("Invalid character voice");
+    }
+    voices.set(voice.label, voice.voice_id);
+  }
+  if (new Set(voices.values()).size !== aliases.length || config2.voice_id !== voices.get("ahmed")) {
+    throw new Error("Character voices must be distinct and Ahmed must own the default voice");
+  }
+  return { voices, model: config2.model_id };
+}
+
 // server/src/public-site/exhibition-agents.ts
 var pilot = (0, import_express2.Router)();
 var tts = new ElevenLabsTTSProvider();
@@ -45651,20 +45672,13 @@ async function agentRequest(path6) {
 }
 var cache = /* @__PURE__ */ new Map();
 async function castConfig(agentId, exhibitionId) {
-  const aliases = exhibitionScope(exhibitionId).actors;
   const cacheKey = exhibitionId + ":" + agentId;
   const cached = cache.get(cacheKey);
   if (cached && cached.expires > Date.now()) return cached;
   const response = await agentRequest(`agents/${encodeURIComponent(agentId)}`);
   if (!response.ok) throw new Error("Agent configuration unavailable");
   const agent = await response.json();
-  const config2 = agent.conversation_config?.tts;
-  const voices = /* @__PURE__ */ new Map();
-  for (const voice of config2?.supported_voices ?? []) {
-    if (aliases.includes(voice.label) && /^[A-Za-z0-9_-]{15,35}$/.test(voice.voice_id)) voices.set(voice.label, voice.voice_id);
-  }
-  if (agent.platform_settings?.auth?.enable_auth !== true || voices.size !== aliases.length || config2.supported_voices.length !== aliases.length) throw new Error("Invalid private cast configuration");
-  const result = { expires: Date.now() + 6e4, voices, model: config2.model_id };
+  const result = { expires: Date.now() + 6e4, ...validateAgentCast(agent, exhibitionId) };
   cache.set(cacheKey, result);
   return result;
 }
@@ -45708,6 +45722,7 @@ pilot.post("/speech", async (req, res) => {
   try {
     const config2 = await castConfig(agentId, exhibitionId);
     const voiceId = config2.voices.get(actor);
+    if (!voiceId) throw new Error("Character has no assigned voice");
     const apiKey = process.env.ELEVENLABS_AGENTS_API_KEY;
     if (!apiKey) throw new Error("ELEVENLABS_AGENTS_API_KEY is not configured");
     const signal = AbortSignal.any([controller.signal, AbortSignal.timeout(15e3)]);
